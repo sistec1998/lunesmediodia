@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DIARIO AS</title>
+  <link rel="icon" href="log.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      transition: background 0.5s ease;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #ffd700;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px #000;
+    }
+
+    h2 {
+      color: #00aced;
+      margin-top: 40px;
+      font-size: 2rem;
+    }
+
+    ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    ol li {
+      padding: 10px;
+      background-color: #2e2e2e;
+      margin: 10px auto;
+      max-width: 450px;
+      border-radius: 12px;
+      transition: transform 0.3s, background-color 0.3s;
+      font-size: 1.1rem;
+    }
+
+    ol li:hover {
+      transform: scale(1.05);
+      background-color: #444;
+    }
+
+    details {
+      background-color: #1a1a1a;
+      border: 1px solid #00ffff;
+      border-radius: 10px;
+      margin: 20px auto;
+      padding: 10px;
+      width: 85%;
+      transition: all 0.4s ease;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #00ffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    summary:hover {
+      color: #ffd700;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 8px #00ffff44;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    hr {
+      border: 1px solid #6bd8da;
+      width: 70%;
+      margin: 20px auto;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #ddd;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img src="log.png" width="120" alt="Logo" />
+
+  <h1><i class="fas fa-trophy"></i> Palmarés</h1>
+
+  <ol>
+    <li><i class="fas fa-flag"></i> Brasil (1958, 1962, 1970, 1994, 2002)</li>
+    <li><i class="fas fa-flag"></i> Italia (1934, 1938, 1982, 2006)</li>
+    <li><i class="fas fa-flag"></i> Alemania (1954, 1974, 1990, 2014)</li>
+    <li><i class="fas fa-flag"></i> Argentina (1978, 1986, 2022)</li>
+    <li><i class="fas fa-flag"></i> Uruguay (1930, 1950)</li>
+    <li><i class="fas fa-flag"></i> Francia (1998, 2018)</li>
+    <li><i class="fas fa-flag"></i> Inglaterra (1966)</li>
+    <li><i class="fas fa-flag"></i> España (2010)</li>
+  </ol>
+
+  <h2><i class="fas fa-history"></i> Historia</h2>
+  <hr>
+
+  <details>
+    <summary><i class="fas fa-star"></i> Argentina 2022</summary>
+    <img src="cam.jpg" width="150" />
+    <img src="marcador.jpg" width="120" />
+    <img src="cam1.avif" width="150" />
+    <p>Argentina 3-3 Francia (4-2 penales)</p>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-star"></i> Francia 2018</summary>
+    <img src="estadistica.jpg" width="150" />
+    <img src="francia1.jpg" width="150" />
+    <img src="francia2.jpg" width="150" />
+    <p>Francia 4-2 Croacia</p>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-star"></i> Alemania 2014</summary>
+    <img src="Alemania1.webp" width="150" />
+    <img src="alemania2.jpg" width="150" />
+    <img src="alemania3.jpg" width="150" />
+    <p>Alemania 1-0 Argentina</p>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-star"></i> España 2010</summary>
+    <img src="españa1.jpg" width="150" />
+    <img src="españa2.jpg" width="150" />
+    <img src="españa3.webp" width="150" />
+    <p>España 1-0 Holanda</p>
+  </details>
+
+  <details>
+    <summary><i class="fas fa-star"></i> Italia 2006</summary>
+    <img src="italia1.jpg" width="150" />
+    <img src="italia2.jpg" width="150" />
+    <img src="italia3.jpg" width="150" />
+    <p>Italia 1-1 Francia (5-3 penales)</p>
+  </details>
+</body>
+</html>
