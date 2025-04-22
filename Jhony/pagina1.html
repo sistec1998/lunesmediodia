@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIARIO AS</title>
+  <link rel="icon" href="logo1.png">
+  <style>
+    body {
+      background: linear-gradient(to right, #e3f2fd, #bbdefb);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: #0b0c11;
+      transition: background 1s ease;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #171a1f;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #242e3a;
+      animation: slideIn 2s ease-in-out;
+    }
+
+    ol {
+      list-style-position: inside;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    li:hover {
+      color: #251f21;
+      cursor: pointer;
+    }
+
+    summary {
+      font-size: 1.2em;
+      cursor: pointer;
+      color: #242d3b;
+      transition: all 0.3s ease;
+    }
+
+    summary:hover {
+      color: #000000;
+    }
+
+    details {
+      margin: 20px auto;
+      max-width: 800px;
+      background: hwb(187 15% 21%);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(201, 29, 29, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 60%;
+      border: 1px solid #0a0a0a;
+      margin: 30px auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo1.png" width="200" alt="Logo">
+  <h1>PALMARES</h1>
+  <ol>
+    <li>BRASIL (1958,1962,1970,1994,2002)</li>
+    <li>ITALIA (1934,1938,1982,2006)</li>
+    <li>ALEMANIA (1954,1974,1990,2014)</li>
+    <li>ARGENTINA (1978,1986,2022)</li>
+    <li>URUGUAY (1930,1950)</li>
+    <li>FRANCIA (1998,2018)</li>
+    <li>INGLATERRA (1966)</li>
+    <li>ESPAÑA (2010)</li>
+  </ol>
+  <hr>
+  <h2>HISTORIA</h2>
+
+  <details>
+    <summary>ARGENTINA</summary>
+    <img src="campeones.jpg" width="200">
+    <img src="marcador.jpg" width="150">
+    <img src="Argentina campeon.jpg" width="200">
+    <p>ARGENTINA 3-3 FRANCIA</p>
+  </details>
+
+  <details>
+    <summary>FRANCIA</summary>
+    <img src="campeon.jpg" width="200">
+    <img src="marc.jpg" width="200">
+    <img src="francia.jpg" width="200">
+    <p>FRANCIA 4-2 CROACIA</p>
+  </details>
+
+  <details>
+    <summary>ALEMANIA</summary>
+    <img src="campeon2.jpeg" width="200">
+    <img src="alemania.jpg" width="200">
+    <img src="marcador2.jpg" width="200">
+    <p>ALEMANIA 1-0 ARGENTINA</p>
+  </details>
+
+  <details>
+    <summary>ESPAÑA</summary>
+    <img src="españa.jpg" width="200">
+    <img src="españa2.jpg" width="200">
+    <img src="marcador3.jpg" width="200">
+    <p>NETHERLANDS 0-1 ESPAÑA</p>
+  </details>
+
+  <details>
+    <summary>ITALIA</summary>
+    <img src="italia.jpg" width="200">
+    <img src="italia2.jpg" width="200">
+    <img src="marcador4.jpg" width="200">
+    <p>ITALIA 5-3 FRANCIA</p>
+  </details>
+</body>
+</html>
