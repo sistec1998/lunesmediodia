@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diario as</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+            font-size: 18px;
+            color: #34495e;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #2c3e50;
+            margin: 20px 0;
+        }
+
+        /* Section Styling */
+        details {
+            background-color: #ffffff;
+            border: 2px solid #ecf0f1;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        details:hover {
+            background-color: #f39c12;
+            transform: scale(1.05);
+        }
+
+        summary {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #2980b9;
+            transition: color 0.3s ease;
+        }
+
+        summary:hover {
+            color: #e74c3c;
+        }
+
+        /* Image Styling */
+        img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Icon Styling */
+        .icon {
+            font-size: 50px;
+            color: #3498db;
+            margin: 10px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .icon:hover {
+            transform: rotate(360deg);
+            color: #e74c3c;
+        }
+
+        /* Animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Apply bounce animation to title */
+        h1 {
+            animation: bounce 2s infinite;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Logo and Title -->
+    <img src="logo as.png" width="300">
+    <h1>Palmates</h1>  
+
+    <!-- List of Teams and World Cup Years -->
+    <ol>
+        <li>Brasil (1958, 1962, 1970, 1994, 2002)</li>
+        <li>Italia (1934, 1938, 1982, 2006)</li>
+        <li>Alemania (1954, 1974, 1990, 2014)</li>
+        <li>Argentina (1978, 1986, 2022)</li>
+        <li>Uruguay (1930, 1950)</li>
+        <li>Francia (1998, 2018)</li>
+        <li>Inglaterra (1966)</li>
+        <li>España (2010)</li>
+    </ol>
+
+    <hr>
+
+    <!-- History Section -->
+    <h1>Historia</h1>
+    
+    <details>
+        <summary>Argentina</summary>
+        <img src="arge.jpg" width="300">
+        <img src="cAMPEONES.png" width="300">
+        <img src="mes.jfif" width="300">
+        <p>Argentina 3-3 Francia</p>
+    </details>
+    
+    <details>
+        <summary>Francia</summary>
+        <img src="anci.jpg" width="300">
+        <img src="empape.jpg" width="300">
+        <img src="fran.jpg" width="300">
+        <p>Francia 4-2 Croacia</p>
+    </details>
+    
+    <details>
+        <summary>Alemania</summary>
+        <img src="ale.jpg" width="300">
+        <img src="lema.jpeg" width="300">
+        <img src="images.jpg" width="300">
+        <p>Alemania 7-1 Brasil</p>
+    </details>
+    
+    <details>
+        <summary>España</summary>
+        <img src="espa.webp" width="300">
+        <img src="esña.jpg" width="190">
+        <img src="paña.jpg" width="300">
+        <p>España 1-0 Paises Bajos</p>
+    </details>
+    
+    <details>
+        <summary>Italia</summary>
+        <img src="ita.webp" width="300">
+        <img src="itali.jpg" width="300">
+        <img src="lia.jpg" width="300">
+        <p>Italia 1-1 Francia</p>
+    </details>
+
+    <!-- Adding an Icon for Fun -->
+    <div>
+        <i class="icon">⚽</i> <!-- Soccer Ball Icon -->
+    </div>
+
+</body>
+</html>
