@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARITA</title>
+    <link rel="icon" href="logo1.png">
+    <!-- Fuente e íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #d63447;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover, h2:hover {
+            color: #ff5733;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #ff6f61;
+            padding: 10px 20px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #ff3b2e;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #388e3c;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px;
+            animation: scroll 20s linear infinite;
+        }
+
+        .scroll-container img {
+            width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .scroll-container img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        hr {
+            border: none;
+            height: 4px;
+            background-color: #d63447;
+            width: 400px;
+            margin: 20px auto;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><i class="fa-solid fa-ice-cream"></i> BIENVENIDOS A SARITA</h1>
+    <a href="pagina1.html"><i class="fa-solid fa-store"></i> VER PRODUCTOS</a>
+    <a href="pagina2.html"><i class="fa-regular fa-comment-dots"></i> PREGUNTAR</a>
+    <div>
+        <img src="logo1.png" width="400" alt="Logo Sarita">
+        <h2>SABOR ÚNICO EN CADA HELADO!!</h2>
+        <hr>
+    </div>
+
+    <form>
+        <label for="busqueda">¿Qué buscas de comer?</label><br>
+        <input type="text" id="busqueda" name="busqueda"><br>
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> BUSCAR</button>
+    </form>
+    <hr>
+
+    <h2>LO MÁS BUSCADO</h2>
+    <div class="scroll-container">
+        <img src="pastel1.png" alt="Pastel">
+        <img src="paleta1.png" alt="Paleta">
+        <img src="especial1.png" alt="Especial">
+    </div>
+
+    <h2>NUESTRAS SEDES</h2>
+    <ol>
+        <li>JUTIAPA</li>
+        <li>FLORES</li>
+        <li>ANTIGUA</li>
+        <li>CHIQUIMULILLA</li>
+    </ol>
+    <hr>
+
+    <footer>
+        <p><i class="fa-regular fa-envelope"></i> correo: sarita@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> TEL: 12345678</p>
+        <p><i class="fa-solid fa-location-dot"></i> UBICACIÓN: Flores C.C.</p>
+    </footer>
+
+</body>
+</html>
