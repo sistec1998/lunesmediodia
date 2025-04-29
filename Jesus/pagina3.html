@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helados Sarita</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff5f8;
+      color: #4b1c1c;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #c2185b;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header img {
+      width: 100px;
+      margin-top: 10px;
+    }
+
+    .intro {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      color: #7a1a1a;
+    }
+
+    form {
+      margin: 30px auto;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    form input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      border: 2px solid #c2185b;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background-color: #c2185b;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background-color: #7b1139;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card i {
+      font-size: 2rem;
+      color: #c2185b;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #f8d3dc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Helados Sarita 🍦</h1>
+    <img src="logo.png" alt="Logo Sarita">
+  </header>
+
+  <section class="intro">
+    <h1>Sabor único en cada helado</h1>
+    <p>¡Disfruta del placer de un dulce momento!</p>
+  </section>
+
+  <form>
+    <input type="text" placeholder="¿Qué buscas comer?">
+    <br>
+    <button><i class="fas fa-search"></i> Buscar</button>
+  </form>
+
+  <section class="gallery">
+    <img src="helado1.png" alt="Helado">
+    <img src="paleta3.png" alt="Paleta">
+    <img src="pastel1.jpg" alt="Pastel">
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Jutiapa</h3>
+    </div>
+    <div class="card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Flores</h3>
+    </div>
+    <div class="card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Antigua</h3>
+    </div>
+    <div class="card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Chiquimula</h3>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <i class="fas fa-box-open"></i>
+      <a href="pagina1.html">Ver Productos</a>
+    </div>
+    <div class="card">
+      <i class="fas fa-question-circle"></i>
+      <a href="pagina2.html">Preguntar</a>
+    </div>
+  </section>
+
+  <footer>
+    <p><i class="fas fa-envelope"></i> Correo: saritas@gmail.com</p>
+    <p><i class="fas fa-phone"></i> Teléfono: 23457890</p>
+    <p><i class="fas fa-map-pin"></i> Ubicación: Flores C.C</p>
+  </footer>
+
+</body>
+</html>
