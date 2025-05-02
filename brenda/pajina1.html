@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOJA DE VIDA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #ffe6f0 url('https://i.imgur.com/7Yz1WOh.png') repeat-y left,
+                        #ffe6f0 url('https://i.imgur.com/7Yz1WOh.png') repeat-y right;
+            background-size: 100px auto;
+            color: #333;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h1, h2 {
+            color: #e60073;
+            text-shadow: 1px 1px 2px #fff;
+        }
+
+        hr {
+            border: 2px solid #e60073;
+            width: 80%;
+        }
+
+        p, li {
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+
+        .icon {
+            color: #e60073;
+            margin-right: 5px;
+        }
+
+        details {
+            margin: 20px 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        details[open] {
+            background-color: #fff0f5;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .tarjeta {
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            background-color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .tarjeta:hover {
+            transform: scale(1.05);
+        }
+
+        marquee img {
+            border: 3px solid #e60073;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="imag1.jpg" width="200">
+    <h1><i class="fa-solid fa-user icon"></i>DESCRIPCIÓN PERSONAL</h1>
+    <hr>
+    <p>Hola, me llamo Brenda Maricela Cardona Rodas. Mis padres son Byron Alejandro  
+        Cardona Ambrocio y Miriam Cristina Rodas Rojas. Tengo 4 hermanos, tengo 14 años, 
+        vivo en Jenova Aldea El Manantial Floresm, Costa Cuca. Estudio Computación en Sistec Flores 
+        y curso Segundo Básico en Jenova, Juan José Téllez Martínez. De grande quiero trabajar en enfermería.
+    </p>
+
+    <h2><i class="fa-solid fa-address-card icon"></i>INFORMACIÓN PERSONAL</h2>
+    <hr>
+    <p><i class="fa-solid fa-envelope icon"></i>Email: brendacardona7@gmail.com</p>
+    <p><i class="fa-brands fa-facebook icon"></i>Facebook: Brenda Cardona</p>
+    <p><i class="fa-brands fa-instagram icon"></i>Instagram: mari cardona</p>
+    <p><i class="fa-brands fa-tiktok icon"></i>TikTok: @brendacardona175</p>
+
+    <details>
+        <summary><strong><i class="fa-solid fa-heart icon"></i>Mis hobbies</strong></summary>
+        <div class="tarjeta"><img src="img2.webp" width="100%" height="100%"></div>
+        <div class="tarjeta"><img src="img3.jpg" width="100%" height="100%"></div>
+        <div class="tarjeta"><img src="img4.jpg" width="100%" height="100%"></div>
+        <div class="tarjeta"><img src="img5.jpg" width="100%" height="100%"></div>
+
+        <h2><i class="fa-solid fa-face-frown icon"></i>Mis fobias</h2>
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            <img src="las alturas.jpg" width="300">
+            <img src="la llorona.jpg" width="300">
+            <img src="img.jpg" width="300">
+            <img src="la llorona.jpg" width="300">
+        </marquee>
+    </details>
+
+    <hr>
+    <h2><i class="fa-solid fa-school icon"></i>INFORMACIÓN ACADÉMICA</h2>
+    <ol>
+        <li>2025 Segundo - INB Juan José Téllez Martínez</li>
+        <li>2024 Primero - INB Juan José Téllez Martínez</li>
+        <li>2023 Sexto - Manantial</li>
+        <li>2022 Quinto - Manantial</li>
+        <li>2021 Cuarto - Manantial</li>
+        <li>2020 Tercero - Manantial</li>
+        <li>2019 Segundo - Manantial</li>
+        <li>2018 Primero - Manantial</li>
+    </ol>
+
+    <h2><i class="fa-solid fa-star icon"></i>OTROS DATOS</h2>
+    <ul>
+        <li>Equipo: Real Madrid</li>
+        <li>Artista: Karol G</li>
+        <li>Jugador: Cristiano Ronaldo</li>
+        <li>Época favorita: Otoño</li>
+        <li>Animal: Gatitos</li>
+        <li>Color: Rosa</li>
+        <li>País favorito: Japón</li>
+    </ul>
+
+    <h2><i class="fa-solid fa-utensils icon"></i>COMIDAS FAVORITAS</h2>
+    <div class="tarjeta"><img src="carne asada.jpg" width="100%" height="100%"></div>
+    <div class="tarjeta"><img src="pollo asado.jpg" width="100%" height="100%"></div>
+    <div class="tarjeta"><img src="tacos.webp" width="100%" height="100%"></div>
+
+</body>
+</html>
