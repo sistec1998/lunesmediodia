@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #E6E6FA; /* Morado clarito */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    center {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #6A5ACD; /* tono morado oscuro */
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    img {
+      border-radius: 10px;
+      margin: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: #ccc;
+      margin: 20px 0;
+    }
+
+    marquee img {
+      margin: 10px;
+    }
+
+    ul, ol {
+      text-align: left;
+      display: inline-block;
+      margin: 10px auto;
+    }
+
+    i {
+      margin-right: 8px;
+      color: #6A5ACD;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="foto.jpg" width="200" alt="Foto personal">
+    <h1><i class="fas fa-user"></i>DESCRIPCIÓN PERSONAL</h1>
+    <hr>
+    <p>Mi nombre es Ines Rebeca Escalante Jimenez, tengo 13 años. Soy muy callada, vivo en Barrio Nueva Italia. Tengo dos hermanas y seis amigas. Me gustan los perros y los gatos.</p>
+
+    <h2><i class="fas fa-address-card"></i> INFORMACIÓN PERSONAL</h2>
+    <hr>
+    <p><i class="fas fa-envelope"></i> Correo electrónico: sisteclab2@gmail.com</p>
+    <p><i class="fab fa-facebook"></i> Facebook: ines escalante</p>
+    <p><i class="fab fa-instagram"></i> Instagram: ines escalante</p>
+    <p><i class="fab fa-tiktok"></i> TikTok: ines escalante</p>
+    <hr>
+
+    <details>
+      <summary><i class="fas fa-heart"></i> Mis hobbies</summary>
+      <img src="foto tiktok.jpeg" width="200" alt="Tiktok">
+      <img src="foto musica.avif" width="130" alt="Música">
+      <img src="foto netflix.avif" width="200" alt="Netflix">
+      <img src="foto whatsapp.webp" width="200" alt="Whatsapp">
+    </details>
+
+    <h2><i class="fas fa-exclamation-triangle"></i> MIS FOBIAS</h2>
+    <marquee>
+      <img src="peliculas de terror.jpg" width="200" alt="Películas de terror">
+      <img src="serpientes.jpg" width="200" alt="Serpientes">
+      <img src="alturas.jpg" width="200" alt="Alturas">
+    </marquee>
+    <hr width="700">
+
+    <h2><i class="fas fa-school"></i> INFORMACIÓN ACADÉMICA</h2>
+    <ol>
+      <li>2025 - Primero Básico - Tellez</li>
+      <li>2024 - No estudié</li>
+      <li>2023 - Sexto Primaria - Escuela Barrio Nueva Italia</li>
+      <li>2022 - Quinto Primaria - Escuela Barrio Nueva Italia</li>
+      <li>2021 - Cuarto Primaria - Escuela Barrio Nueva Italia</li>
+      <li>2020 - Tercero Primaria - Escuela Barrio Nueva Italia</li>
+      <li>2019 - Segundo Primaria - Escuela Barrio Nueva Italia</li>
+      <li>2018 - Primero Primaria - Escuela Barrio Nueva Italia</li>
+    </ol>
+
+    <h2><i class="fas fa-star"></i> OTROS DATOS</h2>
+    <ul>
+      <li><i class="fas fa-futbol"></i> Equipo: Barcelona</li>
+      <li><i class="fas fa-music"></i> Artista: Canservero</li>
+      <li><i class="fas fa-user"></i> Jugador: Messi</li>
+      <li><i class="fas fa-sun"></i> Época: Verano</li>
+      <li><i class="fas fa-dog"></i> Animal: Perros</li>
+      <li><i class="fas fa-palette"></i> Color: Azul</li>
+      <li><i class="fas fa-flag"></i> País favorito: Corea</li>
+    </ul>
+
+    <h2><i class="fas fa-utensils"></i> Comidas favoritas</h2>
+    <img src="hamburguesa.avif" width="200" alt="Hamburguesa">
+    <img src="alas en barbacoa.avif" width="200" alt="Alas en barbacoa">
+    <img src="churrasco.png" width="200" alt="Churrasco">
+  </center>
+</body>
+</html>
