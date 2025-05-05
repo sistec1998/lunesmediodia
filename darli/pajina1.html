@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Darli</title>
+    <style>
+        /* Fondo rosado */
+        body {
+            background-color: #ffcccb;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Títulos */
+        h1, h2 {
+            color: #e91e63;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover, h2:hover {
+            color: #c2185b;
+        }
+
+        /* Imágenes en forma de tarjeta */
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Detalles con transiciones */
+        details {
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        details summary {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        details summary:hover {
+            background-color: #c2185b;
+        }
+
+        details div {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+            transition: opacity 0.3s ease;
+        }
+
+        details[open] div {
+            opacity: 1;
+        }
+
+        /* Estilo de la lista */
+        ul, ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        hr {
+            border: 1px solid #e91e63;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="imajen1.jpg" width="200" alt="Foto de Darli">
+        <h1>Darli Godínez</h1>
+        <hr>
+        <h2>Datos personales</h2>
+        <ul>
+            <li>Edad: 15 años</li>
+            <li>Lugar de residencia: La Florida</li>
+            <li>Fecha de nacimiento: 01/09/2009</li>
+        </ul>
+        <hr>
+        <h2>Contactos</h2>
+        <ul>
+            <li>Teléfono: 56151740</li>
+            <li>Facebook: DARLI VASQUEZ</li>
+            <li>TikTok: DARLI VASQUEZ</li>
+            <li>Instagram: DARLI VASQUEZ</li>
+        </ul>
+        <hr>
+        <details>
+            <summary>Hobbies</summary>
+            <div>
+                <img src="image3.jpg" alt="Hobby 1">
+                <img src="imajen4.jpg" alt="Hobby 2">
+                <img src="imajen5.jpg" alt="Hobby 3">
+            </div>
+        </details>
+        <details>
+            <summary>Fobias</summary>
+            <div>
+                <img src="images.6.jpg" alt="Fobia 1">
+                <img src="imajen7.jpg" alt="Fobia 2">
+                <img src="imajen8.webp" alt="Fobia 3">
+            </div>
+        </details>
+        <h2>Comidas favoritas</h2>
+        <div>
+            <img src="imajen9.webp" alt="Comida favorita 1">
+            <img src="imajen10.jpg" alt="Comida favorita 2">
+            <img src="imajen11.avif" alt="Comida favorita 3">
+        </div>
+        <hr>
+        <h2>Datos académicos</h2>
+        <ol>
+            <li>Tercero básico: 2025 Kjell</li>
+            <li>Segundo básico: 2024 Kjell</li>
+            <li>Primero básico: 2023 Kjell</li>
+            <li>Sexto primaria: 2022 Escuela La Florida</li>
+            <li>Quinto primaria: 2021 Escuela La Florida</li>
+            <li>Cuarto primaria: 2020 Escuela La Florida</li>
+            <li>Tercero primaria: 2019 Escuela La Florida</li>
+            <li>Segundo primaria: 2018 Escuela La Florida</li>
+            <li>Primero primaria: 2017 Escuela La Florida</li>
+        </ol>
+        <hr>
+        <h2>Otras preferencias</h2>
+        <ul>
+            <li>Equipo favorito: Real Madrid</li>
+            <li>Jugador favorito: Cristiano Ronaldo</li>
+            <li>Color favorito: Rosado</li>
+            <li>Animal favorito: Conejo</li>
+            <li>Época favorita: Verano</li>
+        </ul>
+    </div>
+</body>
+</html>
