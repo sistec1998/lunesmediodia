@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Kathia Pérez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: background 1s, color 1s;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h1, h2 {
+            transition: color 0.5s;
+        }
+
+        hr {
+            border: 1px solid #fff;
+            width: 600px;
+        }
+
+        ul, ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "⭐ ";
+        }
+
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        marquee img {
+            border: 2px solid #fff;
+        }
+
+        a {
+            color: #00ffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="img.jpg" alt="Foto de Kathia">
+    <h1>Kathia Pérez</h1>
+    <hr>
+
+    <h2>Descripción</h2>
+    <p>Soy amable y cariñosa con mis amigos de clase, mi maestra y mis padres.</p>
+    <hr>
+
+    <h2>Contacto</h2>
+    <ul>
+        <li><i class="fas fa-phone"></i> Teléfono: 12345678</li>
+        <li><i class="fab fa-facebook"></i> Facebook: Kathia Pérez</li>
+        <li><i class="fab fa-tiktok"></i> TikTok: Kathia Pérez</li>
+    </ul>
+
+    <h2>Datos Personales</h2>
+    <ul>
+        <li>Fecha de nacimiento: 3 de agosto</li>
+        <li>Lugar de residencia: Linda Vista</li>
+        <li>Lugar de nacimiento: San Marcos</li>
+    </ul>
+    <hr>
+
+    <details>
+        <summary>Hobbies</summary>
+        <img src="imagen.avif" alt="Hobby 1">
+        <img src="imagen 1.jpg" alt="Hobby 2">
+        <img src="imagen 2.jpg" alt="Hobby 3">
+    </details>
+
+    <details>
+        <summary>Fobias</summary>
+        <img src="imagen 3.avif" alt="Fobia 1">
+        <img src="imagen 3.jpg" alt="Fobia 2">
+        <img src="imagen 4.jpg" alt="Fobia 3">
+    </details>
+
+    <h2>Comidas</h2>
+    <marquee behavior="scroll" direction="left">
+        <img src="imagen5.jpg" alt="Comida 1">
+        <img src="imagen 6.avif" alt="Comida 2">
+        <img src="imagen 6.jpg" alt="Comida 3">
+    </marquee>
+    <hr>
+
+    <h2>Lista de Preferencias</h2>
+    <ul>
+        <li>Equipo: Barcelona</li>
+        <li>Jugador: Messi</li>
+        <li>Época: Primavera</li>
+        <li>Color: Negro</li>
+        <li>Animal: Conejo</li>
+    </ul>
+    <hr>
+
+    <h2>Datos Académicos</h2>
+    <ol>
+        <li>Tercero básico - 2025 - NUFED Xelajú</li>
+        <li>Segundo básico - 2024 - NUFED Xelajú</li>
+        <li>Primero básico - 2023 - NUFED Xelajú</li>
+        <li>Sexto - 2022 - Florida</li>
+        <li>Quinto - 2021 - Florida</li>
+        <li>Cuarto - 2020 - Florida</li>
+        <li>Tercero - 2019 - Florida</li>
+        <li>Segundo - 2018 - Florida</li>
+        <li>Primero - 2017 - Florida</li>
+    </ol>
+
+</body>
+</html>
