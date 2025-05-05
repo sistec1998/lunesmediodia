@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Adiel</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Fondo suave */
+            color: #333; /* Color de texto */
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease; /* Transición en fondo */
+        }
+
+        h1, h2 {
+            color: #e63946; /* Color rojo suave para los encabezados */
+            text-align: center;
+        }
+
+        hr {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #e63946;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 10%;
+        }
+
+        li {
+            padding: 5px 0;
+            font-size: 16px;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1); /* Efecto al pasar el mouse */
+        }
+
+        /* Estilo de las secciones de detalles */
+        details {
+            background-color: #f1faee; /* Fondo suave para los detalles */
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        details:hover {
+            background-color: #a8dadc; /* Cambio de fondo al pasar el mouse */
+        }
+
+        summary {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1d3557;
+            cursor: pointer;
+        }
+
+        /* Animación en el Marquee */
+        marquee img {
+            animation: slide 10s linear infinite;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Estilos adicionales para el footer y otros elementos */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e63946;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="foto.png" width="300" style="display: block; margin: 0 auto;">
+        <h1>Juan Adiel</h1>
+        <hr>
+    </header>
+
+    <section>
+        <h2>Datos personales</h2>
+        <ul>
+            <li>Edad: 16</li>
+            <li>Lugar de residencia: Aldea Morelia</li>
+            <li>Fecha de nacimiento: 9/7/08</li>
+        </ul>
+        <hr>
+        
+        <h2>Contacto</h2>
+        <ul>
+            <li>Teléfono: 41705625</li>
+            <li>Facebook: Adiel B Xirum</li>
+            <li>TikTok: Xirum</li>
+            <li>Instagram: No disponible</li>
+        </ul>
+        <hr>
+
+        <details>
+            <summary>Hobbies</summary>
+            <img src="fut.png" width="300">
+            <img src="inva.webp" width="300">
+            <img src="halo.webp" width="200">
+        </details>
+
+        <details>
+            <summary>Fobias</summary>
+            <img src="spider-24625_640.webp" width="200">
+            <img src="altura.png" width="200">
+            <img src="paya.png" width="200">
+        </details>
+
+        <h2>Comidas favoritas</h2>
+        <marquee behavior="" direction="">
+            <img src="mango.jpg" width="200">
+            <img src="pollo.jpg" width="200">
+            <img src="pe.png" width="200">
+        </marquee>
+        <hr>
+
+        <h2>Datos académicos</h2>
+        <ol>
+            <li>5to Bachillerato-2025-Insti INED</li>
+            <li>4to Bachillerato-2024-Insti INED</li>
+            <li>3ro Básico-2023-Insti Instituto Básico por Cooperativa de Enseñanza Morelia</li>
+            <li>2do Básico-2022-Insti Instituto Básico por Cooperativa de Enseñanza Morelia</li>
+            <li>1ro Básico-2021-Insti Instituto Básico por Cooperativa de Enseñanza Morelia</li>
+            <li>6to Primaria-2020-E.O.R.M. Aldea Morelia</li>
+            <li>5to Primaria-2019-E.O.R.M. Aldea Morelia</li>
+            <li>4to Primaria-2018-E.O.R.M. Aldea Morelia</li>
+            <li>3ro Primaria-2017-E.O.R.M. Aldea Morelia</li>
+            <li>2do Primaria-2016-E.O.R.M. Aldea Morelia</li>
+            <li>1ro Primaria-2015-E.O.R.M. Aldea Morelia</li>
+        </ol>
+        <hr>
+
+        <h2>Otras preferencias</h2>
+        <ul>
+            <li>Equipo: Real Madrid</li>
+            <li>Jugador: Toni Kroos</li>
+            <li>Color: Rojo</li>
+            <li>Animal: Perro</li>
+            <li>Época: Invierno</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>CV creado por Juan Adiel. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
