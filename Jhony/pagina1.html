@@ -3,198 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Jhony</title>
-  <link rel="icon" href="icono.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <title>FERRETERÍA</title>
+  <link rel="icon" href="logo1.png" type="image/png">
   <style>
     body {
+      background: linear-gradient(to right, #f2f2f2, #e0e0e0);
+      font-family: Arial, sans-serif;
+      color: #333;
+      text-align: center;
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      color: #2c3e50;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      animation: fadeIn 1.5s ease-in;
-    }
-
-    center {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
-
-    h1, h2 {
-      color: #ffffff;
-      background-color: rgba(0, 123, 255, 0.8);
-      padding: 12px 25px;
-      border-radius: 12px;
-      margin-top: 25px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.3s;
-    }
-
-    h1:hover, h2:hover {
-      transform: scale(1.05);
-    }
-
-    ul, ol {
-      max-width: 700px;
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 20px;
-      border-radius: 15px;
-      margin-top: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    li {
-      margin: 10px 0;
-      font-size: 16px;
-    }
-
-    li i {
-      margin-right: 8px;
-      color: #007bff;
-      transition: transform 0.3s;
-    }
-
-    li:hover i {
-      transform: scale(1.2);
+      animation: fadeIn 2s ease-in;
     }
 
     img {
-      margin: 10px;
-      border-radius: 12px;
-      transition: transform 0.4s ease;
+      margin-top: 40px;
+      width: 300px;
+      transition: transform 0.5s ease;
     }
 
     img:hover {
-      transform: scale(1.06);
-      box-shadow: 0 0 15px rgba(255,255,255,0.4);
+      transform: scale(1.05) rotate(2deg);
     }
 
-    details {
-      margin: 20px 0;
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 15px;
-      border-radius: 12px;
-      width: 80%;
+    h1, h2 {
+      color: #003366;
+      margin-top: 30px;
+      transition: color 0.3s ease;
     }
 
-    summary {
-      cursor: pointer;
-      font-weight: bold;
+    h1:hover, h2:hover {
+      color: #0066cc;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto;
       font-size: 18px;
-      color: #2c3e50;
+      line-height: 1.6;
     }
 
-    .slider {
-      display: flex;
-      overflow: hidden;
-      width: 90%;
-      max-width: 800px;
-      height: 250px;
-      margin: 20px 0;
-      border-radius: 12px;
+    hr {
+      width: 50%;
+      border: none;
+      border-top: 2px solid #0066cc;
+      margin: 20px auto;
+      transition: width 0.5s ease;
     }
 
-    .slider-track {
-      display: flex;
-      animation: scroll 20s linear infinite;
-    }
-
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
+    hr:hover {
+      width: 70%;
     }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    hr {
-      border: none;
-      height: 2px;
-      background: #ffffff;
-      margin: 30px 0;
-      width: 85%;
-      opacity: 0.3;
-    }
   </style>
 </head>
-
 <body>
-  <center>
-    <img src="foto1.jpg" width="300" alt="Foto de Jhony">
-    <h1><i class="fas fa-id-card"></i> Jhony Ovando</h1>
-    <hr>
 
-    <h2><i class="fas fa-user"></i> Datos Personales</h2>
-    <ul>
-      <li><i class="fas fa-birthday-cake"></i> Edad: 14 años</li>
-      <li><i class="fas fa-map-marker-alt"></i> Lugar residencial: Colonia Xelajú</li>
-      <li><i class="fas fa-calendar-day"></i> Fecha de nacimiento: 16/10/2010</li>
-    </ul>
+  <img src="logo1.png" alt="Logo de la ferretería">
+  <hr>
 
-    <hr>
-    <h2><i class="fas fa-address-book"></i> Contacto</h2>
-    <ul>
-      <li><i class="fas fa-phone"></i> Teléfono: 36042117</li>
-      <li><i class="fab fa-facebook"></i> Facebook: Jhony Ovando</li>
-      <li><i class="fab fa-tiktok"></i> TikTok: Deketeleare</li>
-      <li><i class="fab fa-instagram"></i> Instagram: Jhony Hernández</li>
-    </ul>
+  <h1>🔧 MISIÓN</h1>
+  <p>
+    Somos una empresa líder en productos de ferretería de alta calidad al mejor precio.
+  </p>
 
-    <hr>
-    <details>
-      <summary><i class="fas fa-smile-beam"></i> Hobbies</summary>
-      <img src="pasatienpo1.jpg" width="300">
-      <img src="pasatienpo2.jpg" width="300">
-      <img src="pasatienpo3.jpg" width="300">
-    </details>
+  <hr>
 
-    <details>
-      <summary><i class="fas fa-exclamation-triangle"></i> Fobias</summary>
-      <img src="miedo1.jpg" width="300">
-      <img src="miedo2.jpg" width="300">
-      <img src="miedo3.jpg" width="300">
-    </details>
+  <h2>🎯 VISIÓN</h2>
+  <p>
+    Ser una empresa al alcance de los florenses todos los días a toda hora.
+  </p>
 
-    <h1><i class="fas fa-utensils"></i> Comidas favoritas</h1>
-    <div class="slider">
-      <div class="slider-track">
-        <img src="comida1.jpg" width="350">
-        <img src="comida2.jpg" width="350">
-        <img src="comida3.jpg" width="350">
-        <img src="comida1.jpg" width="350">
-        <img src="comida2.jpg" width="350">
-        <img src="comida3.jpg" width="350">
-      </div>
-    </div>
-
-    <hr>
-    <h1><i class="fas fa-graduation-cap"></i> Datos Académicos</h1>
-    <ol>
-      <li>Segundo Básico - 2025 - Instituto La Florida</li>
-      <li>Primero Básico - 2024 - Instituto La Florida</li>
-      <li>6to Primaria - 2023 - Escuela Santa Rita</li>
-      <li>5to Primaria - 2022 - Escuela Santa Rita</li>
-      <li>4to Primaria - 2021 - Escuela Santa Rita</li>
-      <li>3ro Primaria - 2020 - Escuela Santa Rita</li>
-      <li>2do Primaria - 2019 - Escuela Regional</li>
-      <li>1ro Primaria - 2018 - Escuela Regional</li>
-    </ol>
-
-    <hr>
-    <h2><i class="fas fa-star"></i> Otras Preferencias</h2>
-    <ul>
-      <li><i class="fas fa-futbol"></i> Equipo: Barcelona</li>
-      <li><i class="fas fa-user-tie"></i> Jugador: Messi</li>
-      <li><i class="fas fa-palette"></i> Color: Azul</li>
-      <li><i class="fas fa-dog"></i> Animal: Tigre</li>
-      <li><i class="fas fa-snowflake"></i> Época: Invierno</li>
-    </ul>
-  </center>
 </body>
 </html>
