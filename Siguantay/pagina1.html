@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería</title>
+    <link rel="icon" href="logo.png">
+    <!-- Fuente e iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Estilos -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #15d3ec, #c3cfe2);
+            color: #333;
+            text-align: center;
+            transition: background 1s ease;
+        }<i class="fas fa-eye icon"></i>
+        
+
+
+        img {
+            margin-top: 40px;
+            width: 150px;
+            animation: fadeIn 2s ease;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            font-size: 28px;
+            transition: color 0.3s;
+        }
+
+        h2:hover {
+            color: #3498db;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px auto 30px;
+            max-width: 600px;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: #3498db;
+            width: 300px;
+            margin: 20px auto;
+            transition: width 0.5s;
+        }
+
+        hr:hover {
+            width: 350px;
+        }
+
+        .icon {
+            font-size: 24px;
+            color: #e67e22;
+            margin-right: 10px;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Logo de Ferretería">
+    <hr>
+    
+    <h2><i class="fas fa-bullseye icon"></i>Misión</h2>
+    <p>Somos una empresa líder en productos de ferretería, ofreciendo alta calidad al mejor precio.</p>
+    <hr>
+
+    <h2><i class="fas fa-eye icon"></i>Visión</h2>
+    <p>Ser una empresa al servicio de los florenses todos los días, a toda hora.</p>
+    <hr>
+</body>
+</html>

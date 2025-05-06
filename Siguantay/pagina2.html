@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería</title>
+    <link rel="icon" href="logo.png">
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 30px;
+            font-size: 2.5em;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            width: 300px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content i {
+            color: #e67e22;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1><i class="fas fa-tools"></i> Productos de Ferretería</h1>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="herrramienta1.jpg" alt="Herramienta 1">
+            <div class="card-content">
+                <i class="fas fa-hammer"></i>
+                <p>Pulidora </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="herramienta2.jpg" alt="Herramienta 2">
+            <div class="card-content">
+                <i class="fas fa-wrench"></i>
+                <p>Martillo</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="herramienta3.jpg" alt="Herramienta 3">
+            <div class="card-content">
+                <i class="fas fa-screwdriver"></i>
+                <p>Cuchia</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="herramienta4.jpg" alt="Herramienta 4">
+            <div class="card-content">
+                <i class="fas fa-cogs"></i>
+                <p>Serrucho</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="herramienta5.jpg" alt="Herramienta 5">
+            <div class="card-content">
+                <i class="fas fa-toolbox"></i>
+                <p>Cuchara</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="herramienta6.jpg" alt="Herramienta 6">
+            <div class="card-content">
+                <i class="fas fa-hard-hat"></i>
+                <p>Asadon</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="herramienta7.jpg" alt="Herramienta 7">
+            <div class="card-content">
+                <i class="fas fa-bolt"></i>
+                <p>Pala</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="herramienta8.jpg" alt="Herramienta 8">
+            <div class="card-content">
+                <i class="fas fa-plug"></i>
+                <p>Uña</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="herramienta9.jpg" alt="Herramienta 9">
+            <div class="card-content">
+                <i class="fas fa-screwdriver-wrench"></i>
+                <p>Llave</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
