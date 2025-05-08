@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FERRETERÍA</title>
+    <link rel="icon" href="logo ferreteria.webp">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para íconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        marquee {
+            background-color: #ff9800;
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        header img {
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        hr {
+            width: 60%;
+            margin: 20px auto;
+            border: 2px solid #ff9800;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            margin-top: 30px;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <marquee><i class="fas fa-tools"></i> BIENVENIDOS A NUESTRA FERRETERÍA <i class="fas fa-hammer"></i></marquee>
+
+    <header>
+        <img src="logo ferreteria.webp" alt="Logo Ferretería">
+        <hr>
+    </header>
+
+    <div class="gallery">
+        <img src="imagen1.png" alt="Producto 1">
+        <img src="imagen2.png" alt="Producto 2">
+        <img src="imagen3.png" alt="Producto 3">
+        <img src="imagen4.png" alt="Producto 4">
+        <img src="imagen5.webp" alt="Producto 5">
+        <img src="imagen6.webp" alt="Producto 6">
+        <img src="imagen7.webp" alt="Producto 7">
+        <img src="imagen8.jpg" alt="Producto 8">
+        <img src="imagen9.webp" alt="Producto 9">
+    </div>
+
+    <footer>
+        <p><i class="fas fa-phone"></i> Contacto: 123-456-7890 | <i class="fas fa-envelope"></i> info@ferreteria.com</p>
+    </footer>
+
+</body>
+</html>
