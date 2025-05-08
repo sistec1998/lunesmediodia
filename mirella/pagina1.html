@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NETFLIX</title>
+    <link rel="icon" href="LOGO.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #141414;
+            color: white;
+        }
+
+        header {
+            background-color: #e50914;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header img {
+            width: 150px;
+            animation: logoFadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            text-align: left;
+            padding-left: 40px;
+            font-size: 2em;
+            margin-top: 50px;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .category {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            animation: fadeIn 2s;
+        }
+
+        .category img {
+            width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .category img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+        }
+
+        hr {
+            border: 1px solid #333;
+            margin: 40px 0;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes logoFadeIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="LOGO.png" alt="Netflix Logo">
+    </header>
+
+    <h1>Películas</h1>
+    <div class="category">
+        <img src="PELI1.avif" alt="Película 1">
+        <img src="PELI2.avif" alt="Película 2">
+        <img src="PELI4.avif" alt="Película 3">
+    </div>
+
+    <hr>
+
+    <h1>Series</h1>
+    <div class="category">
+        <img src="serie1.jpg" alt="Serie 1">
+        <img src="serie2.avif" alt="Serie 2">
+        <img src="serie3.jpg" alt="Serie 3">
+    </div>
+
+    <hr>
+
+    <h1>Animación</h1>
+    <div class="category">
+        <img src="anime1.webp" alt="Anime 1">
+        <img src="anime2.webp" alt="Anime 2">
+        <img src="anime3.webp" alt="Anime 3">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NETFLIX</title>
+    <link rel="icon" href="LOGO.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #141414;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #e50914;
+            text-align: center;
+            padding: 20px;
+            animation: fadeDown 1.5s ease-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #1c1c1c;
+            display: inline-block;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            animation: fadeIn 2s;
+        }
+
+        label {
+            font-size: 1rem;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 250px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #e50914;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #b00610;
+        }
+
+        details {
+            margin-top: 40px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        summary {
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        details img {
+            width: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        details img:hover {
+            transform: scale(1.05);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        ul::before {
+            content: "🎯 ";
+            font-weight: bold;
+        }
+
+        li {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #e50914;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BIENVENIDOS AL MENÚ DE NETFLIX</h1>
+    </header>
+
+    <main>
+        <h2>LLENE EL FORMULARIO</h2>
+
+        <form>
+            <label>🎬 ¿Qué película quieres ver?</label><br>
+            <input type="text"><br>
+            <button>BUSCAR</button><br><br>
+
+            <label>📺 ¿Qué serie quieres ver?</label><br>
+            <input type="text"><br>
+            <button>BUSCAR</button><br><br>
+
+            <label>🎨 ¿Qué animación quieres ver?</label><br>
+            <input type="text"><br>
+            <button>BUSCAR</button><br><br>
+
+            <hr><br>
+
+            <details>
+                <summary>🔥 MÁS POPULARES</summary>
+                <img src="PELI1.avif" alt="Popular 1">
+                <img src="anime1.webp" alt="Popular 2">
+                <img src="anime1.webp" alt="Popular 3">
+            </details>
+
+            <hr>
+
+            <ul>
+                <strong>SUGERIDAS</strong>
+                <li>BRIDGERTON</li>
+                <li>Kimetsu no Yaiba</li>
+                <li>MI FELIZ MATRIMONIO</li>
+            </ul>
+
+            <hr>
+
+            <a href="pagina1.html">🔝 MÁS VISTAS</a>
+        </form>
+    </main>
+
+</body>
+</html>
