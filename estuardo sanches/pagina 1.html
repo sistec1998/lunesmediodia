@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa Deportiva</title>
+    <link rel="icon" href="logo.png">
+
+    <!-- Fuente e Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background: #f0f8ff;
+            color: #003366;
+            text-align: center;
+        }
+
+        header {
+            background-color: #007BFF;
+            padding: 20px;
+            color: white;
+        }
+
+        h1, h2 {
+            margin: 20px 0;
+        }
+
+        hr {
+            width: 80%;
+            border: 2px solid #007BFF;
+            margin: 30px auto;
+        }
+
+        img {
+            margin: 15px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 255, 0.3);
+        }
+
+        figcaption {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .icon-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1.1em;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            margin: 20px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" width="150" alt="Logo">
+        <h1><i class="fas fa-running"></i> Zapatos Deportivos para Hombre</h1>
+    </header>
+
+    <h2><i class="fas fa-list"></i> Catálogo</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="zapato 1.webp" width="300" alt="Puma Aries">
+            <figcaption>Q 450 - Puma x Aries Mostro Craft</figcaption>
+        </div>
+        <div class="product">
+            <img src="zapato 2.avif" width="300" alt="Deasy Rider">
+            <figcaption>Q 350 - Deasy Rider Pride</figcaption>
+        </div>
+        <div class="product">
+            <img src="zapatos 3.jpg" width="300" alt="Suede Classic">
+            <figcaption>Q 400 - Tenis Suede Classic</figcaption>
+        </div>
+        <div class="product">
+            <img src="zapatos 4.webp" width="300" alt="Speedcat OG">
+            <figcaption>Q 250 - Speedcat OG</figcaption>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2><i class="fas fa-user"></i> Contacto del Programador</h2>
+    <p class="icon-text"><i class="fas fa-code"></i> Edwin Barrios</p>
+
+    <footer>
+        <p>&copy; 2025 Ropa Deportiva. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
