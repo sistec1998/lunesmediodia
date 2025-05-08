@@ -1,0 +1,78 @@
+<html>  
+    <head>
+        <title>Ferreteria</title>
+        <link rel="icon" href="logo-ferreteria.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <style>
+            body {
+                background-color: #121212;
+                color: white;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 20px;
+                transition: background-color 0.5s ease;
+            }
+
+            marquee {
+                color: #ffd700;
+                font-size: 24px;
+                font-weight: bold;
+                animation: fadeIn 2s ease-in-out;
+            }
+
+            img {
+                margin: 10px;
+                border-radius: 8px;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+
+            img:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 10px #00bfff;
+            }
+
+            h1 {
+                color: #00bfff;
+                margin-top: 30px;
+                font-size: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            h1::before {
+                content: "\f6e3";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                color: #00bfff;
+            }
+
+            hr {
+                border: 1px solid #00bfff;
+                width: 60%;
+                margin: 20px auto;
+            }
+
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        </style>
+    </head>
+<body>
+    <marquee behavior="" direction=""> Bienvenidos </marquee>
+    <img src="logo-ferreteria.png" width="300">
+    <h1>Productos</h1>
+    <hr>
+    <img src="martillo.webp" width="100">
+    <img src="metro.jpg" width="100">
+    <img src="img3.jpg" width="100">
+    <img src="img4.jpg" width="100">
+    <img src="img5.jpg" width="100">
+    <img src="img6.webp" width="100">
+    <img src="img7.jpg" width="100">
+    <img src="img8.jpg" width="100">
+    <img src="img9.png" width="100">
+</body>
+</html>
