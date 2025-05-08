@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferretería</title>
+  <link rel="icon" href="ferreteria.png">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f0f0f0, #dfe9f3);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    h1 {
+      color: #1a73e8;
+      font-size: 2.5em;
+      margin-top: 20px;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #1a73e8;
+      width: 80%;
+      margin-bottom: 30px;
+    }
+
+    .bienvenido {
+      font-size: 2em;
+      font-weight: bold;
+      color: #ff5722;
+      animation: slideText 5s infinite alternate;
+      margin-top: 20px;
+    }
+
+    .productos img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .productos img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    @keyframes slideText {
+      0% { transform: translateX(-100%); opacity: 0; }
+      50% { transform: translateX(0); opacity: 1; }
+      100% { transform: translateX(100%); opacity: 0; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bienvenido">BIENVENIDO</div>
+  <img src="ferreteria.png" width="300" alt="Logo Ferretería">
+
+  <h1>Productos</h1>
+  <hr>
+
+  <div class="productos">
+    <img src="martillo.webp" alt="Martillo">
+    <img src="clavos.jpg" alt="Clavos">
+    <img src="barreno.jpg" alt="Barreno">
+    <img src="ina lambrico.webp" alt="Ina Lambrico">
+    <img src="lamina.png" alt="Lámina">
+    <img src="carreta.jpg" alt="Carreta">
+    <img src="cierra.webp" alt="Cierra">
+    <img src="cerrucho.jpg" alt="Cerrucho">
+    <img src="Destornillador.jpg" alt="Destornillador">
+  </div>
+
+</body>
+</html>
