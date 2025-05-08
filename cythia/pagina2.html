@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FERRETERIA</title>
+    <link rel="icon" href="logo-ferreteria-sanchez.gif">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #1E1E1E;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #f5f5f5;
+            text-align: center;
+        }
+
+        img[alt="Logo"] {
+            margin-top: 20px;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #FF9800;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #FF9800;
+        }
+
+        input[type="text"] {
+            width: 250px;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            transition: box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus {
+            box-shadow: 0 0 10px #FF9800;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #FF9800;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #1E1E1E;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e68900;
+        }
+
+        a {
+            color: #FF9800;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ffc265;
+        }
+
+        h2 {
+            color: #FF9800;
+        }
+
+        marquee img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        marquee img:hover {
+            transform: scale(1.1);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+
+        ul::before {
+            content: "📌 ";
+            font-size: 1.2em;
+            color: #FF9800;
+        }
+
+        li {
+            margin: 5px 0;
+            position: relative;
+        }
+
+        li::before {
+            content: "🔧 ";
+            margin-right: 8px;
+            color: #FF9800;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo-ferreteria-sanchez.gif" width="250" alt="Logo">
+    <hr>
+
+    <form>
+        <label><i class="fas fa-search"></i> ¿QUÉ BUSCAS?</label><br><br>
+        <input type="text" placeholder="Buscar herramienta..."><br><br>
+        <button type="submit"><i class="fas fa-search"></i> BUSCAR</button>
+    </form>
+
+    <br>
+    <hr>
+    <a href="pagina1.html"><i class="fas fa-box-open"></i> VER PRODUCTOS</a>
+    <hr>
+
+    <h2><i class="fas fa-tags"></i> PROMOCIÓN</h2>
+    <marquee scrollamount="10">
+        <img src="serrucho.webp" alt="Serrucho">
+        <img src="carretilla.webp" alt="Carretilla">
+        <img src="destornillador.png" alt="Destornillador">
+    </marquee>
+
+    <ul>
+        LO MÁS BUSCADO
+        <li>Martillo</li>
+        <li>Serrucho</li>
+        <li>Lamina</li>
+        <li>Cemento</li>
+        <li>Tenaza</li>
+    </ul>
+
+</body>
+</html>
