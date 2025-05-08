@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SHEIN</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(90deg, #00cfff, #a7ecff);
+            color: white;
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        img.logo {
+            width: 300px;
+            margin: 20px 0;
+            animation: bounce 2s infinite;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        h1, h2 {
+            color: #00aaff;
+        }
+
+        details {
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 1.2em;
+        }
+
+        summary {
+            cursor: pointer;
+            background-color: #e0f7ff;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        marquee img {
+            margin: 0 10px;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        hr {
+            border: 1px solid #00cfff;
+            margin: 30px auto;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <header><i class="fa-solid fa-star"></i> BIENVENIDOS A SHEIN <i class="fa-solid fa-star"></i></header>
+
+    <marquee behavior="" direction="">BIENVENIDOS A SHEIN</marquee>
+
+    <img src="logo.png" alt="Logo de SHEIN" class="logo">
+
+    <p>
+        <i class="fa-solid fa-shirt"></i>
+        SHEIN es una empresa global de moda rápida en línea,
+        conocida por ofrecer ropa, accesorios, calzado y otros productos a precios muy bajos.
+    </p>
+
+    <hr>
+
+    <h1><i class="fa-solid fa-magnifying-glass"></i> Explore nuestra variedad</h1>
+
+    <details>
+        <summary><i class="fa-solid fa-ring"></i> Accesorios</summary>
+        <img src="acc1.webp" width="120">
+        <img src="acc2.webp" width="120">
+        <img src="acc3.jpg" width="120">
+        <img src="acc4.jpg" width="120">
+    </details>
+
+    <details>
+        <summary><i class="fa-solid fa-shirt"></i> Playeras</summary>
+        <img src="pla1.png" width="120">
+        <img src="pla2.png" width="120">
+        <img src="pla3.webp" width="120">
+        <img src="pla4.png" width="120">
+    </details>
+
+    <details>
+        <summary><i class="fa-solid fa-user"></i> Pantalones</summary>
+        <img src="pa1.png" width="120">
+        <img src="pa2.png" width="120">
+        <img src="pa3.jpg" width="120">
+        <img src="pa4.png" width="120">
+    </details>
+
+    <h2><i class="fa-solid fa-tags"></i> Ofertas</h2>
+    <marquee behavior="" direction="">
+        <img src="acc2.webp" width="100">
+        <img src="pa2.png" width="100">
+        <img src="pa3.jpg" width="100">
+        <img src="acc3.jpg" width="100">
+        <img src="pla2.png" width="100">
+    </marquee>
+</body>
+</html>

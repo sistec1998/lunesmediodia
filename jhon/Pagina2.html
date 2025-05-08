@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SHEIN</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        marquee img {
+            width: 30px;
+            margin: 0 10px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        img.logo {
+            width: 300px;
+            margin: 20px auto;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        h2 {
+            color: #00aaff;
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #00cfff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #009ecf;
+            transform: scale(1.05);
+        }
+
+        hr {
+            width: 60%;
+            margin: 20px auto;
+            border: 1px solid #00cfff;
+        }
+
+        form {
+            background-color: #e6f9ff;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        form:hover {
+            transform: scale(1.02);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #00cfff;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #00cfff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #009ecf;
+            transform: scale(1.05);
+        }
+
+        ul {
+            text-align: left;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            font-size: 1em;
+            margin: 5px 0;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        ul li:hover {
+            transform: translateX(10px);
+            color: #00aaff;
+        }
+    </style>
+</head>
+<body>
+
+    <marquee behavior="" direction="">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        <img src="logo.png">
+        
+    </marquee>
+
+    <img src="logo.png" alt="Logo SHEIN" class="logo">
+
+    <h2><i class="fa-solid fa-compass"></i> Explorar más</h2>
+    <a href="pagina1.html"><i class="fa-solid fa-store"></i> Variedades</a>
+
+    <hr>
+
+    <form>
+        <label for="busqueda"><i class="fa-solid fa-magnifying-glass"></i> ¿Qué busca?</label>
+        <input type="text" id="busqueda" placeholder="Ej. camisa, pantalón...">
+        <button type="submit"><i class="fa-solid fa-search"></i> Buscar</button>
+
+        <hr>
+        <h2><i class="fa-solid fa-fire"></i> Más buscados</h2>
+        <ul>
+            <li><i class="fa-solid fa-pants"></i> Pantalón</li>
+            <li><i class="fa-solid fa-shirt"></i> Camisa</li>
+            <li><i class="fa-solid fa-clock"></i> Reloj</li>
+            <li><i class="fa-solid fa-grip-lines"></i> Cinturón</li>
+            <li><i class="fa-solid fa-gem"></i> Collares</li>
+            <li><i class="fa-solid fa-shoe-prints"></i> Zapatos</li>
+        </ul>
+    </form>
+
+</body>
+</html>
