@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ropa Deportiva</title>
+  <link rel="icon" href="Puma-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f0f0f0, #d9e0e7);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      color: #222;
+      text-transform: uppercase;
+      margin-top: 20px;
+      animation: fadeInDown 1s ease;
+    }
+
+    h2 {
+      color: #444;
+      margin-top: 30px;
+      animation: fadeIn 2s ease;
+    }
+
+    img {
+      margin: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    figcaption {
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 10px;
+      animation: fadeInUp 1s ease;
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      background: #444;
+      width: 70%;
+      margin: 30px auto;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .contact i {
+      margin-right: 10px;
+      color: #e91e63;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="Puma-logo.png" width="300" alt="Puma Logo">
+  <hr>
+
+  <h1><i class="fa-solid fa-shoe-prints"></i> Zapatos Deportivos para Hombre</h1>
+  <h2><i class="fa-solid fa-list"></i> Catálogo</h2>
+
+  <div>
+    <img src="zapato1.avif" width="300" alt="Zapato 1">
+    <figcaption>Q450 - PUMA X ARIES MOSTRO CRAFT</figcaption>
+
+    <img src="zapato 2.avif" width="300" alt="Zapato 2">
+    <figcaption>530Q - TENIS EASY RIDER PRIDE</figcaption>
+
+    <img src="zapato3.avif" width="300" alt="Zapato 3">
+    <figcaption>450Q - TENIS SUEDE CLASSIC</figcaption>
+
+    <img src="zapato 4.avif" width="300" alt="Zapato 4">
+    <figcaption>520Q - SPEEDCAT OG</figcaption>
+  </div>
+
+  <hr>
+
+  <h2><i class="fa-solid fa-user"></i> Contacto del Programador</h2>
+  <p class="contact">
+    <i class="fa-solid fa-envelope"></i> programador@ejemplo.com <br>
+    <i class="fa-brands fa-whatsapp"></i> +502 1234 5678
+  </p>
+
+</body>
+</html>
