@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Shazam</title>
+  <link rel="icon" href="shazam.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #ffc0cb; /* fondo rosado */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    img.logo {
+      width: 200px;
+      transition: transform 0.5s ease;
+    }
+
+    img.logo:hover {
+      transform: scale(1.1);
+    }
+
+    hr {
+      width: 700px;
+      border: 1px solid #fff;
+    }
+
+    marquee {
+      font-size: 20px;
+      color: #b30059;
+      font-weight: bold;
+    }
+
+    form {
+      margin: 30px auto;
+      width: 300px;
+      padding: 20px;
+      background-color: #fff0f5;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      transition: border 0.3s;
+    }
+
+    input:focus {
+      border: 2px solid #ff69b4;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      width: 240px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    h2, h3 {
+      color: #99004d;
+    }
+
+    ol, ul {
+      text-align: left;
+      display: inline-block;
+    }
+
+    a {
+      display: block;
+      margin-top: 20px;
+      color: #660033;
+    }
+
+  </style>
+</head>
+<body>
+
+  <img src="shazam.jpg" class="logo" alt="Logo de Shazam">
+  <hr>
+  <marquee>BIENVENIDO A SHAZAM <i class="fa-solid fa-music"></i></marquee>
+
+  <form>
+    <label><i class="fa-solid fa-envelope"></i> Correo</label><br>
+    <input type="text" placeholder="Ingresa tu correo"><br>
+
+    <label><i class="fa-solid fa-lock"></i> Contraseña</label><br>
+    <input type="password" placeholder="Ingresa tu contraseña"><br>
+
+    <button><i class="fa-solid fa-right-to-bracket"></i> Entrar</button>
+  </form>
+
+  <hr>
+  <h2>Las mejores músicas de pop</h2>
+  <h3>Identifica la música que está sonando a tu alrededor</h3>
+  <h3>5 artistas de pop</h3>
+  <hr>
+
+  <details>
+    <summary>Ver artistas</summary>
+    <div class="card-container">
+      <div class="card"><img src="bichota.webp" alt="Karol G"></div>
+      <div class="card"><img src="ariana.jpg" alt="Ariana Grande"></div>
+      <div class="card"><img src="rihanna.webp" alt="Rihanna"></div>
+      <div class="card"><img src="canche.png" alt="Canche"></div>
+      <div class="card"><img src="teylor.jpg" alt="Taylor Swift"></div>
+    </div>
+  </details>
+
+  <ol>
+    <li><i class="fa-solid fa-star"></i> Bichota - Karol G</li>
+    <li><i class="fa-solid fa-star"></i> Rihanna Fenty</li>
+    <li><i class="fa-solid fa-star"></i> Ariana Grande</li>
+  </ol>
+
+  <ul>
+    <li><i class="fa-solid fa-microphone"></i> Taylor Swift</li>
+    <li><i class="fa-solid fa-microphone"></i> Billie Eilish</li>
+  </ul>
+
+  <a href="pagina1.html"><i class="fa-solid fa-arrow-right"></i> Ir a la página 1</a>
+
+</body>
+</html>
