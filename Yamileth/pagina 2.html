@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LEZHIN</title>
+    <link rel="icon" href="logo lezhin.png">
+    <!-- Iconos de redes sociales -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(-45deg, #000000, #8b0000);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            text-align: center;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h2, p, label {
+            transition: all 0.3s ease;
+        }
+
+        h2:hover {
+            color: #ffcccc;
+            transform: scale(1.05);
+        }
+
+        marquee {
+            font-size: 24px;
+            color: #ff5555;
+            font-weight: bold;
+        }
+
+        img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 300px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #e60023;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff0033;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            font-size: 30px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff4d4d;
+        }
+
+        hr {
+            border: 1px solid #fff;
+            width: 80%;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <marquee>BIENVENIDO A LEZHIN</marquee>
+
+    <img src="logo lezhin.png" alt="Logo Lezhin">
+
+    <form>
+        <label for="busqueda">¿QUÉ MANHWA BL BUSCAS?</label><br><br>
+        <input type="text" id="busqueda" placeholder="Ej. Semantic Error"><br><br>
+        <button type="submit">BUSCAR</button>
+    </form>
+
+    <hr>
+
+    <h2>ALGUNOS MANHWAS BL DE REFERENCIA</h2>
+    <a href="Pagina 1.html" style="color: #ff9999;">Ver lista de Manhwas BL</a>
+
+    <hr>
+
+    <h2>¿QUÉ ES LEZHIN?</h2>
+    <p>
+        Lezhin es una plataforma digital de origen surcoreano especializada en la publicación y 
+        distribución de webtoons, cómics digitales en formato vertical. Fundada en 2013, ofrece 
+        contenido de varios géneros, destacando en BL (Boys' Love) y GL (Girls' Love).
+    </p>
+
+    <hr>
+
+    <h2>MANHWAS BL DE REFERENCIA POPULARES</h2>
+    <marquee behavior="scroll" direction="left">
+        <img src="la nube.jpg" alt="La Nube">
+        <img src="pintort nocturno.jpg" alt="Pintor Nocturno">
+        <img src="señas.jpg" alt="Señas">
+    </marquee>
+
+    <div class="social-icons">
+        <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <hr>
+
+</body>
+</html>
