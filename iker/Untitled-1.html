@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Los Mochileros</title>
+    <link rel="icon" href="logo mochila.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #000;
+            animation: cambioColor 20s infinite;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        @keyframes cambioColor {
+            0%   { background-color: #f0f8ff; }
+            25%  { background-color: #ffe4e1; }
+            50%  { background-color: #e6ffe6; }
+            75%  { background-color: #fffacd; }
+            100% { background-color: #f0f8ff; }
+        }
+
+        .dark-mode {
+            background-color: #1a1a1a !important;
+            color: #e0e0e0;
+            animation: none !important;
+        }
+
+        marquee {
+            font-weight: bold;
+            color: #333;
+            background-color: #dff0d8;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .dark-mode marquee {
+            background-color: #333;
+            color: #a0ffcc;
+        }
+
+        img {
+            margin: 10px;
+            transition: transform 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+
+        button:hover {
+            background-color: #357a38;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo mochila.jpg" width="250">
+        <hr width="1000">
+        <marquee>Las mejores mochilas del país</marquee>
+        <p>
+            En Mochileros somos tu mejor opción de tienda para comprar una mochila porque no solo contamos 
+            con una gran variedad de mochilas, sino que también ofrecemos un descuento del 46% en tu 
+            primera compra.
+        </p>
+
+        <img src="mono.webp" width="300">
+        <img src="images.jpg" width="300">
+        <img src="multiusos.png" width="300">
+        <img src="trillisos.png" width="300">
+        <img src="imagen 2.jpg" width="300">
+
+        <br>
+        <button onclick="activarModoOscuro()">Modo Oscuro</button>
+    </center>
+
+    <script>
+        function activarModoOscuro() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
