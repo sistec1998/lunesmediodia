@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Música FVR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f8ff;
+      color: #003366;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px 0;
+    }
+
+    img.logo {
+      width: 100px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    img.logo:hover {
+      transform: scale(1.1);
+    }
+
+    h2 {
+      margin-top: 10px;
+    }
+
+    hr {
+      width: 80%;
+      border: 1px solid #007BFF;
+    }
+
+    p {
+      padding: 0 20px;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-size: 1.2em;
+      margin: 20px 0;
+      color: #007BFF;
+    }
+
+    .music-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .music-images img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+
+    .music-images img:hover {
+      transform: scale(1.05);
+    }
+
+    marquee {
+      font-weight: bold;
+      color: #0056b3;
+      margin: 20px 0;
+    }
+
+    form {
+      margin: 30px auto;
+      width: 80%;
+      max-width: 400px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #007BFF;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .social-icons {
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 30px;
+      color: #007BFF;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo FVR" class="logo">
+    <h2>Músicas</h2>
+  </header>
+
+  <hr>
+
+  <p>Esta página está formada por músicas más populares de la región y el mundo. Son escuchadas por los cantantes más famosos y por mucha gente a nivel internacional.</p>
+
+  <details>
+    <summary>Músicas bélicas</summary>
+    <div class="music-images">
+      <img src="5-7.jpg" alt="5-7">
+      <img src="coqueta.jpg" alt="Coqueta">
+      <img src="dosdias.jpg" alt="Dos Días">
+      <img src="rosones.jpg" alt="Rosones">
+      <img src="teamo.jpg" alt="Te Amo">
+      <img src="enculado.jpg" alt="Enculado">
+    </div>
+  </details>
+
+  <hr>
+
+  <marquee behavior="scroll" direction="left">Músicas chileras</marquee>
+
+  <div class="music-images">
+    <img src="enculado.jpg" alt="Enculado">
+    <img src="teamo.jpg" alt="Te Amo">
+    <img src="dosdias.jpg" alt="Dos Días">
+  </div>
+
+  <hr>
+
+  <a href="pagina1.html">Ir a más música</a>
+
+  <form>
+    <label>¿Qué quieres escuchar?</label>
+    <input type="text" placeholder="Escribe una canción o artista">
+    <button type="submit">Buscar</button>
+  </form>
+
+  <div class="social-icons">
+    <a href="https://wa.me/tu_numero" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com/tu_usuario" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com/tu_usuario" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+  </div>
+</body>
+</html>
