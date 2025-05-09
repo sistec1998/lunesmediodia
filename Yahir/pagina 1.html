@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUTBOL</title>
+  <link rel="icon" href="png-clipart-football-team-logo-american-football-football-leaf-sport-thumbnail.png">
+  <style>
+    /* Fondo neón animado */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(-45deg, #0ff, #00f, #f0f, #0f0);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      transition: background 0.5s, color 0.5s;
+      color: white;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .dark-mode {
+      background: #111;
+      color: #eee;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 2px solid #0ff;
+      border-radius: 10px;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 0 15px #0ff;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #0ff;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    button {
+      margin: 20px;
+      padding: 10px 20px;
+      background: #fff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    button:hover {
+      background: #000;
+      color: #0ff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 5px 0;
+    }
+
+    marquee {
+      font-size: 24px;
+      color: #0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button onclick="toggleMode()">Cambiar Modo Claro/Oscuro</button>
+
+    <marquee>BIENVENID@S</marquee>
+    <div class="card">
+      <img src="png-clipart-football-team-logo-american-football-football-leaf-sport-thumbnail.png" width="200">
+      <h1>HISTORIA DE FUTBOL</h1>
+      <p>El futbol americano era relativamente nuevo en 1892. Sus raíces se remontan 
+      a dos deportes: el futbol y el rugby, que gozaban de gran popularidad. El 6 de noviembre 
+      de 1869 se jugó el primer partido de futbol.</p>
+    </div>
+
+    <div class="card">
+      <h2>MEJOR JUGADOR</h2>
+      <img src="messi-1805.jpg" alt="Messi" width="300">
+    </div>
+
+    <div class="card">
+      <h2>MEJOR CLUB</h2>
+      <img src="barcelona.jpg" alt="Barcelona" width="300">
+    </div>
+
+    <div class="card">
+      <h2>JUGADOR PROMESA</h2>
+      <img src="images.jpg" alt="Jugador promesa">
+    </div>
+
+    <div class="card">
+      <h2>MEJOR SELECCIÓN</h2>
+      <img src="BRACIL.png" alt="Brasil" width="200">
+    </div>
+
+    <div class="card">
+      <h2>CINCO MEJORES JUGADORES</h2>
+      <ul>
+        <li>Leonel Messi</li>
+        <li>Cristiano Ronaldo</li>
+        <li>Pelé</li>
+        <li>Maradona</li>
+        <li>Johan Cruyff</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>CINCO MEJORES PORTEROS</h2>
+      <ul>
+        <li>Lew Yashin</li>
+        <li>Thibaut Courtois</li>
+        <li>Gianluigi Donnarumma</li>
+        <li>Emiliano Martinez</li>
+        <li>Gianluigi Buffon</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
