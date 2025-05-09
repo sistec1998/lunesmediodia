@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PINTEREST</title>
+    <link rel="icon" href="logo pinterest.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff512f, #f09819); /* Difuminado rojo-naranja */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        hr {
+            border: 1px solid white;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .image-card {
+            display: inline-block;
+            width: 300px;
+            height: 390px;
+            margin: 15px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .image-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+        }
+
+        .image-card img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PINTEREST</h1>
+    <hr>
+    <div class="image-card">
+        <img src="logo pinterest.png" alt="Logo Pinterest">
+    </div>
+    <hr>
+    <h2>Pinterest es una página en donde puedes buscar tus imágenes a tu gusto y como
+        quieras. Está programado para obedecer y conseguir la imagen que gustas. Por ejemplo:
+    </h2>
+    <hr>
+    <h2>ANIME</h2>
+    <div class="image-card"><img src="ania.jpeg" alt="Ania"></div>
+    <div class="image-card"><img src="eren.jpg" alt="Eren"></div>
+    <div class="image-card"><img src="gojo saturo.jpg" alt="Gojo"></div>
+    <hr>
+    <h2>FONDO DE PANTALLA</h2>
+    <div class="image-card"><img src="cielo.jpg" alt="Cielo"></div>
+    <div class="image-card"><img src="parque.jpg" alt="Parque"></div>
+    <div class="image-card"><img src="fondo de pantalla.jpg" alt="Fondo de pantalla"></div>
+    <hr>
+    <h2>DIBUJOS</h2>
+    <div class="image-card"><img src="chica.jpg" alt="Chica"></div>
+    <div class="image-card"><img src="alicia.jpg" alt="Alicia"></div>
+    <div class="image-card"><img src="hongos.jpg" alt="Hongos"></div>
+</body>
+</html>
