@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Música FVR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #e6f2ff;
+      color: #003366;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h2 {
+      color: #0059b3;
+      margin-top: 20px;
+      transition: transform 0.3s;
+    }
+
+    h2:hover {
+      transform: scale(1.05);
+    }
+
+    p {
+      max-width: 80%;
+      margin: auto;
+      font-size: 1.1em;
+    }
+
+    hr {
+      border: 1px solid #3399ff;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    img {
+      width: 250px;
+      height: auto;
+      margin: 10px;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    details {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #cce6ff;
+      border-radius: 10px;
+      padding: 15px;
+      transition: all 0.4s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    details[open] {
+      background-color: #b3d9ff;
+    }
+
+    summary {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #004080;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    summary:hover {
+      color: #0066cc;
+    }
+
+    marquee {
+      color: #004a99;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      margin: 30px auto;
+      background-color: #d9ecff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 60%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input, button {
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    input {
+      width: 70%;
+    }
+
+    button {
+      background-color: #3399ff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #007acc;
+    }
+
+  </style>
+</head>
+<body>
+
+  <img src="musica.png" alt="Logo música" width="200"/>
+
+  <h2>Músicas</h2>
+  <hr />
+
+  <p>
+    Esta página está formada por las músicas más escuchadas y favoritas del mundo, en tendencia, escuchadas por famosos y bailadas por todo el mundo.
+  </p>
+
+  <details>
+    <summary>Músicas bélicas</summary>
+    <img src="rasones.jpg" alt="Razones" />
+    <img src="tu si.jpg" alt="Tú Sí" />
+    <img src="asta la muerte.jpg" alt="Hasta la Muerte" />
+    <img src="por esos ojos.jpg" alt="Por Esos Ojos" />
+    <img src="dos dias.jpg" alt="Dos Días" />
+  </details>
+
+  <hr />
+
+  <marquee behavior="scroll" direction="left">Músicas chidas</marquee>
+  <img src="tu si.jpg" alt="Tú Sí" />
+  <img src="asta la muerte.jpg" alt="Hasta la Muerte" />
+  <img src="por esos ojos.jpg" alt="Por Esos Ojos" />
+
+  <hr />
+  <a href="pagina 1.html">Ir a más músicas</a>
+
+  <form>
+    <label for="musica">¿Qué quieres escuchar?</label><br>
+    <input type="text" id="musica" name="musica" placeholder="Escribe el nombre de la canción"><br>
+    <button type="submit">Buscar</button>
+  </form>
+
+</body>
+</html>
