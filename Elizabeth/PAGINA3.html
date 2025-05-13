@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VIAJES</title>
+  <link rel="icon" href="logo.png" />
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #b3e5fc; /* celeste */
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    img.logo {
+      width: 300px;
+      margin: 20px auto;
+      display: block;
+      transition: transform 0.5s;
+    }
+
+    img.logo:hover {
+      transform: scale(1.1);
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: #0288d1;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: background-color 0.3s, transform 0.3s;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    a:hover {
+      background-color: #01579b;
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 70%;
+      border: 2px solid white;
+      margin: 30px auto;
+    }
+
+    h2 {
+      color: #d32f2f;
+      margin-top: 30px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    p, ol {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transition: box-shadow 0.3s, border-color 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #0288d1;
+      box-shadow: 0 0 8px #0288d1;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0288d1;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #01579b;
+      transform: scale(1.05);
+    }
+
+    marquee {
+      margin-top: 20px;
+    }
+
+    .card-img {
+      display: inline-block;
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card-img img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" class="logo" alt="Logo">
+
+  <div>
+    <a href="PAGINA1.html"><i class="fas fa-map-marked-alt"></i> LUGARES</a>
+    <a href="PAGINA2.html"><i class="fas fa-plane"></i> RESERVAR</a>
+  </div>
+
+  <hr>
+
+  <h2><i class="fas fa-bullseye"></i> NUESTRA MISIÓN</h2>
+  <p>Brindar experiencias de viaje inolvidables que conecten a las personas con nuevos destinos, culturas y emociones, a través de un servicio personalizado, seguro y accesible. Nos comprometemos a hacer del viaje de cada cliente una aventura única, superando sus expectativas en cada etapa del camino.</p>
+
+  <h2><i class="fas fa-eye"></i> NUESTRA VISIÓN</h2>
+  <p>Ser la agencia de viajes líder en Latinoamérica reconocida por su innovación, calidad y compromiso con la satisfacción total del cliente, inspirando a más personas a descubrir el mundo con confianza, comodidad y responsabilidad.</p>
+
+  <h2><i class="fas fa-search-location"></i> ¿A DÓNDE TE GUSTARÍA IR?</h2>
+  <input type="text" placeholder="Ingresa un destino...">
+  <button><i class="fas fa-search"></i> BUSCAR</button>
+
+  <hr>
+
+  <h2><i class="fas fa-star"></i> POR SI TE INTERESA!</h2>
+  <marquee behavior="scroll" direction="left" scrollamount="8">
+    <div class="card-img"><img src="guatemala.jpeg" alt="Guatemala"></div>
+    <div class="card-img"><img src="felipe.jpg" alt="San Felipe"></div>
+    <div class="card-img"><img src="monte.jpg" alt="Monterrico"></div>
+  </marquee>
+
+  <h2><i class="fas fa-fire"></i> LO MÁS VISITADO</h2>
+  <ol>
+    <li>PANAJACHEL</li>
+    <li>RIO DULCE</li>
+    <li>SEMUC CHAMPEY</li>
+    <li>LAGO ITZÁ FLORES PETÉN</li>
+  </ol>
+
+</body>
+</html>
