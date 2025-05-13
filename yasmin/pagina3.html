@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VIAJES</title>
+  <link rel="icon" href="logo.png" />
+  <style>
+    /* Fondo rosado animado */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(270deg, #ffc0cb, #ffe4e1, #ffb6c1);
+      background-size: 600% 600%;
+      animation: fondoAnimado 20s ease infinite;
+      color: #333;
+      text-align: center;
+    }
+
+    @keyframes fondoAnimado {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h2 {
+      color: red;
+      font-size: 1.8em;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    h2:hover {
+      transform: scale(1.05);
+    }
+
+    p {
+      width: 70%;
+      margin: auto;
+      font-size: 1.1em;
+      line-height: 1.5em;
+    }
+
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ff1493;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #c71585;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      transition: box-shadow 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      box-shadow: 0 0 10px #ff69b4;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #ff69b4;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+      transform: scale(1.05);
+    }
+
+    hr {
+      border: 1px solid #ff69b4;
+    }
+
+    /* Estilo de tarjeta para imágenes */
+    .card {
+      display: inline-block;
+      background: white;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      border-radius: 10px;
+    }
+
+    marquee {
+      padding: 20px 0;
+    }
+
+    ol {
+      list-style-position: inside;
+      font-size: 1.1em;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo.png" width="300" alt="Logo" />
+    <br /><br /><br />
+    <a href="pagina1.html">LUGARES</a>
+    <a href="pagina2.html">RESERVA</a>
+
+    <hr width="700" />
+
+    <h2>NUESTRA MISIÓN</h2>
+    <p>
+      "Brindar experiencias de viaje inolvidables que enriquezcan la vida de nuestros clientes, ofreciendo un servicio personalizado, seguro y de alta calidad. Nos comprometemos a facilitar cada etapa del viaje, promoviendo el turismo sostenible y el respeto por las culturas locales."
+    </p>
+
+    <h2>VISIÓN</h2>
+    <p>
+      "Ser la agencia de viajes líder y más confiable en la región, reconocida por innovar en experiencias turísticas, fomentar el turismo responsable y crear conexiones auténticas entre personas, culturas y destinos."
+    </p>
+
+    <h2>¿A DÓNDE TE GUSTARÍA IR?</h2>
+    <input type="text" placeholder="Escribe un destino..." />
+    <button>BUSCAR</button>
+
+    <hr width="700" />
+
+    <h2>POR SI TE INTERESA</h2>
+    <marquee>
+      <div class="card"><img src="ima1.jpeg" width="250" height="250" /></div>
+      <div class="card"><img src="img2.webp" width="250" height="250" /></div>
+      <div class="card"><img src="img3.jpg" width="250" height="250" /></div>
+    </marquee>
+
+    <h2>LO MÁS VISITADO</h2>
+    <ol>
+      <li>PANAJACHEL</li>
+      <li>RIO DULCE</li>
+      <li>CHAMPEY</li>
+      <li>LAGO ITZÁ FLORES PETÉN</li>
+    </ol>
+  </center>
+</body>
+</html>

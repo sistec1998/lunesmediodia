@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIAJES</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      background-color: #ffe6f0; /* fondo rosado suave */
+      font-family: Arial, sans-serif;
+      color: #b30059; /* rosa oscuro */
+      transition: background-color 1s ease;
+    }
+
+    h1, h2, h3 {
+      transition: transform 0.5s, color 0.5s;
+    }
+
+    h1:hover, h2:hover, h3:hover {
+      transform: scale(1.05);
+      color: red; /* efecto rojo al pasar el mouse */
+    }
+
+    details {
+      background: #ffd6eb; /* rosado claro */
+      padding: 15px;
+      margin: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 10px #ff66a3;
+    }
+
+    summary {
+      font-size: 1.3em;
+      cursor: pointer;
+      font-weight: bold;
+      color: #cc0066;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px red;
+    }
+
+    /* Efecto de "alas" en letras (texto animado decorativo) */
+    h1 {
+      position: relative;
+      display: inline-block;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo.png" width="300">
+    <hr width="700">
+    <h1>LUGARES TURISTICOS</h1>
+
+    <details>
+      <summary>ANTIGUA GUATEMALA</summary>
+      <h2>PRECIO: Q5,000</h2>
+      <h2>DURACIÓN: 5 DÍAS</h2>
+      <h2>CANTIDAD DE PERSONAS: 4 PERSONAS</h2>
+      <h3>GALERÍA:</h3>
+      <img src="antigua.jpg" width="250">
+      <img src="hotel.jpg" width="250">
+    </details>
+
+    <details>
+      <summary>CASTILLO DE SAN FELIPE IZABAL</summary>
+      <h2>PRECIO: Q4,000</h2>
+      <h2>DURACIÓN: 4 DÍAS</h2>
+      <h2>CANTIDAD DE PERSONAS: 3</h2>
+      <h3>GALERÍA:</h3>
+      <img src="castillo.jpg" width="250">
+      <img src="hotel2.jpg" width="250">
+    </details>
+
+    <details>
+      <summary>MONTERICO SANTA ROSA</summary>
+      <h2>PRECIO: Q6,000</h2>
+      <h2>DURACIÓN: 6 DÍAS</h2>
+      <h2>CANTIDAD DE PERSONAS: 6 PERSONAS</h2>
+      <h3>GALERÍA:</h3>
+      <img src="MONTERICO.avif" width="250">
+      <img src="HOTEL3.jpg" width="250">
+    </details>
+
+    <details>
+      <summary>TIKAL PETÉN</summary>
+      <h2>PRECIO: Q6,000</h2>
+      <h2>DURACIÓN: 5 DÍAS</h2>
+      <h2>CANTIDAD DE PERSONAS: 5 PERSONAS</h2>
+      <h3>GALERÍA:</h3>
+      <img src="tikal.jpg" width="250">
+      <img src="hotel4.jpg" width="250">
+    </details>
+  </center>
+</body>
+</html>
