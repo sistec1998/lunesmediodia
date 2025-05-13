@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VIAJES</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #00C6A0, #00A4D4);
+      color: #fff;
+      text-align: center;
+    }
+
+    img.logo {
+      width: 250px;
+      margin-top: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    img.logo:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #ffffff;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      width: 80%;
+      margin: 10px auto;
+      font-size: 1.1em;
+      line-height: 1.6em;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      backdrop-filter: blur(4px);
+    }
+
+    hr {
+      width: 70%;
+      border: 0;
+      height: 2px;
+      background: rgba(255,255,255,0.4);
+      margin: 30px auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    a:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      width: 60%;
+      max-width: 300px;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      font-size: 1em;
+      background-color: #00C6A0;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #009f82;
+    }
+
+    marquee {
+      margin: 30px 0;
+      padding: 15px;
+    }
+
+    marquee img {
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    marquee img:hover {
+      transform: scale(1.05);
+    }
+
+    ol {
+      list-style-position: inside;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    /* Tarjetas de imágenes */
+    .card {
+      display: inline-block;
+      margin: 10px;
+      background: #ffffff;
+      color: #333;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-text {
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .icon-title {
+      font-size: 1.5em;
+    }
+
+    @media (max-width: 600px) {
+      p, input {
+        width: 90%;
+      }
+
+      a {
+        display: block;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" class="logo" alt="Logo">
+  <br><br>
+  <a href="pagina1.html">🌍 LUGARES</a>
+  <a href="PAGINA2.html">🧳 RESERVAR</a>
+  <hr>
+
+  <h2 class="icon-title">🎯 NUESTRA MISIÓN</h2>
+  <p>Brindar experiencias de viaje únicas, seguras y memorables, 
+    conectando a nuestros clientes con los destinos más fascinantes del mundo. 
+    Nos comprometemos a ofrecer un servicio personalizado, accesible y de alta calidad que inspire a explorar, 
+    descubrir y disfrutar cada rincón del planeta.</p>
+
+  <h2 class="icon-title">🚀 VISIÓN</h2>
+  <p>Ser la agencia de viajes líder en innovación y servicio en Latinoamérica,
+    reconocida por transformar cada viaje en una experiencia inolvidable, sostenible y accesible para todos, 
+    promoviendo el turismo responsable y la conexión auténtica con las culturas del mundo.</p>
+
+  <form>
+    <label for=""><strong>🗺️ ¿A DÓNDE TE GUSTARÍA?</strong></label>
+    <br><br>
+    <input type="text" placeholder="Ej. Tikal, Panajachel, etc.">
+    <button>🔍 BUSCAR</button>
+  </form>
+
+  <hr>
+  <h2 class="icon-title">💡 POR SI TE INTERESA</h2>
+  <marquee behavior="scroll" direction="left">
+    <div class="card">
+      <img src="xocomilk.jpg" alt="Xocomil">
+      <div class="card-text">Xocomil</div>
+    </div>
+    <div class="card">
+      <img src="xetulul.jpg" alt="Xetulul">
+      <div class="card-text">Xetulul</div>
+    </div>
+    <div class="card">
+      <img src="petapa.webp" alt="Petapa">
+      <div class="card-text">Petapa</div>
+    </div>
+  </marquee>
+
+  <h2 class="icon-title">📈 LO MÁS VISITADO</h2>
+  <ol>
+    <li>Panajachel</li>
+    <li>Río Dulce</li>
+    <li>Semuc Champey</li>
+    <li>Lago Itzá, Flores</li>
+  </ol>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VIAJES</title>
+  <link rel="icon" href="logo.png"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #00C6A0, #00A4D4);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #fff;
+      width: 70%;
+    }
+
+    .content {
+      text-align: center;
+      padding: 20px;
+    }
+
+    details {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      margin: 20px 0;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    details:hover {
+      transform: scale(1.03);
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    summary {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .emoji {
+      filter: brightness(1.5) saturate(1.2);
+      opacity: 0.8;
+      font-size: 1.2em;
+    }
+
+    details h2, details h3 {
+      margin: 10px 0;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 280px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      width: 300px;
+      margin: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      color: #333;
+    }
+
+    .card-content h2 {
+      margin: 10px 0;
+    }
+
+    .card-content h3 {
+      margin: 5px 0;
+    }
+
+    .card-content .price {
+      color: #00C6A0;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <img src="logo.png" width="300" alt="Logo" />
+    <hr />
+    <h1>LUGARES TURÍSTICOS ✈️<span class="emoji">🧳</span></h1>
+
+    <details>
+      <summary>🌄 <span class="emoji">ANTIGUA GUATEMALA</span></summary>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-content">
+            <h2>ANTIGUA GUATEMALA</h2>
+            <h3 class="price">PRECIO: Q5,000</h3>
+            <p>DURACIÓN: 5 DÍAS</p>
+            <p>PERSONAS: 4 PERSONAS</p>
+          </div>
+          <div class="gallery">
+            <img src="ANTIGUA2.jpg" alt="Antigua Guatemala" />
+            <img src="HOTELANTIGUA1.jpg" alt="Hotel Antigua" />
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>🏰 <span class="emoji">CASTILLO DE SAN FELIPE IZABAL</span></summary>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-content">
+            <h2>CASTILLO DE SAN FELIPE IZABAL</h2>
+            <h3 class="price">PRECIO: Q4,500</h3>
+            <p>DURACIÓN: 6 DÍAS</p>
+            <p>PERSONAS: 7 PERSONAS</p>
+          </div>
+          <div class="gallery">
+            <img src="CASTILLO2.jpg" alt="Castillo San Felipe" />
+            <img src="HOTELESCASTILLO2.jpg" alt="Hotel Castillo" />
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>🏖️ <span class="emoji">MONTE RICO SANTA ROSA</span></summary>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-content">
+            <h2>MONTE RICO SANTA ROSA</h2>
+            <h3 class="price">PRECIO: Q3,000</h3>
+            <p>DURACIÓN: 5 DÍAS</p>
+            <p>PERSONAS: 8 PERSONAS</p>
+          </div>
+          <div class="gallery">
+            <img src="MONTERICO.jpg" alt="Monte Rico" />
+            <img src="HOTELMONTE.jpg" alt="Hotel Monte Rico" />
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>🌴 <span class="emoji">TIKAL PETÉN</span></summary>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-content">
+            <h2>TIKAL PETÉN</h2>
+            <h3 class="price">PRECIO: Q6,000</h3>
+            <p>DURACIÓN: 4 DÍAS</p>
+            <p>PERSONAS: 5 PERSONAS</p>
+          </div>
+          <div class="gallery">
+            <img src="TIKAL.webp" alt="Tikal" />
+            <img src="HOTETIKAL.jpg" alt="Hotel Tikal" />
+          </div>
+        </div>
+      </div>
+    </details>
+  </div>
+</body>
+</html>

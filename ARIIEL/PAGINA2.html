@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VIAJES - RESERVAS</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #00C6A0, #00A4D4);
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    img {
+      width: 250px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+
+    hr {
+      width: 70%;
+      border: 0;
+      height: 2px;
+      background: rgba(255,255,255,0.5);
+      margin: 20px 0;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      backdrop-filter: blur(8px);
+      width: 90%;
+      max-width: 400px;
+      transition: all 0.4s ease;
+    }
+
+    form:hover {
+      transform: scale(1.02);
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    input:focus {
+      outline: none;
+      box-shadow: 0 0 8px rgba(0, 198, 160, 0.8);
+    }
+
+    button {
+      margin: 20px 10px 0;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      background-color: #00C6A0;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover {
+      background-color: #00a98b;
+      transform: scale(1.05);
+    }
+
+    .icon {
+      margin-right: 5px;
+      filter: brightness(1.5);
+      opacity: 0.8;
+    }
+
+    @media (max-width: 500px) {
+      form {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logo">
+    <h1>📋 <span class="icon">RESERVAS</span></h1>
+    <hr>
+
+    <form>
+      <label>👤 ¿CÓMO TE LLAMAS?</label>
+      <input type="text" placeholder="Tu nombre completo" />
+
+      <label>📞 TELÉFONO</label>
+      <input type="number" placeholder="Ej. 5551234567" />
+
+      <label>📧 CORREO ELECTRÓNICO</label>
+      <input type="email" placeholder="tucorreo@ejemplo.com" />
+
+      <label>📍 LUGAR TURÍSTICO</label>
+      <input type="text" placeholder="Ej. Antigua Guatemala" />
+
+      <label>📅 FECHA PARA VIAJAR</label>
+      <input type="date" />
+
+      <label>💳 N. TARJETA (CRÉDITO/DÉBITO)</label>
+      <input type="number" placeholder="0000 0000 0000 0000" />
+
+      <div style="text-align: center;">
+        <button type="submit">✅ RESERVAR</button>
+        <button type="reset">❌ CANCELAR</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
