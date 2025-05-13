@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Viaje</title>
+  <link rel="icon" href="logo1.avif" />
+  <!-- Íconos de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: backgroundMove 10s infinite alternate;
+    }
+
+    @keyframes backgroundMove {
+      0% {
+        background-position: left;
+      }
+      100% {
+        background-position: right;
+      }
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    img {
+      width: 150px;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    hr {
+      border: 0;
+      height: 3px;
+      background: #6a82fb;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      color: #555;
+      font-weight: bold;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #6a82fb;
+      outline: none;
+    }
+
+    button {
+      width: 45%;
+      padding: 10px;
+      margin: 10px 5px;
+      border: none;
+      border-radius: 8px;
+      background: #6a82fb;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background: #4f62d0;
+      transform: translateY(-3px);
+    }
+
+    i {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo1.avif" alt="Logo" />
+    <h1><i class="fas fa-plane-departure"></i> Reserva tu viaje</h1>
+    <hr />
+    <form>
+      <label><i class="fas fa-user"></i> ¿Cómo te llamas?</label>
+      <input type="text" required />
+
+      <label><i class="fas fa-phone"></i> Teléfono</label>
+      <input type="number" required />
+
+      <label><i class="fas fa-envelope"></i> Correo electrónico</label>
+      <input type="email" required />
+
+      <label><i class="fas fa-map-marker-alt"></i> Lugar turístico</label>
+      <input type="text" required />
+
+      <label><i class="fas fa-calendar-alt"></i> Fecha para viajar</label>
+      <input type="date" required />
+
+      <label><i class="fas fa-credit-card"></i> N.º Tarjeta (crédito/débito)</label>
+      <input type="number" required />
+
+      <div>
+        <button type="submit"><i class="fas fa-check-circle"></i> Reservar</button>
+        <button type="reset"><i class="fas fa-times-circle"></i> Cancelar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

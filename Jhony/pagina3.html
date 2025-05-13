@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link rel="icon" href="logo1.avif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #80deea);
+            color: #004d40;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        img.logo {
+            width: 300px;
+            margin-top: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        img.logo:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            text-decoration: none;
+            color: #00695c;
+            font-size: 20px;
+            margin: 10px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #004d40;
+        }
+
+        hr {
+            border: 1px solid #004d40;
+        }
+
+        h1, h2 {
+            color: #00796b;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        input {
+            width: 200px;
+        }
+
+        button {
+            background-color: #00796b;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004d40;
+        }
+
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding: 0;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: #004d40;
+            color: white;
+            padding: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #80deea;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo1.avif" class="logo" alt="Logo"><br>
+
+    <a href="pagina1.html">Lugares</a>
+    <a href="pagina2.html">Reservar</a>
+    <hr width="300">
+
+    <h1>NUESTRA MISIÓN</h1>
+    <p>"Brindar experiencias de viaje inolvidables, seguras y personalizadas que conecten a las personas con nuevos destinos, culturas y emociones, a través de un servicio confiable, accesible y comprometido con la satisfacción total de nuestros clientes."</p>
+
+    <h1>VISIÓN</h1>
+    <p>"Ser la agencia de viajes líder en innovación y servicio en Latinoamérica, reconocida por transformar sueños en experiencias únicas, fomentando el turismo responsable y creando conexiones auténticas entre personas y culturas alrededor del mundo."</p>
+
+    <h2>¿A dónde te gustaría ir?</h2>
+    <input type="text" placeholder="Ingresa un destino...">
+    <button>Buscar</button>
+
+    <hr width="600">
+
+    <h2>Por si te interesa</h2>
+    <div class="gallery">
+        <img src="castillo1.jpg" alt="Castillo">
+        <img src="playa1.jpg" alt="Playa">
+        <img src="tikal1.avif" alt="Tikal">
+    </div>
+
+    <h2>Lo más visto</h2>
+    <ol>
+        <li>Panajachel</li>
+        <li>Río Dulce</li>
+        <li>Semuc Champey</li>
+        <li>Lago Petén Itzá, Flores</li>
+    </ol>
+
+    <footer>
+        <p>Síguenos en redes sociales</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2025 Agencia de Viajes. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
