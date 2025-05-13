@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIAJES</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #a0f0ed, #b9fbc0);
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      color: #034732;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #027373;
+      margin-bottom: 30px;
+    }
+
+    hr {
+      border: 2px solid #027373;
+      width: 700px;
+    }
+
+    details {
+      background: #ffffffcc;
+      margin: 20px auto;
+      width: 80%;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    details[open] {
+      background: #d9fdfc;
+      transform: scale(1.02);
+    }
+
+    summary {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #05676e;
+      cursor: pointer;
+    }
+
+    h2, h3 {
+      margin: 10px 0;
+    }
+
+    h3 {
+      font-style: italic;
+      color: #038c7f;
+    }
+
+    .card-img {
+      width: 250px;
+      height: 180px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    i {
+      margin-right: 8px;
+      color: #02aab0;
+    }
+  </style>
+</head>
+<body>
+
+  <center>
+    <img src="logo.png" width="300">
+    <hr>
+    <h1><i class="fas fa-plane-departure"></i>LUGARES TURISTICOS</h1>
+
+    <details>
+      <summary><i class="fas fa-map-marker-alt"></i>ANTIGUA GUATEMALA</summary>
+      <h2><i class="fas fa-dollar-sign"></i>PRECIO: Q5,000</h2>
+      <h2><i class="fas fa-clock"></i>DURACION: 5 DIAS</h2>
+      <h2><i class="fas fa-users"></i>PERSONAS: 4 PERSONAS</h2>
+      <h3><i class="fas fa-image"></i>GALERIA</h3>
+      <img src="a1.jpg" class="card-img">
+      <img src="a2.jpg" class="card-img">
+    </details>
+
+    <details>
+      <summary><i class="fas fa-map-marker-alt"></i>CASTILLO DE SAN FELIPE</summary>
+      <h2><i class="fas fa-dollar-sign"></i>PRECIO: Q4,500</h2>
+      <h2><i class="fas fa-clock"></i>DURACION: 7 DIAS</h2>
+      <h2><i class="fas fa-users"></i>PERSONAS: 8 PERSONAS</h2>
+      <h3><i class="fas fa-image"></i>GALERIA</h3>
+      <img src="b3.jpg" class="card-img">
+      <img src="b2.webp" class="card-img">
+    </details>
+
+    <details>
+      <summary><i class="fas fa-map-marker-alt"></i>MONERICO SANTA ROSA</summary>
+      <h2><i class="fas fa-dollar-sign"></i>PRECIO: Q7,000</h2>
+      <h2><i class="fas fa-clock"></i>DURACION: 4 DIAS</h2>
+      <h2><i class="fas fa-users"></i>PERSONAS: 7 PERSONAS</h2>
+      <h3><i class="fas fa-image"></i>GALERIA</h3>
+      <img src="c1.jpg" class="card-img">
+      <img src="c2.jpg" class="card-img">
+    </details>
+
+    <details>
+      <summary><i class="fas fa-map-marker-alt"></i>TIKAL PETEN</summary>
+      <h2><i class="fas fa-dollar-sign"></i>PRECIO: Q5,500</h2>
+      <h2><i class="fas fa-clock"></i>DURACION: 5 DIAS</h2>
+      <h2><i class="fas fa-users"></i>PERSONAS: 4 PERSONAS</h2>
+      <h3><i class="fas fa-image"></i>GALERIA</h3>
+      <img src="d1.jpg" class="card-img">
+      <img src="d2.jpg" class="card-img">
+    </details>
+
+  </center>
+</body>
+</html>

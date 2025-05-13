@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIAJES</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #aaf0d1, #e0ffff);
+      color: #034732;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    h2 {
+      color: #008080;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    h2::before {
+      content: "🌍 ";
+    }
+
+    hr {
+      width: 70%;
+      border: 2px solid #40e0d0;
+      margin: 20px auto;
+    }
+
+    p {
+      width: 70%;
+      margin: 10px auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #044d4d;
+    }
+
+    img.logo {
+      width: 250px;
+      margin: 20px;
+      animation: zoomIn 1s ease;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    a {
+      color: #40e0d0;
+      text-decoration: none;
+      font-size: 1.2em;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #008080;
+    }
+
+    form {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      margin: 10px 0;
+      width: 80%;
+      border: 2px solid #40e0d0;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #40e0d0;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #008080;
+    }
+
+    .image-card {
+      width: 250px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin: 10px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    marquee {
+      margin-top: 20px;
+      padding: 10px 0;
+    }
+
+    ol {
+      text-align: left;
+      display: inline-block;
+      font-size: 1.2em;
+      color: #055e5e;
+    }
+
+    li::marker {
+      color: #40e0d0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <center>
+    <img src="logo.png" alt="Logo VIAJES" class="logo">
+    <div>
+      <a href="pagina1.html">LUGARES</a>
+      <a href="pagina2.html">RESERVAR</a>
+    </div>
+    <hr>
+
+    <h2><i class="fas fa-bullseye"></i> NUESTRA MISIÓN</h2>
+    <p>Brindar experiencias de viaje únicas y memorables, ofreciendo destinos nacionales e internacionales con altos estándares de calidad, seguridad y servicio personalizado. Nos comprometemos a hacer realidad los sueños de nuestros clientes, facilitando sus viajes con confianza, comodidad y atención excepcional.</p>
+
+    <h2><i class="fas fa-eye"></i> VISIÓN</h2>
+    <p>Ser la agencia de viajes líder en Latinoamérica, reconocida por su innovación, confiabilidad y compromiso con el turismo sostenible, creando conexiones entre personas y culturas a través de experiencias auténticas que trascienden fronteras.</p>
+
+    <h2><i class="fas fa-globe-americas"></i> ¿A DÓNDE TE GUSTARÍA IR?</h2>
+    <form action="">
+      <label for="destino">¿A DÓNDE GUSTARÍA IR?</label>
+      <input type="text" id="destino" name="destino">
+      <button>BUSCAR</button>
+    </form>
+
+    <hr>
+
+    <h2><i class="fas fa-thumbs-up"></i> POR SI TE INTERESA</h2>
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <img src="e1.jpg" alt="Lugar 1" class="image-card">
+      <img src="e2.jpg" alt="Lugar 2" class="image-card">
+      <img src="e3.webp" alt="Lugar 3" class="image-card">
+    </marquee>
+
+    <h2><i class="fas fa-fire"></i> LO MÁS VISITADO</h2>
+    <ol>
+      <li><i class="fas fa-location-dot"></i> Panajachel</li>
+      <li><i class="fas fa-location-dot"></i> Río Dulce</li>
+      <li><i class="fas fa-location-dot"></i> Semuc Champey</li>
+      <li><i class="fas fa-location-dot"></i> Lago Itzá, Flores</li>
+    </ol>
+  </center>
+
+</body>
+</html>
