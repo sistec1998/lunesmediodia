@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      color: #004d40;
+    }
+
+    h1 {
+      color: #006064;
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    details {
+      background-color: #e0f2f1;
+      margin: 20px auto;
+      width: 80%;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    summary {
+      font-size: 1.5em;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+
+    summary:hover {
+      color: #00796b;
+    }
+
+    h2, h3 {
+      margin: 10px 0;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 170px;
+      object-fit: cover;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    hr {
+      width: 60%;
+      border: 1px solid #00796b;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" width="200" alt="Logo">
+  <hr>
+  <h1>🌎 Lugares Turísticos</h1>
+
+  <details>
+    <summary>🏰 Antigua Guatemala</summary>
+    <h2>Precio: Q5,000</h2>
+    <h2>Duración: 5 días</h2>
+    <h2>Personas: 4 personas</h2>
+    <h3>Galería</h3>
+    <div class="gallery">
+      <img src="AntiguaGuatemala.jpg" alt="Antigua Guatemala">
+      <img src="hotel.jpg" alt="Hotel Antigua">
+    </div>
+  </details>
+
+  <details>
+    <summary>⚓ Castillo de San Felipe, Izabal</summary>
+    <h2>Precio: Q3,000</h2>
+    <h2>Duración: 4 días</h2>
+    <h2>Personas: 5 personas</h2>
+    <h3>Galería</h3>
+    <div class="gallery">
+      <img src="Castillo-de-San-Felipe-en-Guatemala.jpg" alt="Castillo San Felipe">
+      <img src="hotel2.jpg" alt="Hotel Izabal">
+    </div>
+  </details>
+
+  <details>
+    <summary>🌴 Monterrico, Santa Rosa</summary>
+    <h2>Precio: Q4,000</h2>
+    <h2>Duración: 5 días</h2>
+    <h2>Personas: 5 personas</h2>
+    <h3>Galería</h3>
+    <div class="gallery">
+      <img src="playa.jpg" alt="Playa Monterrico">
+      <img src="hotel3.jpg" alt="Hotel Monterrico">
+    </div>
+  </details>
+
+  <details>
+    <summary>🏞️ Tikal, Petén</summary>
+    <h2>Precio: Q5,000</h2>
+    <h2>Duración: 5 días</h2>
+    <h2>Personas: 5 personas</h2>
+    <h3>Galería</h3>
+    <div class="gallery">
+      <img src="imagen5.avif" alt="Tikal">
+      <img src="hotel5.jpg" alt="Hotel Tikal">
+    </div>
+  </details>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+      color: #004d40;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    img.logo {
+      width: 150px;
+      display: block;
+      margin: 0 auto 20px;
+      animation: zoomIn 1.2s ease;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #00796b;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #004d40;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #00796b;
+      margin: 30px auto;
+      width: 80%;
+    }
+
+    h1, h2 {
+      color: #006064;
+      margin-top: 30px;
+    }
+
+    h1::before {
+      content: "📍 ";
+    }
+
+    h2::before {
+      content: "✨ ";
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    form label {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 60%;
+      border-radius: 8px;
+      border: 1px solid #80cbc4;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0097a7;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      transition: transform 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    ol {
+      text-align: left;
+      max-width: 300px;
+      margin: 0 auto;
+      font-size: 1.1em;
+    }
+
+    ol li::before {
+      content: "📌 ";
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="logo.png" alt="Logo" class="logo">
+    <nav>
+      <a href="pagina1.html">🌍 Lugares</a>
+      <a href="pagina2.html">📆 Reservar</a>
+    </nav>
+
+    <hr>
+
+    <h2>🎯 Nuestra misión</h2>
+    <p>"Nuestra misión es ofrecer experiencias de viaje memorables, accesibles y personalizadas, 
+       conectando a nuestros clientes con destinos únicos alrededor del mundo mediante un servicio 
+       confiable, innovador y centrado en sus necesidades."</p>
+
+    <h2>🌟 Visión</h2>
+    <p>"Ser la agencia de viajes líder en la creación de experiencias únicas e inolvidables, reconocida 
+       por su innovación, compromiso con la sostenibilidad y excelencia en el servicio al cliente a 
+       nivel nacional e internacional."</p>
+
+    <form>
+      <label>✈️ ¿A dónde te gustaría ir?</label><br>
+      <input type="text" placeholder="Ej. Lago Atitlán, Tikal, etc.">
+      <br>
+      <button type="submit">🔍 Buscar</button>
+    </form>
+
+    <hr>
+
+    <h2>👀 ¡Por si te interesa!</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="mirador-en-forma-de-corazon (1).jpg" alt="Mirador">
+      </div>
+      <div class="card">
+        <img src="images.jpg" alt="Destino">
+      </div>
+      <div class="card">
+        <img src="Hostal-El-Portal-De-Champey-885x500.jpg" alt="Hostal Champey">
+      </div>
+    </div>
+
+    <h1>🌟 Lo más visitado</h1>
+    <ol>
+      <li>Panajachel</li>
+      <li>Río Dulce</li>
+      <li>Champey</li>
+      <li>Lago Itzá - Flores</li>
+    </ol>
+  </div>
+
+</body>
+</html>
