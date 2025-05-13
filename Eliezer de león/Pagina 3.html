@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes</title>
+  <link rel="icon" href="Logo..png">
+  
+  <!-- Fuente y Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-color: #cceeff;
+      font-family: 'Roboto', sans-serif;
+      color: #003366;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #006699;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #003366;
+      text-decoration: underline;
+    }
+
+    h1, h2 {
+      color: #003366;
+      animation: fadeIn 2s ease;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+      font-size: 18px;
+      line-height: 1.6;
+      animation: slideUp 1s ease;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #006699;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+      border-color: #003366;
+      box-shadow: 0 0 8px #66ccff;
+    }
+
+    button {
+      background-color: #006699;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-left: 10px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #004466;
+    }
+
+    marquee img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    marquee img:hover {
+      transform: scale(1.1);
+    }
+
+    ol {
+      list-style-position: inside;
+      font-size: 18px;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #66ccff;
+      margin: 30px auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="Logo..png" width="250" alt="Logo">
+  <br><br>
+
+  <a href="Pagina 1.html"><i class="fas fa-map-marked-alt"></i> Lugares</a>
+  <a href="Pagina 2.html"><i class="fas fa-calendar-check"></i> Reservar</a>
+
+  <hr width="700">
+
+  <h1><i class="fas fa-bullseye"></i> Nuestra Misión</h1>
+  <p>
+    Brindar experiencias de viaje únicas, seguras y memorables, 
+    conectando personas con destinos excepcionales a través de 
+    un servicio personalizado, profesional y comprometido con la 
+    calidad. Nos esforzamos por hacer realidad los sueños de nuestros 
+    clientes, promoviendo el turismo responsable y el respeto por las 
+    culturas y el medio ambiente.
+  </p>
+
+  <h2><i class="fas fa-eye"></i> Visión</h2>
+  <p>
+    Ser la empresa líder en la creación de experiencias de viaje inolvidables,
+    reconocida por su innovación, excelencia en el servicio y compromiso con 
+    la sostenibilidad, conectando a las personas con el mundo de manera auténtica,
+    segura y transformadora.
+  </p>
+
+  <form>
+    <label for="destino"><i class="fas fa-plane-departure"></i> ¿A dónde te gustaría ir?</label>
+    <br><br>
+    <input type="text" id="destino" placeholder="Escribe un destino">
+    <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+  </form>
+
+  <hr width="700">
+
+  <h2><i class="fas fa-info-circle"></i> ¡Por si te interesa!</h2>
+  <marquee>
+    <img src="ii.jpg" width="230" alt="Destino 1">
+    <img src="rr.webp" width="250" alt="Destino 2">
+    <img src="cc.webp" width="250" alt="Destino 3">
+  </marquee>
+
+  <h2><i class="fas fa-fire"></i> Lo más Visitado</h2>
+  <ol>
+    <li>PANAJACHEL</li>
+    <li>RIO DULCE</li>
+    <li>CHAMPEY</li>
+    <li>LAGO ITZÁ FLORES</li>
+  </ol>
+
+</body>
+</html>
