@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        center {
+            padding: 20px;
+        }
+
+        a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        h2, h1 {
+            color: #00695c;
+        }
+
+        h2::before {
+            content: "🌍 ";
+        }
+
+        h1:nth-of-type(1)::before {
+            content: "✨ ";
+        }
+
+        h1:nth-of-type(2)::before {
+            content: "📸 ";
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #0097a7;
+        }
+
+        button {
+            background-color: #00acc1;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #00838f;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 210px;
+            border-radius: 8px;
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="200">
+        <div>
+            <a href="pagina1.html">Lugares</a>
+            <a href="pagina2.html">Reservar</a>
+        </div>
+        <hr width="700">
+
+        <h2>NUESTRA MISIÓN</h2>
+        <p>Nuestra misión es brindar experiencias de viaje inolvidables, seguras y accesibles, 
+        conectando a las personas con los destinos más fascinantes del mundo.
+        Nos comprometemos a ofrecer un servicio personalizado y de alta calidad,
+        fomentando el respeto por las culturas locales y promoviendo el turismo sostenible.</p>
+
+        <h2>NUESTRA VISIÓN</h2>
+        <p>Ser la agencia de viajes líder en Latinoamérica,
+        reconocida por transformar sueños en experiencias inolvidables, mediante un servicio innovador, 
+        confiable y humano. Aspiramos a expandir nuestras fronteras, promoviendo el turismo responsable
+        y conectando a nuestros clientes con el mundo de manera ética y sostenible.</p>
+
+        <form>
+            <label>¿A DÓNDE TE GUSTARÍA IR?</label><br>
+            <input type="text" name="" id="">
+            <button>BUSCAR</button>
+        </form>
+
+        <hr width="700">
+
+        <h1>POR SI TE INTERESA</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="LAGO.jpg" alt="Lago">
+            </div>
+            <div class="card">
+                <img src="ciudades.jpg" alt="Ciudades">
+            </div>
+        </div>
+
+        <h1>LO MÁS VISITADO</h1>
+        <ol>
+            <li>PANAJACHEL</li>
+            <li>RIO DULCE</li>
+            <li>CHAMPEY</li>
+            <li>LAGO ITZÁ - FLORES</li>
+        </ol>
+    </center>
+</body>
+</html>

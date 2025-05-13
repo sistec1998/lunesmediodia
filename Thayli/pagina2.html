@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            background-color: #b3e5fc; /* celeste */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #01579b;
+            font-size: 2.5em;
+            margin-top: 10px;
+        }
+
+        form {
+            background-color: #e1f5fe;
+            padding: 30px;
+            border-radius: 15px;
+            width: 400px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #0277bd;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #81d4fa;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #0288d1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 10px 0 0;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0277bd;
+        }
+
+        img {
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        hr {
+            border: 1px solid #0288d1;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <img src="logo.png" width="200">
+        <h1>🧳 RESERVA TU VIAJE</h1>
+        <hr>
+
+        <form>
+            <label>👤 ¿Cómo te llamas?</label>
+            <input type="text">
+
+            <label>📞 Teléfono</label>
+            <input type="number">
+
+            <label>📧 Correo electrónico</label>
+            <input type="email">
+
+            <label>🌍 Lugar turístico</label>
+            <input type="text">
+
+            <label>📅 Fecha para viajar</label>
+            <input type="date">
+
+            <label>💳 N. Tarjeta (crédito/débito)</label>
+            <input type="number">
+
+            <button>Reservar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </center>
+
+</body>
+</html>
