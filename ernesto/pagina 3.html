@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="logo.png">
+
+  <style>
+    body {
+      background-color: black; /* Fondo de pantalla negro */
+      color: white; /* Texto blanco para contraste */
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    hr {
+      width: 700px;
+    }
+
+    .marquee-box {
+      background-color: #98ff98; /* Fondo menta */
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px auto;
+      width: 80%;
+      transition: background-color 0.5s ease;
+    }
+
+    .marquee-box:hover {
+      background-color: #76e376; /* Cambio de color al pasar el mouse */
+    }
+
+    marquee img {
+      margin: 0 10px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    marquee img:hover {
+      transform: scale(1.1);
+    }
+
+    form {
+      margin: 20px;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background-color: #98ff98;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #76e376;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" width="200">
+  <br><br>
+
+  <a href="pagina 1.html">Página 1</a> |
+  <a href="pagina 2.html">Página 2</a>
+
+  <hr>
+
+  <h1>NUESTRA MISIÓN</h1>
+  <p>
+    Nuestra misión refleja el compromiso profundo que tenemos con [el
+    propósito central, por ejemplo: mejorar la calidad de vida, ofrecer
+    soluciones sostenibles, educar a futuras generaciones]. Es una guía que orienta cada 
+    una de nuestras acciones y decisiones, asegurando 
+    que trabajemos con integridad, pasión y un sentido claro de propósito.
+  </p>
+
+  <h2>VISIÓN</h2>
+  <p>
+    Nuestra visión representa el futuro que aspiramos construir. Es una 
+    meta ambiciosa que nos inspira a avanzar con entusiasmo y determinación. Nos motiva a innovar, a superar desafíos y a trabajar unidos para lograr un impacto duradero. Tener una visión clara nos permite enfocar nuestros esfuerzos
+    y mantenernos fieles a nuestros valores mientras crecemos.
+  </p>
+
+  <form>
+    <label>¿A dónde te gustaría ir?</label><br><br>
+    <input type="text" placeholder="Escribe tu destino">
+    <button>BUSCAR</button>
+  </form>
+
+  <hr>
+
+  <h2>¿TE INTERESA?</h2>
+
+  <div class="marquee-box">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      <img src="L1.webp" width="250">
+      <img src="L2.avif" width="250">
+      <img src="L3.jpg" width="250">
+    </marquee>
+  </div>
+
+  <h2>LO MÁS VISITADO</h2>
+  <ol>
+    <li>Panajachel</li>
+    <li>Río Dulce</li>
+    <li>Semuc Champey</li>
+    <li>Lago Petén Itzá, Flores</li>
+  </ol>
+
+</body>
+</html>

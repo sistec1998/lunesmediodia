@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      background-color: red;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    h2, h3 {
+      background-color: #87CEEB; /* celeste */
+      color: black;
+      padding: 10px;
+      margin: 10px auto;
+      width: fit-content;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h2:hover, h3:hover {
+      transform: scale(1.05);
+      background-color: #00BFFF;
+    }
+
+    img {
+      border-radius: 10px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    details {
+      margin-bottom: 40px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 1.3em;
+      font-weight: bold;
+      background-color: white;
+      color: red;
+      padding: 10px;
+      border-radius: 10px;
+      width: fit-content;
+      margin: auto;
+      transition: background-color 0.3s ease;
+    }
+
+    summary:hover {
+      background-color: #FFD700;
+    }
+
+    hr {
+      border: 2px solid white;
+      margin: 20px auto;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo.png" width="300">
+    <hr width="700">
+    <h1>LUGARES TURÍSTICOS</h1>
+
+    <details>
+      <summary>ANTIGUA GUATEMALA</summary>
+      <h2>PRECIO: Q5,000</h2>
+      <h2>DURACIÓN: 5 DÍAS</h2>
+      <h2>PERSONAS: 4 PERSONAS</h2>
+      <h3>GALERÍA</h3>
+      <img src="AN1.jpg" width="125">
+      <img src="an2.jpg" width="250">
+    </details>
+
+    <details>
+      <summary>CASTILLO DE SAN FELIPE, IZABAL</summary>
+      <h2>PRECIO: Q7,000</h2>
+      <h2>DURACIÓN: 5 DÍAS</h2>
+      <h2>PERSONAS: 2 PERSONAS</h2>
+      <h3>GALERÍA</h3>
+      <img src="y1.jpg" width="300">
+      <img src="y2.jpg" width="300">
+    </details>
+
+    <details>
+      <summary>MONTERICO, SANTA ROSA</summary>
+      <h2>PRECIO: Q7,000</h2>
+      <h2>DURACIÓN: 5 DÍAS</h2>
+      <h2>PERSONAS: 2 PERSONAS</h2>
+      <h3>GALERÍA</h3>
+      <img src="san1.jpg" width="300">
+      <img src="san2.jpg" width="300">
+    </details>
+
+    <details>
+      <summary>TIKAL, PETÉN</summary>
+      <h2>PRECIO: Q7,000</h2>
+      <h2>DURACIÓN: 5 DÍAS</h2>
+      <h2>PERSONAS: 2 PERSONAS</h2>
+      <h3>GALERÍA</h3>
+      <img src="pe1.avif" width="300">
+      <img src="pe2.jpg" width="300">
+    </details>
+
+  </center>
+</body>
+</html>
