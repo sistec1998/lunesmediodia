@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            animation: fadeIn 2s ease;
+        }
+
+        h1 {
+            color: #004d40;
+            text-shadow: 1px 1px 2px #ccc;
+            font-size: 3em;
+            margin-top: 20px;
+        }
+
+        details {
+            background-color: #ffffff;
+            border: 2px solid #80cbc4;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        details:hover {
+            transform: scale(1.02);
+        }
+
+        summary {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #00796b;
+            cursor: pointer;
+        }
+
+        img {
+            width: 612px;
+            height: 792px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h2, h3 {
+            color: #00695c;
+        }
+
+        hr {
+            border: 1px solid #004d40;
+            width: 70%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Icono estilo */
+        summary::before {
+            content: "📍 ";
+        }
+
+        h3::before {
+            content: "🖼️ ";
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <hr>
+        <h1>LUGARES TURÍSTICOS</h1>
+
+        <details>
+            <summary>ANTIGUA GUATEMALA</summary>
+            <h2>PRECIO: Q5,000</h2>
+            <h2>DURACIÓN: 5 DÍAS</h2>
+            <h2>PERSONAS: 4 PERSONAS</h2>
+            <h3>GALERÍA</h3>
+            <img src="paso1.jpg" alt="Antigua 1">
+            <img src="paso2.jpg" alt="Antigua 2">
+        </details>
+
+        <details>
+            <summary>CASTILLO DE SAN FELIPE, IZABAL</summary>
+            <h2>PRECIO: Q3,000</h2>
+            <h2>DURACIÓN: 3 DÍAS</h2>
+            <h2>PERSONAS: 5 PERSONAS</h2>
+            <h3>GALERÍA</h3>
+            <img src="a1.webp" alt="Castillo 1">
+            <img src="a2.jpg" alt="Castillo 2">
+        </details>
+
+        <details>
+            <summary>MONTERICO, SANTA ROSA</summary>
+            <h2>PRECIO: Q4,000</h2>
+            <h2>DURACIÓN: 4 DÍAS</h2>
+            <h2>PERSONAS: 3 PERSONAS</h2>
+            <h3>GALERÍA</h3>
+            <img src="b1.jpg" alt="Monterrico 1">
+            <img src="b2.jpg" alt="Monterrico 2">
+        </details>
+
+        <details>
+            <summary>TIKAL, PETÉN</summary>
+            <h2>PRECIO: Q6,000</h2>
+            <h2>DURACIÓN: 8 DÍAS</h2>
+            <h2>PERSONAS: 8 PERSONAS</h2>
+            <h3>GALERÍA</h3>
+            <img src="C1.jpg" alt="Tikal 1">
+            <img src="C2.jpg" alt="Tikal 2">
+        </details>
+    </center>
+</body>
+</html>
