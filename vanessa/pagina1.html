@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Viajes</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      background-color: #cceeff; /* Fondo celeste */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      color: #004d99;
+      text-shadow: 1px 1px 2px #fff;
+    }
+
+    summary {
+      font-size: 1.5em;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #0099cc;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 10px auto;
+      width: 60%;
+      transition: background-color 0.3s ease;
+    }
+
+    summary:hover {
+      background-color: #007399;
+    }
+
+    details {
+      background-color: #e6f7ff;
+      border-radius: 10px;
+      padding: 15px;
+      width: 70%;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+    }
+
+    .card {
+      display: inline-block;
+      background-color: white;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card img {
+      width: 250px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    hr {
+      border: 1px solid #0099cc;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" width="300" alt="Logo">
+  <hr width="300">
+  <h1>Lugares Turísticos</h1>
+
+  <details>
+    <summary>Antigua Guatemala</summary>
+    <h2>Precio: Q5000</h2>
+    <h2>Duración: 5 días</h2>
+    <h2>Personas: 4 personas</h2>
+    <h3>Galería</h3>
+    <div class="card"><img src="IMAGEN1.jpg" alt="Antigua 1"></div>
+    <div class="card"><img src="IMAGEN2.jpg" alt="Antigua 2"></div>
+  </details>
+
+  <details>
+    <summary>Castillo de San Felipe, Izabal</summary>
+    <h2>Precio: Q250</h2>
+    <h2>Duración: 6 días</h2>
+    <h3>Galería</h3>
+    <div class="card"><img src="castillo.jpg" alt="Castillo"></div>
+    <div class="card"><img src="hotel.jpg" alt="Hotel Izabal"></div>
+  </details>
+
+  <details>
+    <summary>Monterrico</summary>
+    <h2>Precio: Q300</h2>
+    <h2>Duración: 7 días</h2>
+    <h3>Galería</h3>
+    <div class="card"><img src="imagen6.jpg" alt="Monterrico 1"></div>
+    <div class="card"><img src="hotel2.jpg" alt="Monterrico Hotel"></div>
+  </details>
+
+  <details>
+    <summary>Tikal, Petén</summary>
+    <h2>Precio: Q250</h2>
+    <h2>Duración: 9 días</h2>
+    <h3>Galería</h3>
+    <div class="card"><img src="tikal.avif" alt="Tikal"></div>
+    <div class="card"><img src="hotel3.jpg" alt="Hotel Petén"></div>
+  </details>
+</body>
+</html>

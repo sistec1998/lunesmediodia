@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Viajes</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      background-color: #001f3f; /* azul marino */
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    img {
+      margin-top: 30px;
+      animation: slideDown 1.5s ease-out;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-top: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    hr {
+      border: 1px solid #00BFFF;
+      margin: 20px auto;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      animation: fadeInUp 1.5s ease;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 90%;
+      padding: 8px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      background-color: #e0f7fa;
+      color: black;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00BFFF;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #009ACD;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" width="300" alt="Logo">
+  <h1>Reserva tu viaje</h1>
+  <hr width="400">
+  <form>
+    <label>¿Cómo te llamas?</label>
+    <input type="text" required>
+
+    <label>Teléfono</label>
+    <input type="number" required>
+
+    <label>Correo electrónico</label>
+    <input type="email" required>
+
+    <label>Lugar turístico</label>
+    <input type="text" required>
+
+    <label>Fecha para viajar</label>
+    <input type="date" required>
+
+    <label>N. Tarjeta (crédito/débito)</label>
+    <input type="text" required>
+
+    <button type="submit">Reservar</button>
+    <button type="reset">Cancelar</button>
+  </form>
+</body>
+</html>
