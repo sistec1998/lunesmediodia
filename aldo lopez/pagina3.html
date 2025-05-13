@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #e6f0ff, #ffffff);
+      font-family: Arial, sans-serif;
+      color: #003366;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    center {
+      padding: 20px;
+    }
+
+    img {
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #66b3ff;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #004080;
+      margin: 20px auto;
+    }
+
+    h1, h2 {
+      color: #00264d;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    p, label, input, button, ol {
+      animation: fadeIn 2s ease-in;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      margin: 10px;
+      border: 1px solid #004080;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 6px 12px;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0073e6;
+    }
+
+    marquee img {
+      margin: 10px;
+      border: 3px solid #004080;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ol {
+      text-align: left;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    /* Animaciones */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Iconos al fondo */
+    body::before {
+      content: "🔑 🔐 🛡️";
+      font-size: 80px;
+      opacity: 0.05;
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      z-index: 0;
+    }
+
+    body::after {
+      content: "🌍 ✈️ 🧳";
+      font-size: 80px;
+      opacity: 0.05;
+      position: absolute;
+      bottom: 20%;
+      right: 10%;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo.png" width="300">
+    <hr width="200">
+
+    <a href="pagina1.html">Lugares Turísticos</a>
+    <a href="pagina2.html">Reservar</a>
+
+    <hr width="700">
+
+    <h1>Nuestra Misión</h1>
+    <p>"Brindar soluciones seguras, rápidas y confiables en cerrajería y duplicado de llaves, ofreciendo productos y servicios de alta calidad que protejan los bienes y la tranquilidad de nuestros clientes."</p>
+
+    <h2>Nuestra Visión</h2>
+    <p>“Ser la empresa líder en soluciones de acceso y seguridad en nuestra región, reconocida por la confianza, la innovación y la rapidez en el servicio de duplicado de llaves, cerrajería y sistemas de control de acceso, contribuyendo a la tranquilidad de nuestros clientes en cada hogar, negocio y vehículo.”</p>
+
+    <label>¿A dónde te gustaría ir?</label>
+    <input type="text">
+    <button>Buscar</button>
+
+    <hr width="700">
+
+    <h2>Por si te interesa</h2>
+    <marquee>
+      <img src="im1.jpg" width="300">
+      <img src="c1.jpg" width="300">
+      <img src="ot2.jpg" width="300">
+    </marquee>
+<h2>lo mas visitado</h2>
+    <ol>
+      <li>Pana Cachel</li>
+      <li>Río Dulce</li>
+      <li>Champey</li>
+      <li>Lago Petén Itzá - Flores</li>
+    </ol>
+  </center>
+</body>
+</html>

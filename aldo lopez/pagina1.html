@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link rel="icon" href="logo.png">
+    
+    <style>
+        /* Fondo celeste */
+        body {
+            background-color: #A2D9F7; /* Celeste */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilo del centro y título */
+        center {
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #1E90FF; /* Azul más intenso */
+            font-size: 2.5em;
+            transition: color 0.3s ease;
+        }
+
+        /* Líneas de separación */
+        hr {
+            width: 700px;
+            border: 2px solid #1E90FF;
+            transition: border 0.3s ease;
+        }
+
+        /* Detalles */
+        details {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        details:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        summary {
+            font-size: 1.5em;
+            color: #1E90FF;
+            cursor: pointer;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        summary:hover {
+            color: #104E8B; /* Azul más oscuro */
+        }
+
+        /* Imágenes de las galerías */
+        img {
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animación de fondo */
+        @keyframes colorChange {
+            0% {
+                background-color: #A2D9F7;
+            }
+            50% {
+                background-color: #87CEFA; /* Un tono más claro de celeste */
+            }
+            100% {
+                background-color: #A2D9F7;
+            }
+        }
+
+        /* Efecto de animación para el fondo */
+        body {
+            animation: colorChange 10s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="300" alt="Logo">
+        <hr width="700">
+        <h1>Lugares Turísticos</h1>
+
+        <details>
+            <summary>Antigua Guatemala</summary>
+            <h2>Precio: Q.5000</h2>
+            <h2>Duración: 5 días</h2>
+            <h2>Personas: 4 personas</h2>
+            <h3>Galería:</h3>
+            <img src="im1.jpg" width="250" alt="Antigua Guatemala 1">
+            <img src="im2.jpg" width="250" alt="Antigua Guatemala 2">
+        </details>
+
+        <details>
+            <summary>Castillo de San Felipe</summary>
+            <h2>Precio: Q.5000</h2>
+            <h2>Duración: 5 días</h2>
+            <h2>Personas: 4 personas</h2>
+            <h3>Galería:</h3>
+            <img src="c2.jpg" width="250" alt="Castillo de San Felipe 1">
+            <img src="c1.jpg" width="250" alt="Castillo de San Felipe 2">
+        </details>
+
+        <details>
+            <summary>Monterrico Santa Rosa</summary>
+            <h2>Precio: Q.5000</h2>
+            <h2>Duración: 5 días</h2>
+            <h2>Personas: 4 personas</h2>
+            <h3>Galería:</h3>
+            <img src="a1.jpg" width="250" alt="Monterrico Santa Rosa 1">
+            <img src="a2.webp" width="250" alt="Monterrico Santa Rosa 2">
+        </details>
+
+        <details>
+            <summary>Tikal Petén</summary>
+            <h2>Precio: Q.5000</h2>
+            <h2>Duración: 5 días</h2>
+            <h2>Personas: 4 personas</h2>
+            <h3>Galería:</h3>
+            <img src="ot1.jpg" width="250" alt="Tikal Petén 1">
+            <img src="ot2.jpg" width="250" alt="Tikal Petén 2">
+        </details>
+    </center>
+</body>
+</html>
