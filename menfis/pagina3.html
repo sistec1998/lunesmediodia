@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Viajes</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5); /* fondo con degradado */
+            color: #333;
+            transition: background 1s ease;
+        }
+
+        h1, h2 {
+            color: #0a3d62;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #0984e3;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #74b9ff;
+        }
+
+        button {
+            background-color: #00b894;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #55efc4;
+            transform: scale(1.1);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background-color: #0984e3;
+            margin: 40px 0;
+        }
+
+        marquee img {
+            margin: 0 10px;
+            border-radius: 10px;
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+        }
+
+        center {
+            padding: 20px;
+        }
+
+        table {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="300" alt="Logo">
+        <br><br>
+        <a href="pagina1.html">LUGARES</a>
+        <a href="pagina 2.html">RESERVACIÓN</a>
+
+        <hr width="700">
+
+        <h1>NUESTRA MISIÓN</h1>
+        <p>Brindar experiencias de viaje únicas, seguras
+             y memorables, conectando a las 
+            personas con los destinos de sus 
+            sueños. Nos comprometemos
+             a ofrecer un servicio
+            de calidad, atención personalizada 
+            y soluciones innovadoras
+             que superen las expectativas 
+            de nuestros clientes, fomentando el
+             turismo responsable y 
+            sostenible.</p>
+
+        <h2>NUESTRA VISIÓN</h2>
+        <p>Ser la empresa líder en el sector turístico, 
+            reconocida por ofrecer experiencias de viaje 
+            excepcionales, innovadoras y sostenibles. 
+            Aspiramos a transformar la manera en que las personas 
+            descubren el mundo, conectando culturas y creando
+             recuerdos inolvidables en cada destino.</p>
+
+        <label>¿A dónde te gustaría ir?</label><br><br>
+        <input type="text">
+        <button>BUSCAR</button>
+
+        <hr width="700">
+
+        <h2>¡POR SI TE INTERESA!</h2>
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            <img src="lugar.avif" width="350" alt="Lugar 1">
+            <img src="guatemala.jpg" width="250" alt="Guatemala">
+            <img src="m.jpg" width="300" alt="Lugar 3">
+        </marquee>
+
+        <h2>LUGARES MÁS VISITADOS</h2>
+        <ol>
+            <li>Panajachel</li>
+            <li> Champey</li>
+            <li>Río Dulce</li>
+            <li>Lago Itzá, Flores</li>
+        </ol>
+    </center>
+</body>
+</html>

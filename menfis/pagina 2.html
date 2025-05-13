@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo.png">
+    <!-- Font Awesome para el ícono -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #007BFF; /* Azul */
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-top: 20px;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #FFD700;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            width: 400px;
+            transition: transform 0.5s;
+        }
+
+        form:hover {
+            transform: scale(1.02);
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+        }
+
+        input:focus {
+            box-shadow: 0 0 10px #fff;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        button:nth-child(2) {
+            background-color: #dc3545;
+        }
+
+        button:nth-child(2):hover {
+            background-color: #c82333;
+        }
+
+        .icono {
+            font-size: 40px;
+            color: gold;
+            margin-bottom: 10px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="300">
+        <div class="icono">
+            <i class="fas fa-plane-departure"></i>
+        </div>
+        <h1>RESERVA EN VIAJE</h1>
+        <hr width="700">
+        <form>
+            <label>¿Cómo te llamas?</label><br><br>
+            <input type="text"><br>
+
+            <label>Teléfono</label><br><br>
+            <input type="number"><br>
+
+            <label>Correo electrónico</label><br><br>
+            <input type="email"><br>
+
+            <label>Lugar turístico</label><br><br>
+            <input type="text"><br>
+
+            <label>Fecha para viajar</label><br><br>
+            <input type="date"><br>
+
+            <label>N° Tarjeta (Crédito / Débito)</label><br><br>
+            <input type="text"><br>
+
+            <button type="submit">RESERVAR</button>
+            <button type="reset">CANCELAR</button>
+        </form>
+    </center>
+</body>
+</html>

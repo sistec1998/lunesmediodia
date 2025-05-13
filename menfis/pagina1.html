@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png">
+    <title>VIAJES</title>
+
+    <!-- Fuente e íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            transition: color 0.5s ease;
+        }
+
+        h1:hover, h2:hover, h3:hover {
+            color: #00ffff;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00ffff;
+        }
+
+        details {
+            background-color: #111;
+            margin: 20px auto;
+            width: 80%;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #444;
+            transition: background-color 0.3s ease;
+        }
+
+        details:hover {
+            background-color: #222;
+        }
+
+        summary {
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #00ffff;
+            transition: color 0.3s ease;
+        }
+
+        summary:hover {
+            color: #00ced1;
+        }
+
+        hr {
+            border: 1px solid #00ffff;
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        .icono {
+            color: #00ffff;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" width="300">
+    <hr>
+    <h1><i class="fas fa-map-marked-alt icono"></i>Lugares Turísticos</h1>
+
+    <details>
+        <summary><i class="fas fa-city icono"></i>ANTIGUA GUATEMALA</summary>
+        <h2>PRECIO: Q.5,000</h2>
+        <h2>DURACIÓN: 5 DÍAS</h2>
+        <h2>PERSONAS: 4 PERSONAS</h2>
+        <h3><i class="fas fa-images icono"></i>GALERÍA</h3>
+        <img src="hotel.jpg" width="250">
+        <img src="images.jpg" width="200">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-fort-awesome icono"></i>CASTILLO DE SAN FELIPE IZABAL</summary>
+        <h2>PRECIO: Q.7,000</h2>
+        <h2>DURACIÓN: 9 DÍAS</h2>
+        <h2>PERSONAS: 3 PERSONAS</h2>
+        <h3><i class="fas fa-images icono"></i>GALERÍA</h3>
+        <img src="San felipe.webp" width="200">
+        <img src="a.jpg" width="250">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-umbrella-beach icono"></i>MONTERICO SANTA ROSA</summary>
+        <h2>PRECIO: Q.6,000</h2>
+        <h2>DURACIÓN: 4 DÍAS</h2>
+        <h2>PERSONAS: 2 PERSONAS</h2>
+        <h3><i class="fas fa-images icono"></i>GALERÍA</h3>
+        <img src="santa rosa.jpg" width="200">
+        <img src="monterico.jpg" width="200">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-tree icono"></i>TIKAL PETÉN</summary>
+        <h2>PRECIO: Q.5,000</h2>
+        <h2>DURACIÓN: 6 DÍAS</h2>
+        <h2>PERSONAS: 3 PERSONAS</h2>
+        <h3><i class="fas fa-images icono"></i>GALERÍA</h3>
+        <img src="HOTEL PETEN.jpg" width="200">
+        <img src="PETEN.avif" width="200">
+    </details>
+</body>
+</html>
