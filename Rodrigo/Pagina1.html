@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo tipo.avif">
+
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos -->
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #e1bee7);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            color: #6a1b9a;
+            text-shadow: 2px 2px 4px #aaa;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        details {
+            background-color: #f3e5f5;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        details:hover {
+            transform: scale(1.02);
+        }
+
+        summary {
+            font-weight: bold;
+            font-size: 1.3em;
+            cursor: pointer;
+            color: #4a148c;
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h3 {
+            color: #4e342e;
+        }
+
+        .icon {
+            color: #6a1b9a;
+            margin-right: 8px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: #7b1fa2;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo tipo.avif" width="200" alt="Logo" style="animation: fadeIn 2s;">
+    <hr>
+    <h1><i class="fas fa-plane-departure icon"></i>LUGARES TURÍSTICOS</h1>
+
+    <details>
+        <summary><i class="fas fa-map-marker-alt icon"></i>Antigua Guatemala</summary>
+        <h3><i class="fas fa-dollar-sign icon"></i>Precio: Q2000</h3>
+        <h3><i class="fas fa-clock icon"></i>Duración: 2 días</h3>
+        <h3><i class="fas fa-user-friends icon"></i>Personas: 5</h3>
+        <img src="1.jpg" width="300">
+        <img src="2.jpg" width="300">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-map-marker-alt icon"></i>Castillo de San Felipe, Izabal</summary>
+        <h3><i class="fas fa-dollar-sign icon"></i>Precio: Q1200</h3>
+        <h3><i class="fas fa-clock icon"></i>Duración: 2 días</h3>
+        <h3><i class="fas fa-user-friends icon"></i>Personas: 2</h3>
+        <img src="3.jpg" width="300">
+        <img src="4.jpg" width="300">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-map-marker-alt icon"></i>Monterrico, Santa Rosa</summary>
+        <h3><i class="fas fa-dollar-sign icon"></i>Precio: Q1500</h3>
+        <h3><i class="fas fa-clock icon"></i>Duración: 3 días</h3>
+        <h3><i class="fas fa-user-friends icon"></i>Personas: 5</h3>
+        <img src="5.jpg" width="300">
+        <img src="6.jpg" width="300">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-map-marker-alt icon"></i>Tikal, Petén</summary>
+        <h3><i class="fas fa-dollar-sign icon"></i>Precio: Q2500</h3>
+        <h3><i class="fas fa-clock icon"></i>Duración: 3 días</h3>
+        <h3><i class="fas fa-user-friends icon"></i>Personas: 5</h3>
+        <img src="7.avif" width="300">
+        <img src="8.jpg" width="300">
+    </details>
+
+</body>
+</html>

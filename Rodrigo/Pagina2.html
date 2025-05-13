@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIAJES</title>
+  <link rel="icon" href="logo tipo.avif">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #56ccf2, #2f80ed);
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 50%;
+      transition: transform 0.5s;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 20px 0;
+      animation: slideDown 1s ease;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+
+    input {
+      width: 80%;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      transition: box-shadow 0.3s ease;
+    }
+
+    input:focus {
+      box-shadow: 0 0 10px #fff;
+      outline: none;
+    }
+
+    button {
+      margin: 15px 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ffffff;
+      color: #2f80ed;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #f1c40f;
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 60%;
+      margin: 20px auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo tipo.avif" alt="Logo">
+  <h1><i class="fas fa-plane-departure"></i> RESERVA TU VIAJE</h1>
+  <hr>
+
+  <form>
+    <label><i class="fas fa-user"></i> ¿Cómo te llamas?</label>
+    <input type="text" placeholder="Nombre completo">
+
+    <label><i class="fas fa-phone"></i> Teléfono</label>
+    <input type="number" placeholder="Ej: 123456789">
+
+    <label><i class="fas fa-envelope"></i> Correo Electrónico</label>
+    <input type="email" placeholder="correo@ejemplo.com">
+
+    <label><i class="fas fa-map-marker-alt"></i> Lugar Turístico</label>
+    <input type="text" placeholder="Destino">
+
+    <label><i class="fas fa-calendar-alt"></i> Fecha para Viajar</label>
+    <input type="date">
+
+    <label><i class="fas fa-credit-card"></i> N. Tarjeta Crédito/Débito</label>
+    <input type="text" placeholder="**** **** **** ****">
+
+    <br><br>
+    <button type="submit"><i class="fas fa-check"></i> Reservar</button>
+    <button type="reset"><i class="fas fa-times"></i> Cancelar</button>
+  </form>
+
+</body>
+</html>
