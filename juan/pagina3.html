@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Viajes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+            color: #333;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        center {
+            padding: 40px;
+        }
+
+        img {
+            border-radius: 12px;
+            margin: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #00796b;
+            margin: 10px 0;
+        }
+
+        h2 {
+            color: #004d40;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #00695c;
+            margin-top: 30px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #26a69a;
+            width: 200px;
+            transition: border 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border: 2px solid #00897b;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            background-color: #009688;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00796b;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #4db6ac;
+            margin: 30px 0;
+        }
+
+        details {
+            padding: 20px;
+            background-color: #ffffffdd;
+            border: 2px solid #26a69a;
+            border-radius: 12px;
+            width: 80%;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        details:hover {
+            transform: scale(1.02);
+            background-color: #e0f2f1;
+        }
+
+        ul {
+            list-style-type: square;
+            margin: 5px 0;
+            padding: 0;
+            color: #00695c;
+            font-weight: 500;
+        }
+
+        li {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="300" alt="Logo">
+        <h1>Lugares</h1>
+        <h1>Reservar</h1>
+
+        <hr width="700">
+
+        <h2>Nuestra misión</h2>
+        <p>
+            "Promover el turismo en Guatemala ofreciendo experiencias únicas, seguras y accesibles que resalten 
+            la riqueza cultural, natural e histórica de nuestro país, brindando un servicio cálido, profesional
+            y comprometido con el desarrollo sostenible y el orgullo guatemalteco."
+        </p>
+
+        <h2>Visión</h2>
+        <p>
+            "Ser la agencia de viajes líder en Guatemala, reconocida por inspirar el amor por nuestro país,
+            promover el turismo responsable y transformar cada viaje en una experiencia memorable que conecte
+            a las personas con la belleza y diversidad de Guatemala."
+        </p>
+
+        <h2>¿A dónde te gustaría ir?</h2>
+        <input type="text" placeholder="Escribe un destino..."> 
+        <button>Buscar</button>
+
+        <hr width="700">
+
+        <h3>Por si te interesa</h3>
+        <details>
+            <summary>Descubre estos lugares</summary>
+            <img src="poso.jpeg" width="300"> 
+            <img src="atitlan.jpg" width="300"> 
+            <img src="rio.jpg" width="300">
+        </details>
+
+        <h2>Lo más visitado</h2>
+        <li>
+            <ul>Panajachel</ul>
+            <ul>Río Dulce</ul>
+            <ul>Semuc Champey</ul>
+            <ul>Lago Itzá, Flores</ul>
+        </li>
+    </center>
+</body>
+</html>

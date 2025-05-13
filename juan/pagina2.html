@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Viajes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #b2ebf2, #80deea);
+            color: #333;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        center {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #004d40;
+            margin: 15px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"] {
+            padding: 10px;
+            width: 300px;
+            border-radius: 8px;
+            border: 1px solid #26a69a;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border: 2px solid #00796b;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 150, 136, 0.4);
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+            background-color: #009688;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #00796b;
+            transform: scale(1.05);
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #4db6ac;
+            margin: 20px 0 30px;
+            width: 60%;
+        }
+
+        img {
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="300" alt="Logo de Viajes">
+        <h1>Reserva tu viaje</h1>
+        <hr>
+
+        <h2>¿Cómo te llamas?</h2>
+        <input type="text" placeholder="Nombre completo">
+
+        <h2>Teléfono</h2>
+        <input type="number" placeholder="Ej. 12345678">
+
+        <h2>Correo electrónico</h2>
+        <input type="text" placeholder="ejemplo@email.com">
+
+        <h2>Lugar turístico</h2>
+        <input type="text" placeholder="Destino deseado">
+
+        <h2>Fecha para viajar</h2>
+        <input type="date">
+
+        <h2>Número de tarjeta (crédito/débito)</h2>
+        <input type="number" placeholder="#### #### #### ####">
+        
+        <br><br>
+        <button>Reservar</button>
+        <button style="background-color: #e57373;">Cancelar</button>
+    </center>
+</body>
+</html>
