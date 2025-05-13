@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo.png">
+
+    <style>
+        /* FUENTES Y COLORES */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            width: 60%;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #3498db;
+            margin: 30px auto;
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        form {
+            margin: 30px auto;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 250px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        ol {
+            list-style-position: inside;
+            text-align: left;
+            display: inline-block;
+            font-size: 1.2em;
+            animation: fadeInUp 1s ease-in;
+        }
+
+        /* ANIMACIONES */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="logo.png" width="300" alt="Logo">
+
+    <h1>LUGARES | RESERVAR</h1>
+    <hr width="700">
+
+    <h1>NUESTRA MISIÓN</h1>
+    <p>"Brindar experiencias de viaje únicas y memorables, 
+    conectando a nuestros clientes con los destinos de sus 
+    sueños a través de un servicio personalizado, confiable 
+    y accesible, promoviendo el turismo sostenible y el descubrimiento 
+    cultural en cada aventura."</p>
+
+    <h1>VISIÓN</h1>
+    <p>"Ser la agencia de viajes líder en 
+    inspiración, innovación y calidad, reconocida por 
+    transformar la manera en que las personas descubren el mundo, creando
+    conexiones auténticas entre culturas 
+    y fomentando un turismo responsable y enriquecedor."</p>
+
+    <form>
+        <label style="font-weight: bold;">¿A DÓNDE LE GUSTARÍA IR?</label><br><br>
+        <input type="text" placeholder="Ej. París, Roma, Tikal">
+        <button>BUSCAR</button>
+    </form>
+
+    <hr width="700">
+
+    <h1>POR SI TE INTERESA</h1>
+    <img src="FOTO.jpg" width="300" height="300" alt="Lugar 1">
+    <img src="FOTO2.jpg" width="300" height="300" alt="Lugar 2">
+    <img src="FOTO3.jpg" width="300" height="300" alt="Lugar 3">
+
+    <h1>LOS MÁS VISITADOS</h1>
+    <ol>
+        <li>PANAJACHEL</li>
+        <li>RIO DULCE</li>
+        <li>CHAMPEY</li>
+        <li>LAGO ITZÁ - FLORES</li>
+    </ol>
+</body>
+</html>
