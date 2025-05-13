@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link rel="icon" href="logo.avif">
+    
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #005f73;
+            font-size: 2.5em;
+        }
+        hr {
+            width: 50%;
+            border: 1px solid #005f73;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 20px auto;
+            transition: all 0.3s ease;
+        }
+        form:hover {
+            transform: scale(1.05);
+        }
+        input[type="text"], input[type="number"], input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="date"]:focus {
+            border-color: #005f73;
+            outline: none;
+        }
+        button {
+            background-color: #005f73;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #008C95;
+        }
+        button:active {
+            transform: scale(0.98);
+        }
+    </style>
+
+    <!-- Inclusión de SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<center>
+    <img src="logo.avif" width="400" alt="Logo">
+    <h1>Reserva tu Viaje</h1>
+    <hr>
+
+    <form id="reservationForm">
+        <label for="name">¿Cómo te llamas?</label><br>
+        <input type="text" id="name" required><br>
+        
+        <label for="phone">Teléfono</label><br>
+        <input type="number" id="phone" required><br>
+        
+        <label for="email">Correo Electrónico</label><br>
+        <input type="email" id="email" required><br>
+        
+        <label for="touristPlace">Lugar turístico</label><br>
+        <input type="text" id="touristPlace" required><br>
+        
+        <label for="date">Fecha para Viajar</label><br>
+        <input type="date" id="date" required><br>
+        
+        <label for="card">N. Tarjeta (crédito/débito)</label><br>
+        <input type="number" id="card" required><br>
+    </form>
+
+    <!-- Botones -->
+    <button id="reserveButton"><i class="fas fa-check-circle"></i> Reservar</button>
+    <button id="cancelButton"><i class="fas fa-times-circle"></i> Cancelar</button>
+
+</center>
+
+<!-- Script JavaScript -->
+<script>
+    // Función para mostrar el mensaje de éxito con SweetAlert
+    document.getElementById("reserveButton").addEventListener("click", function(event) {
+        event.preventDefault();  // Evitar el envío del formulario
+        Swal.fire({
+            title: '¡Reservado con Éxito!',
+            text: '¡Tu reserva ha sido realizada correctamente!',
+            icon: 'success',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#005f73',
+            timer: 3000, // La alerta se cierra automáticamente después de 3 segundos
+        });
+    });
+
+    // Función para limpiar los campos
+    document.getElementById("cancelButton").addEventListener("click", function() {
+        document.getElementById("reservationForm").reset();
+    });
+</script>
+
+</body>
+</html>
