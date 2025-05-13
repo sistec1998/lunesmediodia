@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo.png">
+    <!-- Vinculamos Font Awesome para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            color: #ff6347; /* Cambia el color al pasar el mouse */
+            text-decoration: underline;
+        }
+        button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff4500; /* Cambio de color en hover */
+        }
+        hr {
+            width: 600px;
+            border: 1px solid #fff;
+        }
+        .imagenes-marquee img {
+            width: 200px;
+            margin-right: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .imagenes-marquee img:hover {
+            transform: scale(1.1);
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" width="300" alt="Logo">
+        <div>
+            <a href="pagina1.html"><i class="fas fa-map-marker-alt"></i> LUGARES</a>
+            <a href="pagina2.html"><i class="fas fa-clipboard-list"></i> RESERVAR</a>
+        </div>
+        <hr>
+        <h2>NUESTRA MISION</h2>
+        <p>Vivir un viaje con propósito, descubriendo más que solo lugares:
+            descubriendo historias, sabores y momentos que no se olvidan.</p>
+        <h2>VISION</h2>
+        <p>Viajar no es solo moverse de un lugar a otro.
+            Es transformarse, abrir la mente y volver siendo 
+            alguien un poco distinto a quien partió.</p>
+        <label>¿A DÓNDE TE GUSTARÍA IR?</label>
+        <input type="text">
+        <button>BUSCAR</button>
+        <hr>
+        <h2>POR SI TE INTERESA</h2>
+        <marquee class="imagenes-marquee">
+            <img src="p1.jpg" alt="Imagen 1">
+            <img src="d1.jpg" alt="Imagen 2">
+            <img src="s1.jpg" alt="Imagen 3">
+        </marquee>
+        <h2>LO MÁS VISITADO</h2>
+        <ol>
+            <li>PANAJACHEL</li>
+            <li>RIO DULCE</li>
+            <li>CHAMPEY</li>
+            <li>LAGO HZÁ FLORES</li>
+        </ol>
+    </div>
+</body>
+</html>
