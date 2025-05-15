@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viajes</title>
+  <link rel="icon" href="logoviaje.png" />
+  <style>
+    body {
+      background-color: #e0f7fa; /* celeste pastel */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1, h2 {
+      color: #0277bd;
+      transition: color 0.3s ease-in-out;
+    }
+
+    h1:hover, h2:hover {
+      color: #01579b;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      margin: 8px;
+      border: 1px solid #b3e5fc;
+      border-radius: 5px;
+      width: 250px;
+      transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      border-color: #0288d1;
+      background-color: #f1f8ff;
+      transform: scale(1.03);
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4fc3f7;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0288d1;
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 200px;
+      margin-top: 20px;
+      animation: slideDown 1.5s ease-out;
+    }
+
+    hr {
+      width: 70%;
+      border: 1px solid #b2ebf2;
+      margin: 20px auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #0277bd;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logoviaje.png" alt="Logo de viaje" />
+  <h1>Datos personales</h1>
+  <hr />
+  <form>
+    <label>Nombre</label>
+    <input type="text" />
+    <label>DPI</label>
+    <input type="text" />
+    <label>Teléfono</label>
+    <input type="text" />
+    <label>Correo electrónico</label>
+    <input type="text" />
+    <label>Dirección</label>
+    <input type="text" />
+  </form>
+
+  <hr />
+  <h2>Datos de pago</h2>
+  <form>
+    <label>Número de tarjeta/Débito/Crédito</label>
+    <input type="text" />
+    <label>CVV</label>
+    <input type="text" />
+    <label>Año vencimiento</label>
+    <input type="text" />
+  </form>
+
+  <hr />
+  <h2>Datos del viaje</h2>
+  <form>
+    <label>Lugar</label>
+    <input type="text" />
+    <label>Cantidad</label>
+    <input type="text" />
+    <label>Fecha</label>
+    <input type="text" />
+  </form>
+
+  <button>Confirmar</button>
+  <button>Cancelar</button>
+
+</body>
+</html>

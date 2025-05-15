@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link rel="icon" href="logoviaje.png">
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e0f7fa; /* Celeste pastel */
+            color: #004d40;
+            text-align: center;
+        }
+
+        h1 {
+            color: #00796b;
+            margin-top: 20px;
+            font-size: 2.5em;
+            transition: color 0.3s;
+        }
+
+        h1:hover {
+            color: #004d40;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #80deea;
+            margin: 20px auto;
+        }
+
+        details {
+            background-color: #b2ebf2;
+            border-radius: 12px;
+            padding: 15px;
+            width: 80%;
+            margin: 20px auto;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        details:hover {
+            transform: scale(1.02);
+        }
+
+        summary {
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            color: #006064;
+            transition: color 0.3s;
+        }
+
+        summary:hover {
+            color: #004d40;
+        }
+
+        h3 {
+            margin: 10px 0;
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        details[open] {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logoviaje.png" width="200" alt="Logo de Viajes">
+    <hr width="300">
+    <h1>Lugares Turísticos</h1>
+
+    <details>
+        <summary>Antigua Guatemala</summary>
+        <h3>Precio: Q3000</h3>
+        <h3>Duración: 4 días</h3>
+        <h3>Personas: 2</h3>
+        <img src="imagen1.jpg" width="300" alt="Antigua 1">
+        <img src="imagen2.jpg" width="300" alt="Antigua 2">
+    </details>
+
+    <details>
+        <summary>Castillo de San Felipe, Izabal</summary>
+        <h3>Precio: Q8000</h3>
+        <h3>Duración: 6 días</h3>
+        <h3>Personas: 4</h3>
+        <img src="imagen3.jpg" width="300" alt="San Felipe 1">
+        <img src="imagen4.jpg" width="300" alt="San Felipe 2">
+    </details>
+
+    <details>
+        <summary>Monterrico, Santa Rosa</summary>
+        <h3>Precio: Q9000</h3>
+        <h3>Duración: 1 semana</h3>
+        <h3>Personas: 5</h3>
+        <img src="imagen5.jpg" width="300" alt="Monterrico 1">
+        <img src="imagen6.jpg" width="300" alt="Monterrico 2">
+    </details>
+
+    <details>
+        <summary>Tikal, Petén</summary>
+        <h3>Precio: Q7000</h3>
+        <h3>Duración: 5 días</h3>
+        <h3>Personas: 2</h3>
+        <img src="imagen7.avif" width="340" alt="Tikal 1">
+        <img src="imagen8.jpg" width="300" alt="Tikal 2">
+    </details>
+
+</body>
+</html>
