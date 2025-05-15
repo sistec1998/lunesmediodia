@@ -1,0 +1,137 @@
+<html>
+<head>
+    <title>VIAJES</title>
+    <link rel="icon" href="travel logo.avif">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: linear-gradient(-45deg, #000000, #00c6ff);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        form {
+            margin-bottom: 15px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        input {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        input:focus {
+            outline: none;
+            transform: scale(1.05);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #00c6ff;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #009fd9;
+            transform: scale(1.05);
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+
+    <!-- Enlace a iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <center>
+        <img src="travel logo.avif" width="200">
+        <h1>Reserva tu viaje</h1>
+        <hr>
+
+        <form>
+            <label>¿Cómo te llamas?</label><br>
+            <input type="text" placeholder="Tu nombre completo">
+        </form>
+
+        <form>
+            <label>Teléfono</label><br>
+            <input type="text" placeholder="Ej. 5876-2546">
+        </form>
+
+        <form>
+            <label>Correo electrónico</label><br>
+            <input type="text" placeholder="Tu correo@gmail.com">
+        </form>
+
+        <form>
+            <label>Lugar turístico</label><br>
+            <input type="text" placeholder="Ej. Seúl, Busan, etc">
+        </form>
+
+        <form>
+            <label>Fecha para viajar</label><br>
+            <input type="text" placeholder="dd/mm/aa">
+        </form>
+
+        <form>
+            <label>No. de tarjeta (crédito/débito)</label><br>
+            <input type="text" placeholder="Ej. 1457 3541 2845 3954"><br><br>
+            <button>Reservar</button>
+            <button>Cancelar</button>
+        </form>
+
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </center>
+</body>
+</html>

@@ -2,110 +2,132 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>LEZHIN</title>
-    <link rel="icon" href="logo lezhin.png">
-    <!-- Íconos de redes sociales (Font Awesome) -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>VIAJES</title>
+    <link rel="icon" href="travel logo.avif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
-            padding: 20px;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom, #000000, #00cfff);
+            color: white;
+            text-align: center;
         }
 
-        img {
-            width: 250px;
-            height: auto;
-            margin: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        img:hover {
-            transform: scale(1.05);
+        h1 {
+            margin-top: 20px;
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
         }
 
         hr {
+            border: 0;
+            height: 2px;
             width: 80%;
-            border: 1px solid #555;
+            background: white;
         }
 
         details {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            padding: 20px;
             margin: 20px auto;
-            width: 80%;
-            background-color: #111;
-            border: 1px solid #333;
-            padding: 10px;
-            border-radius: 8px;
-            transition: max-height 0.5s ease-in-out;
+            width: 90%;
+            max-width: 800px;
+            transition: transform 0.3s;
+        }
+
+        details:hover {
+            transform: scale(1.02);
         }
 
         summary {
+            font-size: 1.5em;
             cursor: pointer;
-            font-size: 1.2em;
-            font-weight: bold;
+            color: #ffd700;
         }
 
-        details[open] {
-            animation: fadeIn 0.5s ease-in;
+        .card {
+            display: inline-block;
+            margin: 10px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: white;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        .card img {
+            width: 250px;
+            height: 170px;
+            object-fit: cover;
+            display: block;
         }
 
         @keyframes fadeIn {
-            from {opacity: 0;}
-            to {opacity: 1;}
+            0% {opacity: 0; transform: translateY(-20px);}
+            100% {opacity: 1; transform: translateY(0);}
         }
 
-        .social-icons {
-            margin-top: 30px;
-        }
-
-        .social-icons a {
-            color: #fff;
-            margin: 0 10px;
-            font-size: 2em;
-            transition: transform 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.2);
-            color: #1DA1F2;
+        h2, h3 {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <img src="logo lezhin.png" alt="Logo Lezhin" width="200">
-    <h1>LEZHIN ES</h1>
-    <hr>
-    <p>LEZHIN ES UNA PLATAFORMA DIGITAL SURCOREANA ESPECIALIZADA EN WEBTOONS, QUE SON CÓMICS DISEÑADOS
-        PARA LEERSE EN FORMATO DIGITAL. FUE FUNDADA EN 2013 POR HAN HEE-SUNG Y HA GANADO POPULARIDAD POR OFRECER
-        UNA GRAN VARIEDAD DE TÍTULOS EN GÉNEROS COMO ROMANCE, DRAMA, FANTASÍA, Y ESPECIALMENTE BL...
-    </p>
-    <hr>
-    <details>
-        <summary>MANHWAS BL</summary>
-        <img src="rosas y champaña.jpg" alt="Rosas y Champaña">
-        <img src="señas.jpg" alt="Señas">
-        <img src="pearl boy.jpg" alt="Pearl Boy">
-        <img src="love jinx.jpg" alt="Love Jinx">
-        <img src="dias de juventud.jpg" alt="Días de Juventud">
-        <img src="noches junto al mar.jpg" alt="Noches Junto al Mar">
-    </details>
-    <hr>
-    <h2>MAHWAS BL POPULARES</h2>
-    <ol>
-        <li>Killing Stalking</li>
-        <li>BJ Alex</li>
-        <li>Painter of the Night</li>
-        <li>Love Is an Illusion</li>
-        <li>Sign</li>
-    </ol>
 
-    <div class="social-icons">
-        <a href="https://www.tiktok.com" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-    </div>
+    <img src="travel logo.avif" width="200" alt="Logo">
+    <hr>
+    <h1><i class="fas fa-plane-departure"></i> LUGARES TURÍSTICOS</h1>
+
+    <details>
+        <summary><i class="fas fa-city"></i> Seúl</summary>
+        <h2>Precio: Q7,800</h2>
+        <h2>Duración: 7 días</h2>
+        <h2>Personas: 6 personas</h2>
+        <h3>Galería</h3>
+        <div class="card"><img src="seul1.webp" alt="Seúl 1"></div>
+        <div class="card"><img src="seul2.jpg" alt="Seúl 2"></div>
+        <div class="card"><img src="seul3.jpg" alt="Seúl 3"></div>
+    </details>
+
+    <details>
+        <summary><i class="fas fa-water"></i> Busan</summary>
+        <h2>Precio: Q9,500</h2>
+        <h2>Duración: 12 días</h2>
+        <h2>Personas: 5 personas</h2>
+        <h3>Galería</h3>
+        <div class="card"><img src="busan1.jpg" alt="Busan 1"></div>
+        <div class="card"><img src="busan2.jpg" alt="Busan 2"></div>
+        <div class="card"><img src="busan3.avif" alt="Busan 3"></div>
+    </details>
+
+    <details>
+        <summary><i class="fas fa-mountain"></i> Jeju-do</summary>
+        <h2>Precio: Q10,700</h2>
+        <h2>Duración: 15 días</h2>
+        <h2>Personas: 7 personas</h2>
+        <h3>Galería</h3>
+        <div class="card"><img src="jejudo1.jpg" alt="Jeju 1"></div>
+        <div class="card"><img src="jejudo2.avif" alt="Jeju 2"></div>
+        <div class="card"><img src="jejudo3.jpg" alt="Jeju 3"></div>
+    </details>
+
+    <details>
+        <summary><i class="fas fa-landmark"></i> Gyeongju</summary>
+        <h2>Precio: Q5,500</h2>
+        <h2>Duración: 4 días</h2>
+        <h2>Personas: 3 personas</h2>
+        <h3>Galería</h3>
+        <div class="card"><img src="gyeon1.jpg" alt="Gyeongju 1"></div>
+        <div class="card"><img src="gyeon2.jpg" alt="Gyeongju 2"></div>
+        <div class="card"><img src="gyeon3.jpg" alt="Gyeongju 3"></div>
+    </details>
+
 </body>
 </html>

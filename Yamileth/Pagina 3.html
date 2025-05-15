@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>VIAJES</title>
+    <link rel="icon" href="travel logo.avif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom, #000000, #00cfff);
+            color: white;
+            text-align: center;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ffd700;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid white;
+            margin: 30px auto;
+            width: 700px;
+        }
+
+        img.logo {
+            width: 200px;
+            animation: fadeInDown 1s ease;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            width: 250px;
+            transition: box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            box-shadow: 0 0 10px #00cfff;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #00cfff;
+            border: none;
+            border-radius: 10px;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #00aacc;
+            transform: scale(1.05);
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .card {
+            display: inline-block;
+            width: 250px;
+            margin: 10px;
+            background-color: #ffffff10;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+            background-color: #ffffff10;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            margin-top: 40px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="travel logo.avif" class="logo">
+    <br><br>
+    <a href="Pagina 1.html"><i class="fas fa-map-marked-alt"></i> Lugares</a>
+    <a href="Pagina2.html"><i class="fas fa-calendar-check"></i> Reservar</a>
+    <hr>
+
+    <h1><i class="fas fa-bullseye"></i> Nuestra misión</h1>
+    <p>"Brindar experiencias de viaje inolvidables que conecten a las personas con el mundo, a través de un servicio personalizado, seguro y responsable, superando las expectativas de nuestros clientes en cada destino."</p>
+
+    <h1><i class="fas fa-eye"></i> Nuestra visión</h1>
+    <p>"Ser la empresa de viajes líder en innovación y excelencia, reconocida por transformar cada viaje en una experiencia única, inspirando a las personas a explorar el mundo con responsabilidad y pasión."</p>
+
+    <form>
+        <label><i class="fas fa-search-location"></i> ¿A dónde te gustaría ir?</label><br>
+        <input type="text"><br><br>
+        <button><i class="fas fa-search"></i> Buscar</button>
+    </form>
+
+    <hr>
+    <h2><i class="fas fa-star"></i> ¡Por si te interesa!</h2>
+   <marquee behavior="" direction="">
+
+       <div class="card"><img src="incheon.jpg" alt="Incheon"></div>
+       <div class="card"><img src="kioto.jpg" alt="Kioto"></div>
+       <div class="card"><img src="muralla china.jpg" alt="Muralla China"></div>
+
+</marquee>
+
+    <hr>
+    <h2><i class="fas fa-fire"></i> Lo más visitado</h2>
+    <ol>
+        <li>Isla Jeju</li>
+        <li>Templo Bulguksa</li>
+        <li>Templo Senso-ji</li>
+        <li>Monte Fuji</li>
+        <li>La gran muralla China</li>
+    </ol>
+</body>
+</html>
