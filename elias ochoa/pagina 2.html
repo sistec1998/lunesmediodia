@@ -1,0 +1,171 @@
+a<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes</title>
+  <link rel="icon" href="avion 1.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      animation: fadeIn 1.5s ease-in;
+      color: #333;
+    }
+
+    center {
+      padding: 20px;
+    }
+
+    img {
+      width: 200px;
+      animation: slideIn 1s ease-out;
+    }
+
+    h1, h2 {
+      color: #0077b6;
+      text-shadow: 1px 1px #d1ecf1;
+      animation: fadeInTitle 1.5s ease;
+    }
+
+    hr {
+      height: 3px;
+      border: none;
+      background: linear-gradient(to right, #00b4d8, #90e0ef);
+      width: 70%;
+      margin-bottom: 30px;
+      animation: growLine 2s ease-in-out;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 25px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      animation: fadeInForm 2s ease-in;
+    }
+
+    label {
+      font-weight: bold;
+      color: #03045e;
+      display: block;
+      margin-top: 10px;
+      transition: color 0.3s ease;
+    }
+
+    input {
+      width: 95%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      background-color: #f8f9fa;
+    }
+
+    input:focus {
+      border-color: #00b4d8;
+      box-shadow: 0 0 10px #00b4d87a;
+      background-color: #e0f7fa;
+      outline: none;
+    }
+
+    button {
+      margin: 10px 10px 0 0;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #00b4d8;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #0077b6;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInTitle {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInForm {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes growLine {
+      from { width: 0; }
+      to { width: 70%; }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="avion 1.png" alt="Logo">
+    <h1>Datos Personales</h1>
+    <hr>
+
+    <form>
+      <label>Nombre</label>
+      <input type="text">
+
+      <label>DPI</label>
+      <input type="text">
+
+      <label>Teléfono</label>
+      <input type="text">
+
+      <label>Correo Electrónico</label>
+      <input type="text">
+
+      <label>Dirección</label>
+      <input type="text">
+    </form>
+
+    <form>
+      <h2>Datos de Pago</h2>
+      <label>Número de tarjeta (Débito/Crédito)</label>
+      <input type="text">
+
+      <label>CVV</label>
+      <input type="text">
+
+      <label>Fecha de Vencimiento</label>
+      <input type="text">
+    </form>
+
+    <form>
+      <h2>Datos de Viaje</h2>
+      <label>Lugar</label>
+      <input type="text">
+
+      <label>Cantidad</label>
+      <input type="text">
+
+      <label>Fecha</label>
+      <input type="text">
+
+      <button type="submit">Confirmar</button>
+      <button type="reset">Cancelar</button>
+    </form>
+  </center>
+</body>
+</html>

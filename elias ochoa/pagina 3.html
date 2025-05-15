@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes</title>
+  <link rel="icon" href="avion 1.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #dbeafe, #f0f9ff);
+      color: #1e3a8a;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1, h2 {
+      color: #2563eb;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s ease-in;
+    }
+
+    a {
+      margin: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #3b82f6;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+    }
+
+    a:hover {
+      background-color: #1e40af;
+      transform: scale(1.1);
+    }
+
+    p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    form {
+      margin-top: 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 2px solid #60a5fa;
+      border-radius: 10px;
+      width: 250px;
+      transition: border 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      border: 2px solid #1d4ed8;
+      outline: none;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #1e3a8a;
+      transform: scale(1.05);
+    }
+
+    marquee {
+      margin-top: 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    img {
+      border-radius: 20px;
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    ol {
+      list-style: none;
+      padding: 0;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    ol li {
+      background-color: #93c5fd;
+      color: #1e3a8a;
+      margin: 8px auto;
+      padding: 10px;
+      width: 250px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    ol li:hover {
+      background-color: #60a5fa;
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      background: linear-gradient(to right, #3b82f6, #60a5fa, #3b82f6);
+      width: 80%;
+      margin: 30px auto;
+      border-radius: 5px;
+      animation: slideIn 1s ease;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { width: 0; }
+      to { width: 80%; }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="avion 1.png" width="250">
+  <br>
+  <a href="pagina 1.html">Lugares</a>
+  <a href="pagina 2.html">Reservar</a>
+
+  
+  
+  <hr>
+
+  <p>
+    "Brindar experiencias de viaje únicas, seguras y accesibles que conecten a las personas con destinos inolvidables,
+    superando sus expectativas mediante un servicio personalizado."
+  </p>
+  <p>
+    "Ser la agencia de viajes líder y más confiable en el mercado, reconocida por inspirar y facilitar aventuras memorables
+    alrededor del mundo, innovando constantemente para ofrecer servicios."
+  </p>
+
+  <form>
+    <label>¿A dónde te gustaría ir?</label>
+    <br>
+    <input type="text" placeholder="Escribe un destino">
+    <br>
+    <button>Buscar</button>
+  </form>
+
+  <hr>
+
+  <h2>Por si te interesa</h2>
+  <marquee behavior="scroll" direction="left" scrollamount="5">
+    <img src="imagen 4.jpg" width="300">
+    <img src="imagen 1.jpg" width="300">
+    <img src="imagen 6.jpg" width="300">
+  </marquee>
+
+  <h2>Lo más visitado</h2>
+  <ol>
+    <li>Panajachel</li>
+    <li>Río Dulce</li>
+    <li>Semuc Champey</li>
+    <li>Lago Itzá (Flores)</li>
+  </ol>
+
+</body>
+</html>

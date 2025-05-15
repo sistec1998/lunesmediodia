@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes</title>
+  <link rel="icon" href="avion 1.png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      color: #333;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    h1 {
+      color: #0077b6;
+      font-size: 3em;
+      text-shadow: 2px 2px #e0e0e0;
+      margin-top: 10px;
+      animation: slideDown 1.2s ease-out;
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      background: linear-gradient(to right, #00b4d8, #48cae4);
+      width: 70%;
+      margin-bottom: 20px;
+      animation: growLine 2s ease-in-out;
+    }
+
+    details {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin: 20px auto;
+      padding: 20px;
+      width: 80%;
+      max-width: 800px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    summary {
+      font-size: 1.5em;
+      color: #023e8a;
+      font-weight: bold;
+      margin-bottom: 10px;
+      transition: color 0.3s;
+    }
+
+    summary:hover {
+      color: #0077b6;
+    }
+
+    h3 {
+      color: #03045e;
+      margin: 5px 0;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes growLine {
+      from { width: 0; }
+      to { width: 70%; }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="avion 1.png" alt="Logo" width="100">
+    <hr>
+    <h1>Lugares Turisticos</h1>
+
+    <details>
+      <summary>Antigua Guatemala</summary>
+      <h3>Precio: Q5000</h3>
+      <h3>Duración: 5 horas</h3>
+      <h3>Personas: 5</h3>
+      <img src="imagen 1.jpg" width="300">
+      <img src="imagen 2.jpg" width="300">
+    </details>    
+
+    <details>
+      <summary>Castillo de San Felipe, Izabal</summary>
+      <h3>Precio: Q500</h3>
+      <h3>Duración: 3 horas</h3>
+      <h3>Personas: 6</h3>
+      <img src="imagen 3.jpg" width="300">
+      <img src="imagen 4.jpg" width="300">
+    </details>
+
+    <details>
+      <summary>Monterrico, Santa Rosa</summary>
+      <h3>Precio: Q1000</h3>
+      <h3>Duración: 7 horas</h3>
+      <h3>Personas: 2</h3>
+      <img src="imagen 5.jpg" width="300">
+      <img src="imagen 6.jpg" width="300">
+    </details>
+
+    <details>
+      <summary>Tikal, Petén</summary>
+      <h3>Precio: Q1500</h3>
+      <h3>Duración: 2 horas</h3>
+      <h3>Personas: 9</h3>
+      <img src="imagen 7.jpg" width="300">
+      <img src="imagen 8.jpg" width="300">
+    </details>
+  </center>
+</body>
+</html>
