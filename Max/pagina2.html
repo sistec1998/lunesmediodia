@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link rel="icon" href="LOGO 2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #d9e4f5, #fef6e4);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        h1, h2, h3 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        form:hover {
+            transform: scale(1.02);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: border 0.3s;
+        }
+
+        input:focus {
+            border-color: #3399ff;
+            outline: none;
+        }
+
+        hr {
+            margin: 30px auto;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 15px 10px 0 0;
+            background-color: #3399ff;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #287acc;
+            transform: scale(1.05);
+        }
+
+        .icon-title i {
+            margin-right: 8px;
+            color: #3399ff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="LOGO 2.png" width="200" alt="Logo">
+    
+    <h1 class="icon-title"><i class="fa-solid fa-user"></i> Datos Personales</h1>
+    <hr width="700">
+
+    <form>
+        <label><i class="fa-solid fa-signature"></i> Nombre</label>
+        <input type="text">
+
+        <label><i class="fa-solid fa-id-card"></i> DPI</label>
+        <input type="text">
+
+        <label><i class="fa-solid fa-phone"></i> Teléfono</label>
+        <input type="text">
+
+        <label><i class="fa-solid fa-envelope"></i> Correo Electrónico</label>
+        <input type="text">
+
+        <label><i class="fa-solid fa-location-dot"></i> Dirección</label>
+        <input type="text">
+
+        <hr width="700">
+        <h2 class="icon-title"><i class="fa-solid fa-credit-card"></i> Datos de Pago</h2>
+
+        <label><i class="fa-regular fa-credit-card"></i> Número de tarjeta (débito/crédito)</label>
+        <input type="text">
+
+        <label><i class="fa-solid fa-lock"></i> CVV</label>
+        <input type="text">
+
+        <label><i class="fa-solid fa-calendar"></i> Año de nacimiento</label>
+        <input type="text">
+
+        <hr width="700">
+        <h3 class="icon-title"><i class="fa-solid fa-plane-departure"></i> Datos de Viaje</h3>
+
+        <label><i class="fa-solid fa-location-arrow"></i> Lugar</label>
+        <input type="text">
+
+        <label><i class="fa-solid fa-users"></i> Cantidad</label>
+        <input type="text">
+
+        <label><i class="fa-solid fa-calendar-days"></i> Fecha</label>
+        <input type="text">
+
+        <br>
+        <button type="submit"><i class="fa-solid fa-check"></i> Confirmar</button>
+        <button type="reset"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+    </form>
+
+</body>
+</html>

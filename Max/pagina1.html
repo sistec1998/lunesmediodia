@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes</title>
+  <link rel="icon" href="LOGO 2.png">
+  <!-- Fuente e iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #dbe6f6, #c5796d);
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    img {
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      margin: 10px;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      color: #1d3557;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    details {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    details[open] {
+      background-color: #ffffff;
+    }
+
+    summary {
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #0077b6;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      list-style: none;
+    }
+
+    summary::marker {
+      display: none;
+    }
+
+    h3 {
+      margin: 5px 0;
+      font-weight: normal;
+      color: #444;
+    }
+
+    hr {
+      border: 1px solid #ccc;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .info-icon {
+      color: #ff6f61;
+    }
+
+    @media screen and (max-width: 600px) {
+      img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="LOGO 2.png" width="200" alt="Logo">
+  <hr>
+
+  <h1><i class="fas fa-map-marked-alt info-icon"></i> Lugares Turísticos</h1>
+
+  <details>
+    <summary><i class="fas fa-city"></i> Antigua Guatemala</summary>
+    <h3><i class="fas fa-dollar-sign"></i> Precio: 3,500</h3>
+    <h3><i class="fas fa-clock"></i> Duración: 1 semana</h3>
+    <h3><i class="fas fa-users"></i> Personas: 3</h3>
+    <img src="antigua.jpg" width="300" alt="Antigua Guatemala">
+    <img src="Guate.jpg" width="300" alt="Guatemala">
+    <img src="mala.webp" width="300" alt="Mala">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-fort-awesome"></i> Castillo de San Felipe, Izabal</summary>
+    <h3><i class="fas fa-dollar-sign"></i> Precio: 5,000</h3>
+    <h3><i class="fas fa-clock"></i> Duración: 1 semana</h3>
+    <h3><i class="fas fa-users"></i> Personas: 3</h3>
+    <img src="san felipe.jpg" width="300" alt="San Felipe">
+    <img src="castillo.webp" width="300" alt="Castillo">
+    <img src="izabal.jpg" width="300" alt="Izabal">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-umbrella-beach"></i> Monterrico, Santa Rosa</summary>
+    <h3><i class="fas fa-dollar-sign"></i> Precio: 4,000</h3>
+    <h3><i class="fas fa-clock"></i> Duración: 1 semana</h3>
+    <h3><i class="fas fa-users"></i> Personas: 3</h3>
+    <img src="santa.jpg" width="300" alt="Santa">
+    <img src="rosa.jpg" width="300" alt="Rosa">
+    <img src="monterico.jpg" width="300" alt="Monterrico">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-tree"></i> Tikal, Petén</summary>
+    <h3><i class="fas fa-dollar-sign"></i> Precio: 2,700</h3>
+    <h3><i class="fas fa-clock"></i> Duración: 1 semana</h3>
+    <h3><i class="fas fa-users"></i> Personas: 3</h3>
+    <img src="tikal.avif" width="300" alt="Tikal">
+    <img src="peten.jpg" width="300" alt="Petén">
+    <img src="nose.jpg" width="300" alt="Imagen desconocida">
+  </details>
+
+</body>
+</html>

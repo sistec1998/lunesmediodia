@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link rel="icon" href="LOGO 2.png">
+    <!-- Fuente e íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #e1bee7);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h1, h2, h3, h4, h5 {
+            color: #4a148c;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: #4a148c;
+            width: 70%;
+            margin: 20px auto;
+            transition: width 0.5s ease;
+        }
+
+        hr:hover {
+            width: 80%;
+        }
+
+        form input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: box-shadow 0.3s;
+        }
+
+        form input[type="text"]:focus {
+            box-shadow: 0 0 10px #7b1fa2;
+            outline: none;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 8px 0;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        ul li:hover {
+            color: #6a1b9a;
+        }
+
+        .icon {
+            color: #6a1b9a;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="LOGO 2.png" width="300" alt="Logo">
+    
+    <h1><i class="fas fa-plane-departure icon"></i> Lugares para Reservar</h1>
+    
+    <hr>
+
+    <h2><i class="fas fa-bullseye icon"></i> Nuestra Misión</h2>
+    <p>Nuestra misión es asegurarte un viaje seguro y tranquilo donde puedas relajarte y pasar unas vacaciones inolvidables.</p>
+
+    <h2><i class="fas fa-eye icon"></i> Visión</h2>
+    <p>Nuestra visión es crecer y ayudar a muchas personas a tener viajes baratos y seguros.</p>
+
+    <h3><i class="fas fa-map-marker-alt icon"></i> ¿A dónde te gustaría ir?</h3>
+    <form>
+        <label for="buscar"><i class="fas fa-search icon"></i>Buscar:</label>
+        <input type="text" id="buscar" name="buscar" placeholder="Escribe un destino...">
+    </form>
+
+    <hr>
+
+    <h4><i class="fas fa-images icon"></i> Por si te interesa</h4>
+    <img src="pai.avif" width="300" alt="Destino 1">
+    <img src="saj.avif" width="300" alt="Destino 2">
+    <img src="je.jpg" width="300" alt="Destino 3">
+
+    <h5><i class="fas fa-fire icon"></i> Lo más buscado</h5>
+    <ul>
+        <li><i class="fas fa-location-dot icon"></i> Panajachel</li>
+        <li><i class="fas fa-location-dot icon"></i> Río Dulce</li>
+        <li><i class="fas fa-location-dot icon"></i> Semuc Champey</li>
+        <li><i class="fas fa-location-dot icon"></i> Lago Itzá, Flores</li>
+    </ul>
+
+</body>
+</html>
