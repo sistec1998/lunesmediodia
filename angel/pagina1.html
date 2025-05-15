@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Viajes</title>
+  <link rel="icon" href="logo de avion.png" />
+  <style>
+    /* Fondo y tipografía */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #80deea);
+      color: #004d40;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 10px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    details {
+      margin: 20px auto;
+      width: 80%;
+      background-color: #ffffffdd;
+      border: 2px solid #00acc1;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+    }
+
+    summary {
+      font-size: 1.4em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #00695c;
+      padding: 10px;
+    }
+
+    img {
+      border-radius: 10px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    h3 {
+      margin: 5px;
+      color: #00796b;
+    }
+
+    hr {
+      width: 700px;
+      border: none;
+      height: 3px;
+      background-color: #00838f;
+      margin-bottom: 20px;
+    }
+
+    /* Animaciones */
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Botón estilo */
+    .boton {
+      background-color: #0097a7;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      margin-top: 20px;
+      font-size: 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .boton:hover {
+      background-color: #006064;
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+  <img src="logo de avion.png" width="200" alt="Logo de avión">
+  <hr>
+  <h1>Lugares Turísticos</h1>
+
+  <details>
+    <summary>Antigua Guatemala</summary>
+    <h3>Precio: Q5000</h3>
+    <h3>Duración: 5 horas</h3>
+    <h3>Personas: 20</h3>
+    <img src="foto 1.jpg" width="300" alt="Antigua 1">
+    <img src="foto 2.jpg" width="300" alt="Antigua 2">
+  </details>
+
+  <details>
+    <summary>Castillo de San Felipe, Izabal</summary>
+    <h3>Precio: Q500</h3>
+    <h3>Duración: 7 horas</h3>
+    <h3>Personas: 15</h3>
+    <img src="foto 3.jpg" width="300" alt="Castillo 1">
+    <img src="foto 4.jpg" width="300" alt="Castillo 2">
+  </details>
+
+  <details>
+    <summary>Monterrico, Santa Rosa</summary>
+    <h3>Precio: Q1000</h3>
+    <h3>Duración: 7 horas</h3>
+    <h3>Personas: 9</h3>
+    <img src="foto 5.jpg" width="300" alt="Monterrico 1">
+    <img src="foto 6.jpg" width="300" alt="Monterrico 2">
+  </details>
+
+  <details>
+    <summary>Tikal, Petén</summary>
+    <h3>Precio: Q1500</h3>
+    <h3>Duración: 5 horas</h3>
+    <h3>Personas: 7</h3>
+    <img src="foto 7.jpg" width="300" alt="Tikal 1">
+    <img src="foto 8.avif" width="300" alt="Tikal 2">
+  </details>
+
+  <button class="boton" onclick="alert('¡Gracias por explorar nuestros viajes!')">¡Reserva ahora!</button>
+</body>
+</html>
