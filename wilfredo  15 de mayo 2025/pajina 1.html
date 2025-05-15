@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo1.png">
+
+    <style>
+        /* Fondo con degradado azul */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Título principal brillante */
+        h1 {
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+            animation: pulse 2s infinite;
+        }
+
+        h3 {
+            color: #ffffff;
+        }
+
+        summary {
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        summary:hover {
+            color: #00ffff;
+        }
+
+        details {
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        details:hover {
+            transform: scale(1.02);
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+        }
+
+        /* Animación de brillo en el título */
+        @keyframes pulse {
+            0% { text-shadow: 0 0 10px #00ffff; }
+            50% { text-shadow: 0 0 20px #00ffff; }
+            100% { text-shadow: 0 0 10px #00ffff; }
+        }
+
+        /* Lluvia de agua simulada */
+        .rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .raindrop {
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.6);
+            animation: rain 1s linear infinite;
+        }
+
+        @keyframes rain {
+            0% { transform: translateY(-100px); }
+            100% { transform: translateY(100vh); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Lluvia -->
+    <div class="rain">
+        <!-- Generar gotas -->
+        <script>
+            for (let i = 0; i < 100; i++) {
+                let drop = document.createElement("div");
+                drop.className = "raindrop";
+                drop.style.left = Math.random() * 100 + "vw";
+                drop.style.animationDuration = 0.5 + Math.random() * 0.5 + "s";
+                drop.style.opacity = Math.random();
+                document.querySelector(".rain").appendChild(drop);
+            }
+        </script>
+    </div>
+
+    <center>
+        <img src="logo1.png" width="400">
+        <hr width="600">
+        <h1>LUGARES TURÍSTICOS</h1>
+
+        <details>
+            <summary>Antigua Guatemala</summary>
+            <h3>Precio: Q2,000</h3>
+            <h3>Duración: 5 horas</h3>
+            <h3>Personas: 20</h3>
+            <img src="antigua guatemala.jpg" width="300">
+            <img src="guatemala.jpg" width="250">
+        </details>
+
+        <details>
+            <summary>Castillo de San Felipe, Izabal</summary>
+            <h3>Precio: Q1,000</h3>
+            <h3>Duración: 4 horas</h3>
+            <h3>Personas: 10</h3>
+            <img src="castillos1.jpg" width="300">
+            <img src="castillos2.jpg" width="300">
+        </details>
+
+        <details>
+            <summary>Monterrico, Santa Rosa</summary>
+            <h3>Precio: Q3,000</h3>
+            <h3>Duración: 6 horas</h3>
+            <h3>Personas: 30</h3>
+            <img src="santa rosa 1.jpg" width="300">
+            <img src="santa rosa 2.jpg" width="300">
+        </details>
+
+        <details>
+            <summary>Tikal, Petén</summary>
+            <h3>Precio: Q4,000</h3>
+            <h3>Duración: 2 horas</h3>
+            <h3>Personas: 40</h3>
+            <img src="tikal 1.jpg" width="300">
+            <img src="tikal 2.jpg" width="300">
+        </details>
+    </center>
+</body>
+</html>

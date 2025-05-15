@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>VIAJES</title>
+  <link rel="icon" href="logo1.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#0056b3, #003d80);
+      color: white;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #00ffff;
+      font-size: 36px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      color: #a0dfff;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    form, label, input, button {
+      animation: slideIn 1s ease;
+    }
+
+    input {
+      padding: 5px;
+      margin: 5px 0 15px;
+      border-radius: 5px;
+      border: none;
+      width: 250px;
+      transition: transform 0.3s ease;
+    }
+
+    input:focus {
+      transform: scale(1.05);
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #00aaff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #008ecc;
+    }
+
+    hr {
+      border: 1px solid #00ffff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Lluvia simulada */
+    .rain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .drop {
+      position: absolute;
+      width: 2px;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.5);
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(100vh);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rain">
+    <!-- Se generan gotas de lluvia con JavaScript -->
+  </div>
+
+  <center style="z-index: 1; position: relative;">
+    <img src="logo1.png" width="400">
+    <h1>DATOS PERSONALES</h1>
+    <hr width="600">
+
+    <form>
+      <label>NOMBRE</label><br>
+      <input type="text"><br>
+
+      <label>DPI</label><br>
+      <input type="text"><br>
+
+      <label>TELEFONO</label><br>
+      <input type="text"><br>
+
+      <label>CORREO ELECTRONICO</label><br>
+      <input type="text"><br>
+
+      <label>DIRECCION</label><br>
+      <input type="text">
+    </form>
+
+    <hr width="600">
+    <h2>DATOS DE PAGO</h2>
+    <form>
+      <label>número de tarjeta (débito/crédito)</label><br>
+      <input type="text"><br>
+
+      <label>CW</label><br>
+      <input type="text"><br>
+
+      <label>año vencimiento</label><br>
+      <input type="text">
+    </form>
+
+    <hr width="600">
+    <h2>DATOS VIAJES</h2>
+    <form>
+      <label>lugar</label><br>
+      <input type="text"><br>
+
+      <label>cantidad</label><br>
+      <input type="text"><br>
+
+      <label>fecha</label><br>
+      <input type="text">
+    </form>
+
+    <button>CONFIRMAR</button>
+    <button>CANCELAR</button>
+  </center>
+
+  <script>
+    // Crear gotas de lluvia
+    const rainContainer = document.querySelector('.rain');
+    for (let i = 0; i < 100; i++) {
+      const drop = document.createElement('div');
+      drop.classList.add('drop');
+      drop.style.left = Math.random() * 100 + 'vw';
+      drop.style.animationDuration = (Math.random() * 1 + 0.5) + 's';
+      drop.style.animationDelay = Math.random() * 5 + 's';
+      rainContainer.appendChild(drop);
+    }
+  </script>
+</body>
+</html>
