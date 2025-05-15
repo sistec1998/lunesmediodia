@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="LOGOT.jpg">
+    <!-- Fuente de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #2980b9, #6dd5fa);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        label {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #2980b9;
+            box-shadow: 0 0 10px rgba(41, 128, 185, 0.5);
+        }
+
+        button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3498db;
+            transform: translateY(-3px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        /* Animaciones */
+        @keyframes bounceIn {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .container {
+            animation: bounceIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <img src="LOGOT.jpg" width="200" alt="Logo">
+        <h1>RESERVA TU VIAJE</h1>
+
+        <!-- Formulario de reserva -->
+        <form action="#" method="post">
+            <label for="name"><i class="fas fa-user icon"></i> ¿Cómo te llamas?</label>
+            <hr>
+            <input type="text" id="name" placeholder="Ingresa tu nombre" required>
+            
+            <label for="phone"><i class="fas fa-phone-alt icon"></i> Teléfono</label>
+            <hr>
+            <input type="number" id="phone" placeholder="Tu número de teléfono" required>
+
+            <label for="email"><i class="fas fa-envelope icon"></i> Correo Electrónico</label>
+            <hr>
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+
+            <label for="place"><i class="fas fa-map-marker-alt icon"></i> Lugar Turístico</label>
+            <hr>
+            <input type="text" id="place" placeholder="Destino de tu viaje" required>
+
+            <label for="date"><i class="fas fa-calendar-alt icon"></i> Fecha para Viajar</label>
+            <hr>
+            <input type="date" id="date" required>
+
+            <label for="card"><i class="fas fa-credit-card icon"></i> No. de tarjeta Crédito o Débito</label>
+            <hr>
+            <input type="number" id="card" placeholder="Número de tarjeta" required>
+
+            <button type="submit"><i class="fas fa-check-circle icon"></i> RESERVAR</button>
+            <hr>
+            <button type="reset"><i class="fas fa-times-circle icon"></i> CANCELAR</button>
+        </form>
+    </div>
+
+</body>
+</html>
