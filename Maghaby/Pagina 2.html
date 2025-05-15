@@ -1,149 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>LEZHIN</title>
-    <link rel="icon" href="Logo Lezhin.png">
-    <style>
-        body {
-            background-color: #121212; /* negro */
-            color: #f48fb1; /* rosa claro */
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
+  <meta charset="UTF-8">
+  <title>VIAJES</title>
+  <link rel="icon" href="logo.avif">
+  <!-- Font Awesome para los íconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #ff69b4);
+      color: #ffffff;
+      padding: 30px 0;
+      text-align: center;
+    }
 
-        marquee {
-            font-size: 1.5em;
-            color: #f06292;
-            margin: 15px 0;
-        }
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+      transition: transform 0.3s ease;
+    }
 
-        img {
-            width: 200px;
-            height: 285px;
-            margin: 10px;
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    img:hover {
+      transform: scale(1.05);
+    }
 
-        img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.5); /* sombra rosa */
-        }
+    h1 {
+      font-size: 36px;
+      color: #ffc0cb;
+      text-shadow: 2px 2px 5px #000;
+      margin: 20px 0;
+    }
 
-        form input, form button {
-            padding: 10px;
-            border: 2px solid #f06292;
-            border-radius: 8px;
-            margin: 5px;
-            font-size: 1em;
-            background-color: #1e1e1e;
-            color: #f48fb1;
-            transition: 0.3s;
-        }
+    hr {
+      width: 80%;
+      border: 2px solid #ff80ab;
+      margin-bottom: 30px;
+    }
 
-        form input:focus {
-            border-color: #ec407a;
-            outline: none;
-        }
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
 
-        form button {
-            background-color: #f06292;
-            color: white;
-            cursor: pointer;
-        }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 15px;
+      color: #ffffff;
+      font-size: 16px;
+    }
 
-        form button:hover {
-            background-color: #ec407a;
-        }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      transition: box-shadow 0.3s ease;
+    }
 
-        a {
-            color: #ff80ab;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
+    input:focus {
+      box-shadow: 0 0 10px #ff69b4;
+    }
 
-        a:hover {
-            color: #f06292;
-        }
+    button {
+      background-color: #ff80ab;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 20px 10px 0 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
 
-        hr {
-            border: 1px solid #f48fb1;
-        }
+    button:hover {
+      background-color: #ff4081;
+      transform: scale(1.05);
+    }
 
-        .social-icons {
-            margin-top: 30px;
-        }
+    .social-icons {
+      margin-top: 40px;
+    }
 
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-            margin: 0 10px;
-            filter: brightness(1.1) saturate(1.5);
-            transition: transform 0.3s ease;
-        }
+    .social-icons a {
+      color: #ffc0cb;
+      font-size: 30px;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: transform 0.3s, color 0.3s;
+    }
 
-        .social-icons img:hover {
-            transform: scale(1.2);
-        }
-    </style>
+    .social-icons a:hover {
+      color: white;
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
-    <center>
-        <marquee>BIENVENIDOS A LEZHIN</marquee>
 
-        <img src="Logo Lezhin.png" width="230" alt="Logo Lezhin">
+  <img src="logo.avif" alt="Logo">
+  <h1>RESERVA TU VIAJE</h1>
+  <hr>
 
-        <form>
-            <label for="buscar">¿QUÉ MANHWA BL BUSCAS?</label><br><br>
-            <input type="text" id="buscar" placeholder="Ej. BJ Alex, Painter...">
-            <br><br>
-            <button type="submit">BUSCAR</button>
-        </form>
+  <form>
+    <label>¿CÓMO TE LLAMAS?</label>
+    <input type="text" placeholder="Escribe tu nombre">
 
-        <hr>
+    <label>TELÉFONO</label>
+    <input type="tel" placeholder="Ej: 1234 5678">
 
-        <h2>ALGUNOS MANHWAS BL DE REFERENCIA</h2>
-        <a href="Pagina 1.html">MANHWAS BL</a>
+    <label>CORREO ELECTRÓNICO</label>
+    <input type="email" placeholder="ejemplo@correo.com">
 
-        <hr>
+    <label>LUGAR TURÍSTICO</label>
+    <input type="text" placeholder="Destino deseado">
 
-        <p>
-            Lezhin es una plataforma digital de cómics y webtoons que permite a los usuarios leer
-            una amplia variedad de historias en formato digital.
-            Esta plataforma fue fundada en 2013 en Corea del Sur y ha ganado reconocimiento global por su
-            contenido exclusivo y su enfoque en webtoons o cómics coreanos.
+    <label>FECHA PARA VIAJAR</label>
+    <input type="date">
 
-            Lezhin ofrece una vasta colección de webtoons en diversos géneros, que van desde romántico,
-            acción, drama, fantasía, hasta Boys' Love (BL), un género muy popular dentro de su comunidad.
-            Además de webtoons, Lezhin también ha producido contenido de alta calidad, con un enfoque en 
-            historias para una audiencia madura.
-        </p>
+    <label>NÚMERO DE TARJETA (CRÉDITO / DÉBITO)</label>
+    <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
 
-        <hr>
+    <button type="submit">RESERVAR</button>
+    <button type="reset">CANCELAR</button>
+  </form>
 
-        <h2>MANHWAS BL REFERENCIA POPULARES</h2>
-        <marquee>
-            <img src="lost.jpg" alt="Lost">
-            <img src="PINTOR.jpg" alt="Painter of the Night">
-            <img src="rosas.jpg" alt="Rosas">
-        </marquee>
+  <div class="social-icons">
+    <a href="https://wa.me/" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+  </div>
 
-        <!-- Iconos de redes sociales -->
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="facebook-icon.png" alt="Facebook">
-            </a>
-            <a href="https://wa.me/" target="_blank">
-                <img src="whatsapp-icon.png" alt="WhatsApp">
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="instagram-icon.png" alt="Instagram">
-            </a>
-        </div>
-    </center>
 </body>
 </html>
