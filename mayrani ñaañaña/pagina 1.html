@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viajes</title>
+
+  <!-- Font Awesome para íconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #f8f0f0, #e0ffe0);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      color: #e91e63;
+      animation: pulse 2s infinite;
+    }
+
+    details {
+      background-color: #f3f3f3;
+      border: 2px solid #4caf50;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 20px auto;
+      width: 80%;
+      transition: transform 0.3s ease;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+    }
+
+    summary {
+      font-size: 1.3em;
+      color: #4caf50;
+      cursor: pointer;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.4s;
+    }
+
+    img:hover {
+      transform: scale(1.1) rotate(2deg);
+    }
+
+    hr {
+      border: 2px solid #e91e63;
+      width: 80%;
+    }
+
+    .icon {
+      color: #4caf50;
+      margin-right: 5px;
+    }
+
+    /* Zanahorias animadas */
+    .carrot {
+      position: fixed;
+      top: -50px;
+      font-size: 30px;
+      animation: fall linear infinite;
+      color: orange;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-50px) rotate(0deg);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo de viaje.png" alt="Logo de viaje" width="200" />
+  <hr />
+  <h1><i class="fas fa-map-marked-alt icon"></i>Lugares Turísticos</h1>
+
+  <details>
+    <summary><i class="fas fa-city icon"></i>Antigua Guatemala</summary>
+    <h3>Precio: Q700</h3>
+    <h3>Duración: 2 días</h3>
+    <h3>Personas: 1</h3>
+    <img src="antigua guatemala.jpg" width="200" />
+    <img src="lalala.jpg" width="200" />
+  </details>
+
+  <details>
+    <summary><i class="fas fa-fort-awesome icon"></i>Castillo de San Felipe, Izabal</summary>
+    <h3>Precio: Q1000</h3>
+    <h3>Duración: 2 días</h3>
+    <h3>Personas: 1</h3>
+    <img src="san felipe.jpg" width="200" />
+    <img src="castillo izabal.jpg" width="200" />
+  </details>
+
+  <details>
+    <summary><i class="fas fa-umbrella-beach icon"></i>Monterrico, Santa Rosa</summary>
+    <h3>Precio: Q400</h3>
+    <h3>Duración: 2 días</h3>
+    <h3>Personas: 1</h3>
+    <img src="santa.jpg" width="200" />
+    <img src="rosa.jpg" width="200" />
+  </details>
+
+  <!-- Lluvia de zanahorias -->
+  <script>
+    const carrots = 30;
+    for (let i = 0; i < carrots; i++) {
+      const carrot = document.createElement("div");
+      carrot.className = "carrot";
+      carrot.innerHTML = "🥕";
+      carrot.style.left = Math.random() * 100 + "vw";
+      carrot.style.animationDuration = (2 + Math.random() * 5) + "s";
+      carrot.style.fontSize = (20 + Math.random() * 20) + "px";
+      document.body.appendChild(carrot);
+    }
+  </script>
+
+</body>
+</html>
