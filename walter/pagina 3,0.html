@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Viajes</title>
+  <link rel="icon" href="viajes.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: url('https://www.transparenttextures.com/patterns/pixel-weave.png') repeat, #111;
+      background-size: 100px 100px;
+      color: #00ffff;
+      animation: scrollBg 50s linear infinite;
+    }
+
+    @keyframes scrollBg {
+      0% { background-position: 0 0; }
+      100% { background-position: 1000px 1000px; }
+    }
+
+    center {
+      padding: 40px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    img {
+      width: 300px;
+      margin: 10px;
+      filter: drop-shadow(0 0 10px #00ffff);
+      image-rendering: pixelated;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px 20px;
+      padding: 10px 20px;
+      color: #000;
+      background: linear-gradient(135deg, #00ffff, #ff00cc);
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 12px;
+      box-shadow: 0 0 15px #00ffff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #ff00cc;
+    }
+
+    hr {
+      width: 80%;
+      height: 8px;
+      border: none;
+      background: linear-gradient(to right, #ff00cc, #00ffff);
+      box-shadow: 0 0 15px #00ffff;
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+
+    p {
+      font-size: 12px;
+      color: #ffff00;
+      text-shadow: 1px 1px #000;
+      margin: 15px auto;
+      width: 80%;
+    }
+
+    form {
+      margin: 30px auto;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.6);
+      border: 2px dashed #00ffcc;
+      border-radius: 20px;
+      width: 80%;
+      max-width: 700px;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 80%;
+      padding: 10px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+      background-color: #111;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #ff00cc;
+      box-shadow: 0 0 15px #ff00cc;
+    }
+
+    button {
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(145deg, #00ffff, #ff00cc);
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 15px;
+      border-radius: 12px;
+      font-size: 10px;
+      cursor: pointer;
+      transition: 0.4s ease;
+      box-shadow: 0 0 15px #00ffff;
+    }
+
+    button:hover {
+      background: #ff00cc;
+      color: #fff;
+      box-shadow: 0 0 25px #ff00cc;
+      transform: scale(1.1);
+    }
+
+    h2 {
+      color: #ff00cc;
+      margin-top: 40px;
+      text-shadow: 2px 2px #000;
+    }
+
+    marquee {
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      border: 2px solid #00ffff;
+      margin-top: 20px;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    ol {
+      text-align: left;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 15px;
+      border: 2px dashed #ff00cc;
+      box-shadow: 0 0 15px #ff00cc;
+      margin-top: 20px;
+    }
+
+    ol li {
+      color: #00ffcc;
+      font-size: 12px;
+      margin: 10px 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="viajes.png" alt="Logo de viajes">
+
+    <a href="pagina 1.html">Lugares</a>
+    <a href="pagina 2.0.html">Reserva</a>
+
+    <hr>
+
+    <p>Nuestra misión es brindar experiencias de viaje inolvidables, accesibles y seguras, conectando a las personas con los destinos más asombrosos del mundo.</p>
+    <p>Ser la empresa líder en servicios turísticos a nivel nacional e internacional, reconocida por inspirar a las personas a descubrir el mundo, ofreciendo experiencias únicas.</p>
+
+    <form>
+      <label>¿A dónde te gustaría ir?</label>
+      <input type="text">
+      <br>
+      <button>Buscar</button>
+    </form>
+
+    <hr>
+
+    <h2>Por si te interesa</h2>
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+      <img src="foto 1}.jpg" alt="Foto 1" width="300">
+      <img src="foto 2.jpg" alt="Foto 2" width="300">
+      <img src="foto 3.jpg" alt="Foto 3" width="300">
+    </marquee>
+
+    <h2>Lo más visitado</h2>
+    <ol>
+      <li>Panajachel</li>
+      <li>Río Dulce</li>
+      <li>Semuc Champey</li>
+      <li>Lago Itzá, Flores</li>
+    </ol>
+  </center>
+</body>
+</html>
