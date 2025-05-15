@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link rel="icon" href="logotipo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e0f7fa, #e1bee7);
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #6a1b9a;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: 2px solid #6a1b9a;
+            width: 100px;
+            margin: 20px auto;
+        }
+
+        details {
+            margin: 20px 0;
+            background-color: #f3e5f5;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        details:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        summary {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            color: #4a148c;
+        }
+
+        h3 {
+            margin: 10px 0;
+            font-weight: normal;
+            color: #555;
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .icon {
+            margin-right: 8px;
+            color: #6a1b9a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logotipo.png" width="200" alt="Logo">
+        <hr>
+        <h1><i class="fas fa-map-marked-alt icon"></i>Lugares Turísticos</h1>
+
+        <details>
+            <summary><i class="fas fa-city icon"></i>Antigua Guatemala</summary>
+            <h3><i class="fas fa-dollar-sign icon"></i>Precio: 3,500</h3>
+            <h3><i class="fas fa-clock icon"></i>Duración: 7 horas</h3>
+            <h3><i class="fas fa-users icon"></i>Personas: 3</h3>
+            <img src="imagen1.jpg" width="300">
+            <img src="imagen2.avif" width="300">
+        </details>
+
+        <details>
+            <summary><i class="fas fa-fort-awesome icon"></i>Castillo de San Felipe, Izabal</summary>
+            <h3><i class="fas fa-dollar-sign icon"></i>Precio: 5,500</h3>
+            <h3><i class="fas fa-clock icon"></i>Duración: 10 horas</h3>
+            <h3><i class="fas fa-users icon"></i>Personas: 4</h3>
+            <img src="izabal1.jpg" width="300">
+            <img src="castillo.jpg" width="300">
+        </details>
+
+        <details>
+            <summary><i class="fas fa-umbrella-beach icon"></i>Monterrico, Santa Rosa</summary>
+            <h3><i class="fas fa-dollar-sign icon"></i>Precio: 5,000</h3>
+            <h3><i class="fas fa-clock icon"></i>Duración: 5 horas</h3>
+            <h3><i class="fas fa-users icon"></i>Personas: 3</h3>
+            <img src="monte1.jpg" width="300">
+            <img src="paisaje.jpg" width="300">
+        </details>
+
+        <details>
+            <summary><i class="fas fa-tree icon"></i>Tikal, Petén</summary>
+            <h3><i class="fas fa-dollar-sign icon"></i>Precio: 1,000</h3>
+            <h3><i class="fas fa-clock icon"></i>Duración: 4 horas</h3>
+            <h3><i class="fas fa-users icon"></i>Personas: 3</h3>
+            <img src="tikal2.avif" width="300">
+            <img src="tikal3.jpg" width="300">
+        </details>
+    </div>
+</body>
+</html>
