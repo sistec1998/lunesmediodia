@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes</title>
+  <link rel="icon" href="viaje.png">
+  <style>
+    /* Fondo celeste con animación de lluvia */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #cceeff, #e6faff);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    h1 {
+      color: #004466;
+      text-shadow: 1px 1px 2px white;
+    }
+
+    center {
+      padding: 20px;
+    }
+
+    details {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      width: 90%;
+      max-width: 600px;
+      margin: 20px auto;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+      background: #e0f7ff;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #0077aa;
+      transition: color 0.3s ease;
+    }
+
+    summary:hover {
+      color: #004466;
+    }
+
+    h3 {
+      margin: 5px 0;
+      color: #333;
+    }
+
+    img {
+      border-radius: 10px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Lluvia animada */
+    .rain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      background-image: url('https://i.ibb.co/3Yf5S4z/raindrop.png');
+      animation: rain 0.5s linear infinite;
+      opacity: 0.2;
+    }
+
+    @keyframes rain {
+      0% { background-position: 0 -100px; }
+      100% { background-position: 0 100%; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="rain"></div>
+  <center>
+    <img src="viaje.png" width="300">
+    <hr>
+    <h1>Lugares Turísticos</h1>
+
+    <details>
+      <summary>Antigua Guatemala</summary>
+      <h3>Precio: 300</h3>
+      <h3>Duración: 8.30 horas</h3>
+      <h3>Personas: 3</h3>
+      <img src="antigua.jpg" width="300">
+      <img src="antigua1.jpg" width="300">
+    </details>
+
+    <details>
+      <summary>Castillo de San Felipe, Izabal</summary>
+      <h3>Precio: 3,820</h3>
+      <h3>Duración: 11 horas</h3>
+      <h3>Personas: 2</h3>
+      <img src="izabal.jpg" width="300">
+      <img src="izabal1.jpg" width="300">
+    </details>
+
+    <details>
+      <summary>Monterrico, Santa Rosa</summary>
+      <h3>Precio: 45,189</h3>
+      <h3>Duración: 8 horas</h3>
+      <h3>Personas: 3</h3>
+      <img src="rosa.jpg" width="300">
+      <img src="rosa1.jpg" width="300">
+    </details>
+
+    <details>
+      <summary>Tikal, Petén</summary>
+      <h3>Precio: 800</h3>
+      <h3>Duración: 10 horas</h3>
+      <h3>Personas: 4</h3>
+      <img src="peten.avif" width="300">
+      <img src="peten1.avif" width="300">
+    </details>
+  </center>
+</body>
+</html>

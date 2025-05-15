@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link rel="icon" href="viaje.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, #b3e5fc, #ce93d8);
+            color: #333;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        h1, h2 {
+            color: #6a1b9a;
+            transition: transform 0.3s ease;
+        }
+
+        h1:hover, h2:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        form, p, label, input, button, li {
+            font-size: 1rem;
+        }
+
+        input {
+            padding: 0.5em;
+            border: 1px solid #ce93d8;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #6a1b9a;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #9c27b0;
+        }
+
+        hr {
+            border: 1px solid #6a1b9a;
+        }
+
+        marquee {
+            margin-top: 1em;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            background: #f3e5f5;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Corazones animados */
+        .heart {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            animation: fall 5s linear infinite;
+            transform: rotate(45deg);
+            left: 50%;
+            top: -10px;
+            opacity: 0.8;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: -10px;
+            top: 0;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(45deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(100vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <img src="viaje.png" width="300" alt="Logo de viajes">
+        <h1>Lugares &nbsp;&nbsp;&nbsp; Reservar</h1>
+        <hr>
+
+        <h2>Nuestra Misión</h2>
+        <p>"Nuestra misión es ofrecer soluciones innovadoras y sostenibles que mejoren la calidad de vida de las personas, comprometidos con la excelencia, la integridad y el desarrollo responsable de nuestras comunidades."</p>
+
+        <h2>Visión</h2>
+        <p>"Aspiramos a ser líderes en nuestro sector, reconocidos por nuestra innovación, compromiso social y capacidad de transformar positivamente el entorno, construyendo un futuro más justo, inclusivo y sostenible."</p>
+
+        <form>
+            <label>¿Adónde te gustaría ir?</label><br>
+            <input type="text" placeholder="Escribe un destino...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <hr>
+
+        <h2>Por si te interesa</h2>
+        <marquee>
+            <img src="muelle.jpg" width="300" height="250" alt="Muelle">
+            <img src="muelle1.jpg" width="300" height="250" alt="Muelle 1">
+            <img src="muelle2.jpg" width="300" height="250" alt="Muelle 2">
+        </marquee>
+
+        <h2>Lo más visto</h2>
+        <ul>
+            <li>Panajachel</li>
+            <li>Río Dulce</li>
+            <li>Semuc Champey</li>
+            <li>Lago Itzá, Flores</li>
+        </ul>
+    </center>
+
+    <!-- Lluvia de corazones -->
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = (Math.random() * 2 + 3) + "s"; // duración aleatoria
+            document.body.appendChild(heart);
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+        setInterval(createHeart, 300);
+    </script>
+</body>
+</html>

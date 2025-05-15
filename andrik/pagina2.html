@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link rel="icon" href="viaje.png">
+    <!-- Fuente e iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #00acc1;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #007c91;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #b2ebf2;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #00acc1;
+            outline: none;
+        }
+
+        button {
+            background-color: #00acc1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #007c91;
+        }
+
+        hr {
+            border: 1px solid #b2ebf2;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <center>
+            <img src="viaje.png" alt="Viaje">
+            <h1><i class="fas fa-user"></i> Datos Personales</h1>
+        </center>
+        <hr>
+        <form>
+            <label><i class="fas fa-user"></i> Nombre</label>
+            <input type="text">
+            
+            <label><i class="fas fa-id-card"></i> DPI</label>
+            <input type="text">
+
+            <label><i class="fas fa-phone"></i> Teléfono</label>
+            <input type="text">
+
+            <label><i class="fas fa-envelope"></i> Correo Electrónico</label>
+            <input type="text">
+
+            <label><i class="fas fa-map-marker-alt"></i> Dirección</label>
+            <input type="text">
+
+            <h2><i class="fas fa-credit-card"></i> Datos de Pago</h2>
+
+            <label>Número de tarjeta (débito/crédito)</label>
+            <input type="text">
+
+            <label>CVV</label>
+            <input type="text">
+
+            <label>Año vencimiento</label>
+            <input type="text">
+
+            <label>Destino del viaje</label>
+            <input type="text">
+
+            <label>Cantidad</label>
+            <input type="text">
+
+            <label>Fecha</label>
+            <input type="text">
+
+            <button type="submit"><i class="fas fa-check-circle"></i> Confirmar</button>
+            <button type="reset"><i class="fas fa-times-circle"></i> Cancelar</button>
+        </form>
+    </div>
+</body>
+</html>
