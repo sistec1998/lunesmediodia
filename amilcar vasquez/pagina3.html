@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes</title>
+  <link rel="icon" href="logo1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    img {
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1, h2, h3, h4, h5 {
+      color: #2c3e50;
+      transition: color 0.3s ease-in-out;
+    }
+
+    h1:hover, h2:hover, h3:hover, h4:hover, h5:hover {
+      color: #2980b9;
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      background: #3498db;
+      margin: 20px auto;
+      width: 60%;
+    }
+
+    form input[type="text"] {
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    form input[type="text"]:focus {
+      box-shadow: 0 0 8px #3498db;
+      outline: none;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "\f3c5";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      margin-right: 10px;
+      color: #3498db;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .icon {
+      font-size: 2rem;
+      color: #2980b9;
+      margin: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo1.png" width="200" alt="Logo">
+    <h1><i class="fas fa-plane-departure icon"></i> Lugares para Reservar</h1>
+    <hr>
+  </header>
+
+  <section>
+    <h2>Misión <i class="fas fa-bullseye"></i></h2>
+    <p>Nuestra misión es asegurarte un viaje seguro, tranquilidad, donde puedas relajarte y disfrutar las mejores vacaciones.</p>
+
+    <h2>Visión <i class="fas fa-eye"></i></h2>
+    <p>Nuestra visión es crecer y tener una comunidad excepcional.</p>
+  </section>
+
+  <section>
+    <h3><i class="fas fa-search-location"></i> ¿A dónde te gustaría ir?</h3>
+    <form>
+      <label for="buscar">Buscar:</label><br>
+      <input type="text" id="buscar" placeholder="Destino...">
+    </form>
+    <hr>
+  </section>
+
+  <section>
+    <h4><i class="fas fa-heart"></i> Por si te interesa</h4>
+    <img src="ft10.jpeg" width="300" alt="Lugar 1">
+    <img src="ft11.webp" width="300" alt="Lugar 2">
+    <img src="ft2.jpg" width="300" alt="Lugar 3">
+  </section>
+
+  <section>
+    <h5><i class="fas fa-map-marker-alt"></i> Lugares más visitados</h5>
+    <ul>
+      <li>Panajachel</li>
+      <li>Río Dulce</li>
+      <li>Semuc Champey</li>
+      <li>Lago Petén Itzá (Flores)</li>
+    </ul>
+  </section>
+
+</body>
+</html>

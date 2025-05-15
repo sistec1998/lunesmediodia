@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Viajes</title>
+  <link rel="icon" href="logo1.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+      background-attachment: fixed;
+      color: #333;
+      padding: 20px;
+    }
+
+    center {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    img {
+      width: 180px;
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1, h2, h3 {
+      color: #2c3e50;
+      margin-top: 30px;
+      text-shadow: 1px 1px 2px #fff;
+    }
+
+    hr {
+      width: 80%;
+      height: 3px;
+      background: #3498db;
+      border: none;
+      border-radius: 5px;
+      margin: 30px auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      margin: 10px auto 30px;
+      width: 80%;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #34495e;
+      display: flex;
+      align-items: center;
+    }
+
+    label i {
+      margin-right: 10px;
+      color: #3498db;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      border-color: #3498db;
+      box-shadow: 0 0 8px #3498db88;
+      background: #eef7ff;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #3498db;
+      color: white;
+      font-size: 1rem;
+      margin: 10px 10px 0 0;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: #2980b9;
+      transform: scale(1.05);
+    }
+
+    button:last-child {
+      background: #e74c3c;
+    }
+
+    button:last-child:hover {
+      background: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo1.png" alt="Logo" />
+    <h1><i class="fas fa-user"></i> Datos Personales</h1>
+    <hr />
+
+    <form>
+      <label><i class="fas fa-user"></i>Nombre</label>
+      <input type="text" placeholder="Tu nombre completo" />
+
+      <label><i class="fas fa-id-card"></i>DPI</label>
+      <input type="text" placeholder="1234567890101" />
+
+      <label><i class="fas fa-phone"></i>Teléfono</label>
+      <input type="text" placeholder="5555-5555" />
+
+      <label><i class="fas fa-envelope"></i>Correo Electrónico</label>
+      <input type="text" placeholder="correo@ejemplo.com" />
+
+      <label><i class="fas fa-map-marker-alt"></i>Dirección</label>
+      <input type="text" placeholder="Ciudad, país" />
+    </form>
+
+    <h2><i class="fas fa-credit-card"></i> Datos de Pago</h2>
+    <hr />
+
+    <form>
+      <label><i class="fas fa-credit-card-front"></i>Número de Tarjeta (Débito/Crédito)</label>
+      <input type="text" placeholder="0000 0000 0000 0000" />
+
+      <label><i class="fas fa-lock"></i>CVV</label>
+      <input type="text" placeholder="123" />
+
+      <label><i class="fas fa-calendar"></i>Año de Nacimiento</label>
+      <input type="text" placeholder="1985" />
+    </form>
+
+    <h3><i class="fas fa-plane-departure"></i> Datos del Viaje</h3>
+    <hr />
+
+    <form>
+      <label><i class="fas fa-map-marked-alt"></i>Lugar</label>
+      <input type="text" placeholder="Destino turístico" />
+
+      <label><i class="fas fa-users"></i>Cantidad</label>
+      <input type="text" placeholder="Número de personas" />
+
+      <label><i class="fas fa-calendar-day"></i>Fecha</label>
+      <input type="text" placeholder="DD/MM/AAAA" />
+
+      <br />
+      <button type="submit"><i class="fas fa-check-circle"></i> Confirmar</button>
+      <button type="reset"><i class="fas fa-times-circle"></i> Cancelar</button>
+    </form>
+  </center>
+</body>
+</html>
