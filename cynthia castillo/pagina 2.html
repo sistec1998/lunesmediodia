@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+            text-align: center;
+        }
+
+        header img {
+            width: 200px;
+            margin-top: 20px;
+            animation: fadeIn 2s ease;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #00bcd4;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #1e1e1e;
+            padding: 30px;
+            margin: 20px auto;
+            width: 60%;
+            max-width: 500px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            text-align: left;
+        }
+
+        label {
+            font-size: 1em;
+            color: #03a9f4;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 5px #00bcd4;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0097a7;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            form {
+                width: 90%;
+                padding: 20px;
+            }
+
+            input, button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo de Viajes">
+        <h1><i class="fas fa-plane-departure"></i> RESERVA TU VIAJE</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="nombre">¿CÓMO TE LLAMAS?</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+
+            <label for="telefono">TELÉFONO</label>
+            <input type="number" id="telefono" name="telefono" placeholder="Número de contacto">
+
+            <label for="correo">CORREO ELECTRÓNICO</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+
+            <label for="lugar">LUGAR TURÍSTICO</label>
+            <input type="text" id="lugar" name="lugar" placeholder="Destino deseado">
+
+            <label for="fecha">FECHA PARA VIAJAR</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label for="tarjeta">N. DE TARJETA (CRÉDITO/DÉBITO)</label>
+            <input type="number" id="tarjeta" name="tarjeta" placeholder="Número de tarjeta">
+
+            <button type="submit"><i class="fas fa-check"></i> RESERVAR</button>
+            <button type="reset"><i class="fas fa-times"></i> CANCELAR</button>
+        </form>
+    </main>
+
+</body>
+</html>

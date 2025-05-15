@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="lago.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+            text-align: center;
+        }
+
+        header img {
+            width: 200px;
+            margin-top: 20px;
+            animation: fadeIn 2s ease;
+        }
+
+        nav a {
+            color: #00bcd4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #03a9f4;
+        }
+
+        hr {
+            border: 1px solid #00bcd4;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #03a9f4;
+        }
+
+        p {
+            width: 80%;
+            margin: auto;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        form {
+            background-color: #1e1e1e;
+            padding: 30px;
+            margin: 20px auto;
+            width: 60%;
+            max-width: 500px;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+
+        label {
+            font-size: 1em;
+            color: #03a9f4;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin: 15px 0;
+            background-color: #2a2a2a;
+            color: white;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 5px #00bcd4;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0097a7;
+        }
+
+        .ab {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        ol {
+            text-align: left;
+            width: 60%;
+            margin: auto;
+            color: #ccc;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            form, p, ol {
+                width: 90%;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .ab {
+                width: 150px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="hola" src="logo.png" alt="Logo de Viajes">
+        <nav>
+            <a href="pagina1.html"><i class="fas fa-map-marked-alt"></i> LUGARES</a>
+            <a href="pagina 2.html"><i class="fas fa-calendar-check"></i> RESERVAR</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2><i class="fas fa-eye"></i> VISIÓN</h2>
+        <p>
+            Convertirnos en la empresa líder en el diseño y gestión de experiencias de viaje, 
+            reconocida por nuestra innovación, compromiso con la calidad y capacidad de conectar 
+            a las personas con el mundo de manera auténtica y enriquecedora.
+        </p>
+
+        <h2><i class="fas fa-bullseye"></i> MISIÓN</h2>
+        <p>
+            Brindar a nuestros clientes soluciones de viaje integrales y personalizadas 
+            que superen sus expectativas, fomentando el descubrimiento, la aventura y 
+            el respeto por otras culturas. Nos enfocamos en ofrecer un servicio confiable, 
+            seguro y con un alto estándar de atención, creando recuerdos inolvidables 
+            en cada destino.
+        </p>
+
+        <form>
+            <label for="destino">¿A QUÉ LUGAR TE GUSTARÍA IR?</label>
+            <input type="text" id="destino" name="destino" placeholder="Escribe tu destino ideal">
+            <button type="submit"><i class="fas fa-paper-plane"></i> ENVIAR</button>
+        </form>
+
+        <hr>
+
+        <h2><i class="fas fa-info-circle"></i> POR SI TE INTERESA</h2>
+        <marquee>
+            <img class="ab" src="pana.jpg" alt="Panajachel">
+            <img class="ab" src="chiqu.jpg" alt="Chiquimula">
+            <img class="ab" src="xela.webp" alt="Quetzaltenango">
+        </marquee>
+
+        <h2><i class="fas fa-star"></i> LO MÁS VISITADO</h2>
+        <ol>
+            <li>ANTIGUA GUATEMALA</li>
+            <li>PETÉN</li>
+            <li>PANAJACHEL</li>
+            <li>IZABAL</li>
+        </ol>
+    </main>
+
+</body>
+</html>
