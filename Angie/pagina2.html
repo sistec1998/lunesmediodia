@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <title>VIAJES</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, rgba(0, 128, 255, 0.2), rgba(0, 255, 255, 0.4));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        center {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        img {
+            width: 150px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        h1 {
+            color: #003366;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        label {
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 10px 0;
+            display: block;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        input:focus {
+            border-color: #00b3b3;
+            box-shadow: 0 0 5px rgba(0, 183, 183, 0.6);
+        }
+        button {
+            background-color: #0099cc;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #0077b3;
+            transform: translateY(-2px);
+        }
+        button:active {
+            background-color: #005f8f;
+            transform: translateY(0);
+        }
+        hr {
+            width: 100%;
+            border: 0;
+            border-top: 2px solid #00b3b3;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" alt="Logo">
+        <hr>
+        <h1>RESERVA TU VIAJE</h1>
+        <form>
+            <label>COMO TE LLAMAS</label>
+            <input type="text">
+            <br>
+            <label>TELEFONO</label>
+            <input type="text">
+            <br>
+            <label>CORREO ELECTRONICO</label>
+            <input type="text">
+            <br>
+            <label>LUGAR TURISTICO</label>
+            <input type="text">
+            <br>
+            <label>FECHA PARA VIAJAR</label>
+            <input type="text">
+            <br>
+            <label>N DE TARJETA (CRÉDITO/DÉBITO)</label>
+            <input type="text">
+            <br>
+            <button>Reservar</button>
+            <button>Cancelar</button>
+        </form>
+    </center>
+</body>
+</html>
