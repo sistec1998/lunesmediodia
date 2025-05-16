@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares Turísticos</title>
+    <link rel="icon" href="logo.avif">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            color: #333;
+            animation: fadeIn 2s ease-out;
+        }
+
+        center {
+            display: block;
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-size: 2.2em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #ddd;
+            margin: 30px auto;
+        }
+
+        details {
+            margin: 20px 0;
+            border-radius: 10px;
+            padding: 15px;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        details:hover {
+            transform: scale(1.05);
+        }
+
+        summary {
+            font-weight: bold;
+            font-size: 1.5em;
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        /* Imágenes */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Botones */
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1em;
+            margin-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <center>
+        <img src="logo.avif" width="350" alt="Logo">
+        <hr>
+
+        <h1>LUGARES TURÍSTICOS</h1>
+
+        <details>
+            <summary>ANTIGUA GUATEMALA</summary>
+            <h2>PRECIO: Q 5,000</h2>
+            <h2>DURACIÓN: 5 DÍAS</h2>
+            <h2>PERSONAS: 4 PERSONAS</h2>
+            <p>GALERÍA</p>
+            <img src="img1.jpg" width="300" height="220" alt="Antigua Guatemala">
+            <img src="img2.jpg" width="300" alt="Antigua Guatemala">
+        </details>
+
+        <details>
+            <summary>PANAJACHEL</summary>
+            <h2>PRECIO: Q 3,000</h2>
+            <h2>DURACIÓN: 2 DÍAS</h2>
+            <h2>PERSONAS: 5 PERSONAS</h2>
+            <p>GALERÍA</p>
+            <img src="pana1.jpg" width="300" height="230" alt="Panajachel">
+            <img src="pana2.jpg" width="300" alt="Panajachel">
+        </details>
+
+        <details>
+            <summary>SEMUC CHAMPEY</summary>
+            <h2>PRECIO: Q 6,000</h2>
+            <h2>DURACIÓN: 15 DÍAS</h2>
+            <h2>PERSONAS: 7 PERSONAS</h2>
+            <p>GALERÍA</p>
+            <img src="semuc1.webp" width="300" alt="Semuc Champey">
+            <img src="semuc2.jpg" width="300" alt="Semuc Champey">
+        </details>
+
+        <details>
+            <summary>TIKAL, PETÉN</summary>
+            <h2>PRECIO: Q 8,000</h2>
+            <h2>DURACIÓN: 20 DÍAS</h2>
+            <h2>PERSONAS: 10 PERSONAS</h2>
+            <p>GALERÍA</p>
+            <img src="tikal.jpg" width="300" height="200" alt="Tikal">
+            <img src="tikal1.jpg" width="300" alt="Tikal">
+        </details>
+
+        <details>
+            <summary>IRTRA PETAPA</summary>
+            <h2>PRECIO: Q 2,000</h2>
+            <h2>DURACIÓN: 2 DÍAS</h2>
+            <h2>PERSONAS: 3 PERSONAS</h2>
+            <p>GALERÍA</p>
+            <img src="petapa.jpg" width="300" alt="Irtra Petapa">
+            <img src="petapa1.webp" width="300" alt="Irtra Petapa">
+        </details>
+
+        <button>RESERVAR AHORA</button>
+    </center>
+
+</body>
+</html>
