@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #ff9900, #00ff00);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1, h2 {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        details {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            margin: 20px 0;
+            padding: 20px;
+            width: 80%;
+            transition: transform 0.3s ease;
+        }
+
+        details:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+
+        details summary {
+            font-size: 1.5em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            font-size: 30px;
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff00ff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <center>
+        <img src="logo.png" width="200">
+        <hr width="600">
+        <h1>🌎LUGARES TURISTICOS</h1>
+        
+        <details>
+            <summary>🏰 Antigua Guatemala</summary>
+            <h2>PRECIO: Q5000</h2>
+            <h2>DURACION: 5 DIAS</h2>
+            <h2>PERSONAS: 4 PERSONAS </h2>
+            <h2>GALERIA</h2>
+            <img src="guate 1.jpg" width="300">
+            <img src="hotel.jpg" width="300" height="180">
+        </details>
+
+        <details>
+            <summary>⚓ Castillo de San Felipe, Izabal</summary>
+            <h2>PRECIO: Q3000</h2>
+            <h2>DURACION: 4 DIAS</h2>
+            <h2>PERSONAS: 5 PERSONAS </h2>
+            <h2>GALERIA</h2>
+            <img src="castillo.jpg" width="300" height="180"> 
+            <img src="hotel 2.jpg" width="300">
+        </details>
+
+        <details>
+            <summary>🌴 Monterrico, Santa Rosa</summary>
+            <h2>PRECIO: Q4000 </h2>
+            <h2>DURACION: 5 DIAS </h2>
+            <h2>PERSONAS: 5 PERSONAS  </h2>
+            <h2>GALERIA</h2>
+            <img src="playa.jpg" width="300"> 
+            <img src="picna.jpg" width="300">
+        </details>
+
+        <details>
+            <summary>🏞 Lago de Atitlán, Sololá</summary>
+            <h2>PRECIO: Q2000</h2>
+            <h2>DURACION: 4 DIAS </h2>
+            <h2>PERSONAS: 6 PERSONAS  </h2>
+            <h2>GALERIA</h2>
+            <img src="lago.jpg" width="300"> 
+            <img src="lago 2.jpg" width="300">
+        </details>
+
+        <div class="social-icons">
+            <h3>¡Síguenos en nuestras redes sociales!</h3>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </center>
+
+</body>
+</html>
