@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link rel="icon" href="logoimajen.jpg">
+    <style>
+        /* Fondo y estilo básico de la página */
+        body {
+            background-color: #f4f7fc; /* Color de fondo suave */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        center {
+            width: 100%;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #004d99;
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            text-decoration: none;
+            color: #004d99;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo de las imágenes en tarjetas */
+        .card {
+            display: inline-block;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo para el formulario de búsqueda */
+        input[type="text"] {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 18px;
+            width: 60%;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #004d99;
+            outline: none;
+        }
+
+        /* Estilo para el borde de la página */
+        hr {
+            border: 1px solid #004d99;
+            width: 700px;
+            margin: 20px auto;
+        }
+
+        /* Estilo para la lista ordenada */
+        ol {
+            text-align: left;
+            display: inline-block;
+            font-size: 18px;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <img src="logoimajen.jpg" width="300" alt="Logo de la agencia">
+        <div>
+            <a href="pajina1.html">LUGARES</a>
+            <a href="PAJINA2.html">RESERVAR</a>
+        </div>
+        <hr>
+        <h1>NUESTRA MISION</h1>
+        <p>"Nuestra misión es ofrecer experiencias de viaje memorables, accesibles y personalizadas, conectando a nuestros clientes con destinos únicos alrededor del mundo mediante un servicio confiable, innovador y centrado en sus necesidades."</p>
+        
+        <h1>VISION</h1>
+        <p>"Ser la agencia de viajes líder en la creación de experiencias únicas e inolvidables, reconocida por su innovación, compromiso con la sostenibilidad y excelencia en el servicio al cliente a nivel nacional e internacional."</p>
+
+        <h2>A dónde te gustaría ir</h2>
+        <input type="text" placeholder="Escribe tu destino aquí...">
+        <hr>
+        
+        <h2>POR SI TE INTERESA</h2>
+        <div class="card">
+            <img src="LAGO1.jpg" alt="Lago 1">
+        </div>
+        <div class="card">
+            <img src="rio dulce.jpg" alt="Río Dulce">
+        </div>
+        <div class="card">
+            <img src="rio.jpg" alt="Río">
+        </div>
+
+        <h2>LO MÁS VISTO</h2>
+        <ol>
+            <li>Pajachel</li>
+            <li>Río Dulce</li>
+            <li>Champey</li>
+            <li>Lago Itzá - Flores</li>
+        </ol>
+    </center>
+
+</body>
+</html>

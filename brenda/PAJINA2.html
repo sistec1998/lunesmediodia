@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link rel="icon" href="logoimajen.jpg">
+    <style>
+        /* Fondo de la página */
+        body {
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Contenedor del formulario */
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .form-container:hover {
+            transform: scale(1.05);
+        }
+
+        /* Título principal */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #2d3a75;
+        }
+
+        /* Subtítulo */
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        /* Estilo de los campos de entrada */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4e73df;
+        }
+
+        /* Estilo de los botones */
+        button {
+            background-color: #4e73df;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #2d59a0;
+        }
+
+        /* Logo */
+        img {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        /* Separadores */
+        hr {
+            width: 100%;
+            border-top: 2px solid #ddd;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <center>
+            <img src="logoimajen.jpg" alt="Logo">
+            <h1>RESERVA TU VIAJE</h1>
+            <hr>
+            <form>
+                <h2>¿Cómo te llamas?</h2>
+                <input type="text" placeholder="Ingresa tu nombre">
+
+                <h2>Teléfono</h2>
+                <input type="text" placeholder="Ingresa tu teléfono">
+
+                <h2>Correo electrónico</h2>
+                <input type="text" placeholder="Ingresa tu correo electrónico">
+
+                <h2>Lugar turístico</h2>
+                <input type="text" placeholder="Elige tu destino">
+
+                <h2>Fecha para viajar</h2>
+                <input type="text" placeholder="Selecciona la fecha">
+
+                <h2>Número de tarjeta (Crédito/Débito)</h2>
+                <input type="text" placeholder="Ingresa el número de tarjeta">
+
+                <br><br>
+                <button type="submit">Reservar</button>
+                <button type="reset">Cancelar</button>
+            </form>
+        </center>
+    </div>
+</body>
+</html>
