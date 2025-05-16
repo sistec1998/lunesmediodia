@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Margentour</title>
+  <link rel="icon" href="logo.png" />
+  
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #fff176, #81d4fa); /* amarillo a celeste */
+      transition: background 1s ease;
+      text-align: center;
+    }
+
+    img {
+      width: 300px;
+      height: 200px;
+      
+      border-radius: 10px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo{
+
+        width: 350px;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      margin: 5px;
+    }
+
+    details {
+      background: rgba(255, 255, 255, 0.8);
+      margin: 20px auto;
+      width: 80%;
+      max-width: 700px;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    summary {
+      font-size: 1.3em;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    details[open] {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: #555;
+      width: 700px;
+      margin: 20px auto;
+    }
+
+    p {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="logo.png" alt="Logo" width="250">
+  <hr />
+  <h2><i class="fas fa-map-marker-alt"></i> Lugares Turísticos</h2>
+
+  <details>
+    <summary><i class="fas fa-hot-tub"></i> Aguas Termales</summary>
+    <h2>Precio: Q350</h2>
+    <h2>Duración: 3 días</h2>
+    <h2>Personas: 3</h2>
+    <p>Galería</p>
+    <img src="aguastermales.png" alt="Aguas Termales 1" />
+    <img src="aguastermales.webp" alt="Aguas Termales 2" />
+  </details>
+
+  <details>
+    <summary><i class="fas fa-tree"></i> El Manchón</summary>
+    <h2>Precio: Q150</h2>
+    <h2>Duración: 1 día</h2>
+    <h2>Personas: 2</h2>
+    <p>Galería</p>
+    <img src="elmanchon1.jpg" alt="El Manchón 1" />
+    <img src="elmanchon2.jpg" alt="El Manchón 2" />
+  </details>
+
+  <details>
+    <summary><i class="fas fa-archway"></i> Tikal</summary>
+    <h2>Precio: Q400</h2>
+    <h2>Duración: 3 días</h2>
+    <h2>Personas: 5</h2>
+    <p>Galería</p>
+    <img src="tikal.jpg" alt="Tikal 1" />
+    <img src="tikal1.jpg" alt="Tikal 2" />
+  </details>
+
+  <details>
+    <summary><i class="fas fa-leaf"></i> Eco Parque</summary>
+    <h2>Precio: Q300</h2>
+    <h2>Duración: 3 días</h2>
+    <h2>Personas: 3</h2>
+    <p>Galería</p>
+    <img src="parque.jpg" alt="Eco Parque 1" />
+    <img src="parque1.jpg" alt="Eco Parque 2" />
+  </details>
+</body>
+</html>

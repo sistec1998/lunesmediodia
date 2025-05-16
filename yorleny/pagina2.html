@@ -1,165 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="logo.png">
-    <title>Yamaha</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #fef6fb;
-            color: #444;
-            text-align: center;
-            transition: background-color 0.5s, color 0.5s;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Magitour</title>
+  <link rel="icon" href="logo.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #ffe259, #50c9c3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      animation: fadeIn 1s ease-in;
+    }
 
-        h1 {
-            color: #c084fc;
-        }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
 
-        marquee {
-            font-size: 20px;
-            color: #ff80ab;
-            animation: fadeIn 2s ease-in-out;
-        }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      width: 400px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
 
-        hr {
-            border: none;
-            height: 2px;
-            background-color: #cfcfcf;
-            width: 80%;
-            margin: 20px auto;
-        }
+    .container:hover {
+      transform: translateY(-5px);
+    }
 
-        p, li {
-            font-size: 18px;
-        }
+    img {
+      width: 250px;
+      margin-bottom: 10px;
+    }
 
-        img {
-            transition: transform 0.5s ease;
-        }
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
 
-        img:hover {
-            transform: scale(1.05);
-        }
+    hr {
+      border: none;
+      height: 2px;
+      background: #50c9c3;
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
-        input, button {
-            padding: 10px;
-            margin: 5px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
 
-        button {
-            background-color: #ffd6e0;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.4s ease;
-        }
+    label {
+      font-weight: bold;
+      text-align: left;
+    }
 
-        button:hover {
-            background-color: #fca3b7;
-        }
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border 0.3s;
+    }
 
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            color: #9c27b0;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
+    input:focus {
+      border-color: #50c9c3;
+      outline: none;
+    }
 
-        a:hover {
-            color: #ce93d8;
-        }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #50c9c3;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
 
-        .dark-mode {
-            background-color: #1e1e1e;
-            color: #eee;
-        }
+    button:hover {
+      background-color: #3fb0a8;
+      transform: scale(1.05);
+    }
 
-        .dark-mode button {
-            background-color: #444;
-            color: #eee;
-        }
-
-        .toggle-btn {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #c084fc;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 16px;
-            box-shadow: 0 0 10px #ccc;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+    .icon {
+      margin-right: 5px;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <img src="logo.png" alt="Logo de Magitour"/>
+    <h1><i class="fas fa-suitcase-rolling icon"></i>Reserva tu viaje</h1>
+    <hr/>
+    <form>
+      <label for="nombre"><i class="fas fa-user icon"></i>¿Cómo te llamas?</label>
+      <input type="text" id="nombre" name="nombre"/>
 
-<button class="toggle-btn" onclick="toggleDarkMode()"><i class="fas fa-moon"></i> Modo Claro/Oscuro</button>
+      <label for="telefono"><i class="fas fa-phone icon"></i>Teléfono</label>
+      <input type="text" id="telefono" name="telefono"/>
 
-<marquee>BIENVENIDOS Y BIENVENIDAS A NUESTRA EMPRESA</marquee>
-<img src="logo2.png" width="500" alt="Logo Yamaha">
-<hr>
-<h1><i class="fas fa-motorcycle"></i> Descripción</h1>
-<p>Yamaha es una empresa japonesa que se especializa en la fabricación de instrumentos musicales, electrónica, productos audiovisuales y motocicletas.</p>
-<hr>
-<h2><i class="fas fa-list-ol"></i> Modelos</h2>
-<ol>
-    <li>Aerox 155</li>
-    <li>TMAX Techmax</li>
-    <li>NMAX Connected</li>
-    <li>XMAX 300</li>
-    <li>FZ 3.0 FI</li>
-</ol>
+      <label for="correo"><i class="fas fa-envelope icon"></i>Correo electrónico</label>
+      <input type="email" id="correo" name="correo"/>
 
-<h2><i class="fas fa-check-circle"></i> Destacados</h2>
-<ul>
-    <li>Aerox 155</li>
-    <li>TMAX Techmax</li>
-    <li>NMAX Connected</li>
-    <li>XMAX 300</li>
-    <li>FZ 3.0 FI</li>
-</ul>
+      <label for="lugar"><i class="fas fa-map-marker-alt icon"></i>Lugar turístico</label>
+      <input type="text" id="lugar" name="lugar"/>
 
-<hr>
-<h1><i class="fas fa-tags"></i> Promoción</h1>
-<img src="moto1.jpg" width="150" alt="Moto promoción">
-<hr>
+      <label for="fecha"><i class="fas fa-calendar-alt icon"></i>Fecha para viajar</label>
+      <input type="date" id="fecha" name="fecha"/>
 
-<form>
-    <label for="nombre">Nombre</label><br>
-    <input type="text" id="nombre" name="nombre"><br><br>
+      <label for="tarjeta"><i class="fas fa-credit-card icon"></i>N° de tarjeta (crédito/débito)</label>
+      <input type="text" id="tarjeta" name="tarjeta"/>
 
-    <label for="correo">Correo</label><br>
-    <input type="email" id="correo" name="correo"><br><br>
-
-    <label for="estilo">Estilo</label><br>
-    <input type="text" id="estilo" name="estilo"><br><br>
-
-    <button type="submit"><i class="fas fa-search"></i> Buscar</button>
-</form>
-
-<a href="pagina 1.html"><i class="fas fa-arrow-right"></i> Más estilos</a>
-
-<script>
-    function toggleDarkMode() {
-        document.body.classList.toggle('dark-mode');
-    }
-</script>
-
+      <button type="submit"><i class="fas fa-paper-plane icon"></i>Reservar</button>
+      <button type="reset"><i class="fas fa-times icon"></i>Cancelar</button>
+    </form>
+  </div>
 </body>
 </html>

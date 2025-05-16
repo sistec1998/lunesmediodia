@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magitour</title>
+  <link rel="icon" href="logo.png">
+
+  <!-- Fuente e íconos de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilos CSS -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #fff176, #b3e5fc); /* amarillo y celeste */
+      text-align: center;
+      color: #333;
+    }
+
+    a {
+      margin: 10px;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #004d40;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    hr {
+      border: 2px solid #00796b;
+      width: 700px;
+      margin: 20px auto;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    marquee img {
+      margin: 0 15px;
+    }
+
+    h2 {
+      color: #004d40;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      width: 200px;
+    }
+
+    ol {
+      text-align: left;
+      display: inline-block;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo Magitour"><br><br>
+
+  <!-- Navegación -->
+  <a href="pagina1.html"><i class="fas fa-map-marked-alt"></i> Lugares</a>
+  <a href="pagina2.html"><i class="fas fa-calendar-check"></i> Reservaciones</a>
+
+  <hr>
+
+  <!-- Misión -->
+  <h2><i class="fas fa-bullseye"></i> Nuestra Misión</h2>
+  <p>"Nuestra misión es ofrecer experiencias de viaje memorables, accesibles y personalizadas, conectando a nuestros clientes con destinos únicos alrededor del mundo mediante un servicio confiable, innovador y centrado en sus necesidades."</p>
+
+  <!-- Visión -->
+  <h2><i class="fas fa-eye"></i> Visión</h2>
+  <p>"Ser la agencia de viajes líder en la creación de experiencias únicas e inolvidables, reconocida por su innovación, compromiso con la sostenibilidad y excelencia en el servicio al cliente a nivel nacional e internacional."</p>
+
+  <!-- Búsqueda -->
+  <label for="destino"><i class="fas fa-search-location"></i> ¿A dónde te gustaría ir?</label><br>
+  <input type="text" id="destino"><br>
+  <button><i class="fas fa-search"></i> Buscar</button>
+
+  <hr>
+
+  <!-- Carrusel de imágenes -->
+  <h2><i class="fas fa-lightbulb"></i> Por si te interesa</h2>
+  <marquee behavior="scroll" direction="left" scrollamount="5">
+    <img src="img1.webp" alt="Destino 1">
+    <img src="img2.jpg" alt="Destino 2">
+    <img src="img3.jpg" alt="Destino 3">
+  </marquee>
+
+  <!-- Sitios más visitados -->
+  <h2><i class="fas fa-star"></i> Lo más visitado</h2>
+  <ol>
+    <li>Panajachel</li>
+    <li>Champerico</li>
+    <li>Lago de Atitlán</li>
+    <li>Antigua Guatemala</li>
+  </ol>
+
+</body>
+</html>
