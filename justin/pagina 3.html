@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo.png">
+    <!-- Agregamos la librería de Font Awesome para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilo general de la página */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #a7d8f2; /* Fondo celeste */
+            color: #333;
+            text-align: center;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1, h2, p {
+            font-size: 1.5em;
+            color: #003366;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            color: #0066cc;
+            font-size: 1.5em;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+
+        /* Estilo para las tarjetas */
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Estilo para los iconos de redes sociales */
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            font-size: 30px;
+            color: #003366;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff6600;
+        }
+
+        /* Estilo para el contenedor de las imágenes en el marquee */
+        .marquee-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .marquee-container img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .marquee-container img:hover {
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+    <center>
+       
+        <!-- Logo de la página -->
+        <img src="logo.png" width="300">
+        <br><br>
+        <a href="pagina 1.html">🌎LUGARES</a>
+        <a href="pagina 2.html">📅RESERVAS</a>
+        <hr width="700">
+
+        <!-- Misión de la empresa -->
+        <h1>Nuestra misión</h1>
+        <p>"Nuestra misión es ofrecer experiencias de viaje memorables, accesibles y personalizadas, conectando a nuestros clientes con destinos únicos alrededor del mundo mediante un servicio confiable, innovador y centrado en sus necesidades."</p>
+
+        <br><br>
+        <!-- Visión de la empresa -->
+        <h1>Visión</h1>
+        <p>"Ser la agencia de viajes líder en la creación de experiencias únicas e inolvidables reconocida por su innovación, compromiso con la sostenibilidad y excelencia en el servicio al cliente a nivel nacional e internacional."</p>
+
+        <br><br>
+        <!-- Buscar destino -->
+        <h1>¿A dónde te gustaría ir?</h1>
+        <br><br>
+        <input type="text" placeholder="Escribe tu destino aquí" style="padding: 10px; width: 250px; border-radius: 5px;">
+        <br><br>
+        <button style="padding: 10px 20px; background-color: #0066cc; color: white; border: none; border-radius: 5px; cursor: pointer;">BUSCAR</button>
+
+        <br><br>
+        <!-- Imágenes en forma de tarjetas -->
+        <h1>POR SI TE INTERESA</h1>
+        <div class="marquee-container">
+            <div class="card">
+                <img src="1.jpg" alt="Imagen 1">
+            </div>
+            <div class="card">
+                <img src="2.jpg" alt="Imagen 2" height="250">
+            </div>
+            <div class="card">
+                <img src="3.jpg" alt="Imagen 3">
+            </div>
+        </div>
+
+        <h1>LO MÁS VISITADO</h1>
+        <ul style="list-style-type: none; padding: 0;">
+            <li>Panajachel</li>
+            <li>Río Dulce</li>
+            <li>Champey</li>
+            <li>Lago Itzá - Flores</li>
+        </ul>
+
+        <!-- Iconos de redes sociales -->
+        <div class="social-icons">
+            <h3>¡Síguenos en nuestras redes sociales!</h3>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </center>
+
+</body>
+</html>
