@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares Turísticos</title>
+    <link rel="icon" href="viaje.jpg">
+    <style>
+        body {
+            background-color: #00aaff; /* Fondo azul */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        h1 {
+            color: #fff;
+            padding: 20px;
+            background-color: #004f87;
+            border-bottom: 5px solid #fff;
+        }
+
+        center {
+            display: block;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        hr {
+            border: 1px solid #fff;
+            width: 80%;
+        }
+
+        details {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        details:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        summary {
+            cursor: pointer;
+            font-size: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary:hover {
+            color: #ffeb3b;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #004f87;
+            color: #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            margin: 10px 0;
+        }
+
+        .card .price {
+            font-weight: bold;
+            color: #ffeb3b;
+        }
+
+        .icon {
+            font-size: 25px;
+            margin-right: 10px;
+        }
+
+        .details-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .details-header span {
+            margin-left: 10px;
+        }
+
+        /* Agregar íconos */
+        .icon-price {
+            color: #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+  <center>
+    <img src="viaje.jpg" width="300" alt="Imagen principal">
+    <hr width="700">
+    <h1>LUGARES TURÍSTICOS</h1>
+
+    <details>
+      <summary><span class="icon">🌍</span>ANTIGUA GUATEMALA</summary>
+      <div class="card">
+        <div class="details-header">
+          <span class="icon icon-price">💰</span>
+          <h2>Precio: Q5,000</h2>
+        </div>
+        <div class="details-header">
+          <span class="icon">⏳</span>
+          <h2>Duración: 5 días</h2>
+        </div>
+        <div class="details-header">
+          <span class="icon">👨‍👩‍👧‍👦</span>
+          <h2>Personas: 4 personas</h2>
+        </div>
+        <h2>Galería</h2>
+        <div class="gallery">
+          <img src="ggg.jpg" alt="Imagen 1">
+          <img src="hotel.jpg" alt="Imagen 2">
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="icon">⚓</span> Castillo de San Felipe, Izabal</summary>
+      <div class="card">
+        <div class="details-header">
+          <span class="icon icon-price">💰</span>
+          <h2>Precio: Q3,000</h2>
+        </div>
+        <div class="details-header">
+          <span class="icon">⏳</span>
+          <h2>Duración: 4 días</h2>
+        </div>
+        <div class="details-header">
+          <span class="icon">👨‍👩‍👧‍👦</span>
+          <h2>Personas: 5 personas</h2>
+        </div>
+        <h2>Galería</h2>
+        <div class="gallery">
+          <img src="san.jpg" alt="Imagen 1">
+          <img src="felipe.jpg" alt="Imagen 2">
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="icon">🌴</span> Monterrico, Santa Rosa</summary>
+      <div class="card">
+        <div class="details-header">
+          <span class="icon icon-price">💰</span>
+          <h2>Precio: Q4,000</h2>
+        </div>
+        <div class="details-header">
+          <span class="icon">⏳</span>
+          <h2>Duración: 5 días</h2>
+        </div>
+        <div class="details-header">
+          <span class="icon">👨‍👩‍👧‍👦</span>
+          <h2>Personas: 5 personas</h2>
+        </div>
+        <h2>Galería</h2>
+        <div class="gallery">
+          <img src="rosa.jpg" alt="Imagen 1">
+          <img src="melano.jpg" alt="Imagen 2">
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="icon">🌊</span> Champerico</summary>
+      <div class="card">
+        <div class="details-header">
+          <span class="icon icon-price">💰</span>
+          <h2>Precio: Q2,000</h2>
+        </div>
+        <div class="details-header">
+          <span class="icon">⏳</span>
+          <h2>Duración: 2 días</h2>
+        </div>
+        <div class="details-header">
+          <span class="icon">👨‍👩‍👧‍👦</span>
+          <h2>Personas: 7 personas</h2>
+        </div>
+        <h2>Galería</h2>
+        <div class="gallery">
+          <img src="champe.jpg" alt="Imagen 1">
+          <img src="rico.jpg" alt="Imagen 2">
+        </div>
+      </div>
+    </details>
+
+  </center>
+</body>
+</html>

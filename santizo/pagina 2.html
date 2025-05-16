@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje</title>
+    <link rel="icon" href="viaje.jpg">
+    <style>
+        /* Fondo y estilo general */
+        body {
+            background-color: #f0f4f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            color: #333;
+        }
+
+        /* Estilo para la "tarjeta" */
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #5c6bc0;
+            font-size: 24px;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #5c6bc0;
+            outline: none;
+        }
+
+        button {
+            background-color: #5c6bc0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #3f51b5;
+        }
+
+        /* Estilo de la imagen dentro de la tarjeta */
+        img {
+            border-radius: 15px;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Centrando todo */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="card">
+        <img src="viaje.jpg" alt="Imagen de viaje">
+        <h2>📅 Reserva tu viaje</h2>
+        <hr>
+        <form>
+            <label for="name">¿Cómo te llamas?</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="phone">Teléfono</label>
+            <input type="text" id="phone" name="phone">
+            
+            <label for="email">Correo electrónico</label>
+            <input type="text" id="email" name="email">
+            
+            <label for="destination">Lugar turístico</label>
+            <input type="text" id="destination" name="destination">
+            
+            <label for="date">Fecha para viajar</label>
+            <input type="text" id="date" name="date">
+            
+            <label for="cardNumber">N° de tarjeta (crédito/débito)</label>
+            <input type="text" id="cardNumber" name="cardNumber">
+            
+            <div>
+                <button type="submit">Reservar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
