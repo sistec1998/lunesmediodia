@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Fondo azul y estilo general */
+        body {
+            background-color: #1e3d58; /* Azul oscuro */
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        center {
+            display: block;
+            margin: auto;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        hr {
+            width: 700px;
+            border: 1px solid #fff;
+        }
+
+        a {
+            color: #fff;
+            margin-right: 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #1f5b7a;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin-top: 15px;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            font-size: 1.1em;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        input:focus {
+            background-color: #3a7592;
+            transform: scale(1.02);
+        }
+
+        /* Estilo para las imágenes */
+        div.image-container {
+            display: flex; /* Usar flexbox para las imágenes */
+            justify-content: space-between; /* Espaciado igual entre las imágenes */
+            gap: 20px; /* Espacio entre las imágenes */
+            flex-wrap: wrap; /* Asegura que las imágenes se ajusten si la pantalla es pequeña */
+            margin-top: 20px;
+        }
+
+        img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Lista de lugares */
+        ol {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        /* Animación fadeIn */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="250" alt="Logo">
+        <br>
+        <a href="#">Lugares</a>
+        <a href="#">Reservas</a>
+
+        <h2>Nuestra Misión</h2>
+        <hr>
+        <p>"Nuestra misión es ofrecer experiencias de viaje memorables, accesibles y personalizadas, 
+            conectando a nuestros clientes con destinos 
+            únicos alrededor del mundo mediante un servicio confiable, innovador y centrado en sus 
+            necesidades."</p>
+
+        <h2>Visión</h2>
+        <p>"Ser la agencia de viajes líder en la creación de experiencias únicas e inolvidables,
+             reconocida por su innovación, compromiso con la sostenibilidad y excelencia en el 
+             servicio al cliente a nivel nacional e internacional."</p>
+
+        <label for="destination">¿A dónde te gustaría ir?</label>
+        <br>
+        <input type="text" id="destination" placeholder="Ingresa tu destino deseado">
+        <hr>
+
+        <h2>Por si te interesa</h2>
+        <div class="image-container">
+            <img src="pana.jpg" alt="Panajachel">
+            <img src="rio dulce.jpg" alt="Río Dulce">
+            <img src="chanpe.jpg" alt="Chanpey">
+        </div>
+
+        <h2>Lo más visitado</h2>
+        <ol>
+            <li>Panajachel</li>
+            <li>Río Dulce</li>
+            <li>Chanpey</li>
+            <li>Lago Itza Flores</li>
+        </ol>
+    </center>
+</body>
+</html>

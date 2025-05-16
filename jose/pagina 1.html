@@ -1,117 +1,150 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Músicas FVR</title>
-    <!-- Google Fonts y Font Awesome para íconos -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Viajes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
+        /* Fondo azul y estilo general */
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #e0f0ff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #003366;
+            background-color: #1e3d58; /* Azul oscuro */
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
         }
 
-        h2 {
-            color: #004a99;
-            margin-top: 30px;
-            transition: transform 0.3s;
-        }
-
-        h2:hover {
-            transform: scale(1.05);
-        }
-
-        p {
-            width: 80%;
+        center {
+            display: block;
             margin: auto;
-            font-size: 1.1em;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         hr {
-            border: 1px solid #3399ff;
-            margin: 20px auto;
+            width: 700px;
+            border: 1px solid #fff;
         }
 
         img {
             width: 250px;
+            height: auto;
             margin: 10px;
             border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s ease-in-out;
         }
 
         img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
         }
 
-        ol {
-            list-style: decimal;
-            text-align: left;
-            width: fit-content;
-            margin: auto;
+        /* Estilos para los <details> */
+        details {
+            background-color: #2c5d7d;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        details[open] {
+            background-color: #3a7592;
+            transform: scale(1.05);
+        }
+
+        summary {
+            cursor: pointer;
+            font-size: 1.5em;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: #1a3f59;
+            transition: background-color 0.3s ease;
+        }
+
+        summary:hover {
+            background-color: #1f5b7a;
+        }
+
+        h2 {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+
+        p {
             font-size: 1.1em;
         }
 
-        .social-icons {
-            margin-top: 30px;
+        /* Iconos */
+        .icon {
+            margin-right: 10px;
         }
 
-        .social-icons a {
-            margin: 0 10px;
-            color: #004a99;
-            font-size: 30px;
-            transition: color 0.3s, transform 0.3s;
-        }
-
-        .social-icons a:hover {
-            color: #3399ff;
-            transform: scale(1.2);
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
+    <center>
+        <img src="logo.png" width="250" alt="Logo">
+        <hr>
+        <h1>Lugares Turísticos</h1>
 
-    <img src="musica.png" alt="Logo de música" width="200">
-    
-    <h2>Músicas Favoritas</h2>
-    <hr width="700">
-    
-    <p>Esta página está formada por las músicas más escuchadas y favoritas del mundo,
-       en tendencia, escuchadas por famosos y bailadas por personas de todo el mundo.</p>
-    
-    <h2>Músicas</h2>
-    <hr width="700">
-    
-    <div class="galeria">
-        <img src="dos dias.jpg" alt="Dos Días">
-        <img src="tu si.jpg" alt="Tú Sí">
-        <img src="por esos ojos.jpg" alt="Por Esos Ojos">
-        <img src="asta la muerte.jpg" alt="Hasta la Muerte">
-        <img src="rasones.jpg" alt="Razones">
-    </div>
-    
-    <hr width="800">
-    
-    <h2>Músicas en Tendencia</h2>
-    <ol>
-        <li>En Privado - Manuel Turizo</li>
-        <li>Angelito - Trueno</li>
-        <li>Volver - Marc Anthony</li>
-        <li>Aloh Aloh - Kapo</li>
-        <li>Querida Yo - Camilo</li>
-    </ol>
+        <details>
+            <summary><i class="fas fa-map-marker-alt icon"></i> Antigua Guatemala</summary>
+            <h2>Precio: Q5,000</h2>
+            <h2>Duración: 5 días</h2>
+            <h2>Personas: 4 personas</h2>
+            <p>Galería</p>
+            <div class="gallery">
+                <img src="imagen 1.jpg" alt="Imagen 1">
+                <img src="imagen 2.jpg" alt="Imagen 2">
+            </div>
+        </details>
 
-    <div class="social-icons">
-        <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://instagram.com/tu_usuario" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://facebook.com/tu_usuario" target="_blank"><i class="fab fa-facebook"></i></a>
-    </div>
+        <details>
+            <summary><i class="fas fa-castle icon"></i> Castillo de San Felipe Isabal</summary>
+            <h2>Precio: Q3,000</h2>
+            <h2>Duración: 4 días</h2>
+            <h2>Personas: 5 personas</h2>
+            <p>Galería</p>
+            <div class="gallery">
+                <img src="imagen 3.jpg" alt="Imagen 3">
+                <img src="imagen 4.jpg" alt="Imagen 4">
+            </div>
+        </details>
 
+        <details>
+            <summary><i class="fas fa-umbrella-beach icon"></i> Monterrico Santa Rosa</summary>
+            <h2>Precio: Q4,000</h2>
+            <h2>Duración: 5 días</h2>
+            <h2>Personas: 5 personas</h2>
+            <p>Galería</p>
+            <div class="gallery">
+                <img src="imagen 5.jpg" alt="Imagen 5">
+                <img src="imagen 6.jpg" alt="Imagen 6">
+            </div>
+        </details>
+
+        <details>
+            <summary><i class="fas fa-pyramid icon"></i> Tikal Petén</summary>
+            <h2>Precio: Q5,000</h2>
+            <h2>Duración: 5 días</h2>
+            <h2>Personas: 5 personas</h2>
+            <p>Galería</p>
+            <div class="gallery">
+                <img src="imagen 7.jpg" alt="Imagen 7">
+                <img src="imagen 8.avif" alt="Imagen 8">
+            </div>
+        </details>
+    </center>
 </body>
 </html>
