@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo.jpg">
+    <style>
+        /* Fondo celeste */
+        body {
+            background-color: #87CEFA; /* Celeste */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para el centro de la página */
+        center {
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Logo */
+        img {
+            width: 400px;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilo de los enlaces */
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            color: #000;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #1E90FF;
+            color: white;
+        }
+
+        /* Estilo de las tarjetas de imágenes */
+        .card {
+            width: 300px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Sección de los textos y botones */
+        h2, p {
+            text-align: center;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1E90FF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4169E1;
+        }
+
+        /* Lista de lugares más visitados */
+        ol {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        hr {
+            width: 700px;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.jpg" alt="Logo">
+        <a href="pagina1.html">LUGARES</a>
+        <a href="pagina2.html">RESERVAR</a>
+        <hr>
+        <h2>NUESTRA MISIÓN</h2>
+        <p>"Nuestra misión es ofrecer experiencias de viaje 
+            memorables, accesibles y personalizadas, conectando a nuestros   
+            clientes con destinos únicos alrededor del mundo mediante
+            un servicio confiable, innovador y centrado en sus necesidades."
+        </p>
+        <h2>VISIÓN</h2>
+        <p>"Ser la agencia de viajes líder en la creación de experiencias únicas e
+            inolvidables, reconocida por su innovación, compromiso con la sostenibilidad
+            y excelencia en el servicio al cliente a nivel nacional e internacional."</p>
+        <h2>¿A DONDE TE GUSTARIA IR?</h2>
+        <input type="text">
+        <br><br>
+        <button>BUSCAR</button>
+        <hr>
+        <h2>¡POR SI TE INTERESA!</h2>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <div class="card">
+                <img src="imagen10.jpg" alt="Imagen 10">
+            </div>
+            <div class="card">
+                <img src="imagen11.jpg" alt="Imagen 11">
+            </div>
+            <div class="card">
+                <img src="imagen12.jpg" alt="Imagen 12">
+            </div>
+        </div>
+        <h2>LO MÁS VISITADO</h2>
+        <ol>
+            <li>PANAJACHEL</li>
+            <li>RÍO DULCE</li>
+            <li>CHAMPEY</li>
+            <li>LAGO ITZÁ-FLORES</li>
+        </ol>
+    </center>
+</body>
+</html>

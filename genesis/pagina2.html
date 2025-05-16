@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJES</title>
+    <link rel="icon" href="logo.jpg">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #87CEEB; /* Fondo celeste */
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        center {
+            display: block;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #ff6347; /* Cambia el color al pasar el mouse */
+        }
+
+        hr {
+            width: 90%;
+            border: 1px solid #fff;
+            margin-bottom: 30px;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        form:hover {
+            transform: scale(1.02); /* Efecto de escala al pasar el mouse */
+        }
+
+        h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ff6347; /* Color de borde al hacer foco */
+            outline: none;
+        }
+
+        button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff4500; /* Color más oscuro al pasar el mouse */
+        }
+
+        /* Animación de entrada de los elementos */
+        h1, h2, input, button {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Iconos en los botones */
+        button i {
+            margin-right: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <center>
+        <img src="logo.jpg" width="200" alt="Logo">
+        <h1>RESERVA TU VIAJE</h1>
+        <hr>
+        
+        <form>
+            <h2><i class="fas fa-user"></i> ¿COMO TE LLAMAS?</h2>
+            <input type="text" placeholder="Ingresa tu nombre">
+            
+            <h2><i class="fas fa-phone-alt"></i> ¿TELEFONO?</h2>
+            <input type="text" placeholder="Ingresa tu teléfono">
+            
+            <h2><i class="fas fa-envelope"></i> CORREO ELECTRONICO</h2>
+            <input type="text" placeholder="Ingresa tu correo electrónico">
+            
+            <h2><i class="fas fa-map-marker-alt"></i> LUGAR TURISTICO</h2>
+            <input type="text" placeholder="Ingresa tu destino turístico">
+            
+            <h2><i class="fas fa-calendar-alt"></i> FECHA PARA VIAJAR</h2>
+            <input type="text" placeholder="Ingresa la fecha de viaje">
+            
+            <h2><i class="fas fa-credit-card"></i> N DE TARGETA(CREDITO/DÉBITO)</h2>
+            <input type="text" placeholder="Número de tarjeta">
+        </form>
+
+        <button><i class="fas fa-check-circle"></i> RESERVAR</button>
+        <button><i class="fas fa-times-circle"></i> CANCELAR</button>
+    </center>
+
+</body>
+</html>
