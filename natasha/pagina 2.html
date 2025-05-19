@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <style>
+        /* Estilo general del body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Contenedor principal */
+        center {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 900px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Efecto hover en el contenedor */
+        center:hover {
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Imágen y título */
+        img {
+            width: 300px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        /* Estilos para los formularios */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        /* Estilo de los botones */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(1);
+        }
+
+        /* Estilo de las líneas */
+        hr {
+            width: 100%;
+            border: 0;
+            border-top: 2px solid #ddd;
+            margin: 20px 0;
+        }
+
+        /* Contenedores de los formularios divididos */
+        .form-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Animación de FadeIn */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Sección de datos personales */
+        .personal-info {
+            flex: 1;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        /* Animación para la sección de datos personales */
+        @keyframes slideInLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Sección de datos del producto y tarjeta */
+        .product-info {
+            flex: 1;
+            animation: slideInRight 1s ease-out;
+        }
+
+        /* Animación para la sección de datos del producto y tarjeta */
+        @keyframes slideInRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<center>
+    <img src="imagen 1.png" alt="Imagen Lays">
+    <h1>Comprar</h1>
+
+    <!-- Formulario dividido en dos partes -->
+    <form>
+        <!-- Datos personales -->
+        <div class="form-section">
+            <div class="personal-info">
+                <h2>Datos personales</h2>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre"><br><br>
+
+                <label for="telefono">Teléfono</label>
+                <input type="number" id="telefono"><br><br>
+
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion"><br><br>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo">
+            </div>
+
+            <!-- Datos del producto y tarjeta -->
+            <div class="product-info">
+                <h2>Datos del producto</h2>
+                <label for="producto">Producto</label>
+                <input type="text" id="producto"><br><br>
+
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad"><hr>
+
+                <h2>Datos del pago</h2>
+                <label for="tarjeta">Número de tarjeta</label>
+                <input type="number" id="tarjeta"><br><br>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv"><br><br>
+
+                <label for="fecha-vencimiento">Fecha de vencimiento</label>
+                <input type="date" id="fecha-vencimiento"><br><br>
+            </div>
+        </div>
+
+        <!-- Botones de acción -->
+        <button type="submit">Confirmar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+
+</center>
+
+</body>
+</html>

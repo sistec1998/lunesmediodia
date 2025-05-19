@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <style>
+        /* Fondo y estilo general */
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilo para el contenedor principal */
+        center {
+            text-align: center;
+            background-color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Animación de fadeIn */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Estilo para el texto y títulos */
+        h1 {
+            font-size: 28px;
+            color: #ffcc00;
+            margin-top: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #ff9933;
+        }
+
+        h2 {
+            color: #ffcc00;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #ddd;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Estilo de los enlaces */
+        a {
+            color: #ffcc00;
+            font-size: 18px;
+            text-decoration: none;
+            margin: 5px 0;
+            display: inline-block;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff9933;
+            transform: scale(1.05);
+        }
+
+        /* Estilo de la imagen */
+        img {
+            width: 300px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efecto de hover en la imagen */
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Animación para el marquee reemplazado */
+        .scrolling-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: scrollImages 10s linear infinite;
+        }
+
+        /* Animación de desplazamiento */
+        @keyframes scrollImages {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Estilo para el formulario */
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 60%;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid #888;
+            background-color: #333;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #555;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+<center>
+    <!-- Marquee Reemplazado por Animación CSS -->
+    <div class="scrolling-images">
+        <img src="imagen 1.png" alt="Imagen Principal">
+        <img src="img 3.webp" alt="Producto 1" width="200">
+        <img src="img 2.png" alt="Producto 2" width="200">
+        <img src="img 4.webp" alt="Producto 3" width="200">
+    </div>
+
+    <!-- Título y mensaje -->
+    <h1>Bienvenidos a Frito-Lay</h1>
+    <hr>
+
+    <!-- Enlaces -->
+    <a href="pagina 1.html">Productos</a><br>
+    <a href="pagina 2.html">Comprar</a><br>
+    <a href="pagina 3.html">Más Productos</a>
+
+    <!-- Misión -->
+    <h2>Misión</h2>
+    <p>La misión de Frito-Lay es ofrecer productos de snacks deliciosos, innovadores y de alta calidad, mientras promueven un estilo de vida equilibrado y responsable. Como parte de PepsiCo, la compañía tiene como objetivo generar un impacto positivo tanto en las personas como en las comunidades, al mismo tiempo que mantiene su compromiso con la sostenibilidad ambiental y social.</p>
+
+    <!-- Visión -->
+    <h2>Visión</h2>
+    <p>La visión de Frito-Lay es ser la compañía líder global en la industria de snacks, ofreciendo productos que mejoren la vida de sus consumidores, manteniendo un compromiso con la innovación, sostenibilidad y el bienestar.</p>
+
+    <!-- Formulario -->
+    <h2>Queremos escucharte</h2>
+    <input type="text" placeholder="Escribe tu mensaje aquí">
+    <button>Enviar</button>
+</center>
+
+</body>
+</html>

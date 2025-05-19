@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <style>
+        /* Fondo y estilo general */
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Centrar todo */
+        center {
+            display: block;
+            margin-top: 20px;
+        }
+
+        /* Efecto de transición en imágenes */
+        img {
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 8px;
+        }
+
+        /* Efecto al pasar el ratón */
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo del resumen de los detalles */
+        details summary {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Cambio de color al pasar el ratón por el resumen */
+        details summary:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilo para los detalles desplegados */
+        details[open] img {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Estilo de las imágenes dentro de los detalles */
+        details img {
+            margin: 10px 0;
+        }
+
+        /* Línea de separación */
+        hr {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+        }
+
+        /* Detalles adicionales */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .product-container img {
+            width: 200px;
+            max-width: none;
+        }
+
+        /* Animación de desvanecimiento en los detalles */
+        details[open] .product-container {
+            animation: fadeIn 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+<center>
+    <!-- Imagen principal -->
+    <img src="imagen 1.png" width="400">
+    <hr>
+
+    <!-- Detalles de Cheetos -->
+    <details>
+        <summary>Cheetos</summary>
+        <div class="product-container">
+            <img src="imagen 2 c.png" alt="Cheetos 1">
+            <img src="imagen 4 c.png" alt="Cheetos 2">
+            <img src="imagen 3 c.png" alt="Cheetos 3">
+        </div>
+    </details>
+
+    <!-- Imagenes Lays -->
+    <div class="product-container">
+        <img src="imagen 6 l.webp" width="200">
+        <img src="imagen 5 l.png" alt="Lays 1">
+        <img src="img.jpg" width="200">
+    </div>
+
+    <!-- Detalles de Papas Lays -->
+    <details>
+        <summary>Papas Lays</summary>
+        <div class="product-container">
+            <img src="imagen 6 l.webp" width="200">
+            <img src="imagen 5 l.png" alt="Lays 2">
+            <img src="img.jpg" width="200">
+            <img src="imagen 6 l.webp" width="200">
+            <img src="imagen 5 l.png" alt="Lays 3">
+            <img src="img.jpg" width="200">
+        </div>
+    </details>
+
+    <!-- Detalles de Doritos -->
+    <details>
+        <summary>Doritos</summary>
+        <div class="product-container">
+            <img src="imagen 8 d.png" width="200">
+            <img src="imagen 10 d.png" width="200">
+            <img src="imagen 9 d.png" width="200">
+        </div>
+    </details>
+</center>
+
+</body>
+</html>
