@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>LAYS</title>
+  <link rel="icon" href="LAYS.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e6ccff; /* Fondo lila */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 900px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card h1, .card h2 {
+      grid-column: span 2;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    form, .section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #a64dff;
+      outline: none;
+      box-shadow: 0 0 8px #a64dff60;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #a64dff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #9933ff;
+    }
+
+    .buttons {
+      grid-column: span 2;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    img {
+      grid-column: span 2;
+      display: block;
+      margin: 0 auto 10px auto;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    hr {
+      grid-column: span 2;
+      border: none;
+      border-top: 2px solid #ccc;
+      margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="LAYS.png" width="200">
+    <h1>COMPRAR</h1>
+    <hr>
+
+    <h2>DATOS PERSONALES</h2>
+    <div class="section">
+      <label>NOMBRE</label>
+      <input type="text">
+
+      <label>TELEFONO</label>
+      <input type="number">
+
+      <label>DIRECCIÓN</label>
+      <input type="text">
+
+      <label>CORREO ELECTRONICO</label>
+      <input type="email">
+    </div>
+
+    <h2>DATOS DEL PRODUCTO</h2>
+    <div class="section">
+      <label>PRODUCTO</label>
+      <input type="text">
+
+      <label>CANTIDAD</label>
+      <input type="number">
+    </div>
+
+    <h2>DATOS DE PAGO</h2>
+    <div class="section">
+      <label>NUMERO DE TARJETA</label>
+      <input type="number">
+
+      <label>CVV</label>
+      <input type="number">
+
+      <label>FECHA DE VENCIMIENTO</label>
+      <input type="date">
+    </div>
+
+    <div class="buttons">
+      <button>CONFIRMAR</button>
+      <button style="background-color: #ccc; color: black;">CANCELAR</button>
+    </div>
+  </div>
+</body>
+</html>
