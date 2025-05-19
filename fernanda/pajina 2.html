@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lays</title>
+    <link rel="icon" href="imajen 1.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fff600, #ffd700);
+            color: #333;
+            text-align: center;
+        }
+
+        img {
+            margin-top: 30px;
+        }
+
+        h1 {
+            color: #c62828;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: #2e7d32;
+            margin-top: 30px;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.85);
+            display: inline-block;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #f57c00;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 15px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ef6c00;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #c62828;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="imajen 1.png" width="300">
+    <h1>COMPRAR</h1>
+    <hr>
+    <h2>DATOS PERSONALES</h2>
+    <form action="">
+        <label>NOMBRE</label>
+        <input type="text">
+        <label>TELEFONO</label>
+        <input type="text">
+        <label>DIRECCION</label>
+        <input type="text">
+        <label>CORREO ELECTRONICO</label>
+        <input type="text">
+        <hr>
+        <h2>DATOS DEL PRODUCTO</h2>
+        <label>PRODUCTO</label>
+        <input type="text">
+        <label>CANTIDAD</label>
+        <input type="text">
+        <hr>
+        <h2>DATOS DE PAGO</h2>
+        <label>NUMERO DE TARJETA</label>
+        <input type="text">
+        <label>CVV</label>
+        <input type="text">
+        <label>FECHA DE VENCIMIENTO</label>
+        <input type="text">
+        <hr>
+        <center>
+            <button type="submit">Confirmar</button>
+            <button type="reset">Cancelar</button>
+        </center>
+    </form>
+</body>
+</html>

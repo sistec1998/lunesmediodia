@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>LAYS</title>
+  <link rel="icon" href="imajen 1.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ffeb3b, #fbc02d);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 300px;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    h1, h2 {
+      color: #d84315;
+      transition: color 0.5s ease;
+    }
+
+    h1:hover, h2:hover {
+      color: #ff5722;
+    }
+
+    ol, ul {
+      display: inline-block;
+      text-align: left;
+      background-color: #fff8e1;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: slideUp 1s ease;
+    }
+
+    li {
+      margin: 10px 0;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    li:hover {
+      transform: translateX(10px);
+      color: #ff9800;
+    }
+
+    hr {
+      width: 60%;
+      border: 1px solid #ff7043;
+      margin: 40px auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <img src="imajen 1.png" alt="Logo Lays">
+  <h1>PRODUCTOS QUE TE PUEDEN INTERESAR</h1>
+  <ol>
+    <li>DETODITO</li>
+    <li>CRUJITO</li>
+    <li>FIESTAS</li>
+  </ol>
+
+  <hr>
+
+  <h2>GALLETAS</h2>
+  <ul>
+    <li>CHOKIS</li>
+    <li>EMPERADOR</li>
+    <li>PINGÜINOS</li>
+    <li>ARCOIRIS</li>
+  </ul>
+</body>
+</html>
