@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lays</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      padding: 30px;
+      animation: fadeIn 1.5s ease-in;
+      margin: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+      transition: color 0.3s;
+      text-align: center;
+    }
+
+    h1:hover, h2:hover {
+      color: #e67e22;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 350px;
+    }
+
+    form {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: #e67e22;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      font-size: 16px;
+      color: white;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .confirm-btn {
+      background-color: #27ae60;
+    }
+
+    .cancel-btn {
+      background-color: #c0392b;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #2c3e50;
+      display: none;
+      animation: fadeIn 0.7s ease-in-out;
+      text-align: center;
+    }
+
+    .smartart {
+      margin-top: 20px;
+      padding: 15px;
+      background: #dff9fb;
+      border-left: 6px solid #27ae60;
+      border-radius: 10px;
+      display: inline-block;
+      color: #2d3436;
+      font-weight: bold;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" width="300" alt="Logo">  
+  <h1><i class="fas fa-shopping-cart icon"></i>Comprar</h1>
+
+  <div class="container">
+    <!-- Columna izquierda -->
+    <div class="column">
+      <h2><i class="fas fa-user icon"></i>Datos personales</h2>
+      <form id="form-datos-personales">
+        <label>Nombre</label>
+        <input type="text">
+        <label>Teléfono</label>
+        <input type="number">
+        <label>Dirección</label>
+        <input type="text">
+        <label>Correo electrónico</label>
+        <input type="email">
+      </form>
+
+      <h2><i class="fas fa-box icon"></i>Datos del producto</h2>
+      <form id="form-producto">
+        <label>Producto</label>
+        <input type="text">
+        <label>Cantidad</label>
+        <input type="number">
+      </form>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="column">
+      <h2><i class="fas fa-credit-card icon"></i>Datos de pago</h2>
+      <form id="form-pago">
+        <label>Número de tarjeta</label>
+        <input type="number">
+        <label>CVV</label>
+        <input type="number">
+        <label>Fecha de vencimiento</label>
+        <input type="date"><br><br>
+        <div style="text-align: center;">
+          <button type="button" class="confirm-btn" onclick="mostrarMensaje('confirmado')">
+            <i class="fas fa-check-circle icon"></i>Confirmar
+          </button>
+          <button type="button" class="cancel-btn" onclick="mostrarMensaje('cancelado')">
+            <i class="fas fa-times-circle icon"></i>Cancelar
+          </button>
+        </div>
+      </form>
+      <div id="mensaje" class="message"></div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarMensaje(tipo) {
+      const mensaje = document.getElementById('mensaje');
+      if (tipo === 'confirmado') {
+        mensaje.innerHTML = '<div class="smartart"><i class="fas fa-thumbs-up icon"></i>¡Pedido confirmado con éxito!</div>';
+      } else {
+        mensaje.innerHTML = '<span style="color:#c0392b;"><i class="fas fa-ban icon"></i>¡Pedido cancelado!</span>';
+      }
+      mensaje.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

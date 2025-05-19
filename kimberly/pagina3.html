@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lays</title>
+  <!-- Fuente e íconos de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f8ffae, #43c6ac);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    img {
+      margin-top: 30px;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    h2 {
+      color: #fff;
+      background-color: #ffcc00;
+      padding: 15px;
+      margin: 30px auto 20px;
+      width: fit-content;
+      border-radius: 10px;
+      animation: slideIn 1s ease;
+    }
+
+    ol, ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #ffffffaa;
+      margin: 10px auto;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: fit-content;
+      display: inline-block;
+      box-shadow: 2px 2px 10px #999;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    li:hover {
+      background: #ffeb3b;
+      transform: scale(1.05);
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      background: #ffcc00;
+      width: 60%;
+      margin: 40px auto;
+    }
+
+    /* Animación de entrada */
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Iconos personalizados */
+    ol li::before {
+      content: "\f219 ";
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    ul li::before {
+      content: "\f563 ";
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" width="300" alt="Logo Lays"> 
+
+  <h2><i class="fas fa-star"></i> Productos que le puedan interesar</h2>
+  <ol>
+    <li>Detodito</li>
+    <li>Crujitos</li>
+    <li>Fiestas</li>
+  </ol>
+
+  <hr>
+
+  <h2><i class="fas fa-cookie-bite"></i> Galletas</h2>
+  <ul>
+    <li>Chokis</li>
+    <li>Emperador</li>
+    <li>Pingüinos</li>
+    <li>Arcoíris</li>
+  </ul>
+</body>
+</html>
