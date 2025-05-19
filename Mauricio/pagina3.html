@@ -1,132 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viaje</title>
-    <link rel="icon" href="logo.avif">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Agregar Font Awesome -->
+    <title>Lays</title>
+    <link rel="icon" href="lays.png">
+
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff; /* Fondo suave */
+            background-color: #f7f7f7;
             color: #333;
-            text-align: center;
+            margin: 0;
+            padding: 0;
         }
-        h1, h2 {
-            color: #2c3e50;
+
+        h2 {
+            color: #FF9900; /* Color Naranja */
+            font-size: 2em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            animation: fadeIn 1s ease-out;
         }
-        a {
-            text-decoration: none;
-            font-size: 18px;
-            color: #3498db;
-            padding: 10px;
-            transition: color 0.3s ease, transform 0.3s ease;
+
+        hr {
+            width: 500px;
+            border-color: #FF9900;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            animation: slideIn 1.5s ease-out;
         }
-        a:hover {
-            color: #e74c3c;
-            transform: scale(1.1);
+
+        ol, ul {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            animation: fadeIn 1.5s ease-out;
+            list-style-position: inside;
         }
-        img {
+
+        ol li, ul li {
+            background-color: #fff3e0;
+            padding: 8px;
+            margin: 5px 0;
             border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-        img:hover {
-            transform: scale(1.1);
-        }
-        button {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
+
+        ol li:hover, ul li:hover {
+            transform: translateX(10px);
+            background-color: #ffcc80;
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
         }
-        button:hover {
-            background-color: #2980b9;
-            transform: scale(1.1);
+
+        img {
+            width: 400px;
+            border-radius: 8px;
+            animation: bounce 1.5s ease infinite;
         }
-        .marquee-container {
-            margin: 20px 0;
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
-        marquee img {
+
+        @keyframes slideIn {
+            0% { width: 0; }
+            100% { width: 500px; }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .icon {
+            color: #FF9900;
+            font-size: 1.5em;
             margin-right: 10px;
-            border: 5px solid #3498db;
-            border-radius: 10px;
+            transition: color 0.3s ease;
         }
-        ol {
-            list-style-type: none;
-            padding: 0;
-            font-size: 18px;
+
+        .icon:hover {
+            color: #FF6347;
         }
-        ol li {
-            background-color: #ecf0f1;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
-        ol li:hover {
-            background-color: #dfe6e9;
-        }
-        hr {
-            border: 1px solid #3498db;
-            width: 50%;
-            margin: 20px auto;
-        }
-        label {
-            font-size: 18px;
-            color: #34495e;
-        }
-        input[type="text"] {
-            padding: 10px;
-            width: 50%;
-            margin-top: 10px;
-            border-radius: 5px;
-            border: 2px solid #3498db;
-            font-size: 16px;
-        }
-        input[type="text"]:focus {
-            outline: none;
-            border-color: #2980b9;
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
-    <center>
-        <img src="logo.avif" width="300"> <br>
-        <a href="pagina1.html"><i class="fas fa-map-marker-alt"></i> Lugares</a> <br>
-        <a href="pagina2.html"><i class="fas fa-bookmark"></i> Reservar</a> <hr width="300">
-        <h1>Nuestra Misión</h1>
-        <p>"Brindar experiencias únicas e inolvidables a nuestros clientes, ofreciendo viajes personalizados y servicios de calidad que les permitan descubrir el mundo de manera segura, cómoda y asequible. Nos comprometemos a ser un aliado de confianza en cada etapa de su aventura, creando recuerdos que enriquecen su vida."</p>
-        <h1>Visión</h1>
-        <p>"Ser la agencia de viajes líder que inspire a las personas a descubrir el mundo, creando experiencias únicas, personalizadas y memorables, que fomenten conexiones auténticas con diferentes culturas y destinos. Nos comprometemos a ofrecer un servicio excepcional, accesible y sostenible, donde cada cliente sienta que su aventura es nuestra prioridad."</p>
+
+    <div class="container">
+        <img src="lays.png" alt="Lays" />
+        <h2><i class="fas fa-utensils icon"></i>Más Sabor</h2>
+        <hr>
         
-        <label>¿A dónde te gustaría ir?</label>
-        <input type="text">
-        <button>Buscar</button>
-        <hr width="500">
-        
-        <h2>Por si te Interesa</h2>
-        <div class="marquee-container">
-            <marquee>
-                <img src="castillo.jpg" width="200" height="135">
-                <img src="antigua.jpg" width="200">
-                <img src="monterico1.jpg" width="200" height="135">
-            </marquee>
-        </div>
-        
-        <h2>Lo más Visitado</h2>
+        <h2><i class="fas fa-cookie icon"></i>Galletas</h2>
         <ol>
-            <li>Panajachel</li>
-            <li>Rio Dulce</li>
-            <li>Champey</li>
-            <li>Lago Itzá Flores</li>
+            <li><i class="fas fa-birthday-cake"></i> Chokis</li>
+            <li><i class="fas fa-cookie-bite"></i> Arcoiris</li>
+            <li><i class="fas fa-cookie"></i> Emperador</li>
+            <li><i class="fas fa-candy-cane"></i> Chiki</li>
         </ol>
-    </center>
+        <hr>
+
+        <h2><i class="fas fa-candy-cane icon"></i>Golosinas</h2>
+        <ul>
+            <li><i class="fas fa-gift"></i> Fiesta</li>
+            <li><i class="fas fa-candy"></i> Detodito</li>
+            <li><i class="fas fa-pepper-hot"></i> Crujitos</li>
+        </ul>
+    </div>
+
 </body>
 </html>

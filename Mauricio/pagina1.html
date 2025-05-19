@@ -1,171 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes</title>
-    <link rel="icon" href="logo.avif">
+    <title>Lays</title>
+    <link rel="icon" href="lays.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
+        /* Estilos generales */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
             margin: 0;
             padding: 0;
             text-align: center;
         }
 
+        /* Fondo de la página */
         h1 {
-            color: #2c3e50;
-            margin-top: 20px;
-            font-size: 2.5rem;
+            color: #ff6600;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 3em;
+            margin-top: 50px;
         }
 
-        hr {
-            width: 300px;
-            border: 2px solid #3498db;
+        /* Estilo de las imágenes */
+        img {
+            border-radius: 15px;
+            margin: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Detalles con transiciones */
         details {
-            background-color: #ecf0f1;
+            background-color: #fff;
+            border: 2px solid #ff6600;
             border-radius: 10px;
-            margin: 20px auto;
-            padding: 20px;
-            width: 80%;
-            max-width: 500px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 10px;
             transition: all 0.3s ease;
         }
 
         details:hover {
+            background-color: #ffe6cc;
             transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         summary {
-            background-color: #3498db;
-            color: white;
-            padding: 10px;
-            font-size: 1.5rem;
-            border-radius: 8px;
+            font-size: 1.5em;
+            color: #ff6600;
             cursor: pointer;
-            font-weight: bold;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+        }
+
+        summary i {
+            margin-right: 10px;
+            font-size: 1.8em;
         }
 
         summary:hover {
-            background-color: #2980b9;
+            color: #e55b00;
         }
 
-        summary::after {
-            content: '\02190'; /* Left arrow symbol */
-            font-size: 1.5rem;
-            transition: transform 0.3s ease;
+        hr {
+            width: 50%;
+            border: 1px solid #ff6600;
         }
 
-        details[open] summary::after {
-            content: '\02192'; /* Right arrow symbol */
-            transform: rotate(180deg);
+        /* Animación de entrada de contenido */
+        .content {
+            animation: fadeIn 1s ease-in-out;
         }
 
-        h3 {
-            color: #2c3e50;
-            font-size: 1.2rem;
-            margin: 10px 0;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
-        img {
-            width: 200px;
-            height: auto;
-            border-radius: 8px;
-            margin: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        img:hover {
-            transform: scale(1.05);
-        }
-
-        .card {
-            display: inline-block;
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 10px;
-            width: 240px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .card .price {
-            font-size: 1.2rem;
-            color: #e74c3c;
-            font-weight: bold;
-        }
-
-        .card .duration,
-        .card .people {
-            font-size: 1rem;
-            color: #2c3e50;
-        }
-
-        .icon {
-            margin-left: 10px;
-        }
     </style>
 </head>
 <body>
-    <center>
-        <img src="logo.avif" width="400"> <hr width="300">
-        <h1>Lugares Turísticos</h1>
+    <div class="content">
+        <img src="lays.png" width="400">
+        <h1>Productos</h1> 
+        <hr>
 
         <details>
-            <summary>Antigua Guatemala <span class="icon">➔</span></summary>
-            <h3>Precio: Q1,500</h3>
-            <h3>Duración: 2 Semanas</h3>
-            <h3>Personas: 3</h3>
-            <img src="antigua.jpg" alt="Antigua Guatemala">
-            <img src="antigua1.jpg" alt="Antigua Guatemala 2">
+            <summary><i class="fas fa-corn"></i>Cheetos</summary>
+            <img src="cheetos1.jpg" width="200">
+            <img src="cheetos2.jpg" width="200">
+            <img src="cheetos3.webp" width="200">
         </details>
 
         <details>
-            <summary>Castillo de San Felipe Izabal <span class="icon">➔</span></summary>
-            <h3>Precio: Q2,000</h3>
-            <h3>Duración: 3 Semanas</h3>
-            <h3>Personas: 4</h3>
-            <img src="castillo.jpg" alt="Castillo San Felipe">
-            <img src="castillo1.jpg" alt="Castillo San Felipe 2">
+            <summary><i class="fas fa-drumstick-bite"></i>Doritos</summary>
+            <img src="dorito1.png" width="200" height="200">
+            <img src="dorito2.jpg" width="200">
+            <img src="dorito3.jpg" width="200">
         </details>
 
         <details>
-            <summary>MonteRico Santa Rosa <span class="icon">➔</span></summary>
-            <h3>Precio: Q2,500</h3>
-            <h3>Duración: 2 Semanas</h3>
-            <h3>Personas: 3</h3>
-            <img src="monterico.jpg" alt="MonteRico Santa Rosa">
-            <img src="monterico1.jpg" alt="MonteRico Santa Rosa 2">
+            <summary><i class="fas fa-cookie-bite"></i>Papas Lays</summary>
+            <img src="lays1.jpg" width="200">
+            <img src="lays2.jpg" width="200">
+            <img src="lays3.webp" width="200">
         </details>
-
-        <details>
-            <summary>Tikal Petén <span class="icon">➔</span></summary>
-            <h3>Precio: Q2,800</h3>
-            <h3>Duración: 1 Semana</h3>
-            <h3>Personas: 6</h3>
-            <img src="tikal.jpg" alt="Tikal Petén">
-            <img src="tikal1.jpg" alt="Tikal Petén 2">
-        </details>
-
-    </center>
+    </div>
 </body>
 </html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <link rel="icon" href="lays.png">
+    <!-- Enlace a Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #f1c40f;
+            text-transform: uppercase;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 20px;
+            transition: color 0.3s ease;
+        }
+
+        h2:hover {
+            color: #f1c40f;
+        }
+
+        /* Imagen central */
+        img {
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo de enlaces */
+        a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px 15px;
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #f1c40f;
+            transform: scale(1.1);
+        }
+
+        a::after {
+            content: '\f101';  /* Icono de Font Awesome */
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            right: -25px;
+            font-weight: 900;
+            color: #f1c40f;
+        }
+
+        /* Estilo para el botón */
+        button {
+            background-color: #f1c40f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #d4ac0d;
+        }
+
+        /* Estilo para el marquee */
+        marquee img {
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para el input */
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid #2c3e50;
+            transition: border-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        input[type="text"]:focus {
+            border-color: #f1c40f;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Estilo para los márgenes */
+        hr {
+            width: 400px;
+            border: 1px solid #2c3e50;
+            margin-top: 10px;
+        }
+
+        /* Estilo para el centro */
+        center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <img src="lays.png" width="400">
+    <h1>Bienvenidos</h1>
+    <hr>
+    <div>
+        <a href="pagina1.html">Productos</a>
+        <a href="pagina2.html">Trabajos</a>
+        <a href="pagina3.html">Mas sabor</a>
+    </div>
+
+    <h2>Mision</h2>
+    <p>La misión de Lay's, como parte de PepsiCo, se enfoca en proporcionar alimentos de alta calidad que puedan disfrutar
+    los consumidores mientras promueven un estilo de vida equilibrado y responsable. Aunque la misión específica de Lay's puede variar ligeramente según la región,
+    en general, su misión es ofrecer snacks sabrosos, frescos e innovadores que mejoren la experiencia de los consumidores.</p>
+
+    <h2>Visión</h2>
+    <p>En resumen, la visión de Lay's es ser una marca que no solo ofrece productos deliciosos, sino que también contribuye positivamente al bienestar de las personas y al cuidado del medio ambiente,
+    alineándose con los objetivos globales de sostenibilidad y responsabilidad social de PepsiCo.</p>
+    <hr>
+
+    <h2>Prueba lo Nuevo</h2>
+    <marquee>
+        <img src="lays1.jpg" width="200">
+        <img src="dorito3.jpg" width="200">
+        <img src="cheetos3.webp" width="200">
+    </marquee>
+
+    <h2>¿Que dudas tienes?</h2>
+    <input type="text" placeholder="Escribe tu pregunta">
+    <br>
+    <button><i class="fas fa-paper-plane"></i> Enviar</button>
+</center>
+</body>
+</html>
