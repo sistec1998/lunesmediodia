@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAYS</title>
+  <link rel="icon" href="logo1.png" />
+  
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fff7e6, #fceabb);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    img {
+      margin-top: 20px;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      color: #e63946;
+      font-size: 3em;
+      margin: 10px 0;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    h2 {
+      color: #1d3557;
+      margin-top: 30px;
+    }
+
+    p {
+      width: 60%;
+      margin: auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    hr {
+      height: 3px;
+      background: #f4a261;
+      border: none;
+      width: 200px;
+      transition: width 0.4s;
+    }
+
+    hr:hover {
+      width: 300px;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 5px;
+      display: inline-block;
+      border-radius: 5px;
+      background-color: #2a9d8f;
+      color: white;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    a:hover {
+      background-color: #21867a;
+      transform: scale(1.05);
+    }
+
+    .slider {
+      display: flex;
+      overflow: hidden;
+      animation: scroll 15s linear infinite;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .slider img {
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin: 20px 0 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #e76f51;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-left: 10px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d65a3f;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo1.png" width="300" alt="Logo Lays">
+  <h1><i class="fas fa-cookie-bite"></i> BIENVENIDOS</h1>
+  <hr>
+
+  <h2>Productos, trabajo y más sabor</h2>
+  <div>
+    <a href="pagina1.html"><i class="fas fa-box"></i> Productos</a>
+    <a href="pagina2.html"><i class="fas fa-briefcase"></i> Trabajo</a>
+    <a href="pagina3.html"><i class="fas fa-pepper-hot"></i> Más Sabor</a>
+  </div>
+
+  <h2><i class="fas fa-bullseye"></i> Misión</h2>
+  <p>Lay's forma parte del programa de Agricultura Sostenible de PepsiCo, que promueve prácticas agrícolas responsables y la reducción del impacto ambiental en la producción de sus productos.</p>
+
+  <h2><i class="fas fa-eye"></i> Visión</h2>
+  <p>La visión de Lay's es ser una marca líder en snacks que no solo ofrece productos de calidad, sino que también contribuye al bienestar de las personas y al cuidado del medio ambiente.</p>
+
+  <hr width="600">
+
+  <h2><i class="fas fa-star"></i> Prueba lo nuevo</h2>
+  <div class="slider">
+    <img src="doritos2.webp" alt="Doritos">
+    <img src="papas2.webp" alt="Papas">
+    <img src="chetos1.jpg" alt="Chetos">
+  </div>
+
+  <label><i class="fas fa-question-circle"></i> ¿Qué dudas tienes?</label>
+  <input type="text" placeholder="Escribe tu duda aquí...">
+  <button><i class="fas fa-paper-plane"></i> Enviar</button>
+
+</body>
+</html>

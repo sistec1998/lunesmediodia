@@ -1,35 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viajes</title>
-  <link rel="icon" href="logo1.avif">
-  <!-- Ícono de redes sociales (Ej. Facebook) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Lays</title>
+  <link rel="icon" href="logo1.png">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #a2d4f7, #ffffff);
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #333;
       margin: 0;
-      padding: 0;
-      animation: fadeIn 1.5s ease-in-out;
+      padding: 20px;
+    }
+
+    center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     h1 {
-      color: #1a237e;
+      color: #d35400;
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px #fff;
+    }
+
+    hr {
+      border: 0;
+      height: 4px;
+      width: 400px;
+      background: #e67e22;
       margin-bottom: 30px;
-      animation: slideDown 1s ease-out;
     }
 
     details {
-      background: #e3f2fd;
-      border: 1px solid #90caf9;
+      background-color: #fff3cd;
+      border: 1px solid #f1c40f;
       border-radius: 10px;
-      padding: 15px;
-      width: 70%;
-      margin: 15px auto;
-      transition: all 0.3s ease;
+      padding: 10px;
+      margin-bottom: 20px;
+      width: 90%;
+      max-width: 600px;
+      transition: transform 0.3s ease;
     }
 
     details:hover {
@@ -38,103 +52,64 @@
     }
 
     summary {
-      font-size: 20px;
+      font-size: 1.5em;
       font-weight: bold;
-      color: #0d47a1;
       cursor: pointer;
+      list-style: none;
+      position: relative;
+      padding-left: 25px;
     }
 
-    h3 {
-      color: #1565c0;
-      margin: 5px 0;
+    summary::before {
+      content: "▶";
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: transform 0.3s ease;
+    }
+
+    details[open] summary::before {
+      transform: rotate(90deg);
     }
 
     img {
-      border-radius: 10px;
       margin: 10px;
-      transition: transform 0.3s ease;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     img:hover {
       transform: scale(1.05);
-    }
-
-    hr {
-      border: none;
-      height: 4px;
-      background-color: #1565c0;
-      margin: 20px 0;
-    }
-
-    .social-icon {
-      font-size: 30px;
-      color: #0d47a1;
-      margin-top: 30px;
-      animation: float 2s infinite ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-    @keyframes slideDown {
-      from {transform: translateY(-20px); opacity: 0;}
-      to {transform: translateY(0); opacity: 1;}
-    }
-
-    @keyframes float {
-      0%, 100% {transform: translateY(0);}
-      50% {transform: translateY(-10px);}
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
 <body>
   <center>
-    <img src="logo1.avif" width="400">
-    <hr width="500">
-    <h1>LUGARES TURÍSTICOS</h1>
+    <img src="logo1.png" width="300" alt="Logo Lays">
+    <h1>PRODUCTOS</h1>
+    <hr width="400">
 
     <details>
-      <summary>Antigua Guatemala</summary>
-      <h3>Precio: Q1000</h3>
-      <h3>Duración: 2 semanas</h3>
-      <h3>Personas: 3</h3>
-      <img src="imagen1.jpg" width="300">
-      <img src="imagen2.jpg" width="300">
+      <summary>CHEETOS</summary>
+      <img src="chetos1.jpg" width="300" alt="Cheetos 1">
+      <img src="chetos2.jpeg" width="300" alt="Cheetos 2">
+      <img src="chetos3.jpg" width="200" alt="Cheetos 3">
     </details>
 
     <details>
-      <summary>Castillo de San Felipe, Izabal</summary>
-      <h3>Precio: Q2000</h3>
-      <h3>Duración: 3 semanas</h3>
-      <h3>Personas: 3</h3>
-      <img src="castillo1.jpg" width="300" height="200">
-      <img src="castillo2.jpg" width="300">
+      <summary>DORITOS</summary>
+      <img src="doritos1.webp" width="300" alt="Doritos 1">
+      <img src="doritos2.webp" width="300" alt="Doritos 2">
+      <img src="doritos3.jpg" width="300" alt="Doritos 3">
     </details>
 
     <details>
-      <summary>Monterrico, Santa Rosa</summary>
-      <h3>Precio: Q3000</h3>
-      <h3>Duración: 1 semana</h3>
-      <h3>Personas: 5</h3>
-      <img src="playa1.jpg" width="300" height="200">
-      <img src="playa2.avif" width="300">
+      <summary>PAPAS LAYS</summary>
+      <img src="papas1.webp" width="300" alt="Papas Lays 1">
+      <img src="papas2.webp" width="300" alt="Papas Lays 2">
+      <img src="papas3.webp" width="200" alt="Papas Lays 3">
     </details>
-
-    <details>
-      <summary>Tikal, Petén</summary>
-      <h3>Precio: Q4000</h3>
-      <h3>Duración: 2 semanas</h3>
-      <h3>Personas: 6</h3>
-      <img src="tikal1.avif" width="300" height="200">
-      <img src="tikal2.jpg" width="300">
-    </details>
-
-    <!-- Icono de Facebook con animación -->
-    <a href="https://facebook.com" target="_blank" class="social-icon">
-      <i class="fab fa-facebook-square"></i>
-    </a>
   </center>
 </body>
 </html>

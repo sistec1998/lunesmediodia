@@ -1,169 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes</title>
-    <link rel="icon" href="logo1.avif">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>LAYS</title>
+    <link rel="icon" href="logo1.png">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to right, #e0f7fa, #80deea);
-            color: #004d40;
-            margin: 0;
-            padding: 0;
+            background: linear-gradient(to right, #fceabb, #f8b500);
+            font-family: Arial, sans-serif;
             text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 20px;
         }
 
-        img.logo {
-            width: 300px;
-            margin-top: 20px;
-            transition: transform 0.5s ease;
+        h1 {
+            color: #d4145a;
+            font-size: 48px;
+            animation: fadeIn 2s ease-in-out;
         }
 
-        img.logo:hover {
+        h2 {
+            color: #6a11cb;
+            font-size: 36px;
+            margin-top: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        h2:hover {
             transform: scale(1.1);
         }
 
-        a {
-            text-decoration: none;
-            color: #00695c;
+        li {
             font-size: 20px;
-            margin: 10px;
-            display: inline-block;
-            transition: color 0.3s ease;
+            margin: 10px 0;
+            transition: color 0.3s, transform 0.3s;
         }
 
-        a:hover {
-            color: #004d40;
+        li:hover {
+            color: #ff6f61;
+            transform: translateX(10px);
         }
 
         hr {
-            border: 1px solid #004d40;
-        }
-
-        h1, h2 {
-            color: #00796b;
-        }
-
-        p {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 10px;
-        }
-
-        input, button {
-            padding: 10px;
-            font-size: 16px;
-            margin-top: 10px;
-            border-radius: 5px;
             border: none;
-            transition: all 0.3s ease;
+            height: 3px;
+            background-color: #333;
+            margin: 20px auto;
         }
 
-        input {
-            width: 200px;
-        }
-
-        button {
-            background-color: #00796b;
-            color: white;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #004d40;
-        }
-
-        .gallery {
-            display: flex;
-            overflow-x: auto;
-            gap: 20px;
-            padding: 20px;
-            scroll-behavior: smooth;
-        }
-
-        .gallery img {
-            width: 300px;
-            height: 300px;
-            border-radius: 15px;
-            transition: transform 0.3s;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        ol {
-            list-style-type: decimal;
+        ol, ul {
+            list-style: none;
             padding: 0;
         }
 
-        footer {
-            margin-top: 30px;
-            background: #004d40;
-            color: white;
-            padding: 20px;
+        img {
+            width: 300px;
+            transition: transform 1s ease;
         }
 
-        .social-icons a {
-            color: white;
-            font-size: 24px;
-            margin: 0 10px;
-            transition: color 0.3s ease;
+        img:hover {
+            transform: rotate(360deg) scale(1.1);
         }
 
-        .social-icons a:hover {
-            color: #80deea;
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
+    <img src="logo1.png" alt="Logo LAYS">
+    <h1>Mas sabor</h1>
+    <hr width="400">
+    <h2>Galletas</h2>
 
-    <img src="logo1.avif" class="logo" alt="Logo"><br>
-
-    <a href="pagina1.html">Lugares</a>
-    <a href="pagina2.html">Reservar</a>
-    <hr width="300">
-
-    <h1>NUESTRA MISIÓN</h1>
-    <p>"Brindar experiencias de viaje inolvidables, seguras y personalizadas que conecten a las personas con nuevos destinos, culturas y emociones, a través de un servicio confiable, accesible y comprometido con la satisfacción total de nuestros clientes."</p>
-
-    <h1>VISIÓN</h1>
-    <p>"Ser la agencia de viajes líder en innovación y servicio en Latinoamérica, reconocida por transformar sueños en experiencias únicas, fomentando el turismo responsable y creando conexiones auténticas entre personas y culturas alrededor del mundo."</p>
-
-    <h2>¿A dónde te gustaría ir?</h2>
-    <input type="text" placeholder="Ingresa un destino...">
-    <button>Buscar</button>
-
-    <hr width="600">
-
-    <h2>Por si te interesa</h2>
-    <div class="gallery">
-        <img src="castillo1.jpg" alt="Castillo">
-        <img src="playa1.jpg" alt="Playa">
-        <img src="tikal1.avif" alt="Tikal">
-    </div>
-
-    <h2>Lo más visto</h2>
     <ol>
-        <li>Panajachel</li>
-        <li>Río Dulce</li>
-        <li>Semuc Champey</li>
-        <li>Lago Petén Itzá, Flores</li>
+        <li>CHOKIS</li>
+        <li>ARCOIRIS</li>
+        <li>EMPERADOR</li>
+        <li>CHIKI</li>
     </ol>
-
-    <footer>
-        <p>Síguenos en redes sociales</p>
-        <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
-        </div>
-        <p>&copy; 2025 Agencia de Viajes. Todos los derechos reservados.</p>
-    </footer>
-
+    <h2>Golosinas</h2>
+    <ul>
+        <li>FIESTA</li>
+        <li>DETODITO</li>
+        <li>CRUJITOS</li>
+    </ul>
 </body>
 </html>
