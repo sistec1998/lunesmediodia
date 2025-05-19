@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <link rel="icon" href="imagen.png">
+    <style>
+        /* Fondo y color general */
+        body {
+            background-color: #f7d7d2; /* Color palo rosa */
+            font-family: Arial, sans-serif;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Animación para el texto */
+        h1, h2 {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Deslizar la imagen desde la parte superior */
+        img {
+            animation: slideDown 1s ease-out;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Estilo para listas y transición de hover */
+        ol li, ul li {
+            font-size: 18px;
+            margin-bottom: 8px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        ol li:hover, ul li:hover {
+            color: #f56b6b; /* Color al pasar el mouse */
+            transform: scale(1.1); /* Aumenta el tamaño ligeramente */
+        }
+
+        /* Estilo de separación */
+        hr {
+            border: 1px solid #e1b6b1;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="imagen.png" width="300" alt="Imagen de producto">
+        <h1>Productos que te pueden interesar</h1>
+        <ol>
+            <li>Detodito</li>
+            <li>Crujitos</li>
+            <li>Fiestas</li>
+        </ol>
+        <hr>
+        <h2>Galletas</h2>
+        <ul>
+            <li>Chokis</li>
+            <li>Emperador</li>
+            <li>Pinguinos</li>
+            <li>Arcolris</li>
+        </ul>
+    </center>  
+</body>
+</html>
