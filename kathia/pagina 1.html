@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lays</title>
+    <link rel="icon" href="pag 1.png">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        details {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #111;
+            border-radius: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.5s ease;
+        }
+
+        summary {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        summary::before {
+            content: "\f07c "; /* icono de caja */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            margin-right: 10px;
+        }
+
+        hr {
+            border: 1px solid #555;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <img src="pag 1.png" width="300" alt="Logo Lays" style="animation: fadeIn 2s;">
+    <h1><i class="fa-solid fa-cart-shopping"></i> Productos</h1>
+    <hr>
+
+    <details>
+        <summary>Cheetos</summary>
+        <img src="img 1.png" width="200" alt="Cheetos 1">
+        <img src="img 2.png" width="200" height="200" alt="Cheetos 2">
+        <img src="img 3.png" width="200" alt="Cheetos 3">
+    </details>
+
+    <details>
+        <summary>Papas Lays</summary>
+        <img src="img 4.png" width="200" alt="Lays 1">
+        <img src="img 5.png" width="200" alt="Lays 2">
+        <img src="img 7.webp" width="200" height="300" alt="Lays 3">
+    </details>
+
+    <details>
+        <summary>Doritos</summary>
+        <img src="img 8.png" width="200" alt="Doritos 1">
+        <img src="img 9.png" width="200" alt="Doritos 2">
+        <img src="img 10.png" width="200" alt="Doritos 3">
+    </details>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lays</title>
+  <link rel="icon" href="pag 1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      transition: background-color 1s ease;
+    }
+
+    img {
+      width: 300px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    h1, h2 {
+      color: #FFD700;
+      transition: color 0.5s ease;
+    }
+
+    h1:hover, h2:hover {
+      color: #ff6347;
+    }
+
+    ol, ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    li {
+      margin: 10px 0;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    li:hover {
+      transform: scale(1.1);
+      color: #1E90FF;
+    }
+
+    hr {
+      border: 1px solid #FFD700;
+      width: 50%;
+      margin: 30px auto;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="pag 1.png" alt="Logo Lays">
+
+  <h1><i class="fas fa-star"></i> Productos que te pueden interesar</h1>
+
+  <ol>
+    <li><i class="fas fa-bag-shopping"></i> Detodito</li>
+    <li><i class="fas fa-fire"></i> Crujitos</li>
+    <li><i class="fas fa-party-horn"></i> Fiestas</li>
+  </ol>
+
+  <hr>
+
+  <h2><i class="fas fa-cookie-bite"></i> Galletas</h2>
+
+  <ul>
+    <li><i class="fas fa-cookie"></i> Chokis</li>
+    <li><i class="fas fa-crown"></i> Emperador</li>
+    <li><i class="fas fa-cake-candles"></i> Pingüinos</li>
+    <li><i class="fas fa-rainbow"></i> Arcoiris</li>
+  </ul>
+
+</body>
+</html>
