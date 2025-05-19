@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>lays</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    /* Fondo degradado celeste-verde */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #a2dff7, #a8e6cf);
+      color: #333;
+      transition: background 2s ease;
+    }
+
+    center {
+      padding: 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    marquee {
+      font-size: 1.5em;
+      color: #00695c;
+      animation: fadeInText 3s ease-in-out;
+    }
+
+    h1, h2, h3 {
+      transition: transform 0.5s ease;
+    }
+
+    h1:hover, h2:hover, h3:hover {
+      transform: scale(1.05);
+      color: #004d40;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #ffffffcc;
+      color: #00695c;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      background-color: #b2dfdb;
+      transform: scale(1.1);
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 200px;
+      transition: box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus {
+      box-shadow: 0 0 10px #26a69a;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #26a69a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <marquee>el sabor único aquí</marquee>
+    <img src="logo.png" width="200" alt="Logo Lays">
+    <h1>Bienvenidos a Fritolay</h1>
+    <hr>
+    <a href="pagina1.html">Productos</a>
+    <a href="pagina2.html">Comprar</a>
+    <a href="pagina3.html">Más Productos</a>
+
+    <h2>Misión</h2>
+    <p>"Ofrecer golosinas y galletas de excelente calidad que despierten momentos de alegría y sabor en la vida de nuestros consumidores, combinando tradición y creatividad en cada producto, con un firme compromiso con la seguridad alimentaria, la innovación y el cuidado del entorno."</p>
+
+    <h3>Visión</h3>
+    <p>"Ser la marca líder en el mercado de golosinas y galletas, reconocida por la calidad, el sabor y la innovación de nuestros productos, llevando dulces momentos a cada hogar y expandiendo nuestra presencia a nivel nacional e internacional con responsabilidad social y sostenibilidad."</p>
+
+    <h3>Lo más vendido</h3>
+    <marquee>
+      <img src="imagen1.png" width="200" alt="Producto 1">
+      <img src="imagen2.jpg" width="200" alt="Producto 2">
+      <img src="imagen3.png" width="200" alt="Producto 3">
+    </marquee>
+
+    <form>
+      <label>Queremos escucharte</label><br><br>
+      <input type="text" placeholder="Escribe tu mensaje">
+      <button>Enviar</button>
+    </form>
+  </center>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lays</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      transition: background-color 1s ease;
+    }
+
+    img {
+      width: 200px;
+      margin-top: 20px;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    h1, h2 {
+      margin-top: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    ol, ul {
+      list-style: none;
+      padding: 0;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    li {
+      margin: 10px 0;
+      transition: color 0.3s ease;
+    }
+
+    li:hover {
+      color: #ffcc00;
+    }
+
+    hr {
+      margin: 30px auto;
+      width: 50%;
+      border: 1px solid #444;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo Lays">
+  
+  <h1>Productos que te pueden interesar</h1>
+  <ol>
+    <li>Detodito</li>
+    <li>Crujitos</li>
+    <li>Fiestas</li>
+  </ol>
+
+  <hr>
+
+  <h2>Galletas</h2>
+  <ul>
+    <li>Chokis</li>
+    <li>Emperador</li>
+    <li>Pingüinos</li>
+    <li>Arcoíris</li>
+  </ul>
+
+</body>
+</html>
