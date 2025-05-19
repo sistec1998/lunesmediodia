@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #fdfbfb, #ebedee);
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        img {
+            width: 300px;
+            margin-top: 20px;
+            transition: transform 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #e63946;
+            font-size: 3em;
+            margin-top: 20px;
+            transition: color 0.3s;
+        }
+
+        h1:hover {
+            color: #f77f00;
+        }
+
+        h2 {
+            color: #457b9d;
+            font-size: 2em;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: auto;
+            color: #333;
+            line-height: 1.6;
+            transition: color 0.3s ease-in-out;
+        }
+
+        p:hover {
+            color: #e76f51;
+        }
+
+        a {
+            text-decoration: none;
+            color: #457b9d;
+            font-size: 1.2em;
+            margin: 10px;
+            padding: 10px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e63946;
+            color: white;
+        }
+
+        hr {
+            border: 2px solid #a8dadc;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .icon {
+            margin-right: 10px;
+            color: #f4a261;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            margin-top: 30px;
+            animation: marquee 10s linear infinite;
+        }
+
+        .marquee-container img {
+            width: 300px;
+            margin-right: 20px;
+            display: inline-block;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        button {
+            background-color: #f77f00;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #e63946;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.png" alt="Logo de Lays">
+    <h1><i class="fas fa-sun icon"></i>BIENVENIDOS</h1>
+
+    <hr>
+
+    <div>
+        <a href="Pagina1.html"><i class="fas fa-box-open icon"></i>Productos</a>
+        <a href="Pagina2.html"><i class="fas fa-briefcase icon"></i>Trabajos</a>
+        <a href="Pagina3.html"><i class="fas fa-fire icon"></i>Más Sabor</a>
+    </div>
+
+    <br><br>
+
+    <h1><i class="fas fa-bullseye icon"></i>MISIÓN</h1>
+    <p>"Ofrecer momentos irresistibles de sabor y alegría a través de botanas de la más alta calidad, elaboradas con ingredientes seleccionados, innovación constante y un compromiso con la satisfacción de nuestros consumidores en cada mordida."</p>
+    
+    <br><br><br>
+
+    <h1><i class="fas fa-eye icon"></i>VISIÓN</h1>
+    <p>"Ser la marca líder en botanas a nivel global, reconocida por su innovación, sostenibilidad y compromiso con la comunidad, ofreciendo productos que generan experiencias de sabor excepcionales para todas las generaciones."</p>
+
+    <br><br>
+
+    <hr>
+
+    <h2><i class="fas fa-sync-alt icon"></i>PRUEBA DE NUEVO</h2>
+    <div class="marquee-container">
+        <img src="1.png" alt="Producto 1">
+        <img src="4.jpg" alt="Producto 2">
+        <img src="9.webp" alt="Producto 3">
+    </div>
+
+    <form>
+        <label>¿Qué duda tienes?</label><br><br><br>
+        <input type="text" placeholder="Escribe tu duda aquí" style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ddd;">
+        <br><br>
+        <button type="submit">ENVIAR</button>
+    </form>
+
+</body>
+</html>

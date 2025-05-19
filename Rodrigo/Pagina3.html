@@ -3,107 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIAJES</title>
-    <link rel="icon" href="logo tipo.avif">
+    <title>LAYS</title>
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #e0f7fa, #e1bee7);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #fdfbfb, #ebedee);
+            text-align: center;
+            color: #333;
             margin: 0;
             padding: 0;
-            color: #333;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #4a148c;
-            color: white;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        nav {
-            text-align: center;
+        img {
+            width: 300px;
             margin-top: 20px;
+            transition: transform 0.5s;
         }
 
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #6a1b9a;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #d500f9;
-        }
-
-        h1 {
-            color: #4a148c;
-            text-align: center;
-        }
-
-        p {
-            width: 80%;
-            margin: 0 auto 30px;
-            line-height: 1.6;
-            background: #f3e5f5;
-            padding: 15px;
-            border-radius: 10px;
-            animation: slideUp 1.5s ease;
-        }
-
-        form {
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        input[type="text"] {
-            padding: 10px;
-            border: 2px solid #9c27b0;
-            border-radius: 5px;
-            width: 200px;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #7b1fa2;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-left: 10px;
-            transition: background 0.3s;
-        }
-
-        button:hover {
-            background-color: #ab47bc;
-        }
-
-        hr {
-            border: none;
-            height: 2px;
-            background: #ce93d8;
-            margin: 30px 0;
-        }
-
-        marquee img {
-            margin: 0 10px;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-
-        marquee img:hover {
+        img:hover {
             transform: scale(1.05);
         }
 
-        ol {
-            width: fit-content;
+        h1 {
+            color: #e63946;
+            font-size: 3em;
+            transition: color 0.3s;
+        }
+
+        h1:hover {
+            color: #f77f00;
+        }
+
+        h2 {
+            color: #457b9d;
+            font-size: 2em;
+            margin-top: 30px;
+        }
+
+        hr {
+            border: 2px solid #a8dadc;
+            width: 80%;
             margin: auto;
-            padding-left: 20px;
-            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        ol, ul {
+            list-style-position: inside;
+            font-size: 1.2em;
+            padding: 0;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        li {
+            margin: 10px 0;
+            transition: transform 0.3s;
+        }
+
+        li:hover {
+            transform: scale(1.1);
+            color: #e76f51;
         }
 
         /* Animaciones */
@@ -112,58 +73,40 @@
             to { opacity: 1; }
         }
 
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
+        }
+
+        .icon {
+            margin-right: 10px;
+            color: #f4a261;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <img src="logo tipo.avif" width="100" alt="Logo" style="border-radius: 50%;">
-        <h1><i class="fas fa-plane-departure"></i> VIAJES CON ESTILO</h1>
-    </header>
-
-    <nav>
-        <a href="Pagina1.html"><i class="fas fa-map-marker-alt"></i> LUGARES</a>
-        <a href="Pagina2.html"><i class="fas fa-calendar-check"></i> RESERVAR</a>
-    </nav>
+    <img src="logo.png" alt="Logo de LAYS">
+    <h1><i class="fas fa-fire icon"></i>MAS SABOR</h1>
 
     <hr>
 
-    <h1><i class="fas fa-bullseye"></i> NUESTRA MISIÓN</h1>
-    <p>"Brindar experiencias de viaje únicas, seguras y personalizadas que conecten a las
-    personas con nuevas culturas, paisajes y emociones, superando sus expectativas a través
-    de un servicio profesional, responsable y comprometido con la sostenibilidad y la satisfacción
-    del cliente."</p>
-
-    <h1><i class="fas fa-eye"></i> VISIÓN</h1>
-    <p>"Ser la empresa líder en experiencias de viaje personalizadas, conectando personas con destinos inolvidables,
-    promoviendo el turismo sostenible y creando recuerdos que transformen vidas."</p>
-
-    <form>
-        <label for="destino"><i class="fas fa-search-location"></i> ¿A DÓNDE TE GUSTARÍA IR?</label><br><br>
-        <input type="text" id="destino" placeholder="Escribe tu destino">
-        <button><i class="fas fa-search"></i> BUSCAR</button>
-    </form>
-
-    <hr>
-
-    <h1><i class="fas fa-lightbulb"></i> POR SI TE INTERESA</h1>
-    <marquee behavior="scroll" direction="left" scrollamount="6">
-        <img src="1.jpg" width="300">
-        <img src="2.jpg" width="300">
-        <img src="3.jpg" width="300">
-    </marquee>
-
-    <h2 style="text-align:center;"><i class="fas fa-star"></i> LO MÁS VISITADO</h2>
+    <h2><i class="fas fa-cookie-bite icon"></i>GALLETAS</h2>
     <ol>
-        <li>Panajachel</li>
-        <li>Río Dulce</li>
-        <li>Semuc Champey</li>
-        <li>Lago Petén Itzá, Flores</li>
+        <li><i class="fas fa-star icon"></i>Chokis</li>
+        <li><i class="fas fa-star icon"></i>Arcoiris</li>
+        <li><i class="fas fa-star icon"></i>Emperador</li>
+        <li><i class="fas fa-star icon"></i>Chiki</li>
     </ol>
+
+    <hr>
+
+    <h2><i class="fas fa-candy-cane icon"></i>GOLOSINAS</h2>
+    <ul>
+        <li><i class="fas fa-heart icon"></i>Fiestas</li>
+        <li><i class="fas fa-heart icon"></i>Detodito</li>
+        <li><i class="fas fa-heart icon"></i>Crujitos</li>
+    </ul>
 
 </body>
 </html>
