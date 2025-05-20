@@ -1,154 +1,128 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Viajes</title>
-  <link rel="icon" href="logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lays</title>
+  <link rel="icon" href="Logo-lays.png" />
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #fff176, #fff8e1); /* tonos de amarillo */
       margin: 0;
       padding: 0;
-      color: #004d40;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .container {
-      max-width: 700px;
-      margin: 30px auto;
-      background-color: #ffffffd0;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-      animation: fadeIn 1.2s ease;
-    }
-
-    .logo {
-      display: block;
-      margin: 0 auto 20px;
-      width: 150px;
-      animation: zoomIn 1.5s ease;
+    img {
+      width: 300px;
+      margin-top: 20px;
+      animation: fadeIn 2s ease;
     }
 
     h1 {
-      text-align: center;
-      color: #00796b;
       font-size: 2.5em;
-      margin-bottom: 20px;
+      color: #ff9800;
+      margin-bottom: 10px;
     }
 
-    form label {
+    hr {
+      width: 70%;
+      border: none;
+      height: 2px;
+      background-color: #ffb300;
+      margin: 20px 0;
+    }
+
+    form {
+      background-color: #fffde7;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 500px;
+      animation: slideUp 1s ease;
+    }
+
+    label {
       display: block;
       font-weight: bold;
-      margin-bottom: 6px;
-      color: #00695c;
+      margin-top: 20px;
+      font-size: 1.1em;
     }
 
-    input {
+    input[type="text"],
+    input[type="number"],
+    input[type="file"] {
       width: 100%;
       padding: 10px;
-      margin-bottom: 20px;
+      margin-top: 5px;
       border-radius: 8px;
-      border: 1px solid #80cbc4;
-      transition: border-color 0.3s ease;
+      border: 1px solid #ccc;
+      transition: box-shadow 0.3s ease;
     }
 
     input:focus {
-      border-color: #0097a7;
+      box-shadow: 0 0 10px #ffeb3b;
       outline: none;
     }
 
     button {
-      background-color: #00acc1;
-      color: white;
-      font-weight: bold;
-      padding: 12px 20px;
+      margin: 20px 10px 0 10px;
+      padding: 12px 24px;
+      font-size: 1em;
       border: none;
       border-radius: 8px;
+      background-color: #ffca28;
+      color: #333;
       cursor: pointer;
-      margin: 10px 10px 0 0;
-      transition: background-color 0.3s ease;
+      transition: transform 0.2s ease, background-color 0.3s ease;
     }
 
     button:hover {
-      background-color: #00838f;
-    }
-
-    hr {
-      border: none;
-      height: 2px;
-      background-color: #00796b;
-      margin: 30px 0;
-    }
-
-    .card {
-      background-color: #e0f2f1;
-      border-radius: 12px;
-      padding: 20px;
-      margin-top: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-      text-align: center;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-    }
-
-    .card img {
-      width: 100%;
-      max-width: 400px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-      margin-top: 15px;
+      transform: scale(1.05);
+      background-color: #ffc107;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(-20px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    @keyframes zoomIn {
-      from { transform: scale(0.8); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <img src="logo.png" class="logo" alt="Logo">
-    <h1>📅 Reserva tu viaje</h1>
-    <hr>
+  <img src="Logo-lays.png" alt="Lays Logo">
+  <h1>🧑‍💼 Trabaja con nosotros</h1>
+  <hr />
 
-    <form>
-      <label>🙋‍♂️ ¿Cómo te llamas?</label>
-      <input type="text" placeholder="Tu nombre completo" required>
+  <form>
+    <label>🙋‍♂️ Tu nombre</label>
+    <input type="text" placeholder="Escribe tu nombre completo">
 
-      <label>📞 Teléfono</label>
-      <input type="number" placeholder="Ej. 55555555" required>
-
-      <label>📧 Correo electrónico</label>
-      <input type="email" placeholder="tucorreo@ejemplo.com" required>
-
-      <label>📍 Lugar turístico</label>
-      <input type="text" placeholder="Ej. Tikal, Antigua, etc." required>
-
-      <label>📆 Fecha para viajar</label>
-      <input type="date" required>
-
-      <label>💳 N° de tarjeta (crédito/débito)</label>
-      <input type="number" placeholder="Ej. 1234 5678 9012 3456" required>
-
-      <button type="submit">✅ Reservar</button>
-      <button type="reset">❌ Cancelar</button>
-    </form>
-  </div>
-
+    <label>💼 Tu profesión</label>
+    <input type="text" placeholder="Ej: Ingeniero, Vendedor">
  
+    <label for=""> tu dpi</label>
+    <input type="number">
+    <br><br><br>
+    
+    <label>📄 Tu CV</label>
+    <input type="file">
+
+    <label>🎯 ¿Qué te gustaría hacer?</label>
+    <input type="text" placeholder="Cuéntanos qué te interesa">
+
+    <button type="submit">✅ Postularse</button>
+    <button type="reset">❌ Cancelar</button>
+  </form>
 
 </body>
 </html>

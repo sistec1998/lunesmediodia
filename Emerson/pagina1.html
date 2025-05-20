@@ -1,140 +1,100 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viajes</title>
-  <link rel="icon" href="logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lays</title>
+  <link rel="icon" href="Logo-lays.png" />
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #cceeff, #e0f7ff); /* celeste */
+      color: #003366; /* azul oscuro */
       margin: 0;
-      padding: 20px;
+      padding: 0;
       text-align: center;
-      color: #004d40;
     }
 
     h1 {
-      color: #006064;
       font-size: 3em;
-      margin-bottom: 20px;
-      animation: fadeIn 2s ease;
+      margin: 20px;
+      color: #0066cc;
     }
 
-    img {
+    details {
+      margin: 20px auto;
+      width: 80%;
+      background: white;
       border-radius: 10px;
+      padding: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: transform 0.3s ease;
     }
 
-    img:hover {
-      transform: scale(1.05);
-    }
-
-    details {
-      background-color: #e0f2f1;
-      margin: 20px auto;
-      width: 80%;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: background-color 0.3s ease;
+    details:hover {
+      transform: scale(1.02);
     }
 
     summary {
       font-size: 1.5em;
       cursor: pointer;
-      margin-bottom: 10px;
-      transition: color 0.3s ease;
+      color: #0055aa;
     }
 
-    summary:hover {
-      color: #00796b;
-    }
-
-    h2, h3 {
-      margin: 10px 0;
-    }
-
-    .gallery {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 15px;
-    }
-
-    .gallery img {
+    img {
       width: 250px;
-      height: 170px;
-      object-fit: cover;
+      border-radius: 15px;
+      margin: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
     }
 
     hr {
-      width: 60%;
-      border: 1px solid #00796b;
+      border: 0;
+      height: 2px;
+      background-color: #66ccff;
+      width: 70%;
       margin-bottom: 30px;
     }
   </style>
 </head>
 <body>
 
-  <img src="logo.png" width="200" alt="Logo">
-  <hr>
-  <h1>🌎 Lugares Turísticos</h1>
+  <img src="Logo-lays.png" width="300" alt="Lays Logo" />
+  <h1>🛍️ Productos</h1>
+  <hr />
 
   <details>
-    <summary>🏰 Antigua Guatemala</summary>
-    <h2>Precio: Q5,000</h2>
-    <h2>Duración: 5 días</h2>
-    <h2>Personas: 4 personas</h2>
-    <h3>Galería</h3>
-    <div class="gallery">
-      <img src="AntiguaGuatemala.jpg" alt="Antigua Guatemala">
-      <img src="hotel.jpg" alt="Hotel Antigua">
-    </div>
+    <summary>🔥 Cheetos</summary>
+    <img src="Cheetos-Azul.webp" alt="Cheetos Azul">
+    <img src="cheetos naranja.jpg" alt="Cheetos Naranja">
+    <img src="cheetos morados.jpg" alt="Cheetos Morado">
   </details>
 
   <details>
-    <summary>⚓ Castillo de San Felipe, Izabal</summary>
-    <h2>Precio: Q3,000</h2>
-    <h2>Duración: 4 días</h2>
-    <h2>Personas: 5 personas</h2>
-    <h3>Galería</h3>
-    <div class="gallery">
-      <img src="Castillo-de-San-Felipe-en-Guatemala.jpg" alt="Castillo San Felipe">
-      <img src="hotel2.jpg" alt="Hotel Izabal">
-    </div>
+    <summary>💥 Doritos</summary>
+    <img src="doritos1.webp" alt="Doritos 1">
+    <img src="doritos2.jpg" alt="Doritos 2">
+    <img src="doritos3.jpg" alt="Doritos 3">
   </details>
 
   <details>
-    <summary>🌴 Monterrico, Santa Rosa</summary>
-    <h2>Precio: Q4,000</h2>
-    <h2>Duración: 5 días</h2>
-    <h2>Personas: 5 personas</h2>
-    <h3>Galería</h3>
-    <div class="gallery">
-      <img src="playa.jpg" alt="Playa Monterrico">
-      <img src="hotel3.jpg" alt="Hotel Monterrico">
-    </div>
+    <summary>🥔 Papas Lays</summary>
+    <img src="lays1.webp" alt="Lays 1">
+    <img src="lays2.webp" alt="Lays 2">
+    <img src="lays3.jpg" alt="Lays 3">
   </details>
 
   <details>
-    <summary>🏞️ Tikal, Petén</summary>
-    <h2>Precio: Q5,000</h2>
-    <h2>Duración: 5 días</h2>
-    <h2>Personas: 5 personas</h2>
-    <h3>Galería</h3>
-    <div class="gallery">
-      <img src="imagen5.avif" alt="Tikal">
-      <img src="hotel5.jpg" alt="Hotel Tikal">
-    </div>
+    <summary>🍪 Galletas</summary>
+    <img src="galleta1.jpg" alt="Galleta 1">
+    <img src="galleta2.webp" alt="Galleta 2">
+    <img src="galleta3.webp" alt="Galleta 3">
   </details>
 
 </body>
