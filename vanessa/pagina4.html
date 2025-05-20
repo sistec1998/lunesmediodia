@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lays</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      background-color: #001f3f; /* Azul marino */
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1, h2 {
+      color: #FFD700; /* Amarillo dorado */
+      transition: transform 0.3s ease;
+    }
+
+    h1:hover, h2:hover {
+      transform: scale(1.1);
+    }
+
+    a {
+      color: #00BFFF; /* Azul claro */
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #FFD700;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #FFD700;
+      margin: 20px auto;
+    }
+
+    p {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    marquee img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    marquee img:hover {
+      transform: scale(1.1);
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 200px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #FFD700;
+      color: #001f3f;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #FFC300;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" width="300" alt="Lays Logo">
+  <h1>Bienvenidos</h1>
+  <hr width="500">
+
+  <nav>
+    <a href="pagina1.html">Productos</a>
+    <a href="pagina2.html">Trabajos</a>
+    <a href="pagina3.html">Más sabor</a>
+  </nav>
+
+  <h2>Misión</h2>
+  <p>"En Lays, nos dedicamos a ofrecer botanas irresistibles que unen a las personas. 
+    Seleccionamos ingredientes de alta calidad para brindar sabor y frescura en cada bocado.
+    Innovamos constantemente para satisfacer los gustos de nuestros consumidores. Nuestra pasión
+    es crear momentos de alegría en cada bolsa."</p>
+
+  <h2>Visión</h2>
+  <p>Lays es una empresa líder en la producción de snacks, reconocida mundialmente por sus papas 
+    fritas. Su enfoque está en ofrecer productos sabrosos, accesibles y de alta calidad. 
+    Innovan constantemente en sabores para adaptarse a los gustos locales. Además, promueven
+    prácticas sostenibles en su cadena de suministro.</p>
+
+  <hr width="500">
+
+  <h2>Prueba lo nuevo</h2>
+  <marquee behavior="scroll" direction="left" scrollamount="6">
+    <img src="imagen1.webp" width="300" alt="Producto 1">
+    <img src="imagen6.webp" width="300" alt="Producto 2">
+    <img src="imagen7.webp" width="300" alt="Producto 3">
+    <img src="imagen12.jpg" width="300" alt="Producto 4">
+  </marquee>
+
+  <form>
+    <label for="duda">¿Qué duda tienes?</label><br>
+    <input type="text" id="duda" name="duda"><br>
+    <button type="submit">Enviar</button><br>
+  </form>
+</body>
+</html>

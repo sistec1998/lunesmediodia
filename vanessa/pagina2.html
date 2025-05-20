@@ -2,83 +2,75 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Viajes</title>
+  <title>Lays</title>
   <link rel="icon" href="logo.png">
   <style>
     body {
-      background-color: #001f3f; /* azul marino */
-      color: white;
+      background-color: #b3ecff; /* Fondo celeste */
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
       text-align: center;
-      animation: fadeIn 2s ease-in;
+      padding-top: 50px;
+      transition: background-color 1s ease;
     }
 
     img {
-      margin-top: 30px;
-      animation: slideDown 1.5s ease-out;
+      width: 300px;
+      animation: fadeIn 2s ease;
     }
 
     h1 {
-      font-size: 36px;
-      margin-top: 10px;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    hr {
-      border: 1px solid #00BFFF;
-      margin: 20px auto;
-    }
-
-    form {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 15px;
-      width: 300px;
-      margin: auto;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      animation: fadeInUp 1.5s ease;
+      color: #ffcc00;
+      text-shadow: 2px 2px 4px #333;
+      animation: slideDown 1s ease;
     }
 
     label {
       display: block;
       margin-top: 15px;
       font-weight: bold;
+      color: #003366;
+      transition: color 0.5s ease;
     }
 
-    input {
-      width: 90%;
-      padding: 8px;
+    input[type="text"],
+    input[type="file"] {
       margin-top: 5px;
-      border: none;
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
       border-radius: 5px;
-      transition: all 0.3s ease;
+      transition: box-shadow 0.3s ease;
     }
 
     input:focus {
+      box-shadow: 0 0 5px #0099cc;
       outline: none;
-      background-color: #e0f7fa;
-      color: black;
     }
 
     button {
-      margin-top: 15px;
+      margin: 15px 10px;
       padding: 10px 20px;
       border: none;
       border-radius: 5px;
-      background-color: #00BFFF;
-      color: white;
+      background-color: #ffcc00;
+      color: #333;
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     button:hover {
-      background-color: #009ACD;
+      background-color: #ffaa00;
       transform: scale(1.05);
     }
 
+    hr {
+      border: 2px solid #ffcc00;
+      width: 500px;
+      animation: growWidth 1s ease;
+    }
+
+    /* Animaciones */
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -89,36 +81,35 @@
       to { transform: translateY(0); opacity: 1; }
     }
 
-    @keyframes fadeInUp {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+    @keyframes growWidth {
+      from { width: 0; }
+      to { width: 500px; }
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" width="300" alt="Logo">
-  <h1>Reserva tu viaje</h1>
-  <hr width="400">
+  <img src="logo.png" alt="Logo">
+  <h1>Trabaja con nosotros</h1>
+  <hr>
+
   <form>
-    <label>¿Cómo te llamas?</label>
-    <input type="text" required>
+    <label>Tu nombre</label>
+    <input type="text" name="nombre">
 
-    <label>Teléfono</label>
-    <input type="number" required>
+    <label>Tu profesión</label>
+    <input type="text" name="profesion">
 
-    <label>Correo electrónico</label>
-    <input type="email" required>
+    <label>Tu DPI</label>
+    <input type="text" name="dpi">
 
-    <label>Lugar turístico</label>
-    <input type="text" required>
+    <label>Tu CV</label>
+    <input type="file" name="cv">
 
-    <label>Fecha para viajar</label>
-    <input type="date" required>
+    <label>¿Qué te gustaría hacer?</label>
+    <input type="text" name="gustos">
 
-    <label>N. Tarjeta (crédito/débito)</label>
-    <input type="text" required>
-
-    <button type="submit">Reservar</button>
+    <br>
+    <button type="submit">Postularse</button>
     <button type="reset">Cancelar</button>
   </form>
 </body>
