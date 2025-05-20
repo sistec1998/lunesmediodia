@@ -1,164 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viajes</title>
-  <link rel="icon" href="Logo..png">
-  
-  <!-- Fuente y Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYS</title>
+    <link rel="icon" href="Logo-lays.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fff3cd, #ffecb3);
+            color: #333;
+            animation: fadeIn 1s ease-in;
+            text-align: center;
+        }
 
-  <style>
-    body {
-      background-color: #cceeff;
-      font-family: 'Roboto', sans-serif;
-      color: #003366;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+        h1 {
+            color: #d32f2f;
+            font-size: 3em;
+            margin-top: 20px;
+            animation: slideIn 1.2s ease-out;
+        }
 
-    a {
-      margin: 0 20px;
-      text-decoration: none;
-      color: #006699;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
+        h2 {
+            color: #ff9800;
+            font-size: 2em;
+            animation: fadeInUp 1.2s ease-in;
+        }
 
-    a:hover {
-      color: #003366;
-      text-decoration: underline;
-    }
+        img {
+            width: 250px;
+            margin-top: 20px;
+            animation: logoBounce 2s ease-in-out;
+        }
 
-    h1, h2 {
-      color: #003366;
-      animation: fadeIn 2s ease;
-    }
+        hr {
+            border: none;
+            height: 3px;
+            background-color: #f57c00;
+            width: 70%;
+            margin: 30px auto;
+            animation: growLine 1s ease-in-out;
+        }
 
-    p {
-      max-width: 700px;
-      margin: 0 auto 20px;
-      font-size: 18px;
-      line-height: 1.6;
-      animation: slideUp 1s ease;
-    }
+        ol, ul {
+            text-align: left;
+            display: inline-block;
+            padding: 20px;
+            background-color: #fff8e1;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            animation: fadeInList 1.5s ease-in;
+        }
 
-    input[type="text"] {
-      padding: 10px;
-      width: 250px;
-      border: 1px solid #006699;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
+        li {
+            margin: 10px 0;
+            font-size: 1.2em;
+            transition: transform 0.3s, color 0.3s;
+        }
 
-    input[type="text"]:focus {
-      outline: none;
-      border-color: #003366;
-      box-shadow: 0 0 8px #66ccff;
-    }
+        li:hover {
+            transform: scale(1.05);
+            color: #e65100;
+        }
 
-    button {
-      background-color: #006699;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-left: 10px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
-    button:hover {
-      background-color: #004466;
-    }
+        @keyframes slideIn {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
 
-    marquee img {
-      margin: 10px;
-      border-radius: 10px;
-      transition: transform 0.5s ease;
-    }
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
 
-    marquee img:hover {
-      transform: scale(1.1);
-    }
+        @keyframes growLine {
+            from { width: 0; }
+            to { width: 70%; }
+        }
 
-    ol {
-      list-style-position: inside;
-      font-size: 18px;
-    }
+        @keyframes logoBounce {
+            0% { transform: scale(0.8); opacity: 0; }
+            60% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); }
+        }
 
-    hr {
-      border: none;
-      border-top: 2px solid #66ccff;
-      margin: 30px auto;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+        @keyframes fadeInList {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
+    <img src="Logo-lays.png" alt="Logo Lays">
+    <h1>Más sabor</h1>
+    <hr>
 
-  <img src="Logo..png" width="250" alt="Logo">
-  <br><br>
+    <h2>GALLETA</h2>
+    <ol>
+        <li>CHOKIS</li>
+        <li>ARCOIRIS</li>
+        <li>EMPERADOR</li>
+        <li>CHIKI</li>
+    </ol>
 
-  <a href="Pagina 1.html"><i class="fas fa-map-marked-alt"></i> Lugares</a>
-  <a href="Pagina 2.html"><i class="fas fa-calendar-check"></i> Reservar</a>
+    <hr>
 
-  <hr width="700">
-
-  <h1><i class="fas fa-bullseye"></i> Nuestra Misión</h1>
-  <p>
-    Brindar experiencias de viaje únicas, seguras y memorables, 
-    conectando personas con destinos excepcionales a través de 
-    un servicio personalizado, profesional y comprometido con la 
-    calidad. Nos esforzamos por hacer realidad los sueños de nuestros 
-    clientes, promoviendo el turismo responsable y el respeto por las 
-    culturas y el medio ambiente.
-  </p>
-
-  <h2><i class="fas fa-eye"></i> Visión</h2>
-  <p>
-    Ser la empresa líder en la creación de experiencias de viaje inolvidables,
-    reconocida por su innovación, excelencia en el servicio y compromiso con 
-    la sostenibilidad, conectando a las personas con el mundo de manera auténtica,
-    segura y transformadora.
-  </p>
-
-  <form>
-    <label for="destino"><i class="fas fa-plane-departure"></i> ¿A dónde te gustaría ir?</label>
-    <br><br>
-    <input type="text" id="destino" placeholder="Escribe un destino">
-    <button type="submit"><i class="fas fa-search"></i> Buscar</button>
-  </form>
-
-  <hr width="700">
-
-  <h2><i class="fas fa-info-circle"></i> ¡Por si te interesa!</h2>
-  <marquee>
-    <img src="ii.jpg" width="230" alt="Destino 1">
-    <img src="rr.webp" width="250" alt="Destino 2">
-    <img src="cc.webp" width="250" alt="Destino 3">
-  </marquee>
-
-  <h2><i class="fas fa-fire"></i> Lo más Visitado</h2>
-  <ol>
-    <li>PANAJACHEL</li>
-    <li>RIO DULCE</li>
-    <li>CHAMPEY</li>
-    <li>LAGO ITZÁ FLORES</li>
-  </ol>
-
+    <h2>GOLOSINAS</h2>
+    <ul>
+        <li>FIESTA</li>
+        <li>DETODITO</li>
+        <li>CRUJITOS</li>
+    </ul>
 </body>
 </html>

@@ -1,134 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VIAJES</title>
-  <link rel="icon" href="Logo..png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYS</title>
+    <link rel="icon" href="Logo-lays.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f7d358, #fbbd08);
+            color: #333;
+            text-align: center;
+        }
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+            color: #d32f2f;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #a8e0f5, #d0f0ff);
-      color: #333;
-      text-align: center;
-      padding: 30px;
-      animation: fadeIn 1s ease-in;
-    }
+        img {
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
 
-    h1 {
-      font-size: 2.5rem;
-      color: #0077b6;
-      margin-bottom: 30px;
-    }
+        details {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid #f0ad4e;
+            transition: all 0.3s ease-in-out;
+        }
 
-    details {
-      margin: 20px auto;
-      width: 70%;
-      background: #ffffffcc;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
+        summary {
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #5c3317;
+        }
 
-    details:hover {
-      transform: scale(1.02);
-    }
+        details[open] {
+            background-color: #fff8e1;
+            transform: scale(1.01);
+        }
 
-    summary {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: #023e8a;
-      list-style: none;
-      margin-bottom: 10px;
-    }
+        hr {
+            border: none;
+            height: 3px;
+            background-color: #d32f2f;
+            width: 80%;
+            animation: slideIn 1s ease-out;
+        }
 
-    summary::before {
-      content: "\f072 "; /* Font Awesome map marker */
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      margin-right: 8px;
-      color: #00b4d8;
-    }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-    img {
-      margin: 10px;
-      border-radius: 10px;
-      transition: transform 0.4s ease;
-    }
-
-    img:hover {
-      transform: scale(1.05);
-    }
-
-    h2, h3 {
-      color: #0077b6;
-      margin: 8px 0;
-    }
-
-    hr {
-      border: 2px solid #0077b6;
-      width: 700px;
-      margin: 20px auto;
-    }
-  </style>
+        @keyframes slideIn {
+            from { width: 0; }
+            to { width: 80%; }
+        }
+    </style>
 </head>
 <body>
+    <img src="Logo-lays.png" width="250" alt="Logo Lays">
+    <h1>PRODUCTOS</h1>
+    <hr>
 
-  <img src="Logo..png" width="300">
-  <hr>
-  <h1><i class="fas fa-plane-departure"></i> LUGARES TURÍSTICOS</h1>
+    <details>
+        <summary>CHEETOS</summary>
+        <img src="c1.jpg" width="250">
+        <img src="c2.png" width="250">
+        <img src="c3.png" width="250">
+    </details>
 
-  <details>
-    <summary>ANTIGUA GUATEMALA</summary>
-    <h2>PRECIO: Q5,000</h2>
-    <h2>DURACIÓN: 5 DÍAS</h2>
-    <h2>PERSONAS: 4 PERSONAS</h2>
-    <h3>GALERÍA</h3>
-    <img src="Antigua.png" width="250">
-    <img src="Hoteles.jpg" width="250">
-  </details>
+    <details>
+        <summary>DORITOS</summary>
+        <img src="d1.jpg" width="250">
+        <img src="d2.jpg" width="250">
+        <img src="aa.jpg" width="320">
+    </details>
 
-  <details>
-    <summary>CASTILLO DE SAN FELIPE IZABAL</summary>
-    <h2>PRECIO: Q8,000</h2>
-    <h2>DURACIÓN: 5 DÍAS</h2>
-    <h2>PERSONAS: 2 PERSONAS</h2>
-    <h3>GALERÍA</h3>
-    <img src="c.jpg" width="250">
-    <img src="c1.webp" width="180">
-  </details>
+    <details>
+        <summary>PAPAS LAYS</summary>
+        <img src="l1.jpg" width="260">
+        <img src="11.png" width="450">
+        <img src="l3.jpg" width="230">
+    </details>
 
-  <details>
-    <summary>MONTERICO SANTA ROSA</summary>
-    <h2>PRECIO: Q5,000</h2>
-    <h2>DURACIÓN: 4 DÍAS</h2>
-    <h2>PERSONAS: 5 PERSONAS</h2>
-    <h3>GALERÍA</h3>
-    <img src="M.jpg" width="230">
-    <img src="M1.jpg" width="250">
-  </details>
-
-  <details>
-    <summary>TIKAL PETÉN</summary>
-    <h2>PRECIO: Q6,000</h2>
-    <h2>DURACIÓN: 3 DÍAS</h2>
-    <h2>PERSONAS: 4 PERSONAS</h2>
-    <h3>GALERÍA</h3>
-    <img src="t.jpg" width="250">
-    <img src="t1.jpg" width="230">
-  </details>
-
+    <details>
+        <summary>GALLETAS</summary>
+        <img src="2.jpg" width="280">
+        <img src="3.jpg" width="250">
+        <img src="4.webp" width="250">
+    </details>
 </body>
 </html>

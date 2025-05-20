@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYS</title>
+    <link rel="icon" href="Logo-lays.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fceabb, #f8b500);
+            color: #333;
+            animation: fadeIn 1s ease-in;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d32f2f;
+            font-size: 3em;
+            margin-top: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        h2 {
+            color: #ff9800;
+            font-size: 2em;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        a {
+            color: #ff5722;
+            font-size: 1.2em;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 10px;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            color: #e65100;
+            transform: scale(1.1);
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background-color: #ff9800;
+            width: 80%;
+            margin: 30px auto;
+            animation: growLine 1s ease-in-out;
+        }
+
+        marquee {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff3cd;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: slideLeft 10s linear infinite;
+        }
+
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff8e1;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ff9800;
+            transform: scale(1.02);
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #e65100;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes growLine {
+            from { width: 0; }
+            to { width: 80%; }
+        }
+
+        @keyframes slideLeft {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="Logo-lays.png" width="250" alt="Logo Lays">
+        <h1>BIENVENIDOS</h1>
+        <hr>
+
+        <a href="Pagina 1.html">PRODUCTOS</a>
+        <a href="Pagina 2.html">TRABAJOS</a>
+        <a href="Pagina 3.html">MÁS SABOR</a>
+
+        <h2>MISIÓN</h2>
+        <p>"Brindar momentos de sabor y alegría a nuestros clientes ofreciendo productos alimenticios de alta calidad, innovadores y accesibles, elaborados con los mejores ingredientes y un compromiso constante con la excelencia, la sostenibilidad y la satisfacción del consumidor."</p>
+
+        <h2>VISIÓN</h2>
+        <p>"Ser la empresa líder en la industria de alimentos, reconocida mundialmente por la calidad, innovación y sostenibilidad de nuestros productos, transformando la experiencia alimenticia y contribuyendo al bienestar de las personas a través de opciones deliciosas y responsables."</p>
+
+        <hr>
+
+        <h2>PRUEBA LO NUEVO</h2>
+        <marquee>
+            <img src="c1.jpg" width="200" alt="Producto 1">
+            <img src="d2.jpg" width="200" alt="Producto 2">
+            <img src="l1.jpg" width="200" alt="Producto 3">
+        </marquee>
+
+        <form>
+            <label>¿Qué duda tienes?</label><br><br>
+            <input type="text" placeholder="Escribe tu pregunta aquí"><br><br>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </center>
+</body>
+</html>
