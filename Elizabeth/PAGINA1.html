@@ -1,137 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VIAJES</title>
+  <title>LAYS</title>
   <link rel="icon" href="logo.png">
-  <!-- Fuente e iconos -->
+
+  <!-- Iconos Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
+      background-color: #ffe4ec;
+      font-family: 'Arial', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #007BFF;
-      color: white;
+      padding: 0;
       text-align: center;
     }
 
-    h1, h2, h3, summary {
-      color: #FF0000; /* rojo */
-    }
-
-    img.logo {
-      width: 300px;
-      margin-top: 20px;
-      transition: transform 0.5s;
-    }
-
-    img.logo:hover {
-      transform: scale(1.1);
+    h1 {
+      color: #d63384;
+      font-size: 3em;
+      margin-top: 10px;
+      text-shadow: 1px 1px 2px #ffb6c1;
     }
 
     hr {
-      width: 700px;
-      border: 2px solid white;
-      margin-bottom: 20px;
+      border: 2px solid #ff69b4;
+      width: 60%;
     }
 
     details {
-      background-color: rgba(255, 255, 255, 0.1);
       margin: 20px auto;
       width: 80%;
+      max-width: 900px;
+      background-color: #fff0f5;
       border-radius: 10px;
-      padding: 20px;
-      transition: background-color 0.3s ease;
-    }
-
-    details:hover {
-      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     summary {
       font-size: 1.5em;
       cursor: pointer;
-    }
-
-    .gallery {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 10px;
+      color: #c71585;
+      font-weight: bold;
+      padding: 10px;
     }
 
     .card {
-      background-color: white;
+      display: inline-block;
+      margin: 10px;
       padding: 10px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .card img {
       width: 250px;
-      border-radius: 10px;
+      height: auto;
+      border-radius: 8px;
     }
 
     .card:hover {
       transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
     }
+
+    .icon {
+      margin-right: 10px;
+      color: #ff69b4;
+    }
+
+    img.logo {
+      margin-top: 20px;
+    }
+
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Logo" class="logo">
+
+  <img src="logo.png" width="300" class="logo" alt="Logo Lays">
+
+  <h1><i class="fas fa-store icon"></i>PRODUCTOS</h1>
   <hr>
-  <h1><i class="fas fa-map-marked-alt"></i> LUGARES TURÍSTICOS</h1>
 
   <details>
-    <summary><i class="fas fa-city"></i> ANTIGUA GUATEMALA</summary>
-    <h2>PRECIO: Q5,000</h2>
-    <h2>DURACIÓN: 5 DÍAS</h2>
-    <h2>CANTIDAD DE PERSONAS: 4 PERSONAS</h2>
-    <h3><i class="fas fa-image"></i> GALERÍA</h3>
-    <div class="gallery">
-      <div class="card"><img src="ANTIGUA.jpg" alt="Antigua Guatemala"></div>
-      <div class="card"><img src="hotel.jpg" alt="Hotel Antigua"></div>
-    </div>
+    <summary><i class="fas fa-fire icon"></i>CHEETOS</summary>
+    <div class="card"><img src="cheetos1.jpg" alt="Cheetos 1"></div>
+    <div class="card"><img src="cheetos2.webp" alt="Cheetos 2"></div>
+    <div class="card"><img src="cheetos3.jpg" alt="Cheetos 3"></div>
   </details>
 
   <details>
-    <summary><i class="fas fa-fort-awesome"></i> CASTILLO DE SAN FELIPE IZABAL</summary>
-    <h2>PRECIO: Q4,000</h2>
-    <h2>DURACIÓN: 4 DÍAS</h2>
-    <h2>CANTIDAD DE PERSONAS: 3 PERSONAS</h2>
-    <h3><i class="fas fa-image"></i> GALERÍA</h3>
-    <div class="gallery">
-      <div class="card"><img src="castillo.jpg" alt="Castillo de San Felipe"></div>
-      <div class="card"><img src="hotel1.avif" alt="Hotel Izabal"></div>
-    </div>
+    <summary><i class="fas fa-bolt icon"></i>DORITOS</summary>
+    <div class="card"><img src="doritos1.webp" alt="Doritos 1"></div>
+    <div class="card"><img src="doritos2.webp" alt="Doritos 2"></div>
+    <div class="card"><img src="doritos3.webp" alt="Doritos 3"></div>
   </details>
 
   <details>
-    <summary><i class="fas fa-umbrella-beach"></i> MONTERRICO SANTA ROSA</summary>
-    <h2>PRECIO: Q6,000</h2>
-    <h2>DURACIÓN: 6 DÍAS</h2>
-    <h2>CANTIDAD DE PERSONAS: 6 PERSONAS</h2>
-    <h3><i class="fas fa-image"></i> GALERÍA</h3>
-    <div class="gallery">
-      <div class="card"><img src="MONTERRICO.jpg" alt="Monterrico"></div>
-      <div class="card"><img src="hotel2.jpg" alt="Hotel Monterrico"></div>
-    </div>
+    <summary><i class="fas fa-potato icon"></i>PAPAS LAYS</summary>
+    <div class="card"><img src="lays1.webp" alt="Lays 1"></div>
+    <div class="card"><img src="lays2.webp" alt="Lays 2"></div>
+    <div class="card"><img src="lays3.jpg" alt="Lays 3"></div>
   </details>
 
   <details>
-    <summary><i class="fas fa-tree"></i> TIKAL PETÉN</summary>
-    <h2>PRECIO: Q5,000</h2>
-    <h2>DURACIÓN: 5 DÍAS</h2>
-    <h2>CANTIDAD DE PERSONAS: 5 PERSONAS</h2>
-    <h3><i class="fas fa-image"></i> GALERÍA</h3>
-    <div class="gallery">
-      <div class="card"><img src="tikal.jpg" alt="Tikal"></div>
-      <div class="card"><img src="hotel3.jpg" alt="Hotel Petén"></div>
-    </div>
+    <summary><i class="fas fa-cookie icon"></i>GALLETAS</summary>
+    <div class="card"><img src="negrito.webp" alt="Galleta Negrito"></div>
+    <div class="card"><img src="chiky.webp" alt="Chiky"></div>
+    <div class="card"><img src="arcoiris.jpg" alt="Arcoiris"></div>
   </details>
+
 </body>
 </html>

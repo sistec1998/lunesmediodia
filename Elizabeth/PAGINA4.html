@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAYS</title>
+  <link rel="icon" href="logo.png">
+
+  <!-- Iconos de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #d4fcd2; /* Verde tierno */
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    img.logo {
+      width: 300px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h1 {
+      color: #2d6a4f;
+      font-size: 3em;
+      margin-top: 10px;
+    }
+
+    hr {
+      width: 80%;
+      border: 2px solid #52b788;
+      margin: 20px auto;
+    }
+
+    a {
+      text-decoration: none;
+      margin: 10px 20px;
+      font-size: 1.2em;
+      color: #40916c;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #1b4332;
+    }
+
+    h2 {
+      color: #1b4332;
+      margin-top: 30px;
+    }
+
+    p {
+      color: #333;
+      max-width: 800px;
+      margin: 10px auto;
+      font-size: 1.1em;
+    }
+
+    .card {
+      display: inline-block;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .card img {
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    marquee {
+      padding: 20px 0;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #95d5b2;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    button {
+      background-color: #52b788;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-left: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #40916c;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" class="logo" alt="Logo LAYS">
+
+    <h1><i class="fas fa-seedling"></i> BIENVENIDOS</h1>
+    <hr>
+
+    <a href="PAGINA1.html"><i class="fas fa-shopping-bag"></i> PRODUCTOS</a>
+    <a href="PAGINA2.html"><i class="fas fa-briefcase"></i> TRABAJOS</a>
+    <a href="PAGINA3.html"><i class="fas fa-cookie-bite"></i> MÁS SABOR</a>
+
+    <h2><i class="fas fa-bullseye"></i> MISIÓN</h2>
+    <p>En LAYS, nuestra misión es llevar momentos de sabor y alegría a cada rincón del mundo, elaborando snacks de alta calidad con ingredientes seleccionados, innovando constantemente para satisfacer los gustos de nuestros consumidores y creando conexiones que trascienden generaciones.</p>
+
+    <h2><i class="fas fa-eye"></i> VISIÓN</h2>
+    <p>Ser la marca de snacks más amada y confiable del mundo, reconocida por su sabor inconfundible, compromiso con la calidad y responsabilidad social, creando experiencias únicas que reúnan a las personas en todo momento y lugar.</p>
+
+    <hr>
+    <h2><i class="fas fa-star"></i> PRUEBA LO NUEVO</h2>
+    <marquee scrollamount="10">
+      <div class="card"><img src="cheetos1.jpg" alt="Cheetos"></div>
+      <div class="card"><img src="doritos2.webp" alt="Doritos"></div>
+      <div class="card"><img src="lays3.jpg" alt="Lays"></div>
+    </marquee>
+
+    <h2><i class="fas fa-question-circle"></i> ¿QUÉ DUDAS TIENES?</h2>
+    <input type="text" placeholder="Escribe tu duda aquí">
+    <button><i class="fas fa-paper-plane"></i> ENVIAR</button>
+  </div>
+</body>
+</html>

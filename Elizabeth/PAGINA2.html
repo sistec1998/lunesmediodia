@@ -1,156 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VIAJES</title>
-  <link rel="icon" href="logo.png" />
-  <!-- Iconos Font Awesome -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAYS</title>
+  <link rel="icon" href="logo.png">
+
+  <!-- Iconos de Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-    /* Fondo general */
     body {
+      background-color: #cceeff; /* celeste suave */
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffc0cb; /* rosado */
-      color: #333;
-      padding: 20px;
+      padding: 0;
     }
 
-    /* Logo animado */
-    .logo {
-      width: 300px;
-      display: block;
-      margin: 0 auto 20px;
-      transition: transform 0.5s;
-    }
-
-    .logo:hover {
-      transform: scale(1.1);
-    }
-
-    /* Título principal */
-    h1 {
-      color: red;
-      text-align: center;
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      animation: fadeIn 1.5s ease-in-out;
-    }
-
-    /* Línea */
-    hr {
-      width: 60%;
-      border: 2px solid white;
-      margin: 20px auto;
-    }
-
-    /* Tarjeta del formulario */
-    .card-form {
-      background-color: white;
-      max-width: 500px;
-      margin: auto;
-      padding: 30px;
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #ffffff;
       border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-      animation: slideUp 1s ease;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
     }
 
-    /* Etiquetas */
+    .container:hover {
+      transform: scale(1.01);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077b6;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px #b3e0ff;
+    }
+
+    img.logo {
+      display: block;
+      margin: 20px auto;
+      width: 250px;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    hr {
+      border: 2px solid #00b4d8;
+      width: 80%;
+      margin-bottom: 30px;
+    }
+
     label {
       font-weight: bold;
-      font-size: 1em;
-      display: block;
-      margin-bottom: 5px;
+      color: #023e8a;
     }
 
-    /* Entradas */
-    input {
+    input[type="text"],
+    input[type="number"],
+    input[type="file"] {
       width: 100%;
       padding: 10px;
+      margin-top: 5px;
       margin-bottom: 20px;
+      border: 1px solid #90e0ef;
       border-radius: 8px;
-      border: 1px solid #ccc;
-      transition: border-color 0.3s, box-shadow 0.3s;
+      transition: border-color 0.3s ease;
     }
 
     input:focus {
-      border-color: #ff69b4;
-      box-shadow: 0 0 8px #ff69b4;
+      border-color: #0077b6;
       outline: none;
     }
 
-    /* Botones */
     button {
-      padding: 12px 25px;
-      margin: 10px 5px 0;
-      border: none;
-      border-radius: 10px;
-      font-weight: bold;
-      background-color: #ff69b4;
+      background-color: #00b4d8;
       color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
       cursor: pointer;
-      transition: background-color 0.3s, transform 0.2s;
+      transition: background-color 0.3s ease, transform 0.2s;
     }
 
     button:hover {
-      background-color: #ff1493;
+      background-color: #0077b6;
       transform: scale(1.05);
     }
 
     .icon {
-      margin-right: 8px;
-      color: red;
+      margin-right: 10px;
+      color: #00b4d8;
     }
 
-    /* Animaciones */
     @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-    @keyframes slideUp {
-      from {transform: translateY(50px); opacity: 0;}
-      to {transform: translateY(0); opacity: 1;}
-    }
-
-    @media (max-width: 600px) {
-      .card-form {
-        padding: 20px;
-        width: 90%;
-      }
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
   <img src="logo.png" alt="Logo" class="logo">
-  <h1><i class="fas fa-suitcase-rolling icon"></i>RESERVA TU VIAJE</h1>
-  <hr>
 
-  <div class="card-form">
+  <div class="container">
+    <h1><i class="fas fa-briefcase icon"></i>TRABAJA CON NOSOTROS</h1>
+    <hr>
+
     <form>
-      <label><i class="fas fa-user icon"></i>¿CÓMO TE LLAMAS?</label>
-      <input type="text" required>
+      <label><i class="fas fa-user icon"></i>Tu Nombre</label><br>
+      <input type="text" placeholder="Ingresa tu nombre completo"><br>
 
-      <label><i class="fas fa-phone icon"></i>TELÉFONO</label>
-      <input type="number" required>
+      <label><i class="fas fa-graduation-cap icon"></i>Tu Profesión</label><br>
+      <input type="text" placeholder="Ej: Ingeniero, Vendedor, etc."><br>
 
-      <label><i class="fas fa-envelope icon"></i>CORREO ELECTRÓNICO</label>
-      <input type="email" required>
+      <label><i class="fas fa-id-card icon"></i>Tu DPI</label><br>
+      <input type="number" placeholder="Número de identificación"><br>
 
-      <label><i class="fas fa-map-marker-alt icon"></i>LUGAR TURÍSTICO</label>
-      <input type="text" required>
+      <label><i class="fas fa-file-upload icon"></i>Tu CV</label><br>
+      <input type="file"><br>
 
-      <label><i class="fas fa-calendar-alt icon"></i>FECHA PARA VIAJAR</label>
-      <input type="date" required>
+      <label><i class="fas fa-lightbulb icon"></i>¿Qué te gustaría hacer?</label><br>
+      <input type="text" placeholder="Cuéntanos qué te gustaría hacer en la empresa"><br>
 
-      <label><i class="fas fa-credit-card icon"></i>N.º TARJETA (CRÉDITO/DÉBITO)</label>
-      <input type="text" required>
-
-      <button type="submit"><i class="fas fa-check-circle icon"></i>RESERVAR</button>
-      <button type="reset"><i class="fas fa-times-circle icon"></i>CANCELAR</button>
+      <button type="submit"><i class="fas fa-paper-plane icon"></i>Postularse</button>
+      <button type="reset"><i class="fas fa-times-circle icon"></i>Cancelar</button>
     </form>
   </div>
 
