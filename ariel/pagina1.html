@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LAYS</title>
+  <link rel="icon" href="logo.png"/>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ffeb3b, #ff5722); /* Amarillo a rojo */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      color: #b71c1c;
+      font-size: 3em;
+      margin-top: 10px;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    hr {
+      border: 2px solid #b71c1c;
+      width: 80%;
+    }
+
+    details {
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1000px;
+      background-color: #fff3e0;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    summary {
+      font-size: 1.5em;
+      color: #d32f2f;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    img {
+      margin: 10px;
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" width="300" alt="Lays Logo" />
+  <h1>PRODUCTOS</h1>
+  <hr />
+
+  <details>
+    <summary>CHEETOS</summary>
+    <div class="card-container">
+      <div class="card"><img src="cheto1.jpg" alt="Cheetos 1"/></div>
+      <div class="card"><img src="cheto2.webp" alt="Cheetos 2"/></div>
+      <div class="card"><img src="cheto3.png" alt="Cheetos 3"/></div>
+    </div>
+  </details>
+
+  <details>
+    <summary>DORITOS</summary>
+    <div class="card-container">
+      <div class="card"><img src="doritos1.png" alt="Doritos 1"/></div>
+      <div class="card"><img src="doritos2.webp" alt="Doritos 2"/></div>
+      <div class="card"><img src="doritos3.webp" alt="Doritos 3"/></div>
+    </div>
+  </details>
+
+  <details>
+    <summary>PAPAS LAYS</summary>
+    <div class="card-container">
+      <div class="card"><img src="7.png" alt="Lays 1"/></div>
+      <div class="card"><img src="8.png" alt="Lays 2"/></div>
+      <div class="card"><img src="9.png" alt="Lays 3"/></div>
+    </div>
+  </details>
+
+  <details>
+    <summary>GALLETAS</summary>
+    <div class="card-container">
+      <div class="card"><img src="galletas1.webp" alt="Galletas 1"/></div>
+      <div class="card"><img src="galletas2.webp" alt="Galletas 2"/></div>
+      <div class="card"><img src="galletas3.webp" alt="Galletas 3"/></div>
+    </div>
+  </details>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LAYS</title>
+  <link rel="icon" href="logo.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #ffeb3b, #e53935);
+      text-align: center;
+      color: #4e342e;
+    }
+
+    img {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      color: #b71c1c;
+      font-size: 3em;
+      animation: slideIn 1s ease-out;
+    }
+
+    h2 {
+      color: #d84315;
+      font-size: 2em;
+      margin-top: 20px;
+    }
+
+    hr {
+      border: 2px solid #c62828;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    a {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #f44336;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+
+    a:hover {
+      background-color: #ff9800;
+      transform: scale(1.05);
+    }
+
+    p {
+      margin: 10px 50px;
+      font-size: 1.1em;
+    }
+
+    /* Estilo de tarjetas de imágenes */
+    .slider {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 20px;
+      scroll-behavior: smooth;
+      animation: scrollSlider 20s linear infinite;
+    }
+
+    .card {
+      min-width: 300px;
+      background-color: #fff8e1;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    form {
+      margin-top: 30px;
+      background-color: #fff3e0;
+      display: inline-block;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      border-radius: 10px;
+      border: 2px solid #ff9800;
+      outline: none;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #d32f2f;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff5722;
+    }
+
+    /* Animaciones */
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes scrollSlider {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" width="300" alt="Logo Lays" />
+  <h1>BIENVENIDOS</h1>
+  <hr />
+
+  <div>
+    <a href="pagina1.html">PRODUCTOS</a>
+    <a href="PAGINA2.html">TRABAJOS</a>
+    <a href="PAGINA3.html">MÁS SABORES</a>
+  </div>
+
+  <h2>MISIÓN</h2>
+  <p>
+    Brindar momentos de alegría y dulzura a nuestros clientes a través de una amplia variedad de golosinas de alta calidad, 
+    combinando sabor, innovación y un servicio cercano que endulce cada día.
+  </p>
+
+  <h2>VISIÓN</h2>
+  <p>
+    Ser la marca líder en la distribución de golosinas en el país, reconocida por ofrecer productos irresistibles, 
+    innovadores y accesibles, que generen experiencias únicas y memorables para personas de todas las edades.
+  </p>
+
+  <hr />
+  <h2>PRUEBA LO NUEVO</h2>
+
+  <div class="slider">
+    <div class="card">
+      <img src="cheto1.jpg" alt="Cheetos" />
+    </div>
+    <div class="card">
+      <img src="doritos1.png" alt="Doritos" />
+    </div>
+    <div class="card">
+      <img src="9.png" alt="Lays" />
+    </div>
+  </div>
+
+  <form>
+    <label for="dudas">¿QUÉ DUDAS TIENES?</label><br>
+    <input type="text" id="dudas" placeholder="Escribe tu duda aquí"><br>
+    <button type="submit">ENVIAR</button>
+  </form>
+
+</body>
+</html>
