@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FERRETERIA</title>
+  <link rel="icon" href="logo1.png" type="image/png" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    img.logo {
+      width: 300px;
+      margin-top: 20px;
+      transition: transform 0.5s ease;
+    }
+
+    img.logo:hover {
+      transform: scale(1.1);
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    label {
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      border: 2px solid #2980b9;
+      border-radius: 5px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      box-shadow: 0 0 10px #2980b9;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3498db;
+      transform: scale(1.05);
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #27ae60;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #2ecc71;
+    }
+
+    hr {
+      width: 60%;
+      margin: 20px auto;
+    }
+
+    .carousel {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      gap: 20px;
+      animation: slide 10s linear infinite;
+    }
+
+    .carousel img {
+      width: 200px;
+      transition: transform 0.5s;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 18px;
+      color: #2c3e50;
+    }
+
+    ul li::before {
+      content: "🔧 ";
+    }
+  </style>
+</head>
+
+<body>
+  <img src="logo1.png" alt="Logo" class="logo" />
+  <h1>FERRETERIA</h1>
+  <label for="buscar">¿QUÉ BUSCAS?</label>
+  <input type="text" id="buscar" name="buscar" /><br><br>
+  <button>BUSCAR</button><br><br><br>
+  <h2>TE PUEDE INTERESAR</h2>
+  <a href="pagina1.html">PRODUCTOS</a>
+  <hr />
+
+  <h2>PROMOCIÓN</h2>
+  <div class="carousel">
+    <img src="martillo.jpg" alt="Martillo" />
+    <img src="llave.jpg" alt="Llave" />
+    <img src="escuadra.jpg" alt="Escuadra" />
+  </div>
+
+  <h2>LO MÁS BUSCADO</h2>
+  <ul>
+    <li>Escuadra</li>
+    <li>Martillo</li>
+    <li>Metro</li>
+    <li>Tijeras</li>
+    <li>Alicate</li>
+  </ul>
+</body>
+</html>
