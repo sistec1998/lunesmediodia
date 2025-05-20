@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAYS</title>
+  <link rel="icon" href="logo1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #fff100, #ff2b2b);
+      color: #333;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    img.logo {
+      width: 200px;
+      animation: bounceIn 1s ease;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: white;
+      text-shadow: 2px 2px #000;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      background: #e60000;
+      color: white;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    nav a:hover {
+      background: #cc0000;
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 80%;
+      max-width: 700px;
+      height: 4px;
+      border: none;
+      background-color: white;
+      margin: 30px auto;
+    }
+
+    h2 {
+      color: #e60000;
+      font-size: 2em;
+      margin-top: 30px;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 10px auto;
+      padding: 10px;
+      background: #fff9c4;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      font-size: 1.1em;
+    }
+
+    .card-img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card-img:hover {
+      transform: scale(1.05);
+    }
+
+    marquee {
+      margin-top: 20px;
+    }
+
+    form {
+      margin-top: 30px;
+      background: #fff9c4;
+      padding: 20px;
+      display: inline-block;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      animation: fadeInUp 1s ease;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #e60000;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 2px solid #e60000;
+      border-radius: 8px;
+      width: 250px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background: #e60000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #cc0000;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.1); }
+      80% { transform: scale(0.95); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="logo1.png" alt="LAYS Logo" class="logo">
+    <h1><i class="fas fa-star"></i> BIENVENIDOS</h1>
+    <hr>
+
+    <nav>
+      <a href="pagina1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+      <a href="pagina2.html"><i class="fas fa-briefcase"></i> TRABAJOS</a>
+      <a href="pagina3.html"><i class="fas fa-candy-cane"></i> MÁS SABORES</a>
+    </nav>
+
+    <h2><i class="fas fa-bullseye"></i> MISIÓN</h2>
+    <p>
+      Producir y distribuir snacks deliciosos y accesibles, elaborados con ingredientes seleccionados, que inspiren la felicidad diaria de nuestros consumidores, promoviendo prácticas sostenibles y fortaleciendo nuestra relación con las comunidades en las que operamos.
+    </p>
+
+    <h2><i class="fas fa-eye"></i> VISIÓN</h2>
+    <p>
+      Ser la marca líder mundial en snacks, reconocida por ofrecer momentos de sabor, alegría y conexión, a través de productos innovadores, de alta calidad y con compromiso social y ambiental.
+    </p>
+
+    <hr>
+
+    <h2><i class="fas fa-fire"></i> PRUEBA LO NUEVO</h2>
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      <img src="chetos1.jpg" class="card-img">
+      <img src="doritos2.webp" class="card-img">
+      <img src="papas2.webp" class="card-img">
+    </marquee>
+
+    <form>
+      <label for="duda"><i class="fas fa-question-circle"></i> ¿QUÉ DUDAS TIENES?</label>
+      <input type="text" id="duda" placeholder="Escribe tu duda aquí...">
+      <br>
+      <button type="submit"><i class="fas fa-paper-plane"></i> ENVIAR</button>
+    </form>
+  </div>
+
+</body>
+</html>

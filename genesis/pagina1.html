@@ -1,139 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIAJES</title> 
-    <link rel="icon" href="logo.jpg">
-    <style>
-        /* Estilo global para el fondo y el diseño */
-        body {
-            background-color: #b3e0ff; /* Fondo celeste */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAYS</title>
+  <link rel="icon" href="logo1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #fff100, #ff2b2b);
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
 
-        h1 {
-            color: #1a73e8; /* Color azul para el título */
-        }
+    h1 {
+      font-size: 3em;
+      color: #fff;
+      text-shadow: 2px 2px #000;
+    }
 
-        hr {
-            width: 70%;
-            border-color: #1a73e8;
-        }
+    center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        /* Estilo para las imágenes */
-        img {
-            width: 300px;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
+    img.logo {
+      width: 200px;
+      animation: zoomIn 1s ease;
+    }
 
-        img:hover {
-            transform: scale(1.05);
-        }
+    details {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      margin: 20px;
+      width: 80%;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
 
-        /* Estilo para los detalles */
-        details {
-            background-color: #ffffff;
-            border: 1px solid #1a73e8;
-            border-radius: 8px;
-            margin: 15px auto;
-            width: 80%;
-            padding: 15px;
-            transition: transform 0.3s ease-in-out;
-        }
+    summary {
+      font-size: 1.5em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #e60000;
+    }
 
-        details:hover {
-            transform: scale(1.02);
-        }
+    summary::before {
+      content: "\f07c ";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      margin-right: 10px;
+    }
 
-        /* Estilo para los summaries (títulos de detalles) */
-        summary {
-            font-size: 1.2em;
-            font-weight: bold;
-            cursor: pointer;
-            padding: 10px;
-            background-color: #e0f7fa;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+    details[open] {
+      transform: scale(1.02);
+      background: #fff9c4;
+    }
 
-        /* Animaciones de transición */
-        details[open] summary {
-            background-color: #81d4fa;
-        }
+    .card-img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      margin: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        /* Estilo para los iconos dentro de detalles */
-        summary::before {
-            content: "🌍";
-            margin-right: 10px;
-        }
+    .card-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    }
 
-        /* Estilo para los elementos dentro de detalles */
-        h2 {
-            margin: 10px 0;
-        }
+    hr {
+      border: none;
+      height: 4px;
+      background: #fff;
+      width: 80%;
+      max-width: 700px;
+    }
 
-        /* Estilo para los iconos generales */
-        .icon {
-            font-size: 1.5em;
-            margin-left: 10px;
-            color: #1a73e8;
-        }
-    </style>
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.6);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
-    <center>
-        <img src="logo.jpg" width="300" alt="Logo">
-        <hr width="700">
-        <h1>LUGARES TURISTICOS</h1>
+  <center>
+    <img src="logo1.png" class="logo">
+    <h1>PRODUCTOS</h1>
+    <hr>
 
-        <details>
-            <summary>ANTIGUA GUATEMALA</summary>
-            <h2>PRECIO: Q6,000</h2>
-            <h2>DURACION: 6 DIAS</h2>
-            <h2>PERSONAS: 5 PERSONAS</h2>
-            <h2>GALERIA</h2>
-            <img src="imagen2.jpg" alt="Antigua Guatemala 1">
-            <img src="imagen3.jpg" alt="Antigua Guatemala 2">
-        </details>
+    <details>
+      <summary>CHEETOS</summary>
+      <img src="chetos1.jpg" class="card-img">
+      <img src="chetos2.jpeg" class="card-img">
+      <img src="chetos3.jpg" class="card-img">
+    </details>
 
-        <details>
-            <summary>CASTILLO DE SAN FELIPE, IZABAL</summary>
-            <h2>PRECIO: Q5,000</h2>
-            <h2>DURACION: 7 DIAS</h2>
-            <h2>PERSONAS: 6</h2>
-            <h2>GALERIA</h2>
-            <img src="imagen4.jpg" alt="Castillo San Felipe 1">
-            <img src="imagen5.jpg" alt="Castillo San Felipe 2">
-        </details>
+    <details>
+      <summary>DORITOS</summary>
+      <img src="doritos1.webp" class="card-img">
+      <img src="doritos2.webp" class="card-img">
+      <img src="doritos3.jpg" class="card-img">
+    </details>
 
-        <details>
-            <summary>MONTERRICO, SANTA ROSA</summary>
-            <h2>PRECIO: Q5,000</h2>
-            <h2>DURACION: 5 DIAS</h2>
-            <h2>PERSONAS: 4 PERSONAS</h2>
-            <h2>GALERIA</h2>
-            <img src="imagen6.jpg" alt="Monterrico 1">
-            <img src="imagen7.jpg" alt="Monterrico 2">
-        </details>
+    <details>
+      <summary>PAPAS LAYS</summary>
+      <img src="papas1.webp" class="card-img">
+      <img src="papas2.webp" class="card-img">
+      <img src="papas3.webp" class="card-img">
+    </details>
 
-        <details>
-            <summary>TIKAL, PETEN</summary>
-            <h2>PRECIO: Q4,000</h2>
-            <h2>DURACION: 7 DIAS</h2>
-            <h2>PERSONAS: 5 PERSONAS</h2>
-            <h2>GALERIA</h2>
-            <img src="imagen8.avif" alt="Tikal 1">
-            <img src="imagen9.jpg" alt="Tikal 2">
-        </details>
-    </center>
+    <details>
+      <summary>GALLETAS</summary>
+      <img src="g1.png" class="card-img">
+      <img src="g2.png" class="card-img">
+      <img src="g3.webp" class="card-img">
+    </details>
+  </center>
 </body>
 </html>

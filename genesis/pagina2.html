@@ -1,149 +1,153 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIAJES</title>
-    <link rel="icon" href="logo.jpg">
-    <!-- Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        body {
-            background-color: #87CEEB; /* Fondo celeste */
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            padding: 0;
-            margin: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAYS - Trabaja con Nosotros</title>
+  <link rel="icon" href="logo1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        center {
-            display: block;
-            margin: 0 auto;
-            padding: 20px;
-        }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fff100, #ff2b2b);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-        h1 {
-            font-size: 2.5em;
-            color: #ffffff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            margin-bottom: 20px;
-            transition: color 0.3s ease;
-        }
+    h1 {
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 2.5em;
+      margin-top: 20px;
+    }
 
-        h1:hover {
-            color: #ff6347; /* Cambia el color al pasar el mouse */
-        }
+    .logo {
+      width: 200px;
+      margin-top: 20px;
+      animation: fadeInDown 1s ease;
+    }
 
-        hr {
-            width: 90%;
-            border: 1px solid #fff;
-            margin-bottom: 30px;
-        }
+    form {
+      background: #ffffffcc;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      width: 90%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      animation: fadeInUp 1s ease;
+    }
 
-        form {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-            max-width: 500px;
-            width: 100%;
-            transition: transform 0.3s ease-in-out;
-        }
+    label {
+      font-weight: bold;
+      margin: 10px 0 5px;
+      color: #e60000;
+    }
 
-        form:hover {
-            transform: scale(1.02); /* Efecto de escala al pasar el mouse */
-        }
+    input[type="text"],
+    input[type="number"],
+    input[type="file"] {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transition: all 0.3s ease;
+      font-size: 1em;
+    }
 
-        h2 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            color: #333;
-        }
+    input:focus {
+      border-color: #ff2b2b;
+      box-shadow: 0 0 8px rgba(255,43,43,0.6);
+      outline: none;
+    }
 
-        input[type="text"] {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 1em;
-            transition: all 0.3s ease;
-        }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      background: #e60000;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s;
+    }
 
-        input[type="text"]:focus {
-            border-color: #ff6347; /* Color de borde al hacer foco */
-            outline: none;
-        }
+    button:hover {
+      background: #cc0000;
+      transform: scale(1.05);
+    }
 
-        button {
-            background-color: #ff6347;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            font-size: 1em;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px 5px;
-            transition: background-color 0.3s ease;
-        }
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
 
-        button:hover {
-            background-color: #ff4500; /* Color más oscuro al pasar el mouse */
-        }
+    hr {
+      width: 80%;
+      max-width: 700px;
+      border: none;
+      height: 4px;
+      background-color: #fff;
+      margin: 20px 0;
+    }
 
-        /* Animación de entrada de los elementos */
-        h1, h2, input, button {
-            animation: fadeIn 1s ease-in-out;
-        }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Iconos en los botones */
-        button i {
-            margin-right: 8px;
-        }
-
-    </style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <center>
-        <img src="logo.jpg" width="200" alt="Logo">
-        <h1>RESERVA TU VIAJE</h1>
-        <hr>
-        
-        <form>
-            <h2><i class="fas fa-user"></i> ¿COMO TE LLAMAS?</h2>
-            <input type="text" placeholder="Ingresa tu nombre">
-            
-            <h2><i class="fas fa-phone-alt"></i> ¿TELEFONO?</h2>
-            <input type="text" placeholder="Ingresa tu teléfono">
-            
-            <h2><i class="fas fa-envelope"></i> CORREO ELECTRONICO</h2>
-            <input type="text" placeholder="Ingresa tu correo electrónico">
-            
-            <h2><i class="fas fa-map-marker-alt"></i> LUGAR TURISTICO</h2>
-            <input type="text" placeholder="Ingresa tu destino turístico">
-            
-            <h2><i class="fas fa-calendar-alt"></i> FECHA PARA VIAJAR</h2>
-            <input type="text" placeholder="Ingresa la fecha de viaje">
-            
-            <h2><i class="fas fa-credit-card"></i> N DE TARGETA(CREDITO/DÉBITO)</h2>
-            <input type="text" placeholder="Número de tarjeta">
-        </form>
+  <img src="logo1.png" alt="Logo" class="logo">
+  <h1><i class="fas fa-briefcase"></i> TRABAJA CON NOSOTROS</h1>
+  <hr>
 
-        <button><i class="fas fa-check-circle"></i> RESERVAR</button>
-        <button><i class="fas fa-times-circle"></i> CANCELAR</button>
-    </center>
+  <form>
+    <label for="nombre"><i class="fas fa-user"></i> TU NOMBRE</label>
+    <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+
+    <label for="profesion"><i class="fas fa-graduation-cap"></i> TU PROFESIÓN</label>
+    <input type="text" id="profesion" placeholder="Ej. Ingeniero, Diseñador...">
+
+    <label for="dpi"><i class="fas fa-id-card"></i> TU DPI</label>
+    <input type="number" id="dpi" placeholder="Número de identificación">
+
+    <label for="cv"><i class="fas fa-file-upload"></i> TU CV</label>
+    <input type="file" id="cv">
+
+    <label for="gusto"><i class="fas fa-question-circle"></i> ¿QUÉ TE GUSTARÍA HACER?</label>
+    <input type="text" id="gusto" placeholder="Tu área de interés">
+
+    <div class="button-group">
+      <button type="submit"><i class="fas fa-paper-plane"></i> POSTULARSE</button>
+      <button type="reset"><i class="fas fa-times-circle"></i> CANCELAR</button>
+    </div>
+  </form>
 
 </body>
 </html>
