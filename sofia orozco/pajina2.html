@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        /* Fondo de pantalla */
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Centrado y estilo del contenedor */
+        center {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Estilo del logo */
+        img {
+            width: 150px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilo del título */
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            width: 100%;
+            border: 1px solid #ff7e5f;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ff7e5f;
+            border-radius: 5px;
+            transition: border 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border: 2px solid #feb47b;
+            outline: none;
+        }
+
+        button {
+            background-color: #ff7e5f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 10px 5px;
+        }
+
+        button:hover {
+            background-color: #feb47b;
+            transform: translateY(-5px);
+        }
+
+        button:active {
+            transform: translateY(2px);
+        }
+
+        /* Transición para el contenedor */
+        center {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        center:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <img src="logo.png" alt="Logo">
+        <h1>TRABAJA CON NOSOTROS</h1>
+        <hr>
+        <label>Tu nombre</label>
+        <br>
+        <input type="text" placeholder="Escribe tu nombre">
+        <br>
+        <label>Tu profesión</label>
+        <br>
+        <input type="text" placeholder="Escribe tu profesión">
+        <br>
+        <label>Tu DPI</label>
+        <br>
+        <input type="text" placeholder="Escribe tu DPI">
+        <br>
+        <label>TU CV</label>
+        <br>
+        <input type="text" placeholder="Escribe el enlace a tu CV">
+        <br>
+        <label>¿Qué te gustaría hacer?</label>
+        <br>
+        <button>Postúlate</button>
+        <button>Cerrar</button>
+    </center>
+</body>
+
+</html>
