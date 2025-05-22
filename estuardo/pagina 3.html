@@ -1,71 +1,128 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
+    <meta charset="UTF-8">
+    <title>Lays</title>
+    <link rel="icon" href="logo lays.png">
 
-<title>Viajes</title>
-
-<link rel="icon" href="logo.png">
-
-
-</head>
-<body>
+    <!-- Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-<center>
+    <style>
+        body {
+            background-color: #fff176; /* fondo amarillo suave */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
-<img src="logo.png" width="300">
+        img {
+            width: 300px;
+            margin-top: 30px;
+            animation: bounce 2s infinite;
+        }
 
+        h1 {
+            color: #d32f2f;
+            font-size: 3em;
+            text-shadow: 2px 2px #ffccbc;
+            animation: fadeIn 2s ease-in-out;
+        }
 
+        h2 {
+            color: #388e3c;
+            margin-top: 40px;
+            font-size: 2em;
+            text-decoration: underline;
+            transition: transform 0.3s;
+        }
 
+        h2:hover {
+            transform: scale(1.1);
+        }
 
+        ol, ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2em;
+            color: #5d4037;
+            animation: slideUp 1s ease;
+        }
 
-<a href="pagina 1.html">Lugares</a>
-<a href="pagina 2.html">reservar</a>
-<hr width="400">
-<h1>nuestra mision </h1>
-Conectar a las personas con el mundo a través de experiencias de viaje auténticas, sostenibles y memorables, diseñadas para inspirar, enriquecer y transformar la vida de nuestros viajeros."
+        li, ul {
+            margin: 10px 0;
+        }
 
-<h2>nuestra vision </h2>
+        li::before, ul::before {
+            content: "\f0a4";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            margin-right: 10px;
+            color: #f57c00;
+            animation: iconPulse 1.5s infinite;
+        }
 
-Ser líderes en innovación ecológica, transformando la industria hacia un futuro más sostenible, ético y consciente, donde cada elección del consumidor tenga un impacto positivo en el planeta."
+        hr {
+            width: 60%;
+            border: 2px solid #fbc02d;
+            margin: 20px auto;
+            animation: growLine 2s forwards;
+        }
 
-<h2>a donde te gustaria ir</h2>
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
 
-<form>
-<label></label>
-<input type="text">
-<br>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
+        @keyframes iconPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
 
-<label>buscar</label>
-<br>
-<input type="text">
-<br>
+        @keyframes growLine {
+            from { width: 0; }
+            to { width: 60%; }
+        }
+    </style>
+</head>
 
-<hr width="600">
-</form>
+<body>
 
+    <img src="logo lays.png" alt="Logo Lays">
 
-<h2>por si te enteresa</h2>
+    <h1>¡Más sabor!</h1>
+    <hr>
 
+    <h2>🍪 Galletas</h2>
+    <ol>
+        <li>Choquis</li>
+        <li>Arcoiris</li>
+        <li>Emperador</li>
+        <li>Chiki</li>
+    </ol>
 
-
-
-
-
-
-
-
-
-</center>
+    <h2>🍭 Golosinas</h2>
+    <ul>
+        <li>Fiesta</li>
+        <li>Detodito</li>
+        <li>Crujito</li>
+    </ul>
 
 </body>
-
-
-
-
-
-
-
-
 </html>

@@ -2,125 +2,130 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Viajes</title>
-    <link rel="icon" href="logo.png">
+    <title>Lays</title>
+    <link rel="icon" href="logo lays.png">
+
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            background-color: #b3ecff; /* fondo celeste */
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background: linear-gradient(120deg, #89f7fe, #66a6ff);
-            color: #333;
-            animation: fadeIn 2s ease-in;
+            padding: 20px;
+            animation: fadeInBody 2s ease-in;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+        @keyframes fadeInBody {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         h1 {
             font-size: 3em;
-            color: #004d99;
-            margin-top: 20px;
-            text-shadow: 2px 2px #fff;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px #000;
+            animation: moveTitle 3s infinite alternate;
+        }
+
+        @keyframes moveTitle {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
         }
 
         details {
-            background: rgba(255, 255, 255, 0.85);
-            margin: 20px auto;
-            padding: 15px;
-            border-radius: 15px;
-            width: 80%;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease;
+            margin: 20px 0;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s;
         }
 
         details:hover {
             transform: scale(1.02);
+            background-color: #f0f8ff;
         }
 
         summary {
             font-size: 1.5em;
             cursor: pointer;
-            color: #0077cc;
+            color: #004080;
             font-weight: bold;
+            list-style: none;
+            position: relative;
+            padding-left: 25px;
         }
 
-        h3 {
-            margin: 10px 0;
+        summary::before {
+            content: "🍟";
+            position: absolute;
+            left: 0;
         }
 
         img {
             margin: 10px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            transition: transform 0.4s;
+            transition: transform 0.3s ease;
         }
 
         img:hover {
             transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
 
         hr {
-            border: none;
-            border-top: 3px solid #004d99;
-            width: 60%;
-            margin: 20px auto;
+            border: 2px solid #ffcc00;
+            width: 70%;
+            animation: slideInHr 1.5s ease-out;
         }
 
-        .logo {
-            width: 200px;
-            animation: bounceIn 1.5s ease;
+        @keyframes slideInHr {
+            from { width: 0; opacity: 0; }
+            to { width: 70%; opacity: 1; }
         }
 
-        @keyframes bounceIn {
-            0% { transform: scale(0.8); opacity: 0; }
-            50% { transform: scale(1.1); opacity: 1; }
-            100% { transform: scale(1); }
+        center {
+            animation: fadeInCenter 2s ease-in-out;
+        }
+
+        @keyframes fadeInCenter {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
+
 <body>
     <center>
-        <img src="logo.png" class="logo" alt="Logo">
+        <img src="logo lays.png" width="300">
+        <h1>Productos</h1>
         <hr>
-        <h1>Lugares Turísticos</h1>
 
         <details>
-            <summary>ANTIGUA GUATEMALA</summary>
-            <h3>PRECIO: Q500</h3>
-            <h3>DURACIÓN: 7 DÍAS</h3>
-            <h3>PERSONAS: 3</h3>
-            <img src="ANTIGUA GUATEMALA.jpeg" width="300" height="350" alt="Antigua">
-            <img src="GUATEMAL.jpg" width="300" height="350" alt="Guatemala">
+            <summary>Productos</summary>
+            <summary>Chetos</summary>
+            <img src="chetos 1.png" width="300" height="350">
+            <img src="chetos 2.png" width="300" height="350">
+            <img src="chetos 3.png" width="300" height="350">
         </details>
 
         <details>
-            <summary>Castillo de San Felipe Izabal</summary>
-            <h3>PRECIO: Q600</h3>
-            <h3>DURACIÓN: 3 DÍAS</h3>
-            <h3>PERSONAS: 4</h3>
-            <img src="castillo 1.jpg" width="300" height="350" alt="Castillo">
-            <img src="castillo.webp" width="300" height="350" alt="Castillo">
+            <summary>Doritos</summary>
+            <img src="doritos 1.jpg" width="300" height="350">
+            <img src="doritos 2.jpg" width="300" height="350">
+            <img src="doritos 3.jpg" width="300" height="350">
         </details>
 
         <details>
-            <summary>Monterrico, Santa Rosa</summary>
-            <h3>PRECIO: Q800</h3>
-            <h3>DURACIÓN: 7 DÍAS</h3>
-            <h3>PERSONAS: 2</h3>
-            <img src="monte rico.jpg" width="300" alt="Monterrico">
-            <img src="monterico 1.jpg" width="350" height="300" alt="Monterrico">
+            <summary>Papas Lays</summary>
+            <img src="papas 1.png" width="300" height="350">
+            <img src="papas 2.png" width="300" height="350">
+            <img src="papas 3.png" width="300" height="350">
         </details>
 
         <details>
-            <summary>Tikal, Petén</summary>
-            <h3>PRECIO: Q1000</h3>
-            <h3>DURACIÓN: 10 DÍAS</h3>
-            <h3>PERSONAS: 4</h3>
-            <img src="peten 1.jpg" width="350" height="400" alt="Tikal">
-            <img src="peten 2.jpg" width="350" height="400" alt="Tikal">
+            <summary>Galletas</summary>
+            <img src="galleta 1.png" width="300" height="350">
+            <img src="galleta 2.png" width="300" height="350">
+            <img src="galleta 3.jpg" width="300" height="350">
         </details>
     </center>
 </body>

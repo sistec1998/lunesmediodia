@@ -1,164 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Viajes</title>
-  <link rel="icon" href="logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    /* Fondo animado con degradado y gotas de agua */
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to bottom, #0099cc, #003366);
-      color: white;
-      overflow: hidden;
-      position: relative;
-    }
+    <meta charset="UTF-8">
+    <title>Papas Lays</title>
+    <link rel="icon" href="logo lays.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Fondo y estilo general */
+        body {
+            background-color: #fff176; /* Amarillo claro */
+            font-family: Arial, sans-serif;
+            animation: fadeIn 2s ease-in;
+            margin: 0;
+            padding: 20px;
+        }
 
-    h1, h2 {
-      color: #fff;
-      text-shadow: 1px 1px 3px black;
-    }
+        /* Animación al cargar */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-    center {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 40px;
-      border-radius: 15px;
-      margin: 40px auto;
-      width: 60%;
-      animation: fadeIn 2s ease;
-    }
+        /* Estilo del contenido centrado */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #fff9c4;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
 
-    input {
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      width: 300px;
-      margin-bottom: 15px;
-      transition: all 0.3s ease;
-    }
+        .container:hover {
+            transform: scale(1.02);
+        }
 
-    input:focus {
-      outline: none;
-      transform: scale(1.05);
-      background-color: #eef;
-    }
+        /* Estilo del logo */
+        .logo {
+            width: 200px;
+            animation: bounce 2s infinite;
+        }
 
-    button {
-      padding: 10px 20px;
-      margin: 10px;
-      border: none;
-      border-radius: 10px;
-      background-color: #00ccff;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
 
-    button:hover {
-      background-color: #007acc;
-      transform: scale(1.1);
-    }
+        /* Títulos */
+        summary {
+            font-size: 24px;
+            color: #d32f2f;
+            font-weight: bold;
+            margin: 20px 0;
+        }
 
-    hr {
-      border: 1px solid white;
-    }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #f57c00;
+        }
 
-    /* Animación de entrada */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+        input[type="text"], input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 2px solid #ffca28;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
+        }
 
-    /* Lluvia */
-    .raindrop {
-      position: absolute;
-      top: -10px;
-      width: 2px;
-      height: 15px;
-      background: rgba(255, 255, 255, 0.6);
-      animation: rain 3s linear infinite;
-    }
+        input[type="text"]:focus, input[type="file"]:focus {
+            box-shadow: 0 0 10px #fbc02d;
+            outline: none;
+        }
 
-    @keyframes rain {
-      to {
-        transform: translateY(100vh);
-      }
-    }
+        /* Botones */
+        button {
+            padding: 10px 20px;
+            margin: 20px 10px 0 0;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
 
-    /* Crear múltiples gotas */
-    @keyframes random-drop {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(100vh); }
-    }
+        button:first-of-type {
+            background-color: #66bb6a;
+            color: white;
+        }
 
-  </style>
+        button:first-of-type:hover {
+            background-color: #43a047;
+            transform: scale(1.05);
+        }
+
+        button:last-of-type {
+            background-color: #ef5350;
+            color: white;
+        }
+
+        button:last-of-type:hover {
+            background-color: #e53935;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
+
 <body>
+    <div class="container">
+        <center>
+            <img src="logo lays.png" class="logo" alt="Logo Lays">
+            <summary><i class="fas fa-briefcase"></i> Trabaja con nosotros</summary>
+            <hr>
 
-  <!-- Lluvia -->
-  <script>
-    for (let i = 0; i < 100; i++) {
-      const drop = document.createElement("div");
-      drop.className = "raindrop";
-      drop.style.left = Math.random() * 100 + "vw";
-      drop.style.animationDuration = 1 + Math.random() * 2 + "s";
-      drop.style.opacity = Math.random();
-      document.body.appendChild(drop);
-    }
-  </script>
+            <label><i class="fas fa-user"></i> Tu nombre</label>
+            <input type="text">
 
-  <center>
-    <img src="logo.png" width="150" style="animation: fadeIn 2s;">
-    <h1><i class="fas fa-user"></i> Datos personales</h1>
-    <hr width="500">
+            <label><i class="fas fa-user-tie"></i> Tu profesión</label>
+            <input type="text">
 
-    <form>
-      <label><i class="fas fa-user"></i> Nombre</label><br>
-      <input type="text"><br>
+            <label><i class="fas fa-id-card"></i> Tu DPI</label>
+            <input type="text">
 
-      <label><i class="fas fa-id-card"></i> DPI</label><br>
-      <input type="text"><br>
+            <label><i class="fas fa-file-upload"></i> Tu CV</label>
+            <input type="file">
 
-      <label><i class="fas fa-phone"></i> Teléfono</label><br>
-      <input type="text"><br>
+            <label><i class="fas fa-comment-dots"></i> ¿Qué te gustaría hacer?</label>
+            <input type="text">
 
-      <label><i class="fas fa-envelope"></i> Correo electrónico</label><br>
-      <input type="email"><br>
-
-      <label><i class="fas fa-home"></i> Dirección</label><br>
-      <input type="text"><br>
-    </form>
-
-    <hr width="550">
-    <h2><i class="fas fa-credit-card"></i> Datos de pago</h2>
-    <form>
-      <label>Número de tarjeta (débito / crédito)</label><br>
-      <input type="text"><br>
-
-      <label>CVV</label><br>
-      <input type="text"><br>
-
-      <label>Año vencimiento</label><br>
-      <input type="text"><br>
-    </form>
-
-    <hr width="600">
-    <h2><i class="fas fa-plane-departure"></i> Datos de Viaje</h2>
-    <form>
-      <label>Lugar</label><br>
-      <input type="text"><br>
-
-      <label>Cantidad</label><br>
-      <input type="number"><br>
-
-      <label>Fecha</label><br>
-      <input type="date"><br><br>
-
-      <button type="submit"><i class="fas fa-arrow-right"></i> Continuar</button>
-      <button type="reset"><i class="fas fa-times"></i> Cancelar</button>
-    </form>
-  </center>
+            <button><i class="fas fa-paper-plane"></i> Enviar</button>
+            <button><i class="fas fa-times-circle"></i> Cancelar</button>
+        </center>
+    </div>
 </body>
 </html>
