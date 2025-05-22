@@ -1,182 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HONDA</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lays - Trabaja con Nosotros</title>
+  <link rel="icon" href="logo.svg">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #e3f2fd, #ffffff);
-      animation: fadeIn 1s ease-in;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
       color: #333;
+      text-align: center;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    center {
-      padding: 30px;
-    }
-
-    marquee {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: #d32f2f;
-      margin-bottom: 20px;
-    }
-
-    img {
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.4s;
-    }
-
-    img:hover {
-      transform: scale(1.05);
-    }
-
-    h1 {
-      color: #e53935;
-      font-size: 2em;
-      margin-top: 20px;
-      transition: transform 0.3s;
-    }
-
-    h1:hover {
-      transform: scale(1.1);
-    }
-
-    p {
-      max-width: 800px;
-      text-align: justify;
-      line-height: 1.6;
-      margin: 20px auto;
-    }
-
-    hr {
-      width: 70%;
-      border: 1px solid #d32f2f;
-      margin: 30px auto;
-    }
-
-    ol, ul {
-      text-align: left;
-      display: inline-block;
-      margin: 20px;
-      font-size: 1.1em;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    ol:hover, ul:hover {
-      transform: scale(1.02);
-    }
-
-    li::before {
-      content: "\f2db"; /* Motorcycle icon */
-      font-family: "Font Awesome 6 Free";
-      font-weight: 900;
-      color: #ff5722;
-      margin-right: 10px;
-    }
-
-    form {
-      background: #fff8e1;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      width: 300px;
-      margin-top: 40px;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    form:hover {
-      transform: scale(1.02);
+    h2 {
+      font-size: 2.5em;
+      color: #d62828;
+      margin: 20px 0 10px;
     }
 
     label {
-      display: block;
-      margin-top: 15px;
       font-weight: bold;
-      color: #5d4037;
+      display: block;
+      margin: 10px 0 5px;
     }
 
-    input {
-      width: 100%;
+    input[type="text"],
+    input[type="file"],
+    input[type="CUENTANOS QUE TE INTERESA"] {
+      width: 300px;
       padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #bcaaa4;
-      border-radius: 5px;
-      transition: border-color 0.3s;
+      border-radius: 10px;
+      border: 2px solid #ffae00;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
-    input:focus {
-      border-color: #ff7043;
+    input[type="text"]:focus,
+    input[type="CUENTANOS QUE TE INTERESA"]:focus {
       outline: none;
+      border-color: #ff7300;
     }
 
-    .footer-icon {
-      margin-top: 40px;
-      font-size: 2em;
-      color: #f44336;
-      animation: bounce 1.5s infinite;
+    button {
+      background-color: #ff8c00;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
-    @keyframes bounce {
-      0% { transform: translateY(0);}
-      50% { transform: translateY(-10px);}
-      100% { transform: translateY(0);}
+    button:hover {
+      background-color: #ff7300;
+    }
+
+    .form-card {
+      background: #fffef2;
+      padding: 30px;
+      margin: 30px auto;
+      border-radius: 20px;
+      width: 400px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    hr {
+      width: 80%;
+      border: 1px solid #ff7300;
     }
   </style>
 </head>
 <body>
-  <center>
-    <marquee behavior="scroll" direction="left"><i class="fas fa-motorcycle"></i> Bienvenidos y bienvenidas a nuestra empresa HONDA <i class="fas fa-star"></i></marquee>
-    <img src="logo.png" alt="Logo de Honda">
+  <img src="logo.svg" width="200" alt="Logo Lays">
+  <div class="form-card">
+    <h2>💼 TRABAJA CON NOSOTROS 🚀</h2>
     <hr>
-    <h1><i class="fas fa-history"></i> HISTORIA</h1>
-    <p>
-      Fue fundada en 1949 en Hamamatsu (Shizuoka) por el ingeniero Sōichirō Honda con el nombre de 
-      Honda Technical Research Institute...
-    </p>
-    <hr>
-    <ol>
-      <li>honda cb 125 s</li>
-      <li>honda crf 125</li>
-      <li>honda crf 250f</li>
-      <li>honda cmx450 rebel</li>
-      <li>honda cg 150</li>
-    </ol>
-    <ul>
-      <li>honda cb 125 s</li>
-      <li>honda crf 125</li>
-      <li>honda crf 250f</li>
-      <li>honda cmx450 rebel</li>
-      <li>honda cg 150</li>
-    </ul>
-    <hr>
-    <form>
-      <label>¿Qué moto deseas?</label>
-      <input type="text">
-      <label>Color</label>
-      <input type="text">
-      <label>Dirección</label>
-      <input type="text">
-      <label>Número telefónico</label>
-      <input type="text">
-      <label>Correo electrónico</label>
-      <input type="text">
-    </form>
-    <div class="footer-icon">
-      <i class="fas fa-heart"></i> ¡Gracias por visitarnos! <i class="fas fa-heart"></i>
-    </div>
-    <a href="pagina1.html">diferentes modelos</a>
-  </center>
+
+    <label>🙋‍♂️ TU NOMBRE</label>
+    <input type="text" placeholder="Ej: Juan Pérez">
+
+    <label>👨‍💼 TU PROFESIÓN</label>
+    <input type="text" placeholder="Ej: Ingeniero de alimentos">
+
+    <label>🧾 TU CV</label>
+    <input type="file">
+
+    <label>🎯 ¿QUÉ TE GUSTARÍA HACER?</label>
+    <input type="CUENTANOS QUE TE INTERESA" placeholder="Cuéntanos tu interés">
+
+    <br><br>
+    <button>📩 Postularse</button>
+    <button>❌ Cancelar</button>
+  </div>
 </body>
 </html>
