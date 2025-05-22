@@ -1,131 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viajes</title>
-  <link rel="icon" href="abion.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <link rel="icon" href="Logo-lays.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Fondo animado */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(-45deg, #f9d423, #ff4e50, #f9d423, #ff4e50);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            text-align: center;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #89f7fe, #66a6ff);
-      color: #333;
-      text-align: center;
-      animation: fadeIn 2s ease-in;
-    }
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
 
-    h1, h2, h3, h4, h5 {
-      color: #2c3e50;
-      text-shadow: 1px 1px 2px #fff;
-      transition: color 0.3s ease;
-    }
+        h1, h2 {
+            transition: transform 0.3s ease-in-out;
+        }
 
-    h1:hover, h2:hover {
-      color: #2980b9;
-    }
+        h1:hover, h2:hover {
+            transform: scale(1.1);
+            color: #fffa65;
+        }
 
-    hr {
-      border: none;
-      height: 3px;
-      background: #2980b9;
-      width: 60%;
-      margin: 20px auto;
-      border-radius: 5px;
-      transition: width 0.4s ease;
-    }
+        img {
+            margin-top: 20px;
+            animation: bounce 2s infinite;
+        }
 
-    hr:hover {
-      width: 80%;
-    }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
 
-    p {
-      font-size: 1.1em;
-      padding: 10px;
-      color: #555;
-    }
+        ol, ul {
+            text-align: left;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
 
-    form input[type="text"] {
-      padding: 10px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      width: 200px;
-      transition: all 0.3s ease;
-    }
+        ol:hover, ul:hover {
+            transform: scale(1.05);
+        }
 
-    form input[type="text"]:focus {
-      border-color: #2980b9;
-      box-shadow: 0 0 10px #2980b9;
-    }
+        li {
+            padding: 8px 0;
+        }
 
-    img {
-      width: 200px;
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
+        li::before {
+            content: '\f005'; /* icono de estrella de FontAwesome */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            margin-right: 10px;
+            color: #fff700;
+            transition: color 0.3s;
+        }
 
-    img:hover {
-      transform: scale(1.05);
-    }
+        li:hover::before {
+            color: #ff4e50;
+        }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      background-color: #ecf0f1;
-      margin: 10px auto;
-      padding: 10px;
-      width: 200px;
-      border-radius: 10px;
-      transition: background 0.3s;
-    }
-
-    ul li:hover {
-      background-color: #d0e4f7;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
+        hr {
+        hr
+            width: 60%;
+            border: 2px solid #fff;
+            border-radius: 2px;
+            margin: 30px auto;
+        }
+    </style>
 </head>
-
 <body>
-  <img src="abion.png" width="300" alt="Logo de viajes">
-  <h1>Lugares para Reservar</h1>
-  <hr>
-
-  <h2>Nuestra Misión</h2>
-  <p>Nuestra misión es brindarte experiencias inolvidables.</p>
-
-  <h2>Visión</h2>
-  <p>Nuestra visión es crecer como una comunidad de viajeros apasionados.</p>
-
-  <h3>¿A dónde te gustaría ir?</h3>
-  <form>
-    <label for="buscar">Buscar:</label>
-    <input type="text" id="buscar" name="buscar">
-  </form>
-
-  <hr>
-
-  <h4>Por si Internet</h4>
-  <img src="bolcan.avif" alt="Volcán">
-  <img src="an1.jpg" alt="Paisaje">
-  <img src="siudad.guide" alt="Ciudad">
-
-  <h5>Los Más Visitados</h5>
-  <ul>
-    <li>Panajachel</li>
-    <li>Volcán de Guatemala</li>
-    <li>Antigua Guatemala</li>
-    <li>Atitlán</li>
-  </ul>
+    <img src="Logo-lays.png" width="300" alt="Logo Lays">
+    <h1>¡Más sabor!</h1>
+    <hr>
+    <h2>Galletas</h2>
+    <ol>
+        <li>Choquis</li>
+        <li>Arcoiris</li>
+        <li>Emperador</li>
+        <li>Chiqui</li>
+    </ol>
+    <hr>
+    <h2>Golo</h2>
+    <ul>
+        <li>Fiesta</li>
+        <li>Detodito</li>
+        <li>Crujito</li>
+    </ul>
 </body>
 </html>

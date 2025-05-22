@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+
+    <!-- Iconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1580740565965-7f90da0ab18b?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 50px auto;
+            padding: 30px;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+        }
+
+        h1 {
+            color: #FFD700;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="file"] {
+            width: 90%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="file"]:focus {
+            box-shadow: 0 0 10px #FFD700;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #FFD700;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #ffa500;
+            transform: scale(1.1);
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Logo-lays.png" alt="Lays Logo" class="logo">
+        <h1><i class="fas fa-briefcase"></i> Trabaja con Nosotros</h1>
+        <hr width="80%">
+        <form>
+            <label><i class="fas fa-user"></i> Tu Nombre</label>
+            <input type="text" placeholder="Ingresa tu nombre">
+
+            <label><i class="fas fa-graduation-cap"></i> Tu Profesión</label>
+            <input type="text" placeholder="Ej. Ingeniero, Mercadólogo">
+
+            <label><i class="fas fa-id-card"></i> Tu DPI</label>
+            <input type="text" placeholder="Documento personal de identificación">
+
+            <label><i class="fas fa-file-alt"></i> Tu CV</label>
+            <input type="file">
+
+            <label><i class="fas fa-user-tie"></i> ¿Qué te gustaría ser?</label>
+            <input type="text" placeholder="Ej. Vendedor, Administrador">
+
+            <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+            <button type="reset"><i class="fas fa-redo"></i> Limpiar</button>
+        </form>
+    </div>
+</body>
+</html>

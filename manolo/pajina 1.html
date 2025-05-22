@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <link rel="icon" href="Logo-lays.png">
+    <style>
+        /* Fondo animado */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(270deg, #f1c40f, #f39c12, #e74c3c);
+            background-size: 600% 600%;
+            animation: fondoAnimado 15s ease infinite;
+            color: #fff;
+        }
+
+        @keyframes fondoAnimado {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        center {
+            padding: 30px;
+        }
+
+        img {
+            margin: 15px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+        }
+
+        summary {
+            cursor: pointer;
+            font-size: 1.5em;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        summary:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        details {
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            height: 4px;
+            background-color: white;
+            border-radius: 2px;
+            width: 70%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="Logo-lays.png" width="300" alt="Logo Lays">
+        <h1>Productos</h1>
+        <hr>
+
+        <details>
+            <summary>Chetos</summary>
+            <img src="cheto1.jpg" width="200" alt="Chetos 1">
+            <img src="chetos2.jpg" width="300" alt="Chetos 2">
+            <img src="cheto3.png" width="300" alt="Chetos 3">
+        </details>
+
+        <details>
+            <summary>Doritos</summary>
+            <img src="dorito1.jpg" width="300" alt="Doritos 1">
+            <img src="dorito2.webp" width="300" alt="Doritos 2">
+            <img src="dorito3.webp" width="300" alt="Doritos 3">
+        </details>
+
+        <details>
+            <summary>Papas</summary>
+            <img src="lays1.webp" width="300" alt="Lays 1">
+            <img src="lays2.webp" width="300" alt="Lays 2">
+            <img src="lais3.webp" width="300" alt="Lays 3">
+        </details>
+
+        <details>
+            <summary>Galletas</summary>
+            <img src="choquis1.webp" width="300" alt="Choquis 1">
+            <img src="choqis2.webp" width="300" alt="Choquis 2">
+            <img src="choquis 3.png" width="300" alt="Choquis 3">
+        </details>
+    </center>
+</body>
+</html>
