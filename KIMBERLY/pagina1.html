@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LAYS</title>
+    <link rel="icon" href="logo de lays.jpg">
+    <style>
+        body {
+            background-color: #fff200; /* Amarillo Lays */
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            animation: moverTexto 3s infinite alternate;
+        }
+
+        @keyframes moverTexto {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(20px); }
+        }
+
+        summary {
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        summary:hover {
+            color: red;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+
+        details {
+            margin: 20px auto;
+            width: 80%;
+            background: #fff8a6;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+            transition: all 0.5s ease;
+        }
+
+        details[open] {
+            background-color: #fff26e;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo de lays.jpg" width="300">
+    <h1>PRODUCTOS</h1>
+
+    <details>
+        <summary>CHEETOS</summary>
+        <img src="chtos1.jpg" width="300">
+        <img src="chetos 2.jpg" width="300">
+        <img src="chetos3.jpg" width="300">
+    </details>
+
+    <details>
+        <summary>DORITOS</summary>
+        <img src="doritos1.jpg" width="250">
+        <img src="doritos2.jpg" width="300">
+        <img src="doritos3.jpg" width="300">
+    </details>
+
+    <details>
+        <summary>PAPAS LAYS</summary>
+        <img src="papas 1.jpg" width="300">
+        <img src="papa2.jpg" width="300">
+        <img src="papas3.jpg" width="300">
+    </details>
+
+    <details>
+        <summary>GALLETAS</summary>
+        <img src="chokys 1.jpg" width="300">
+        <img src="chokyn2.jpg" width="300">
+        <img src="chokys3.jpg" width="300">
+    </details>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LAYS</title>
+    <link rel="icon" href="logo de lays.jpg">
+    <style>
+        body {
+            background-color: #EBDCFB; /* Morado pastel */
+            font-family: Arial, sans-serif;
+            color: #4B0082; /* Morado fuerte */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #6A0DAD;
+            text-shadow: 1px 1px 2px #BFA2E1;
+            transition: transform 0.3s ease;
+        }
+
+        h1:hover, h2:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #B57EDC;
+            color: white;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 0 10px #6A0DAD;
+        }
+
+        a:hover {
+            background-color: #6A0DAD;
+            transform: scale(1.1);
+        }
+
+        hr {
+            border: 3px solid #6A0DAD;
+            border-radius: 5px;
+            width: 90%;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 70%;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        marquee img {
+            border: 5px solid #6A0DAD;
+            border-radius: 15px;
+            margin: 10px;
+            transition: transform 0.5s;
+        }
+
+        marquee img:hover {
+            transform: scale(1.1) rotate(2deg);
+        }
+
+        /* Animación de entrada */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Iconos ilustrativos */
+        .icon {
+            font-size: 40px;
+            color: #6A0DAD;
+            margin: 15px;
+        }
+    </style>
+
+    <!-- Iconos de Font Awesome (requiere conexión a internet) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="fade-in">
+    <img src="logo de lays.jpg" width="300" alt="Logo de Lays">
+
+    <h1>BIENVENIDOS</h1>
+    <hr>
+
+    <div>
+        <a href="pagina1.html"><i class="fas fa-box icon"></i> PRODUCTOS</a><br>
+        <a href="pagina2.html"><i class="fas fa-briefcase icon"></i> TRABAJOS</a><br>
+        <a href="pagina3.html"><i class="fas fa-info-circle icon"></i> MÁS SOBRE NOSOTROS</a><br>
+    </div>
+
+    <h2>MISIÓN</h2>
+    <p>"Endulzar la vida de nuestros clientes ofreciendo golosinas de alta calidad, elaboradas con ingredientes seleccionados, que despierten la alegría, la nostalgia y el placer en cada bocado. Nos comprometemos con la innovación, la seguridad alimentaria y la responsabilidad social."</p>
+
+    <h2>VISIÓN</h2>
+    <p>Ser la empresa líder en el mercado de golosinas en América Latina, reconocida por su creatividad, compromiso con la calidad y por generar experiencias dulces que unan generaciones.</p>
+
+    <hr>
+    <h2>PRUEBA LO NUEVO</h2>
+
+    <marquee behavior="scroll" direction="left" scrollamount="7">
+        <img src="chetos3.jpg" width="250" alt="Chetos">
+        <img src="papa2.jpg" width="200" alt="Papas">
+        <img src="chokys3.jpg" width="300" alt="Chokys">
+    </marquee>
+</body>
+</html>

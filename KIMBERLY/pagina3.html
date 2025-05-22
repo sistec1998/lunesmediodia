@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LAYS</title>
+    <link rel="icon" href="logo de lays.jpg">
+    <style>
+        body {
+            background: linear-gradient(to right, #ffb6c1, #ffe4e1); /* fondo rosado degradado */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        img {
+            width: 300px;
+            animation: zoomIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #d1006f;
+            animation: moveText 4s infinite alternate ease-in-out;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #ff1493;
+            margin-top: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.5em;
+            color: #800040;
+            transition: transform 0.3s;
+        }
+
+        ul li {
+            margin: 10px 0;
+            animation: fadeIn 2s ease;
+        }
+
+        ul li:hover {
+            transform: scale(1.1);
+            color: #ff0080;
+        }
+
+        @keyframes moveText {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(20px); }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .section-icon {
+            font-size: 2em;
+            margin-right: 10px;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #ff69b4;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo de lays.jpg" alt="Logo de Lays">
+    <h1>✨ MÁS SABOR ✨</h1>
+    <hr>
+
+    <h2><span class="section-icon">🍪</span>GALLETAS</h2>
+    <ul>
+        <li>Chokys</li>
+        <li>Arcoiris</li>
+        <li>Emperador</li>
+        <li>Chiki</li>
+    </ul>
+
+    <h2><span class="section-icon">🍬</span>GOLOSINAS</h2>
+    <ul>
+        <li>Fiesta</li>
+        <li>Detodito</li>
+        <li>Crujito</li>
+    </ul>
+
+</body>
+</html>
