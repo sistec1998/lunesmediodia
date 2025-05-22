@@ -1,188 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viaje</title>
-    <link rel="icon" href="logo de avion.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lays</title>
+  <link rel="icon" href="logo de lays.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #fff700, #ffe600);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #74ebd5, #ACB6E5);
-            margin: 0;
-            padding: 0;
-            color: #333;
-            text-align: center;
-        }
+    img {
+      width: 300px;
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
 
-        img {
-            transition: transform 0.3s ease;
-        }
+    img:hover {
+      transform: scale(1.1);
+    }
 
-        img:hover {
-            transform: scale(1.05);
-        }
+    h1 {
+      font-size: 3em;
+      color: #d40000;
+      margin-top: 0;
+      animation: fadeIn 2s ease-in-out;
+    }
 
-        h1 {
-            font-size: 2.5em;
-            color: #fff;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-            animation: fadeIn 1s ease-in;
-        }
+    h2 {
+      color: #0066cc;
+      margin-top: 30px;
+    }
 
-        h2 {
-            color: #2c3e50;
-            margin-top: 40px;
-        }
+    hr {
+      width: 60%;
+      border: 2px solid #ffcc00;
+      margin: 20px auto;
+    }
 
-        hr {
-            border: none;
-            height: 3px;
-            background-color: #fff;
-            width: 70%;
-            margin: 20px auto;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        }
+    ol, ul {
+      list-style: none;
+      padding: 0;
+    }
 
-        p {
-            width: 80%;
-            margin: 0 auto;
-            font-size: 1.1em;
-            animation: slideIn 1s ease-out;
-        }
+    li {
+      background: #fff;
+      margin: 10px auto;
+      padding: 10px 20px;
+      border-radius: 12px;
+      max-width: 300px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background 0.3s, transform 0.3s;
+      cursor: pointer;
+    }
 
-        form {
-            margin-top: 20px;
-        }
+    li:hover {
+      background: #ffeb3b;
+      transform: scale(1.05);
+    }
 
-        label {
-            font-size: 1.2em;
-        }
+    .button {
+      display: inline-block;
+      margin: 20px 10px;
+      padding: 12px 25px;
+      background-color: #ff3d00;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      text-decoration: none;
+    }
 
-        input[type="text"] {
-            padding: 10px;
-            width: 300px;
-            border-radius: 10px;
-            border: 2px solid #3498db;
-            transition: 0.3s;
-        }
+    .button:hover {
+      background-color: #e53935;
+      transform: scale(1.1);
+    }
 
-        input[type="text"]:focus {
-            border-color: #2ecc71;
-            outline: none;
-        }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
 
-        button {
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 1em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #2ecc71;
-        }
-
-        .marquee-container {
-            overflow: hidden;
-            white-space: nowrap;
-            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-            background: #f9f9f9;
-            padding: 10px 0;
-        }
-
-        .marquee-container img {
-            width: 200px;
-            margin: 0 10px;
-            border-radius: 10px;
-            animation: scroll 20s linear infinite;
-        }
-
-        ol {
-            list-style-type: decimal;
-            text-align: left;
-            width: fit-content;
-            margin: 0 auto;
-            font-size: 1.2em;
-            color: #fff;
-        }
-
-        a.button-link {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #e67e22;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 10px;
-            transition: transform 0.2s;
-        }
-
-        a.button-link:hover {
-            transform: scale(1.1);
-            background-color: #d35400;
-        }
-
-        @keyframes scroll {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateX(-30px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-    </style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
 </head>
 <body>
 
-    <img src="logo de avion.png" width="200" alt="Logo de avión">
+  <img src="logo de lays.png" alt="Logo de Lays">
+  <h1>¡Más Sabor!</h1>
+  <hr>
 
-    <div>
-        <a class="button-link" href="pagina1.html">Lugares</a>
-        <a class="button-link" href="pagina2.html">Reservar</a>
-    </div>
+  <h2>Snacks Favoritos</h2>
+  <ol>
+    <li>Chokis</li>
+    <li>Arcoiris</li>
+    <li>Emperador</li>
+    <li>Chiki</li>
+  </ol>
 
-    
+  <h2>Golosinas</h2>
+  <ul>
+    <li>Fiesta</li>
+    <li>Detodito</li>
+    <li>Crujito</li>
+  </ul>
 
-    <hr>
-
-    <p>Si tu empresa tiene un enfoque específico (por ejemplo: aventura, lujo, bajo costo, viajes corporativos, turismo sostenible, etc.),
-    puedo ajustar el texto a eso. ¿Quieres que lo adapte a un tipo de empresa o público en particular?</p>
-
-    <form>
-        <label>¿A dónde te gustaría ir?</label><br>
-        <input type="text" placeholder="Ingresa tu destino"><br>
-        <button type="submit">Buscar</button>
-    </form>
-
-    <hr>
-
-    <h2>Por si te interesa</h2>
-    <div class="marquee-container">
-        <img src="foto 3.jpg" alt="Foto 1">
-        <img src="foto 7.jpg" alt="Foto 2">
-        <img src="foto 4.jpg" alt="Foto 3">
-    </div>
-
-    <h2>Lo más visitado</h2>
-    <ol>
-        <li>Panajachel</li>
-        <li>Río Dulce</li>
-        <li>Semuc Champey</li>
-        <li>Lago Itzá, Flores</li>
-    </ol>
+  <a href="#" class="button">Comprar Ahora</a>
+  <a href="#" class="button">Ver Más</a>
 
 </body>
 </html>
