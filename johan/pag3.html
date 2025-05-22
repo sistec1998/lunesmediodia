@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LAYS</title>
+    <link rel="icon" href="Lay's_logo_2019.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #fffde7, #fff9c4);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+            animation: fadeInBody 1s ease;
+        }
+
+        header {
+            background-color: #ffcc00;
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: slideDown 1s ease;
+        }
+
+        header img {
+            width: 200px;
+            animation: zoomIn 1.2s ease;
+        }
+
+        h1, h2 {
+            margin: 20px;
+            color: #d62300;
+            text-shadow: 1px 1px 2px #fff;
+        }
+
+        ol, ul {
+            text-align: left;
+            display: inline-block;
+            background: #fff8dc;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            animation: fadeInList 1s ease;
+        }
+
+        li {
+            padding: 8px 0;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        li:hover {
+            color: #b71c1c;
+            transform: translateX(10px);
+        }
+
+        li::before {
+            content: "🍪 ";
+            margin-right: 5px;
+        }
+
+        ul li::before {
+            content: "🍬 ";
+        }
+
+        footer {
+            margin: 30px 0;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        @keyframes fadeInBody {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeInList {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Lay's_logo_2019.svg.png" alt="Logo Lays">
+        <h1><i class="fa-solid fa-briefcase"></i> Trabaja con Nosotros</h1>
+    </header>
+
+    <h1><i class="fa-solid fa-cookie-bite"></i> Galletas</h1>
+    <ol>
+        <li>Chokis</li>
+        <li>Arcoíris</li>
+        <li>Pozuelo</li>
+        <li>Chiki</li>
+    </ol>
+
+    <h2><i class="fa-solid fa-candy-cane"></i> Golosinas</h2>
+    <ul>
+        <li>Fiesta</li>
+        <li>De Todito</li>
+        <li>Crujitos</li>
+    </ul>
+
+    <footer>
+        &copy; 2025 Lays. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LAYS</title>
+    <link rel="icon" href="Lay's_logo_2019.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f9f9f9, #fffbd5);
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            padding: 30px;
+            background: #ffcc00;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            width: 200px;
+            animation: zoomIn 1s ease;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 10px;
+            color: #d62300;
+            text-shadow: 1px 1px 2px #fff;
+        }
+
+        hr {
+            width: 60%;
+            border: 2px solid #ffcc00;
+            margin-bottom: 30px;
+        }
+
+        details {
+            margin: 20px auto;
+            width: 60%;
+            background: #fff7d6;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 10px 20px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        details:hover {
+            transform: scale(1.02);
+        }
+
+        summary {
+            font-size: 1.3em;
+            font-weight: bold;
+            outline: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        details[open] summary::after {
+            content: " 🔽";
+        }
+
+        details:not([open]) summary::after {
+            content: " ▶️";
+        }
+
+        img {
+            width: 100px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Lay's_logo_2019.svg.png" alt="Logo Lays">
+        <h1><i class="fa-solid fa-shop"></i> Productos</h1>
+    </header>
+
+    <hr>
+
+    <details>
+        <summary><i class="fa-solid fa-fire"></i> Chetos</summary>
+        <img src="ch1.png" alt="Chetos 1">
+        <img src="ch2.png" alt="Chetos 2">
+        <img src="ch3.png" alt="Chetos 3">
+    </details>
+
+    <details>
+        <summary><i class="fa-solid fa-bolt"></i> Doritos</summary>
+        <img src="d1.png" alt="Doritos 1">
+        <img src="d2.webp" alt="Doritos 2">
+        <img src="d3.png" alt="Doritos 3">
+    </details>
+
+    <details>
+        <summary><i class="fa-solid fa-potato"></i> Lays</summary>
+        <img src="la1.webp" alt="Lays 1">
+        <img src="la2.png" alt="Lays 2">
+        <img src="la2.png" alt="Lays 3">
+    </details>
+
+    <details>
+        <summary><i class="fa-solid fa-cookie"></i> Galletas</summary>
+        <img src="ga1.png" alt="Galletas 1">
+        <img src="ga 2.png" alt="Galletas 2">
+        <img src="ga3.png" alt="Galletas 3">
+    </details>
+
+    <footer>
+        &copy; 2025 Lays Snacks. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>

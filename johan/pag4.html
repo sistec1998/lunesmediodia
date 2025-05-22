@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LAYS</title>
+    <link rel="icon" href="Lay's_logo_2019.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #fff9db, #fff3c4);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+            animation: fadeInBody 1s ease-in-out;
+        }
+
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            width: 180px;
+            animation: zoomIn 1s ease;
+        }
+
+        h1, h2 {
+            color: #d62300;
+            margin: 20px;
+            text-shadow: 1px 1px 2px #fff;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 10px auto 30px;
+            font-size: 1.1em;
+            background: #fff8dc;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            background-color: #d62300;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            animation: fadeInLink 1s ease;
+        }
+
+        a:hover {
+            background-color: #b71c1c;
+            transform: scale(1.05);
+        }
+
+        i {
+            margin-right: 8px;
+        }
+
+        @keyframes fadeInBody {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeInLink {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            margin: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Lay's_logo_2019.svg.png" alt="Logo Lay's">
+    </header>
+
+    <h1><i class="fa-solid fa-door-open"></i> Bienvenidos</h1>
+
+    <a href="pag1.html"><i class="fa-solid fa-boxes-stacked"></i> Productos</a>
+    <a href="pag2.html"><i class="fa-solid fa-briefcase"></i> Trabajos</a>
+    <a href="pag3.html"><i class="fa-solid fa-circle-info"></i> Más sobre nosotros</a>
+
+    <h1><i class="fa-solid fa-bullseye"></i> Misión</h1>
+    <p>“Brindar experiencias deliciosas y memorables a través de productos de botanas elaborados
+     con ingredientes de calidad, satisfaciendo
+     los gustos de nuestros consumidores con innovación, responsabilidad y pasión por
+     lo que hacemos.”</p>
+
+    <h2><i class="fa-solid fa-eye"></i> Visión</h2>
+    <p>“Ser la marca de botanas preferida en el mundo, llevando alegría y sabor a cada momento,
+     innovando constantemente con productos de alta calidad que se adapten a los gustos y 
+     estilos de vida de nuestros consumidores.”</p>
+
+    <footer>
+        &copy; 2025 Lay’s. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
