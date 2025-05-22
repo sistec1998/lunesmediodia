@@ -1,136 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Viajes</title>
-  <link rel="icon" href="logoviaje.png" />
-  <style>
-    body {
-      background-color: #e0f7fa; /* celeste pastel */
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      animation: fadeIn 2s ease-in;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <link rel="icon" href="layslogo.png">
 
-    h1, h2 {
-      color: #0277bd;
-      transition: color 0.3s ease-in-out;
-    }
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #ffefba, #ffffff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            animation: fadeIn 1.5s ease;
+        }
 
-    h1:hover, h2:hover {
-      color: #01579b;
-    }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-    form {
-      margin-bottom: 20px;
-    }
+        h1 {
+            color: #d32f2f;
+            margin-top: 20px;
+        }
 
-    input[type="text"] {
-      padding: 10px;
-      margin: 8px;
-      border: 1px solid #b3e5fc;
-      border-radius: 5px;
-      width: 250px;
-      transition: all 0.3s ease;
-    }
+        form {
+            background-color: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 20px;
+            width: 300px;
+            transition: all 0.3s ease;
+        }
 
-    input[type="text"]:focus {
-      border-color: #0288d1;
-      background-color: #f1f8ff;
-      transform: scale(1.03);
-    }
+        label {
+            font-weight: bold;
+            color: #444;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
 
-    button {
-      padding: 10px 20px;
-      margin: 10px;
-      border: none;
-      border-radius: 5px;
-      background-color: #4fc3f7;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
+        label i {
+            margin-right: 8px;
+            color: #fbc02d;
+        }
 
-    button:hover {
-      background-color: #0288d1;
-      transform: scale(1.05);
-    }
+        input[type="text"],
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #faef91;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
 
-    img {
-      width: 200px;
-      margin-top: 20px;
-      animation: slideDown 1.5s ease-out;
-    }
+        input:focus {
+            border-color: #fdd835;
+            outline: none;
+            box-shadow: 0 0 5px #fdd835;
+        }
 
-    hr {
-      width: 70%;
-      border: 1px solid #b2ebf2;
-      margin: 20px auto;
-    }
+        button {
+            background-color: #fbc02d;
+            border: none;
+            padding: 10px 20px;
+            color: #faee85;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
 
-    label {
-      display: block;
-      margin-top: 10px;
-      color: #0277bd;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes slideDown {
-      from { transform: translateY(-50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-  </style>
+        button:hover {
+            background-color: #f9a825;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
+    <img src="layslogo.png" width="200" alt="Lays Logo">
+    <h1>Trabaja con nosotros</h1>
+    <form>
+        <label><i class="fas fa-user"></i>Tu nombre</label>
+        <input type="text" placeholder="Ingresa tu nombre">
 
-  <img src="logoviaje.png" alt="Logo de viaje" />
-  <h1>Datos personales</h1>
-  <hr />
-  <form>
-    <label>Nombre</label>
-    <input type="text" />
-    <label>DPI</label>
-    <input type="text" />
-    <label>Teléfono</label>
-    <input type="text" />
-    <label>Correo electrónico</label>
-    <input type="text" />
-    <label>Dirección</label>
-    <input type="text" />
-  </form>
+        <label><i class="fas fa-briefcase"></i>Tu profesión</label>
+        <input type="text" placeholder="Ej. Ingeniero, Diseñador">
 
-  <hr />
-  <h2>Datos de pago</h2>
-  <form>
-    <label>Número de tarjeta/Débito/Crédito</label>
-    <input type="text" />
-    <label>CVV</label>
-    <input type="text" />
-    <label>Año vencimiento</label>
-    <input type="text" />
-  </form>
+        <label><i class="fas fa-id-card"></i>Tu DPI</label>
+        <input type="text" placeholder="Ej. 1234567890101">
 
-  <hr />
-  <h2>Datos del viaje</h2>
-  <form>
-    <label>Lugar</label>
-    <input type="text" />
-    <label>Cantidad</label>
-    <input type="text" />
-    <label>Fecha</label>
-    <input type="text" />
-  </form>
+        <label><i class="fas fa-file-upload"></i>Tu CV</label>
+        <input type="file">
 
-  <button>Confirmar</button>
-  <button>Cancelar</button>
+        <label><i class="fas fa-tasks"></i>¿Qué te gustaría hacer?</label>
+        <input type="text" placeholder="Ej. Marketing, Producción">
+    </form>
 
+    <div>
+        <button><i class="fas fa-paper-plane"></i> Postularse</button>
+        <button style="background-color: #ccc; color: #000;"><i class="fas fa-times"></i> Cancelar</button>
+    </div>
 </body>
 </html>

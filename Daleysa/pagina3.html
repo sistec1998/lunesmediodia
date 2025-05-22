@@ -1,176 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agencia de Viajes</title>
-  <link rel="icon" href="logoviaje.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lays</title>
+  <link rel="icon" href="layslogo.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #e0f7fa; /* celeste pastel */
-      color: #004d40;
+      background: #fffbea;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background 0.5s ease;
       text-align: center;
-      transition: all 0.3s ease;
     }
 
-    header img {
-      width: 250px;
+    img {
       margin-top: 20px;
-      transition: transform 0.4s ease;
+      animation: fadeIn 2s ease-out;
     }
 
-    header img:hover {
-      transform: scale(1.05);
-    }
-
-    nav {
-      margin: 20px 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      margin: 0 15px;
-      color: #006064;
-      font-weight: bold;
-      font-size: 18px;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #00796b;
+    h1 {
+      color: #FFD700;
+      text-shadow: 2px 2px 5px #bfa500;
+      animation: slideDown 1s ease;
     }
 
     h2 {
-      color: #00796b;
+      color: #FFA500;
+      margin-top: 30px;
+      transition: color 0.3s;
     }
 
-    p {
-      width: 70%;
-      margin: auto;
+    h2:hover {
+      color: #FFB700;
+    }
+
+    ol, ul {
+      list-style-position: inside;
+      text-align: left;
+      display: inline-block;
+      margin-top: 10px;
       font-size: 18px;
     }
 
-    form {
-      margin: 30px 0;
+    li {
+      padding: 5px 0;
+      transition: transform 0.3s;
     }
 
-    input[type="text"] {
-      padding: 10px;
-      width: 250px;
-      border: 1px solid #80deea;
-      border-radius: 5px;
-      transition: box-shadow 0.3s;
-    }
-
-    input[type="text"]:focus {
-      box-shadow: 0 0 10px #4dd0e1;
-      outline: none;
-    }
-
-    button {
-      padding: 10px 20px;
-      background-color: #00bcd4;
-      border: none;
-      color: white;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    button:hover {
-      background-color: #00838f;
+    li:hover {
+      transform: scale(1.1);
+      color: #DAA520;
     }
 
     hr {
-      margin: 40px auto;
       border: none;
-      height: 2px;
-      background-color: #80deea;
-      width: 80%;
+      height: 3px;
+      background: linear-gradient(to right, #FFD700, #FFA500);
+      margin: 20px auto;
+      animation: growWidth 1.5s ease-out forwards;
     }
 
-    marquee img {
-      margin: 0 15px;
-      border-radius: 10px;
-      transition: transform 0.4s ease;
+    @keyframes slideDown {
+      from {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
-    marquee img:hover {
-      transform: scale(1.1);
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
-    ol {
-      list-style-position: inside;
-      font-size: 18px;
-      padding: 0;
+    @keyframes growWidth {
+      from {
+        width: 0;
+      }
+      to {
+        width: 700px;
+      }
     }
 
-    footer {
-      margin: 40px 0 20px;
-      font-size: 14px;
-      color: #555;
+    /* Icon styles */
+    i {
+      margin-right: 8px;
+      color: #FFD700;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="logoviaje.png" alt="Logo de Viajes">
-</header>
-
-<nav>
-  <a href="pagina1.html"><i class="fas fa-map-marked-alt"></i> Lugares</a>
-  <a href="pagina2.html"><i class="fas fa-calendar-check"></i> Reservar</a>
-</nav>
-
-<hr>
-
-<section>
-  <h2><i class="fas fa-bullseye"></i> Nuestra Misión</h2>
-  <p>"Brindar experiencias de viaje inolvidables a nuestros clientes, ofreciendo servicios turísticos de alta calidad, personalizados y accesibles, que promuevan el descubrimiento cultural, la aventura y el bienestar, siempre con un compromiso firme con la sostenibilidad y la excelencia en la atención al cliente."</p>
-</section>
-
-<section>
-  <h2><i class="fas fa-eye"></i> Visión</h2>
-  <p>"Ser la empresa de viajes líder en innovación y servicio en el mercado, reconocida por transformar cada viaje en una experiencia única y significativa, conectando personas con destinos de manera sostenible, segura y memorable."</p>
-</section>
-
-<section>
-  <form>
-    <label><i class="fas fa-plane-departure"></i> ¿A dónde quisieras ir?</label><br><br>
-    <input type="text" placeholder="Escribe tu destino"><br><br>
-    <button type="submit"><i class="fas fa-search"></i> Buscar</button>
-  </form>
-</section>
-
-<hr>
-
-<section>
-  <h2><i class="fas fa-star"></i> Por si te interesa</h2>
-  <marquee behavior="scroll" direction="left">
-    <img src="ligar1.jpg" width="300">
-    <img src="lugar2.avif" width="400">
-    <img src="lugar3.png" width="300">
-  </marquee>
-</section>
-
-<section>
-  <h2><i class="fas fa-fire"></i> Lo más visitado</h2>
+  <img src="layslogo.png" width="300" alt="Lays Logo" />
+  <h1><i class="fas fa-star"></i>Más sabor</h1>
+  <hr />
+  <h2><i class="fas fa-cookie"></i> Galletas</h2>
   <ol>
-    <li>Panajachel</li>
-    <li>Río Dulce</li>
-    <li>Semuc Champey</li>
-    <li>Lago Petén Itzá (Flores)</li>
+    <li><i class="fas fa-dot-circle"></i> Chokis</li>
+    <li><i class="fas fa-dot-circle"></i> Arcoiris</li>
+    <li><i class="fas fa-dot-circle"></i> Emperador</li>
+    <li><i class="fas fa-dot-circle"></i> Chiki</li>
   </ol>
-</section>
 
-<footer>
-  &copy; 2025 Agencia de Viajes. Todos los derechos reservados.
-</footer>
+  <h2><i class="fas fa-candy-cane"></i> Golosinas</h2>
+  <ul>
+    <li><i class="fas fa-dot-circle"></i> Fiesta</li>
+    <li><i class="fas fa-dot-circle"></i> Todito</li>
+    <li><i class="fas fa-dot-circle"></i> Crujito</li>
+  </ul>
 
 </body>
 </html>
