@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>lays</title>
+  <link rel="icon" href="logo1.png"/>
+
+  <style>
+    /* Fondo animado */
+    body {
+      animation: backgroundColorAnimation 10s infinite alternate;
+      transition: background-color 2s ease-in-out;
+      background-color: #fff8b0;
+      font-family: sans-serif;
+    }
+
+    @keyframes backgroundColorAnimation {
+      0% { background-color: #fff8b0; }
+      50% { background-color: #ffe066; }
+      100% { background-color: #fff176; }
+    }
+
+    /* Contenedor de imagen con ícono */
+    .img-container {
+      position: relative;
+      display: inline-block;
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .img-container img {
+      transition: transform 0.4s ease, opacity 0.4s ease;
+      display: block;
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    /* Ícono sobre la imagen */
+    .img-container::after {
+      content: "🔍";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      font-size: 3em;
+      color: white;
+      text-shadow: 0 0 10px black;
+      opacity: 0;
+      transition: all 0.3s ease;
+      pointer-events: none;
+    }
+
+    .img-container:hover img {
+      transform: scale(1.05);
+      opacity: 0.85;
+    }
+
+    .img-container:hover::after {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+
+    details {
+      margin: 20px;
+    }
+
+    summary {
+      font-size: 1.2em;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    hr {
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo1.png" width="200">
+    <h1>producto</h1>
+    <hr width="600">
+
+    <details>
+      <summary>cheetos</summary>
+      <div class="img-container"><img src="ft1.webp"></div>
+      <div class="img-container"><img src="ft2.webp"></div>
+      <div class="img-container"><img src="ft3.jpg"></div>
+    </details>
+
+    <details>
+      <summary>doritos</summary>
+      <div class="img-container"><img src="ft4.jpg"></div>
+      <div class="img-container"><img src="ft5.jpg"></div>
+      <div class="img-container"><img src="ft6.jpg"></div>
+    </details>
+
+    <details>
+      <summary>papas lays</summary>
+      <div class="img-container"><img src="ft7.webp"></div>
+      <div class="img-container"><img src="ft8.webp"></div>
+      <div class="img-container"><img src="ft9.webp"></div>
+    </details>
+
+    <details>
+      <summary>galletas</summary>
+      <div class="img-container"><img src="ft10.webp"></div>
+      <div class="img-container"><img src="ft11.webp"></div>
+      <div class="img-container"><img src="ft12.png"></div>
+    </details>
+  </center>
+</body>
+</html>

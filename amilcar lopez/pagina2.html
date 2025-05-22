@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>lasy</title>
+  <link rel="icon" href="logo1.png"/>
+
+  <style>
+    /* Fondo animado */
+    body {
+      animation: bgAnimation 10s infinite alternate;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    @keyframes bgAnimation {
+      0% { background-color: #fff8b0; }
+      50% { background-color: #ffe066; }
+      100% { background-color: #fff176; }
+    }
+
+    h1 {
+      margin-top: 10px;
+      font-size: 2em;
+      color: #333;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: left;
+      max-width: 400px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px 35px 10px 40px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      background-size: 20px;
+    }
+
+    /* Iconos de fondo para cada campo */
+    input[type="text"]:nth-of-type(1) {
+      background-image: url('https://img.icons8.com/emoji/48/user-emoji.png');
+    }
+
+    input[type="text"]:nth-of-type(2) {
+      background-image: url('https://img.icons8.com/emoji/48/briefcase-emoji.png');
+    }
+
+    input[type="text"]:nth-of-type(3) {
+      background-image: url('https://img.icons8.com/emoji/48/identification-card-emoji.png');
+    }
+
+    input[type="file"] {
+      background-image: url('https://img.icons8.com/emoji/48/page-facing-up.png');
+    }
+
+    input[type="text"]:nth-of-type(4) {
+      background-image: url('https://img.icons8.com/emoji/48/thought-balloon-emoji.png');
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #ffcc00;
+      box-shadow: 0 0 8px #ffcc00;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffaa00;
+    }
+
+    hr {
+      border: 1px solid #ccc;
+      width: 80%;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo1.png" width="200" alt="Logo">
+    <h1>trabaja con nosotros</h1>
+    <hr>
+
+    <form>
+      <label>Tu nombre</label>
+      <input type="text" placeholder="Ej. Juan Pérez">
+
+      <label>Tu profesión</label>
+      <input type="text" placeholder="Ej. Ingeniero">
+
+      <label>Tu DPI</label>
+      <input type="text" placeholder="Ej. 1234567890101">
+
+      <label>Tu CV</label>
+      <input type="file">
+
+      <label>¿Qué te gustaría hacer?</label>
+      <input type="text" placeholder="Escribe tu puesto deseado">
+
+      <button type="submit">Postularse</button>
+      <button type="reset" style="background-color: #ccc; color: black;">Cancelar</button>
+    </form>
+  </center>
+</body>
+</html>

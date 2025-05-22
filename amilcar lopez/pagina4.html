@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>lasy</title>
+  <link rel="icon" href="logo1.png" />
+
+  <style>
+    /* Fondo animado */
+    body {
+      margin: 0;
+      padding: 0;
+      animation: fondo 12s infinite alternate;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fff3b0, #ffd699);
+      background-size: 400% 400%;
+      text-align: center;
+    }
+
+    @keyframes fondo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1, h2 {
+      color: #d35400;
+      text-shadow: 1px 1px 2px #fff;
+      transition: transform 0.3s;
+    }
+
+    h1:hover, h2:hover {
+      transform: scale(1.05);
+    }
+
+    hr {
+      border: 2px solid #e67e22;
+      border-radius: 5px;
+      width: 70%;
+      margin: 20px auto;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #ffb347;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.4s, transform 0.3s;
+    }
+
+    a:hover {
+      background-color: #e67e22;
+      transform: scale(1.05);
+    }
+
+    p {
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      color: #444;
+      padding: 0 15px;
+    }
+
+    img {
+      transition: transform 0.4s ease, filter 0.4s ease;
+      border-radius: 15px;
+      margin: 10px;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 10px #f39c12);
+    }
+
+    marquee {
+      padding: 10px 0;
+      background: rgba(255, 255, 255, 0.4);
+      border-top: 2px dashed #ffa500;
+      border-bottom: 2px dashed #ffa500;
+    }
+
+    /* Íconos decorativos usando ::before */
+    h2::before {
+      content: "✨ ";
+    }
+
+    h1::before {
+      content: "🌟 ";
+    }
+
+    /* Estilo para el logo */
+    img[src="logo1.png"] {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo1.png" width="300" alt="Logo">
+    <h1>bienvenidos</h1>
+    <hr width="700">
+
+    <a href="pagina1.html">🛍️ Productos</a>
+    <a href="pagina2.html">💼 Trabajos</a>
+    <a href="pagina3.html">📚 Más sobre nosotros</a>
+
+    <h2>misión</h2>
+    <p>La misión es una declaración clara y concisa que define el propósito principal de una organización, empresa o proyecto. Responde a la pregunta.</p>
+
+    <h2>visión</h2>
+    <p>La visión es una declaración que describe el estado futuro ideal al que una organización, empresa o proyecto aspira llegar.</p>
+
+    <hr width="700">
+    <h2>prueba lo nuevo</h2>
+
+    <marquee behavior="scroll" direction="left" scrollamount="8">
+      <img src="ft1.webp" width="200" alt="Producto 1">
+      <img src="ft4.jpg" width="200" alt="Producto 2">
+      <img src="ft7.webp" width="200" alt="Producto 3">
+    </marquee>
+  </center>
+</body>
+</html>
