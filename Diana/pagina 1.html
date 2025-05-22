@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lays</title>
+    <link rel="icon" href="logo lays.png">
+    <!-- Fuente e íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f4c531;
+            font-family: 'Fredoka', sans-serif;
+            color: #222;
+            text-align: center;
+            margin: 0;
+            padding: 100px;
+        }
+
+        h1 {
+            color: #d62828;
+            font-size: 3em;
+            margin-top: 10px;
+            text-shadow: 1px 1px #fff;
+        }
+
+        hr {
+            border: 2px dashed #f77f00;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        summary {
+            font-size: 1.5em;
+            color: #003049;
+            cursor: pointer;
+            margin: 15px 0;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        summary:hover {
+            color: #d62828;
+            transform: scale(1.05);
+        }
+
+        details {
+            margin-bottom: 250px;
+            background: #ffffffdd;
+            padding: 100px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: center;
+        }
+
+        .producto-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px auto;
+            display: block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 12px;
+        }
+
+        .producto-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+        }
+
+        img[src="logo lays.png"] {
+            width: 180px;
+            margin-bottom: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .icono {
+            margin-right: 8px;
+            color: #f77f00;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo lays.png" alt="Logo Lays">
+    <h1><i class="fas fa-boxes icono"></i>Productos</h1>
+    <hr>
+
+    <details>
+        <summary><i class="fas fa-fire icono"></i>Cheetos</summary>
+        <img src="cheetos 1.png" class="producto-img" alt="Cheetos 1">
+        <img src="che 2.webp" class="producto-img" alt="Cheetos 2">
+        <img src="ch 3.webp" class="producto-img" alt="Cheetos 3">
+    </details>
+<br>
+    <details>
+        <summary><i class="fas fa-caret-square-up icono"></i>Doritos</summary>
+        <img src="doritos 1.png" class="producto-img" alt="Doritos 1">
+        <img src="doritos 2.webp" class="producto-img" alt="Doritos 2">
+        <img src="doritos 3.webp" class="producto-img" alt="Doritos 3">
+    </details>
+<br>
+    <details>
+        <summary><i class="fas fa-cookie-bite icono"></i>Papas Lays</summary>
+        <img src="la 1.png" class="producto-img" alt="Lays 1">
+        <img src="la 2.png" class="producto-img" alt="Lays 2">
+        <img src="la 3.jpg" class="producto-img" alt="Lays 3">
+    </details>
+<br>
+    <details>
+        <summary><i class="fas fa-cookie icono"></i>Galletas</summary>
+        <img src="galleta 1.png" class="producto-img" alt="Galleta 1">
+        <img src="galleta 2.png" class="producto-img" alt="Galleta 2">
+        <img src="galleta 3.png" class="producto-img" alt="Galleta 3">
+    </details>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+  <meta charset="UTF-8">
+  <title>Lays</title>
+  <link rel="icon" href="logo lays.png">
+  <!-- Fuente e íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #FFD700; /* Amarillo oscuro */
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h2 {
+      color: #222;
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    form:hover {
+      transform: scale(1.01);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #444;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    input[type="Escribe tu nombre completo"],
+    input[type="Ej: ingeniero, Vendedor"],
+    input[type="cuentanos que te interesa"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: #f39c12;
+      outline: none;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #f39c12;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d35400;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #e67e22;
+      margin: 20px 0;
+    }
+
+    .icon {
+      margin-right: 8px;
+      color: #f39c12;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+
+<body>
+  <h2><i class="fas fa-briefcase icon"></i>Trabaja con nosotros</h2>
+  <hr>
+
+  <form action="#">
+    <label><i class="fas fa-user icon"></i>Tu nombre</label>
+    <input type="text" placeholder="Escribe tu nombre completo">
+
+    <label><i class="fas fa-briefcase icon"></i>Tu profesión</label>
+    <input type="text" placeholder="Ej: ingeniero, vendedor">
+
+    <label><i class="fas fa-id-card icon"></i>Tu DPI</label>
+    <input type="text" placeholder="1234567890101">
+
+    <label><i class="fas fa-file-upload icon"></i>Tu CV</label>
+    <input type="file">
+
+    <label><i class="fas fa-comment icon"></i>¿Qué te gustaría hacer?</label>
+    <input type="text" placeholder="Cuéntanos qué te interesa">
+
+    <button type="submit"><i class="fas fa-paper-plane icon"></i>Postularse</button>
+    <button type="reset"><i class="fas fa-times icon"></i>Cancelar</button>
+  </form>
+</body>
+</html>
