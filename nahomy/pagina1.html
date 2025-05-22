@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lays</title>
+  <link rel="icon" href="logolays.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #fff9c4;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 20px;
+      color: #d35400;
+      font-size: 3em;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #f39c12;
+      width: 60%;
+      margin: 20px auto;
+    }
+
+    details {
+      margin: 20px auto;
+      width: 80%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    summary {
+      font-size: 1.5em;
+      cursor: pointer;
+      background-color: #f1c40f;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+
+    summary:hover {
+      background-color: #f39c12;
+    }
+
+    details[open] summary {
+      background-color: #f39c12;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 10px 0;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .card {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 200px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s;
+    }
+
+    .card img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <img src="logolays.png" width="200" alt="Logo Lays">
+  <h1>PRODUCTOS</h1>
+  <hr>
+
+  <details>
+    <summary><i class="fa-solid fa-fire-flame-curved"></i> CHEETOS</summary>
+    <div class="card-container">
+      <div class="card"><img src="cheeto1.png" alt="Cheetos 1"></div>
+      <div class="card"><img src="cheetos2.webp" alt="Cheetos 2"></div>
+      <div class="card"><img src="cheetos23.png" alt="Cheetos 3"></div>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-bolt"></i> DORITOS</summary>
+    <div class="card-container">
+      <div class="card"><img src="doritos1.png" alt="Doritos 1"></div>
+      <div class="card"><img src="doritos2.png" alt="Doritos 2"></div>
+      <div class="card"><img src="doritos3.png" alt="Doritos 3"></div>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-seedling"></i> PAPAS LAYS</summary>
+    <div class="card-container">
+      <div class="card"><img src="lays1.webp" alt="Lays 1"></div>
+      <div class="card"><img src="lays2.jpg" alt="Lays 2"></div>
+      <div class="card"><img src="lays3.webp" alt="Lays 3"></div>
+    </div>
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-cookie-bite"></i> GALLETAS</summary>
+    <div class="card-container">
+      <div class="card"><img src="galletas1.webp" alt="Galletas 1"></div>
+      <div class="card"><img src="galletas2.webp" alt="Galletas 2"></div>
+      <div class="card"><img src="galletas3.webp" alt="Galletas 3"></div>
+    </div>
+  </details>
+</body>
+</html>

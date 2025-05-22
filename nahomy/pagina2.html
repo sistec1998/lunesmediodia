@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lays</title>
+  <link rel="icon" href="logolays.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #fff9c4;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      color: #d35400;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #f39c12;
+      margin: 20px 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    input:focus {
+      border-color: #f39c12;
+      outline: none;
+      box-shadow: 0 0 5px #f39c12aa;
+    }
+
+    button {
+      background-color: #f1c40f;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f39c12;
+    }
+
+    .icon {
+      margin-right: 8px;
+      color: #e67e22;
+    }
+
+    #success-message {
+      display: none;
+      text-align: center;
+      color: green;
+      margin-top: 20px;
+      font-weight: bold;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="text-align: center;">
+      <img src="logolays.png" width="150" alt="Logo Lays">
+    </div>
+    <h1><i class="fa-solid fa-briefcase"></i> TRABAJA CON NOSOTROS</h1>
+    <hr>
+
+    <form id="jobForm">
+      <label><i class="fa-solid fa-user icon"></i>Tu Nombre</label>
+      <input type="text" required>
+
+      <label><i class="fa-solid fa-graduation-cap icon"></i>Tu Profesión</label>
+      <input type="text" required>
+
+      <label><i class="fa-solid fa-id-card icon"></i>Tu DPI</label>
+      <input type="text" required>
+
+      <label><i class="fa-solid fa-file icon"></i>Tu CV</label>
+      <input type="file" required>
+
+      <label><i class="fa-solid fa-comment-dots icon"></i>¿Qué te gustaría hacer?</label>
+      <input type="text" required>
+
+      <button type="submit">Postularse</button>
+      <button type="reset">Cancelar</button>
+    </form>
+
+    <div id="success-message">✅ Enviado con éxito</div>
+  </div>
+
+  <script>
+    const form = document.getElementById('jobForm');
+    const message = document.getElementById('success-message');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Detiene el envío real
+      message.style.display = 'block';
+      form.reset(); // Limpia el formulario
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lays</title>
+  <link rel="icon" href="logolays.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #fffde7; /* Fondo amarillo pálido */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      background-color: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      animation: slideDown 1s ease-in-out;
+    }
+
+    img {
+      width: 200px;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      color: #e67e22;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #f39c12;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    hr {
+      width: 600px;
+      border: none;
+      border-top: 2px solid #f1c40f;
+      margin: 20px auto;
+    }
+
+    ol, ul {
+      text-align: left;
+      display: inline-block;
+      font-size: 18px;
+      padding-left: 20px;
+      color: #555;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    li {
+      margin-bottom: 10px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    li:hover {
+      transform: scale(1.05);
+      color: #d35400;
+    }
+
+    li::before {
+      margin-right: 8px;
+      color: #f39c12;
+    }
+
+    ol li::before {
+      content: "🍪 ";
+    }
+
+    ul li::before {
+      content: "🍬 ";
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logolays.png" alt="Logo Lays">
+    <h1><i class="fa-solid fa-star"></i> Más Sabor</h1>
+    <hr>
+
+    <ol>
+      <h2><i class="fa-solid fa-cookie"></i> Galletas</h2>
+      <li>Choki</li>
+      <li>Arcoiris</li>
+      <li>Emperador</li>
+      <li>Chiki</li>
+    </ol>
+<br>
+    <ul>
+      <h2><i class="fa-solid fa-candy-cane"></i> Golosinas</h2>
+      <li>Fiesta</li>
+      <li>Detodito</li>
+      <li>Crujito</li>
+    </ul>
+  </div>
+</body>
+</html>
