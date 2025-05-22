@@ -1,180 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIAJES</title>
-    <link rel="icon" href="logo.png">
-    <!-- Enlace a FontAwesome para los íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <title>LAYS</title>
+  <link rel="icon" href="LOGO LAYS.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-        h1 {
-            color: #2c3e50;
-        }
+    h1 {
+      background-color: #ffd700;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+      text-shadow: 1px 1px 2px #fff;
+    }
 
-        h2 {
-            color: #34495e;
-        }
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        /* Estilo de las imágenes */
-        img {
-            width: 300px;
-            height: 200px;
-            transition: transform 0.3s ease, filter 0.3s ease;
-            border-radius: 8px;
-        }
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
 
-        /* Aplicar un difuminado de color azul y negro a las imágenes */
-        img:hover {
-            filter: blur(5px) brightness(80%) contrast(110%) sepia(30%) saturate(120%) hue-rotate(180deg);
-        }
+    summary {
+      font-size: 1.5em;
+      cursor: pointer;
+      background-color: #ffcc00;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 10px auto;
+      width: 60%;
+      transition: background-color 0.3s ease;
+    }
 
-        /* Efecto de animación para los detalles */
-        details {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            transition: background-color 0.3s ease;
-        }
+    summary:hover {
+      background-color: #ffa500;
+    }
 
-        details:hover {
-            background-color: #e0e0e0;
-        }
+    details {
+      margin-bottom: 20px;
+    }
 
-        summary {
-            font-weight: bold;
-            cursor: pointer;
-            color: #2980b9;
-            font-size: 20px;
-        }
-
-        summary:hover {
-            color: #3498db;
-        }
-
-        /* Añadir iconos a los títulos */
-        summary::before {
-            content: '\f0c9';
-            font-family: FontAwesome;
-            padding-right: 10px;
-            color: #2980b9;
-        }
-
-        /* Animación cuando se abre un detalle */
-        details[open] summary::before {
-            content: '\f00d'; /* Ícono de cerrar */
-        }
-
-        /* Estilo para los precios y otros detalles */
-        .price, .duration, .people {
-            margin: 5px 0;
-        }
-
-        /* Estilo de los contenedores de galería */
-        .gallery {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        /* Botón para volver arriba */
-        .back-to-top {
-            display: block;
-            text-align: center;
-            padding: 10px;
-            margin: 20px 0;
-            background-color: #2980b9;
-            color: white;
-            font-size: 18px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .back-to-top:hover {
-            background-color: #3498db;
-        }
-    </style>
+    hr {
+      width: 60%;
+      border: 1px solid #ccc;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
-    <center>
-        <!-- Título y Logo -->
-        <img src="logo.png" width="300" alt="Logo">
-        <hr>
-        <h1>LUGARES TURISTICOS</h1>
+  <img src="LOGO LAYS.png" width="200" alt="Logo LAYS">
+  <h1>PRODUCTOS</h1>
+  <hr>
 
-        <!-- Detalle Antigua Guatemala -->
-        <details>
-            <summary>ANTIGUA GUATEMALA</summary>
-            <div class="price"><h2>PRECIO: Q5000</h2></div>
-            <div class="duration"><h2>DURACIÓN: 5 días</h2></div>
-            <div class="people"><h2>PERSONAS: 4 personas</h2></div>
-            <h2>GALERÍA</h2>
-            <div class="gallery">
-                <img src="otra imagende guate.webp" alt="Antigua Guatemala 1">
-                <img src="antigua guatemala.jpg" alt="Antigua Guatemala 2">
-            </div>
-        </details>
+  <details>
+    <summary>🔥 CHEETOS</summary>
+    <img src="cheetos de cheez puffs.webp" alt="Cheetos Cheez Puffs">
+    <img src="cheetos de crunchy.png" alt="Cheetos Crunchy">
+    <img src="cheetos.png" alt="Cheetos">
+  </details>
 
-        <br>
+  <details>
+    <summary>🌶️ DORITOS</summary>
+    <img src="doritos mexicana.png" alt="Doritos Mexicana">
+    <img src="doritos queso.jpg" alt="Doritos Queso">
+    <img src="doritos.png" alt="Doritos">
+  </details>
 
-        <!-- Detalle Castillo de San Felipe, Izabal -->
-        <details>
-            <summary>CASTILLO DE SAN FELIPE, IZABAL</summary>
-            <div class="price"><h2>PRECIO: Q3000</h2></div>
-            <div class="duration"><h2>DURACIÓN: 4 días</h2></div>
-            <div class="people"><h2>PERSONAS: 5 personas</h2></div>
-            <h2>GALERÍA</h2>
-            <div class="gallery">
-                <img src="castillo.jpg" alt="Castillo San Felipe 1">
-                <img src="el mismo castillo.jpeg" alt="Castillo San Felipe 2">
-            </div>
-        </details>
+  <details>
+    <summary>🥔 PAPAS LAYS</summary>
+    <img src="papas azules.jpg" alt="Papas Azules">
+    <img src="papas lays.png" alt="Papas Lays">
+    <img src="papas picantes.png" alt="Papas Picantes">
+  </details>
 
-        <br>
-
-        <!-- Detalle Monterrico, Santa Rosa -->
-        <details>
-            <summary>MONTERRICO, SANTA ROSA</summary>
-            <div class="price"><h2>PRECIO: Q4000</h2></div>
-            <div class="duration"><h2>DURACIÓN: 5 días</h2></div>
-            <div class="people"><h2>PERSONAS: 5 personas</h2></div>
-            <h2>GALERÍA</h2>
-            <div class="gallery">
-                <img src="santa rosa.jpg" alt="Monterrico 1">
-                <img src="santa rosa 2.webp" alt="Monterrico 2">
-            </div>
-        </details>
-
-        <br>
-
-        <!-- Detalle Tikal, Petén -->
-        <details>
-            <summary>TIKAL, PETÉN</summary>
-            <div class="price"><h2>PRECIO: Q5000</h2></div>
-            <div class="duration"><h2>DURACIÓN: 5 días</h2></div>
-            <div class="people"><h2>PERSONAS: 5 personas</h2></div>
-            <h2>GALERÍA</h2>
-            <div class="gallery">
-                <img src="peten.jpg" alt="Tikal 1">
-                <img src="tikal.webp" alt="Tikal 2">
-            </div>
-        </details>
-
-        <br>
-
-        <!-- Enlace para volver arriba -->
-        <a href="#top" class="back-to-top">Volver arriba</a>
-    </center>
+  <details>
+    <summary>🍪 GALLETAS</summary>
+    <img src="galletas.png" alt="Galletas">
+    <img src="galletas moradas.png" alt="Galletas Moradas">
+    <img src="doble premio.png" alt="Doble Premio">
+  </details>
 </body>
 </html>

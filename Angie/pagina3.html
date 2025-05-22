@@ -1,144 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="logo.png">
-  <title>VIAJE</title>
+    <meta charset="UTF-8">
+    <title>LAYS</title>
+    <link rel="icon" href="LOGO LAYS.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-  <!-- Estilos en CSS -->
-  <style>
-    /* Estilos generales */
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #00aaff, #0077cc);
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Fredoka', sans-serif;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            color: #4a2c2a;
+            text-align: center;
+            padding: 20px;
+        }
 
-    h1, h2 {
-      color: #f7f7f7;
-    }
+        img {
+            width: 250px;
+            transition: transform 0.5s ease-in-out;
+        }
 
-    a {
-      color: #ffcc00;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
-      transition: color 0.3s ease-in-out;
-    }
+        img:hover {
+            transform: scale(1.1);
+        }
 
-    a:hover {
-      color: #ff9900;
-    }
+        h1 {
+            font-size: 3em;
+            color: #ff5722;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            margin-bottom: 0;
+        }
 
-    /* Transición y tamaño de imagen estándar */
-    img {
-      width: 250px;  /* Tamaño estándar */
-      height: auto;
-      border-radius: 15px;  /* Bordes redondeados */
-      transition: transform 0.5s ease-in-out, filter 0.3s ease;
-    }
+        h2 {
+            color: #ff9800;
+            margin-top: 40px;
+        }
 
-    img:hover {
-      transform: scale(1.1);
-      filter: blur(3px);
-    }
+        hr {
+            width: 60%;
+            height: 4px;
+            background-color: #ffcc80;
+            border: none;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
 
-    /* Difuminado de azul y celeste */
-    .blur-background {
-      background: rgba(0, 0, 255, 0.1);
-      padding: 10px;
-      border-radius: 15px;
-    }
+        ol, ul {
+            list-style-position: inside;
+            background: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
 
-    /* Estilo para el marquee */
-    marquee img {
-      margin: 0 15px;
-      border-radius: 10px;
-    }
+        ol:hover, ul:hover {
+            transform: translateY(-5px);
+        }
 
-    /* Animación de los íconos */
-    .icono {
-      font-size: 30px;
-      margin-right: 10px;
-      transition: transform 0.3s ease-in-out;
-    }
+        li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
 
-    .icono:hover {
-      transform: scale(1.3);
-    }
+        li::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 10px;
+            color: #e65100;
+        }
 
-    /* Botón de búsqueda */
-    button {
-      padding: 10px 20px;
-      background-color: #00aaff;
-      border: none;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+        ol li::before {
+            content: "\f7c9"; /* cookie icon */
+        }
 
-    button:hover {
-      background-color: #0077cc;
-    }
+        ul li::before {
+            content: "\f563"; /* candy icon */
+        }
 
-    /* Listado de lugares */
-    ol {
-      text-align: left;
-      display: inline-block;
-      margin-top: 30px;
-    }
-
-    .marquee-container {
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-  </style>
+        .blur-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(6px);
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
 
-  <center>
-    <img src="logo.png" alt="Logo" width="300">
-    <br><br>
+    <div class="blur-background"></div>
 
-    <a href="pagina1.html">LUGARES</a>
-    <a href="pagina2.html">RESERVAR</a>
+    <img src="LOGO LAYS.png" alt="Logo LAYS">
+    <h1>MÁS SABOR</h1>
     <hr>
 
-    <h1>Nuestra Misión</h1>
-    <p>Nuestra misión es ofrecer experiencias de viaje memorables, accesibles y personalizadas, conectando a nuestros clientes con destinos únicos alrededor del mundo mediante un servicio confiable, innovador y centrado en sus necesidades.</p>
-    <br>
-
-    <h1>VISIÓN</h1>
-    <p>Ser la agencia de viajes líder en la creación de experiencias únicas e inolvidables, reconocida por su innovación, compromiso con la sostenibilidad y excelencia en el servicio al cliente a nivel nacional e internacional.</p>
-    <br>
-
-    <label>¿A DÓNDE TE GUSTARÍA IR?</label>
-    <input type="text">
-    <button>Buscar</button>
-    <hr>
-
-    <h2>¡Por si te interesa!</h2>
-    <div class="marquee-container">
-      <marquee><img src="riachuelo.jpg" alt="Riachuelo"></marquee>
-      <marquee><img src="la misma torre.webp" alt="La misma torre"></marquee>
-      <marquee><img src="imagen.jpg" alt="Imagen" height="200"></marquee>
-    </div>
-
-    <h2>Lo más visitado</h2>
+    <h2>GALLETAS</h2>
     <ol>
-      <li>PANAJACHEL</li>
-      <li>RÍO DULCE</li>
-      <li>CHAMPEY</li>
-      <li>LAGO ITZÁ-FLORES</li>
+        <li>Chokis</li>
+        <li>Arcoiris</li>
+        <li>Emperador</li>
+        <li>Chiki</li>
     </ol>
 
-  </center>
+    <h2>GOLOSINAS</h2>
+    <ul>
+        <li>Fiesta</li>
+        <li>De Todito</li>
+        <li>Crujito</li>
+    </ul>
 
 </body>
 </html>

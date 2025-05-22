@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>LAYS</title>
+  <link rel="icon" href="LOGO LAYS.png">
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #000000cc, #ffeb3bcc); /* Difuminado negro y amarillo */
+      color: white;
+      animation: fadeIn 2s ease-in;
+    }
+
+    img {
+      width: 300px;
+      height: 290px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1, h2 {
+      transition: color 0.3s;
+    }
+
+    h1:hover, h2:hover {
+      color: yellow;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 10px 20px;
+      background-color: #ffeb3b;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      background-color: #fff176;
+      transform: scale(1.1);
+    }
+
+    marquee img {
+      margin: 0 20px;
+    }
+
+    hr {
+      border: 1px solid yellow;
+      width: 80%;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <center>
+    <img src="LOGO LAYS.png" alt="Logo LAYS">
+
+    <h1><i class="fas fa-star"></i> BIENVENIDO <i class="fas fa-star"></i></h1>
+    <hr>
+
+    <a href="pagina1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+    <a href="pagina2.html"><i class="fas fa-briefcase"></i> TRABAJOS</a>
+    <a href="pagina3.html"><i class="fas fa-users"></i> MÁS SOBRE NOSOTROS</a>
+
+    <h2><i class="fas fa-bullseye"></i> MISIÓN</h2>
+    <p>"Endulzar la vida de nuestros clientes ofreciendo golosinas de alta calidad, elaboradas con ingredientes seleccionados,
+    que despierten la alegría, la nostalgia y el placer en cada bocado. Nos comprometemos con la innovación, la seguridad alimentaria
+    y la responsabilidad social."</p>
+
+    <h2><i class="fas fa-eye"></i> VISIÓN</h2>
+    <p>"Ser la empresa líder en el mercado de golosinas en América Latina, reconocida por su creatividad, compromiso con la calidad 
+    y por generar experiencias dulces que unan generaciones."</p>
+
+    <hr>
+
+    <h2><i class="fas fa-candy-cane"></i> PRUEBA LO NUEVO</h2>
+
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <img src="papas lays.png" alt="Papas Lays">
+      <img src="galletas.png" alt="Galletas">
+      <img src="cheetos.png" alt="Cheetos">
+    </marquee>
+  </center>
+
+</body>
+</html>
