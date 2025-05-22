@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYS</title>
+    <link rel="icon" href="Logo-lays.png">
+    <style>
+        /* Fondo degradado animado */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(270deg, #f9d423, #ff4e50);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #333;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px #ff9900;
+        }
+
+        hr {
+            border: 2px solid white;
+            width: 70%;
+        }
+
+        details {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 10px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        details:hover {
+            transform: scale(1.02);
+        }
+
+        summary {
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: #e53935;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <center>
+       <img src="Logo-lays.png" width="300" alt="Logo LAYS">
+       <h2>Productos</h2>
+       <hr>
+
+       <details> 
+           <summary>Cheetos</summary>
+           <img src="chetos picantas.webp" width="300">
+           <img src="chetos queso.jpg" width="300">
+           <img src="chetos verdes.webp" width="300">
+       </details>
+
+       <details> 
+           <summary>Doritos</summary>
+           <img src="doritos v1.jpg" width="300">
+           <img src="doritos v2.jpg" width="300">
+           <img src="doritos v3.webp" width="300">
+       </details>
+
+       <details> 
+           <summary>Papas LAYS</summary>
+           <img src="papas v1.webp" width="300">
+           <img src="papas v2.jpg" width="300">
+           <img src="papas v3.webp" width="300">
+       </details>
+
+       <details> 
+           <summary>Galletas</summary>
+           <img src="g v2.webp" width="300">
+           <img src="g v3.png" width="300">
+           <img src="g v1.webp" width="300">
+       </details>
+   </center> 
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAYS</title>
+  <link rel="icon" href="Logo-lays.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffe259, #ffa751);
+      background-size: 400% 400%;
+      animation: bgAnimation 20s ease infinite;
+      color: #333;
+    }
+
+    @keyframes bgAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    center {
+      padding: 40px 0;
+    }
+
+    img {
+      width: 300px;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 70%;
+      border: 2px solid white;
+      margin: 20px 0;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 15px;
+      width: 400px;
+      margin: auto;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 15px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ffa751;
+      border-radius: 8px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="file"]:focus {
+      border-color: #ff5722;
+      box-shadow: 0 0 10px rgba(255, 87, 34, 0.4);
+      outline: none;
+    }
+
+    button {
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin: 10px 5px 0;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover {
+      background-color: #e65100;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="Logo-lays.png" alt="Logo LAYS">
+    <hr>
+    <form>
+      <label>Tu nombre</label>
+      <input type="text" placeholder="Ingresa tu nombre">
+
+      <label>Tu profesión</label>
+      <input type="text" placeholder="Ej. Ingeniero, Diseñador">
+
+      <label>Tu DPI</label>
+      <input type="text" placeholder="Ej. 1234567890101">
+
+      <label>Tu CV</label>
+      <input type="file">
+
+      <label>¿Qué te gustaría hacer?</label>
+      <input type="text" placeholder="Escribe tu objetivo laboral">
+
+      <button type="submit">Postularse</button>
+      <button type="reset">Cancelar</button>
+    </form>
+  </center>
+</body>
+</html>

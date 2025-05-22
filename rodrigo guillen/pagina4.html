@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <link rel="icon" href="Logo-lays.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+            margin: 0;
+            color: #333;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animación para la entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1, h2 {
+            color: #d32f2f;
+            font-size: 2.5em;
+            margin-top: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #555;
+            max-width: 80%;
+            margin: 20px auto;
+            text-align: justify;
+            transition: color 0.3s ease;
+        }
+
+        p:hover {
+            color: #d32f2f;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #ffeb3b;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #f57f17;
+            transform: scale(1.05);
+        }
+
+        /* Marquee */
+        .marquee {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .marquee img {
+            width: 300px;
+            margin: 0 20px;
+            animation: scroll 15s linear infinite;
+            transition: transform 0.3s ease;
+        }
+
+        .marquee img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #ffeb3b;
+            margin: 30px auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #388e3c;
+            transform: scale(1.1);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1em;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 300px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="text-align: center;">
+        <img src="Logo-lays.png" width="700" alt="Logo Lays">
+        <marquee> BIENVENIDOS </marquee>
+
+        <hr>
+
+        <a href="pagina 1.html">Productos</a>
+        <a href="pagina2.html">Trabajos</a>
+        <a href="pagina4.html">Más Sabor</a>
+
+        <h2>Misión</h2>
+        <p>
+            "En [Nombre de la Empresa], nuestra misión es brindar momentos de felicidad y disfrute a través de productos de golosinas de alta calidad, innovadores y deliciosos. Nos comprometemos a ofrecer experiencias únicas a nuestros clientes, satisfaciendo sus antojos con sabores que despiertan sonrisas y creando momentos memorables para todas las edades. Trabajamos con pasión y responsabilidad para ser una empresa líder en el sector, promoviendo el bienestar y la satisfacción de nuestros consumidores, siempre con un enfoque en la excelencia y la mejora continua."
+        </p>
+
+        <h2>Visión</h2>
+        <p>
+            "Ser la marca líder en el mercado de golosinas, reconocida por su innovación, calidad y compromiso con la satisfacción de nuestros consumidores. Aspiramos a inspirar momentos de alegría y compartir experiencias únicas a través de nuestros productos, expandiendo nuestra presencia a nivel global, manteniendo siempre los más altos estándares de responsabilidad social y ambiental. Queremos ser la primera opción de golosinas para todas las generaciones, ofreciendo sabores y productos que marquen tendencias y acompañen a nuestros clientes en sus mejores momentos."
+        </p>
+
+        <hr>
+
+        <h2>Pruéba lo Nuevo</h2>
+        <div class="marquee">
+            <img src="chetos picantas.webp" alt="Chetos Picantes">
+            <img src="g v1.webp" alt="Golocina 1">
+            <img src="papas v2.jpg" alt="Papas">
+        </div>
+
+        <h2>¿Qué duda tienes?</h2>
+        <input type="text" placeholder="Escribe tu consulta...">
+        <br>
+        <button>Buscar</button>
+    </div>
+
+</body>
+</html>
