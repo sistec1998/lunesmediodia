@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <link rel="icon" href="lays.jpg">
+    <style>
+        body {
+            background: linear-gradient(45deg, #FF8C00, #FF6347); /* Fondo degradado */
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        h1, p {
+            animation: fadeIn 2s ease-out;
+        }
+
+        h1 {
+            color: #FFDD00;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            padding: 10px;
+        }
+
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 1.5em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        img {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        marquee {
+            font-size: 2em;
+            color: #ffdddd;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        hr {
+            border: 1px solid #FFD700;
+            width: 80%;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Movimiento de texto de bienvenida */
+        .welcome-text {
+            animation: moveIn 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes moveIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="lays.jpg" width="300">
+        <h1 class="welcome-text">Bienvenidos</h1>
+        <hr>
+        <a href="pagina 1.html">Productos</a>
+        <a href="pagina.html">Trabajos</a>
+        <a href="pagina 3.html">Más Sabores</a>
+        <h1>Misión</h1>
+        <p>Brindar dulzura y alegría a nuestros clientes, ofreciendo golosinas de calidad, a precios accesibles y con un servicio amigable y personalizado, para que cada experiencia sea un momento especial lleno de sabor y diversión.</p>
+        <h1>Visión</h1>
+        <p>Ser la tienda de golosinas preferida por nuestros clientes, reconocida por ofrecer una amplia variedad de productos de alta calidad.</p>
+        <hr>
+        <h1>Prueba de lo Nuevo</h1>
+        <marquee>
+            <img src="chetos.jpg" width="300">
+            <img src="doritos 2.jpg" width="300">
+            <img src="lays 3.jpg" width="300">
+        </marquee>
+    </center> 
+</body>
+</html>

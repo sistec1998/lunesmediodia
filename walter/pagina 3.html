@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <link rel="icon" href="lays.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #fff;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            animation: fadeInBackground 2s ease-out;
+        }
+
+        @keyframes fadeInBackground {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            animation: fadeInTitle 2s ease-out;
+        }
+
+        @keyframes fadeInTitle {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        hr {
+            width: 70%;
+            border: 0;
+            height: 3px;
+            background: #ff7e5f;
+            margin: 20px 0;
+            opacity: 0.7;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                width: 0;
+            }
+            to {
+                width: 70%;
+            }
+        }
+
+        ol, ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.5em;
+            line-height: 2em;
+            animation: fadeInList 2s ease-out;
+        }
+
+        ol li, ul li {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        ol li:hover, ul li:hover {
+            background-color: #ff7e5f;
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeInList {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        img {
+            margin-bottom: 30px;
+            border-radius: 50%;
+            animation: bounceIn 2s ease-out;
+        }
+
+        @keyframes bounceIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <img src="lays.jpg" width="300">
+        <h1>Más Sabor</h1>
+        <hr>
+        <h2>Galletas</h2>
+        <ol>
+            <li>Chokis</li>
+            <li>Arcoiris</li>
+            <li>Emperador</li>
+            <li>Chiki</li>
+        </ol>
+        <hr>
+        <h2>golosinas</h2>
+        <ul>
+            <li>Fiesta</li>
+            <li>Detodito</li>
+            <li>Crujitos</li>
+        </ul>
+    </center>
+</body>
+</html>
