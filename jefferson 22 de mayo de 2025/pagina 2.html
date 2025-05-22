@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lays - Trabaja con Nosotros</title>
+  <link rel="icon" href="logo.svg">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #333;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      color: #d62828;
+      margin: 20px 0 10px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    input[type="CUENTANOS QUE TE INTERESA"] {
+      width: 300px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid #ffae00;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    input[type="text"]:focus,
+    input[type="CUENTANOS QUE TE INTERESA"]:focus {
+      outline: none;
+      border-color: #ff7300;
+    }
+
+    button {
+      background-color: #ff8c00;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+      background-color: #ff7300;
+    }
+
+    .form-card {
+      background: #fffef2;
+      padding: 30px;
+      margin: 30px auto;
+      border-radius: 20px;
+      width: 400px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    hr {
+      width: 80%;
+      border: 1px solid #ff7300;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.svg" width="200" alt="Logo Lays">
+  <div class="form-card">
+    <h2>💼 TRABAJA CON NOSOTROS 🚀</h2>
+    <hr>
+
+    <label>🙋‍♂️ TU NOMBRE</label>
+    <input type="text" placeholder="Ej: Juan Pérez">
+
+    <label>👨‍💼 TU PROFESIÓN</label>
+    <input type="text" placeholder="Ej: Ingeniero de alimentos">
+
+    <label>🧾 TU CV</label>
+    <input type="file">
+
+    <label>🎯 ¿QUÉ TE GUSTARÍA HACER?</label>
+    <input type="CUENTANOS QUE TE INTERESA" placeholder="Cuéntanos tu interés">
+
+    <br><br>
+    <button>📩 Postularse</button>
+    <button>❌ Cancelar</button>
+  </div>
+</body>
+</html>
