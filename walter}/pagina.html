@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays</title>
+    <link rel="icon" href="lays.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #f0f0f0;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #fff;
+            text-shadow: 0 0 15px #ff66cc, 0 0 30px #ff66cc, 0 0 45px #ff66cc;
+            margin-bottom: 30px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 15px #ff66cc;
+            }
+            to {
+                text-shadow: 0 0 25px #ff66cc, 0 0 50px #ff66cc, 0 0 75px #ff66cc;
+            }
+        }
+
+        hr {
+            width: 80%;
+            height: 2px;
+            background-color: #ff66cc;
+            border: none;
+            margin: 20px 0;
+            opacity: 0.7;
+            animation: fadeIn 1s ease;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 600px;
+            backdrop-filter: blur(5px);
+            animation: fadeInForm 1.5s ease;
+        }
+
+        label {
+            font-size: 1.1em;
+            margin: 10px 0;
+            color: #fff;
+            display: block;
+        }
+
+        input[type="text"], input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 2px solid #333;
+            background-color: #222;
+            color: #fff;
+            font-size: 1em;
+            transition: 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="file"]:focus {
+            border-color: #ff66cc;
+            background-color: #333;
+            outline: none;
+            box-shadow: 0 0 8px #ff66cc;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 10px 5px;
+            border: none;
+            background-color: #ff66cc;
+            color: white;
+            font-size: 1.1em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff3385;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(2px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInForm {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="lays.jpg" width="200" style="animation: fadeIn 1s ease;">
+        <h1>Trabaja con nosotros</h1>
+        <hr>
+        <form>
+            <label>Tu nombre</label>
+            <input type="text" placeholder="Escribe tu nombre...">
+            <label>Tu profesión</label>
+            <input type="text" placeholder="Escribe tu profesión...">
+            <label>Tu DPI</label>
+            <input type="text" placeholder="Escribe tu DPI...">
+            <label>CV</label>
+            <input type="file">
+            <label>¿Qué te gustaría hacer?</label>
+            <input type="text" placeholder="Cuéntanos tus intereses...">
+            <div>
+                <button type="submit">Postularse</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </center>
+</body>
+</html>
