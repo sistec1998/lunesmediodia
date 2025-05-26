@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUCTOS</title>
+  <link rel="icon" href="logo1.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    img {
+      width: 150px;
+      transition: transform 0.5s ease;
+      margin-top: 20px;
+    }
+
+    img:hover {
+      transform: rotate(360deg) scale(1.1);
+    }
+
+    a {
+      margin: 10px;
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff6600;
+      transform: scale(1.1);
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #444;
+    }
+
+    hr {
+      width: 60%;
+      border: 1px solid #ccc;
+    }
+
+    form {
+      background: #ffffffcc;
+      display: inline-block;
+      padding: 20px 40px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input {
+      padding: 8px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #0066cc;
+      outline: none;
+    }
+
+    button {
+      margin: 15px 10px 0 10px;
+      padding: 10px 20px;
+      font-weight: bold;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #0052a3;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo1.png" alt="Logo">
+  
+  <div>
+    <a href="pagina1.html">PRODUCTOS</a>
+    <a href="pagina3.html">TIENDAS</a>
+    <a href="pagina4.html">MENU</a>
+  </div>
+
+  <h2>TUS COMPRAS SON SEGURAS</h2>
+  <hr>
+
+  <form>
+    <label>PRODUCTO</label>
+    <input type="text"><br>
+
+    <label>CANTIDAD</label>
+    <input type="number"><br>
+
+    <label>NUMERO DE TARJETA DE CREDITO</label>
+    <input type="number"><br>
+
+    <label>CVV</label>
+    <input type="number"><br>
+
+    <label>FECHA DE VENCIMIENTO</label>
+    <input type="date"><br>
+
+    <button type="submit">CONFIRMAR</button>
+    <button type="reset">CANCELAR</button>
+  </form>
+
+</body>
+</html>

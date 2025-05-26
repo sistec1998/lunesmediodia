@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRODUCTOS</title>
+  <link rel="icon" href="logo1.png" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f8ff, #e6f0fa);
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+      margin: 10px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff6600;
+      transform: scale(1.1);
+    }
+
+    h1 {
+      color: #004080;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    h2 {
+      color: #003366;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: #004080;
+      margin: 20px auto;
+      width: 60%;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 200px;
+      border: 2px solid #004080;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      border-color: #ff6600;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff6600;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #cce5ff;
+      margin: 5px auto;
+      padding: 10px;
+      width: 200px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    li:hover {
+      background-color: #99ccff;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo1.png" width="150" alt="Logo"><br>
+
+  <div>
+    <a href="pagina1.html">PRODUCTOS</a>
+    <a href="pagina2.html">COMPRAR</a>
+    <a href="pagina4.html">MENÚ</a>
+  </div>
+
+  <h1>¡ESTAMOS EN GUAT!</h1>
+  <hr />
+  <h2>BUSCA TU TIENDA CERCANA</h2>
+  <input type="text" placeholder="Ingresa tu ubicación">
+  <button>BUSCAR</button>
+
+  <h2>SUCURSALES</h2>
+  <div>
+    <img src="imgen1.png" width="200" alt="Mazate">
+    <h2>MAZATE</h2>
+
+    <img src="imagen2.webp" width="200" alt="Reu">
+    <h2>REU</h2>
+
+    <img src="imagen3.jpg" width="200" alt="Xela">
+    <h2>XELA</h2>
+  </div>
+
+  <hr />
+  <h2>OTRAS TIENDAS</h2>
+  <ul>
+    <li>PETÉN</li>
+    <li>JALAPA</li>
+    <li>ANTIGUA</li>
+    <li>ZACAPA</li>
+  </ul>
+
+</body>
+</html>
