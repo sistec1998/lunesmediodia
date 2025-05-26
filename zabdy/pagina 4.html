@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MENÚ</title>
+    <link rel="icon" href="logo.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #6a0dad, #b266ff);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #8e44ad;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            background-color: #a569bd;
+            transform: scale(1.05);
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2 {
+            color: #e1bee7;
+        }
+
+        p, ol {
+            width: 70%;
+            margin: auto;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        marquee img {
+            border: 3px solid white;
+            border-radius: 8px;
+        }
+
+        hr {
+            width: 80%;
+            border: 2px solid #fff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.webp" width="300" alt="Logo">
+
+    <nav>
+        <a href="pagina 1.html"><i class="fas fa-box-open"></i> PRODUCTOS</a>
+        <a href="pagina 2.html"><i class="fas fa-shopping-cart"></i> COMPRAR</a>
+        <a href="pagina 3.html"><i class="fas fa-store"></i> TIENDA</a>
+    </nav>
+
+    <h1>BIENVENIDO</h1>
+    <hr>
+
+    <h2><i class="fas fa-users"></i> QUIÉNES SOMOS</h2>
+    <p>En <strong>TecnoPlus</strong>, nos especializamos en ofrecer una amplia gama de productos electrónicos de última generación para satisfacer todas tus necesidades tecnológicas. Desde teléfonos inteligentes y laptops hasta audífonos, smartwatches y accesorios, contamos con las mejores marcas del mercado a precios competitivos. Nuestro compromiso es brindarte calidad, asesoría personalizada y un excelente servicio postventa, para que disfrutes al máximo cada uno de tus dispositivos. ¡Visítanos y descubre cómo la tecnología puede mejorar tu día a día!</p>
+
+    <h2><i class="fas fa-bullseye"></i> NUESTROS OBJETIVOS</h2>
+    <ol>
+        <li><i class="fas fa-heart"></i> SERVIR CON AMOR</li>
+        <li><i class="fas fa-hand-holding-heart"></i> BRINDAR OPORTUNIDADES</li>
+        <li><i class="fas fa-check-circle"></i> OFRECER PRODUCTOS DE CALIDAD</li>
+    </ol>
+
+    <h2><i class="fas fa-tags"></i> DESCUENTO 10%</h2>
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        <img src="img 1.jpg" width="250" alt="Producto 1">
+        <img src="camara 1.webp" width="250" alt="Cámara">
+    </marquee>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos</title>
+  <link rel="icon" href="logo.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f0fa;
+      color: #003366;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: #0066cc;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #0052a3;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    button {
+      background-color: #0073e6;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005bb5;
+    }
+
+    h1, h2 {
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    form {
+      margin: 20px;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-top: 20px;
+    }
+
+    hr {
+      border: 1px solid #0066cc;
+      margin: 30px 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <img src="logo.webp" width="300" alt="Logo">
+
+    <div>
+      <a href="pagina 2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+      <a href="pagina 3.html"><i class="fas fa-store"></i> Tienda</a>
+      <a href="pagina 4.html"><i class="fas fa-bars"></i> Menú</a>
+    </div>
+
+    <hr>
+    <h1><i class="fas fa-globe"></i> UN MUNDO PARA ELEGIR</h1>
+    <hr>
+
+    <form>
+      <label><i class="fas fa-search"></i> ¿QUÉ BUSCAS?</label><br>
+      <input type="text">
+      <button><i class="fas fa-search"></i> Buscar</button>
+    </form>
+
+    <h2><i class="fas fa-laptop"></i> COMPUTADORAS</h2>
+    <img src="IMAGEN 1.png" width="300" alt="">
+    <img src="IMAGEN 2.png" width="300" alt="">
+    <img src="IMAGEN.webp" width="200" alt="">
+
+    <h2><i class="fas fa-volume-up"></i> BOCINAS</h2>
+    <img src="LOGO 1.png" width="300" alt="">
+    <img src="LOGO 2.webp" width="300" alt="">
+    <img src="LOGO3.png" width="300" alt="">
+
+    <h2><i class="fas fa-music"></i> INSTRUMENTOS MUSICALES</h2>
+    <img src="imagen 3.png" width="300" alt="">
+    <img src="imagen 4.png" width="300" alt="">
+    <img src="imagen 6.png" width="300" alt="">
+
+    <h2><i class="fas fa-helicopter"></i> DRONES</h2>
+    <img src="dron 1" width="300" alt="">
+    <img src="dron 2.png" width="300" alt="">
+    <img src="dron 3.png" width="300" alt="">
+
+    <hr>
+
+    <h2><i class="fas fa-home"></i> PARA EL HOGAR</h2>
+
+    <details>
+      <summary><i class="fas fa-snowflake"></i> REFRIGERADORAS</summary>
+      <img src="REFRI 1.png" width="300" alt="">
+      <img src="REFRI 2.png" width="300" alt="">
+      <img src="REFRI 3.jpg" width="300" alt="">
+    </details><br><br>
+
+    <details>
+      <summary><i class="fas fa-tv"></i> TV</summary>
+      <img src="tv 1.webp" width="300" alt="">
+      <img src="tv 2.webp" width="300" alt="">
+      <img src="tv 3.webp" width="300" alt="">
+    </details><br><br>
+
+    <details>
+      <summary><i class="fas fa-water"></i> LAVADORAS</summary>
+      <img src="lavadora 1.png" width="300" alt="">
+      <img src="lavadora 2.png" width="300" alt="">
+      <img src="lavador 3.webp" width="300" alt="">
+    </details>
+  </center>
+</body>
+</html>
