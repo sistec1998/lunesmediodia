@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comprar</title>
+  <link rel="icon" href="imagen.png">
+  <style>
+    /* Fondo celeste con animación de desvanecido */
+    body {
+      background-color: #b3e5fc;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    a {
+      margin: 10px;
+      text-decoration: none;
+      color: #01579b;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+      color: #0288d1;
+      transform: scale(1.1);
+    }
+
+    h1 {
+      color: #01579b;
+      transition: transform 0.3s ease;
+    }
+
+    h1:hover {
+      transform: scale(1.05);
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.5s ease;
+    }
+
+    form:hover {
+      transform: scale(1.02);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #0288d1;
+      outline: none;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0288d1;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0277bd;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="imagen.png" width="300"><br><br><br>
+
+    <a href="pagina 1.html">Productos</a>
+    <a href="pagina 3.html">Tienda</a>
+    <a href="pagina 4.html">Menú</a>
+
+    <h1>Tus compras son seguras</h1>
+    <hr style="width: 80%; border: 1px solid #0288d1;">
+
+    <form>
+      <label>Producto</label>
+      <input type="text" required>
+
+      <label>Cantidad</label>
+      <input type="number" required>
+
+      <label>Número de tarjeta</label>
+      <input type="number" required>
+
+      <label>CVV</label>
+      <input type="number" required>
+
+      <label>Fecha de vencimiento</label>
+      <input type="date" required>
+
+      <button type="submit">Confirmar</button><br>
+      <button type="reset">Cancelar</button>
+    </form>
+  </center>
+</body>
+</html>

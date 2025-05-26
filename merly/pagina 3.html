@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda</title>
+    <link rel="icon" href="imagen.png">
+    <style>
+        body {
+            background-color: #e6ccff; /* Fondo lila */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1, h2 {
+            transition: color 0.5s ease-in-out;
+        }
+
+        h1:hover, h2:hover {
+            color: #8e44ad; /* Color oscuro al pasar el mouse */
+        }
+
+        a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #5e35b1;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #311b92;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            transition: transform 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #ba68c8;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #9c27b0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #ccc;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <img src="imagen.png" width="300" height="200" alt="Logo">
+    <br><br>
+    <a href="pagina 1.html">Productos</a>
+    <a href="pagina 2.html">Comprar</a>
+    <a href="pagina 4.html">Menú</a>
+
+    <h1>¡Estamos en toda Guate!</h1>
+    <hr>
+
+    <form>
+        <label>Busca tu tienda cercana</label>
+        <input type="text">
+        <button>Buscar</button>
+    </form>
+
+    <h2>Sucursales</h2>
+    <img src="tienda.webp" alt="Mazate">
+    <p>Mazate</p>
+
+    <img src="tienda  1.webp" alt="Reu">
+    <p>Reu</p>
+
+    <img src="tienda 2.jpg" alt="Xela">
+    <p>Xela</p>
+
+    <hr>
+    <h2>Otras tiendas</h2>
+    <ul>
+        <li>Peten</li>
+        <li>Jalapa</li>
+        <li>Antigua</li>
+        <li>Zacapa</li>
+    </ul>
+</body>
+</html>

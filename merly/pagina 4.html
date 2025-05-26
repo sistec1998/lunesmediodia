@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú</title>
+  <link rel="icon" href="imagen.png">
+  <style>
+    body {
+      background-color: #E6CCFF; /* Lila suave */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4B0082;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #8A2BE2;
+    }
+
+    img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .slider {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      max-width: 640px;
+      margin: 20px auto;
+    }
+
+    .slider img {
+      animation: slide 10s linear infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    hr {
+      margin: 30px 0;
+      border: none;
+      height: 2px;
+      background-color: #ccc;
+    }
+
+    ol {
+      text-align: left;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imagen.png" alt="Logo"><br><br>
+
+  <a href="pagina 1.html">Productos</a>
+  <a href="pagina 2.html">Comprar</a>
+  <a href="pagina 3.html">Tiendas</a>
+
+  <h1>BIENVENIDO</h1>
+  <hr>
+
+  <h2>¿Quiénes somos?</h2>
+  <p>"En nuestra tienda de electrónica encontrarás una amplia variedad de productos de última 
+    tecnología diseñados para facilitar tu vida diaria. Desde smartphones, laptops y accesorios, 
+    hasta televisores, sistemas de sonido y electrodomésticos inteligentes, 
+    ofrecemos soluciones modernas y de alta calidad para el hogar, la oficina 
+    y el entretenimiento. Contamos 
+    con marcas reconocidas y un equipo dispuesto
+    a asesorarte para que encuentres exactamente lo que necesitas al mejor precio."</p>
+
+  <h2>Nuestros Objetivos</h2>
+  <ol>
+    <li>Servir con amor</li>
+    <li>Brindar oportunidades</li>
+    <li>Ofrecer productos de calidad</li>
+  </ol>
+
+  <hr>
+
+  <h2>¡Descuento del 10%!</h2>
+
+  <div class="slider">
+    <img src="video.jpg" alt="Video promocional">
+    <img src="camara.avif" alt="Cámara en oferta">
+  </div>
+
+</body>
+</html>
