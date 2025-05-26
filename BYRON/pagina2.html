@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comprar</title>
+  <link rel="icon" href="logo.html">
+
+  <style>
+    body {
+      background-color: teal;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      transition: background-color 1s ease;
+    }
+
+    a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: lightyellow;
+    }
+
+    h2 {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      animation: slideIn 1.5s ease-out;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      padding: 5px;
+      margin-top: 5px;
+      width: 200px;
+      border-radius: 5px;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      background-color: #e0ffff;
+      color: black;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ffffff;
+      color: teal;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: lightyellow;
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 80%;
+      border: 1px solid white;
+      margin-bottom: 30px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <a href="PAGINA1.html">Productos</a>
+  <a href="pagina3.html">Tiendas</a>
+  <a href="pagina4.html">Menú</a>
+
+  <h2>Tus compras son seguras</h2>
+  <hr>
+
+  <form>
+    <label>Producto</label>
+    <input type="text" required><br>
+
+    <label>Cantidad</label>
+    <input type="number" required><br>
+
+    <label>Número de tarjeta</label>
+    <input type="number" required><br>
+
+    <label>CVV</label>
+    <input type="text" required><br>
+
+    <label>Fecha de vencimiento</label>
+    <input type="date" required><br>
+
+    <button type="submit">Confirmar</button>
+    <button type="reset">Cancelar</button>
+  </form>
+</body>
+</html>
