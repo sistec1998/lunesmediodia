@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda</title>
+  <link rel="icon" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f9ff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    img {
+      width: 150px;
+      margin-top: 20px;
+    }
+
+    a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    h1 {
+      color: #333;
+      margin: 20px 0 10px;
+    }
+
+    h2 {
+      color: #555;
+    }
+
+    hr {
+      width: 80%;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+    }
+
+    form {
+      background-color: #fff;
+      width: 300px;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      transition: all 0.3s;
+    }
+
+    details {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    input[type="text"] {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin: 5px 0;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .sucursal {
+      display: inline-block;
+      margin: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .sucursal img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .sucursal:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo Empresa">
+
+  <div>
+    <a href="pagina1.html">🛍 Productos</a>
+    <a href="pagina2.html">💳 Comprar</a>
+    <a href="pagina4.html">📋 Menú</a>
+  </div>
+
+  <h1>📍 ¡Estamos en toda Guate!</h1>
+  <hr>
+
+  <form onsubmit="buscarTienda(event)">
+    <details>🔎 Busca tu tienda cercana</details>
+    <input type="text" id="busqueda" placeholder="Ej. Xela, Reu, Mazate..." required>
+    <button type="submit">Buscar</button>
+  </form>
+
+  <h1>🏬 Sucursales</h1>
+
+  <div class="sucursal">
+    <img src="elec1.webp" alt="Mazate">
+    <h2>Mazate</h2>
+  </div>
+  <div class="sucursal">
+    <img src="elec2.webp" alt="Reu">
+    <h2>Reu</h2>
+  </div>
+  <div class="sucursal">
+    <img src="elec3.jpg" alt="Xela">
+    <h2>Xela</h2>
+  </div>
+
+  <hr>
+  <h1>🗺️ Otras tiendas</h1>
+  <ul>
+    <li>Peten</li>
+    <li>Jalapa</li>
+    <li>Antigua</li>
+    <li>Zacapa</li>
+  </ul>
+
+  <script>
+    function buscarTienda(event) {
+      event.preventDefault();
+      const input = document.getElementById("busqueda").value;
+      if (input.trim() !== "") {
+        Swal.fire({
+          icon: 'info',
+          title: 'Resultado de búsqueda',
+          text: `🔍 Buscando tienda en: ${input}`,
+          confirmButtonColor: '#007BFF'
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>

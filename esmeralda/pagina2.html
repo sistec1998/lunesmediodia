@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comprar</title>
+  <link rel="icon" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f0f4f8;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    img {
+      width: 150px;
+      margin-top: 20px;
+    }
+
+    h1 {
+      color: #333;
+      margin-top: 10px;
+    }
+
+    a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    form {
+      background: #ffffff;
+      padding: 20px;
+      margin: 30px auto;
+      width: 300px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    button {
+      width: 48%;
+      padding: 10px;
+      margin: 10px 1%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:first-of-type {
+      background-color: #28a745;
+      color: white;
+    }
+
+    button:first-of-type:hover {
+      background-color: #218838;
+    }
+
+    button:last-of-type {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    button:last-of-type:hover {
+      background-color: #c82333;
+    }
+
+    hr {
+      width: 80%;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo">
+  <div>
+    <a href="pagina1.html">🛍 Productos</a>
+    <a href="pagina3.html">🏪 Tienda</a>
+    <a href="pagina4.html">📋 Menú</a>
+  </div>
+
+  <h1>✔ Tus compras son seguras</h1>
+  <hr>
+
+  <form id="compraForm">
+    <label>Producto</label>
+    <input type="text" required>
+
+    <label>Cantidad</label>
+    <input type="number" required>
+
+    <label>N. Tarjeta</label>
+    <input type="number" required>
+
+    <label>CVV</label>
+    <input type="number" required>
+
+    <label>Fecha de vencimiento</label>
+    <input type="date" required>
+
+    <button type="button" onclick="confirmarCompra()">✅ Confirmar</button>
+    <button type="button" onclick="cancelarCompra()">❌ Cancelar</button>
+  </form>
+
+  <script>
+    function confirmarCompra() {
+      Swal.fire({
+        icon: 'success',
+        title: '¡Confirmado con éxito!',
+        text: '🎉 Tu compra ha sido procesada.',
+        confirmButtonColor: '#28a745'
+      });
+    }
+
+    function cancelarCompra() {
+      Swal.fire({
+        icon: 'error',
+        title: 'Compra cancelada',
+        text: '😞 Se ha cancelado tu compra.',
+        confirmButtonColor: '#dc3545'
+      });
+    }
+  </script>
+</body>
+</html>

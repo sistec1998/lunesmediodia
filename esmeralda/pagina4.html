@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ElectroMundo - Menú</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header img {
+            width: 200px;
+            margin: 20px auto;
+            display: block;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 10px;
+            color: #333;
+            animation: fadeIn 1.5s;
+        }
+
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+
+        p, ol {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1em;
+            line-height: 1.6em;
+            padding: 0 20px;
+            animation: fadeIn 2s;
+        }
+
+        ol li {
+            margin: 10px 0;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        .descuento {
+            margin-top: 30px;
+            font-size: 1.5em;
+            color: #e91e63;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        .marquee {
+            margin-top: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+        }
+
+        .marquee img {
+            width: 200px;
+            margin: 0 20px;
+            transition: transform 0.3s;
+        }
+
+        .marquee img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo de ElectroMundo">
+    </header>
+
+    <nav>
+        <a href="pagina1.html"><i class="fas fa-box-open"></i> Productos</a>
+        <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+        <a href="pagina3.html"><i class="fas fa-store"></i> Tienda</a>
+    </nav>
+
+    <h1>Bienvenido</h1>
+    <hr>
+
+    <h2>¿Quiénes somos?</h2>
+    <p>
+        <strong>ElectroMundo</strong> es una empresa líder en la venta de productos electrónicos, comprometida con ofrecer a sus clientes tecnología de vanguardia a precios competitivos. Nuestro catálogo incluye una amplia variedad de artículos como teléfonos móviles, laptops, televisores, electrodomésticos inteligentes y accesorios, provenientes de las marcas más reconocidas del mercado. Nos enfocamos en brindar un servicio de atención al cliente de alta calidad, opciones de financiamiento flexibles y envíos rápidos a todo el país, con el objetivo de mejorar la experiencia de compra y satisfacer las necesidades tecnológicas de nuestros usuarios.
+    </p>
+
+    <h2>Nuestros Objetivos</h2>
+    <ol>
+        <li>Servir con amor ❤️</li>
+        <li>Brindar oportunidades 💡</li>
+        <li>Ofrecer productos de calidad 🛒</li>
+    </ol>
+
+    <hr>
+
+    <div class="descuento">🎉 ¡Descuento del 10%! 🎉</div>
+
+    <div class="marquee">
+        <img src="vidiojuego.webp" alt="Videojuego">
+        <img src="camara.webp" alt="Cámara">
+    </div>
+
+</body>
+</html>

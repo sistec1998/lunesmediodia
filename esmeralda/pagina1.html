@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header img {
+      width: 200px;
+      margin-top: 20px;
+      animation: zoomIn 1s ease-in-out;
+    }
+
+    nav {
+      margin: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0056b3;
+    }
+
+    h1 {
+      margin: 30px 0 10px;
+      color: #2c3e50;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: #007BFF;
+      margin: 20px 0;
+    }
+
+    form {
+      margin: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      transition: border 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      border-color: #007BFF;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .product-category {
+      margin-top: 40px;
+    }
+
+    .product-category img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .product-category img:hover {
+      transform: scale(1.05);
+    }
+
+    details {
+      margin: 20px auto;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    summary {
+      font-weight: bold;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    #message {
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo">
+  </header>
+
+  <nav>
+    <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+    <a href="pagina3.html"><i class="fas fa-store"></i> Tienda</a>
+    <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+  </nav>
+
+  <h1>Un mundo para elegir</h1>
+  <hr>
+
+  <form onsubmit="mostrarMensaje(event)">
+    <label for="busqueda">¿Qué buscas?</label>
+    <input type="text" id="busqueda" placeholder="Buscar productos...">
+    <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+    <div id="message"></div>
+  </form>
+
+  <div class="product-category">
+    <h1><i class="fas fa-laptop"></i> Computadoras</h1>
+    <img src="computadora1.avif">
+    <img src="computadora2.webp">
+    <img src="computadora3.webp">
+
+    <h1><i class="fas fa-volume-up"></i> Bocinas</h1>
+    <img src="bocina1.png">
+    <img src="bocina2.webp">
+    <img src="bocina3.png">
+
+    <h1><i class="fas fa-music"></i> Instrumentos musicales</h1>
+    <img src="imagen1.webp">
+    <img src="imagen2.webp">
+    <img src="imagen3.png">
+
+    <h1><i class="fas fa-helicopter"></i> Drones</h1>
+    <img src="dron1.png">
+    <img src="dron2.png">
+    <img src="dron3.png">
+  </div>
+
+  <hr>
+
+  <h1><i class="fas fa-home"></i> Para el hogar</h1>
+
+  <details>
+    <summary><i class="fas fa-snowflake"></i> Refrigeradoras</summary>
+    <img src="refri1.png" width="100">
+    <img src="refri2.png" width="100">
+    <img src="refri3.jpg" width="100">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-tv"></i> TV</summary>
+    <img src="tv1.png" width="100">
+    <img src="tv2.webp"width="100">
+    <img src="tv3.png" width="100">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-water"></i> Lavadoras</summary>
+    <img src="lavadora1.png">
+    <img src="lavadora2.webp" width="200">
+    <img src="lavadora3.png">
+  </details>
+
+  <script>
+    function mostrarMensaje(event) {
+      event.preventDefault();
+      document.getElementById('message').textContent = "Buscando...";
+      setTimeout(() => {
+        document.getElementById('message').textContent = "";
+      }, 3000); // borra el mensaje después de 3 segundos
+    }
+  </script>
+
+</body>
+</html>
