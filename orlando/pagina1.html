@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    <link rel="icon" href="logo.png">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            color: #00796b;
+            transition: transform 0.3s;
+        }
+
+        h1:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #004d40;
+            margin-top: 40px;
+        }
+
+        a {
+            margin: 10px;
+            text-decoration: none;
+            color: #006064;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #00acc1;
+        }
+
+        button {
+            background-color: #0097a7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #007c91;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        summary {
+            font-size: 1.2em;
+            cursor: pointer;
+            color: #00695c;
+        }
+
+        details {
+            margin: 20px auto;
+            max-width: 900px;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="logo.png" width="300">
+    <br>
+    <a href="pagina2.html">Productos</a>
+    <a href="pagina3.html">Comprar</a>
+    <a href="pagina4.html">Menú</a>
+
+    <h1>UN MUNDO PARA ELEGIR</h1>
+    <hr width="700">
+
+    <form>
+        <label>¿QUÉ BUSCAS?</label><br>
+        <input type="text">
+        <button>Buscar</button>
+    </form>
+
+    <h2>Computadora</h2>
+    <img src="m.webp" width="400">
+    <img src="m2.png" width="300">
+    <img src="im.png" width="300">
+
+    <h2>Bocinas</h2>
+    <img src="b1.png" width="300">
+    <img src="b2.png" width="300">
+    <img src="b3.png" width="300">
+
+    <h2>Instrumentos Musicales</h2>
+    <img src="p1.png" width="300">
+    <img src="image.avif" width="300">
+    <img src="p3.png" width="300">
+
+    <h2>Drones</h2>
+    <img src="g1.png" width="300">
+    <img src="g2" width="300">
+    <img src="g3.png" width="300">
+
+    <h2>Para el hogar</h2>
+
+    <details>
+        <summary>Refrigeradoras</summary>
+        <img src="r1.webp" width="300">
+        <img src="r2.webp" width="300">
+        <img src="r3.jpg" width="300">
+    </details>
+
+    <details>
+        <summary>TV</summary>
+        <img src="n.webp" width="300">
+        <img src="nn.png" width="300">
+        <img src="nnn.webp" width="300">
+    </details>
+
+    <details>
+        <summary>Lavadoras</summary>
+        <img src="q1.png" width="300">
+        <img src="q2.avif" width="300">
+        <img src="q3.webp" width="300">
+    </details>
+
+</body>
+</html>
