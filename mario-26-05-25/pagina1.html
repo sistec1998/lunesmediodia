@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    <link rel="icon" href="1.png">
+    <!-- Estilos generales -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            margin: 10px;
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background: #0056b3;
+            transform: scale(1.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        details {
+            margin: 20px auto;
+            width: 80%;
+            text-align: left;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #e2e2e2;
+            border-radius: 5px;
+        }
+    </style>
+
+    <!-- Íconos con Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <img src="1.png" width="500" alt="Logo">
+    <h1><i class="fas fa-store"></i> Un Mundo Para Elegir</h1>
+    <hr>
+
+    <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+    <a href="pagina3.html"><i class="fas fa-store-alt"></i> Tienda</a>
+    <a href="pagina4.html"><i class="fas fa-bars"></i> Ménu</a>
+
+    <form onsubmit="buscarProducto(event)">
+        <label for="buscar">¿Qué buscas?</label>
+        <input type="text" id="buscar" name="buscar" required>
+        <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+    </form>
+
+    <h2><i class="fas fa-laptop"></i> Computadoras</h2>
+    <img src="2.webp" width="300" height="300" alt="PC1">
+    <img src="3.jpg" width="300" height="200" alt="PC2">
+    <img src="4.avif" width="300" height="250" alt="PC3">
+
+    <h2><i class="fas fa-volume-up"></i> Bocinas</h2>
+    <img src="5.png" width="300" height="300" alt="Bocina1">
+    <img src="6.png" width="300" height="300" alt="Bocina2">
+    <img src="7.webp" width="300" height="350" alt="Bocina3">
+
+    <h2><i class="fas fa-guitar"></i> Instrumentos Musicales</h2>
+    <img src="8.png" width="300" height="300" alt="Instrumento1">
+    <img src="9.webp" width="300" height="300" alt="Instrumento2">
+    <img src="10.png" width="300" height="300" alt="Instrumento3">
+
+    <h2><i class="fas fa-drone"></i> Drones</h2>
+    <img src="13.png" width="300" height="200" alt="Drone1">
+    <img src="12.webp" width="300" height="200" alt="Drone2">
+    <img src="11.png" width="300" height="200" alt="Drone3">
+
+    <hr>
+    <h2><i class="fas fa-home"></i> Para el Hogar</h2>
+
+    <details>
+        <summary><i class="fas fa-snowflake"></i> Refrigeradores</summary>
+        <img src="14.png" width="200" height="300">
+        <img src="15.webp" width="200" height="350">
+        <img src="16.jpg" width="200" height="300">
+    </details>
+    <details>
+        <summary><i class="fas fa-tv"></i> TV</summary>
+        <img src="17.webp" width="300" height="200">
+        <img src="18.webp" width="300" height="200">
+        <img src="19.png" width="300" height="200">
+    </details>
+    <details>
+        <summary><i class="fas fa-tint"></i> Lavadoras</summary>
+        <img src="20.jpg" width="300" height="200">
+        <img src="21.avif" width="300" height="200">
+        <img src="22.png" width="300" height="200">
+    </details>
+
+    <script>
+        function buscarProducto(event) {
+            event.preventDefault();
+            const valor = document.getElementById('buscar').value.toLowerCase();
+
+            let disponibles = ['computadora', 'bocina', 'instrumento', 'drone', 'refrigerador', 'tv', 'lavadora'];
+
+            const encontrados = disponibles.filter(p => valor.includes(p));
+
+            if (encontrados.length > 0) {
+                Swal.fire({
+                    title: '¡Producto disponible!',
+                    text: `Encontramos coincidencias para: "${valor}"`,
+                    icon: 'success'
+                });
+            } else {
+                Swal.fire({
+                    title: 'No disponible',
+                    text: `Lo sentimos, no encontramos "${valor}" en nuestro catálogo.`,
+                    icon: 'error'
+                });
+            }
+        }
+    </script>
+</body>
+</html>

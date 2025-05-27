@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="icon" href="1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f9f9f9, #eaeaea);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            animation: fadeIn 2s ease-in;
+        }
+
+        img {
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 30px auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "🏬 ";
+        }
+
+        h1, h2 {
+            transition: transform 0.3s ease;
+        }
+
+        h1:hover, h2:hover {
+            transform: scale(1.03);
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <img src="1.png" width="600" alt="Logo de la tienda">
+    <br><br>
+
+    <a href="pagina1.html"><i class="fas fa-box"></i> Producto</a>
+    <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+    <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+
+    <h2>¡Estamos en toda Guate! <i class="fas fa-map-marker-alt"></i></h2>
+    <hr width="600">
+    
+    <h2>Busca en tu tienda cercana</h2>
+    <input type="text" placeholder="Escribe tu ubicación...">
+    <button><i class="fas fa-search"></i> Buscar</button>
+
+    <h2>Sucursales</h2>
+
+    <h1>Mazate</h1>
+    <img src="a.jpg" width="300" alt="Sucursal Mazate">
+
+    <h1>Reu</h1>
+    <img src="b.jpg" width="300" alt="Sucursal Reu">
+
+    <h1>Xela</h1>
+    <img src="c.jpg" width="300" alt="Sucursal Xela">
+
+    <hr width="500">
+
+    <h1>Otras Tiendas</h1>
+    <ul>
+        <li>Peten</li>
+        <li>Antigua</li>
+        <li>Jalapa</li>
+        <li>Zacapa</li>
+    </ul>
+</body>
+</html>

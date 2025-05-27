@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menú</title>
+  <link rel="icon" href="1.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f0f2f5, #e0e0e0);
+      color: #333;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    img {
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #007bff;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    h1, h2 {
+      margin-top: 20px;
+      color: #222;
+      transition: transform 0.3s;
+    }
+
+    h1:hover, h2:hover {
+      transform: scale(1.03);
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      padding: 10px;
+      line-height: 1.6;
+    }
+
+    button {
+      padding: 10px 25px;
+      border: none;
+      background-color: #28a745;
+      color: white;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 60%;
+      margin: 30px auto;
+      border: 1px solid #ccc;
+    }
+
+    marquee img {
+      margin: 10px;
+      border: 3px solid #ccc;
+      border-radius: 15px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="1.png" width="600" alt="Logo de la Tienda">
+    <br><br>
+
+    <a href="pagina1.html"><i class="fas fa-box"></i> Producto</a>
+    <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+    <a href="pagina3.html"><i class="fas fa-store"></i> Tienda</a>
+
+    <hr>
+
+    <h1><i class="fas fa-hand-sparkles"></i> Bienvenidos</h1>
+    <h2><i class="fas fa-users"></i> ¿Quiénes somos?</h2>
+    <p>
+      En <strong>[Nombre de la Empresa]</strong>, somos una empresa dedicada a la venta de productos de electrónica de alta calidad,
+      comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. Con una amplia gama de productos
+      que incluye desde dispositivos móviles, computadoras y accesorios, hasta equipos de audio, video y domótica, trabajamos con marcas líderes del mercado
+      para garantizar rendimiento, durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la tecnología,
+      enfocados en brindar una atención personalizada y asesoría experta en cada compra.
+    </p>
+
+    <h2><i class="fas fa-bullseye"></i> Nuestros Objetivos</h2>
+    <p>
+      <i class="fas fa-heart"></i> Servir con amor<br>
+      <i class="fas fa-hands-helping"></i> Brindar oportunidades<br>
+      <i class="fas fa-check-circle"></i> Ofrecer productos de calidad
+    </p>
+
+    <hr>
+
+    <h2><i class="fas fa-tags"></i> ¡Descuentos del 10%!</h2>
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      <img src="w.webp" width="300" alt="Descuento 1">
+      <img src="1.png" width="300" alt="Descuento 2">
+    </marquee>
+  </center>
+</body>
+</html>
