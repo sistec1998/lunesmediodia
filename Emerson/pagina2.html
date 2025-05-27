@@ -1,128 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lays</title>
-  <link rel="icon" href="Logo-lays.png" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #fff176, #fff8e1); /* tonos de amarillo */
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Fondo celeste */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-    img {
-      width: 300px;
-      margin-top: 20px;
-      animation: fadeIn 2s ease;
-    }
+        h1 {
+            color: #008CBA; /* Título color celeste oscuro */
+            margin: 20px 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
 
-    h1 {
-      font-size: 2.5em;
-      color: #ff9800;
-      margin-bottom: 10px;
-    }
+        h1::before {
+            content: "🛒"; /* Emoji en el título */
+            margin-right: 10px;
+        }
 
-    hr {
-      width: 70%;
-      border: none;
-      height: 2px;
-      background-color: #ffb300;
-      margin: 20px 0;
-    }
+        h2 {
+            color: #008CBA;
+            font-size: 1.8em;
+            margin: 20px 0;
+        }
 
-    form {
-      background-color: #fffde7;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-      width: 90%;
-      max-width: 500px;
-      animation: slideUp 1s ease;
-    }
+        h2::before {
+            content: "💳"; /* Emoji en subtítulos */
+            margin-right: 10px;
+        }
 
-    label {
-      display: block;
-      font-weight: bold;
-      margin-top: 20px;
-      font-size: 1.1em;
-    }
+        a {
+            text-decoration: none;
+            color: #008CBA;
+            margin: 15px;
+            font-size: 1.2em;
+            padding: 10px;
+            border: 2px solid #008CBA;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-    input[type="text"],
-    input[type="number"],
-    input[type="file"] {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      transition: box-shadow 0.3s ease;
-    }
+        a:hover {
+            background-color: #008CBA;
+            color: white;
+        }
 
-    input:focus {
-      box-shadow: 0 0 10px #ffeb3b;
-      outline: none;
-    }
+        button {
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
 
-    button {
-      margin: 20px 10px 0 10px;
-      padding: 12px 24px;
-      font-size: 1em;
-      border: none;
-      border-radius: 8px;
-      background-color: #ffca28;
-      color: #333;
-      cursor: pointer;
-      transition: transform 0.2s ease, background-color 0.3s ease;
-    }
+        button:hover {
+            background-color: #007bb5;
+            transform: scale(1.05);
+        }
 
-    button:hover {
-      transform: scale(1.05);
-      background-color: #ffc107;
-    }
+        input[type="text"], input[type="number"], input[type="date"] {
+            padding: 8px;
+            margin: 10px;
+            border: 2px solid #008CBA;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 80%;
+            transition: border-color 0.3s ease;
+        }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+        input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus {
+            border-color: #007bb5;
+            outline: none;
+        }
 
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        hr {
+            width: 700px;
+            border: 1px solid #008CBA;
+        }
+    </style>
 </head>
 <body>
 
-  <img src="Logo-lays.png" alt="Lays Logo">
-  <h1>🧑‍💼 Trabaja con nosotros</h1>
-  <hr />
-
-  <form>
-    <label>🙋‍♂️ Tu nombre</label>
-    <input type="text" placeholder="Escribe tu nombre completo">
-
-    <label>💼 Tu profesión</label>
-    <input type="text" placeholder="Ej: Ingeniero, Vendedor">
- 
-    <label for=""> tu dpi</label>
-    <input type="number">
-    <br><br><br>
+    <img src="logo.png" width="250" alt="Logo">
     
-    <label>📄 Tu CV</label>
-    <input type="file">
+    <div>
+        <a href="pagina1.html">Productos</a>
+        <a href="pagina3.html">Tiendas</a>
+        <a href="pagina4.html">Menú</a>
+    </div>
 
-    <label>🎯 ¿Qué te gustaría hacer?</label>
-    <input type="text" placeholder="Cuéntanos qué te interesa">
+    <h1>Tu compra es segura</h1>
 
-    <button type="submit">✅ Postularse</button>
-    <button type="reset">❌ Cancelar</button>
-  </form>
+    <hr>
+
+    <form action="">
+        <h2>Formulario de Compra</h2>
+
+        <label for="producto">Producto</label><br>
+        <input type="text" id="producto" name="producto"><br><br>
+
+        <label for="cantidad">Cantidad</label><br>
+        <input type="number" id="cantidad" name="cantidad"><br><br>
+
+        <label for="tarjeta">Número de tarjeta</label><br>
+        <input type="number" id="tarjeta" name="tarjeta"><br><br>
+
+        <label for="cvv">CVV</label><br>
+        <input type="number" id="cvv" name="cvv"><br><br>
+
+        <label for="fecha">Fecha de vencimiento</label><br>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <button type="submit">Confirmar</button>
+        <button type="reset">Cancelar</button>
+    </form>
 
 </body>
 </html>
