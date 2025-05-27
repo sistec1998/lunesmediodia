@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPRAR</title>
+    <link rel="icon" href="logo.png">
+    <!-- Incluyendo Font Awesome para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Fondo degradado */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Degradado suave */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo del contenedor principal */
+        center {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-top: 40px;
+        }
+
+        /* Título principal */
+        h1 {
+            font-size: 3em;
+            color: #ff6347; /* Tomate */
+            transition: transform 0.3s ease, color 0.5s ease;
+        }
+
+        h1:hover {
+            color: #ff4500; /* Rojo Naranja */
+            transform: scale(1.1);
+        }
+
+        /* Estilo de los enlaces */
+        a {
+            text-decoration: none;
+            font-size: 1.3em;
+            color: #333;
+            margin: 0 15px;
+            padding: 12px;
+            border: 2px solid #ff6347;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ff6347;
+            color: white;
+        }
+
+        /* Botones */
+        button {
+            padding: 12px 20px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff4500;
+            transform: scale(1.05);
+        }
+
+        /* Estilo de las entradas de texto */
+        input[type="text"], input[type="number"], input[type="date"] {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 2px solid #ddd;
+            width: 60%;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus {
+            border-color: #ff6347;
+            outline: none;
+        }
+
+        /* Líneas divisorias */
+        hr {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ff6347;
+        }
+
+        /* Iconos junto a los enlaces */
+        .icon {
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <!-- Logo -->
+        <img src="logo.png" width="500" alt="Logo">
+
+        <!-- Enlaces con iconos -->
+        <div>
+            <a href="pagina2.html"><i class="fas fa-box-open icon"></i>PRODUCTOS</a>
+            <a href="pagina3.html"><i class="fas fa-credit-card icon"></i>COMPRAR</a>
+            <a href="pagina4.html"><i class="fas fa-utensils icon"></i>MENÚ</a>
+        </div>
+
+        <h1>TUS COMPRAS SON SEGURAS</h1>
+        <hr>
+
+        <!-- Formulario -->
+        <form>
+            <label>PRODUCTO</label><br><br>
+            <input type="text" placeholder="Escribe el producto"><br><br>
+
+            <label>CANTIDAD</label><br><br>
+            <input type="number" placeholder="Cantidad"><br><br>
+
+            <label>NUMERO DE TARJETA</label><br><br>
+            <input type="number" placeholder="Número de tarjeta"><br><br>
+
+            <label>CVV</label><br><br>
+            <input type="number" placeholder="CVV"><br><br>
+
+            <label>FECHA DE VENCIMIENTO</label><br><br>
+            <input type="date"><br><br><br>
+
+            <!-- Botones de acción -->
+            <button type="submit"><i class="fas fa-check-circle"></i> CONFIRMAR</button>
+            <button type="reset"><i class="fas fa-times-circle"></i> CANCELAR</button>
+        </form>
+
+    </center>   
+</body>
+</html>

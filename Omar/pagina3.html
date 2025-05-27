@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA</title>
+    <link rel="icon" href="logo.png">
+    <!-- Incluyendo Font Awesome para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Fondo degradado */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Fondo degradado azul-violeta */
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Contenedor principal */
+        center {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-top: 40px;
+        }
+
+        /* Título principal */
+        h1 {
+            font-size: 3em;
+            color: #2575fc;
+            transition: transform 0.3s ease, color 0.5s ease;
+        }
+
+        h1:hover {
+            color: #6a11cb;
+            transform: scale(1.1);
+        }
+
+        /* Enlaces con iconos */
+        a {
+            text-decoration: none;
+            font-size: 1.3em;
+            color: #fff;
+            margin: 0 15px;
+            padding: 12px;
+            border: 2px solid #2575fc;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #2575fc;
+            color: white;
+        }
+
+        /* Botón de búsqueda */
+        button {
+            padding: 12px 20px;
+            background-color: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #6a11cb;
+            transform: scale(1.05);
+        }
+
+        /* Estilo de los campos de entrada */
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 2px solid #ddd;
+            width: 60%;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #2575fc;
+            outline: none;
+        }
+
+        /* Estilo de las imágenes */
+        img {
+            width: 250px;
+            height: auto;
+            margin: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo de las listas */
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2em;
+        }
+
+        ul li {
+            margin: 10px 0;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        ul li:hover {
+            color: #2575fc;
+        }
+
+        /* Líneas divisorias */
+        hr {
+            width: 70%;
+            margin: 20px auto;
+            border: 1px solid #2575fc;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <!-- Logo -->
+        <img src="logo.png" width="500" alt="Logo">
+
+        <!-- Enlaces con iconos -->
+        <div>
+            <a href="pagina1.html"><i class="fas fa-box-open"></i> PRODUCTOS</a>
+            <a href="pagina2.html"><i class="fas fa-credit-card"></i> COMPRAR</a>
+            <a href="pagina3.html"><i class="fas fa-store"></i> MENÚ</a>
+        </div>
+
+        <!-- Título principal -->
+        <h1>¡ESTAMOS EN TODA GUATE!</h1>
+        <hr>
+
+        <!-- Formulario de búsqueda -->
+        <form>
+            <label for="store-search">BUSCA TU TIENDA CERCANA</label><br><br>
+            <input type="text" id="store-search" placeholder="Ingresa tu ubicación">
+            <button type="submit"><i class="fas fa-search"></i> BUSCAR</button>
+        </form>
+
+        <!-- Sucursales -->
+        <h2>SUCURSALES</h2>
+        <img src="tienda1.png" alt="Tienda 1">
+        <img src="tienda2.jpg" alt="Tienda 2">
+        <img src="tienda3.webp" alt="Tienda 3">
+
+        <h2>MAZATE</h2>
+        <img src="tienda2.jpg" alt="Tienda Mazate">
+
+        <h2>REU</h2>
+        <img src="tienda3.webp" alt="Tienda Reu">
+
+        <h2>XELA</h2>
+
+        <hr>
+
+        <h2>OTRAS TIENDAS</h2>
+
+        <ul>
+            <li>PETEN</li>
+            <li>JALAPA</li>
+            <li>ANTIGUA</li>
+            <li>ZACAPA</li>
+        </ul>
+
+    </center>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENÚ</title>
+    <link rel="icon" href="logo.png">
+    <!-- Incluyendo Font Awesome para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Fondo degradado */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Degradado de colores cálidos */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Contenedor principal */
+        center {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-top: 40px;
+        }
+
+        /* Título principal */
+        h1 {
+            font-size: 3em;
+            color: #ff6347; /* Rojo Tomate */
+            transition: transform 0.3s ease, color 0.5s ease;
+        }
+
+        h1:hover {
+            color: #ff4500; /* Rojo Naranja */
+            transform: scale(1.1);
+        }
+
+        /* Estilo de los enlaces */
+        a {
+            text-decoration: none;
+            font-size: 1.3em;
+            color: #333;
+            margin: 0 15px;
+            padding: 12px;
+            border: 2px solid #ff6347;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ff6347;
+            color: white;
+        }
+
+        /* Estilo de las listas */
+        ol {
+            font-size: 1.5em;
+            text-align: left;
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+
+        ol li {
+            margin: 10px 0;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        ol li:hover {
+            color: #ff6347;
+        }
+
+        /* Marquee con imágenes */
+        marquee {
+            margin: 20px auto;
+            display: block;
+            font-size: 1.2em;
+        }
+
+        /* Estilo de las imágenes en el marquee */
+        marquee img {
+            margin: 0 15px;
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        marquee img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Líneas divisorias */
+        hr {
+            width: 70%;
+            margin: 20px auto;
+            border: 1px solid #ff6347;
+        }
+
+        /* Animación de transiciones */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Estilo del contenedor de texto de "Quiénes somos" */
+        .about-text {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <!-- Logo -->
+        <img src="logo.png" width="500" class="fade-in" alt="Logo">
+
+        <!-- Enlaces con iconos -->
+        <div>
+            <a href="pagina1.html"><i class="fas fa-box-open"></i> PRODUCTOS</a>
+            <a href="pagina2.html"><i class="fas fa-credit-card"></i> COMPRAR</a>
+            <a href="pagina3.html"><i class="fas fa-utensils"></i> MENÚ</a>
+        </div>
+
+        <h1>BIENVENIDO</h1>
+        <hr>
+
+        <!-- Quiénes somos -->
+        <h2>QUIENES SOMOS</h2>
+        <p class="about-text">"Ser la plataforma líder en comercio electrónico, brindando productos innovadores y soluciones de compra accesibles para todos. Nos comprometemos a ofrecer experiencias excepcionales a nuestros clientes mediante un servicio personalizado, tecnología avanzada y una oferta variada de productos de alta calidad, todo mientras promovemos el desarrollo sostenible y la satisfacción de las necesidades de la comunidad."</p>
+
+        <h2>NUESTROS OBJETIVOS</h2>
+        <ol>
+            <li>SERVIR CON AMOR</li>
+            <li>BRINDAR OPORTUNIDADES</li>
+            <li>OFRECER PRODUCTOS DE CALIDAD</li>
+        </ol>
+
+        <hr>
+
+        <!-- Descuento 10% con marquee -->
+        <h2>DESCUENTO 10%</h2>
+
+        <marquee>
+            <img src="t1.webp" alt="Producto 1">
+            <img src="d2.png" alt="Producto 2">
+        </marquee>
+
+    </center>   
+
+</body>
+</html>
