@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="icon" href="logo2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f3fc;
+            color: #4a235a;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(128, 0, 128, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            margin: 15px;
+            color: #7d3c98;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #a569bd;
+        }
+
+        h1, h2 {
+            color: #6c3483;
+            transition: transform 0.3s ease;
+        }
+
+        h1:hover, h2:hover {
+            transform: scale(1.05);
+        }
+
+        p, ol {
+            max-width: 700px;
+            margin: 0 auto 20px;
+            text-align: justify;
+        }
+
+        ol {
+            text-align: left;
+        }
+
+        hr {
+            border: 1px solid #d2b4de;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        marquee img {
+            margin: 0 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        marquee img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo2.png" width="300" alt="Logo"><br>
+
+    <nav>
+        <a href="hoja1.html"><i class="fas fa-box"></i> Producto</a>
+        <a href="hija2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+        <a href="hoja3.html"><i class="fas fa-store"></i> Tienda</a>
+    </nav>
+
+    <h1>Bienvenidos</h1>
+    <hr>
+
+    <h2><i class="fas fa-users"></i> ¿Quiénes somos?</h2>
+    <p>En <strong>[Nombre de la Empresa]</strong>, somos una empresa dedicada a la venta
+        de productos de electrónica de alta calidad, comprometida con 
+        ofrecer soluciones tecnológicas innovadoras para mejorar la vida 
+        de nuestros clientes. Con una amplia gama de productos que incluye
+        desde dispositivos móviles, computadoras y accesorios, hasta equipos
+        de audio, video y domótica, trabajamos con marcas líderes del
+        mercado para garantizar rendimiento, durabilidad y confianza. 
+        Nuestro equipo está formado por profesionales apasionados por 
+        la tecnología, enfocados en brindar una atención personalizada y asesoría experta en cada compra.
+    </p>
+
+    <h2><i class="fas fa-bullseye"></i> Nuestros objetivos</h2>
+    <ol>
+        <li><i class="fas fa-heart"></i> Servicio con amor</li>
+        <li><i class="fas fa-hands-helping"></i> Brindar oportunidades</li>
+        <li><i class="fas fa-star"></i> Ofrecer productos de calidad</li>
+    </ol>
+
+    <hr>
+    <h2><i class="fas fa-tags"></i> ¡Descuento 10%!</h2>
+
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        <img src="im.webp" width="300" alt="Producto en descuento">
+        <img src="c.avif" width="300" alt="Producto en descuento">
+    </marquee>
+
+</body>
+</html>
