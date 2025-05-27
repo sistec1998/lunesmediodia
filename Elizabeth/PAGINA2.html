@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPRAR</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #e0f7fa; /* Celeste claro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            color: #00796b;
+        }
+
+        a {
+            margin: 10px;
+            text-decoration: none;
+            color: #004d40;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #00796b;
+        }
+
+        form {
+            background-color: white;
+            width: 300px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        form:hover {
+            transform: scale(1.02);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #004d40;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #00796b;
+            outline: none;
+        }
+
+        button {
+            width: 48%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #004d40;
+            transform: scale(1.05);
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="300" alt="Logo">
+        <br><br>
+        <a href="PAGINA1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+        <a href="PAGINA3.html"><i class="fas fa-store"></i> TIENDAS</a>
+        <a href="PAGINA4.html"><i class="fas fa-bars"></i> MENÚ</a>
+
+        <h1><i class="fas fa-lock"></i> TUS COMPRAS SON SEGURAS</h1>
+        <hr width="600">
+
+        <form>
+            <label><i class="fas fa-tag"></i> PRODUCTO</label>
+            <input type="text" placeholder="Nombre del producto">
+
+            <label><i class="fas fa-sort-numeric-up"></i> CANTIDAD</label>
+            <input type="text" placeholder="Cantidad deseada">
+
+            <label><i class="fas fa-credit-card"></i> NÚMERO DE TARJETA</label>
+            <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+
+            <label><i class="fas fa-lock"></i> CVV</label>
+            <input type="text" placeholder="123">
+
+            <label><i class="fas fa-calendar-alt"></i> FECHA DE VENCIMIENTO</label>
+            <input type="date">
+
+            <div style="display: flex; justify-content: space-between;">
+                <button type="submit"><i class="fas fa-check"></i> CONFIRMAR</button>
+                <button type="reset"><i class="fas fa-times"></i> CANCELAR</button>
+            </div>
+        </form>
+    </center>
+</body>
+</html>

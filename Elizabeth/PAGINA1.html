@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #e0f7fa; /* Celeste claro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1, h2 {
+            color: #00796b;
+        }
+
+        a {
+            margin: 10px;
+            text-decoration: none;
+            color: #004d40;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #00796b;
+        }
+
+        form {
+            margin: 20px auto;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #004d40;
+        }
+
+        .card {
+            display: inline-block;
+            margin: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card img {
+            border-radius: 10px;
+            width: 250px;
+            height: auto;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+        }
+
+        details {
+            margin: 20px auto;
+            padding: 10px;
+            width: 80%;
+            background-color: #b2ebf2;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        details img {
+            margin: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" width="300" alt="Logo">
+    <br><br>
+
+    <a href="PAGINA2.html"><i class="fas fa-shopping-cart"></i> COMPRAR</a> 
+    <a href="PAGINA3.html"><i class="fas fa-store"></i> TIENDA</a>
+    <a href="PAGINA4.html"><i class="fas fa-bars"></i> MENÚ</a>      
+
+    <h1>UN MUNDO PARA ELEGIR</h1>
+    <hr width="600">
+
+    <form>
+        <label>¿QUÉ BUSCAS?</label>
+        <input type="text">
+        <button><i class="fas fa-search"></i> BUSCAR</button>
+    </form>
+
+    <h2>COMPUTADORAS</h2>
+    <div class="card"><img src="compu.webp" alt="Computadora 1"></div>
+    <div class="card"><img src="compu1.webp" alt="Computadora 2"></div>
+    <div class="card"><img src="compu2.png" alt="Computadora 3"></div>
+
+    <h2>BOCINAS</h2>
+    <div class="card"><img src="bocina1.png" alt="Bocina 1"></div>
+    <div class="card"><img src="bocina2.png" alt="Bocina 2"></div>
+    <div class="card"><img src="bocina3.png" alt="Bocina 3"></div>
+
+    <h2>INSTRUMENTOS MUSICALES</h2>
+    <div class="card"><img src="piano.webp" alt="Piano"></div>
+    <div class="card"><img src="trompeta.png" alt="Trompeta"></div>
+    <div class="card"><img src="saxofon.webp" alt="Saxofón"></div>
+
+    <h2>DRONES</h2>
+    <div class="card"><img src="dron" alt="Dron 1"></div>
+    <div class="card"><img src="dron1.png" alt="Dron 2"></div>
+    <div class="card"><img src="dron2.png" alt="Dron 3"></div>
+
+    <hr width="600">
+
+    <h2>PARA EL HOGAR</h2>
+    <details>
+        <summary><i class="fas fa-snowflake"></i> REFRIGERADORAS</summary>
+        <div class="card"><img src="refri.webp" alt="Refri 1"></div>
+        <div class="card"><img src="refri1.webp" alt="Refri 2"></div>
+        <div class="card"><img src="refri2.jpg" alt="Refri 3"></div>
+    </details>
+    <details>
+        <summary><i class="fas fa-tv"></i> TV</summary>
+        <div class="card"><img src="tv.webp" alt="TV 1"></div>
+        <div class="card"><img src="tv1.webp" alt="TV 2"></div>
+        <div class="card"><img src="tv2.webp" alt="TV 3"></div>
+    </details>
+    <details>
+        <summary><i class="fas fa-water"></i> LAVADORAS</summary>
+        <div class="card"><img src="lavadora1.png" alt="Lavadora 1"></div>
+        <div class="card"><img src="lavadora1.png" alt="Lavadora 2"></div>
+        <div class="card"><img src="lavadora.png" alt="Lavadora 3"></div>
+    </details>
+</body>
+</html>

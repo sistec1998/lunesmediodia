@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENÚ</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #e0f7fa; /* fondo celeste */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #004d40;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease;
+        }
+
+        center {
+            text-align: center;
+            padding: 30px;
+        }
+
+        a {
+            margin: 15px;
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #004d40;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #00695c;
+        }
+
+        hr {
+            border: 1px solid #80cbc4;
+            margin: 20px auto;
+        }
+
+        p {
+            width: 70%;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #00695c;
+        }
+
+        .card {
+            display: inline-block;
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px 0;
+            scroll-behavior: smooth;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: #00796b;
+            border-radius: 4px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="300" alt="Logo">
+        <br><br>
+
+        <a href="#"><i class="fas fa-box"></i> PRODUCTOS</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i> COMPRAR</a>
+        <a href="#"><i class="fas fa-store"></i> TIENDAS</a>
+
+        <h2><i class="fas fa-user"></i> BIENVENIDO</h2>
+        <hr width="600">
+
+        <p>
+            En <strong>[Nombre de la Empresa]</strong>, somos una empresa dedicada a la venta de productos de electrónica de alta calidad, comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. Con una amplia gama de productos que incluye desde dispositivos móviles, computadoras y accesorios, hasta equipos de audio, video y domótica, trabajamos con marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la tecnología, enfocados en brindar una atención personalizada y asesoría experta en cada compra.
+        </p>
+
+        <h2><i class="fas fa-bullseye"></i> NUESTROS OBJETIVOS</h2>
+        <ol>
+            <li><i class="fas fa-heart"></i> SERVIR CON AMOR</li>
+            <li><i class="fas fa-lightbulb"></i> BRINDAR OPORTUNIDADES</li>
+            <li><i class="fas fa-star"></i> OFRECER PRODUCTOS DE CALIDAD</li>
+        </ol>
+
+        <hr width="600">
+
+        <h2><i class="fas fa-percent"></i> DESCUENTO 10%</h2>
+        <marquee behavior="" direction="">
+            <div class="scroll-container">
+                <div class="card">
+                    <img src="videojuego.webp" alt="Videojuego">
+                </div>
+                <div class="card">
+                    <img src="camara.png" alt="Cámara">
+                </div>
+            </div>
+        </marquee>
+    </center>
+</body>
+</html>

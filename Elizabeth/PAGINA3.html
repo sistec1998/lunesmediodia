@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #e0f7fa; /* Fondo celeste */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease;
+            color: #004d40;
+        }
+
+        center {
+            text-align: center;
+            padding: 20px;
+        }
+
+        a {
+            margin: 10px;
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #004d40;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #00695c;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card {
+            display: inline-block;
+            background-color: white;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #004d40;
+            transform: scale(1.05);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li::before {
+            content: "\f3c5";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            margin-right: 10px;
+            color: #00796b;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="300" alt="Logo">
+        <br><br>
+
+        <a href="PAGINA1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+        <a href="PAGINA2.html"><i class="fas fa-shopping-cart"></i> COMPRAR</a>
+        <a href="PAGINA4.html"><i class="fas fa-bars"></i> MENÚ</a>
+
+        <h2><i class="fas fa-map-marker-alt"></i> ¡ESTAMOS EN TODA GUAT!</h2>
+        <hr width="600">
+
+        <h2>BUSCA TU TIENDA CERCANA</h2>
+        <input type="text" placeholder="Ej: Mazate, Reu...">
+        <button><i class="fas fa-search"></i> BUSCAR</button>
+
+        <h2><i class="fas fa-store"></i> SUCURSALES</h2>
+        <div class="card">
+            <img src="tienda.webp" alt="Sucursal principal">
+            <h3>Sucursal Principal XELA</h3>
+        </div>
+        <div class="card">
+            <img src="tienda1.webp" alt="Mazate">
+            <h3>MAZATE</h3>
+        </div>
+        <div class="card">
+            <img src="tienda2.jpg" alt="Reu">
+            <h3>REU</h3>
+        </div>
+       
+
+        <hr width="600">
+
+        <h2><i class="fas fa-map"></i> OTRAS TIENDAS</h2>
+        <ul>
+            <li>PETÉN</li>
+            <li>JALAPA</li>
+            <li>ANTIGUA</li>
+            <li>ZACAPA</li>
+        </ul>
+    </center>
+</body>
+</html>
