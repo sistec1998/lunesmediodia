@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="icon" href="logo.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        img.logo {
+            width: 300px;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+
+        img.logo:hover {
+            transform: scale(1.05);
+        }
+
+        nav a {
+            margin: 10px 15px;
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #004d40;
+            transform: scale(1.1);
+        }
+
+        h2 {
+            color: #004d40;
+        }
+
+        hr {
+            width: 300px;
+            border: 2px solid #004d40;
+            margin: 20px auto;
+        }
+
+        p, ol {
+            max-width: 600px;
+            margin: auto;
+            font-size: 16px;
+        }
+
+        li {
+            text-align: left;
+        }
+
+        marquee img {
+            margin: 10px;
+            transition: transform 0.5s;
+        }
+
+        marquee img:hover {
+            transform: scale(1.2);
+        }
+
+        .icon {
+            margin-right: 8px;
+            color: #00796b;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo1.png" alt="Logo" class="logo"> <br>
+
+    <nav>
+        <a href="pagina1.html"><i class="fas fa-box icon"></i>Productos</a>
+        <a href="pagina2.html"><i class="fas fa-shopping-cart icon"></i>Comprar</a>
+        <a href="pagina3.html"><i class="fas fa-store icon"></i>Tienda</a>
+    </nav>
+
+    <h2><i class="fas fa-door-open icon"></i>Bienvenidos</h2>
+    <hr>
+
+    <h2><i class="fas fa-users icon"></i>¿Quiénes Somos?</h2>
+    <p>Electrónica Panamericana es una empresa guatemalteca con más de 65 años de trayectoria en el mercado de la tecnología y electrodomésticos. Fundada en 1957, ha sido gestionada por tres generaciones familiares, consolidándose como una de las cadenas más reconocidas en el país.</p>
+
+    <h2><i class="fas fa-bullseye icon"></i>Nuestro objetivo</h2>
+    <ol>
+        <li><i class="fas fa-heart icon"></i>Servir con amor</li>
+        <li><i class="fas fa-handshake icon"></i>Brindar Oportunidades</li>
+        <li><i class="fas fa-star icon"></i>Ofrecer Productos de calidad</li>
+    </ol>
+
+    <h2 style="color: #d32f2f;"><i class="fas fa-tags icon"></i>Descuento 10%</h2>
+
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        <img src="camara.webp" width="200" alt="Cámara">
+        <img src="nitendo.png" width="200" alt="Nintendo">
+    </marquee>
+
+</body>
+</html>

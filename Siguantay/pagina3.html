@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda</title>
+  <link rel="icon" href="logo.webp"/>
+
+  <!-- Íconos de Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      background-color: #ff6f61;
+      color: white;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #e04e3f;
+      transform: scale(1.1);
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 200px;
+    }
+
+    img {
+      border-radius: 15px;
+      margin: 10px 0;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      margin: 15px 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    ol {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ol li {
+      margin: 5px 0;
+      font-size: 18px;
+      animation: slideIn 0.5s ease;
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      background-color: #ff6f61;
+      width: 300px;
+      margin: 20px auto;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideIn {
+      from {transform: translateX(-100px); opacity: 0;}
+      to {transform: translateX(0); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo1.png" width="300" alt="Logo" />
+  <br>
+
+  <a href="pagina1.html"><i class="fas fa-box"></i> Productos</a>
+  <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+  <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+
+  <h2><i class="fas fa-map-marker-alt"></i> ¡Estamos en toda Guate!</h2>
+  <hr />
+
+  <h2><i class="fas fa-search-location"></i> Busca tu tienda más cercana</h2>
+  <input type="text" placeholder="Escribe tu ciudad">
+  <button><i class="fas fa-search"></i> Buscar</button>
+
+  <h2><i class="fas fa-store"></i> Sucursales</h2>
+  <img src="panama1.jpg" width="200" alt="Sucursal Mazate" />
+  <h2>Mazate</h2>
+  <img src="panama2.jpg" width="200" alt="Sucursal Reu" />
+  <h2>Reu</h2>
+  <img src="panama3.jpg" width="200" alt="Sucursal Xela" />
+  <h2>Xela</h2>
+
+  <h2>Otras Tiendas</h2>
+  <ol>
+    <li><i class="fas fa-map-pin"></i> Petén</li>
+    <li><i class="fas fa-map-pin"></i> Jalapa</li>
+    <li><i class="fas fa-map-pin"></i> Antigua</li>
+    <li><i class="fas fa-map-pin"></i> Zacapa</li>
+  </ol>
+
+</body>
+</html>

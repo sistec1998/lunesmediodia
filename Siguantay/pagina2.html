@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar</title>
+  <link rel="icon" href="logo.webp">
+  
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #e0f7fa, #80deea);
+      font-family: Arial, sans-serif;
+      color: #333;
+      transition: all 0.3s ease-in-out;
+    }
+
+    center {
+      padding: 40px;
+      border-radius: 15px;
+      background-color: #ffffffcc;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      margin: 50px auto;
+      width: 80%;
+      max-width: 500px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: #00796b;
+    }
+
+    form {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border 0.3s;
+    }
+
+    input:focus {
+      border-color: #26a69a;
+      outline: none;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:first-of-type {
+      background-color: #26a69a;
+      color: white;
+    }
+
+    button:first-of-type:hover {
+      background-color: #00796b;
+      transform: scale(1.05);
+    }
+
+    button:last-of-type {
+      background-color: #e57373;
+      color: white;
+      margin-left: 10px;
+    }
+
+    button:last-of-type:hover {
+      background-color: #c62828;
+      transform: scale(1.05);
+    }
+
+    a {
+      margin: 0 10px;
+      color: #00695c;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #004d40;
+    }
+
+    hr {
+      margin: 20px 0;
+      border: 1px solid #00796b;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <img src="logo1.png" width="300" alt="Logo principal"> <br>
+    <a href="pagina1.html"><i class="fas fa-box-open"></i> Productos</a>
+    <a href="pagina3.html"><i class="fas fa-store"></i> Tienda</a>
+    <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+    <hr width="300">
+
+    <h2><i class="fas fa-lock"></i> Tus Compras son Seguras</h2>
+    
+    <form id="compraForm">
+      <label><i class="fas fa-tag"></i> Producto</label>
+      <input type="text" required>
+
+      <label><i class="fas fa-sort-numeric-up-alt"></i> Cantidad</label>
+      <input type="number" required>
+
+      <label><i class="fas fa-credit-card"></i> Número de tarjeta</label>
+      <input type="number" required>
+
+      <label><i class="fas fa-lock"></i> CVV</label>
+      <input type="number" required>
+
+      <label><i class="fas fa-calendar-alt"></i> Fecha de Vencimiento</label>
+      <input type="date" required>
+
+      <button type="submit"><i class="fas fa-check-circle"></i> Confirmar</button>
+      <button type="reset"><i class="fas fa-times-circle"></i> Cancelar</button>
+    </form>
+  </center>
+
+  <script>
+    document.getElementById('compraForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Evita envío real del formulario
+
+      Swal.fire({
+        icon: 'success',
+        title: '¡Confirmado con Éxito!',
+        text: 'Tu compra ha sido procesada correctamente.',
+        confirmButtonColor: '#26a69a',
+        confirmButtonText: 'Aceptar'
+      });
+    });
+  </script>
+</body>
+</html>
