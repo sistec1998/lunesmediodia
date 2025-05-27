@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COMPRAR</title>
+  <link rel="icon" href="LOGO.png" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+    }
+
+    h1 {
+      color: purple;
+    }
+
+    label {
+      color: purple;
+      font-weight: bold;
+    }
+
+    .form-card {
+      display: inline-block;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-top: 30px;
+      width: 300px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: purple;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5e0e8a;
+    }
+
+    a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: purple;
+      font-weight: bold;
+    }
+
+    hr {
+      border-color: purple;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <a href="Pagina1.html">🏠 Inicio</a>
+    <a href="Pagina3.html">🛍️ Tienda</a>
+    <a href="Pagina4.html">📋 Menú</a>
+
+    <h1>🔒 TUS PRODUCTOS ESTÁN SEGUROS</h1>
+    <hr width="700" />
+
+    <div class="form-card">
+      <form>
+        <label>📦 PRODUCTOS</label><br />
+        <input type="text" /><br />
+
+        <label>🔢 CANTIDAD</label><br />
+        <input type="number" /><br />
+
+        <label>💳 NÚMERO DE TARJETA</label><br />
+        <input type="number" /><br />
+
+        <label>🔐 CW</label><br />
+        <input type="number" /><br />
+
+        <label>📅 FECHA DE VENCIMIENTO</label><br />
+        <input type="date" /><br />
+
+        <button type="submit">CONFIRMAR</button>
+        <button type="reset">CANCELAR</button>
+      </form>
+    </div>
+  </center>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MENÚ</title>
+  <link rel="icon" href="LOGO.png" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      color: purple;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    h1:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      margin: 10px 15px;
+      text-decoration: none;
+      color: purple;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s ease-in-out;
+    }
+
+    a:hover {
+      color: #6a0dad;
+    }
+
+    p {
+      width: 70%;
+      margin: auto;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    ol {
+      color: purple;
+      font-size: 1.1em;
+    }
+
+    hr {
+      border-color: purple;
+      width: 700px;
+      margin: 40px auto;
+    }
+
+    .card {
+      display: inline-block;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 20px;
+      padding: 10px;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    marquee {
+      padding: 20px;
+    }
+
+    marquee .card {
+      margin: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="LOGO.png" width="300" alt="Logo" />
+
+    <br><br>
+    <a href="Pagina1.html">🛒 PRODUCTOS</a>
+    <a href="Pagina2.html">💳 COMPRAR</a>
+    <a href="Pagina3.html">📍 TIENDAS</a>
+
+    <h1>🎉 BIENVENIDOS</h1>
+    <hr>
+
+    <h1>👥 QUIÉNES SOMOS</h1>
+    <p>
+      En <strong>[Nombre de la Empresa]</strong>, somos una empresa dedicada a la venta de productos de 
+      electrónica de alta calidad, comprometida con ofrecer soluciones tecnológicas 
+      innovadoras para mejorar la vida de nuestros clientes. Con una amplia gama de 
+      productos que incluye desde dispositivos móviles, computadoras y accesorios, 
+      hasta equipos de audio, video y domótica, trabajamos con marcas líderes del mercado
+      para garantizar rendimiento, durabilidad y confianza. Nuestro equipo está formado por 
+      profesionales apasionados por la tecnología,
+      enfocados en brindar una atención personalizada y asesoría experta en cada compra.
+    </p>
+
+    <h1>🎯 NUESTROS OBJETIVOS</h1>
+    <ol>
+      <li>❤️ SERVICIO CON AMOR</li>
+      <li>🚀 BRINDAR OPORTUNIDAD</li>
+      <li>🏆 OFRECER PRODUCTOS DE CALIDAD</li>
+    </ol>
+
+    <hr>
+
+    <h1>💸 DESCUENTOS DE 10%</h1>
+    <marquee behavior="scroll" direction="left">
+      <div class="card">
+        <img src="nintento.png" alt="Producto con descuento">
+      </div>
+      <div class="card">
+        <img src="camara.png" alt="Producto con descuento">
+      </div>
+    </marquee>
+  </center>
+</body>
+</html>

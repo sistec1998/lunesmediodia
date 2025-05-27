@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TIENDAS</title>
+  <link rel="icon" href="LOGO.png">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: purple;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    h1:hover, h2:hover {
+      transform: scale(1.05);
+    }
+
+    label {
+      color: purple;
+      font-weight: bold;
+    }
+
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: purple;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: purple;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: purple;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #6a0dad;
+    }
+
+    .card {
+      display: inline-block;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 20px;
+      padding: 10px;
+      width: 320px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    ul {
+      list-style-type: square;
+      color: purple;
+      font-size: 1.1em;
+    }
+
+    hr {
+      border-color: purple;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="LOGO.png" width="700" alt="Logo">
+    <br><br>
+    <a href="Pagina1.html">🏠 Inicio</a>
+    <a href="Pagina2.html">🛍️ Comprar</a>
+    <a href="Pagina4.html">📋 Menú</a>
+
+    <h1>📍 ¡ESTAMOS EN TODA GUATEMALA!</h1>
+    <hr width="700">
+
+    <h2>🔍 BUSCA EN TU TIENDA MÁS CERCANA</h2>
+    <form>
+      <label>📌 ¿CUÁL ES TU CIUDAD MÁS CERCANA?</label><br>
+      <input type="text" placeholder="Escribe tu ciudad">
+      <br><br><br>
+      <button>BUSCAR</button>
+    </form>
+
+    <h2>🏪 SUCURSAL</h2>
+    <div class="card">
+      <img src="tienda1.webp" alt="Sucursal Central">
+    </div>
+
+    <h2>🛒 MAZATE</h2>
+    <div class="card">
+      <img src="tienda2.jpg" alt="Mazate">
+    </div>
+
+    <h2>🏔️ XELA</h2>
+    <div class="card">
+      <img src="tienda3.webp" alt="Xela">
+    </div>
+
+    <hr width="700">
+    <h1>🗺️ OTRAS TIENDAS</h1>
+    <ul>
+      <li>📌 PETÉN</li>
+      <li>📌 JALAPA</li>
+      <li>📌 ANTIGUA</li>
+      <li>📌 ZACAPA</li>
+    </ul>
+  </center>
+</body>
+</html>
