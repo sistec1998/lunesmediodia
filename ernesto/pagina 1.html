@@ -1,146 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viajes</title>
-  <link rel="icon" href="logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PRODUCTOS</title>
+  <link rel="icon" href="logo.png" />
   <style>
     body {
-      background-color: red;
-      color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 20px;
+    }
+
+    header img {
+      width: 200px;
+      margin-top: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #007bff;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #0056b3;
     }
 
     h1 {
-      font-size: 2em;
-      margin-bottom: 30px;
+      color: #007bff;
+      font-size: 2rem;
+      margin: 20px 0;
     }
 
-    h2, h3 {
-      background-color: #87CEEB; /* celeste */
-      color: black;
+    hr {
+      border: none;
+      border-top: 2px solid #007bff;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    form {
+      margin-bottom: 40px;
+    }
+
+    input[type="text"] {
       padding: 10px;
-      margin: 10px auto;
-      width: fit-content;
-      border-radius: 10px;
-      transition: transform 0.3s ease, background-color 0.3s ease;
-      animation: fadeIn 0.8s ease-in-out;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
 
-    h2:hover, h3:hover {
-      transform: scale(1.05);
-      background-color: #00BFFF;
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    h2 {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      margin-top: 40px;
+      border-radius: 5px;
+      animation: fadeIn 1s ease;
     }
 
     img {
-      border-radius: 10px;
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
       margin: 10px;
-      transition: transform 0.3s ease;
-      animation: fadeInUp 1s ease forwards;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     img:hover {
       transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
     }
 
     details {
-      margin-bottom: 40px;
+      margin: 20px auto;
+      max-width: 1000px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: left;
     }
 
     summary {
-      cursor: pointer;
-      font-size: 1.3em;
       font-weight: bold;
-      background-color: white;
-      color: red;
-      padding: 10px;
-      border-radius: 10px;
-      width: fit-content;
-      margin: auto;
-      transition: background-color 0.3s ease;
-    }
-
-    summary:hover {
-      background-color: #FFD700;
-    }
-
-    hr {
-      border: 2px solid white;
-      margin: 20px auto;
+      cursor: pointer;
+      font-size: 1.2rem;
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <center>
-    <img src="logo.png" width="300">
-    <hr width="700">
-    <h1>LUGARES TURÍSTICOS</h1>
 
+  <header>
+    <img src="logo.png" alt="Logo" />
+    <nav>
+      <a href="pagina2.html">COMPRAR</a>
+      <a href="pagina3.html">TIENDA</a>
+      <a href="pagina4.html">MENÚ</a>
+    </nav>
+  </header>
+
+  <h1>UN MUNDO PARA ELEGIR</h1>
+  <hr />
+
+  <form>
+    <label for="busqueda">¿QUÉ BUSCAS?</label><br><br>
+    <input type="text" id="busqueda" name="busqueda"><br><br>
+    <button type="submit">BUSCAR</button>
+  </form>
+
+  <section>
+    <h2>COMPUTADORAS</h2>
+    <img src="com 1.webp" alt="Computadora 1" />
+    <img src="com 2.jpg" alt="Computadora 2" />
+    <img src="com 3.jpg" alt="Computadora 3" />
+
+    <h2>BOCINAS</h2>
+    <img src="bo1.jpg" alt="Bocina 1" />
+    <img src="bo 2.webp" alt="Bocina 2" />
+    <img src="bo 3.jpg" alt="Bocina 3" />
+
+    <h2>INSTRUMENTOS MUSICALES</h2>
+    <img src="tr 1.jpg" alt="Instrumento 1" />
+    <img src="tr 2.jpg" alt="Instrumento 2" />
+    <img src="tr3.jpg" alt="Instrumento 3" />
+
+    <h2>DRONES</h2>
+    <img src="d1.jpg" alt="Drone 1" />
+    <img src="d2.jpg" alt="Drone 2" />
+    <img src="d3.jpg" alt="Drone 3" />
+  </section>
+
+  <section>
+    <h2>PARA EL HOGAR</h2>
     <details>
-      <summary>ANTIGUA GUATEMALA</summary>
-      <h2>PRECIO: Q5,000</h2>
-      <h2>DURACIÓN: 5 DÍAS</h2>
-      <h2>PERSONAS: 4 PERSONAS</h2>
-      <h3>GALERÍA</h3>
-      <img src="AN1.jpg" width="125">
-      <img src="an2.jpg" width="250">
+      <summary>REFRIGERADORAS</summary>
+      <img src="r1.webp" alt="Refrigeradora 1" />
+      <img src="r2.webp" alt="Refrigeradora 2" />
+      <img src="r3.png" alt="Refrigeradora 3" />
     </details>
 
     <details>
-      <summary>CASTILLO DE SAN FELIPE, IZABAL</summary>
-      <h2>PRECIO: Q7,000</h2>
-      <h2>DURACIÓN: 5 DÍAS</h2>
-      <h2>PERSONAS: 2 PERSONAS</h2>
-      <h3>GALERÍA</h3>
-      <img src="y1.jpg" width="300">
-      <img src="y2.jpg" width="300">
+      <summary>TELEVISORES</summary>
+      <img src="te 1.jpg" alt="TV 1" />
+      <img src="te 2.webp" alt="TV 2" />
+      <img src="te3.webp" width="300">
     </details>
 
     <details>
-      <summary>MONTERICO, SANTA ROSA</summary>
-      <h2>PRECIO: Q7,000</h2>
-      <h2>DURACIÓN: 5 DÍAS</h2>
-      <h2>PERSONAS: 2 PERSONAS</h2>
-      <h3>GALERÍA</h3>
-      <img src="san1.jpg" width="300">
-      <img src="san2.jpg" width="300">
+      <summary>LAVADORAS</summary>
+      <img src="la1.webp" alt="Lavadora 1" />
+      <img src="la2.webp" alt="Lavadora 2" />
+      <img src="la3.jpg" alt="Lavadora 3" />
     </details>
+  </section>
 
-    <details>
-      <summary>TIKAL, PETÉN</summary>
-      <h2>PRECIO: Q7,000</h2>
-      <h2>DURACIÓN: 5 DÍAS</h2>
-      <h2>PERSONAS: 2 PERSONAS</h2>
-      <h3>GALERÍA</h3>
-      <img src="pe1.avif" width="300">
-      <img src="pe2.jpg" width="300">
-    </details>
-
-  </center>
 </body>
 </html>
