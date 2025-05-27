@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprar</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            background-color: #c0392b; /* Fondo rojo */
+            color: white;
+            font-family: Arial, sans-serif;
+            animation: fadeInBody 2s ease-in;
+            text-align: center;
+        }
+
+        img {
+            width: 300px;
+            animation: slideIn 1s ease-out;
+        }
+
+        a {
+            margin: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #f1c40f;
+        }
+
+        h1 {
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        label, input {
+            display: block;
+            margin: 10px auto;
+            width: 300px;
+            text-align: left;
+        }
+
+        input {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        input:focus {
+            box-shadow: 0 0 5px rgba(241, 196, 15, 0.8);
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #f1c40f;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #d4ac0d;
+            transform: scale(1.05);
+        }
+
+        hr {
+            width: 70%;
+            margin: 20px auto;
+            border: 1px solid white;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInBody {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.png" alt="Logo">
+    <div>
+        <a href="pagina2.html">Productos</a>
+        <a href="pagina3.html">Comprar</a>
+        <a href="pagina4.html">Menú</a>
+    </div>
+
+    <h1>Tus compras son seguras</h1>
+    <hr>
+
+    <form>
+        <label>Producto</label>
+        <input type="text" placeholder="Nombre del producto">
+
+        <label>Calidad</label>
+        <input type="number" placeholder="Calidad">
+
+        <label>Número de tarjeta</label>
+        <input type="number" placeholder="1234 5678 9012 3456">
+
+        <label>CVV</label>
+        <input type="number" placeholder="123">
+
+        <label>Fecha de vencimiento</label>
+        <input type="date">
+
+        <button type="submit">Confirmar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+
+</body>
+</html>

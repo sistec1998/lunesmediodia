@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="logo.png">
+  <title>Menú</title>
+  <style>
+    /* Fondo animado */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      animation: fondoAnimado 10s infinite alternate;
+      background: linear-gradient(-45deg, #dd0e15, #dd3506, #f33e07, #a1c4fd);
+      background-size: 400% 400%;
+      color: #333;
+    }
+
+    @keyframes fondoAnimado {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Centrado y estilo de contenido */
+    .contenido {
+      text-align: center;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 50px auto;
+      max-width: 800px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    /* Estilo y transición para enlaces */
+    a {
+      text-decoration: none;
+      color: #007BFF;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff4081;
+      transform: scale(1.1);
+    }
+
+    h1, h2 {
+      color: #444;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #ccc;
+      margin: 30px auto;
+    }
+
+    marquee img {
+      margin: 0 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenido">
+    <img src="logo.png" width="300" alt="Logo">
+    <div>
+      <a href="#">Productos</a>
+      <a href="#">Comprar</a>
+      <a href="#">Menú</a>
+    </div>
+    <h1>Bienvenido</h1>
+    <hr width="700">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      La misión de una empresa es una declaración clara y concisa que describe el propósito fundamental de la organización: por qué existe, a quién sirve y cómo lo hace. Es una guía estratégica que orienta todas las actividades y decisiones de la empresa de audio, video y domótica. Trabajamos con marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la tecnología, enfocados en brindar una atención personalizada y asesoría experta en cada compra.
+    </p>
+    <h2>Nuestros objetivos</h2>
+    <ol>
+      <li>Servir con amor</li>
+      <li>Brindar oportunidades</li>
+      <li>Ofrecer productos de calidad</li>
+    </ol>
+    <hr width="700">
+    <h2>Descuento 10%</h2>
+    <marquee behavior="scroll" direction="left" scrollamount="8">
+      <img src="55.webp" width="400" alt="Producto 1">
+      <img src="bb.jpg" width="250" alt="Producto 2">
+    </marquee>
+  </div>
+</body>
+</html>
