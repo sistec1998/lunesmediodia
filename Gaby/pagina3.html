@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA</title>
+    <link rel="icon" href="lavaroa2.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eafff5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 300px;
+            margin-top: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 10px;
+            color: #2ecc71;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #27ae60;
+        }
+
+        h1, h2 {
+            color: #2ecc71;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            box-shadow: 0 0 5px #2ecc71;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 200px;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li::before {
+            content: "\f3c5";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #2ecc71;
+            margin-right: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo">
+    </header>
+
+    <nav>
+        <a href="pagina1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+        <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> COMPRAR</a>
+        <a href="pagina4.html"><i class="fas fa-bars"></i> MENU</a>
+    </nav>
+
+    <h1>¡ESTAMOS EN TODA GUAT!</h1>
+    <hr>
+
+    <h2>BUSCA TU TIENDA CERCANA</h2>
+    <input type="text" placeholder="Ej. Mazate">
+    <button><i class="fas fa-search"></i> BUSCAR</button>
+
+    <h2>SUCURSALES</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="tienda1.jpg" alt="Mazate">
+            <h2>MAZATE</h2>
+        </div>
+        <div class="card">
+            <img src="tienda2.jpg" alt="Reu">
+            <h2>REU</h2>
+        </div>
+        <div class="card">
+            <img src="tieda3.jpg" alt="Xela">
+            <h2>XELA</h2>
+        </div>
+    </div>
+
+    <hr>
+    <h2>OTRAS TIENDAS</h2>
+    <ul>
+        <li>PETÉN</li>
+        <li>JALAPA</li>
+        <li>ANTIGUA</li>
+        <li>ZACAPA</li>
+    </ul>
+
+</body>
+</html>
