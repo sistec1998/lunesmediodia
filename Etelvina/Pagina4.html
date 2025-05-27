@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENÚ</title>
+    <link rel="icon" href="Logo.png">
+    <!-- Agregar Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #add8e6; /* Fondo celeste */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+
+        h2, p {
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            margin: 10px;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header img {
+            width: 250px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 900px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .content:hover {
+            transform: scale(1.05);
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .product-marquee img {
+            width: 250px;
+            margin: 0 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .product-marquee img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-card {
+            width: 250px;
+            height: 350px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            text-align: center;
+            padding: 10px;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-card h3 {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="Logo.png" width="300">
+        <h1>BIENVENIDO A NUESTRO MENÚ</h1>
+        <a href=""><i class="fas fa-box"></i> PRODUCTOS</a>
+        <a href=""><i class="fas fa-shopping-cart"></i> COMPRAR</a>
+        <a href=""><i class="fas fa-store"></i> TIENDA</a>
+    </div>
+
+    <div class="content">
+        <p>En [Nombre de la Empresa], somos una empresa dedicada a la venta de productos de electrónica de alta calidad, comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. Con una amplia gama de productos que incluye desde dispositivos móviles, computadoras y accesorios, hasta equipos de audio, video y domótica, trabajamos con marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la tecnología, enfocados en brindar una atención personalizada y asesoría experta en cada compra.</p>
+
+        <h2>NUESTROS OBJETIVOS</h2>
+        <ol>
+            <li>SERVIR CON AMOR</li>
+            <li>BRINDAR OPORTUNIDADES</li>
+            <li>OFRECER PRODUCTOS DE CALIDAD</li>
+        </ol>
+        <hr>
+
+        <h2>DESCUENTO 10%</h2>
+
+        <div class="product-marquee">
+            <marquee>
+                <img src="videojuego.webp" alt="Videojuego">
+                <img src="camara.jpg" alt="Cámara">
+            </marquee>
+        </div>
+
+      
+    </div>
+
+</body>
+</html>

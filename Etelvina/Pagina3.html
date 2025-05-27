@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA</title>
+    <link rel="icon" href="Logo.png">
+    <!-- Agregar Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #add8e6; /* Fondo celeste */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            margin: 10px;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            width: 250px;
+            height: 350px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #ccc;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header img {
+            width: 250px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f0f0f0;
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: scale(1.05);
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="Logo.png" width="300">
+        <h1>¡ESTAMOS EN TODA GUAT!</h1>
+        <hr>
+        <a href="Pagina1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+        <a href="Pagina2.html"><i class="fas fa-shopping-cart"></i> COMPRAR</a>
+        <a href="Pagina4.html"><i class="fas fa-bars"></i> MENÚ</a>
+    </div>
+
+    <h2>BUSCA TU TIENDA CERCANA</h2>
+    <form>
+        <input type="text" placeholder="Ingresa tu ciudad">
+        <button>BUSCAR</button>
+    </form>
+
+    <h2>SUCURSALES</h2>
+    <div class="product-container">
+        <div class="product-card">
+            <img src="tienda1.webp" alt="Tienda 1">
+            <h3>xela</h3>
+        </div>
+        <div class="product-card">
+            <img src="tienda2.webp" alt="Tienda 2">
+            <h3>MAZATE</h3>
+        </div>
+        <div class="product-card">
+            <img src="tienda3.jpg" alt="Tienda 3">
+            <h3>REU</h3>
+        </div>
+       
+    </div>
+
+    <hr>
+
+    <h2>OTRAS TIENDAS</h2>
+    <ul>
+        <li>PETÉN</li>
+        <li>JALAPA</li>
+        <li>ANTIGUA</li>
+        <li>ZACAPA</li>
+    </ul>
+
+</body>
+</html>
