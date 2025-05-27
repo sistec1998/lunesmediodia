@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COMPRAR</title>
+  <link rel="icon" href="logo1.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1e1e2f, #2e2e3f);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00bfff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    header img {
+      width: 200px;
+      animation: slideIn 1.5s ease-out;
+    }
+
+    h1 {
+      color: #a0d8ef;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    hr {
+      border: 1px solid #00bfff;
+      width: 70%;
+      margin: auto;
+    }
+
+    .form-container {
+      background: linear-gradient(145deg, #3a3a4d, #2d2d3e);
+      box-shadow: 0 0 15px #00bfff66;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 30px 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .form-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px #00bfff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background: #00bfff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: #007acc;
+      transform: scale(1.05);
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="pagina1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+      <a href="pagina3.html"><i class="fas fa-store"></i> TIENDAS</a>
+      <a href="pagina4.html"><i class="fas fa-bars"></i> MENU</a>
+    </nav>
+    <img src="logo1.png" alt="Logo">
+    <h1>TUS COMPRAS SEGURAS</h1>
+    <hr>
+  </header>
+
+  <div class="form-container">
+    <form>
+      <label>PRODUCTO</label>
+      <input type="text" placeholder="Nombre del producto">
+
+      <label>CANTIDAD</label>
+      <input type="number" placeholder="1, 2, 3...">
+
+      <label>NÚMERO DE TARJETA</label>
+      <input type="number" placeholder="1234 5678 9012 3456">
+
+      <label>CVV</label>
+      <input type="number" placeholder="123">
+
+      <label>FECHA DE NACIMIENTO</label>
+      <input type="date">
+
+      <button type="submit"><i class="fas fa-check-circle"></i> CONFIRMAR</button>
+      <button type="reset"><i class="fas fa-times-circle"></i> CANCELAR</button>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIENDAS</title>
+  <link rel="icon" href="logo1.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1e1e2f, #2e2e3f);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00bfff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    header img {
+      width: 200px;
+      animation: slideIn 1.5s ease-out;
+    }
+
+    h1, h2 {
+      color: #a0d8ef;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    hr {
+      border: 1px solid #00bfff;
+      width: 70%;
+      margin: auto;
+    }
+
+    form {
+      margin: 20px 0;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 200px;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #00bfff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: #007acc;
+      transform: scale(1.05);
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #3a3a4d, #2d2d3e);
+      box-shadow: 0 0 15px #00bfff66;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-bottom: 1px solid #00bfff33;
+    }
+
+    .card h2 {
+      margin: 10px 0;
+    }
+
+    .list-section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    li {
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo1.png" alt="Logo">
+    <nav>
+      <a href="pagina1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+      <a href="pagina2.html"><i class="fas fa-credit-card"></i> COMPRAR</a>
+      <a href="pagina4.html"><i class="fas fa-bars"></i> MENU</a>
+    </nav>
+    <h1>¡ESTAMOS EN TODA GUATE!</h1>
+    <hr>
+    <form>
+      <label>BUSCA TU TIENDA CERCANA</label><br>
+      <input type="text" placeholder="Ej. zona 1, Mazate, Xela...">
+      <button><i class="fas fa-search"></i> BUSCAR</button>
+    </form>
+  </header>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="ti1.png" alt="Sucursal 1">
+      <h2>SUCURSALES</h2>
+    </div>
+    <div class="card">
+      <img src="ti2.webp" alt="Sucursal Mazate">
+      <h2>MAZATE</h2>
+    </div>
+    <div class="card">
+      <img src="ti3.webp" alt="Sucursal Reu">
+      <h2>REU</h2>
+    </div>
+    <div class="card">
+      <img src="ti4.webp" alt="Sucursal Xela">
+      <h2>XELA</h2>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="list-section">
+    <h2>OTRAS TIENDAS</h2>
+    <ul>
+      <li><i class="fas fa-store"></i> PETÉN</li>
+      <li><i class="fas fa-store"></i> JALAPA</li>
+      <li><i class="fas fa-store"></i> ANTIGUA</li>
+      <li><i class="fas fa-store"></i> ZACAPA</li>
+    </ul>
+  </div>
+
+</body>
+</html>

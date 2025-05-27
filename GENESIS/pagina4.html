@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MENÚ</title>
+  <link rel="icon" href="logo1.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1e1e2f, #2e2e3f);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      width: 200px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00bfff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    h1, h2 {
+      color: #a0d8ef;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    p {
+      max-width: 800px;
+      margin: auto;
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      font-size: 1.1em;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    hr {
+      border: 1px solid #00bfff;
+      width: 70%;
+      margin: 30px auto;
+    }
+
+    .slider {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .slide-track {
+      display: flex;
+      animation: scroll 10s linear infinite;
+      gap: 20px;
+    }
+
+    .slide {
+      flex: 0 0 auto;
+    }
+
+    .slide img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00bfff99;
+      transition: transform 0.3s;
+    }
+
+    .slide img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .content-section {
+      padding: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo1.png" alt="Logo">
+    <nav>
+      <a href="pagina1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+      <a href="pagina2.html"><i class="fas fa-credit-card"></i> COMPRAR</a>
+      <a href="pagina3.html"><i class="fas fa-store"></i> TIENDAS</a>
+    </nav>
+    <h1>BIENVENIDOS</h1>
+    <hr>
+  </header>
+
+  <div class="content-section">
+    <h2>QUIÉNES SOMOS</h2>
+    <p>
+      En <strong>ELECTRONICA PANAAMERICANA</strong>, somos una empresa dedicada a la venta de productos de electrónica de alta calidad,
+      comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. Con una amplia gama
+      de productos que incluye desde dispositivos móviles, computadoras y accesorios, hasta equipos de audio, video y domótica,
+      trabajamos con marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza.
+      Nuestro equipo está formado por profesionales apasionados por la tecnología, enfocados en brindar una atención personalizada
+      y asesoría experta en cada compra.
+    </p>
+
+    <h2>NUESTROS OBJETIVOS</h2>
+    <ul>
+      <li><i class="fas fa-handshake"></i> BUEN SERVICIO AL CLIENTE</li>
+      <li><i class="fas fa-broom"></i> BUENA HIGIENE</li>
+      <li><i class="fas fa-star"></i> OFRECER PRODUCTOS DE CALIDAD</li>
+    </ul>
+
+    <hr>
+
+    <h2>DESCUENTO 10%</h2>
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide"><img src="descuento.jpg" alt="Descuento 1"></div>
+        <div class="slide"><img src="descuento2.jpg" alt="Descuento 2"></div>
+        <!-- Puedes duplicar para un loop visual más largo -->
+        <div class="slide"><img src="descuento.jpg" alt="Descuento 1"></div>
+        <div class="slide"><img src="descuento2.jpg" alt="Descuento 2"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
