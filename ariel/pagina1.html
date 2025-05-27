@@ -1,133 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LAYS</title>
-  <link rel="icon" href="logo.png"/>
-  <style>
-    body {
-      background: linear-gradient(to bottom, #ffeb3b, #ff5722); /* Amarillo a rojo */
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        /* Fondo con gradiente */
+        body {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    h1 {
-      color: #b71c1c;
-      font-size: 3em;
-      margin-top: 10px;
-      animation: slideDown 1s ease-out;
-    }
+        /* Centrar todo el contenido */
+        center {
+            display: block;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    @keyframes slideDown {
-      from {
-        transform: translateY(-50px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
+        /* Estilos del título */
+        h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
 
-    hr {
-      border: 2px solid #b71c1c;
-      width: 80%;
-    }
+        h2 {
+            color: white;
+            margin-top: 40px;
+            font-size: 28px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
 
-    details {
-      margin: 20px auto;
-      width: 90%;
-      max-width: 1000px;
-      background-color: #fff3e0;
-      padding: 10px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: all 0.3s ease;
-    }
+        hr {
+            width: 80%;
+            border: 1px solid white;
+        }
 
-    summary {
-      font-size: 1.5em;
-      color: #d32f2f;
-      cursor: pointer;
-      font-weight: bold;
-    }
+        /* Estilo para los enlaces */
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
 
-    img {
-      margin: 10px;
-      width: 250px;
-      border-radius: 15px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        a:hover {
+            color: #00ffdd;
+        }
 
-    img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-    }
+        /* Estilos de las imágenes (convertir en tarjetas) */
+        img {
+            width: 100%;
+            max-width: 300px;
+            margin: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
 
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+        }
 
-    .card {
-      background-color: white;
-      border-radius: 15px;
-      margin: 10px;
-      padding: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        /* Estilos para los formularios */
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 12px rgba(0,0,0,0.3);
-    }
-  </style>
+        label, button {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #0072ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00c6ff;
+        }
+
+        /* Estilos para detalles con animaciones */
+        details {
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        details summary {
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        details[open] {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        details img {
+            display: inline-block;
+            max-width: 250px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Aplicando animación */
+        body {
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1, h2, form, a, img {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
 </head>
 <body>
-  <img src="logo.png" width="300" alt="Lays Logo" />
-  <h1>PRODUCTOS</h1>
-  <hr />
+    <center>
+        <img src="logo.png" width="450">
+        <br><br>
+        <a href="pagina22.html">COMPRAR</a>
+        <a href="pagina3.html">TIENDA</a>
+        <a href="pagina4.html">MENU</a>
 
-  <details>
-    <summary>CHEETOS</summary>
-    <div class="card-container">
-      <div class="card"><img src="cheto1.jpg" alt="Cheetos 1"/></div>
-      <div class="card"><img src="cheto2.webp" alt="Cheetos 2"/></div>
-      <div class="card"><img src="cheto3.png" alt="Cheetos 3"/></div>
-    </div>
-  </details>
+        <h1>UN MUNDO PARA ELEGIR</h1>
+        <hr width="700">
 
-  <details>
-    <summary>DORITOS</summary>
-    <div class="card-container">
-      <div class="card"><img src="doritos1.png" alt="Doritos 1"/></div>
-      <div class="card"><img src="doritos2.webp" alt="Doritos 2"/></div>
-      <div class="card"><img src="doritos3.webp" alt="Doritos 3"/></div>
-    </div>
-  </details>
+        <form action="">
+            <label for="">¿QUE BUSCAS?</label>
+            <input type="text">
+            <button>BUSCAR</button>
+        </form>
 
-  <details>
-    <summary>PAPAS LAYS</summary>
-    <div class="card-container">
-      <div class="card"><img src="7.png" alt="Lays 1"/></div>
-      <div class="card"><img src="8.png" alt="Lays 2"/></div>
-      <div class="card"><img src="9.png" alt="Lays 3"/></div>
-    </div>
-  </details>
+        <h2>COMPUTADORAS</h2>
+        <div class="product-cards">
+            <img src="COMPU1.avif" alt="Computadora 1">
+            <img src="COMPU2.png" alt="Computadora 2">
+            <img src="compu33.avif" alt="Computadora 3">
+        </div>
 
-  <details>
-    <summary>GALLETAS</summary>
-    <div class="card-container">
-      <div class="card"><img src="galletas1.webp" alt="Galletas 1"/></div>
-      <div class="card"><img src="galletas2.webp" alt="Galletas 2"/></div>
-      <div class="card"><img src="galletas3.webp" alt="Galletas 3"/></div>
-    </div>
-  </details>
+        <h2>BOCINAS</h2>
+        <div class="product-cards">
+            <img src="BOCINA1.webp" alt="Bocina 1">
+            <img src="BOCINA2.webp" alt="Bocina 2">
+            <img src="BOCINA3.png" alt="Bocina 3">
+        </div>
+
+        <h2>INSTRUMENTOS</h2>
+        <div class="product-cards">
+            <img src="INSRU1.png" alt="Instrumento 1">
+            <img src="INSTRU2.png" alt="Instrumento 2">
+            <img src="INSTRU3.jpg" alt="Instrumento 3">
+        </div>
+
+        <h2>DRONES</h2>
+        <div class="product-cards">
+            <img src="DRON1.png" alt="Dron 1">
+            <img src="DRON22.png" alt="Dron 2">
+            <img src="DRON3.jpg" alt="Dron 3">
+        </div>
+
+        <hr>
+
+        <h2>PARA EL HOGAR</h2>
+
+        <details>
+            <summary>REFRIGERADORES</summary>
+            <img src="REFRI1.webp" alt="Refrigerador 1">
+            <img src="REFRI2.png" alt="Refrigerador 2">
+            <img src="REFRI3.png" alt="Refrigerador 3">
+        </details>
+
+        <details>
+            <summary>TELEVISIÓN</summary>
+            <img src="TELE1.webp" alt="Televisión 1">
+            <img src="TELE2.webp" alt="Televisión 2">
+            <img src="TELE3.webp" alt="Televisión 3">
+        </details>
+
+        <details>
+            <summary>LAVADORAS</summary>
+            <img src="LAVA1.avif" alt="Lavadora 1">
+            <img src="LAVA2.png" alt="Lavadora 2">
+            <img src="LAVA3.webp" alt="Lavadora 3">
+        </details>
+    </center>
 </body>
 </html>

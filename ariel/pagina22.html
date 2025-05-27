@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        /* Fondo con gradiente */
+        body {
+            background: linear-gradient(to right, #00c6ff, #0072ff); /* Celeste a Azul */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Centrar el contenido */
+        center {
+            display: block;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilo de los títulos */
+        h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid white;
+        }
+
+        /* Enlaces con efectos de hover */
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #00ffdd;
+        }
+
+        /* Estilos del formulario */
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Estilo de los inputs */
+        input[type="text"], input[type="number"], input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus {
+            border-color: #0072ff;
+            outline: none;
+        }
+
+        /* Estilo de los botones */
+        button {
+            padding: 12px 25px;
+            background-color: #0072ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 10px 10px;
+        }
+
+        button:hover {
+            background-color: #00c6ff;
+            transform: scale(1.05);
+        }
+
+        /* Animaciones para el contenido */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animación de entrada para el body */
+        body {
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1, form, a {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Imágenes como tarjetas (si las añades más tarde) */
+        img {
+            width: 100%;
+            max-width: 300px;
+            margin: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <!-- Logo -->
+        <img src="logo.png" width="450" alt="Logo">
+        <br><br>
+
+        <!-- Enlaces de navegación -->
+        <a href="pagina1.html">PRODUCTOS</a>
+        <a href="pagina3.html">TIENDA</a>
+        <a href="pagina4.html">MENU</a>
+
+        <!-- Título -->
+        <h1>TUS COMPRAS SON SEGURAS</h1>
+
+        <hr width="700">
+
+        <!-- Formulario de pago -->
+        <form action="">
+            <label for="producto">PRODUCTO</label>
+            <input type="text" id="producto" name="producto" required>
+            
+            <label for="cantidad">CANTIDAD</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+            
+            <label for="tarjeta">NUMERO DE TARJETA</label>
+            <input type="number" id="tarjeta" name="tarjeta" required>
+            
+            <label for="cvv">CVV</label>
+            <input type="number" id="cvv" name="cvv" required>
+            
+            <label for="fecha">FECHA DE NACIMIENTO</label>
+            <input type="date" id="fecha" name="fecha" required>
+            
+            <button type="submit">CONFIRMAR</button>
+            <button type="reset">CANCELAR</button>
+        </form>
+    </center>
+</body>
+</html>
