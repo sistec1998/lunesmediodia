@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS</title>
+    <link rel="icon" href="logo.png">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #ffe0f0, #ffc1e3);
+            font-family: Arial, sans-serif;
+            color: #b4005f;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease-in;
+        }
+
+        h1, h2 {
+            color: #d10077;
+            text-shadow: 1px 1px 2px #ffb0d6;
+        }
+
+        a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #ff007f;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            color: #ff66a3;
+            transform: scale(1.1);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 2px solid #ff66a3;
+            border-radius: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus {
+            box-shadow: 0 0 10px #ff99cc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff3399;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #e60073;
+            transform: scale(1.05);
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(255, 105, 180, 0.5);
+        }
+
+        details {
+            margin: 20px;
+            background-color: #fff0f5;
+            padding: 10px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: #ff99cc;
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo2.png" width="700">
+        <br><br><br>
+        <a href="pagina2.html">COMPRAR</a>
+        <a href="pagina3.html">TIENDA</a>
+        <a href="pagina4.html">MENU</a>
+        <h1>MUNDO PARA ELIGIR</h1>
+        <hr>
+        <label>QUE BUSCAS</label>
+        <input type="text">
+        <br><br><br>
+        <button>BUSCAR</button>
+
+        <h2>COMPUTADORA</h2>
+        <img src="compu.avif" width="300" height="250">
+        <img src="compu2.webp" width="300" height="250">
+        <img src="compu3.webp" width="300" height="250">
+
+        <h2>BOCINAS</h2>
+        <img src="bocina1.png" width="250">
+        <img src="bocina2.png" width="250">
+        <img src="bocina3.png" width="250">
+
+        <h2>INSTRUMENTOS MUSICALES</h2>
+        <img src="guitarra1.webp" width="250">
+        <img src="piano1.webp" width="250">
+        <img src="bateria1.avif" width="250">
+
+        <h2>DRONES</h2>
+        <img src="drones1.png" width="250">
+        <img src="drones2.png" width="250">
+        <img src="drones3" width="250">
+
+        <hr>
+        <h2>PARA EL HOGAR</h2>
+
+        <details>
+            <summary>REFRIGERADORAS</summary>
+            <img src="refri1.png" width="250">
+            <img src="refri2.webp" width="250">
+            <img src="refri3.png" width="250">
+        </details>
+
+        <details>
+            <summary>TV</summary>
+            <img src="tv1.webp" width="250">
+            <img src="tv2.png" width="250">
+            <img src="tv3.webp" width="250">
+        </details>
+
+        <details>
+            <summary>LAVADORAS</summary>
+            <img src="lavadoras1.png" width="250">
+            <img src="lavadoras2.webp" width="250">
+            <img src="lavadoras3.webp" width="250">
+        </details>
+    </center>
+</body>
+</html>

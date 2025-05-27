@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPRAR</title>
+    <link rel="icon" href="logo2.png">
+    <style>
+        body {
+            background-color: #ffe6f0; /* rosa claro */
+            font-family: Arial, sans-serif;
+            animation: fadeIn 2s ease-in;
+            color: #b30059;
+        }
+
+        a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff66a3;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #cc0052;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 20px;
+            animation: slideDown 1s ease-out;
+        }
+
+        form {
+            background-color: #fff0f5;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+            width: 400px;
+            margin-top: 20px;
+            animation: zoomIn 1s ease-out;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ff99cc;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:focus {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #ff66a3;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #ff66a3;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #cc0052;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+<center>
+    <a href="pagina1.html">PRODUCTOS</a>
+    <a href="pagina3.html">TIENDAS</a>
+    <a href="pagina4.html">MENU</a>
+    <h1>TUS COMPRAS ESTAN SEGURAS</h1>
+    <hr width="700">
+    <form>
+        <label>PRODUCTOS</label>
+        <input type="text" placeholder="Ej. Camiseta, Zapatos">
+
+        <label>CANTIDAD</label>
+        <input type="number" placeholder="Ej. 2">
+
+        <label>NUMERO DE TARJETA</label>
+        <input type="number" placeholder="XXXX-XXXX-XXXX-XXXX">
+
+        <label>CVV</label>
+        <input type="number" placeholder="123">
+
+        <label>FECHA DE VENCIMIENTO</label>
+        <input type="date">
+
+        <button type="submit">CONFIRMAR</button>
+        <button type="reset">CANCELAR</button>
+    </form>
+</center>
+</body>
+</html>

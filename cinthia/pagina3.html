@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIENDAS</title>
+  <link rel="icon" href="logo2.png">
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      color: #b30059;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: #ff66b2;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      background-color: #e60073;
+      transform: scale(1.1);
+    }
+
+    h1, h2 {
+      animation: fadeIn 2s ease;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      margin: 20px 0;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    button {
+      background-color: #ff99cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #e60073;
+      transform: scale(1.05);
+    }
+
+    input {
+      padding: 8px;
+      border: 2px solid #ff99cc;
+      border-radius: 5px;
+      width: 200px;
+    }
+
+    ul {
+      list-style-type: square;
+      color: #b30059;
+      font-weight: bold;
+    }
+
+    hr {
+      border: 1px solid #ff66b2;
+      margin: 20px auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo2.png" width="300">
+  <div>
+    <a href="pagina1.html">PRODUCTOS</a>
+    <a href="pagina2.html">COMPRAR</a>
+    <a href="pagina4.html">MENU</a>
+  </div>
+
+  <h1>¡ESTAMOS EN TODA GUATEMALA!</h1>
+  <hr width="700">
+
+  <h2>BUSCANOS EN TU TIENDA MÁS CERCANA</h2>
+
+  <form>
+    <label>¿CUÁL ES TU TIENDA MÁS CERCANA?</label><br>
+    <input type="text"><br><br>
+    <button>BUSCAR</button>
+  </form>
+
+  <h2>SUCURSAL</h2>
+  <img src="images1.jpg" width="300">
+
+  <h2>MAZATE</h2>
+  <img src="imagen2.jpg" width="300">
+
+  <h2>XELA</h2>
+  <img src="images3.jpg" width="300">
+
+  <hr width="800">
+
+  <h1>OTRAS TIENDAS</h1>
+  <ul>
+    <li>PETÉN</li>
+    <li>JALAPA</li>
+    <li>ANTIGUA</li>
+    <li>ZACAPA</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            background: linear-gradient(to right, #ffe6f0, #ffd6eb);
+            font-family: 'Arial', sans-serif;
+            color: #800040;
+            margin: 0;
+            padding: 0;
+            animation: fadeInBody 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInBody {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            color: #cc0066;
+            animation: slideIn 1s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px 15px;
+            padding: 12px 24px;
+            background: linear-gradient(to right, #ff66b2, #ff99cc);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-weight: bold;
+        }
+
+        a:hover {
+            background: linear-gradient(to right, #ff3385, #ff66b2);
+            transform: scale(1.1);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+        }
+
+        img {
+            border-radius: 15px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        p, ol {
+            width: 80%;
+            margin: 20px auto;
+            text-align: justify;
+            background-color: #fff0f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            line-height: 1.6;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: 2px solid #ff99cc;
+            width: 60%;
+            margin: 40px auto;
+        }
+
+        marquee img {
+            margin: 10px;
+        }
+
+        .logo {
+            margin-top: 30px;
+            animation: popIn 1.5s ease;
+        }
+
+        @keyframes popIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo2.png" width="300" alt="Logo" class="logo">
+
+        <div>
+            <a href="pagina1.html">PRODUCTOS</a>
+            <a href="pagina2.html">COMPRAR</a>
+            <a href="pagina3.html">TIENDAS</a>
+        </div>
+
+        <h1>BIENVENIDOS</h1>
+        <hr>
+        
+        <h1>QUIÉNES SOMOS</h1>
+        <p>
+            En <strong>[Nombre de la Empresa]</strong>, somos una empresa dedicada a la venta de productos de electrónica de alta calidad, comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. Con una amplia gama de productos que incluye desde dispositivos móviles, computadoras y accesorios, hasta equipos de audio, video y domótica, trabajamos con marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la tecnología, enfocados en brindar una atención personalizada y asesoría experta en cada compra.
+        </p>
+
+        <h1>NUESTROS OBJETIVOS</h1>
+        <ol>
+            <li>SERVIR CON AMOR</li>
+            <li>BRINDAR OPORTUNIDAD</li>
+            <li>OFRECER PRODUCTOS DE CALIDAD</li>
+        </ol>
+
+        <hr>
+
+        <h1>DESCUENTO DEL 10%</h1>
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            <img src="lintendon1.png" width="300" alt="Producto 1">
+            <img src="camara1.webp" width="300" alt="Producto 2">
+        </marquee>
+    </center>
+</body>
+</html>
