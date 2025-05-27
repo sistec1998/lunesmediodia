@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <title>TIENDA</title>
+    <!-- Incluir Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FF6F61, #FF9E2C);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        center {
+            display: block;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        hr {
+            width: 700px;
+            border: 1px solid #fff;
+            margin: 20px auto;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #FFD700;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: 0 auto;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.2em;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #FF9E2C;
+            outline: none;
+        }
+        button {
+            background-color: #FF6F61;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #FF9E2C;
+            transform: scale(1.05);
+        }
+        button:active {
+            background-color: #e84c3c;
+        }
+        img {
+            border-radius: 10px;
+            margin: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #fff;
+            font-size: 1.8em;
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            color: #fff;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        ul li:hover {
+            color: #FFD700;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" alt="Logo" width="700">
+        <div>
+            <a href="pagina 1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+            <a href="pagina 2.html"><i class="fas fa-shopping-cart"></i> COMPRAR</a>
+            <a href="pagina 4.html"><i class="fas fa-bars"></i> MENÚ</a>
+        </div>
+
+        <h1>¡ESTAMOS EN TODA GUA!</h1>
+        <hr>
+
+        <form>
+            <label>BUSCA TU TIENDA CERCANA</label>
+            <br><br>
+            <input type="text" placeholder="Ingresa tu ubicación o tienda">
+            <br><br>
+            <button><i class="fas fa-search"></i> BUSCAR</button>
+        </form>
+
+        <h2>SUCURSALES</h2>
+        <div>
+            <img src="tt1.webp" alt="Sucursal 1" width="250">
+            <img src="tt2.webp" alt="Sucursal 2" width="250">
+            <img src="rrr.jpg" alt="Sucursal 3" width="250">
+        </div>
+
+        <h2>MAZATE</h2>
+        <img src="tt2.webp" alt="Mazate" width="250">
+
+        <h2>REU</h2>
+        <img src="rrr.jpg" alt="Reu" width="250">
+
+        <h2>XELA</h2>
+
+        <hr>
+
+        <h2>OTRAS TIENDAS</h2>
+        <ul>
+            <li>PETEN</li>
+            <li>JALAPA</li>
+            <li>ANTIGUA</li>
+            <li>ZACAPA</li>
+        </ul>
+    </center>
+</body>
+</html>

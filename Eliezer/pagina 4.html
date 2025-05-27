@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENÚ</title>
+    <link rel="icon" href="logo.png">
+    <!-- Incluir Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4CAF50, #81C784); /* Fondo con gradiente verde */
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 50px;
+            animation: fadeIn 3s ease-in-out;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 30px;
+            color: #FFD700; /* Color dorado para los subtítulos */
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            line-height: 1.5;
+            animation: slideUp 2s ease-in-out;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        ol {
+            text-align: left;
+            margin: 0 auto;
+            display: inline-block;
+            font-size: 1.2em;
+        }
+
+        hr {
+            width: 700px;
+            border: 1px solid #fff;
+            margin: 20px auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFD700;
+            font-size: 1.5em;
+            margin: 0 20px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            color: #FF6347; /* Cambio de color en hover */
+            transform: scale(1.1);
+        }
+
+        .marquee {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            margin-top: 30px;
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        .marquee p {
+            margin: 0;
+            animation: marqueeAnimation 10s linear infinite;
+        }
+
+        @keyframes marqueeAnimation {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Animación de desvanecimiento */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Animación de desplazamiento hacia arriba */
+        @keyframes slideUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="700">
+        <div>
+            <!-- Enlaces con iconos y efectos -->
+            <a href="pagina 1.html"><i class="fas fa-home"></i> Página 1</a>
+            <a href="pagina 2.html"><i class="fas fa-shopping-cart"></i> Página 2</a>
+            <a href="pagina 3.html"><i class="fas fa-info-circle"></i> Página 3</a>
+        </div>
+
+        <h1>BIENVENIDO</h1>
+        <hr>
+
+        <h2>QUIENES SOMOS</h2>
+        <p>Tu misión es diseñar una página web que no solo sea visualmente atractiva,
+             sino que también sea funcional y fácil de usar para los clientes. Debes 
+             integrar colores, efectos, animaciones y transiciones para hacer que la 
+             experiencia del usuario sea memorable. Además, debes asegurarte de que la 
+             página sea accesible y fácil de navegar en dispositivos móviles.</p>
+
+        <h2>NUESTRO OBJETIVO</h2>
+        <ol>
+            <li>SEVIR CON AMOR</li>
+            <li>BRINDAR OPORTUNIDADES</li>
+            <li>OFRESER PRODUCTOS DE CALIDAD</li>
+        </ol>
+
+        <hr>
+
+        <h2>DESCUENTO 10%</h2>
+        <div class="marquee">
+            <p>¡Ofertas limitadas! Aprovecha el 10% de descuento en todos nuestros productos.</p>
+        </div>
+
+        <div>
+            <img src="t1.webp" width="250">
+            <img src="d1.png" width="300">
+        </div>
+    </center>
+</body>
+</html>

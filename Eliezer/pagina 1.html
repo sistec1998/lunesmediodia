@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        center {
+            display: block;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            margin-top: 20px;
+        }
+        hr {
+            width: 700px;
+            border: 1px solid #3498db;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+            font-size: 1.2em;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #e74c3c;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #e74c3c;
+        }
+        img {
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            margin-top: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        details {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        details:hover {
+            background-color: #bdc3c7;
+        }
+        summary {
+            font-size: 1.3em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            .images-container img {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" width="300">
+        <div>
+            <a href="pagina 2.html">COMPRAR</a>
+            <a href="pagina 3.html">TIENDA</a>
+            <a href="pagina 4.html">MENÚ</a>
+        </div>
+
+        <h1>UN MUNDO PARA ELEGIR</h1>
+        <hr>
+
+        <form>
+            <label>¿QUÉ BUSCAS?</label>
+            <br><br>
+            <input type="text" placeholder="Escribe tu búsqueda...">
+            <br><br>
+            <button>BUSCAR</button>
+        </form>
+
+        <h2>COMPUTADORAS</h2>
+        <div class="images-container">
+            <img src="c1.avif" width="250">
+            <img src="c2.webp" width="240">
+            <img src="c3.png" width="230">
+        </div>
+
+        <h2>BOCINAS</h2>
+        <div class="images-container">
+            <img src="b1.webp" width="250">
+            <img src="b2.webp" width="250">
+            <img src="b3.png" width="250">
+        </div>
+
+        <h2>INSTRUMENTOS MUSICALES</h2>
+        <div class="images-container">
+            <img src="i1.png" width="250">
+            <img src="i2.webp" width="250">
+            <img src="i3.webp" width="250">
+        </div>
+
+        <h2>DRONES</h2>
+        <div class="images-container">
+            <img src="d1.png" width="250">
+            <img src="d2.png" width="250">
+            <img src="dd.png" width="250">
+        </div>
+        
+        <hr>
+
+        <h2>PARA EL HOGAR</h2>
+        
+        <details>
+            <summary>REFRIGERADORAS</summary>
+            <div class="images-container">
+                <img src="r2.webp" width="250">
+                <img src="r3.webp" width="260">
+                <img src="rr.png" width="400">
+            </div>
+        </details>
+
+        <details>
+            <summary>TV</summary>
+            <div class="images-container">
+                <img src="t1.webp" width="250">
+                <img src="t2.webp" width="250">
+                <img src="t3.webp" width="250">
+            </div>
+        </details>
+
+        <details>
+            <summary>LAVADORAS</summary>
+            <div class="images-container">
+                <img src="l1.webp" width="250">
+                <img src="l2.avif" width="260">
+                <img src="l3.webp" width="260">
+            </div>
+        </details>
+    </center>
+</body>
+</html>
