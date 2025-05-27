@@ -2,105 +2,132 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>lays</title>
-  <link rel="icon" href="logo.png">
+  <title>Tiendas</title>
+  <link rel="icon" href="logo.jpeg">
   <style>
     body {
-      background-color: #ffc0cb; /* rosado */
-      font-family: 'Arial', sans-serif;
+      background-color: #ffc0cb; /* Fondo rosado */
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      text-align: center;
       color: #333;
-      animation: fadeIn 2s ease-in-out;
     }
 
-    center {
-      padding: 40px 20px;
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #ff69b4;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: background-color 0.4s ease, transform 0.3s ease;
+      display: inline-block;
     }
 
-    img {
-      width: 300px;
-      animation: float 3s ease-in-out infinite;
-    }
-
-    h1 {
-      color: #e60073;
-      font-size: 3em;
-      margin-bottom: 10px;
-      transition: color 0.5s ease;
-    }
-
-    h1:hover {
-      color: #b30059;
-    }
-
-    h2 {
-      color: #ff3399;
-      transition: transform 0.3s;
-    }
-
-    h2:hover {
+    a:hover {
+      background-color: #ff1493;
       transform: scale(1.1);
     }
 
-    hr {
-      border: none;
-      height: 3px;
-      background-color: #ff66b2;
-      margin: 20px auto;
-      width: 50%;
+    img {
+      transition: transform 0.5s ease;
     }
 
-    ol, ul {
-      list-style-position: inside;
-      font-size: 1.2em;
-      color: #800040;
+    img:hover {
+      transform: scale(1.05) rotate(2deg);
     }
 
-    li {
-      margin-bottom: 5px;
-      transition: transform 0.3s, color 0.3s;
+    h1, h2 {
+      animation: fadeInUp 1s ease-in-out;
     }
 
-    li:hover {
-      transform: translateX(10px);
-      color: #cc0066;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes float {
-      0%, 100% {
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
         transform: translateY(0);
       }
-      50% {
-        transform: translateY(-10px);
-      }
+    }
+
+    form {
+      margin: 20px 0;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 200px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+      transform: scale(1.05);
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    ul li {
+      margin: 5px 0;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    hr {
+      border: 2px solid #fff;
+      margin: 30px auto;
     }
   </style>
 </head>
 <body>
   <center>
-    <img src="logo.png" alt="Logo de Lays">
-    <h1>más sabor</h1>
-    <hr>
-    <h2>Galletas</h2>
-    <ol>
-      <li>Chokis</li>
-      <li>Arcoiris</li>
-      <li>Emperador</li>
-      <li>Chiki</li>
-    </ol>
-    <hr>
-    <h2>Golosinas</h2>
+    <img src="logo.jpeg" width="300" alt="Logo">
+    <br>
+    <a href="pagina1.html">Productos</a>
+    <a href="pagina2.html">Comprar</a>
+    <a href="pagina4.html">Menú</a>
+    <h1>¡Estamos en toda Guate!</h1>
+    <hr width="800">
+    <form>
+      <label>Busca tu tienda cercana</label><br>
+      <input type="text"><br>
+      <button type="submit">Buscar</button>
+    </form>
+    <h2>Sucursales</h2>
+    <img src="imagen.jpg" width="300" alt="Sucursal">
+    <h2>Mazate</h2>
+    <img src="logo2.jpg" width="300" alt="Mazate">
+    <h2>Retalhuleu</h2>
+    <img src="logo3.jpg" width="300" alt="Retalhuleu">
+    <h2>Xela</h2>
+    <img src="logo4.jpg" width="300" alt="Xela">
+    <hr width="900">
     <ul>
-      <li>Fiesta</li>
-      <li>Detodito</li>
-      <li>Crujitos</li>
+      <li>Peten</li>
+      <li>Jalapa</li>
+      <li>Antigua</li>
+      <li>Zacapa</li>
     </ul>
-  </center>   
+  </center>
 </body>
 </html>

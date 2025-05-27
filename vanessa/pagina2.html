@@ -2,115 +2,124 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Lays</title>
-  <link rel="icon" href="logo.png">
+  <title>Comprar</title>
+  <link rel="icon" href="logo.jpeg">
   <style>
     body {
-      background-color: #b3ecff; /* Fondo celeste */
+      background-color: #b3e5fc; /* Celeste */
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 50px;
-      transition: background-color 1s ease;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 2s ease-in;
     }
 
-    img {
-      width: 300px;
-      animation: fadeIn 2s ease;
+    center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #004d40;
     }
 
     h1 {
-      color: #ffcc00;
-      text-shadow: 2px 2px 4px #333;
-      animation: slideDown 1s ease;
+      color: #00695c;
+      animation: slideDown 1.5s ease-out;
     }
 
     label {
-      display: block;
       margin-top: 15px;
+      color: #004d40;
       font-weight: bold;
-      color: #003366;
-      transition: color 0.5s ease;
+      transition: color 0.3s ease;
     }
 
-    input[type="text"],
-    input[type="file"] {
-      margin-top: 5px;
-      padding: 10px;
+    input {
+      margin: 5px 0;
+      padding: 8px;
       width: 250px;
-      border: 1px solid #ccc;
+      border: 1px solid #80cbc4;
       border-radius: 5px;
-      transition: box-shadow 0.3s ease;
+      transition: border 0.3s ease;
     }
 
     input:focus {
-      box-shadow: 0 0 5px #0099cc;
+      border-color: #004d40;
       outline: none;
     }
 
     button {
       margin: 15px 10px;
       padding: 10px 20px;
+      background-color: #00796b;
+      color: white;
       border: none;
       border-radius: 5px;
-      background-color: #ffcc00;
-      color: #333;
-      font-weight: bold;
+      font-size: 16px;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     button:hover {
-      background-color: #ffaa00;
+      background-color: #004d40;
       transform: scale(1.05);
     }
 
     hr {
-      border: 2px solid #ffcc00;
-      width: 500px;
-      animation: growWidth 1s ease;
+      margin: 20px 0;
+      border: 1px solid #004d40;
+      width: 80%;
     }
 
-    /* Animaciones */
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
 
     @keyframes slideDown {
-      from { transform: translateY(-50px); opacity: 0; }
+      from { transform: translateY(-20px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes growWidth {
-      from { width: 0; }
-      to { width: 500px; }
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Logo">
-  <h1>Trabaja con nosotros</h1>
-  <hr>
-
-  <form>
-    <label>Tu nombre</label>
-    <input type="text" name="nombre">
-
-    <label>Tu profesión</label>
-    <input type="text" name="profesion">
-
-    <label>Tu DPI</label>
-    <input type="text" name="dpi">
-
-    <label>Tu CV</label>
-    <input type="file" name="cv">
-
-    <label>¿Qué te gustaría hacer?</label>
-    <input type="text" name="gustos">
-
+  <center>
+    <img src="logo.jpeg" width="300" alt="Logo">
     <br>
-    <button type="submit">Postularse</button>
-    <button type="reset">Cancelar</button>
-  </form>
+    <a href="pagina1.html">Productos</a>
+    <a href="pagina3.html">Tiendas</a>
+    <a href="pagina4.html">Menú</a>
+
+    <h1>Tus compras son seguras</h1>
+    <hr>
+
+    <label>Producto</label><br>
+    <input type="text"><br>
+
+    <label>Cantidad</label><br>
+    <input type="number"><br>
+
+    <label>Número de tarjeta</label><br>
+    <input type="number"><br>
+
+    <label>CVV</label><br>
+    <input type="number"><br>
+
+    <label>Fecha de vencimiento</label><br>
+    <input type="date"><br>
+
+    <button>Confirmar</button>
+    <button>Cancelar</button>
+  </center>
 </body>
 </html>
