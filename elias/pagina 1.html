@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda</title>  
+  <link rel="icon" href="electronica.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      color: #333;
+      text-align: center;
+    }
+
+    header img {
+      width: 300px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #ff6600;
+    }
+
+    h1, h2 {
+      color: #222;
+    }
+
+    hr {
+      width: 700px;
+      border: 1px solid #ccc;
+    }
+
+    label, input, button {
+      font-size: 16px;
+      margin: 10px;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      transition: box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus {
+      box-shadow: 0 0 10px #aaa;
+      outline: none;
+    }
+
+    button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0056b3;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #003f7f;
+    }
+
+    img {
+      margin: 10px;
+      width: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    details {
+      margin: 20px 0;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="electronica.png" alt="Logo de Tienda">
+  </header>
+
+  <nav>
+    <a href="pagina 2.html">Comprar</a>
+    <a href="pagina 3.html">Tienda</a>
+    <a href="pagina 4.html">Menú</a>
+  </nav>
+
+  <h1>Un mundo para elegir</h1>
+  <hr>
+
+  <div>
+    <label>¿Qué buscas?</label>
+    <input type="text" placeholder="Buscar...">
+    <button>Buscar</button>
+  </div>
+
+  <section>
+    <h2>Computadoras</h2>
+    <img src="imagen 1.avif" alt="Computadora 1">
+    <img src="imagen 2.webp" alt="Computadora 2">
+    <img src="imagen 3.webp" alt="Computadora 3">
+
+    <h2>Bocinas</h2>
+    <img src="bocina 1.webp" alt="Bocina 1">
+    <img src="bocina 2.png" alt="Bocina 2">
+    <img src="bocina 3.png" alt="Bocina 3">
+
+    <h2>Instrumentos Musicales</h2>
+    <img src="instrumentos 1.webp" alt="Instrumento 1">
+    <img src="instrumentos 2.gif" alt="Instrumento 2">
+    <img src="instrumento 3.webp" alt="Instrumento 3">
+
+    <h2>Drones</h2>
+    <img src="dron 1" alt="Dron 1">
+    <img src="dron 2.png" alt="Dron 2">
+    <img src="dron 3.png" alt="Dron 3">
+  </section>
+
+  <h1>Para el hogar</h1>
+
+  <details>
+    <summary>Refrigeradoras</summary>
+    <img src="refri 11.webp" alt="Refrigeradora 1">
+    <img src="refri 2.png" alt="Refrigeradora 2">
+    <img src="refri 3.jpg" alt="Refrigeradora 3">
+  </details>
+
+  <details>
+    <summary>TV</summary>
+    <img src="tv 1.jpg" alt="TV 1">
+    <img src="tv 2.png" alt="TV 2">
+    <img src="tv 3.jpg" alt="TV 3">
+  </details>
+
+  <details>
+    <summary>Lavadoras</summary>
+    <img src="lavadora 1.jpg" alt="Lavadora 1">
+    <img src="lavadora 2.avif" alt="Lavadora 2">
+    <img src="lavadora 3.jpg" alt="Lavadora 3">
+  </details>
+
+</body>
+</html>

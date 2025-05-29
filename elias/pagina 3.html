@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Electrónica</title>
+    <link rel="icon" href="electronica.png">
+    <style>
+        /* Fondo general */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Enlaces */
+        a {
+            margin: 15px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Centrado y contenedor */
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #fff;
+            animation: slideDown 1s ease;
+        }
+
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Botón */
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #218838;
+        }
+
+        /* Imágenes */
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Lista */
+        ol {
+            list-style: upper-roman;
+            color: #333;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background: #ccc;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="pagina 1.html">Productos</a>  
+        <a href="pagina 2.html">Comprar</a>
+        <a href="pagina 4.html">Menú</a>
+
+        <img src="electronica.png" width="300" alt="Logo Electrónica">
+        <h1>¡Estamos en toda Guate!</h1>
+        <hr>
+        <label>Busca tu tienda más cercana</label>
+        <br>
+        <input type="text" placeholder="Ej. zona 1, ciudad...">
+        <button>Buscar</button>
+
+        <h2>Sucursales</h2>
+        <img src="tienda 1.webp" width="200" alt="Tienda Mazate">
+        <h2>Mazate</h2>
+
+        <img src="tienda 2.jpg" width="200" alt="Tienda Reu">
+        <h2>Reu</h2>
+
+        <img src="tienda 3.jpg" width="200" alt="Tienda">
+        <hr>
+        <h2>Otras Tiendas</h2>
+        <ol>
+            <li>Peten</li>
+            <li>Jalapa</li>
+            <li>Antigua</li>
+            <li>Zacapa</li>
+        </ol>
+    </div>
+</body>
+</html>
