@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMPRA</title>
+  <link rel="icon" href="logo1.png">
+  <style>
+    /* Fondo azul */
+    body {
+      background-color: #007BFF;
+      color: green;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    /* Animación para los enlaces */
+    a {
+      color: green;
+      font-size: 18px;
+      text-decoration: none;
+      margin: 10px;
+      padding: 10px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+      color: #FFF;
+      transform: scale(1.1);
+    }
+
+    /* Estilo para el encabezado */
+    h1 {
+      color: white;
+      font-size: 32px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+
+    /* Estilo para el formulario */
+    form {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      transition: transform 0.3s ease;
+    }
+
+    form:hover {
+      transform: translateY(-10px);
+    }
+
+    label {
+      color: green;
+      font-size: 16px;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    input[type="text"], input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus, input[type="date"]:focus {
+      border-color: green;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005f00;
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 80%;
+      border: 1px solid #fff;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>TUS COMPRAS SON SEGURAS</h1>
+  <hr>
+
+  <a href="pajina 1.html">Productos</a>
+  <a href="pajina 3.html">TIENDAS</a>
+  <a href="pajina 4.html">MENU</a>
+
+  <form>
+    <label>Producto</label>
+    <input type="text" placeholder="Ingresa el producto">
+
+    <label>CANTIDAD</label>
+    <input type="text" placeholder="Cantidad">
+
+    <label>Número de Tarjeta</label>
+    <input type="text" placeholder="Número de tarjeta">
+
+    <label>CVV</label>
+    <input type="text" placeholder="CVV">
+
+    <label>Fecha de Nacimiento</label>
+    <input type="date">
+
+    <button type="submit">Confirmar</button>
+    <button type="reset">Cancelar</button>
+  </form>
+
+</body>
+</html>
