@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>ELECTRONICA PANAMERICANA</title>
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        body {
+            background-color: #d4fcd4;
+            color: #1b3b1b;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 12px #4caf50aa;
+        }
+        .logo {
+            width: 300px;
+            margin: 20px auto;
+            transition: transform 0.5s ease;
+            cursor: pointer;
+        }
+        .logo:hover {
+            transform: rotate(10deg) scale(1.05);
+        }
+        a {
+            margin: 10px 15px;
+            padding: 10px 22px;
+            background-color: #7ec47e;
+            color: #1b3b1b;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        a:hover {
+            background-color: #1b3b1b;
+            color: #a8e6a8;
+        }
+        h1 {
+            color: #065006;
+            margin-top: 30px;
+            font-size: 2.4em;
+        }
+        h2 {
+            color: #0a6d0a;
+            margin-top: 40px;
+            font-size: 1.8em;
+        }
+        h3 {
+            color: #1b3b1b;
+            margin: 25px 0 10px;
+            font-size: 1.3em;
+        }
+        hr {
+            width: 80%;
+            border: 1px solid #7ec47e;
+            margin: 30px auto;
+        }
+        form {
+            margin: 20px auto;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 220px;
+            border-radius: 8px;
+            border: 2px solid #7ec47e;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #1b3b1b;
+            box-shadow: 0 0 8px #7ec47eaa;
+        }
+        button {
+            padding: 10px 22px;
+            margin-left: 10px;
+            background-color: #1b3b1b;
+            border: none;
+            border-radius: 8px;
+            color: #a8e6a8;
+            font-weight: bold;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        button:hover {
+            background-color: #7ec47e;
+            color: #1b3b1b;
+        }
+        ol {
+            text-align: left;
+            max-width: 300px;
+            margin: 0 auto 40px;
+            padding-left: 20px;
+            font-size: 1.1em;
+            color: #1b3b1b;
+        }
+        ol li {
+            margin: 10px 0;
+            cursor: default;
+            transition: color 0.3s ease;
+        }
+        ol li:hover {
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo.png" alt="Logo Electrónica Panamericana" class="logo" />
+        <div>
+            <a href="pagina1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+            <a href="pagina2.html"><i class="fas fa-store"></i> TIENDA</a>
+            <a href="pagina4.html"><i class="fas fa-bars"></i> MENÚ</a>
+        </div>
+
+        <h1><i class="fas fa-map-marker-alt"></i> ESTAMOS EN TODA GUATEMALA</h1>
+        <hr />
+        <h2><i class="fas fa-search"></i> BUSCA TU TIENDA MÁS CERCANA</h2>
+        <form>
+            <input type="text" placeholder="Escribe tu ciudad o zona" />
+            <button><i class="fas fa-search"></i> BUSCAR</button>
+        </form>
+
+        <h2><i class="fas fa-store-alt"></i> SUCURSALES</h2>
+
+        <h3>Chimaltenango</h3>
+        <img src="chimaltenango.png" alt="Sucursal Chimaltenango" />
+        <h3>Retalhuleu</h3>
+        <img src="reu.jpg" alt="Sucursal Retalhuleu" />
+        <h3>Mazate</h3>
+        <img src="mazate.png" alt="Sucursal Mazate" />
+
+        <hr />
+        <h2><i class="fas fa-list-ul"></i> OTRAS TIENDAS</h2>
+        <ol>
+            <li>Peten</li>
+            <li>Jutiapa</li>
+            <li>Antigua</li>
+            <li>Zacapa</li>
+        </ol>
+    </center>
+</body>
+</html>

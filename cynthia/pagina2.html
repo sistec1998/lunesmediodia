@@ -1,153 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>FERRETERIA</title>
-    <link rel="icon" href="logo-ferreteria-sanchez.gif">
-    <!-- Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        body {
-            background-color: #1E1E1E;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #f5f5f5;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <title>ELECTRONICA PANAMERICANA</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #d4fcd4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      color: #1b3b1b;
+    }
 
-        img[alt="Logo"] {
-            margin-top: 20px;
-        }
+    .container {
+      background: #ffffffdd;
+      padding: 40px 500px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 85, 0, 0.3);
+     
+      text-align: center;
+    }
 
-        hr {
-            width: 80%;
-            border: 1px solid #FF9800;
-        }
+    .logo {
+      width: 180px;
+      margin-bottom: 25px;
+      transition: transform 0.5s ease;
+      cursor: pointer;
+    }
+    .logo:hover {
+      transform: rotate(10deg) scale(1.05);
+    }
 
-        form {
-            margin-top: 20px;
-        }
+    nav a {
+      display: inline-block;
+      margin: 0 10px 25px;
+      padding: 10px 18px;
+      background-color: #7ec47e;
+      color: #1b3b1b;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      font-size: 14px;
+    }
 
-        label {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #FF9800;
-        }
+    nav a:hover {
+      background-color: #1b3b1b;
+      color: #a8e6a8;
+    }
 
-        input[type="text"] {
-            width: 250px;
-            padding: 10px;
-            font-size: 1em;
-            border-radius: 5px;
-            border: none;
-            transition: box-shadow 0.3s;
-        }
+    h3 {
+      margin-bottom: 25px;
+      font-weight: 700;
+      font-size: 24px;
+      color: #065006;
+    }
 
-        input[type="text"]:focus {
-            box-shadow: 0 0 10px #FF9800;
-            outline: none;
-        }
+    form label {
+      display: block;
+      text-align: left;
+      font-weight: 600;
+      margin-bottom: 6px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
 
-        button {
-            padding: 10px 20px;
-            background-color: #FF9800;
-            border: none;
-            border-radius: 5px;
-            font-size: 1em;
-            color: #1E1E1E;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+    form input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 2px solid #7ec47e;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border-color 0.3s ease;
+    }
+    form input:focus {
+      border-color: #1b3b1b;
+      outline: none;
+      box-shadow: 0 0 6px #7ec47eaa;
+    }
 
-        button:hover {
-            background-color: #e68900;
-        }
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
 
-        a {
-            color: #FF9800;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-            transition: color 0.3s;
-        }
+    button {
+      flex: 1;
+      padding: 12px 0;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-        a:hover {
-            color: #ffc265;
-        }
+    button.submit {
+      background-color: #1b3b1b;
+      color: #a8e6a8;
+    }
+    button.submit:hover {
+      background-color: #7ec47e;
+      color: #1b3b1b;
+    }
 
-        h2 {
-            color: #FF9800;
-        }
+    button.reset {
+      background-color: #c4eac4;
+      color: #3b7d3b;
+    }
+    button.reset:hover {
+      background-color: #7ec47e;
+      color: #1b3b1b;
+    }
 
-        marquee img {
-            width: 150px;
-            height: 150px;
-            margin: 10px;
-            object-fit: contain;
-            transition: transform 0.3s ease;
-        }
-
-        marquee img:hover {
-            transform: scale(1.1);
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            font-size: 1.1em;
-            margin-top: 20px;
-        }
-
-        ul::before {
-            content: "📌 ";
-            font-size: 1.2em;
-            color: #FF9800;
-        }
-
-        li {
-            margin: 5px 0;
-            position: relative;
-        }
-
-        li::before {
-            content: "🔧 ";
-            margin-right: 8px;
-            color: #FF9800;
-        }
-    </style>
+    /* Responsive */
+    @media (max-width: 440px) {
+      .container {
+        padding: 500px 20px;
+      }
+      nav a {
+        font-size: 12px;
+        padding: 8px 14px;
+        margin: 0 6px 20px;
+      }
+      button {
+        font-size: 14px;
+        padding: 10px 0;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <img src="logo.png" alt="Logo Electrónica Panamericana" class="logo" />
+    <nav>
+      <a href="pagina1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+      <a href="pagina3.html"><i class="fas fa-store"></i> TIENDA</a>
+      <a href="pagina4.html"><i class="fas fa-bars"></i> MENÚ</a>
+    </nav>
 
-    <img src="logo-ferreteria-sanchez.gif" width="250" alt="Logo">
-    <hr>
+    <h3><i class="fas fa-clipboard-list"></i> FORMULARIO DE PEDIDO</h3>
 
     <form>
-        <label><i class="fas fa-search"></i> ¿QUÉ BUSCAS?</label><br><br>
-        <input type="text" placeholder="Buscar herramienta..."><br><br>
-        <button type="submit"><i class="fas fa-search"></i> BUSCAR</button>
+      <label for="producto">Producto</label>
+      <input type="text" id="producto" placeholder="Nombre del producto" />
+
+      <label for="cantidad">Cantidad</label>
+      <input type="number" id="cantidad" placeholder="Cantidad" />
+
+      <label for="tarjeta">Número de tarjeta</label>
+      <input type="number" id="tarjeta" placeholder="1234 5678 9012 3456" />
+
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" placeholder="123" maxlength="4" />
+
+      <label for="fecha">Fecha de vencimiento</label>
+      <input type="date" id="fecha" />
+
+      <div class="buttons">
+        <button type="submit" class="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+        <button type="reset" class="reset"><i class="fas fa-times-circle"></i> Cancelar</button>
+      </div>
     </form>
-
-    <br>
-    <hr>
-    <a href="pagina1.html"><i class="fas fa-box-open"></i> VER PRODUCTOS</a>
-    <hr>
-
-    <h2><i class="fas fa-tags"></i> PROMOCIÓN</h2>
-    <marquee scrollamount="10">
-        <img src="serrucho.webp" alt="Serrucho">
-        <img src="carretilla.webp" alt="Carretilla">
-        <img src="destornillador.png" alt="Destornillador">
-    </marquee>
-
-    <ul>
-        LO MÁS BUSCADO
-        <li>Martillo</li>
-        <li>Serrucho</li>
-        <li>Lamina</li>
-        <li>Cemento</li>
-        <li>Tenaza</li>
-    </ul>
-
+  </div>
 </body>
 </html>
