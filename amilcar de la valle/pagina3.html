@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tiendas</title>
+
+  <!-- Google Fonts y Font Awesome para íconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: fadeInPage 1s ease;
+    }
+
+    a {
+      margin: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #00796b;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #004d40;
+    }
+
+    h1 {
+      color: #004d40;
+      font-size: 2.3rem;
+      margin-top: 20px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    h2 {
+      color: #00796b;
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      width: 70%;
+      background: #26a69a;
+      margin: 20px auto;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 2px solid #b2dfdb;
+      border-radius: 5px;
+      width: 200px;
+      margin-right: 10px;
+      transition: border 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #00796b;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    img {
+      width: 250px;
+      margin: 20px 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      filter: brightness(1.1);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      color: #00695c;
+      margin-bottom: 5px;
+    }
+
+    @keyframes fadeInPage {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <img src="icon" alt="Logo" style="width: 120px; margin-top: 20px;">
+
+  <!-- Navegación -->
+  <div>
+    <a href="pagina1.html"><i class="fas fa-box-open"></i> Productos</a>
+    <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+    <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+  </div>
+
+  <!-- Contenido principal -->
+  <h1><i class="fas fa-map-marker-alt"></i> Estamos en toda Guate</h1>
+  <hr>
+
+  <h2>Busca tu tienda cercana</h2>
+  <input type="text" placeholder="Ej. zona 1, Mixco, etc.">
+  <button><i class="fas fa-search"></i> Buscar</button>
+
+  <h2>Sucursales</h2>
+  <img src="fotos1.jpg" alt="Sucursal 1">
+
+  <h2>Mazate</h2>
+  <img src="foto2.jpg" alt="Mazate">
+
+  <h2>Reu</h2>
+  <img src="foto3.jpg" alt="Reu">
+
+  <hr>
+
+  <h2>Otras tiendas</h2>
+  <ul><i class="fas fa-store"></i> Petén</ul>
+  <ul><i class="fas fa-store"></i> Jalapa</ul>
+  <ul><i class="fas fa-store"></i> Antigua</ul>
+  <ul><i class="fas fa-store"></i> Zacapa</ul>
+
+</body>
+</html>

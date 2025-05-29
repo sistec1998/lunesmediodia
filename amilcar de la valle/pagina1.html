@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos</title>
+  <link rel="icon" href="logo1.png" />
+  
+  <!-- Fuente e íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header img {
+      width: 200px;
+      margin: 20px 0;
+      animation: zoomIn 1s ease-out;
+    }
+
+    a {
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #00796b;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #004d40;
+    }
+
+    h1 {
+      color: #004d40;
+      font-size: 2.5rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    form {
+      margin: 20px 0;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 2px solid #26a69a;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #00796b;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #00796b;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #004d40;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    details {
+      margin-top: 20px;
+      padding: 10px;
+    }
+
+    summary {
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: #00695c;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: #26a69a;
+      width: 80%;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo1.png" alt="Logo">
+    <div>
+      <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+      <a href="pagina3.html"><i class="fas fa-store"></i> Tienda</a>
+      <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+    </div>
+  </header>
+
+  <h1>Un mundo para elegir</h1>
+  <hr>
+
+  <form>
+    <label for="search">¿Qué buscas?</label>
+    <input type="text" id="search" placeholder="Buscar productos...">
+    <button><i class="fas fa-search"></i> Buscar</button>
+  </form>
+
+  <section>
+    <h2><i class="fas fa-laptop"></i> Computadoras</h2>
+    <br>
+    <img src="ft1.jpg">
+    <img src="ft2.avif">
+    <img src="ft3.jpg">
+<br>
+    <h2><i class="fas fa-volume-up"></i> Bocinas</h2><br>
+    <img src="ft4.jpg">
+    <img src="ft5.jpg">
+    <img src="ft6.webp">
+<br>
+    <h2><i class="fas fa-guitar"></i> Instrumentos Musicales</h2><br>
+    <img src="ft7.jpg">
+    <img src="ft8.jpg">
+    <img src="ft9.jpg">
+<br>
+    <h2><i class="fas fa-helicopter"></i> Drones</h2><br>
+    <img src="ft10.jpg">
+    <img src="ft11.webp">
+    <img src="ft12.webp">
+  </section>
+
+  <section>
+    <details>
+      <summary><i class="fas fa-snowflake"></i> Refrigeradoras</summary>
+      <img src="mg1.webp">
+      <img src="mg2.webp">
+      <img src="mg3.webp">
+    </details>
+
+    <details>
+      <summary><i class="fas fa-tv"></i> Televisores</summary>
+      <img src="m1.jpg">
+      <img src="m2.png">
+      <img src="m3.webp">
+    </details>
+
+    <details>
+      <summary><i class="fas fa-soap"></i> Lavadoras</summary>
+      <img src="f1.webp">
+      <img src="f2.webp">
+      <img src="f3.jpg">
+    </details>
+  </section>
+
+</body>
+</html>
