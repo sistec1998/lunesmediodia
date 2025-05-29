@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrónica Panamericana</title>
+    <link rel="icon" href="logo de electronica.png">
+    
+    <!-- Agregar Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Fondo pastel y ajustes generales */
+        body {
+            background-color: #f3f4f7;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Centro el contenido */
+        center {
+            text-align: center;
+        }
+
+        /* Estilo del logo */
+        img {
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo de los enlaces */
+        a {
+            text-decoration: none;
+            color: #4c8bf5;
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #e2f3ff;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #3a76c1;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Estilos del encabezado */
+        h1 {
+            color: #ff7c7c;
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #6a97e2;
+            margin: 20px 0;
+        }
+
+        /* Estilo de los botones */
+        button {
+            padding: 10px 20px;
+            background-color: #f9c7ff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #d18aff;
+            transform: scale(1.05);
+        }
+
+        /* Estilo para los formularios */
+        form {
+            background-color: #ffebf1;
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 250px;
+            border: 2px solid #e2d3f7;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        /* Detalles y transiciones */
+        details {
+            background-color: #e0f5f1;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        details[open] {
+            background-color: #c3f0e9;
+        }
+
+        /* Línea horizontal */
+        hr {
+            width: 70%;
+            border: 1px solid #e1e1e1;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <img src="logo de electronica.png" width="300" alt="Logo de Electrónica Panamericana">
+
+        <!-- Enlaces con iconos -->
+        <div>
+            <a href="pagina2.html"><i class="fas fa-cogs"></i> comprar</a>
+            <a href="pagina3.html"><i class="fas fa-store"></i> Tienda</a>
+            <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+        </div>
+
+        <h1>Un mundo para elegir</h1>
+        <hr>
+
+        <!-- Formulario de búsqueda -->
+        <form>
+            <label>¿Qué buscas?</label>
+            <input type="text" placeholder="Ingresa tu búsqueda">
+            <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+        </form>
+
+        <h2>Computadoras</h2>
+        <div>
+            <img src="compu1.avif" width="200" alt="Computadora 1">
+            <img src="compu2.png" width="200" alt="Computadora 2">
+            <img src="compu3.jpg" width="200" alt="Computadora 3">
+        </div>
+
+        <h2>Bocinas</h2>
+        <div>
+            <img src="bos1.webp" width="200" alt="Bocina 1">
+            <img src="bos2.jpg" width="200" alt="Bocina 2">
+            <img src="bos4.jpg" width="200" alt="Bocina 3">
+        </div>
+
+        <h2>Instrumentos Musicales</h2>
+        <div>
+            <img src="flauta.webp" width="200" alt="Flauta">
+            <img src="guitarra.png" width="200" alt="Guitarra">
+            <img src="trompeta.jpg" width="200" alt="Trompeta">
+        </div>
+
+        <h2>Drones</h2>
+        <div>
+            <img src="dron1.png" width="200" alt="Dron 1">
+            <img src="dron2.png" width="200" alt="Dron 2">
+            <img src="dron3.avif" width="200" alt="Dron 3">
+        </div>
+
+        <hr>
+
+        <!-- Sección de detalles con iconos -->
+        <details>
+            <summary><i class="fas fa-snowflake"></i> Refrigeradoras</summary>
+            <div>
+                <img src="re1.jpg" width="200" alt="Refrigeradora 1">
+                <img src="re2.jpg" width="300" alt="Refrigeradora 2">
+                <img src="re3.jpg" width="200" alt="Refrigeradora 3">
+            </div>
+        </details>
+
+        <details>
+            <summary><i class="fas fa-tv"></i> TVs</summary>
+            <div>
+                <img src="tv2.jpg" width="200" alt="TV 1">
+                <img src="tv3.webp" width="200" alt="TV 2">
+                <img src="tv4.webp" width="200" alt="TV 3">
+            </div>
+        </details>
+
+        <details>
+            <summary><i class="fas fa-tshirt"></i> Lavadoras</summary>
+            <div>
+                <img src="labadoras.webp" width="200" alt="Lavadora 1">
+                <img src="lav3.jpg" width="200" alt="Lavadora 2">
+                <img src="lav1.jpg" width="200" alt="Lavadora 3">
+            </div>
+        </details>
+
+    </center>
+    
+</body>
+</html>

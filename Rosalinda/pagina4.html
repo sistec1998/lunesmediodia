@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrónica Panamericana</title>
+    <link rel="icon" href="logo de electronica.png">
+
+    <!-- Agregar Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Fondo pastel y ajustes generales */
+        body {
+            background-color: #f1f5f8;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Centro el contenido */
+        center {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Estilo del logo */
+        img {
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilo de los enlaces */
+        a {
+            text-decoration: none;
+            color: #6c7ae0;
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #e0eaff;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #4a6dff;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Estilo de los títulos */
+        h1 {
+            color: #ff8ab2;
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #4c92ff;
+            margin: 20px 0;
+        }
+
+        /* Estilo de los párrafos */
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Estilo de las listas */
+        ol {
+            text-align: left;
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 300px;
+            background-color: #e8f7ff;
+            border-radius: 8px;
+            list-style: decimal;
+        }
+
+        ol li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        /* Marquee con animación */
+        marquee {
+            background-color: #f1e4ff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Estilo para el botón de descuentos */
+        button {
+            padding: 12px 20px;
+            background-color: #d0e0ff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4a6dff;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Estilo de los márgenes */
+        hr {
+            width: 70%;
+            border: 1px solid #e0e0e0;
+            margin: 30px 0;
+        }
+
+        /* Estilo para las imágenes */
+        .product-images img {
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-images img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <!-- Logo -->
+        <img src="logo de electronica.png" width="300" alt="Logo de Electrónica Panamericana">
+
+        <!-- Enlaces con iconos -->
+        <div>
+            <a href="pagina1.html"><i class="fas fa-cogs"></i> Productos</a>
+            <a href="pagina2.html"><i class="fas fa-cart-shopping"></i> Comprar</a>
+            <a href="pagina3.html"><i class="fas fa-store"></i> Tiendas</a>
+        </div>
+
+        <!-- Título principal -->
+        <h1>Bienvenido</h1>
+        <hr>
+
+        <!-- Quiénes somos -->
+        <h2>¿Quiénes somos?</h2>
+        <p>En [Nombre de la Empresa], somos una empresa dedicada a la venta de productos de electrónica de alta calidad, 
+        comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. Con una amplia gama de productos que incluye desde dispositivos móviles,
+        computadoras y accesorios, hasta equipos de audio, video y domótica, trabajamos con marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la tecnología, enfocados en brindar una atención personalizada y asesoría experta en cada compra.</p>
+
+        <!-- Nuestro objetivo -->
+        <h2>Nuestro objetivo</h2>
+        <ol>
+            <li>Servir con amor</li>
+            <li>Brindar oportunidades</li>
+            <li>Ofrecer productos de calidad</li>
+        </ol>
+
+        <hr>
+
+        <!-- Descuento -->
+        <h2>Descuento del 10%</h2>
+
+        <!-- Marquee con productos -->
+        <marquee>
+            <div class="product-images">
+                <img src="cam.png" width="200" alt="Cámara">
+                <img src="consola.webp" width="200" alt="Consola">
+            </div>
+        </marquee>
+
+     
+    </center> 
+
+</body>
+</html>

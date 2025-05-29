@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrónica Panamericana</title>
+    
+    <link rel="icon" href="logo de electronica.png">
+    
+    <!-- Agregar Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Fondo pastel y ajustes generales */
+        body {
+            background-color: #f8f9fc;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Centro el contenido */
+        center {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Estilo del logo */
+        img {
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilo de los enlaces */
+        a {
+            text-decoration: none;
+            color: #5c77ff;
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #e4f1ff;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #4a6dff;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Estilo de los formularios */
+        form {
+            background-color: #f1e4ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: inline-block;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            padding: 12px;
+            width: 250px;
+            border: 2px solid #d1c7e5;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #a6a6f2;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #d0e0ff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4a6dff;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: #3348cc;
+        }
+
+        /* Estilo de las secciones */
+        h1 {
+            color: #ff8ab2;
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #4c92ff;
+            margin: 20px 0;
+        }
+
+        hr {
+            width: 70%;
+            border: 1px solid #e0e0e0;
+            margin: 30px 0;
+        }
+
+        /* Estilo de la lista de tiendas */
+        ol {
+            text-align: left;
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 300px;
+            background-color: #e8f7ff;
+            border-radius: 8px;
+            list-style: decimal;
+            margin-bottom: 30px;
+        }
+
+        ol li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <!-- Logo -->
+        <img src="logo de electronica.png" width="300" alt="Logo de Electrónica Panamericana">
+
+        <!-- Enlaces con iconos -->
+        <div>
+            <a href="pagina1.html"><i class="fas fa-cogs"></i> Producto</a>
+            <a href="pagina2.html"><i class="fas fa-cart-shopping"></i> Comprar</a>
+            <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+        </div>
+
+        <!-- Título principal -->
+        <h1>Estamos en toda Guatemala</h1>
+        <hr>
+
+        <!-- Buscar tienda -->
+        <h2>Busca tu tienda más cercana</h2>
+        <form>
+            <input type="text" placeholder="Buscar tienda">
+            <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+        </form>
+
+        <!-- Tiendas -->
+        <h2>Sucursales</h2>
+        <div>
+            <img src="electronica.png" width="200" alt="Sucursal Electrónica">
+          
+        </div>
+
+        <h2>Mazate</h2>
+        <div>
+            <img src="elec2.jpg" width="200" alt="Sucursal Mazate">
+           
+        </div>
+
+        <h2>Rehu</h2>
+        <div>
+            <img src="elec3.jpg" width="200" alt="Sucursal Rehu">
+          
+        </div>
+
+        <hr>
+
+        <!-- Otras tiendas -->
+        <h2>Otras tiendas</h2>
+        <ol>
+            <li>Peten</li>
+            <li>Jutiapa</li>
+            <li>Antigua</li>
+            <li>Zacapa</li>
+        </ol>
+    </center>
+
+</body>
+</html>
