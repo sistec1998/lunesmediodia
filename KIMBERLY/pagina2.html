@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MENÚ</title>
+  <link rel="icon" href="logo de electronica.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #ffe6f0; /* fondo rosado pastel */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    a {
+      margin: 10px;
+      text-decoration: none;
+      color: #d63384;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #9b1d63;
+    }
+
+    h1 {
+      color: #d63384;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    form {
+      background: #ffffff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 300px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    form:hover {
+      transform: scale(1.02);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: box-shadow 0.3s;
+    }
+
+    input:focus {
+      outline: none;
+      box-shadow: 0 0 8px #ff99cc;
+      border-color: #ff66b2;
+    }
+
+    button {
+      background-color: #ff66b2;
+      color: white;
+      padding: 10px;
+      margin-top: 15px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #e0559e;
+      transform: translateY(-2px);
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: #ffb3d9;
+      width: 80%;
+      margin: 20px 0;
+    }
+
+    .icon {
+      font-size: 60px;
+      color: #ff66b2;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+
+    <a href="pagina1.html"><i class="fas fa-box"></i> PRODUCTOS</a>
+    <a href="pagina3.html"><i class="fas fa-store"></i> TIENDAS</a>
+    <a href="pagina4.html"><i class="fas fa-bars"></i> MENÚ</a>
+
+    <h1><i class="fas fa-lock"></i> TUS COMPRAS SON SEGURAS</h1>
+
+    <hr>
+
+    <form>
+      <label><i class="fas fa-tag"></i> PRODUCTO</label>
+      <input type="text">
+
+      <label><i class="fas fa-sort-numeric-up"></i> CANTIDAD</label>
+      <input type="text">
+
+      <label><i class="fas fa-credit-card"></i> NÚMERO DE TARJETA</label>
+      <input type="text">
+
+      <label><i class="fas fa-shield-alt"></i> CVV</label>
+      <input type="text">
+
+      <label><i class="fas fa-calendar-alt"></i> FECHA DE VENCIMIENTO</label>
+      <input type="date">
+
+      <button type="submit"><i class="fas fa-check"></i> CONFIRMAR</button>
+      <button type="reset"><i class="fas fa-times"></i> CANCELAR</button>
+    </form>
+  </center>
+</body>
+</html>

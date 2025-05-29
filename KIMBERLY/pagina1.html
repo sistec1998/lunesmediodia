@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MENÚ</title>
+  <link rel="icon" href="logo de electronica.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #8B0000; /* rojo apagado */
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: 2px solid white;
+      border-radius: 10px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      background-color: white;
+      color: #8B0000;
+      transform: scale(1.05);
+    }
+
+    h1, h2 {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    form {
+      margin: 20px 0;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 200px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: white;
+      color: #8B0000;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffcccc;
+      transform: scale(1.1);
+    }
+
+    details summary {
+      font-size: 20px;
+      cursor: pointer;
+      margin-top: 20px;
+      color: #FFD700;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo de electronica.jpg" width="300" alt="Logo">
+  <div>
+    <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> COMPRAR</a>
+    <a href="pagina3.html"><i class="fas fa-store"></i> TIENDA</a>
+    <a href="pagina4.html"><i class="fas fa-bars"></i> MENÚ</a>
+  </div>
+
+  <h1><i class="fas fa-globe"></i> UN MUNDO PARA ELEGIR</h1>
+  <hr width="900">
+
+  <form>
+    <label>¿QUÉ BUSCAS?</label>
+    <input type="text">
+    <button><i class="fas fa-search"></i> BUSCAR</button>
+  </form>
+
+  <h2><i class="fas fa-desktop"></i> COMPUTADORAS</h2>
+  <img src="computadora 1.jpg" width="250" alt="Computadora 1">
+  <img src="computadora 2.jpg" width="300" alt="Computadora 2">
+  <img src="com'putadora 3.jpg" width="300" alt="Computadora 3">
+
+  <h2><i class="fas fa-volume-up"></i> BOCINAS</h2>
+  <img src="bosina1.webp" width="300" alt="Bocina 1">
+  <img src="bocina3.jpg" width="300" alt="Bocina 3">
+  <img src="bocina 4.jpg" width="300" alt="Bocina 4">
+
+  <h2><i class="fas fa-music"></i> INSTRUMENTOS MUSICALES</h2>
+  <img src="gitarra1.jpg" width="300" alt="Guitarra">
+  <img src="piano.webp" width="300" alt="Piano">
+  <img src="trompeta.jpg" width="300" alt="Trompeta">
+
+  <h2><i class="fas fa-drone"></i> DRONES</h2>
+  <img src="dron1.jpg" width="300" alt="Dron 1">
+  <img src="dron 2.jpg" width="300" alt="Dron 2">
+  <img src="dron 3.jpg" width="300" alt="Dron 3">
+
+  <hr width="900">
+
+  <h2><i class="fas fa-home"></i> PARA EL HOGAR</h2>
+  <details>
+    <summary><i class="fas fa-snowflake"></i> REFRIGERADORAS</summary>
+    <img src="refri 1.jpg" width="300" alt="Refri 1">
+    <img src="refri 2.jpg" width="200" alt="Refri 2">
+    <img src="refri 3.webp" width="300" alt="Refri 3">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-tv"></i> TV</summary>
+    <img src="tv 1.jpg" width="300" alt="TV 1">
+    <img src="tv 2.jpg" width="300" alt="TV 2">
+    <img src="tv 3.jpg" width="300" alt="TV 3">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-tshirt"></i> LAVADORAS</summary>
+    <img src="rop2.jpg" width="300" alt="Lavadora 1">
+    <img src="ropm 1.jpg" width="300" alt="Lavadora 2">
+    <img src="rop 3.jpg" width="300" alt="Lavadora 3">
+  </details>
+</body>
+</html>

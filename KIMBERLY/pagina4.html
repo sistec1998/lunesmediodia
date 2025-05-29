@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MENÚ</title>
+  <link rel="icon" href="logo de electronica.jpg">
+  <style>
+    body {
+      background-color: #d4fcdc; /* Verde pastel */
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #0a4d29;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #009933;
+      text-shadow: 0 0 5px #00cc66;
+    }
+
+    h1, h2 {
+      animation: moveText 3s infinite alternate ease-in-out;
+      color: #0a4d29;
+      text-shadow: 0 0 10px #66ff99;
+    }
+
+    @keyframes moveText {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(10px); }
+    }
+
+    p, ol {
+      width: 80%;
+      margin: auto;
+      font-size: 18px;
+      color: #003311;
+      transition: transform 0.5s;
+    }
+
+    p:hover, ol:hover {
+      transform: scale(1.02);
+    }
+
+    hr {
+      border: 2px solid #66cc99;
+      margin: 40px auto;
+    }
+
+    marquee img {
+      margin: 0 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ff99;
+      transition: transform 0.5s;
+    }
+
+    marquee img:hover {
+      transform: scale(1.1);
+    }
+
+    img.logo {
+      animation: floatLogo 4s ease-in-out infinite;
+    }
+
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #006633;
+      text-shadow: 0 0 8px #00ff99;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo de electronica.jpg" width="300" class="logo">
+  <div style="margin-top: 20px;">
+    <a href="pagina1.html">PRODUCTO</a>
+    <a href="pagina2.html">COMPRAR</a>
+    <a href="pagina3.html">TIENDAS</a>
+  </div>
+
+  <h1>BIENVENIDOS</h1>
+  <hr width="1000">
+
+  <h2>QUIÉNES SOMOS</h2>
+  <p>
+    En [Nombre de la Empresa], somos una empresa dedicada a la venta de productos de electrónica de alta calidad,
+    comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes.
+    Con una amplia gama de productos que incluye desde dispositivos móviles, computadoras y accesorios, hasta
+    equipos de audio, video y domótica, trabajamos con marcas líderes del mercado para garantizar rendimiento,
+    durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la tecnología,
+    enfocados en brindar una atención personalizada y asesoría experta en cada compra.
+  </p>
+
+  <h2>NUESTROS OBJETIVOS</h2>
+  <ul>
+    <li>Servir con amor</li>
+    <li>Brindar oportunidades</li>
+    <li>Ofrecer productos de calidad</li>
+  </ul>
+
+  <hr width="1000">
+  <h2>DESCUENTO 10%</h2>
+
+  <marquee behavior="scroll" direction="left" scrollamount="5">
+    <img src="1.jpg" width="300">
