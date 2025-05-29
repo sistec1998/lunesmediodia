@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYS</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, red, yellow, black);
+            color: white;
+            text-align: center;
+        }
+
+        h1, h2 {
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #ffd700;
+            transform: scale(1.05);
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .card {
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            padding: 10px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: #ffcc00;
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #e6b800;
+            transform: scale(1.05);
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        marquee img {
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        marquee img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" width="300" alt="Logo LAYS"><br>
+    <h1><i class="fas fa-smile icon"></i>BIENVENIDO</h1>
+    <hr width="600">
+
+    <a href="pagina 1.html"><i class="fas fa-shopping-bag icon"></i>PRODUCTOS</a>
+    <a href="pagina2.html"><i class="fas fa-briefcase icon"></i>TRABAJOS</a>
+    <a href="pagina3.html"><i class="fas fa-utensils icon"></i>MAS SABOR</a>
+
+    <h2>MISIÓN</h2>
+    <p>"Ofrecer momentos irresistibles de sabor y alegría a través de botanas de la más alta calidad, elaboradas con ingredientes seleccionados, 
+        innovación constante y un compromiso con la satisfacción de nuestros consumidores en cada mordida."</p>
+
+    <h2>VISIÓN</h2>
+    <p>"Ser la marca líder en botanas a nivel global, reconocida por su innovación,
+         sostenibilidad y compromiso con la comunidad, ofreciendo productos que generan experiencias de sabor excepcionales para todas las generaciones."</p>
+
+    <hr width="600">
+    <h2>PRUEBA DE NUEVO</h2>
+
+    <marquee behavior="scroll" direction="left">
+        <img src="chetos1.png" width="200" height="Chetos">
+        <img src="doritos1.png" width="150" height="Doritos">
+        <img src="lays2.png" width="130" height="Lays">
+    </marquee>
+
+    
+
+    <form>
+        <label><i class="fas fa-question-circle icon"></i>¿QUÉ DUDA TIENES?</label><br>
+        <input type="text" placeholder="Escribe tu duda"><br><br>
+        <button><i class="fas fa-paper-plane icon"></i>ENVIAR</button>
+    </form>
+</body>
+</html>

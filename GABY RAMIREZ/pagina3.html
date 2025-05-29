@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYS</title>
+    <link rel="icon" href="logo.png">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            background: linear-gradient(135deg, red, yellow, black);
+            background-size: 400% 400%;
+            animation: gradientMove 15s ease infinite;
+            text-align: center;
+        }
+
+        @keyframes gradientMove {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            color: black;
+            transform: scale(1.1);
+        }
+
+        h1, h2 {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        hr {
+            border: none;
+            height: 4px;
+            background: white;
+            width: 60%;
+            margin: 20px auto;
+            transition: width 0.5s;
+        }
+
+        hr:hover {
+            width: 80%;
+        }
+
+        ol, ul {
+            list-style-position: inside;
+            padding: 0;
+            font-size: 1.2em;
+        }
+
+        li {
+            margin: 8px 0;
+            transition: transform 0.3s;
+        }
+
+        li:hover {
+            transform: translateX(10px);
+        }
+
+        img {
+            margin-top: 20px;
+            transition: transform 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.png" width="300" alt="LAYS Logo"><br>
+
+    <nav>
+        <a href="pagina 1.html"><i class="fas fa-boxes"></i> PRODUCTOS</a>
+        <a href="pagina2.html"><i class="fas fa-briefcase"></i> TRABAJOS</a>
+        <a href="pagina4.html"><i class="fas fa-bars"></i> MENU</a>
+    </nav>
+
+    <h1><i class="fas fa-star"></i> MAS SABOR</h1>
+
+    <hr>
+
+    <h2><i class="fas fa-cookie"></i> GALLETAS</h2>
+    <ol>
+        <li>CHOKIS</li>
+        <li>ARCOIRIS</li>
+        <li>EMPERADOR</li>
+        <li>CHIQUI</li>
+    </ol>
+
+    <hr>
+
+    <h2><i class="fas fa-candy-cane"></i> GOLOSINAS</h2>
+    <ul>
+        <li>FIESTAS</li>
+        <li>DETODITO</li>
+        <li>CRUJITOS</li>
+    </ul>
+
+</body>
+</html>
