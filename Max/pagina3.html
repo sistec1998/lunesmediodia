@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: white;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    center {
+      padding: 40px;
+    }
+
+    a {
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #ffcc00;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 24px;
+      animation: slideIn 1s ease;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    hr {
+      width: 80%;
+      height: 2px;
+      background-color: white;
+      border: none;
+      margin: 30px auto;
+    }
+
+    form {
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    input {
+      padding: 10px;
+      width: 250px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #ffa726;
+      transform: scale(1.05);
+    }
+
+    img {
+      border-radius: 15px;
+      margin: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    i {
+      margin-right: 8px;
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo.png" width="300" alt="Logo" style="animation: fadeIn 2s ease;">
+    <br>
+
+    <nav>
+      <a href="pagina 1.html"><i class="fas fa-store"></i> Inicio</a>
+      <a href="pagina 2.html"><i class="fas fa-map-marker-alt"></i> Localizar</a>
+      <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+    </nav>
+
+    <h2><i class="fas fa-map-marked-alt"></i> ¡Estamos en toda Guate!</h2>
+    <hr>
+    <h2><i class="fas fa-search-location"></i> Busca tu tienda cercana</h2>
+
+    <form>
+      <input type="text" placeholder="Ej: zona 1, Reu, Xela...">
+      <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+    </form>
+
+    <h2><i class="fas fa-store-alt"></i> Sucursales</h2>
+    <img src="tienda.jpg" width="200" alt="Sucursal Principal">
+    <h2>Mazate</h2>
+    <img src="sucursal2.jpg" width="200" alt="Sucursal Mazate">
+    <h2>Reu</h2>
+    <img src="sucursal3.jpg" width="200" alt="Sucursal Reu">
+    <h2>Xela</h2>
+
+    <hr>
+    <h2><i class="fas fa-map"></i> Otras Tiendas</h2>
+    <h2>Peten</h2>
+    <h2>Jalapa</h2>
+    <h2>Antigua</h2>
+    <h2>Zacapa</h2>
+  </center>
+</body>
+</html>

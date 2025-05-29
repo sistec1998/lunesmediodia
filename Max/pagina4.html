@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú</title>
+  <link rel="icon" href="logo.png">
+  <!-- Fuente e iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    header img {
+      width: 200px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #00d9ff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1.2em;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #00d9ff;
+      transition: width 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      animation: fadeInUp 1.2s ease;
+    }
+
+    h2 {
+      color: #ffd700;
+      margin-top: 30px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    hr {
+      border: 1px solid #00d9ff;
+      margin: 40px auto;
+      width: 80%;
+    }
+
+    .descuento {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .descuento img {
+      width: 180px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .descuento img:hover {
+      transform: scale(1.1);
+    }
+
+    .marquee {
+      display: flex;
+      overflow: hidden;
+      gap: 30px;
+      animation: scroll 10s linear infinite;
+      justify-content: start;
+      padding: 20px 0;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo">
+    <nav>
+      <a href="pagina 1.html"><i class="fas fa-box-open"></i> Productos</a>
+      <a href="pagina 2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+      <a href="pagina3.html"><i class="fas fa-store"></i> Tiendas</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2><i class="fas fa-handshake"></i> Bienvenido</h2>
+    <hr>
+    <h2><i class="fas fa-users"></i> ¿Quiénes somos?</h2>
+    <p>En <strong>[Nombre de la Empresa]</strong>, somos una empresa dedicada a la venta de productos de electrónica de alta calidad, comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. Con una amplia gama de productos que incluye desde dispositivos móviles, computadoras y accesorios, hasta equipos de audio, video y domótica, trabajamos con marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la tecnología, enfocados en brindar una atención personalizada y asesoría experta en cada compra.</p>
+
+    <h2><i class="fas fa-bullseye"></i> Nuestro objetivo</h2>
+    <p>
+      1. Servir con amor<br>
+      2. Brindar oportunidades<br>
+      3. Ofrecer productos de calidad
+    </p>
+
+    <hr>
+
+    <h2><i class="fas fa-tags"></i> ¡Descuento 10%!</h2>
+    <div class="descuento">
+      <div class="marquee">
+        <img src="consola1.webp" alt="Consola en descuento">
+        <img src="camara1.png" alt="Cámara en descuento">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 [Nombre de la Empresa]. Todos los derechos reservados.
+  </footer>
+</body>
+</html>

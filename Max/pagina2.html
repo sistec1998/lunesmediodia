@@ -1,144 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes</title>
-    <link rel="icon" href="LOGO 2.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(to right, #d9e4f5, #fef6e4);
-            color: #333;
-            text-align: center;
-            padding: 20px;
-            animation: fadeIn 2s ease-in;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar</title>
+  <link rel="icon" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #6dd5ed, #2193b0);
+      color: white;
+      animation: fadeIn 1s ease-in-out;
+    }
 
-        h1, h2, h3 {
-            color: #003366;
-            margin-bottom: 10px;
-        }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
-        form {
-            display: inline-block;
-            text-align: left;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
+    center {
+      padding: 40px;
+    }
 
-        form:hover {
-            transform: scale(1.02);
-        }
+    a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
 
-        label {
-            display: block;
-            margin-top: 15px;
-            font-weight: bold;
-        }
+    a:hover {
+      color: #ffeb3b;
+    }
 
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            transition: border 0.3s;
-        }
+    h2 {
+      margin-top: 30px;
+      font-size: 28px;
+    }
 
-        input:focus {
-            border-color: #3399ff;
-            outline: none;
-        }
+    hr {
+      border: none;
+      height: 2px;
+      background-color: white;
+      margin: 20px auto;
+      width: 80%;
+    }
 
-        hr {
-            margin: 30px auto;
-            border: 1px solid #ccc;
-        }
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      width: 300px;
+      margin: auto;
+      animation: slideIn 1s ease;
+    }
 
-        button {
-            padding: 10px 20px;
-            margin: 15px 10px 0 0;
-            background-color: #3399ff;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
-        }
+    @keyframes slideIn {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
 
-        button:hover {
-            background-color: #287acc;
-            transform: scale(1.05);
-        }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
 
-        .icon-title i {
-            margin-right: 8px;
-            color: #3399ff;
-        }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      transition: box-shadow 0.3s;
+    }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-    </style>
+    input:focus {
+      outline: none;
+      box-shadow: 0 0 10px #fff;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background-color: #ff9800;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffa726;
+      transform: scale(1.05);
+    }
+
+    i {
+      margin-right: 8px;
+    }
+  </style>
 </head>
 <body>
+  <center>
+    <nav>
+      <a href="pagina 1.html"><i class="fas fa-box-open"></i> Productos</a>
+      <a href="pagina3.html"><i class="fas fa-store"></i> Tienda</a>
+      <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+    </nav>
 
-    <img src="LOGO 2.png" width="200" alt="Logo">
-    
-    <h1 class="icon-title"><i class="fa-solid fa-user"></i> Datos Personales</h1>
-    <hr width="700">
+    <h2><i class="fas fa-lock"></i> Tus compras son seguras</h2>
+    <hr>
 
     <form>
-        <label><i class="fa-solid fa-signature"></i> Nombre</label>
-        <input type="text">
+      <label><i class="fas fa-tag"></i> Producto</label>
+      <input type="text">
 
-        <label><i class="fa-solid fa-id-card"></i> DPI</label>
-        <input type="text">
+      <label><i class="fas fa-sort-numeric-up"></i> Cantidad</label>
+      <input type="text">
 
-        <label><i class="fa-solid fa-phone"></i> Teléfono</label>
-        <input type="text">
+      <label><i class="fas fa-credit-card"></i> Número de tarjeta</label>
+      <input type="text">
 
-        <label><i class="fa-solid fa-envelope"></i> Correo Electrónico</label>
-        <input type="text">
+      <label><i class="fas fa-shield-alt"></i> CVV</label>
+      <input type="text">
 
-        <label><i class="fa-solid fa-location-dot"></i> Dirección</label>
-        <input type="text">
+      <label><i class="fas fa-calendar-alt"></i> Fecha de vencimiento</label>
+      <input type="text">
 
-        <hr width="700">
-        <h2 class="icon-title"><i class="fa-solid fa-credit-card"></i> Datos de Pago</h2>
-
-        <label><i class="fa-regular fa-credit-card"></i> Número de tarjeta (débito/crédito)</label>
-        <input type="text">
-
-        <label><i class="fa-solid fa-lock"></i> CVV</label>
-        <input type="text">
-
-        <label><i class="fa-solid fa-calendar"></i> Año de nacimiento</label>
-        <input type="text">
-
-        <hr width="700">
-        <h3 class="icon-title"><i class="fa-solid fa-plane-departure"></i> Datos de Viaje</h3>
-
-        <label><i class="fa-solid fa-location-arrow"></i> Lugar</label>
-        <input type="text">
-
-        <label><i class="fa-solid fa-users"></i> Cantidad</label>
-        <input type="text">
-
-        <label><i class="fa-solid fa-calendar-days"></i> Fecha</label>
-        <input type="text">
-
-        <br>
-        <button type="submit"><i class="fa-solid fa-check"></i> Confirmar</button>
-        <button type="reset"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+      <button type="submit"><i class="fas fa-check"></i> Confirmar</button>
+      <button type="reset"><i class="fas fa-times"></i> Cancelar</button>
     </form>
-
+  </center>
 </body>
 </html>
