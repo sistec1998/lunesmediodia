@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="icon" href="logo.jpg">
+  <!-- Íconos Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e0f7fa;
+      color: #004d40;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      width: 200px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #004d40;
+      transform: scale(1.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+      animation: slideIn 1.5s ease;
+    }
+
+    p, ul {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      padding: 0 20px;
+      line-height: 1.6;
+      animation: fadeIn 2s ease;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .promo {
+      text-align: center;
+      background-color: #b2ebf2;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 800px;
+      animation: bounceIn 2s ease;
+    }
+
+    .slider {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 20px;
+      animation: fadeInUp 2s ease;
+    }
+
+    .slider img {
+      width: 300px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .slider img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #006064;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideIn {
+      from {transform: translateY(-50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes bounceIn {
+      0% {transform: scale(0.5); opacity: 0;}
+      100% {transform: scale(1); opacity: 1;}
+    }
+
+    @keyframes fadeInUp {
+      from {transform: translateY(20px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="Logo Empresa">
+  </header>
+
+  <nav>
+    <a href="pagina1.html"><i class="fas fa-box"></i> Producto</a>
+    <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+    <a href="pagina3.html"><i class="fas fa-store"></i> Tienda</a>
+  </nav>
+
+  <main>
+    <h1>Bienvenidos</h1>
+    <hr>
+    <h2>¿Quiénes somos?</h2>
+    <p>En [Nombre de la Empresa], somos una empresa dedicada a la venta de productos de electrónica 
+      de alta calidad, comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. 
+      Ofrecemos desde dispositivos móviles, computadoras y accesorios hasta equipos de audio, video y domótica.
+      Trabajamos con marcas líderes para garantizar rendimiento, durabilidad y confianza.
+      Nuestro equipo está formado por profesionales apasionados por la tecnología y enfocados en brindar atención personalizada.</p>
+
+    <h2>Nuestros objetivos</h2>
+    <ul>
+      <li><i class="fas fa-heart"></i> Servir con amor</li>
+      <li><i class="fas fa-hand-holding-heart"></i> Brindar oportunidades</li>
+      <li><i class="fas fa-check-circle"></i> Ofrecer productos de calidad</li>
+    </ul>
+
+    <div class="promo">
+      <h2><i class="fas fa-tags"></i> ¡Descuento del 10%!</h2>
+    </div>
+
+    <div class="slider">
+      <img src="juejo1.webp" alt="Producto 1">
+      <img src="juejo2.png" alt="Producto 2">
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 [Nombre de la Empresa] - Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

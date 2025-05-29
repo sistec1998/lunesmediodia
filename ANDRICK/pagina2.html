@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="icon" href="logo.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #83a4d4, #b6fbff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #3498db;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input {
+            padding: 10px;
+            margin-top: 5px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            outline: none;
+        }
+
+        button {
+            margin: 15px 10px 0 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .nav {
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #1c6ea4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="pagina1.html">Página 1</a>
+            <a href="pagina3.html">Página 3</a>
+            <a href="pagina4.html">Página 4</a>
+        </div>
+        <h1>Tus compras son seguras</h1>
+        <hr>
+        <form>
+            <label>Producto</label>
+            <input type="text" placeholder="Nombre del producto">
+
+            <label>Cantidad</label>
+            <input type="number" min="1" placeholder="Ej: 2">
+
+            <label>Número de tarjeta</label>
+            <input type="text" placeholder="date">
+
+            <label>CW</label>
+            <input type="text" placeholder="123">
+
+            <label>Fecha de vencimiento</label>
+            <input type="text" placeholder="MM/AA">
+
+            <div>
+                <button type="submit">Confirmar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

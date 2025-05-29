@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medu</title>
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f2f2f2, #dbeafe);
+            color: #333;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1e3a8a;
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        h1, h2 {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #60a5fa;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .sucursal {
+            margin: 30px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .sucursal img {
+            width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .sucursal img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="pagina1.html">Producto</a>
+        <a href="pagina2.html">Comprar</a>
+        <a href="pagina4.html">Menú</a>
+    </nav>
+
+    <main>
+        <h1>¿Estamos en todo Guate?</h1>
+        <hr>
+        <label for="buscar">Busca tu tienda cercana</label>
+        <input type="text" id="buscar" placeholder="Ej. Mazate, Reu, Xela">
+        <button>Buscar</button>
+
+        <h2>Sucursales</h2>
+
+        <div class="sucursal">
+            <img src="mazate.webp" alt="Mazate">
+            <h2>Mazate</h2>
+        </div>
+
+        <div class="sucursal">
+            <img src="reu.jpg" alt="Reu">
+            <h2>Reu</h2>
+        </div>
+
+        <div class="sucursal">
+            <img src="xela.jpg" alt="Xela">
+            <h2>Xela</h2>
+        </div>
+    </main>
+
+</body>
+</html>
