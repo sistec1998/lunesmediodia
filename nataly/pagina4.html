@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <title>Electrónica Panamericana</title>
+    <link rel="icon" href="logotipo.png">
+    <!-- Font Awesome para iconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            text-align: center;
+            color: #333;
+        }
+
+        header img {
+            width: 200px;
+            margin-top: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #004080;
+            margin-top: 10px;
+        }
+
+        h2 {
+            color: #0066cc;
+            margin-top: 30px;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        marquee {
+            margin-top: 30px;
+        }
+
+        marquee img {
+            width: 250px;
+            margin: 0 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        marquee img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logotipo.png" alt="Logotipo">
+    </header>
+
+    <nav>
+        <a href="pagina1.html"><i class="fas fa-box-open"></i> Producto</a>
+        <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+        <a href="pagina3.html"><i class="fas fa-store"></i> Tienda</a>
+    </nav>
+
+    <h1>Bienvenido</h1>
+    <hr>
+
+    <section>
+        <h2><i class="fas fa-users"></i> ¿Quiénes somos?</h2>
+        <p>
+            En Nombre de la Empresa, somos una empresa dedicada a la venta de productos 
+            de electrónica de alta calidad, comprometida con ofrecer soluciones tecnológicas
+            innovadoras para mejorar la vida de nuestros clientes. Con una amplia gama de productos 
+            que incluye desde dispositivos móviles, computadoras y accesorios, hasta equipos de audio, 
+            video y domótica, trabajamos con marcas líderes del mercado para garantizar rendimiento,
+            durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la
+            tecnología, enfocados en brindar una atención personalizada y asesoría experta en cada compra.
+        </p>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-bullseye"></i> Nuestros Objetivos</h2>
+        <ol>
+            <li>❤️ Servir con amor</li>
+            <li>🌟 Brindar oportunidades</li>
+            <li>✅ Ofrecer productos de calidad</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-tags"></i> ¡Descuento del 10%!</h2>
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            <img src="camara.png" alt="Cámara">
+            <img src="videojuegos.webp" alt="Videojuegos">
+            <img src="camara.png" alt="Cámara">
+            <img src="videojuegos.webp" alt="Videojuegos">
+        </marquee>
+    </section>
+
+</body>
+</html>

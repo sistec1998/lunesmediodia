@@ -2,168 +2,176 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIAJES</title>
-    <link rel="icon" href="LOGOT.jpg">
-    <!-- Fuente de iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Electrónica Panamericana</title>
+    <link rel="icon" href="logotipo.png">
+    <!-- Font Awesome para iconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        /* Estilos generales */
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #2980b9, #6dd5fa);
-            color: #fff;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #f0f4f8, #d9e4f5);
             text-align: center;
+            color: #222;
         }
 
-        /* Contenedor principal */
-        .container {
-            width: 80%;
-            max-width: 1200px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        header img {
+            width: 200px;
+            margin: 20px auto;
+            animation: bounce 2s infinite;
         }
 
-        h1, h2 {
-            color: #2c3e50;
-            font-size: 2rem;
-            margin-bottom: 20px;
+        nav {
+            margin: 20px 0;
         }
 
-        a {
+        nav a {
             text-decoration: none;
-            color: #2980b9;
-            font-size: 1.2rem;
-            margin: 0 15px;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #3498db;
-        }
-
-        p, label {
-            font-size: 1.2rem;
-            color: #2c3e50;
-            line-height: 1.6;
-        }
-
-        /* Estilo de los botones */
-        button {
-            background-color: #2980b9;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-            font-size: 1rem;
+            color: #fff;
+            background-color: #0066cc;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 25px;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
         }
 
-        button:hover {
-            background-color: #3498db;
-            transform: scale(1.05);
+        nav a:hover {
+            background-color: #004d99;
+            transform: scale(1.1);
         }
 
-        button:active {
-            transform: scale(1);
+        h1 {
+            color: #004080;
+            margin: 20px 0 10px;
         }
 
-        /* Estilo de las imágenes en el carrusel */
-        marquee img {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            margin: 10px;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
+        h2 {
+            color: #0066cc;
         }
 
-        marquee img:hover {
-            transform: scale(1.05);
+        form {
+            margin: 20px auto;
+            max-width: 500px;
         }
 
-        /* Animación del contenedor principal */
-        @keyframes slideIn {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(0); }
-        }
-
-        .container {
-            animation: slideIn 0.6s ease-out;
-        }
-
-        /* Estilo para la lista de lugares más visitados */
-        ol {
-            text-align: left;
-            font-size: 1.2rem;
-            margin-top: 20px;
-        }
-
-        ol li {
-            margin-bottom: 10px;
-            color:black;
-        }
-
-        /* Estilo de los inputs */
         input[type="text"] {
-            width: 80%;
             padding: 10px;
-            font-size: 1rem;
-            margin: 10px 0;
+            width: 60%;
             border: 1px solid #ccc;
-            border-radius: 5px;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            margin-right: 10px;
+            transition: 0.3s;
         }
 
         input[type="text"]:focus {
-            border-color: #2980b9;
-            box-shadow: 0 0 10px rgba(41, 128, 185, 0.5);
+            outline: none;
+            border-color: #007BFF;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        section img {
+            width: 300px;
+            border-radius: 10px;
+            margin: 10px auto;
+            transition: transform 0.3s;
+        }
+
+        section img:hover {
+            transform: scale(1.05);
+        }
+
+        marquee {
+            margin: 30px 0;
+        }
+
+        marquee img {
+            width: 250px;
+            margin: 0 15px;
+            border-radius: 15px;
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+            margin: 20px auto;
+            font-size: 1.1em;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        hr {
+            margin: 30px 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="LOGOT.jpg" width="200" alt="Logo">
-        <div>
-            <a href="pagina1.html"><i class="fas fa-map-marker-alt"></i> LUGARES</a>
-            <a href="pagina2.html"><i class="fas fa-bookmark"></i> RESERVAR</a>
-        </div>
-        <h2>MISIÓN</h2>
-        <p>Nos dedicamos a crear experiencias únicas e inolvidables para cada viajero, ofreciéndoles destinos personalizados, servicios de alta calidad y un compromiso genuino con su satisfacción. A través de nuestra experiencia y pasión por los viajes, buscamos transformar cada destino en una oportunidad para explorar, aprender y disfrutar, garantizando que cada viaje sea una aventura memorable.</p>
+    <header>
+        <img src="logotipo.png" alt="Logotipo">
+    </header>
 
-        <h2>VISIÓN</h2>
-        <p>Ser la agencia de viajes líder en innovación y servicio al cliente, reconocida por ofrecer experiencias personalizadas y sustentables. Nos visualizamos como una empresa globalmente conectada que inspira a las personas a descubrir el mundo con comodidad, seguridad y responsabilidad, contribuyendo al desarrollo del turismo responsable y sostenible en cada destino que promovemos.</p>
+    <nav>
+        <a href="pagina1.html"><i class="fas fa-box-open"></i> Producto</a>
+        <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+        <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+    </nav>
 
-        <label>¿A dónde te gustaría ir?</label><br>
-        <input type="text" placeholder="Ingresa tu destino">
-        <button><i class="fas fa-search"></i> BUSCAR</button>
-        <hr>
+    <h1><i class="fas fa-map-marker-alt"></i> ESTAMOS EN TODA GUATEMALA</h1>
+    <hr>
 
-        <h2>POR SI TE INTERESA</h2>
-        <marquee>
-            <img src="imagen1.webp" alt="Imagen 1">
-            <img src="imagen4.jpg" alt="Imagen 2">
-            <img src="IMAGEN8.avif" alt="Imagen 3">
+    <h2><i class="fas fa-search-location"></i> Busca en tu tienda más cercana</h2>
+
+    <form>
+        <input type="text" placeholder="Escribe tu ciudad...">
+        <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+    </form>
+
+    <section>
+        <h1><i class="fas fa-store-alt"></i> Sucursales</h1>
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            <img src="sucursal.png" alt="Sucursal General">
+            <img src="mazate.jpg" alt="Mazate">
+            <img src="reu.jpg" alt="Retalhuleu">
         </marquee>
 
-        <h2>LO MÁS VISITADO</h2>
-        <ol>
-            <li>Antigua Guatemala</li>
-            <li>Semuc Champey</li>
-            <li>Monterrico</li>
-        </ol>
-    </div>
+        <h1>Mazate</h1>
+        <img src="mazate.jpg" alt="Sucursal Mazate">
+
+        <h1>Retalhuleu</h1>
+        <img src="reu.jpg" alt="Sucursal Retalhuleu">
+    </section>
+
+    <hr>
+
+    <h1><i class="fas fa-map-marked-alt"></i> Otras Tiendas</h1>
+    <ol>
+        <li>📍 Petén</li>
+        <li>📍 Jutiapa</li>
+        <li>📍 Antigua Guatemala</li>
+        <li>📍 Zacapa</li>
+    </ol>
 
 </body>
 </html>
