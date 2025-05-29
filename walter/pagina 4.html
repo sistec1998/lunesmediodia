@@ -1,117 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lays</title>
-    <link rel="icon" href="lays.jpg">
+    <title>Tienda</title>
+    <link rel="icon" href="electronica.png">
     <style>
         body {
-            background: linear-gradient(45deg, #FF8C00, #FF6347); /* Fondo degradado */
-            font-family: Arial, sans-serif;
-            color: #fff;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
-        }
-
-        h1, p {
-            animation: fadeIn 2s ease-out;
-        }
-
-        h1 {
-            color: #FFDD00;
-            font-size: 3em;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            padding: 10px;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #dff9fb, #c7ecee);
+            color: #2d3436;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         a {
-            color: #FFD700;
+            display: inline-block;
+            margin: 15px;
+            padding: 10px 20px;
             text-decoration: none;
-            margin: 10px;
-            font-size: 1.5em;
-            transition: color 0.3s ease, transform 0.3s ease;
+            background-color: #0984e3;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         a:hover {
-            color: #fff;
+            background-color: #74b9ff;
             transform: scale(1.1);
         }
 
-        img {
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin: 20px;
+        h1 {
+            color: #2c3e50;
+            margin-top: 30px;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+            padding: 20px;
+            animation: fadeInUp 1.2s ease-in;
+        }
+
+        ol {
+            list-style: decimal inside;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 600px;
+            animation: fadeInUp 1.5s ease-in;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        marquee img {
+            margin: 0 20px;
+            border-radius: 10px;
             transition: transform 0.5s ease;
         }
 
-        img:hover {
+        marquee img:hover {
             transform: scale(1.1);
         }
 
-        marquee {
-            font-size: 2em;
-            color: #ffdddd;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
         hr {
-            border: 1px solid #FFD700;
+            border: none;
+            height: 2px;
+            background: #74b9ff;
+            margin: 30px 0;
             width: 80%;
+            animation: expandLine 1s ease-in;
         }
 
-        /* Animaciones */
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
-        /* Movimiento de texto de bienvenida */
-        .welcome-text {
-            animation: moveIn 3s ease-in-out infinite alternate;
+        @keyframes slideDown {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
 
-        @keyframes moveIn {
-            0% {
-                transform: translateX(-100%);
-            }
-            100% {
-                transform: translateX(100%);
-            }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes expandLine {
+            from { width: 0; opacity: 0; }
+            to { width: 80%; opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <center>
-        <img src="lays.jpg" width="300">
-        <h1 class="welcome-text">Bienvenidos</h1>
-        <hr>
-        <a href="pagina 1.html">Productos</a>
-        <a href="pagina.html">Trabajos</a>
-        <a href="pagina 3.html">Más Sabores</a>
-        <h1>Misión</h1>
-        <p>Brindar dulzura y alegría a nuestros clientes, ofreciendo golosinas de calidad, a precios accesibles y con un servicio amigable y personalizado, para que cada experiencia sea un momento especial lleno de sabor y diversión.</p>
-        <h1>Visión</h1>
-        <p>Ser la tienda de golosinas preferida por nuestros clientes, reconocida por ofrecer una amplia variedad de productos de alta calidad.</p>
-        <hr>
-        <h1>Prueba de lo Nuevo</h1>
-        <marquee>
-            <img src="chetos.jpg" width="300">
-            <img src="doritos 2.jpg" width="300">
-            <img src="lays 3.jpg" width="300">
-        </marquee>
-    </center> 
+    <a href="pagina 1.html">Productos</a>
+    <a href="pagina 2.html">Compras</a>
+    <a href="pagina3.html">Tienda</a>
+
+    <h1>Bienvenido</h1>
+    <hr>
+
+    <h1>¿Quiénes Somos?</h1>
+    <p>En <strong>[Nombre de la Empresa]</strong>, somos una empresa dedicada a la venta de productos de electrónica de alta calidad, comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. Con una amplia gama de productos que incluye desde dispositivos móviles, computadoras y accesorios, hasta equipos de audio, video y domótica, trabajamos con marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la tecnología, enfocados en brindar una atención personalizada y asesoría experta en cada compra.</p>
+
+    <h1>Nuestros Objetivos</h1>
+    <ol>
+        <li>Servir con amor</li>
+        <li>Brindar oportunidades</li>
+        <li>Ofrecer productos de calidad</li>
+    </ol>
+
+    <hr>
+
+    <h1>Descuento 10%</h1>
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+        <img src="nintendo 1.jpg" width="300" alt="Nintendo">
+        <img src="camara.jpg" width="300" alt="Cámara">
+    </marquee>
 </body>
 </html>

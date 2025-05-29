@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda</title>
+  <link rel="icon" href="electronica.png"/>
+  <style>
+    /* Fondo animado */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #1e88e5, #42a5f5, #81d4fa, #e3f2fd);
+      background-size: 400% 400%;
+      animation: fondoAnimado 15s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes fondoAnimado {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Contenedor central */
+    center {
+      margin-top: 40px;
+      animation: fadeIn 1s ease;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      font-size: 1.1em;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    a:hover {
+      background-color: #ffeb3b;
+      color: #000;
+      transform: scale(1.1);
+    }
+
+    h1 {
+      margin-top: 30px;
+      animation: slideIn 1s ease;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 1.1em;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+      padding: 10px;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 5px;
+      font-size: 1em;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      transform: scale(1.03);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+
+    button {
+      margin-top: 20px;
+      margin-left: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      background-color: #00bcd4;
+      color: white;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 60%;
+      border: 1px solid white;
+      margin: 20px auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <a href="pagina 1.html">Productos</a>
+    <a href="paginia3.html">Tienda</a>
+    <a href="pagina 4.html">Menú</a>
+
+    <h1>Tus compras son seguras</h1>
+    <hr>
+
+    <label>Producto</label>
+    <input type="text" placeholder="Nombre del producto">
+
+    <label>Cantidad</label>
+    <input type="text" placeholder="Ej: 1, 2, 3...">
+
+    <label>Número de tarjeta</label>
+    <input type="text" placeholder="0000 0000 0000 0000">
+
+    <label>CVV</label>
+    <input type="text" placeholder="Ej: 123">
+
+    <label>Fecha de vencimiento</label>
+    <input type="date">
+
+    <br>
+    <button>Confirmar</button>
+    <button>Cancelar</button>
+  </center>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="icon" href="electronica.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+            color: #333;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-top: 30px;
+            animation: slideDown 1s ease-out;
+        }
+
+        a {
+            display: inline-block;
+            margin: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #2980b9;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #3498db;
+            transform: scale(1.1);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            box-shadow: 0 0 8px #3498db;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2ecc71;
+            transform: scale(1.05);
+        }
+
+        img {
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: 1px solid #ccc;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Estamos en toda Guate</h1>
+    <a href="pagina 1.html">Productos</a>
+    <a href="pagina 2.txt">Compras</a>
+    <a href="pagina 4.html">Menú</a>
+    <hr>
+    <h2>Busca tu Tienda</h2>
+    <input type="text" placeholder="Ej. Xela, Reu...">
+    <button>Buscar</button>
+
+    <h2>Sucursales</h2>
+    <img src="perro.png" width="300" alt="Sucursal perro">
+    <h2>Mazate</h2>
+    <img src="tienda.jpg" width="300" alt="Sucursal Mazate">
+    <h2>Reu</h2>
+    <img src="tienda 2.jpg" width="300" alt="Sucursal Reu">
+    <h2>Xela</h2>
+
+    <hr>
+    <h2>Otras tiendas</h2>
+    <ul>
+        <li>Peten</li>
+        <li>Jalapa</li>
+        <li>Antigua</li>
+        <li>Zacapa</li>
+    </ul>
+</body>
+</html>
