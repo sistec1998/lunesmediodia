@@ -1,184 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lays</title>
-    <link rel="icon" href="Logo-lays.png">
-
+    <title>Menú</title>
+    <link rel="icon" href="logo.png">
     <style>
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #ffcc00, #ff6600);
-            color: #fff;
-            text-align: center;
-            animation: fadeInBody 2s ease-in-out;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+            color: #333;
+            animation: fadeIn 2s ease;
         }
 
-        @keyframes fadeInBody {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        center {
+            padding: 20px;
         }
 
         img {
-            width: 300px;
-            transition: transform 0.5s ease;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
         }
 
         img:hover {
-            transform: scale(1.1) rotate(5deg);
+            transform: scale(1.05);
         }
 
-        h1 {
-            font-size: 2.5em;
-            margin-top: 20px;
-            animation: slideIn 1s ease-in-out;
+        h2 {
+            color: #2c3e50;
+            transition: color 0.3s ease;
         }
 
-        @keyframes slideIn {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+        h2:hover {
+            color: #3498db;
+        }
+
+        p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: justify;
+            animation: slideIn 1.5s ease;
         }
 
         a {
             display: inline-block;
             margin: 10px;
             padding: 10px 20px;
-            color: #ff6600;
-            background-color: #fff;
+            background-color: #3498db;
+            color: white;
             text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.3s ease;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         a:hover {
-            background-color: #ff9900;
-            color: white;
-            transform: scale(1.05);
+            background-color: #2980b9;
+            transform: scale(1.1);
         }
 
-        hr {
-            border: 2px solid white;
-            width: 60%;
-            margin: 20px auto;
+        marquee {
+            margin-top: 20px;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
-    <img src="Logo-lays.png" alt="Logo Lays">
-    <h1>Bienvenidos</h1>
-    <hr>
-    <a href="pagina1.html ">Productos</a>
-    <a href="pagina2.html ">Trabajo</a>
-    <a href="pagina2.html ">Más Sabores</a>
-    <h1>Misión</h1>
-    <p><!DOCTYPE html>
-        <html lang="es">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Lays</title>
-            <link rel="icon" href="Logo-lays.png">
-        
-            <style>
-                body {
-                    margin: 0;
-                    font-family: 'Arial', sans-serif;
-                    background: linear-gradient(135deg, #ffcc00, #ff6600);
-                    color: #fff;
-                    text-align: center;
-                    animation: fadeInBody 2s ease-in-out;
-                }
-        
-                @keyframes fadeInBody {
-                    from { opacity: 0; }
-                    to { opacity: 1; }
-                }
-        
-                img {
-                    width: 300px;
-                    transition: transform 0.5s ease;
-                }
-        
-                img:hover {
-                    transform: scale(1.1) rotate(5deg);
-                }
-        
-                h1 {
-                    font-size: 2.5em;
-                    margin-top: 20px;
-                    animation: slideIn 1s ease-in-out;
-                }
-        
-                @keyframes slideIn {
-                    from { transform: translateY(-50px); opacity: 0; }
-                    to { transform: translateY(0); opacity: 1; }
-                }
-        
-                a {
-                    display: inline-block;
-                    margin: 10px;
-                    padding: 10px 20px;
-                    color: #ff6600;
-                    background-color: #fff;
-                    text-decoration: none;
-                    border-radius: 8px;
-                    transition: all 0.3s ease;
-                }
-        
-                a:hover {
-                    background-color: #ff9900;
-                    color: white;
-                    transform: scale(1.05);
-                }
-        
-                hr {
-                    border: 2px solid white;
-                    width: 60%;
-                    margin: 20px auto;
-                }
-        
-                .mision {
-                    max-width: 700px;
-                    margin: 30px auto;
-                    background-color: rgba(255, 255, 255, 0.15);
-                    padding: 20px;
-                    border-radius: 10px;
-                    backdrop-filter: blur(5px);
-                    animation: fadeInMission 2s ease;
-                }
-        
-                @keyframes fadeInMission {
-                    from { opacity: 0; transform: scale(0.9); }
-                    to { opacity: 1; transform: scale(1); }
-                }
-        
-                .mision p {
-                    font-size: 1.2em;
-                    line-height: 1.6;
-                    color: #fff;
-                }
-            </style>
-        </head>
-        <body>
-            <img src="Logo-lays.png" alt="Logo Lays">
-            <h1>Bienvenidos</h1>
-            <hr>
-            <a href="pagina1.html">Productos</a>
-            <a href="pagina2.html">Trabajo</a>
-            <a href="pagina2.html">Más Sabores</a>
-            <h1>Misión</h1>
-        
-            <div class="mision">
-                <p>
-                    En <strong>Lays</strong>, nuestra misión es llevar momentos de alegría a cada rincón del mundo a través de snacks deliciosos, crujientes y llenos de sabor.
-                    Nos esforzamos por ofrecer calidad e innovación en cada bolsa, utilizando ingredientes frescos y naturales para satisfacer a todos nuestros consumidores.
-                </p>
-            </div>
-        </body>
-        </html>
+   <center>
+        <img src="logo.png" width="300" alt="Logo de la empresa">
+        <br>
+
+        <a href="pagina1.html">Página 1</a>
+        <a href="pagina2.html">Página 2</a>
+        <a href="pagina3.html">Página 3</a>
+
+        <h2>Bienvenidos</h2>
+        <h2>¿Qué somos?</h2>
+        <p>
+            En [Nombre de la Empresa], somos una empresa dedicada a la venta de productos de electrónica de alta calidad, 
+            comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. Con una 
+            amplia gama de productos que incluye desde dispositivos móviles, computadoras y accesorios, hasta equipos de audio, 
+            video y domótica, trabajamos con marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza. 
+            Nuestro equipo está formado por profesionales apasionados por la tecnología, enfocados en brindar una atención 
+            personalizada y asesoría experta en cada compra.
         </p>
+
+        <h2>Nuestros objetivos</h2>
+        <p>
+            1. Ser visionarios con amor.
+        </p>
+
+        <marquee behavior="scroll" direction="left">
+            <img src="consola1.webp" width="300" alt="Consola">
+            <img src="camara1.png" width="300" alt="Cámara">
+        </marquee>
+    </center> 
 </body>
 </html>
-c

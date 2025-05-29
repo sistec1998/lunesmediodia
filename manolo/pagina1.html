@@ -1,109 +1,184 @@
- <<!DOCTYPE html>
- <html lang="es">
- <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Ropa Deportiva</title>
-   <link rel="icon" href="logo puma.png">
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-   <style>
-     body {
-       font-family: 'Roboto', sans-serif;
-       background: linear-gradient(to right, #f2f2f2, #dcdcdc);
-       margin: 0;
-       padding: 0;
-       text-align: center;
-       color: #333;
-     }
- 
-     h1, h2 {
-       color: #cc0000;
-       transition: transform 0.3s ease;
-     }
- 
-     h1:hover, h2:hover {
-       transform: scale(1.05);
-     }
- 
-     img {
-       margin: 20px;
-       border-radius: 15px;
-       transition: transform 0.4s ease, box-shadow 0.4s ease;
-     }
- 
-     img:hover {
-       transform: scale(1.1);
-       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-     }
- 
-     figcaption {
-       font-weight: bold;
-       margin-bottom: 20px;
-       color: #444;
-     }
- 
-     hr {
-       border: 2px solid #cc0000;
-       width: 80%;
-       margin: 20px auto;
-     }
- 
-     .contacto {
-       margin-top: 30px;
-       background-color: #fff3f3;
-       padding: 20px;
-       border-radius: 20px;
-       width: 70%;
-       margin-left: auto;
-       margin-right: auto;
-       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-     }
- 
-     .iconos {
-       font-size: 24px;
-       margin: 10px;
-       color: #cc0000;
-       transition: color 0.3s ease;
-     }
- 
-     .iconos:hover {
-       color: #660000;
-     }
-   </style>
- </head>
- <body>
- 
-   <img src="logo puma.png" width="300" alt="Logo Puma">
- 
-   <hr>
- 
-   <h1>Zapato deportivo con estilo para hombre</h1>
-   <h2>Catálogo</h2>
- 
-   <div>
-     <img src="sapato1.avif" width="300" alt="Zapato 1">
-     <figcaption>Q450 - PUMA X ARIES MOSTRO CRAFT</figcaption>
- 
-     <img src="SAPATO 2.png" width="300" alt="Zapato 2">
-     <figcaption>Q300 - Zapato Puma Casy Riderprime</figcaption>
- 
-     <img src="SAPATO 3.avif" width="300" alt="Zapato 3">
-     <figcaption>Q300 - Cenis Suede Classic</figcaption>
- 
-     <img src="sapato4.avif" width="300" alt="Zapato 4">
-     <figcaption>Q300 - Speedcat</figcaption>
-   </div>
- 
-   <hr>
- 
-   <div class="contacto">
-     <h2>Contacto del programador</h2>
-     <p><i class="fas fa-user iconos"></i> Juan Pérez</p>
-     <p><i class="fas fa-envelope iconos"></i> juanperez@example.com</p>
-     <p><i class="fas fa-phone iconos"></i> +502 1234-5678</p>
-   </div>
- 
- </body>
- </html>
- 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrónica Panamericana</title>
+  <link rel="icon" href="pana.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      color: #333;
+      text-align: center;
+    }
+
+    header img {
+      width: 300px;
+      margin-top: 20px;
+      transition: transform 0.3s;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: #004d40;
+      transform: scale(1.1);
+    }
+
+    form {
+      margin: 30px auto;
+      padding: 10px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      border: 2px solid #009688;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #009688;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+
+    h1 {
+      color: #004d40;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #00695c;
+      margin-top: 40px;
+    }
+
+    img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    details {
+      margin: 20px auto;
+      width: 80%;
+      text-align: left;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      color: #00796b;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #009688;
+      margin: 20px auto;
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo">
+  </header>
+
+  <nav>
+    <a href="pagina2.html"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+    <a href="pagina3.html"><i class="fa-solid fa-store"></i> Tienda</a>
+    <a href="pagina4.html"><i class="fa-solid fa-bars"></i> Menú</a>
+  </nav>
+
+  <h1>Un mundo para elegir</h1>
+  <hr>
+
+  <form>
+    <label for="buscar"><i class="fa-solid fa-magnifying-glass"></i> ¿Qué buscas?</label><br><br>
+    <input type="text" id="buscar">
+    <button type="submit"><i class="fa-solid fa-search"></i> Buscar</button>
+  </form>
+
+  <h2>Computadoras</h2>
+  <img src="compu1.jpg" alt="Computadora 1">
+  <img src="compu2.avif" alt="Computadora 2">
+  <img src="compu3.webp" alt="Computadora 3">
+
+  <h2>Bocinas</h2>
+  <img src="bosina1.png" alt="Bocina 1">
+  <img src="bosina2.webp" alt="Bocina 2">
+  <img src="bosina3.webp" alt="Bocina 3">
+
+  <h2>Instrumentos Musicales</h2>
+  <img src="tropeta3.jpg" alt="Trompeta">
+  <img src="bateria2.webp" alt="Batería">
+  <img src="gitarar1.png" alt="Guitarra">
+
+  <h2>Drones</h2>
+  <img src="dron.png" alt="Dron 1">
+  <img src="dron 2.png" alt="Dron 2">
+  <img src="dron3.png" alt="Dron 3">
+
+  <h2>Para el Hogar</h2>
+  <details>
+    <summary><i class="fa-solid fa-snowflake"></i> Refrigeradores</summary>
+    <img src="refrigerador1.webp" alt="Refrigerador 1">
+    <img src="refrigerador2.png" alt="Refrigerador 2">
+    <img src="refrigersdor3.avif" alt="Refrigerador 3">
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-tv"></i> Televisores</summary>
+    <img src="tv1.jpg" alt="TV 1">
+    <img src="tv2.png" alt="TV 2">
+    <img src="tv3.png" alt="TV 3">
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-soap"></i> Lavadoras</summary>
+    <img src="laba1.webp" alt="Lavadora 1">
+    <img src="lava12.webp" alt="Lavadora 2">
+    <img src="lava3.jpg" alt="Lavadora 3">
+  </details>
+
+</body>
+</html>
