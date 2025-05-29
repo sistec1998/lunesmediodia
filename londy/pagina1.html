@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PRODUCTOS</title>
+  <link rel="icon" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #b3e5fc; /* Celeste claro */
+      color: #333;
+    }
+
+    center {
+      padding: 20px;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #0288d1;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    a:hover {
+      background-color: #0277bd;
+    }
+
+    form {
+      margin: 20px 0;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    h2 {
+      color: #01579b;
+      margin-top: 40px;
+    }
+
+    summary {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0f172a;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    hr {
+      margin: 30px auto;
+      width: 80%;
+      border: 1px solid #ccc;
+    }
+
+    details {
+      margin: 20px 0;
+      background: #e1f5fe;
+      padding: 15px;
+      border-radius: 10px;
+      width: fit-content;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo.png" width="300" alt="Logo">
+    <br>
+    <a href="pagina2.html">COMPRAR</a>
+    <a href="pagina3.html">TIENDA</a>
+    <a href="pagina4.html">MENU</a>
+    <hr>
+
+    <form>
+      <label>¿QUÉ BUSCAS?</label><br>
+      <input type="text"><br>
+      <button>BUSCAR</button>
+    </form>
+
+    <h2>COMPUTADORAS</h2>
+    <img src="images1.jpg" width="300">
+    <img src="imagn2.webp" width="300">
+    <img src="imagen3.jpg" width="300">
+
+    <h2>BOCINAS</h2>
+    <img src="imag1.jpg" width="300">
+    <img src="IMG2.jpg" width="300">
+    <img src="IMG3.jpg" width="300">
+
+    <h2>INSTRUMENTOS MUSICALES</h2>
+    <img src="mus1.jpg" width="300">
+    <img src="mus2.jpg" width="300">
+    <img src="mus3.jpg" width="300">
+
+    <h2>DRONES</h2>
+    <img src="dr1.jpg" width="300">
+    <img src="dr2.jpg" width="300">
+    <img src="dr3.png" width="300">
+
+    <h2>PARA EL HOGAR</h2>
+    <details>
+      <summary>REFRIGERADORES</summary>
+      <img src="358583.jpg" width="300">
+      <img src="464037500016_5_.webp" width="300">
+      <img src="mabe_refrigerador_rma300fznu_frente.webp" width="300">
+    </details>
+
+    <details>
+      <summary>TV</summary>
+      <img src="tv1.webp" width="300">
+      <img src="tv2.webp" width="300">
+      <img src="tv3.png" width="300">
+    </details>
+
+    <details>
+      <summary>LAVADORAS</summary>
+      <img src="3798133-800-800.webp" width="300">
+      <img src="Mabe-Lavadora-19-kg-Blanco-LMA79113VBAB0-Frente.jpg" width="300">
+      <img src="images.jpg" width="300">
+    </details>
+  </center>
+</body>
+</html>

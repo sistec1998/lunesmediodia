@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #80deea);
+            color: #333;
+            animation: fadeIn 2s ease-in;
+        }
+
+        header {
+            background-color: #00796b;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #00796b;
+        }
+
+        h2 {
+            color: #009688;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #009688;
+            margin: 20px 0;
+        }
+
+        .logo {
+            width: 200px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .marquee-container {
+            display: flex;
+            overflow: hidden;
+            gap: 20px;
+            margin-top: 20px;
+            animation: scroll 10s linear infinite;
+        }
+
+        .marquee-container img {
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .marquee-container img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" class="logo" alt="Logo">
+    <nav>
+        <a href="pagina1.html">Productos</a>
+        <a href="pagina2.html">Comprar</a>
+        <a href="pagina4.html">Tiendas</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>BIENVENIDO</h1>
+    <hr>
+    <h2>¿QUIÉNES SOMOS?</h2>
+    <p>En <strong>[Nombre de la Empresa]</strong>, somos una empresa dedicada a la venta de productos de electrónica de alta calidad, comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes...</p>
+
+    <h2>NUESTROS OBJETIVOS:</h2>
+    <ul>
+        <li>Servir con amor</li>
+        <li>Brindar oportunidades</li>
+        <li>Ofrecer productos de calidad</li>
+    </ul>
+
+    <hr>
+
+    <h2>¡DESCUENTO 10%!</h2>
+
+    <div class="marquee-container">
+        <img src="1366_2000.jpeg" alt="Producto 1">
+        <img src="images (2).jpg" alt="Producto 2">
+    </div>
+</div>
+
+</body>
+</html>

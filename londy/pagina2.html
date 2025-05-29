@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PRODUCTOS</title>
+  <link rel="icon" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #b2ebf2, #e1f5fe);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #ffffffcc;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1.2s ease;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .links {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: white;
+      background-color: #0288d1;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin: 0 10px;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .links a:hover {
+      background-color: #0277bd;
+      transform: scale(1.05);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #01579b;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #90caf9;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: #0288d1;
+    }
+
+    button {
+      padding: 12px;
+      margin-top: 10px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:first-of-type {
+      background-color: #43a047;
+      color: white;
+    }
+
+    button:first-of-type:hover {
+      background-color: #388e3c;
+      transform: scale(1.05);
+    }
+
+    button:last-of-type {
+      background-color: #ef5350;
+      color: white;
+    }
+
+    button:last-of-type:hover {
+      background-color: #e53935;
+      transform: scale(1.05);
+    }
+
+    hr {
+      margin: 20px 0;
+      border: 0;
+      height: 2px;
+      background: #81d4fa;
+      width: 100%;
+      animation: expand 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes expand {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @media (max-width: 600px) {
+      .links a {
+        display: block;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="links">
+      <a href="pagina1.html">COMPRAR</a>
+      <a href="pagina3.html">TIENDAS</a>
+      <a href="pagina4.html">MENU</a>
+    </div>
+
+    <hr>
+
+    <form>
+      <label>Producto</label>
+      <input type="text" placeholder="Ej. Audífonos Bluetooth">
+
+      <label>Cantidad</label>
+      <input type="number" min="1" placeholder="Ej. 2">
+
+      <label>Número de tarjeta</label>
+      <input type="text" maxlength="16" placeholder="1234 5678 9012 3456">
+
+      <label>CVV</label>
+      <input type="text" maxlength="4" placeholder="123">
+
+      <label>Fecha de vencimiento</label>
+      <input type="month">
+
+      <button>Confirmar</button>
+      <button type="button">Cancelar</button>
+    </form>
+  </div>
+</body>
+</html>
