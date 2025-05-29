@@ -1,122 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lays</title>
-  <link rel="icon" href="logo de lays.png">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #fff700, #ffe600);
-      color: #333;
-      text-align: center;
-      overflow-x: hidden;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #f0f8ff, #e6f7ff);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+            animation: fadeIn 2s ease;
+        }
 
-    img {
-      width: 300px;
-      animation: float 3s ease-in-out infinite;
-      transition: transform 0.3s;
-    }
+        h1 {
+            color: #004080;
+            margin-top: 20px;
+            animation: slideIn 1s ease;
+        }
 
-    img:hover {
-      transform: scale(1.1);
-    }
+        h2 {
+            color: #0077b6;
+        }
 
-    h1 {
-      font-size: 3em;
-      color: #d40000;
-      margin-top: 0;
-      animation: fadeIn 2s ease-in-out;
-    }
+        hr {
+            border: none;
+            height: 2px;
+            background: #0077b6;
+            width: 80%;
+            margin: 20px auto;
+        }
 
-    h2 {
-      color: #0066cc;
-      margin-top: 30px;
-    }
+        button {
+            background-color: #0096c7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
 
-    hr {
-      width: 60%;
-      border: 2px solid #ffcc00;
-      margin: 20px auto;
-    }
+        button:hover {
+            background-color: #005f73;
+            transform: scale(1.05);
+        }
 
-    ol, ul {
-      list-style: none;
-      padding: 0;
-    }
+        input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            margin-right: 10px;
+            width: 200px;
+        }
 
-    li {
-      background: #fff;
-      margin: 10px auto;
-      padding: 10px 20px;
-      border-radius: 12px;
-      max-width: 300px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: background 0.3s, transform 0.3s;
-      cursor: pointer;
-    }
+        img {
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.5s;
+        }
 
-    li:hover {
-      background: #ffeb3b;
-      transform: scale(1.05);
-    }
+        img:hover {
+            transform: scale(1.1);
+        }
 
-    .button {
-      display: inline-block;
-      margin: 20px 10px;
-      padding: 12px 25px;
-      background-color: #ff3d00;
-      color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.2s;
-      text-decoration: none;
-    }
+        a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #0077b6;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-    .button:hover {
-      background-color: #e53935;
-      transform: scale(1.1);
-    }
+        a:hover {
+            color: #023e8a;
+        }
 
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(-20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
+        ol {
+            text-align: left;
+            display: inline-block;
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-  </style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        summary {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+    </style>
 </head>
 <body>
 
-  <img src="logo de lays.png" alt="Logo de Lays">
-  <h1>¡Más Sabor!</h1>
-  <hr>
+    <!-- Navegación -->
+    <nav>
+        <a href="pagina1.html">Inicio</a>
+        <a href="pagina2.html">Productos</a>
+        <a href="pagina4.html">Contacto</a>
+    </nav>
 
-  <h2>Snacks Favoritos</h2>
-  <ol>
-    <li>Chokis</li>
-    <li>Arcoiris</li>
-    <li>Emperador</li>
-    <li>Chiki</li>
-  </ol>
+    <h1>¡Estamos en toda Guatemala!</h1>
+    <hr>
 
-  <h2>Golosinas</h2>
-  <ul>
-    <li>Fiesta</li>
-    <li>Detodito</li>
-    <li>Crujito</li>
-  </ul>
+    <summary>Busca tu tienda cercana</summary>
+    <input type="text" placeholder="Ingresa tu ciudad">
+    <button>Buscar</button>
 
-  <a href="#" class="button">Comprar Ahora</a>
-  <a href="#" class="button">Ver Más</a>
+    <h1>Sucursales</h1>
+    <div>
+        <img src="im1.jpg" width="200" alt="Sucursal 1">
+        <h2>Ciudad de Guatemala</h2>
+
+        <img src="im2.jpg" width="200" alt="Sucursal Mazate">
+        <h2>Mazatenango</h2>
+
+        <img src="im3.jpg" width="200" alt="Sucursal Reu">
+        <h2>Retalhuleu</h2>
+    </div>
+
+    <hr>
+    <h2>Otras tiendas</h2>
+    <ol>
+        <li>Peten</li>
+        <li>Jalapa</li>
+        <li>Antigua</li>
+        <li>Zacapa</li>
+    </ol>
 
 </body>
 </html>

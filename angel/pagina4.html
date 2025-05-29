@@ -1,134 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lays</title>
-    <link rel="icon" href="logo de lays.png">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(to right, #fceabb, #f8b500);
-            color: #333;
-            text-align: center;
-            padding: 20px;
-            animation: fadeIn 1.5s ease-in;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menú</title>
+  <link rel="icon" href="logo.png" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0f8ff, #d6eaf8);
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
 
-        h1, h2 {
-            animation: slideIn 1s ease-out;
-        }
+    img {
+      margin-top: 20px;
+      transition: transform 0.3s ease;
+    }
 
-        h1 {
-            color: #d62828;
-        }
+    img:hover {
+      transform: scale(1.05);
+    }
 
-        h2 {
-            color: #003049;
-        }
+    h1 {
+      color: #2980b9;
+      animation: slideIn 1s ease-out;
+    }
 
-        a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #2a9d8f;
-            font-weight: bold;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
+    h2 {
+      color: #2e86c1;
+    }
 
-        a:hover {
-            color: #e76f51;
-            transform: scale(1.1);
-        }
+    p {
+      width: 80%;
+      margin: auto;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
 
-        hr {
-            border: 0;
-            height: 2px;
-            background: #e9c46a;
-            margin: 30px auto;
-            width: 70%;
-        }
+    hr {
+      border: 1px solid #3498db;
+      width: 60%;
+      margin: 20px auto;
+    }
 
-        p {
-            max-width: 800px;
-            margin: 10px auto;
-            font-size: 18px;
-            line-height: 1.6;
-        }
+    .button-container {
+      margin: 30px 0;
+    }
 
-        .logo {
-            animation: zoomIn 1s ease;
-            margin-bottom: 20px;
-        }
+    .button-container a {
+      display: inline-block;
+      text-decoration: none;
+      background: #3498db;
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.2s ease;
+      font-weight: bold;
+    }
 
-        .slider {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-            animation: slideLoop 10s linear infinite;
-        }
+    .button-container a:hover {
+      background: #21618c;
+      transform: scale(1.05);
+    }
 
-        .slider img {
-            width: 150px;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
+    marquee img {
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-        .slider img:hover {
-            transform: scale(1.1);
-        }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-        /* Animaciones */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            from { transform: translateY(-30px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes zoomIn {
-            from { transform: scale(0.8); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-        }
-
-        @keyframes slideLoop {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-33%); }
-        }
-    </style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
 
-    <img src="logo de lays.png" width="300" class="logo">
+  <img src="logo.png" width="300" alt="Logo" />
 
-    <h1>Bienvenidos</h1>
-    <hr>
+  <div class="button-container">
+    <a href="pagina1.html">Página 1</a>
+    <a href="pagina2.html">Página 2</a>
+    <a href="pagina3.html">Página 3</a>
+  </div>
 
-    <div class="links">
-        <a href="pagina1.html">Productos</a>
-        <a href="pagina2.html">Trabajos</a>
-        <a href="pagina3.html">Más sobre nosotros</a>
-    </div>
+  <h1>¡Bienvenidos!</h1>
+  <hr />
 
-    <h2>Misión</h2>
-    <p>Nuestra misión es ofrecer productos y servicios de la más alta calidad que mejoren la vida de nuestros clientes, fomentando la innovación, la sostenibilidad y el compromiso con la excelencia en cada paso que damos.</p>
+  <p>
+    Somos una organización comprometida con <strong>[tu causa, servicio o producto]</strong>,
+    enfocada en <strong>[tu misión principal]</strong>. Nuestro equipo está conformado por
+    <strong>[descripción del equipo humano o profesional]</strong>, y trabajamos día a día para ofrecer
+    <strong>[valor diferencial]</strong> a nuestros clientes/comunidad. Nos impulsa la pasión por
+    <strong>[valor o propósito]</strong> y creemos en <strong>[principios y valores fundamentales]</strong>.
+  </p>
 
-    <h1>Visión</h1>
-    <p>Ser una empresa líder en nuestro sector, reconocida por la innovación, la calidad y el compromiso con nuestros clientes, empleados y el planeta, construyendo un futuro sostenible y próspero para todos.</p>
+  <h2>Nuestros Objetivos</h2>
+  <p>
+    <strong>Propósito:</strong> Qué se busca lograr a corto, mediano y largo plazo.<br>
+    <strong>Enfoque:</strong> Pueden centrarse en crecimiento, impacto social, innovación, calidad, expansión, entre otros.<br>
+    <strong>Medibilidad:</strong> Si es posible, deben ser medibles o verificables.
+  </p>
 
-    <hr>
+  <hr />
 
-    <h2>¡Prueba lo nuevo!</h2>
-    
-    <div class="slider">
-        <img src="chetos1.jpg" alt="Chetos">
-        <img src="papa2.webp" alt="Papas">
-        <img src="galletas3.png" alt="Galletas">
-    </div>
+  <h1 style="color: #e74c3c;">¡Descuento 10%!</h1>
+
+  <marquee behavior="scroll" direction="left" scrollamount="5">
+    <img src="con1.jpg" width="200" alt="Descuento 1" />
+    <img src="con2.jpg" width="200" alt="Descuento 2" />
+  </marquee>
 
 </body>
 </html>

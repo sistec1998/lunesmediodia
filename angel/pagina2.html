@@ -1,140 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lays - Trabaja con Nosotros</title>
-  <link rel="icon" href="logo de lays.png"/>
+  <title>Comprar</title>
+  <link rel="icon" href="logo.png" />
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #f9d423, #ff4e50);
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      animation: fadeIn 2s ease-in-out;
       color: #333;
-      animation: fadeIn 2s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .container:hover {
-      transform: scale(1.02);
     }
 
     h1 {
-      color: #d4145a;
-      text-transform: uppercase;
-      font-size: 28px;
-      margin-bottom: 10px;
+      color: #2c3e50;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      animation: slideDown 1.5s ease;
     }
 
-    hr {
-      border: none;
-      height: 3px;
-      background-color: #fbb03b;
-      margin-bottom: 30px;
-      width: 100%;
+    center {
+      margin-top: 50px;
+      display: block;
+    }
+
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin-top: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    form:hover {
+      transform: scale(1.02);
     }
 
     label {
-      font-weight: bold;
       display: block;
-      margin-top: 15px;
-      margin-bottom: 5px;
+      margin-top: 10px;
+      font-weight: bold;
     }
 
-    input[type="text"], input[type="file"] {
+    input[type="text"] {
       width: 100%;
-      padding: 10px;
-      border: 2px solid #fbb03b;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
       border-radius: 5px;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #3498db;
       outline: none;
-      transition: border-color 0.3s ease;
-    }
-
-    input:focus {
-      border-color: #ff4e50;
-    }
-
-    .button-group {
-      margin-top: 20px;
-      display: flex;
-      gap: 10px;
     }
 
     button {
-      flex: 1;
-      padding: 10px;
-      background-color: #ff4e50;
+      margin-top: 15px;
+      padding: 10px 15px;
       border: none;
       border-radius: 5px;
+      background-color: #3498db;
       color: white;
-      font-weight: bold;
-      text-transform: uppercase;
       cursor: pointer;
+      font-weight: bold;
+      margin-right: 10px;
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     button:hover {
-      background-color: #d4145a;
-      transform: translateY(-2px);
+      background-color: #2980b9;
+      transform: scale(1.05);
     }
 
-    img {
-      width: 150px;
-      animation: float 3s ease-in-out infinite;
+    a {
+      margin: 0 10px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
     }
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    a:hover {
+      color: #f1c40f;
     }
 
-    @media (max-width: 600px) {
-      .container {
-        margin: 20px;
-      }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <div class="container" align="center">
-    <img src="logo de lays.png" alt="Logo de Lays">
-    <h1>Trabaja con nosotros</h1>
-    <hr />
+  <center>
+    <div>
+      <a href="pagina1.html">Inicio</a>
+      <a href="pagina3.html">Ofertas</a>
+      <a href="pagina4.html">Contacto</a>
+    </div>
+
+    <h1>Tus compras son seguras</h1>
+    <hr width="700">
+
     <form>
-      <label>Tu nombre</label>
-      <input type="text" placeholder="Ingresa tu nombre" />
+      <label>Productos</label>
+      <input type="text">
 
-      <label>Tu profesión</label>
-      <input type="text" placeholder="Ingresa tu profesión" />
+      <label>Cantidad</label>
+      <input type="text">
 
-      <label>Tu DPI</label>
-      <input type="text" placeholder="Ingresa tu número de DPI" />
+      <label>Número de tarjeta</label>
+      <input type="text">
 
-      <label>Tu CV</label>
-      <input type="file" />
+      <label>CVV</label>
+      <input type="text">
 
-      <label>¿Qué te gustaría hacer?</label>
-      <input type="text" placeholder="Ej. ventas, logística, etc." />
+      <label>Fecha de nacimiento</label>
+      <input type="text">
 
-      <div class="button-group">
-        <button type="submit">Postularse</button>
-        <button type="reset">Cancelar</button>
-      </div>
+      <button type="submit">Confirmar</button>
+      <button type="reset" style="background-color: #e74c3c;">Cancelar</button>
     </form>
-  </div>
+  </center>
 </body>
 </html>
