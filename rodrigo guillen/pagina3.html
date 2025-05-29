@@ -1,95 +1,135 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAYS</title>
-    <link rel="icon" href="Logo-lays.png">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #fffde7, #fff9c4);
-            color: #333;
-            text-align: center;
-            animation: fadeIn 2s ease-in-out;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrónica Panamericana</title>
+  <link rel="icon" href="ICONO.jpg">
 
-        img {
-            margin-top: 30px;
-            width: 300px;
-            transition: transform 0.5s ease;
-        }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #d7e1ec, #ffffff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-        img:hover {
-            transform: scale(1.05);
-        }
+    h2 {
+      color: #2c3e50;
+      transition: transform 0.3s;
+    }
 
-        hr {
-            width: 70%;
-            border: 1px solid #ffeb3b;
-            margin: 20px auto;
-        }
+    h2:hover {
+      transform: scale(1.05);
+    }
 
-        h2 {
-            color: #f57f17;
-            font-size: 2em;
-            margin-top: 30px;
-            animation: slideIn 1s ease-in-out;
-        }
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #2980b9;
+      transition: color 0.3s, transform 0.3s;
+    }
 
-        ol, ul {
-            text-align: left;
-            display: inline-block;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: #fffde7;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
+    a:hover {
+      color: #1abc9c;
+      transform: scale(1.1);
+    }
 
-        li {
-            margin: 10px 0;
-            transition: transform 0.3s ease;
-        }
+    img {
+      border-radius: 10px;
+      transition: transform 0.5s, box-shadow 0.5s;
+      margin-bottom: 10px;
+    }
 
-        li:hover {
-            transform: translateX(5px);
-            color: #d84315;
-        }
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    button {
+      padding: 10px 20px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
 
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateX(-50px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-    </style>
+    button:hover {
+      background-color: #2ecc71;
+      transform: scale(1.05);
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      width: 250px;
+    }
+
+    ol {
+      list-style-type: decimal;
+      text-align: left;
+      display: inline-block;
+    }
+
+    ol p {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+
+    hr {
+      margin: 30px auto;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
 
-    <img src="Logo-lays.png" alt="Lays Logo">
-    <hr>
-    
-    <h2>Galletas</h2>
-    <ol>
-        <li>Chokis</li>
-        <li>Arcoiris Emperador</li>
-        <li>Chiki</li>
-        <li>Emperador</li>
-    </ol>
+  <img src="ICONO.jpg" width="300">
+  
+  <nav>
+    <a href="pagina1.html">Productos</a>
+    <a href="pagina2.html">Comprar</a>
+    <a href="pagina4.html">Menú</a>
+  </nav>
 
-    <h2>Golocinas</h2>
-    <ul>
-        <li>Fiesta</li>
-        <li>Detodito</li>
-        <li>Crujito</li>
-    </ul>
+  <h2>Estamos en toda Guate</h2>
+  <hr width="700">
+  
+  <h2>Busca tu tienda cercana</h2>
+  
+  <form>
+    <input type="text" placeholder="Ej: Xela, Reu, etc."> <br>
+    <button>Buscar</button>
+  </form>
+
+  <h2>Sucursales</h2>
+
+  <h2>Masate</h2>
+  <img src="r 2.jpg" width="300">
+
+  <h2>Reu</h2>
+  <img src="r 3.jpg" width="300">
+
+  <h2>Xela</h2>
+  <img src="reu.jpg" width="300">
+
+  <hr width="700">
+  <h2>Otras Tiendas</h2>
+
+  <ol>
+    <p>Peten</p>
+    <p>Jalapa</p>
+    <p>Antigua</p>
+    <p>Zacapa</p>
+  </ol>
 
 </body>
 </html>

@@ -1,122 +1,129 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LAYS</title>
-  <link rel="icon" href="Logo-lays.png">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ffe259, #ffa751);
-      background-size: 400% 400%;
-      animation: bgAnimation 20s ease infinite;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTRONICA PANAMERICANA</title>
+    <link rel="icon" href="ICONO.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
 
-    @keyframes bgAnimation {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
 
-    center {
-      padding: 40px 0;
-    }
+        a:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
 
-    img {
-      width: 300px;
-      transition: transform 0.5s ease;
-    }
+        h2 {
+            margin-top: 30px;
+            animation: fadeIn 1s ease-in-out;
+        }
 
-    img:hover {
-      transform: scale(1.05);
-    }
+        form {
+            background-color: #ffffffcc;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: left;
+        }
 
-    hr {
-      width: 70%;
-      border: 2px solid white;
-      margin: 20px 0;
-    }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
 
-    form {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 30px;
-      border-radius: 15px;
-      width: 400px;
-      margin: auto;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      animation: fadeIn 1.5s ease;
-    }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border 0.3s ease;
+        }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+        input[type="text"]:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
 
-    label {
-      display: block;
-      font-weight: bold;
-      margin: 15px 0 5px;
-    }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
 
-    input[type="text"],
-    input[type="file"] {
-      width: 100%;
-      padding: 10px;
-      border: 2px solid #ffa751;
-      border-radius: 8px;
-      transition: border-color 0.3s, box-shadow 0.3s;
-    }
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
 
-    input[type="text"]:focus,
-    input[type="file"]:focus {
-      border-color: #ff5722;
-      box-shadow: 0 0 10px rgba(255, 87, 34, 0.4);
-      outline: none;
-    }
+        button:last-of-type {
+            background-color: #dc3545;
+        }
 
-    button {
-      background-color: #ff9800;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      margin: 10px 5px 0;
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.3s;
-    }
+        button:last-of-type:hover {
+            background-color: #c82333;
+        }
 
-    button:hover {
-      background-color: #e65100;
-      transform: scale(1.05);
-    }
-  </style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-  <center>
-    <img src="Logo-lays.png" alt="Logo LAYS">
-    <hr>
+
+    <a href="pagina1.html">Productos</a>
+    <a href="pagina3.html">Tiendas</a>
+    <a href="pagina4.html">Menú</a>
+
+    <h2>Tus compras son seguras</h2>
+
     <form>
-      <label>Tu nombre</label>
-      <input type="text" placeholder="Ingresa tu nombre">
+        <label>Producto</label>
+        <input type="text" placeholder="Ej. Laptop, Bocina, etc.">
 
-      <label>Tu profesión</label>
-      <input type="text" placeholder="Ej. Ingeniero, Diseñador">
+        <label>Cantidad</label>
+        <input type="text" placeholder="Ej. 1, 2, 3...">
 
-      <label>Tu DPI</label>
-      <input type="text" placeholder="Ej. 1234567890101">
+        <label>Número de tarjeta</label>
+        <input type="text" placeholder="0000 0000 0000 0000">
 
-      <label>Tu CV</label>
-      <input type="file">
+        <label>CVV</label>
+        <input type="text" placeholder="Ej. 123">
 
-      <label>¿Qué te gustaría hacer?</label>
-      <input type="text" placeholder="Escribe tu objetivo laboral">
+        <label>Fecha de nacimiento</label>
+        <input type="text" placeholder="DD/MM/AAAA">
 
-      <button type="submit">Postularse</button>
-      <button type="reset">Cancelar</button>
+        <button type="submit">Confirmar</button>
+        <button type="reset">Cancelar</button>
     </form>
-  </center>
+
 </body>
 </html>

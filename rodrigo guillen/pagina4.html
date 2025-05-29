@@ -1,160 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lays</title>
-    <link rel="icon" href="Logo-lays.png">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #fce4ec, #f3e5f5);
-            margin: 0;
-            color: #333;
-            animation: fadeIn 2s ease-in-out;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrónica Panamericana</title>
+  <link rel="icon" href="ICONO.jpg">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #ffffff);
+      color: #2c3e50;
+      text-align: center;
+    }
 
-        /* Animación para la entrada */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s, transform 0.3s;
+    }
 
-        h1, h2 {
-            color: #d32f2f;
-            font-size: 2.5em;
-            margin-top: 30px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-        }
+    nav a:hover {
+      color: #1abc9c;
+      transform: scale(1.1);
+    }
 
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
-            color: #555;
-            max-width: 80%;
-            margin: 20px auto;
-            text-align: justify;
-            transition: color 0.3s ease;
-        }
+    img {
+      margin: 20px 10px;
+      border-radius: 10px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
 
-        p:hover {
-            color: #d32f2f;
-        }
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
 
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #ffeb3b;
-            color: #333;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
+    h2 {
+      margin-top: 30px;
+      color: #34495e;
+      transition: transform 0.3s;
+    }
 
-        a:hover {
-            background-color: #f57f17;
-            transform: scale(1.05);
-        }
+    h2:hover {
+      transform: scale(1.04);
+    }
 
-        /* Marquee */
-        .marquee {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            padding: 20px 0;
-        }
+    p, li {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+      font-size: 18px;
+    }
 
-        .marquee img {
-            width: 300px;
-            margin: 0 20px;
-            animation: scroll 15s linear infinite;
-            transition: transform 0.3s ease;
-        }
+    ol {
+      padding-left: 0;
+      list-style: none;
+    }
 
-        .marquee img:hover {
-            transform: scale(1.1);
-        }
+    ol li::before {
+      content: "✔️ ";
+      color: #27ae60;
+      font-weight: bold;
+    }
 
-        @keyframes scroll {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
+    hr {
+      border: 1px solid #ccc;
+      width: 80%;
+      margin: 40px auto;
+    }
 
-        hr {
-            width: 80%;
-            border: 1px solid #ffeb3b;
-            margin: 30px auto;
-        }
+    /* Carrusel animado */
+    .slider {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      max-width: 100%;
+      margin: 30px auto;
+    }
 
-        button {
-            padding: 10px 20px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
+    .slider-track {
+      display: inline-block;
+      animation: scroll 20s linear infinite;
+    }
 
-        button:hover {
-            background-color: #388e3c;
-            transform: scale(1.1);
-        }
+    .slider-track img {
+      display: inline-block;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
 
-        input[type="text"] {
-            padding: 10px;
-            font-size: 1em;
-            margin-top: 20px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            width: 300px;
-            transition: border-color 0.3s ease;
-        }
-
-        input[type="text"]:focus {
-            border-color: #ffeb3b;
-        }
-    </style>
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
 </head>
 <body>
 
-    <div style="text-align: center;">
-        <img src="Logo-lays.png" width="700" alt="Logo Lays">
-        <marquee> BIENVENIDOS </marquee>
+  <img src="ICONO.jpg" width="300" alt="Logo">
 
-        <hr>
+  <nav>
+    <a href="pagina1.html">Productos</a>
+    <a href="pagina2.html">Comprar</a>
+    <a href="pagina3.html">Tiendas</a>
+  </nav>
 
-        <a href="pagina 1.html">Productos</a>
-        <a href="pagina2.html">Trabajos</a>
-        <a href="pagina4.html">Más Sabor</a>
+  <h2>Bienvenidos</h2>
 
-        <h2>Misión</h2>
-        <p>
-            "En [Nombre de la Empresa], nuestra misión es brindar momentos de felicidad y disfrute a través de productos de golosinas de alta calidad, innovadores y deliciosos. Nos comprometemos a ofrecer experiencias únicas a nuestros clientes, satisfaciendo sus antojos con sabores que despiertan sonrisas y creando momentos memorables para todas las edades. Trabajamos con pasión y responsabilidad para ser una empresa líder en el sector, promoviendo el bienestar y la satisfacción de nuestros consumidores, siempre con un enfoque en la excelencia y la mejora continua."
-        </p>
+  <hr>
 
-        <h2>Visión</h2>
-        <p>
-            "Ser la marca líder en el mercado de golosinas, reconocida por su innovación, calidad y compromiso con la satisfacción de nuestros consumidores. Aspiramos a inspirar momentos de alegría y compartir experiencias únicas a través de nuestros productos, expandiendo nuestra presencia a nivel global, manteniendo siempre los más altos estándares de responsabilidad social y ambiental. Queremos ser la primera opción de golosinas para todas las generaciones, ofreciendo sabores y productos que marquen tendencias y acompañen a nuestros clientes en sus mejores momentos."
-        </p>
+  <h2>¿Quiénes somos?</h2>
+  <p>
+    En <strong>Electrónica Panamericana</strong>, somos una empresa dedicada a la venta de productos de electrónica de alta calidad. 
+    Nos comprometemos a ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. 
+    Trabajamos con marcas líderes en el mercado para garantizar rendimiento, durabilidad y confianza.
+  </p>
 
-        <hr>
+  <h2>Nuestros Objetivos</h2>
+  <ol>
+    <li>Servir con amor</li>
+    <li>Brindar oportunidades</li>
+    <li>Ofrecer productos de calidad</li>
+  </ol>
 
-        <h2>Pruéba lo Nuevo</h2>
-        <div class="marquee">
-            <img src="chetos picantas.webp" alt="Chetos Picantes">
-            <img src="g v1.webp" alt="Golocina 1">
-            <img src="papas v2.jpg" alt="Papas">
-        </div>
+  <hr>
 
-        <h2>¿Qué duda tienes?</h2>
-        <input type="text" placeholder="Escribe tu consulta...">
-        <br>
-        <button>Buscar</button>
+  <h2>¡Descuento del 10% en productos seleccionados!</h2>
+
+  <div class="slider">
+    <div class="slider-track">
+      <img src="guitarra.jpeg" width="300" alt="Producto 1">
+      <img src="pc v2.webp" width="300" alt="Producto 2">
+      <img src="piano.avif" width="300" alt="Producto 3">
+      <img src="pc v2.webp" width="300" alt="Producto 4">
     </div>
+  </div>
 
 </body>
 </html>
