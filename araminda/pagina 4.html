@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrónica</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #d8b4fe;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #c084fc;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h1:hover, h2:hover {
+            color: #a855f7;
+        }
+
+        p, ol {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        hr {
+            border: 1px solid #a855f7;
+            width: 700px;
+            margin: 20px auto;
+        }
+
+        a {
+            color: #d8b4fe;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #f0abfc;
+        }
+
+        .nav-icons i {
+            margin-right: 6px;
+        }
+
+        img.standard {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img.standard:hover {
+            transform: scale(1.05);
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.png" width="300" alt="Logo">
+
+    <div class="nav-icons">
+        <a href="pagina1.html"><i class="fas fa-home"></i>Inicio</a>
+        <a href="pagina2.html"><i class="fas fa-store"></i>Tienda</a>
+        <a href="pagina3.html"><i class="fas fa-info-circle"></i>Nosotros</a>
+    </div>
+
+    <h1>Bienvenidos</h1>
+    <hr>
+
+    <h1>¿Quiénes somos?</h1>
+    <p>En [Nombre de la Empresa], somos una empresa dedicada a la venta de productos de electrónica de alta calidad, comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. Con una amplia gama de productos que incluye desde dispositivos móviles, computadoras y accesorios, hasta equipos de audio, video y domótica, trabajamos con marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la tecnología, enfocados en brindar una atención personalizada y asesoría experta en cada compra.</p>
+
+    <h2>Nuestro objetivo</h2>
+    <ol>
+        <li>Servir con amor</li>
+        <li>Brindar oportunidades</li>
+        <li>Ofrecer productos de calidad</li>
+    </ol>
+
+    <h2>¡Descuento del 10%!</h2>
+
+    <div class="marquee-container">
+        <img src="camara.webp" class="standard" alt="Cámara">
+        <img src="viduijuego.avif" class="standard" alt="Videojuego">
+        <!-- Agrega más imágenes si lo deseas -->
+    </div>
+
+</body>
+</html>
