@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronica Panamericana</title>
+  <link rel="icon" href="logo de electronica.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: white;
+      text-align: center;
+    }
+
+    header img {
+      width: 300px;
+      margin-top: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #00ffcc;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff00cc;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #00ffcc;
+      text-shadow: 0 0 8px #00ffcc;
+    }
+
+    p, ol {
+      width: 80%;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    ol {
+      text-align: left;
+      display: inline-block;
+    }
+
+    .marquee-container {
+      overflow: hidden;
+      margin-top: 30px;
+    }
+
+    .marquee-container img {
+      width: 200px;
+      margin: 0 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffcc;
+      transition: transform 0.3s ease;
+    }
+
+    .marquee-container img:hover {
+      transform: scale(1.1);
+    }
+
+    .card {
+      background: #1e1e1e;
+      display: inline-block;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00ffcc;
+      max-width: 250px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .social-icons {
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      color: #00ffcc;
+      margin: 0 10px;
+      font-size: 28px;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #ff00cc;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: #00ffcc;
+      width: 80%;
+      margin: 40px auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideMarquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .custom-marquee {
+      display: flex;
+      animation: slideMarquee 20s linear infinite;
+    }
+
+    .marquee-wrapper {
+      overflow: hidden;
+      width: 100%;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo de electronica.png" alt="Logo">
+  </header>
+
+  <nav>
+    <a href="pagina 1.html">Comprar</a>
+    <a href="pagina 2.html">Tienda</a>
+    <a href="pagina 3.html">Productos</a>
+  </nav>
+
+  <h1>BIENVENIDOS</h1>
+  <hr>
+
+  <h2>¿QUÉ SOMOS?</h2>
+  <p>
+    En <strong>Electronica Panamericana</strong>, somos una empresa dedicada a la venta de productos de electrónica de alta calidad,
+    comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes.
+    Trabajamos con marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza.
+  </p>
+
+  <h2>NUESTRO OBJETIVO</h2>
+  <ol>
+    <li>Servir con amor</li>
+    <li>Brindar oportunidades</li>
+    <li>Ofrecer productos de calidad</li>
+  </ol>
+
+  <h2>Descuento del 10%</h2>
+
+  <div class="marquee-wrapper">
+    <div class="custom-marquee">
+      <div class="card"><img src="camra.jpg" alt="Camara"></div>
+      <div class="card"><img src="nintendo.jpg" alt="Nintendo"></div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+
+</body>
+</html>

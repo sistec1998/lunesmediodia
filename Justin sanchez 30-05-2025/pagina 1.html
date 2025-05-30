@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronica Panamericana</title>
+  <link rel="icon" href="logo de electronica.png">
+
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    a {
+      margin: 10px;
+      text-decoration: none;
+      color: #00ffcc;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #ff00cc;
+    }
+
+    img.logo {
+      width: 350px;
+      margin: 20px 0;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .card {
+      display: inline-block;
+      margin: 10px;
+      background: #1e1e1e;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #00ffcc;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+
+    button {
+      background-color: #00ffcc;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff00cc;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #00ffcc;
+      background: #101010;
+      color: white;
+    }
+
+    details summary {
+      cursor: pointer;
+      margin-top: 30px;
+      font-size: 18px;
+      color: #00ffcc;
+    }
+
+    .social-icons {
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      color: #00ffcc;
+      margin: 0 10px;
+      font-size: 24px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #ff00cc;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <img src="logo de electronica.png" class="logo">
+
+  <div>
+    <a href="pagina 2.html">Comprar</a>
+    <a href="pagina 3.html">Tiendas</a>
+    <a href="pagina 4.html">Productos</a>
+  </div>
+
+  <hr>
+
+  <label for="">¿Qué buscas?</label>
+  <input type="text">
+  <button>Buscar</button>
+
+  <!-- Secciones con imágenes en tarjetas -->
+  <h2>COMPUTADORAS</h2>
+  <div class="card"><img src="imagen 1.jpg"></div>
+  <div class="card"><img src="imagen 2.jpg"></div>
+  <div class="card"><img src="imagen 3.jpg"></div>
+
+  <h2>BOCINAS</h2>
+  <div class="card"><img src="bocinas 1.jpg"></div>
+  <div class="card"><img src="bocinas 2.jpg"></div>
+  <div class="card"><img src="bocinas 3.jpg"></div>
+
+  <h2>INSTRUMENTOS MUSICALES</h2>
+  <div class="card"><img src="instrumento 1.jpg"></div>
+  <div class="card"><img src="instrumento 2.jpg"></div>
+  <div class="card"><img src="instrumento 3.jpg"></div>
+
+  <h2>DRONES</h2>
+  <div class="card"><img src="drones 1.jpg"></div>
+  <div class="card"><img src="drones 2.jpg"></div>
+  <div class="card"><img src="drones 3.jpg"></div>
+
+  <!-- Detalles desplegables -->
+  <details>
+    <summary>REFRIGERADORAS</summary>
+    <div class="card"><img src="refri 1.jpg"></div>
+    <div class="card"><img src="refri 3.jpg"></div>
+    <div class="card"><img src="refri2.jpg"></div>
+  </details>
+
+  <details>
+    <summary>TV</summary>
+    <div class="card"><img src="tv1.jpg"></div>
+    <div class="card"><img src="tv2.jpg"></div>
+    <div class="card"><img src="tv3.jpg"></div>
+  </details>
+
+  <details>
+    <summary>LAVADORAS</summary>
+    <div class="card"><img src="lavadoras 1.jpg"></div>
+    <div class="card"><img src="lavadoras 2.jpg"></div>
+    <div class="card"><img src="lavadoras 3.jpg"></div>
+  </details>
+
+  <!-- Redes sociales -->
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+
+</body>
+</html>
