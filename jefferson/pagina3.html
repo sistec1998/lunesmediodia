@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electrónica Panamérica</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #141e30, #243b55);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      color: white;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    hr {
+      border: 1px solid #ffdd57;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #ffdd57;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      margin-bottom: 15px;
+      width: 250px;
+    }
+
+    button {
+      background: #00d1b2;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-left: 10px;
+    }
+
+    button:hover {
+      background: #00b89c;
+      transform: scale(1.05);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      margin: 20px;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    ol {
+      text-align: left;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    ol li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .logo {
+      width: 200px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+    }
+
+    .icon-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo" class="logo">
+  <div class="icon-title">🌎 Electrónica Panamérica <i class="fas fa-bolt"></i></div>
+
+  <nav>
+    <a href="pagina 1.html"><i class="fas fa-store"></i> Productos</a>
+    <a href="pagina 2.html"><i class="fas fa-map"></i> Tiendas</a>
+    <a href="pagina 4.html"><i class="fas fa-bars"></i> Menú</a>
+  </nav>
+
+  <h1>📍 Estamos en toda Guatemala</h1>
+  <hr>
+  <h2>🔍 Busca tu tienda más cercana</h2>
+
+  <div>
+    <input type="text" placeholder="Escribe tu ubicación...">
+    <button><i class="fas fa-search"></i> Buscar</button>
+  </div>
+
+  <h2>🏬 Sucursales</h2>
+
+  <div class="card">
+    <img src="im.png" alt="Sucursal 1">
+  </div>
+  <h2>📍 Mazate</h2>
+
+  <div class="card">
+    <img src="jr.jpg" alt="Sucursal 2">
+  </div>
+  <h2>📍 Rehu</h2>
+
+  <div class="card">
+    <img src="elec3.jpg" alt="Sucursal 3">
+  </div>
+
+  <hr>
+  <h2>🛒 Otras tiendas</h2>
+
+  <ol>
+    <li>🌴 Petén</li>
+    <li>🌅 Jutiapa</li>
+    <li>🏛️ Antigua</li>
+    <li>🌞 Zacapa</li>
+  </ol>
+
+</body>
+</html>

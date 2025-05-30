@@ -1,101 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lays - Trabaja con Nosotros</title>
-  <link rel="icon" href="logo.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electrónica Panamerica</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #fceabb, #f8b500);
-      color: #333;
-      text-align: center;
+      background: linear-gradient(120deg, #1a1a40, #2a2a72, #4a90e2);
+      background-size: 600% 600%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px 20px;
     }
 
-    h2 {
-      font-size: 2.5em;
-      color: #d62828;
-      margin: 20px 0 10px;
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
 
-    label {
+    img {
+      width: 200px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
       font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #FFDC00;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    form label {
       display: block;
+      text-align: left;
       margin: 10px 0 5px;
+      font-weight: bold;
+      color: #FFD700;
     }
 
-    input[type="text"],
-    input[type="file"],
-    input[type="CUENTANOS QUE TE INTERESA"] {
-      width: 300px;
+    form input {
+      width: 100%;
       padding: 10px;
+      border: none;
       border-radius: 10px;
-      border: 2px solid #ffae00;
-      margin-bottom: 15px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    input[type="text"]:focus,
-    input[type="CUENTANOS QUE TE INTERESA"]:focus {
-      outline: none;
-      border-color: #ff7300;
+      margin-bottom: 10px;
+      font-size: 16px;
     }
 
     button {
-      background-color: #ff8c00;
+      background: #00d1b2;
       color: white;
-      border: none;
-      padding: 10px 20px;
+      padding: 12px 25px;
       margin: 10px;
+      font-size: 16px;
+      border: none;
       border-radius: 10px;
-      font-size: 1em;
       cursor: pointer;
-      transition: background-color 0.3s;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background 0.3s ease, transform 0.3s ease;
     }
 
     button:hover {
-      background-color: #ff7300;
+      background: #00b89c;
+      transform: scale(1.05);
     }
 
-    .form-card {
-      background: #fffef2;
-      padding: 30px;
-      margin: 30px auto;
+    .icon-title {
+      font-size: 28px;
+      margin-top: 10px;
+    }
+
+    /* Card style in case you add product images */
+    .card {
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 20px;
-      width: 400px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 280px;
+      margin: 15px auto;
     }
 
-    hr {
-      width: 80%;
-      border: 1px solid #ff7300;
+    .card img {
+      width: 100%;
+      display: block;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
     }
   </style>
 </head>
 <body>
-  <img src="logo.svg" width="200" alt="Logo Lays">
-  <div class="form-card">
-    <h2>💼 TRABAJA CON NOSOTROS 🚀</h2>
-    <hr>
+  <img src="logo.png" alt="Logo de Electrónica Panamerica" />
 
-    <label>🙋‍♂️ TU NOMBRE</label>
-    <input type="text" placeholder="Ej: Juan Pérez">
+  <div class="icon-title">🌐 Electrónica Panamerica <i class="fas fa-microchip"></i></div>
 
-    <label>👨‍💼 TU PROFESIÓN</label>
-    <input type="text" placeholder="Ej: Ingeniero de alimentos">
+  <nav>
+    <a href="pagina 1.html"><i class="fas fa-box-open"></i> Productos</a>
+    <a href="pagina3.html"><i class="fas fa-store"></i> Tienda</a>
+    <a href="pagina 4.html"><i class="fas fa-bars"></i> Menú</a>
+  </nav>
 
-    <label>🧾 TU CV</label>
-    <input type="file">
+  <form>
+    <label for="">📦 Producto</label>
+    <input type="text" placeholder="Nombre del producto" />
 
-    <label>🎯 ¿QUÉ TE GUSTARÍA HACER?</label>
-    <input type="CUENTANOS QUE TE INTERESA" placeholder="Cuéntanos tu interés">
+    <label for="">🔢 Cantidad</label>
+    <input type="text" placeholder="Ej. 2" />
 
-    <br><br>
-    <button>📩 Postularse</button>
-    <button>❌ Cancelar</button>
+    <label for="">💳 Número de tarjeta</label>
+    <input type="text" placeholder="**** **** **** ****" />
+
+    <label for="">🔒 CVV</label>
+    <input type="text" placeholder="Ej. 123" />
+
+    <label for="">📅 Fecha de vencimiento</label>
+    <input type="text" placeholder="MM/AA" />
+  </form>
+
+  <div>
+    <button><i class="fas fa-search"></i> Buscar</button>
+    <button><i class="fas fa-times"></i> Cancelar</button>
   </div>
 </body>
 </html>

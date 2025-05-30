@@ -3,121 +3,176 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LAYS</title>
-  <link rel="icon" href="logo.svg">
+  <title>Electrónica Panamérica</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffe259, #ffa751);
-      color: #333;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 20px;
+      animation: fondo 15s ease infinite;
+    }
+
+    @keyframes fondo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
       text-align: center;
     }
 
-    img.logo {
-      width: 300px;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      margin-top: 20px;
+    nav a {
+      color: #ffdd57;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
     }
 
-    h2 {
-      font-size: 2em;
-      color: #d62828;
-      margin-top: 20px;
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    h1, h2 {
+      margin: 20px 0 10px;
     }
 
     p {
-      width: 80%;
-      max-width: 700px;
+      text-align: justify;
+      line-height: 1.6;
+      margin: 0 20px;
+    }
+
+    ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    ol li {
+      background: rgba(255, 255, 255, 0.1);
       margin: 10px auto;
-      font-size: 1.1em;
-      line-height: 1.5;
-      background-color: #fffef2;
-      padding: 20px;
-      border-radius: 20px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      border-radius: 10px;
+      width: 80%;
+      transition: transform 0.3s ease;
+    }
+
+    ol li:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
     }
 
     hr {
+      margin: 30px auto;
       width: 80%;
-      border: 1px solid #ff8c00;
+      border: 1px solid #ffdd57;
     }
 
-    a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      text-decoration: none;
-      background-color: #ff9f1c;
-      color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    a:hover {
-      background-color: #e76f51;
-    }
-
-    .card-img {
-      width: 300px;
-      border-radius: 20px;
-      margin: 10px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    }
-
-    marquee {
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
       margin-top: 20px;
-      padding: 20px 0;
-      background-color: #fffef2;
-      border-radius: 20px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
     }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      width: 280px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .logo {
+      width: 200px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      animation: scroll 15s linear infinite;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .marquee img {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
   </style>
 </head>
 <body>
+  <div class="container">
+    <img src="logo.png" alt="Logo" class="logo">
+    <nav>
+      <a href="pagina 1.html"><i class="fas fa-box"></i> Productos</a>
+      <a href="pagina 2.html"><i class="fas fa-shopping-cart"></i> Compras</a>
+      <a href="pagina3.html"><i class="fas fa-store"></i> Tiendas</a>
+    </nav>
 
-  <img src="logo.svg" class="logo" alt="Logo Lays">
+    <h1>👋 Bienvenidos</h1>
+    <hr>
+    <h2>¿Quiénes somos? 🤔</h2>
+    <p>
+      En <strong>Electrónica Panamérica</strong>, somos una empresa dedicada a la venta de productos de electrónica de alta calidad,
+      comprometida con ofrecer soluciones tecnológicas innovadoras para mejorar la vida de nuestros clientes. 
+      Con una amplia gama de productos que incluye desde dispositivos móviles, computadoras y accesorios, 
+      hasta equipos de audio, video y domótica, trabajamos con marcas líderes del mercado para garantizar rendimiento, 
+      durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados por la tecnología, 
+      enfocados en brindar una atención personalizada y asesoría experta en cada compra.
+    </p>
 
-  <h2>🎉 BIENVENIDOS A LAY'S</h2>
-  <hr>
+    <h2>🎯 Nuestro objetivo</h2>
+    <ol>
+      <li>❤️ Servir con amor</li>
+      <li>🎓 Brindar oportunidades</li>
+      <li>🛍️ Ofrecer productos de calidad</li>
+    </ol>
 
-  <a href="pagina 1.html">📦 Productos</a>
-  <a href="pagina 2.html">💼 Trabajos</a>
-  <a href="pagina 3.html">ℹ️ Más sobre nosotros</a>
+    <hr>
 
-  <h2>🎯 MISIÓN</h2>
-  <p>
-    La misión de Lay's es ofrecer snacks deliciosos y de alta calidad
-    que alegren los momentos cotidianos de las personas. A través de
-    un compromiso con la frescura, el sabor y la satisfacción del 
-    consumidor, Lay's busca crear productos accesibles que reúnan a 
-    las personas y generen experiencias memorables. Además, la marca
-    trabaja con responsabilidad social y ambiental, promoviendo
-    prácticas sostenibles en toda su cadena de producción.
-  </p>
-
-  <h2>👁️ VISIÓN</h2>
-  <p>
-    La visión de Lay's es ser la marca líder mundial en snacks,
-    ofreciendo productos de alta calidad que brinden momentos
-    de disfrute y sabor a personas de todas las edades. Comprometida
-    con la innovación, Lay's busca constantemente nuevas formas de
-    satisfacer a sus consumidores, manteniéndose fiel a sus valores
-    de frescura, sabor auténtico y conexión emocional con sus
-    clientes en todo el mundo.
-  </p>
-
-  <hr>
-  <h2>🆕 PRUEBA LO NUEVO</h2>
-
-  <marquee behavior="scroll" direction="left" scrollamount="6">
-    <img src="la.png" class="card-img" alt="Producto 1">
-    <img src="ga.png" class="card-img" alt="Producto 2">
-    <img src="da.png" class="card-img" alt="Producto 3">
-  </marquee>
-
+    <h2>🔥 ¡Descuento del 10% en productos seleccionados!</h2>
+    <div class="marquee">
+      <img src="bt.png" alt="Producto 1">
+      <img src="cam.png" alt="Producto 2">
+    </div>
+  </div>
 </body>
 </html>
