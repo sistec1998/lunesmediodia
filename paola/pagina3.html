@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="logo.png">
+  <title>ELECTRONICA PANAMERICANA</title>
+  
+  <!-- Fuente e Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilos CSS -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      background: linear-gradient(to bottom, black, #0033cc, #00ccff);
+      background-attachment: fixed;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+
+    a {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    a:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 200px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00ccff;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0099cc;
+    }
+
+    hr {
+      margin: 30px auto;
+      width: 80%;
+      border: 1px solid white;
+    }
+
+    ol {
+      text-align: left;
+      display: inline-block;
+    }
+
+    h1, h2 {
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo de la empresa">
+  <br>
+  <a href="pagina1.html"><i class="fas fa-box"></i> Producto</a>
+  <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+  <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+
+  <h1>ESTAMOS EN TODA GUATEMALA</h1>
+  <hr>
+  <h2>Busca tu tienda más cercana</h2>
+  <input type="text" placeholder="Escribe tu ciudad...">
+  <button><i class="fas fa-search"></i> Buscar</button>
+
+  <h2>SUCURSALES</h2>
+  <img src="electra panamericana.png" alt="Sucursal principal">
+  <h2>Mazate</h2>
+  <img src="mazate.jpg" alt="Sucursal Mazate">
+  <h2>REHU</h2>
+  <img src="rehu.jpg" alt="Sucursal REHU">
+
+  <hr>
+  <ol>
+    <li><i class="fas fa-map-marker-alt"></i> Petén</li>
+    <li><i class="fas fa-map-marker-alt"></i> Jutiapa</li>
+    <li><i class="fas fa-map-marker-alt"></i> Antigua</li>
+    <li><i class="fas fa-map-marker-alt"></i> Zacapa</li>
+  </ol>
+
+</body>
+</html>

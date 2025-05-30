@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <title>ELECTRONICA PANAMERICANA</title>
+    <style>
+        /* Fondo con difuminado */
+        body {
+            background: linear-gradient(135deg, rgba(255, 204, 204, 0.8), rgba(255, 204, 204, 0.4), rgba(255, 229, 204, 0.6));
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes gradientAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* Estilo de las imágenes */
+        img {
+            width: 250px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo del contenedor central */
+        center {
+            display: block;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* Enlaces */
+        a {
+            color: #FF6699;
+            font-size: 20px;
+            text-decoration: none;
+            margin: 10px;
+            padding: 5px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #FF3366;
+            transform: scale(1.1);
+        }
+
+        /* Títulos */
+        h1 {
+            font-size: 36px;
+            color: #FF6699;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #FF3366;
+            text-align: center;
+        }
+
+        /* Estilo de la lista ordenada */
+        ol {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        ol li {
+            margin: 10px 0;
+        }
+
+        /* Marquee animado */
+        marquee {
+            font-size: 20px;
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Borde decorativo */
+        hr {
+            border: 0;
+            height: 2px;
+            background: #FF6699;
+            margin: 30px 0;
+            width: 50%;
+        }
+
+        /* Animaciones para los elementos */
+        .fadeIn {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <img src="logo.png" width="300" class="fadeIn">
+        <div>
+            <a href="pagina1.html" class="fadeIn">Productos</a>
+            <a href="pagina2.html" class="fadeIn">Comprar</a>
+            <a href="pagina3.html" class="fadeIn">Tienda</a>
+        </div>
+
+        <h1 class="fadeIn">Bienvenido</h1>
+        <hr class="fadeIn">
+        <p class="fadeIn">¿Quiénes somos?</p>
+        <p class="fadeIn">
+            En [Nombre de la Empresa], somos una empresa dedicada a la venta de
+            productos de electrónica de alta calidad, comprometida con ofrecer
+            soluciones tecnológicas innovadoras para mejorar la vida de nuestros
+            clientes. Con una amplia gama de productos que incluye desde dispositivos
+            móviles, computadoras y accesorios, hasta equipos de audio, video y
+            domótica, trabajamos con marcas líderes del mercado para garantizar
+            rendimiento, durabilidad y confianza. Nuestro equipo está formado por
+            profesionales apasionados por la tecnología, enfocados en brindar una
+            atención personalizada y asesoría experta en cada compra.
+        </p>
+        
+        <h2 class="fadeIn">Nuestro objetivo</h2>
+        <ol class="fadeIn">
+            <li>Servir con amor</li>
+            <li>Brindar oportunidades</li>
+            <li>Ofrecer productos de calidad</li>
+        </ol>
+        <hr class="fadeIn">
+        <h2 class="fadeIn">Descuento del 10%</h2>
+        
+        <marquee class="fadeIn">
+            <img src="camaras.webp" alt="Cámaras" class="fadeIn">
+            <img src="consola.jpg" alt="Consola" class="fadeIn">
+        </marquee>
+
+    </center>
+
+</body>
+</html>

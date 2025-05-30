@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png">
+  <title>ELECTRONICA PANAMERICANA</title>
+  <!-- Agregar Font Awesome para los iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Fondo difuminado de colores pastel */
+    body {
+      background: linear-gradient(45deg, #f8b3d0, #f0c2d2, #c7d9f3, #f7f2b5);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Estilo general de la página */
+    center {
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 250px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Estilos para los enlaces */
+    a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 20px;
+      font-size: 18px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff6f61;
+      transform: translateY(-3px);
+    }
+
+    /* Estilos para el formulario */
+    form {
+      margin-top: 20px;
+      display: inline-block;
+      text-align: left;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #ff6f61;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      background-color: #ff6f61;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #ff4b3a;
+      transform: translateY(-2px);
+    }
+
+    /* Animación suave para el formulario */
+    form, img, a {
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Estilos para los íconos */
+    .icon {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo.png" alt="Logo">
+    <div>
+      <a href="pagina1.html"><i class="fas fa-box icon"></i>Productos</a>
+      <a href="pagina3.html"><i class="fas fa-store icon"></i>Tienda</a>
+      <a href="pagina4.html"><i class="fas fa-utensils icon"></i>Menú</a>
+    </div>
+    <form>
+      <summary><strong>FORMULARIO DE PEDIDO</strong></summary>
+      <label>Producto</label>
+      <input type="text" placeholder="Nombre del producto">
+      <br>
+      <label>Cantidad</label>
+      <input type="text" placeholder="Cantidad">
+      <br>
+      <label>Número de tarjeta</label>
+      <input type="text" placeholder="Número de tarjeta">
+      <br>
+      <label>CVV</label>
+      <input type="text" placeholder="CVV">
+      <br>
+      <label>Fecha de nacimiento</label>
+      <input type="text" placeholder="DD/MM/AAAA">
+      <br>
+      <button type="submit">Buscar</button>
+      <button type="reset">Cancelar</button>
+    </form>
+  </center>
+</body>
+</html>

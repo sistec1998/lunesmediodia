@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELECTRONICA PANAMERICANA</title>
+  
+  <!-- Icono de la página -->
+  <link rel="icon" href="logo.png">
+  
+  <!-- Fuente de iconos FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Estilos internos -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 36px;
+      margin-top: 20px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #34495e;
+      font-size: 24px;
+      margin-top: 20px;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 10px;
+    }
+
+    h1, h2 {
+      transition: color 0.3s ease-in-out;
+    }
+
+    h1:hover, h2:hover {
+      color: #e74c3c;
+    }
+
+    img {
+      max-width: 100%;
+      width: 300px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-size: 18px;
+      margin: 10px;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #e74c3c;
+    }
+
+    details {
+      margin: 20px 0;
+    }
+
+    summary {
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #34495e;
+      transition: color 0.3s ease;
+    }
+
+    summary:hover {
+      color: #e74c3c;
+    }
+
+    .search-box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      width: 400px;
+    }
+
+    .search-box input[type="text"] {
+      width: calc(100% - 120px);
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .search-box button {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background-color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="logo.png" width="300" alt="Logo">
+    
+    <nav>
+      <a href="pagina2.html">comprar</a>
+      <a href="pagina3.html">tiendas</a>
+      <a href="pagina4.html">menú</a>
+    </nav>
+    
+    <h1>UN MUNDO PARA ELEGIR</h1>
+    <hr>
+
+    <!-- Caja de búsqueda -->
+    <div class="search-box">
+      <form>
+        <summary>¿Qué buscas?</summary>
+        <input type="text" placeholder="Buscar...">
+        <button>Buscar</button>
+      </form>
+    </div>
+
+    <!-- Categorías de productos -->
+    <h2>COMPUTADORAS</h2>
+    <div>
+      <img src="computadora gamer.avif" alt="Computadora Gamer">
+      <img src="computadora negra.avif" alt="Computadora Negra">
+      <img src="computadora normal.png" alt="Computadora Normal">
+    </div>
+
+    <h2>BOCINAS</h2>
+    <div>
+      <img src="bocina normal.png" alt="Bocina Normal">
+      <img src="bocinitas.webp" alt="Bocinitas">
+      <img src="mejores bocinas.png" alt="Mejores Bocinas">
+    </div>
+
+    <h2>INSTRUMENTOS MUSICALES</h2>
+    <div>
+      <img src="instrumento raro.png" alt="Instrumento Raro">
+      <img src="guitarra.webp" alt="Guitarra">
+      <img src="violin.png" alt="Violin">
+    </div>
+
+    <h2>DRONES</h2>
+    <div>
+      <img src="dron.png" alt="Dron">
+      <img src="oto dron.png" alt="Otro Dron">
+      <img src="mas trones.png" alt="Más Drones">
+    </div>
+
+    <!-- Detalles de refrigeradores, TVs y lavadoras -->
+    <details>
+      <summary>REFRIGERADORES</summary>
+      <div>
+        <img src="mi refri.png" alt="Mi Refri">
+        <img src="una refri.webp" alt="Una Refri">
+        <img src="otra refri.webp" alt="Otra Refri">
+      </div>
+    </details>
+    
+    <details>
+      <summary>TVS</summary>
+      <div>
+        <img src="familia.png" alt="Familia frente a TV">
+        <img src="una tele.png" alt="Una Tele">
+        <img src="sorfrear.webp" alt="Televisión">
+      </div>
+    </details>
+    
+    <details>
+      <summary>LAVADORAS</summary>
+      <div>
+        <img src="lavadora blanca.avif" alt="Lavadora Blanca">
+        <img src="lavadora negra.png" alt="Lavadora Negra">
+        <img src="otra cosa.png" alt="Otra Lavadora">
+      </div>
+    </details>
+  </center>
+</body>
+</html>
