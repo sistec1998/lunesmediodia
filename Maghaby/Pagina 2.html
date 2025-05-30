@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ELECTRONICA PANAMERICANA</title>
+    <link rel="icon" href="Logo de panamerica.webp">
+
+    <!-- Íconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000000, #ff69b4); /* negro a rosa */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffb6d9;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 400px;
+            margin: 20px auto;
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 8px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f9f0f8;
+            color: #000;
+        }
+
+        button {
+            background-color: #ff69b4;
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff85c1;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            margin: 0 10px;
+            font-size: 2em;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffb6d9;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="Logo de panamerica.webp">
+        <br>
+        <a href="Pagina 1.html">PRODUCTOS</a>
+        <a href="Pagina 3.html">TIENDAS</a>
+        <a href="Pagina 4.html">MENÚ</a>
+
+        <h1>FORMULARIO DE PEDIDO</h1>
+
+        <form>
+            <label>PRODUCTO</label>
+            <input type="text">
+
+            <label>CANTIDAD</label>
+            <input type="text">
+
+            <label>NÚMERO DE TARJETA</label>
+            <input type="text">
+
+            <label>CVV</label>
+            <input type="text">
+
+            <label>FECHA DE VENCIMIENTO</label>
+            <input type="text">
+
+            <button type="submit">BUSCAR</button>
+            <button type="reset">CANCELAR</button>
+        </form>
+
+        <!-- Iconos de redes sociales -->
+        <div class="social-icons">
+            <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </center>
+</body>
+</html>
