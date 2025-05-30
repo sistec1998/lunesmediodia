@@ -1,150 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Electrónica Panamericana</title>
+    <!-- Fuente e Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        /* Fondo azul y estilo general */
         body {
-            background-color: #1e3d58; /* Azul oscuro */
-            color: white;
             font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
-        center {
-            display: block;
-            margin: auto;
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
+            background-color: #f0f8ff;
+            color: #003366;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
-        hr {
-            width: 700px;
-            border: 1px solid #fff;
+        header img {
+            width: 350px;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
         }
 
-        img {
-            width: 250px;
-            height: auto;
-            margin: 10px;
-            border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        img:hover {
-            transform: scale(1.1);
-        }
-
-        /* Estilos para los <details> */
-        details {
-            background-color: #2c5d7d;
-            padding: 10px;
-            border-radius: 8px;
-            margin: 15px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        details[open] {
-            background-color: #3a7592;
+        header img:hover {
             transform: scale(1.05);
         }
 
-        summary {
-            cursor: pointer;
-            font-size: 1.5em;
-            padding: 10px;
-            border: 1px solid #fff;
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            padding: 8px 16px;
+            border: 2px solid #0056b3;
             border-radius: 5px;
-            background-color: #1a3f59;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        input[type="text"], button {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #0073e6;
+        }
+
+        button {
+            background-color: #0073e6;
+            color: white;
+            cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
-        summary:hover {
-            background-color: #1f5b7a;
+        button:hover {
+            background-color: #005bb5;
         }
 
-        h2 {
-            margin: 5px 0;
-            font-size: 1.2em;
+        h1, h2 {
+            color: #00264d;
+            margin-top: 30px;
         }
 
-        p {
-            font-size: 1.1em;
+        .productos img {
+            width: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Iconos */
-        .icon {
-            margin-right: 10px;
+        .productos img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
         }
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        details {
+            margin: 20px auto;
+            width: 90%;
+            background: #e6f0ff;
+            border: 1px solid #b3d1ff;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        summary {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        hr {
+            border: 1px solid #0073e6;
         }
     </style>
 </head>
 <body>
-    <center>
-        <img src="logo.png" width="250" alt="Logo">
-        <hr>
-        <h1>Lugares Turísticos</h1>
+
+    <header>
+        <img src="logo de electronica.png" alt="Logo Electrónica Panamericana">
+    </header>
+
+    <nav>
+        <a href="pagina 2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+        <a href="pagina 3.html"><i class="fas fa-store"></i> Tienda</a>
+        <a href="pagina 4.html"><i class="fas fa-bars"></i> Menú</a>
+    </nav>
+
+    <hr>
+
+    <h1>Un mundo para elegir</h1>
+    <label>¿Qué buscas?</label>
+    <input type="text" placeholder="Buscar productos...">
+    <button><i class="fas fa-search"></i> Buscar</button>
+
+    <div class="productos">
+        <h2>Computadoras</h2>
+        <img src="compu1.avif" alt="Computadora 1">
+        <img src="compu2.png" alt="Computadora 2">
+        <img src="compu3.jpg" alt="Computadora 3">
+
+        <h2>Bocinas</h2>
+        <img src="bocina 1.jpg" alt="Bocina 1">
+        <img src="bocina 2.webp" alt="Bocina 2">
+        <img src="bocina 3.jpg" alt="Bocina 3">
+
+        <h2>Instrumentos Musicales</h2>
+        <img src="instrumento 1.png" alt="Instrumento 1">
+        <img src="intrumentos 2.jpg" alt="Instrumento 2">
+        <img src="instrumento 3.jpg" alt="Instrumento 3">
+
+        <h2>Drones</h2>
+        <img src="dron 1.jpg" alt="Dron 1">
+        <img src="dron 2.jpg" alt="Dron 2">
+        <img src="dron 3.jpg" alt="Dron 3">
 
         <details>
-            <summary><i class="fas fa-map-marker-alt icon"></i> Antigua Guatemala</summary>
-            <h2>Precio: Q5,000</h2>
-            <h2>Duración: 5 días</h2>
-            <h2>Personas: 4 personas</h2>
-            <p>Galería</p>
-            <div class="gallery">
-                <img src="imagen 1.jpg" alt="Imagen 1">
-                <img src="imagen 2.jpg" alt="Imagen 2">
-            </div>
+            <summary><i class="fas fa-snowflake"></i> Refrigeradores</summary>
+            <img src="refri 1.jpg" alt="Refrigerador 1">
+            <img src="refri 2.png" alt="Refrigerador 2">
+            <img src="refri 3.jpg" alt="Refrigerador 3">
         </details>
 
         <details>
-            <summary><i class="fas fa-castle icon"></i> Castillo de San Felipe Isabal</summary>
-            <h2>Precio: Q3,000</h2>
-            <h2>Duración: 4 días</h2>
-            <h2>Personas: 5 personas</h2>
-            <p>Galería</p>
-            <div class="gallery">
-                <img src="imagen 3.jpg" alt="Imagen 3">
-                <img src="imagen 4.jpg" alt="Imagen 4">
-            </div>
+            <summary><i class="fas fa-tv"></i> TVs</summary>
+            <img src="tele 1.webp" alt="TV 1">
+            <img src="tele 2.webp" alt="TV 2">
+            <img src="tele 3.webp" alt="TV 3">
         </details>
 
         <details>
-            <summary><i class="fas fa-umbrella-beach icon"></i> Monterrico Santa Rosa</summary>
-            <h2>Precio: Q4,000</h2>
-            <h2>Duración: 5 días</h2>
-            <h2>Personas: 5 personas</h2>
-            <p>Galería</p>
-            <div class="gallery">
-                <img src="imagen 5.jpg" alt="Imagen 5">
-                <img src="imagen 6.jpg" alt="Imagen 6">
-            </div>
+            <summary><i class="fas fa-soap"></i> Lavadoras</summary>
+            <img src="laba 1.jpg" alt="Lavadora 1">
+            <img src="laba 2.jpg" alt="Lavadora 2">
+            <img src="laba 3.webp" alt="Lavadora 3">
         </details>
+    </div>
 
-        <details>
-            <summary><i class="fas fa-pyramid icon"></i> Tikal Petén</summary>
-            <h2>Precio: Q5,000</h2>
-            <h2>Duración: 5 días</h2>
-            <h2>Personas: 5 personas</h2>
-            <p>Galería</p>
-            <div class="gallery">
-                <img src="imagen 7.jpg" alt="Imagen 7">
-                <img src="imagen 8.avif" alt="Imagen 8">
-            </div>
-        </details>
-    </center>
 </body>
 </html>

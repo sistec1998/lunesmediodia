@@ -1,126 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        /* Fondo azul y estilo general */
-        body {
-            background-color: #1e3d58; /* Azul oscuro */
-            color: white;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electrónica Panamericana</title>
 
-        center {
-            display: block;
-            margin: auto;
-            width: 100%;
-            max-width: 600px;
-        }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #e6f2ff;
+      color: #003366;
+    }
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-align: center;
-            animation: fadeIn 1s ease-out;
-        }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
 
-        hr {
-            width: 100%;
-            border: 1px solid #fff;
-        }
+    img {
+      width: 300px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
 
-        label {
-            font-size: 1.1em;
-            margin-top: 15px;
-            display: block;
-        }
+    img:hover {
+      transform: scale(1.05);
+    }
 
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            font-size: 1.1em;
-            border-radius: 5px;
-            border: none;
-            outline: none;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
+    nav {
+      margin: 20px 0;
+    }
 
-        input:focus {
-            background-color: #3a7592;
-            transform: scale(1.02);
-        }
+    nav a {
+      text-decoration: none;
+      background-color: #0056b3;
+      color: white;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 
-        button {
-            padding: 12px 20px;
-            background-color: #1a3f59;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            margin: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
+    nav a:hover {
+      background-color: #003d80;
+      transform: scale(1.05);
+    }
 
-        button:hover {
-            background-color: #1f5b7a;
-            transform: scale(1.05);
-        }
+    h1 {
+      color: #00264d;
+      margin-top: 30px;
+    }
 
-        button:active {
-            transform: scale(0.98);
-        }
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .icon {
-            margin-right: 8px;
-        }
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #003366;
+    }
 
-        /* Animación de fadeIn */
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #0073e6;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+    }
 
-    </style>
+    input[type="text"]:focus {
+      border-color: #003d80;
+      outline: none;
+    }
+
+    button {
+      margin: 20px 10px 0 10px;
+      padding: 10px 20px;
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005bb5;
+      transform: scale(1.05);
+    }
+
+    hr {
+      border: 1px solid #0073e6;
+      margin: 20px 0;
+    }
+  </style>
 </head>
+
 <body>
-    <center>
-        <img src="logo.png" width="250" alt="Logo">
-        <h1>Reserva tu viaje</h1>
-        <hr>
-        
-        <form>
-            <label for="name"><i class="fas fa-user icon"></i>¿Cómo te llamas?</label>
-            <input type="text" id="name" placeholder="Ingresa tu nombre">
 
-            <label for="phone"><i class="fas fa-phone icon"></i>Teléfono</label>
-            <input type="text" id="phone" placeholder="Ingresa tu teléfono">
+  <div class="container">
+    <img src="logo de electronica.png" alt="Logo Electrónica Panamericana">
+    
+    <hr>
 
-            <label for="email"><i class="fas fa-envelope icon"></i>Correo electrónico</label>
-            <input type="text" id="email" placeholder="Ingresa tu correo electrónico">
+    <nav>
+      <a href="pagina 1.html">Producto</a>
+      <a href="pagina 3.html">Tienda</a>
+      <a href="pagina 4.html">Menú</a>
+    </nav>
 
-            <label for="place"><i class="fas fa-map-marker-alt icon"></i>Lugar turístico</label>
-            <input type="text" id="place" placeholder="Ingresa el lugar turístico">
+    <form>
+      <h1>Formulario de Pedido</h1>
 
-            <label for="date"><i class="fas fa-calendar-alt icon"></i>Fecha para viajar</label>
-            <input type="text" id="date" placeholder="Ingresa la fecha">
+      <label>Producto</label>
+      <input type="text" placeholder="Ej: Laptop Dell">
 
-            <label for="card"><i class="fas fa-credit-card icon"></i>N° tarjeta (crédito/débito)</label>
-            <input type="text" id="card" placeholder="Ingresa el número de tarjeta">
+      <label>Cantidad</label>
+      <input type="text" placeholder="Ej: 1">
 
-            <button type="submit">Reservar</button>
-            <button type="reset">Cancelar</button>
-        </form>
-    </center>
+      <label>Número de Tarjeta</label>
+      <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+
+      <label>CVV</label>
+      <input type="text" placeholder="Ej: 123">
+
+      <label>Fecha de Vencimiento</label>
+      <input type="text" placeholder="MM/AA">
+
+      <div>
+        <button type="submit">Buscar</button>
+        <button type="reset">Cancelar</button>
+      </div>
+    </form>
+  </div>
+
 </body>
 </html>
