@@ -1,175 +1,168 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Música FVR</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electrónica Panamericana</title>
+  <link rel="icon" href="logo de electronica.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f0f8ff;
-      color: #003366;
       margin: 0;
       padding: 0;
-      text-align: center;
-    }
-
-    header {
-      background-color: #007BFF;
+      background: linear-gradient(to right, #007bff, #0056b3);
+      font-family: 'Arial', sans-serif;
       color: white;
-      padding: 20px 0;
     }
 
-    img.logo {
-      width: 100px;
-      transition: transform 0.3s ease-in-out;
+    .container {
+      text-align: center;
+      padding: 40px 20px;
     }
 
-    img.logo:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      margin-top: 10px;
-    }
-
-    hr {
-      width: 80%;
-      border: 1px solid #007BFF;
-    }
-
-    p {
-      padding: 0 20px;
-      max-width: 700px;
-      margin: 20px auto;
-    }
-
-    details summary {
-      cursor: pointer;
-      font-size: 1.2em;
-      margin: 20px 0;
-      color: #007BFF;
-    }
-
-    .music-images {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-bottom: 20px;
-    }
-
-    .music-images img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
+    img {
+      width: 150px;
       border-radius: 10px;
-      transition: transform 0.4s ease;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
     }
 
-    .music-images img:hover {
+    img:hover {
       transform: scale(1.05);
     }
 
-    marquee {
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ffffff;
       color: #0056b3;
-      margin: 20px 0;
     }
 
     form {
-      margin: 30px auto;
-      width: 80%;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 30px;
       max-width: 400px;
+      margin: 30px auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
     }
 
-    input[type="text"] {
-      width: 100%;
+    form:hover {
+      transform: scale(1.02);
+    }
+
+    form h1 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 90%;
       padding: 10px;
-      margin-bottom: 10px;
+      margin: 5px 0;
+      border: none;
       border-radius: 5px;
-      border: 1px solid #007BFF;
     }
 
     button {
-      background-color: #007BFF;
-      color: white;
-      border: none;
+      margin-top: 15px;
       padding: 10px 20px;
+      background-color: #28a745;
+      border: none;
       border-radius: 5px;
-      transition: background-color 0.3s ease;
+      color: white;
+      font-weight: bold;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     button:hover {
-      background-color: #0056b3;
+      background-color: #218838;
     }
 
-    .social-icons {
+    .cancel-btn {
+      background-color: #dc3545;
+    }
+
+    .cancel-btn:hover {
+      background-color: #c82333;
+    }
+
+    footer {
       margin-top: 40px;
+      padding: 20px;
+      background-color: #003366;
     }
 
     .social-icons a {
+      color: white;
+      font-size: 24px;
       margin: 0 10px;
-      font-size: 30px;
-      color: #007BFF;
-      transition: color 0.3s ease;
+      transition: color 0.3s;
     }
 
     .social-icons a:hover {
-      color: #0056b3;
+      color: #ffcc00;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo FVR" class="logo">
-    <h2>Músicas</h2>
-  </header>
 
-  <hr>
+  <div class="container">
+    <img src="logo de electronica.png" alt="Logo Electrónica Panamericana">
+    
+    <nav>
+      <a href="pagina1.html">Comprar</a>
+      <a href="pagina3.html">Tienda</a>
+      <a href="pagina4.html">Productos</a>
+    </nav>
 
-  <p>Esta página está formada por músicas más populares de la región y el mundo. Son escuchadas por los cantantes más famosos y por mucha gente a nivel internacional.</p>
+    <form>
+      <h1>Formulario de Pedido</h1>
+      <label>Producto</label>
+      <input type="text" placeholder="Nombre del producto">
+      
+      <label>Cantidad</label>
+      <input type="text" placeholder="Cantidad">
+      
+      <label>Número de tarjeta</label>
+      <input type="text" placeholder="1234 5678 9012 3456">
+      
+      <label>CVV</label>
+      <input type="text" placeholder="123">
+      
+      <label>Fecha de nacimiento</label>
+      <input type="text" placeholder="dd/mm/aaaa">
+      
+      <button type="submit">Buscar</button><br>
+      <button type="button" class="cancel-btn">Cancelar</button>
+    </form>
 
-  <details>
-    <summary>Músicas bélicas</summary>
-    <div class="music-images">
-      <img src="5-7.jpg" alt="5-7">
-      <img src="coqueta.jpg" alt="Coqueta">
-      <img src="dosdias.jpg" alt="Dos Días">
-      <img src="rosones.jpg" alt="Rosones">
-      <img src="teamo.jpg" alt="Te Amo">
-      <img src="enculado.jpg" alt="Enculado">
-    </div>
-  </details>
-
-  <hr>
-
-  <marquee behavior="scroll" direction="left">Músicas chileras</marquee>
-
-  <div class="music-images">
-    <img src="enculado.jpg" alt="Enculado">
-    <img src="teamo.jpg" alt="Te Amo">
-    <img src="dosdias.jpg" alt="Dos Días">
+    <footer>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p>© 2025 Electrónica Panamericana</p>
+    </footer>
   </div>
 
-  <hr>
-
-  <a href="pagina1.html">Ir a más música</a>
-
-  <form>
-    <label>¿Qué quieres escuchar?</label>
-    <input type="text" placeholder="Escribe una canción o artista">
-    <button type="submit">Buscar</button>
-  </form>
-
-  <div class="social-icons">
-    <a href="https://wa.me/tu_numero" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://instagram.com/tu_usuario" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://facebook.com/tu_usuario" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-  </div>
 </body>
 </html>

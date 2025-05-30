@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrónica Panamericana</title>
+    <link rel="icon" href="logo de electronica.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            margin-top: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        nav a {
+            margin: 15px;
+            color: #00ffe5;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff00cc;
+        }
+
+        h1, h2 {
+            text-shadow: 0 0 10px #00ffe5;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 250px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #00ffe5;
+            color: black;
+            border-radius: 10px;
+            margin-left: 10px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff00cc;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 15px;
+            width: 320px;
+            box-shadow: 0 0 20px #00ffe5;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 2em;
+            margin: 0 10px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #00ffe5;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo de electronica.png" alt="Logo Electrónica">
+    </header>
+
+    <nav>
+        <a href="pagina2.html">Comprar</a>
+        <a href="pagina1.html">Tienda</a>
+        <a href="pagina4.html">Productos</a>
+    </nav>
+
+    <h1>Estamos en toda Guatemala</h1>
+    <hr>
+    <h2>Busca tu tienda más cercana</h2>
+    <input type="text" placeholder="Ej. Zona 1, Mixco...">
+    <button>Buscar</button>
+    <hr>
+
+    <h2>Sucursales</h2>
+
+    <div class="card">
+        <img src="electronica1.png" alt="Mazate">
+        <p>Mazate</p>
+    </div>
+
+    <div class="card">
+        <img src="electronica2.jpg" alt="Rehu">
+        <p>Rehu</p>
+    </div>
+
+    <div class="card">
+        <img src="electronica3.jpg" alt="Otra sucursal">
+        <p>Otra sucursal</p>
+    </div>
+
+    <hr width="700">
+
+    <h2>Otras Tiendas</h2>
+    <ol>
+        <li>Peten</li>
+        <li>Jutiapa</li>
+        <li>Antigua</li>
+        <li>Zacapa</li>
+    </ol>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <br><br>
+</body>
+</html>
