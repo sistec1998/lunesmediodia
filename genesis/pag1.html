@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELECTRONICA PANAMERICANA</title>
+  <link rel="icon" href="logo.png">
+
+  <style>
+    body {
+      background-color: #b3e5fc; /* celeste */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+      margin: 0;
+      padding: 0;
+    }
+
+    img.standard-img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    img.standard-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #0077c2;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #0288d1;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    details {
+      margin-top: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" width="500">
+  <br>
+  <a href="pag2.html">PRODUCTO</a>
+  <a href="pag3.html">COMPRAR</a>
+  <a href="pag4.html">MENU</a>
+
+  <h1>UN MUNDO PARA ELEGIR</h1>
+  <hr width="700">
+
+  <form>
+    <label for="search">¿QUÉ BUSCAS?</label>
+    <input type="text" id="search">
+    <button type="submit">BUSCAR</button>
+  </form>
+
+  <h2>COMPUTADORAS</h2>
+  <img src="imagen1.webp" class="standard-img">
+  <img src="imagen2.png" class="standard-img">
+  <img src="imagen3.jpg" class="standard-img">
+
+  <h2>BOCINAS</h2>
+  <img src="imagen4.png" class="standard-img">
+  <img src="imagen5.png" class="standard-img">
+  <img src="imagen6.webp" class="standard-img">
+
+  <h2>INSTRUMENTOS MUSICALES</h2>
+  <img src="imagen7.jpg" class="standard-img">
+  <img src="imagen8.png" class="standard-img">
+  <img src="imagen9.png" class="standard-img">
+
+  <h2>DRONES</h2>
+  <img src="imagen10.webp" class="standard-img">
+  <img src="imagen11.png" class="standard-img">
+  <img src="imagen12.webp" class="standard-img">
+
+  <details>
+    <summary>REFRIGERADORAS</summary>
+    <img src="imagen13.webp" class="standard-img">
+    <img src="imagen14.webp" class="standard-img">
+    <img src="imagen15.png" class="standard-img">
+  </details>
+
+  <details>
+    <summary>TV</summary>
+    <img src="imagen16.webp" class="standard-img">
+    <img src="imagen17.webp" class="standard-img">
+    <img src="imagen18.jpg" class="standard-img">
+  </details>
+
+  <details>
+    <summary>LAVADORAS</summary>
+    <img src="imagen19.webp" class="standard-img">
+    <img src="imagen20.webp" class="standard-img">
+    <img src="imagen21.webp" class="standard-img">
+  </details>
+
+</body>
+</html>

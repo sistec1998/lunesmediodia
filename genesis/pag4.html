@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTRONICA PANAMERICANA</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            background-color: #b3ecff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 300px;
+            margin-top: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        header img:hover {
+            transform: scale(1.05);
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 15px;
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #005f99;
+            transform: scale(1.1);
+        }
+
+        h1, h2 {
+            color: #004466;
+        }
+
+        p {
+            width: 80%;
+            margin: 20px auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        ol {
+            list-style-position: inside;
+            color: #003344;
+            font-weight: bold;
+        }
+
+        .carousel {
+            margin: 30px auto;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: scroll 20s linear infinite;
+        }
+
+        .carousel img {
+            width: 300px;
+            height: auto;
+            margin: 0 10px;
+            display: inline-block;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo de la empresa">
+    </header>
+
+    <nav>
+        <a href="pag1.html">PRODUCTOS</a>
+        <a href="pag2.html">COMPRAR</a>
+        <a href="pag3.html">TIENDAS</a>
+    </nav>
+
+    <main>
+        <h1>BIENVENIDO</h1>
+
+        <h2>¿QUIENES SOMOS?</h2>
+        <p>En <strong>Electrónica Panamericana</strong>, somos una empresa
+        dedicada a la venta de productos de electrónica de alta calidad, comprometida con ofrecer soluciones tecnológicas
+        innovadoras para mejorar la vida de nuestros clientes. Con una amplia
+        gama de productos que incluye desde dispositivos móviles, computadoras
+        y accesorios, hasta equipos de audio, video y domótica, trabajamos con   
+        marcas líderes del mercado para garantizar rendimiento, durabilidad y confianza. Nuestro equipo está formado por profesionales apasionados
+        por la tecnología, enfocados en brindar una atención personalizada
+        y asesoría experta en cada compra.</p>
+
+        <h2>NUESTRO OBJETIVO</h2>
+        <ol>
+            <li>SERVIR CON AMOR</li>
+            <li>BRINDAR OPORTUNIDADES</li>
+            <li>OFRECER PRODUCTOS DE CALIDAD</li>
+        </ol>
+
+        <h2>DESCUENTO DEL 10%</h2>
+        <div class="carousel">
+            <img src="imagen25.png" alt="Producto 1">
+            <img src="imagen26.png" alt="Producto 2">
+        </div>
+    </main>
+
+</body>
+</html>
