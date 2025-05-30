@@ -2,115 +2,112 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>DON LEON</title>
-    <link rel="icon" href="logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>ELECTRONICA PANAMERICANA</title>
+    <link rel="icon" href="logo de electronica.png">
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
             margin: 0;
-            font-family: 'Roboto', sans-serif;
-            animation: fondoAnimado 10s infinite alternate;
-            background: linear-gradient(45deg, #ffecd2, #fcb69f);
-            background-size: 400% 400%;
-        }
-
-        @keyframes fondoAnimado {
-            0% { background-position: 0% 50%; }
-            100% { background-position: 100% 50%; }
-        }
-
-        h1 {
-            font-family: 'Pacifico', cursive;
-            color: #d35400;
-            font-size: 2.5em;
-        }
-
-        p, summary, ul {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.2em;
-            color: #2c3e50;
-        }
-
-        marquee {
-            font-family: 'Pacifico', cursive;
-            color: #e74c3c;
-            font-size: 2em;
-            margin: 20px 0;
-        }
-
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            width: 300px;
-        }
-
-        .card img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-
-        details {
-            background-color: #fefefe;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 20px auto;
-            width: 80%;
-            padding: 10px;
-        }
-
-        center {
-            text-align: center;
             padding: 20px;
+            text-align: center;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #00796b;
+        }
+        h2 {
+            color: #004d40;
+            margin-top: 40px;
+        }
+        form {
+            margin: 20px auto;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+        details summary {
+            cursor: pointer;
+            font-size: 18px;
+            color: #00695c;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        details img {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
+
+    <img src="logo de electronica.png" alt="Logo Electrónica Panamericana">
+
+    <nav>
+        <a href="pagina2.html">COMPRAR</a>
+        <a href="pagian.3.html">TIENDA</a>
+        <a href="pagian.4.html">MENU</a>
+    </nav>
+
+    <h2>UN MUNDO PARA ELEGIR</h2>
+
     <form>
-        <center>
-            <img src="logo.png" width="300" alt="Logo Don León">
-            <marquee>ALMACENES DON LEON</marquee>
-            <p>APROVECHA NUESTROS SUPER PRECIOS Y SORPRENDE CON EL MEJOR REGALO QUE MERECES</p>
-            <h1>ELECTRODOMÉSTICOS</h1>
-
-            <div class="card-container">
-                <div class="card"><img src="imagen1.jpg" alt="Producto 1"></div>
-                <div class="card"><img src="imagen2.jpg" alt="Producto 2"></div>
-                <div class="card"><img src="cama.jpg" alt="Cama"></div>
-                <div class="card"><img src="placha.jpg" alt="Plancha"></div>
-                <div class="card"><img src="refri.jpg" alt="Refrigeradora"></div>
-                <div class="card"><img src="estufa.jpg" alt="Estufa"></div>
-            </div>
-
-            <details>
-                <summary><strong>LISTA DE ELECTRODOMÉSTICOS</strong></summary>
-                <ul>
-                    <li>Camas</li>
-                    <li>Refrigeradoras</li>
-                    <li>Televisores</li>
-                    <li>Microondas</li>
-                    <li>Sofás</li>
-                    <li>Entre otras</li>
-                </ul>
-            </details>
-
-            <p>TE ESPERAMOS EN NUESTRAS AGENCIAS</p>
-        </center>
+        <label for="busqueda">¿QUÉ BUSCAS?</label>
+        <input type="text" id="busqueda" name="busqueda" placeholder="Buscar producto...">
+        <button type="submit">BUSCAR</button>
     </form>
+
+    <h2>COMPUTADORAS</h2>
+    <img src="compu1.jpg" alt="Computadora 1">
+    <img src="compu2.jpg" alt="Computadora 2">
+    <img src="compu3.webp" alt="Computadora 3">
+
+    <h2>BOCINAS</h2>
+    <img src="BOICNA1.jpg" alt="Bocina 1">
+    <img src="BOCINA2.png" alt="Bocina 2">
+    <img src="BOCINA3.webp" alt="Bocina 3">
+
+    <h2>INSTRUMENTOS MUSICALES</h2>
+    <img src="INS1.png" alt="Instrumento 1">
+    <img src="MARIMBA.webp" alt="Marimba">
+    <img src="LIRA.jpg" alt="Lira">
+
+    <h2>DRONES</h2>
+    <img src="DRON1.jpg" alt="Dron 1" style="height: 200px;">
+    <img src="DRON2.jpg" alt="Dron 2">
+    <img src="DRON3.jpg" alt="Dron 3">
+
+    <details>
+        <summary>REFRIGERADORAS</summary>
+        <img src="refri1.jpg" alt="Refrigeradora 1" style="height: 250px;">
+        <img src="refri2.webp" alt="Refrigeradora 2">
+        <img src="refri3.webp" alt="Refrigeradora 3">
+    </details>
+
+    <details>
+        <summary>TVS</summary>
+        <img src="Televisor.webp" alt="Televisor 1">
+        <img src="televisor2.webp" alt="Televisor 2">
+        <img src="tlevisor3.webp" alt="Televisor 3">
+    </details>
+
+    <details>
+        <summary>LAVADORAS</summary>
+        <img src="lava.webp" alt="Lavadora 1">
+        <img src="lava3.webp" alt="Lavadora 2">
+        <img src="lava2.webp" alt="Lavadora 3">
+    </details>
+
 </body>
 </html>
