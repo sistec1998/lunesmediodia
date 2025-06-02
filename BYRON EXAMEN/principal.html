@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pollo Campero</title>
+    <link rel="icon" href="">
+    <style>
+        body {
+            background-color: #008080; /* verde azulado */
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        img {
+            margin-top: 30px;
+            animation: slideDown 1.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        p, ol, a {
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        ol {
+            padding-left: 0;
+            list-style-position: inside;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: white;
+            color: #008080;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #00aaaa;
+            transform: scale(1.05);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logo2.png" width="200" alt="Logo Pollo Campero">
+        <p>
+            Pollo Campero es una reconocida cadena de restaurantes de comida rápida originaria de Guatemala,
+            famosa por su sabor característico y su receta única de pollo frito. Desde su fundación en 1971,
+            ha conquistado el paladar de millones de personas en América Latina y en comunidades hispanas
+            alrededor del mundo. Su menú combina el sabor tradicional latino con un toque casero, ofreciendo
+            opciones como pollo empanizado, pollo a la parrilla, acompañamientos típicos y bebidas refrescantes.
+            Con una identidad centrada en la calidez familiar y la autenticidad, Pollo Campero se ha convertido
+            en un símbolo de sabor nostálgico y orgullo cultural para muchos.
+        </p>
+        <ol>
+            <li>Huehuetenango</li>
+            <li>Mazatenango</li>
+            <li>Antigua Guatemala</li>
+            <li>San Lucas Sacatepéquez</li>
+            <li>Jutiapa</li>
+        </ol>
+        <a href="catalogo.html">Catálogo de productos</a>
+        <a href="formulario.html">Formulario</a>
+    </center> 
+</body>
+</html>

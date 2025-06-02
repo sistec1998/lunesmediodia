@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pollo Campero</title>
+  <link rel="icon" href="logo2.png">
+  <style>
+    body {
+      background-color: #007f7f; /* Fondo verde azulado */
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 20px;
+      transition: transform 0.5s ease;
+    }
+
+    h1:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+
+    details {
+      margin: 20px auto;
+      width: 80%;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    marquee {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <marquee>
+    <img src="logo2.png" width="200" alt="Logo"abajo>
+  </marquee>
+
+  <h1>Catálogo de Productos</h1>
+  <img src="catalogo2.jpg" width="200" alt="Catálogo">
+
+  <details>
+    <summary>Productos</summary>
+    <img src="foto1.jpg" width="200" alt="Producto 1">
+    <img src="foto2.png" width="200" alt="Producto 2">
+    <img src="foto3.png" width="200" alt="Producto 3">
+  </details>
+
+  <details>
+    <summary>Más Productos</summary>
+    <img src="foto4.png" width="200" alt="Producto 4">
+    <img src="foto5.png" width="200" alt="Producto 5">
+  </details>
+
+  <details>
+    <summary>Aún Más Productos</summary>
+    <img src="foto6.png" width="200" alt="Producto 6">
+    <img src="foto7.png" width="200" alt="Producto 7">
+  </details>
+</body>
+</html>
