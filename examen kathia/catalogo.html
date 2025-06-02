@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Walmart</title>
+  <link rel="icon" href="img.png">
+  <!-- Íconos de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, opacity 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    details {
+      background-color: #111;
+      margin: 20px auto;
+      width: 80%;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #555;
+      transition: background-color 0.3s ease;
+    }
+
+    details:hover {
+      background-color: #222;
+    }
+
+    summary {
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    marquee img {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(15px); }
+      100% { transform: translateY(0); }
+    }
+
+    p {
+      font-size: 2em;
+      margin-top: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <marquee direction="down">
+    <img src="img.png" width="300">
+  </marquee>
+
+  <p><i class="fas fa-store"></i> Catálogo de Walmart</p>
+
+  <details>
+    <summary><i class="fas fa-box-open"></i> Productos</summary><br><br>
+    <img src="img 1.webp" width="300">
+    <img src="img 2.png" width="300">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-boxes"></i> Más productos</summary><br><br>
+    <img src="img7.png" width="300">
+    <img src="img8.webp" width="300">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-cart-plus"></i> Ofertas</summary><br><br>
+    <img src="img 5.png" width="300">
+    <img src="img 6.webp" width="200">
+  </details>
+
+</body>
+</html>
