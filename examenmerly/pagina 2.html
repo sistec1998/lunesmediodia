@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Compras en Línea</title>
+  <link rel="icon" href="images.jpg">
+  <style>
+    body {
+      background-color: #E6CCF2; /* Fondo lila */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      color: #5C2D91;
+      animation: slideIn 1s ease-out;
+    }
+
+    form {
+      margin-top: 20px;
+      display: inline-block;
+      text-align: left;
+      background: #ffffffcc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      transition: box-shadow 0.3s ease;
+    }
+
+    form:hover {
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: #A052D3;
+      outline: none;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #A052D3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #7A30B5;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="images.jpg" alt="Logo de tienda">
+  <h1>COMPRAS EN LÍNEA</h1>
+
+  <form>
+    <label>Nombre completo</label>
+    <input type="text" required>
+
+    <label>Dirección</label>
+    <input type="text" required>
+
+    <label>Teléfono</label>
+    <input type="number" required>
+
+    <label>¿Qué producto deseas comprar?</label>
+    <input type="text" required>
+
+    <button type="submit">Enviar el pedido a la tienda</button>
+  </form>
+
+</body>
+</html>
