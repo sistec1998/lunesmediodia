@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WALMART</title>
+    <link rel="icon" href="imagen.png">
+    <!-- Íconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background: #ffe6f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        img {
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #fff0f5;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        p:hover {
+            transform: scale(1.02);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #ffc0cb;
+            margin: 10px auto;
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: 200px;
+            transition: background 0.3s;
+        }
+
+        li:hover {
+            background-color: #ff99bb;
+        }
+
+        a {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 10px 20px;
+            background-color: #ff66a3;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #ff3385;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <img src="imagen.png" width="300" alt="Logo Walmart">
+    
+    <p>
+        <i class="fas fa-store"></i> Walmart es una de las cadenas minoristas 
+        más grandes del mundo, fundada en 1962 por Sam Walton en Estados Unidos. La
+        empresa se dedica a la venta de una amplia variedad de productos que incluyen 
+        alimentos, ropa, artículos para el hogar, electrónicos y más, a precios bajos con 
+        el objetivo de ofrecer ahorro a sus clientes. Con miles de tiendas en distintos países y
+        una fuerte presencia en el comercio electrónico, Walmart ha consolidado su posición como líder
+        en el sector del retail, enfocándose en la eficiencia operativa, la innovación tecnológica
+        y la satisfacción del cliente.
+    </p>
+
+    <ul>
+        <li><i class="fas fa-map-marker-alt"></i> GUATEMALA</li>
+        <li><i class="fas fa-map-marker-alt"></i> COATEPEQUE</li>
+        <li><i class="fas fa-map-marker-alt"></i> MEXICO</li>
+    </ul>
+
+    <a href="pagina 1.html"><i class="fas fa-book-open"></i> Catálogo</a>
+    <a href="formulario .html"><i class="fas fa-edit"></i> Formulario</a>
+</body>
+</html>
