@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #e0f2f1, #f1f8e9);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        nav {
+            background-color: #004d40;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2e7d32;
+            margin-top: 10px;
+        }
+
+        form {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004d40;
+        }
+
+        h2 {
+            color: #00695c;
+            margin-top: 30px;
+        }
+
+        .branch {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .branch img {
+            width: 200px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        details {
+            margin: 20px 0;
+        }
+
+        summary {
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="pagina2.html">Comprar</a>
+        <a href="pagina1.html">Productos</a>
+        <a href="pagina4.html">Menú</a>
+    </nav>
+
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <h1>Estamos en toda Guate</h1>
+    <hr>
+
+    <form>
+        <label>Busca tu tienda más cercana</label>
+        <input type="text" placeholder="Escribe tu ciudad aquí">
+        <button type="submit">Buscar</button>
+
+        <h2>Sucursales</h2>
+        <div class="branch">
+            <img src="s1.webp" alt="Sucursal Principal">
+        </div>
+
+        <h2>Mazate</h2>
+        <div class="branch">
+            <img src="s2.jpg" alt="Sucursal Mazate">
+        </div>
+
+        <h2>Reu</h2>
+        <div class="branch">
+            <img src="s3.jpg" alt="Sucursal Reu">
+        </div>
+
+        <hr>
+
+        <h2>Otras Sucursales</h2>
+        <details>
+            <summary>Peten</summary>
+            <div class="branch">
+                <img src="s4.jpg" alt="Sucursal Peten">
+            </div>
+        </details>
+
+        <details>
+            <summary>Antigua</summary>
+            <div class="branch">
+                <img src="s5.webp" alt="Sucursal Antigua">
+            </div>
+        </details>
+
+        <details>
+            <summary>Cobán</summary>
+            <div class="branch">
+                <img src="s6.jpg" alt="Sucursal Cobán">
+            </div>
+        </details>
+    </form>
+</body>
+</html>

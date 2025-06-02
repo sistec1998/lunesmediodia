@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #f1f8e9, #e0f7fa);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        nav {
+            background-color: #004d40;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2e7d32;
+            margin-top: 10px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #00695c;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+        }
+
+        .slider {
+            display: flex;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .slider-track {
+            display: flex;
+            animation: scroll 15s linear infinite;
+        }
+
+        .slider img {
+            width: 200px;
+            margin-right: 20px;
+            border-radius: 6px;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="pagina2.html">Comprar</a>
+        <a href="pagina1.html">Productos</a>
+        <a href="pagina3.html">Tienda</a>
+    </nav>
+
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>Bienvenido</h1>
+    <hr>
+
+    <main>
+        <h2>¿Quiénes somos?</h2>
+        <p>
+            Somos una tienda especializada en tecnología y productos electrónicos de última 
+            generación. Ofrecemos una amplia gama de artículos como computadoras, bocinas,
+            televisores, electrodomésticos inteligentes y mucho más. Nuestro compromiso es
+            brindarte calidad, innovación y excelente servicio, con marcas reconocidas y 
+            precios competitivos. Ya sea que busques equipar tu hogar, tu oficina o simplemente 
+            disfrutar de la mejor tecnología, aquí encontrarás lo que necesitas. ¡Descubre
+            un mundo de posibilidades con nosotros!
+        </p>
+
+        <h2>Nuestros objetivos</h2>
+        <ul>
+            <li>Brindar productos tecnológicos de alta calidad que satisfagan las necesidades y expectativas de nuestros clientes.</li>
+            <li>Ofrecer un excelente servicio al cliente, con atención personalizada y asesoría especializada.</li>
+            <li>Fomentar el acceso a la tecnología mediante precios competitivos y opciones de financiamiento accesibles.</li>
+            <li>Consolidarnos como líderes en el sector electrónico, expandiendo sucursales y presencia digital.</li>
+        </ul>
+
+        <hr>
+
+        <h2>Descuentos del 10%</h2>
+        <div class="slider">
+            <div class="slider-track">
+                <img src="f1.png" alt="Oferta 1">
+                <img src="f2.png" alt="Oferta 2">
+                <img src="f3.webp" alt="Oferta 3">
+                <img src="f4.png" alt="Oferta 4">
+                <!-- Repetir imágenes para hacer el loop más suave -->
+                <img src="f1.png" alt="Oferta 1">
+                <img src="f2.png" alt="Oferta 2">
+                <img src="f3.webp" alt="Oferta 3">
+                <img src="f4.png" alt="Oferta 4">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
