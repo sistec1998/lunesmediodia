@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo</title>
+  <link rel="icon" href="logotipo.avif">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 20px;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    details {
+      margin: 20px auto;
+      width: 80%;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 10px;
+      transition: transform 0.3s;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+    }
+
+    img.producto {
+      width: 200px;
+      margin: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 8px;
+    }
+
+    img.producto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    summary {
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      margin-right: 8px;
+    }
+
+    marquee {
+      height: 180px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- LOGOTIPO CON MOVIMIENTO HACIA ABAJO -->
+  <marquee behavior="scroll" direction="down" scrollamount="5">
+    <img src="logotipo.avif" width="150" alt="Logotipo">
+  </marquee>
+
+  <h1>Catálogo de Productos</h1>
+
+  <details>
+    <summary><span class="icon">🏠</span> Casas Modernas 1</summary>
+    <img class="producto" src="casa1.jpg" alt="Casa 1">
+    <img class="producto" src="casa2.jpg" alt="Casa 2">
+  </details>
+
+  <details>
+    <summary><span class="icon">🏡</span> Casas Modernas 2</summary>
+    <img class="producto" src="casa3.jpg" alt="Casa 3">
+    <img class="producto" src="casa4.jpg" alt="Casa 4">
+  </details>
+
+  <details>
+    <summary><span class="icon">🏘️</span> Casas Modernas 3</summary>
+    <img class="producto" src="casa5.jpg" alt="Casa 5">
+    <img class="producto" src="casa6.webp" alt="Casa 6">
+  </details>
+
+</body>
+</html>

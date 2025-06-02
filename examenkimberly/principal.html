@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Principal | DormiFácil</title>
+    <link rel="icon" href="logotipo.avif">
+    
+    <!-- Fuente e íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #dbe6f6, #c5796d);
+            color: #333;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        img {
+            margin-top: 30px;
+            width: 250px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            max-width: 700px;
+            margin: 20px auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+            background: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #4b2c20;
+            margin-top: 40px;
+            font-size: 1.8em;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        a {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 12px 24px;
+            background-color: #4b2c20;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #633d2e;
+            transform: scale(1.05);
+        }
+
+        a i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logotipo.avif" alt="Logotipo DormiFácil">
+
+    <p>
+        DormiFácil es una empresa especializada en la venta de 
+        camas y soluciones para el descanso, comprometida con mejorar 
+        la calidad de vida de sus clientes a través de productos cómodos, 
+        duraderos y adaptados a cada necesidad. Con más de 10 años en el
+        mercado, ofrecemos una amplia gama de camas individuales, matrimoniales, 
+        queen y king size, así como bases, colchones ortopédicos,
+        camas ajustables y accesorios para el dormitorio.
+    </p>
+
+    <h2><i class="fas fa-map-marker-alt"></i> Sucursales</h2>
+    <ul>
+        <li><i class="fas fa-store"></i> Coatepeque</li>
+        <li><i class="fas fa-store"></i> Xela</li>
+        <li><i class="fas fa-store"></i> Izabal</li>
+    </ul>
+
+    <a href="catalogo.html"><i class="fas fa-book-open"></i> Catálogo</a>
+    <a href="formulario.html"><i class="fas fa-pen-to-square"></i> Formulario</a>
+
+</body>
+</html>
