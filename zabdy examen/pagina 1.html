@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WALMART</title>
+    <link rel="icon" href="imagen 1.jpg">
+    <!-- Íconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #e0f7fa; /* Celeste claro */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0077c2;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        marquee {
+            margin-bottom: 20px;
+        }
+
+        details {
+            background: #ffffff;
+            border-radius: 10px;
+            margin: 15px auto;
+            padding: 10px;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        details:hover {
+            transform: scale(1.02);
+        }
+
+        summary {
+            font-weight: bold;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1><i class="fas fa-store"></i> WALMART</h1>
+
+    <marquee direction="right">
+        <img src="imagen.png" width="300" alt="Imagen promocional">
+    </marquee>
+
+    <h1><i class="fas fa-box-open"></i> CATÁLOGO DE PRODUCTOS</h1>
+
+    <details>
+        <summary><i class="fas fa-shopping-cart"></i> PRODUCTO</summary>
+        <img src="sarita 1.png" width="300" alt="Producto 1">
+        <img src="sarita.png" width="300" alt="Producto 2">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-shopping-cart"></i> PRODUCTO</summary>
+        <img src="FOTO.webp" width="150" alt="Producto 3">
+        <img src="FOTO 1.jpg" width="200" alt="Producto 4">
+        <img src="FOTO 2.webp" width="300" alt="Producto 5">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-shopping-cart"></i> PRODUCTO</summary>
+        <img src="OREO.webp" width="300" alt="Oreo">
+        <img src="CHOKIS.webp" width="300" alt="Chokis">
+        <img src="GAMESA.png" width="300" alt="Gamesa">
+    </details>
+</body>
+</html>

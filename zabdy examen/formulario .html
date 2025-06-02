@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title> WALMART</title>
+  <link rel="icon" href="imagen.png">
+  <!-- Íconos de Font Awesome -->
+  <link rel="icon" href="imagen.png">
+  <style>
+    body {
+      background-color: #f5f0fa;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #4b0082;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    img {
+      margin-top: 30px;
+      animation: bounce 1s ease;
+    }
+
+    h1 {
+      color: #6a0dad;
+      margin-top: 10px;
+      transition: color 0.3s ease;
+    }
+
+    h1:hover {
+      color: #8a2be2;
+    }
+
+    form {
+      background-color: #fff;
+      display: inline-block;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(106, 13, 173, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    form:hover {
+      transform: scale(1.02);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input {
+      width: 80%;
+      padding: 8px;
+      border: 2px solid #d8b4f8;
+      border-radius: 10px;
+      margin-top: 5px;
+      transition: border 0.3s;
+    }
+
+    input:focus {
+      border-color: #a020f0;
+      outline: none;
+    }
+
+    button {
+      background-color: #d291fa;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a64bff;
+    }
+
+    hr {
+      width: 60%;
+      border: 1px solid #cfa7f9;
+      margin-bottom: 30px;
+    }
+
+    @keyframes bounce {
+      0% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="bimbo 1.png" width="300" alt="Logo Bimbo">
+  <h1><i class="fas fa-shopping-cart"></i> COMPRAR EN LÍNEA</h1>
+  <hr>
+
+  <form>
+    <label><i class="fas fa-user"></i> NOMBRE</label>
+    <input type="text" placeholder="Escribe tu nombre">
+
+    <label><i class="fas fa-home"></i> DIRECCIÓN</label>
+    <input type="text" placeholder="Escribe tu dirección">
+
+    <label><i class="fas fa-phone"></i> TELÉFONO</label>
+    <input type="number" placeholder="Tu número de contacto">
+
+    <br>
+    <button type="submit"><i class="fas fa-credit-card"></i> Comprar</button>
+    <button type="reset"><i class="fas fa-paper-plane"></i> Enviar</button>
+  </form>
+
+</body>
+</html>
