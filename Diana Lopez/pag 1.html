@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0b3d0b; /* Verde oscuro */
+            color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #00ff88;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        a {
+            margin: 0 10px;
+            color: #00d9ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffff66;
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        button {
+            background-color: #00ff88;
+            border: none;
+            padding: 8px 16px;
+            margin-left: 10px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #00cc6a;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #ffff99;
+        }
+
+        details {
+            margin: 10px 0;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.png" width="300" alt="Logo">
+
+    <div style="margin-bottom: 20px;">
+        <a href="pag 2.html"><i class="fas fa-shopping-cart"></i> Compras</a>
+        <a href="pag 3.html"><i class="fas fa-store"></i> Tienda</a>
+        <a href="pag 4.html"><i class="fas fa-bars"></i> Menú</a>
+    </div>
+
+    <h1><i class="fas fa-globe-americas"></i> Un mundo para elegir</h1>
+
+    <hr>
+
+    <label for="busqueda"><i class="fas fa-search"></i> ¿Qué buscas?</label>
+    <input type="text" id="busqueda" placeholder="Escribe aquí...">
+    <button><i class="fas fa-search"></i> Buscar</button>
+
+    <h2><i class="fas fa-laptop"></i> Computadoras</h2>
+    <img src="com 1.png" width="100">
+    <img src="com 2.png" width="100">
+    <img src="com 3.png" width="100">
+
+    <h2><i class="fas fa-volume-up"></i> Bocinas</h2>
+    <img src="boc 1.webp" width="100">
+    <img src="boc 2.webp" width="100">
+    <img src="boc 3.png" width="100">
+
+    <h2><i class="fas fa-music"></i> Instrumentos musicales</h2>
+    <img src="ins 1.png!w700wp" width="100">
+    <img src="ins 2.png" width="100">
+    <img src="ins 3.webp" width="100">
+
+    <h2><i class="fas fa-helicopter"></i> Drones</h2>
+    <img src="dron 1.png" width="100">
+    <img src="dron 2.png" width="100">
+    <img src="dron 3.png" width="100">
+
+    <hr>
+
+    <h2><i class="fas fa-home"></i> Para el hogar</h2>
+
+    <details>
+        <summary><i class="fas fa-snowflake"></i> Refrigeradora</summary>
+        <img src="refri 1.webp" width="100">
+        <img src="refri 2.png" width="100">
+        <img src="refri 3.png" width="100">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-tv"></i> TV</summary>
+        <img src="tv.webp" width="100">
+        <img src="tv 2.webp" width="100">
+        <img src="tv 3.png" width="100">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-water"></i> Lavadora</summary>
+        <img src="lav 1.png" width="100">
+        <img src="lav 2.png" width="100">
+        <img src="tv 3.png" width="100">
+    </details>
+
+</body>
+</html>
