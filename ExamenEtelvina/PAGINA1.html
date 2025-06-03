@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo de Productos</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #ffc0cb; /* Fondo rosado */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header img {
+      width: 200px;
+      animation: slideDown 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #fff;
+      margin: 10px 0;
+    }
+
+    details {
+      background-color: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    summary {
+      font-size: 1.3em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #e91e63;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    summary::before {
+      content: "\f07b"; /* Icono de caja */
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #e91e63;
+    }
+
+    .card {
+      display: inline-block;
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      background-color: #fff;
+    }
+
+    .card img {
+      display: block;
+      width: 250px;
+      height: 240px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1>CATÁLOGO DE PRODUCTOS</h1>
+  </header>
+
+  <section>
+    <details>
+      <summary>REFRESCOS</summary>
+      <div class="card"><img src="pepsi4.png" alt="Pepsi 4"></div>
+      <div class="card"><img src="pepsi3.png" alt="Pepsi 3"></div>
+    </details>
+
+    <details>
+      <summary>ALITAS EMPANIZADAS</summary>
+      <div class="card"><img src="alita1.png" alt="Alita 1"></div>
+      <div class="card"><img src="alita3.png" alt="Alita 3"></div>
+    </details>
+
+    <details>
+      <summary>HAMBURGUESAS</summary>
+      <div class="card"><img src="hamburguesa.png" alt="Hamburguesa"></div>
+      <div class="card"><img src="hamburguesa2.png" alt="Hamburguesa 2"></div>
+    </details>
+  </section>
+
+</body>
+</html>

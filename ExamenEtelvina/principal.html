@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - PepsiCo</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #b3e5fc; /* Celeste */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .card {
+      background-color: white;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      text-align: center;
+      animation: slideUp 1.2s ease;
+    }
+
+    .card img {
+      width: 150px;
+      margin-bottom: 15px;
+      animation: zoomIn 1s ease-in-out;
+    }
+
+    p {
+      color: #01579b;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      background-color: #e1f5fe;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 8px;
+      color: #0277bd;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    ul li:hover {
+      background-color: #b3e5fc;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      background-color: #0288d1;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.3s;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background-color: #0277bd;
+      transform: scale(1.05);
+    }
+
+    a i {
+      margin-right: 6px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="logo.png" alt="Pepsi Logo">
+    <p><i class="fas fa-building"></i> PepsiCo, Inc. es una de las compañías de alimentos y bebidas más grandes del mundo. Fundada en 1965 tras la fusión de Pepsi-Cola y Frito-Lay, PepsiCo tiene su sede en Purchase, Nueva York, Estados Unidos.</p>
+    
+    <ul>
+      <li><i class="fas fa-map-marker-alt"></i> PETÉN</li>
+      <li><i class="fas fa-map-marker-alt"></i> ESCUINTLA</li>
+      <li><i class="fas fa-map-marker-alt"></i> CHIMALTENANGO</li>
+    </ul>
+
+    <a href="PAGINA1.html"><i class="fas fa-boxes"></i> CATÁLOGO DE PRODUCTOS</a>
+    <a href="formulario.html"><i class="fas fa-shopping-cart"></i> COMPRA EN LÍNEA</a>
+  </div>
+</body>
+</html>
