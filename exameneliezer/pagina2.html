@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SARITA</title>
+  <link rel="icon" href="logo.png">
+
+  <!-- Fuente e Iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      color: #2c3e50;
+      text-align: center;
+      padding: 30px;
+    }
+
+    img {
+      width: 250px;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease;
+    }
+
+    form {
+      background-color: #ffffffdd;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    form:hover {
+      transform: scale(1.02);
+    }
+
+    label {
+      display: block;
+      font-size: 1.2em;
+      margin: 15px 0 5px;
+      color: #34495e;
+    }
+
+    input {
+      width: 250px;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #bdc3c7;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #2980b9;
+      box-shadow: 0 0 8px #2980b9aa;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #2ecc71;
+      transform: scale(1.05);
+    }
+
+    label:first-of-type::before {
+      content: '\f07a'; /* shopping-cart icon */
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      margin-right: 8px;
+      color: #e67e22;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo SARITA">
+
+  <form>
+    <label>COMPRAR EN LINEA</label>
+
+    <label><i class="fas fa-user"></i> NOMBRE</label>
+    <input type="text" placeholder="Tu nombre">
+
+    <label><i class="fas fa-map-marker-alt"></i> DIRECCIÓN</label>
+    <input type="text" placeholder="Tu dirección">
+
+    <label><i class="fas fa-box-open"></i> ¿QUÉ PRODUCTO DESEA COMPRAR?</label>
+    <input type="text" placeholder="Ej. Pastel, Helado, etc.">
+
+    <button type="submit"><i class="fas fa-paper-plane"></i> ENVIAR</button>
+  </form>
+
+</body>
+</html>

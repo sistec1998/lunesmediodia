@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARITA</title>
+    <link rel="icon" href="logo.png">
+
+    <!-- Fuente e Iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(to right, #fefcea, #f1da36);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #c0392b;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            animation: pop 1.2s ease;
+        }
+
+        details {
+            background-color: #ffffffbb;
+            margin: 15px auto;
+            padding: 15px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        details:hover {
+            transform: scale(1.03);
+            background-color: #fffde7;
+        }
+
+        summary {
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #2c3e50;
+            position: relative;
+        }
+
+        summary::before {
+            content: '\f07c'; /* fa-box-open icon */
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            margin-right: 10px;
+            color: #2980b9;
+            transition: transform 0.3s;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1><i class="fas fa-store"></i> CATALOGO DE PRODUCTOS</h1>
+
+    <details>
+        <summary><i class="fas fa-birthday-cake"></i> PASTELES</summary>
+        <img src="P1.png" width="250" alt="Pastel 1">
+        <img src="P2.jpg" width="250" alt="Pastel 2">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-ice-cream"></i> HELADOS</summary>
+        <img src="h1.jpg" width="250" alt="Helado 1">
+        <img src="h2.jpg" width="250" alt="Helado 2">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-cookie"></i> PALETAS</summary>
+        <img src="12.png" width="250" alt="Paleta 1">
+        <img src="11.jpg" width="250" alt="Paleta 2">
+    </details>
+
+</body>
+</html>
