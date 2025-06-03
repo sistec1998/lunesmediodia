@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPRAR EN LÍNEA</title>
+    <link rel="icon" href="logo2.jpg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        h1 {
+            color: #00796b;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        img {
+            width: 200px;
+            animation: dropIn 1.2s ease-out;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #ffffffcc;
+            border-radius: 10px;
+            padding: 20px 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #004d40;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus {
+            border-color: #26a69a;
+            box-shadow: 0 0 8px rgba(38, 166, 154, 0.5);
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00897b;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00695c;
+        }
+
+        #success-message {
+            display: none;
+            margin-top: 20px;
+            background-color: #c8e6c9;
+            padding: 10px 20px;
+            border: 1px solid #388e3c;
+            color: #2e7d32;
+            border-radius: 8px;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes dropIn {
+            0% { transform: translateY(-200px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo2.jpg" alt="Logo de la tienda">
+
+    <h1>FORMULARIO DE COMPRA</h1>
+
+    <form id="purchase-form">
+        <label>NOMBRE COMPLETO</label><br>
+        <input type="text" required><br>
+
+        <label>DIRECCIÓN</label><br>
+        <input type="text" required><br>
+
+        <label>TELÉFONO</label><br>
+        <input type="number" required><br>
+
+        <label>NOMBRE DE LA MOTO</label><br>
+        <input type="text" required><br>
+
+        <button type="submit">ENVIAR</button>
+    </form>
+
+    <div id="success-message">✅ ¡Compra con éxito!</div>
+
+    <script>
+        const form = document.getElementById('purchase-form');
+        const successMessage = document.getElementById('success-message');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevenir recarga
+            successMessage.style.display = 'block';
+            form.reset();
+        });
+    </script>
+
+</body>
+</html>

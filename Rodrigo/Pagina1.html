@@ -3,86 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAYS</title>
-    <link rel="icon" href="logo.png">
-    <!-- Íconos de Font Awesome -->
+    <title>CATÁLOGO DE MOTOS</title>
+    <link rel="icon" href="logo2.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(120deg, #f7d358, #f8e473);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #80deea);
+            color: #333;
             text-align: center;
-            margin: 0;
             padding: 20px;
+            animation: fadeIn 1.5s ease-in;
         }
 
         h1 {
-            color: #d35400;
-            font-size: 2.5em;
+            color: #00695c;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            font-size: 2.5rem;
             margin-bottom: 30px;
-            text-shadow: 2px 2px #fff;
         }
 
         img {
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
             margin: 10px;
-            border-radius: 15px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         img:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
         }
 
         details {
-            margin: 20px auto;
-            background-color: #fff8dc;
-            border-radius: 10px;
-            width: 80%;
+            background-color: #ffffffbb;
+            border: 1px solid #bbb;
+            border-radius: 8px;
             padding: 10px;
-            transition: all 0.4s ease;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 15px auto;
+            width: 80%;
+            text-align: left;
+            transition: background-color 0.3s;
         }
 
         summary {
-            font-size: 1.5em;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #004d40;
             cursor: pointer;
-            color: #2c3e50;
-            margin-bottom: 10px;
         }
 
-        summary::before {
-            content: "\f07c "; /* icono de bolsa */
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            color: #e67e22;
+        details[open] {
+            background-color: #b2ebf2;
+        }
+
+        .logo-container {
+            animation: dropIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes dropIn {
+            0% { transform: translateY(-300px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .icon {
+            color: #00897b;
+            margin-right: 8px;
         }
     </style>
 </head>
 <body>
-    <img src="logo.png" width="300" alt="Logo Lays">
-    <h1><i class="fa-solid fa-shop"></i> PRODUCTOS</h1>
-<hr>
+
+    <div class="logo-container">
+        <img src="logo2.jpg" width="300" alt="Logo">
+    </div>
+
+    <h1><i class="fas fa-motorcycle icon"></i>CATÁLOGO DE MOTOS</h1>
+
     <details>
-        <summary><i class="fa-solid fa-fire"></i> CHEETOS</summary>
-        <img src="1.png" width="250" alt="Cheetos 1">
-        <img src="3,.webp" width="250" alt="Cheetos 2">
-        <img src="3.png" width="250" alt="Cheetos 3">
+        <summary><i class="fas fa-bolt icon"></i>MOTOS DE ALTO CILINDRAJE</summary>
+        <img src="1.png" width="250" alt="Moto Alta 1">
+        <img src="2.jpg" width="250" alt="Moto Alta 2">
     </details>
 
     <details>
-        <summary><i class="fa-solid fa-bolt"></i> DORITOS</summary>
-        <img src="4.jpg" width="250" alt="Doritos 1">
-        <img src="5.webp" width="250" alt="Doritos 2">
-        <img src="6.jpg" width="250" alt="Doritos 3">
+        <summary><i class="fas fa-leaf icon"></i>MOTOS DE BAJO CILINDRAJE</summary>
+        <img src="4.jpg" width="250" alt="Moto Baja 1">
+        <img src="5.jpg" width="250" alt="Moto Baja 2">
     </details>
 
     <details>
-        <summary><i class="fa-solid fa-seedling"></i> PAPAS LAYS</summary>
-        <img src="7.webp" width="250" alt="Lays 1">
-        <img src="8.png" width="250" alt="Lays 2">
-        <img src="9.webp" width="250" alt="Lays 3">
+        <summary><i class="fas fa-mountain icon"></i>MOTOS DE TERRACERÍA</summary>
+        <img src="6.webp" width="250" alt="Moto Tierra 1">
+        <img src="7.jpg" width="250" alt="Moto Tierra 2">
     </details>
+
 </body>
 </html>

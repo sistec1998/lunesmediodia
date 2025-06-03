@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATÁLOGO DE MOTOS</title>
+    <link rel="icon" href="logo2.jpg">
+
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #1f1c2c, #928dab);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 2em;
+            color: #FFD700;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.2em;
+            position: relative;
+        }
+
+        li::before {
+            content: "\f3c5"; /* Icono de mapa */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #FFD700;
+            margin-right: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 12px 25px;
+            background-color: #FFD700;
+            color: #1f1c2c;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        a:hover {
+            background-color: #fff176;
+            transform: scale(1.05);
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo2.jpg" alt="Logo SpeedMax">
+    
+    <p>
+        <strong>Motos SpeedMax S.A.</strong> es una empresa dedicada a la venta, distribución y mantenimiento de
+        motocicletas de diversas marcas reconocidas a nivel nacional e internacional. Fundada en el año 2010,
+        nuestra empresa se ha posicionado como uno de los líderes del mercado gracias a nuestro compromiso
+        con la calidad, la innovación y la atención personalizada a nuestros clientes.
+        <br><br>
+        Ofrecemos una amplia gama de modelos, desde motocicletas urbanas y scooters hasta motos de
+        alto rendimiento para competencia y aventura. Además, contamos con un taller especializado,
+        repuestos originales y un equipo técnico altamente capacitado.
+    </p>
+
+    <h1><i class="fas fa-map-marker-alt"></i> Sucursales</h1>
+    <ul>
+        <li>MASESA COATEPEQUE</li>
+        <li>HIPERTIENDA DE MOTOS / COATEPEQUE</li>
+        <li>MOTOSHOP VRC COATEPEQUE</li>
+    </ul>
+
+    <a href="Pagina1.html"><i class="fas fa-motorcycle"></i> Catálogo de Motos</a>
+    <a href="Formulario.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+
+</body>
+</html>
