@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCA COLA</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e6ccff;
+            color: #333;
+            text-align: center;
+        }
+
+        .logo {
+            width: 200px;
+            animation: float 3s ease-in-out infinite;
+            margin-top: 30px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #4b0082;
+            margin-bottom: 20px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #a64dff;
+            box-shadow: 0 0 5px #a64dff88;
+            outline: none;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #a64dff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #8a2be2;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.png" alt="Coca Cola Logo" class="logo">
+
+    <h1><i class="fas fa-shopping-cart"></i> COMPRAR EN LÍNEA</h1>
+
+    <form action="#">
+        <label><i class="fas fa-user"></i> NOMBRE</label>
+        <input type="text" required>
+
+        <label><i class="fas fa-map-marker-alt"></i> DIRECCIÓN</label>
+        <input type="text" required>
+
+        <label><i class="fas fa-phone"></i> TELÉFONO</label>
+        <input type="number" required>
+
+        <label><i class="fas fa-box"></i> PRODUCTO QUE DESEA COMPRAR</label>
+        <input type="text" required>
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> ORDENAR</button>
+    </form>
+
+</body>
+</html>

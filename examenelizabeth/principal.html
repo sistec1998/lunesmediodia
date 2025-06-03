@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCA COLA</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e6ccff; /* fondo lila */
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            background: #fff;
+            padding: 30px;
+            margin: 40px auto;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease;
+        }
+
+        img.logo {
+            width: 200px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 20px 0;
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        ol li {
+            margin: 5px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 10px 20px;
+            background-color: #a64dff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #8a2be2;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: #4b0082;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt="Coca Cola Logo" class="logo">
+        <p><i class="fas fa-info-circle"></i> Coca-Cola es una de las compañías de bebidas más grandes y reconocidas del mundo. Fundada el 8 de mayo de 1886 en Atlanta, Georgia (EE.UU.), por el farmacéutico John S. Pemberton, su producto original, la Coca-Cola, comenzó como un tónico medicinal y rápidamente se transformó en una bebida refrescante popular.</p>
+        
+        <p>Hoy en día, Coca-Cola ofrece más de 500 marcas de bebidas, incluyendo gaseosas, jugos, aguas, tés, cafés y bebidas energéticas. Su portafolio incluye productos conocidos como <strong>Coca-Cola, Fanta, Sprite, Powerade, Minute Maid, Dasani</strong> y <strong>Schweppes</strong>, entre otros.</p>
+        
+        <h3><i class="fas fa-map-marker-alt"></i> PUNTOS DE DISTRIBUCIÓN</h3>
+        <ol>
+            <li>COATEPEQUE</li>
+            <li>QUETZALTENANGO</li>
+            <li>PÉTEN</li>
+        </ol>
+
+        <a href="catalogo.html"><i class="fas fa-tags"></i> CATEGORÍAS</a>
+        <a href="formulario.html"><i class="fas fa-file-alt"></i> FORMULARIO</a>
+    </div>
+
+</body>
+</html>

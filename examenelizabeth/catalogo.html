@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCA COLA</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6ccff; /* Color lila */
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            margin-top: 20px;
+            animation: fadeInDown 1.5s ease;
+        }
+
+        .logo {
+            width: 200px;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        details {
+            margin: 20px auto;
+            width: 80%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        summary {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            list-style: none;
+        }
+
+        details[open] {
+            background-color: #f3e6ff;
+        }
+
+        .card {
+            display: inline-block;
+            margin: 10px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .icon {
+            color: #a64dff;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Coca Cola Logo" class="logo">
+
+    <h1><i class="fas fa-box icon"></i>CATÁLOGOS DE PRODUCTOS</h1>
+
+    <details>
+        <summary><i class="fas fa-glass-martini-alt icon"></i>COCA COLA DE VIDRIO</summary>
+        <div class="card"><img src="b1.png" alt="Botella de vidrio 1"></div>
+        <div class="card"><img src="b2.jpg" alt="Botella de vidrio 2"></div>
+    </details>
+
+    <details>
+        <summary><i class="fas fa-beer icon"></i>COCA COLA EN LATA</summary>
+        <div class="card"><img src="c1.png" alt="Lata 1"></div>
+        <div class="card"><img src="c2.webp" alt="Lata 2"></div>
+    </details>
+
+    <details>
+        <summary><i class="fas fa-wine-bottle icon"></i>COCA COLA EN BOTELLA</summary>
+        <div class="card"><img src="d1.jpg" alt="Botella plástica 1"></div>
+        <div class="card"><img src="d2.png" alt="Botella plástica 2"></div>
+    </details>
+</body>
+</html>
