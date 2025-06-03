@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike</title>
+  <link rel="icon" href="loga.webp">
+
+  <!-- Fuente e íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #e0bbff, #d1c4e9);
+      color: #4a148c;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      width: 250px;
+      animation: slideDown 2s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    details {
+      margin: 20px auto;
+      width: 80%;
+      background: #f3e5f5;
+      border: 2px solid #ce93d8;
+      border-radius: 10px;
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    summary {
+      font-size: 1.5em;
+      cursor: pointer;
+      outline: none;
+      padding: 10px;
+      transition: background 0.3s ease;
+    }
+
+    summary:hover {
+      background: #ce93d8;
+      border-radius: 5px;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    .icon {
+      margin-right: 10px;
+      color: #6a1b9a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="loga.webp" alt="Logo">
+  </header>
+
+  <details>
+    <summary><i class="fas fa-shoe-prints icon"></i>Denis</summary>
+    <img src="im4.jpg" width="150">
+    <img src="im2.png" width="200">
+    <img src="im3.webp" width="150">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-slippers icon"></i>Chanclas</summary>
+    <img src="ima.jpg" width="200">
+    <img src="ima2.png" width="200">
+    <img src="ima3.webp" width="200">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-running icon"></i>Darugos</summary>
+    <img src="imag1.avif" width="200">
+    <img src="imag2.avif" width="200">
+    <img src="imag3.avif" width="200">
+  </details>
+
+</body>
+</html>

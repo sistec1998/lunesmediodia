@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario</title>
+  <link rel="icon" href="loga.webp" />
+  <style>
+    body {
+      background: #e0f0ff;
+      font-family: Arial, sans-serif;
+      color: #003366;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h1 {
+      color: #004aad;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease-out;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      transition: transform 0.3s;
+    }
+
+    form:hover {
+      transform: scale(1.02);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #b0c4de;
+      border-radius: 5px;
+      margin-top: 5px;
+      transition: border 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #004aad;
+      outline: none;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover {
+      background-color: #003580;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    center {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <img src="loga.webp" width="150" alt="Logo" />
+    <h1>Compra en línea</h1>
+    <form>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" />
+
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" />
+
+      <label for="telefono">Teléfono</label>
+      <input type="text" id="telefono" />
+
+      <label for="producto">¿Qué desea comprar?</label>
+      <input type="text" id="producto" />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </center>
+</body>
+</html>
