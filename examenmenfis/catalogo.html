@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hamburguesa</title>
+  <link rel="icon" href="logog.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f59002, #922805); /* Fondo degradado */
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      animation: fadeIn 2s ease-in-out;
+      margin-top: 20px;
+    }
+
+    marquee img {
+      animation: bounce 2s infinite;
+    }
+
+    details {
+      margin: 20px;
+      padding: 10px;
+      background: #ffffffcc;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+    }
+
+    summary {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <marquee behavior="slide" direction="down">
+    <img src="logog.png" width="200">
+  </marquee>
+
+  <h1>Catálogo de Productos</h1>
+
+  <details>
+    <summary>REFRESCOS</summary>
+    <img src="mm.webp" width="300">
+    <img src="1.webp" width="300">
+  </details>
+
+  <details>
+    <summary>HAMBURGUESAS</summary>
+    <img src="a.png" width="300">
+    <img src="a2.png" width="300">
+  </details>
+
+  <details>
+    <summary>PAPAS FRITAS</summary>
+    <img src="m1.png" width="300">
+    <img src="m2.webp" width="300">
+  </details>
+
+</body>
+</html>

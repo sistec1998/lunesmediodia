@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logog.png">
+    <title>Empresa Centrada</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ff0000; /* Rojo inicial */
+            color: white;
+            font-family: Arial, sans-serif;
+            transition: background-color 2s ease-in-out; /* Transición suave */
+        }
+
+        input, button {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            background-color: white;
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+
+        button:hover {
+            background-color: #ffcccc;
+        }
+
+        h1, h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="logog.png" width="300">
+        <h1>COMPRAR EN LÍNEA</h1>
+
+        <label>Nombre</label><br>
+        <input type="text"><br>
+
+        <label>Dirección</label><br>
+        <input type="text"><br>
+
+        <label>Teléfono</label><br>
+        <input type="number"><br>
+
+        <h2>¿QUÉ LE GUSTARÍA COMPRAR HOY?</h2>
+        <input type="text"><br>
+
+        <button>Enviar</button>
+    </center>
+
+    <script>
+        // Cambiar el color de fondo después de que cargue la página
+        window.onload = function() {
+            document.body.style.backgroundColor = "#0000ff"; // Azul
+        };
+    </script>
+</body>
+</html>
