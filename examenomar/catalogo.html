@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CATÁLOGO DE PRODUCTOS</title>
+  <link rel="icon" href="logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+    }
+
+    header img {
+      width: 120px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-top: 10px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    details {
+      background: white;
+      border-radius: 10px;
+      margin: 15px 0;
+      padding: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    details:hover {
+      transform: scale(1.01);
+    }
+
+    summary {
+      font-size: 1.2em;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    details[open] summary {
+      font-weight: bold;
+      color: #2575fc;
+    }
+
+    img.product {
+      width: 200px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img.product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      img.product {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" />
+    <h1>CATÁLOGO DE PRODUCTOS</h1>
+  </header>
+
+  <main>
+    <details>
+      <summary><i class="fas fa-boxes"></i> Productos Varios</summary>
+      <div>
+        <img src="v1.webp" class="product" alt="Producto 1"/>
+        <img src="v2.webp" class="product" alt="Producto 2"/>
+        <img src="v3.webp" class="product" alt="Producto 3"/>
+      </div>
+    </details>
+
+    <details>
+      <summary><i class="fas fa-shoe-prints"></i> Zapatos</summary>
+      <div>
+        <img src="z1.webp" class="product" alt="Zapato 1"/>
+        <img src="z2.webp" class="product" alt="Zapato 2"/>
+      </div>
+    </details>
+
+    <details>
+      <summary><i class="fas fa-tshirt"></i> Blusas</summary>
+      <div>
+        <img src="b1.webp" class="product" alt="Blusa 1"/>
+        <img src="b2.png" class="product" alt="Blusa 2"/>
+      </div>
+    </details>
+  </main>
+</body>
+</html>

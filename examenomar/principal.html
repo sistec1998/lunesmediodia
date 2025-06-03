@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PRINCIPAL</title>
+  <link rel="icon" href="logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f0f0f0, #ffffff);
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    img {
+      width: 200px;
+      margin-bottom: 20px;
+      animation: bounceIn 1s ease-out;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    ul li {
+      background: #e8e8e8;
+      padding: 12px;
+      margin: 8px auto;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+      max-width: 300px;
+    }
+
+    ul li:hover {
+      background: #cfcfcf;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background: #4A00E0;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .buttons a:hover {
+      background: #8E2DE2;
+      transform: scale(1.05);
+    }
+
+    .buttons i {
+      margin-right: 8px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      p, ul li, .buttons a {
+        font-size: 0.95em;
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Zara Logo" />
+
+    <p>
+      <strong>Zara</strong> se especializa en ofrecer ropa, calzado y accesorios de moda para mujeres, hombres
+      y niños, manteniéndose siempre alineada con las últimas tendencias. Su modelo de negocio
+      se basa en la <strong>"moda rápida" (fast fashion)</strong>: produce colecciones actualizadas con gran
+      rapidez, permitiéndole llevar nuevos diseños desde el concepto hasta las tiendas en solo unas semanas.
+    </p>
+
+    <ul>
+      <li><i class="fas fa-map-marker-alt"></i> Quetzaltenango</li>
+      <li><i class="fas fa-map-marker-alt"></i> Retalhuleu</li>
+      <li><i class="fas fa-map-marker-alt"></i> Sololá</li>
+    </ul>
+
+    <div class="buttons">
+      <a href="catalogo.html"><i class="fas fa-store"></i> Catálogo</a>
+      <a href="formulario.html"><i class="fas fa-clipboard-list"></i> Formulario</a>
+    </div>
+  </div>
+</body>
+</html>
