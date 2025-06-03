@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HONDA</title>
+    <link rel="icon" href="logo11.png">
+    <style>
+        /* Fondo rojo metalizado */
+        body {
+            background: linear-gradient(145deg, #8B0000, #B22222, #FF0000);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px black;
+            transition: transform 0.5s;
+        }
+
+        h1:hover {
+            transform: scale(1.05);
+        }
+
+        details {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        details:hover {
+            transform: scale(1.02);
+        }
+
+        summary {
+            font-size: 1.5em;
+            cursor: pointer;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+        }
+
+        marquee img {
+            animation: drop 2s ease-in-out;
+        }
+
+        @keyframes drop {
+            0% { transform: translateY(-100px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="slide" direction="down">
+        <img src="logo.png" width="300">
+    </marquee>
+    <h1>CATÁLOGO DE PRODUCTOS</h1>
+
+    <details>
+        <summary>HONDA CRF</summary>
+        <img src="crf1.jpg" width="300">
+        <img src="crf2.jpg" width="300">
+    </details>
+
+    <details>
+        <summary>HONDA XR</summary>
+        <img src="xr1.jpg" width="300">
+        <img src="xr2.jpg" width="350">
+    </details>
+
+    <details>
+        <summary>HONDA NAVI</summary>
+        <img src="navi11.jpg" width="300">
+        <img src="navi2.jpg" width="250">
+    </details>
+</body>
+</html>
