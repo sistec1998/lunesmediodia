@@ -2,166 +2,89 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Productos</title>
-  <link rel="icon" href="logo.jpeg">
+  <title>Shein</title>
+  <link rel="icon" href="logo.png">
   <style>
     body {
-      background-color: #007BFF;
+      background-color: #b3e5fc; /* celeste */
       font-family: Arial, sans-serif;
-      color: #fff;
+      text-align: center;
       margin: 0;
       padding: 0;
     }
 
-    center {
-      padding: 20px;
-    }
-
-    a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    a:hover {
-      color: #FFD700;
-    }
-
-    h1, h2 {
-      margin-top: 40px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-
-    form {
-      margin: 20px 0;
-    }
-
-    input[type="text"] {
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-    }
-
-    button {
-      padding: 10px 20px;
-      background-color: #FFC107;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #FFA000;
-    }
-
-    .card {
-      display: inline-block;
-      background-color: white;
-      border-radius: 10px;
-      overflow: hidden;
-      margin: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card img {
-      width: 300px;
-      height: auto;
-      display: block;
-      border-bottom: 3px solid #007BFF;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    h1 {
+      color: #006064;
+      margin-top: 20px;
+      text-shadow: 1px 1px 2px #fff;
     }
 
     details {
-      margin: 30px 0;
-      background-color: #0056b3;
+      margin: 20px auto;
+      width: 80%;
+      background: white;
+      border-radius: 10px;
       padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      color: white;
-      transition: background-color 0.3s ease;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    details:hover {
+      transform: scale(1.02);
     }
 
     summary {
-      font-size: 1.2em;
+      font-size: 1.3em;
+      font-weight: bold;
       cursor: pointer;
-      outline: none;
+      color: #004d40;
     }
 
-    hr {
-      border: none;
-      height: 2px;
-      background-color: white;
-      width: 80%;
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    img, h1, details {
+      animation: fadeIn 1s ease forwards;
     }
   </style>
 </head>
 <body>
+
   <center>
-    <img src="logo.jpeg" width="500">
-    <br>
-    <a href="pagina2.html">Comprar</a>
-    <a href="pagina3.html">Tienda</a>
-    <a href="pagina4.html">Menú</a>
-    <h1>Un mundo para elegir</h1>
-    <hr>
-
-    <form>
-      <label>¿Qué buscas?</label>
-      <input type="text">
-      <button>Buscar</button>
-    </form>
-
-    <h2>Computadoras</h2>
-    <div class="card"><img src="imagen1.png"></div>
-    <div class="card"><img src="imagen2.webp"></div>
-    <div class="card"><img src="imagen3.webp"></div>
-
-    <h2>Bocinas</h2>
-    <div class="card"><img src="imagen4.png"></div>
-    <div class="card"><img src="imagen5.webp"></div>
-    <div class="card"><img src="imagen6.jpg"></div>
-
-    <h2>Instrumentos Musicales</h2>
-    <div class="card"><img src="imagen7.png"></div>
-    <div class="card"><img src="imagen8.jpg"></div>
-    <div class="card"><img src="imagen9.webp"></div>
-
-    <h2>Drones</h2>
-    <div class="card"><img src="imagen10.jpg"></div>
-    <div class="card"><img src="imagen11.png"></div>
-    <div class="card"><img src="imagen12" alt="imagen12"></div>
-
-    <hr>
-    <h1>Para el hogar</h1>
+    <img src="logo.png" width="400" alt="Logo">
+    <h1>CATÁLOGO DE PRODUCTOS</h1>
 
     <details>
-      <summary>Refrigeradoras</summary>
-      <div class="card"><img src="imagen.webp"></div>
-      <div class="card"><img src="imagen14.webp"></div>
-      <div class="card"><img src="imagen15.jpg"></div>
+      <summary>Tenis</summary>
+      <img src="tenis.jpeg" width="250" alt="Tenis 1">
+      <img src="tenis2.webp" width="250" alt="Tenis 2">
     </details>
 
     <details>
-      <summary>TV</summary>
-      <div class="card"><img src="imagen17.jpg"></div>
-      <div class="card"><img src="imagen18.avif"></div>
-      <div class="card"><img src="imagen19.avif"></div>
+      <summary>Accesorios</summary>
+      <img src="accesorios.png" width="250" alt="Accesorio 1">
+      <img src="pulsera.webp" width="250" alt="Pulsera">
     </details>
 
     <details>
-      <summary>Lavadoras</summary>
-      <div class="card"><img src="imagen20.png"></div>
-      <div class="card"><img src="imagen21.jpg"></div>
-      <div class="card"><img src="imagen22.webp"></div>
+      <summary>Maquillaje</summary>
+      <img src="maquillaje1.webp" width="250" alt="Maquillaje 1">
+      <img src="maquillaje2.jpg" width="250" alt="Maquillaje 2">
     </details>
   </center>
+
 </body>
 </html>
