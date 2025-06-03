@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Descripción de Nike</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      font-family: Arial, sans-serif;
+      color: #003366;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Animación del logo */
+    @keyframes flotar {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(15px); }
+    }
+
+    img {
+      width: 250px;
+      animation: flotar 2.5s ease-in-out infinite;
+      margin-bottom: 20px;
+    }
+
+    h2, h3 {
+      color: #00796b;
+      text-shadow: 1px 1px 2px #ccc;
+      transition: color 0.3s ease;
+    }
+
+    h2:hover, h3:hover {
+      color: #004d40;
+    }
+
+    p, ul {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #333;
+      padding: 0 20px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 8px 0;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    li:hover {
+      transform: scale(1.05);
+      color: #00796b;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 10px 20px;
+      background-color: #00796b;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    a:hover {
+      background-color: #004d40;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo Nike">
+  <h2>Descripción de la empresa</h2>
+
+  <p>
+    Nike, Inc. es una empresa multinacional estadounidense fundada en 1964, reconocida mundialmente por el diseño,
+    desarrollo y comercialización de calzado, ropa, accesorios y equipamiento deportivo. Su sede principal está
+    ubicada en Beaverton, Oregón.
+  </p>
+  <p>
+    El icónico logo del "swoosh" y su eslogan "Just Do It" han convertido a Nike en una de las marcas más valiosas
+    del mundo. Patrocina a atletas y equipos de élite en múltiples disciplinas como fútbol, baloncesto, atletismo
+    y más.
+  </p>
+  <p>
+    Nike se destaca por su innovación en tecnología deportiva, su impacto cultural y su compromiso con la
+    sostenibilidad. La compañía busca inspirar a cada persona a alcanzar su máximo potencial a través del deporte.
+  </p>
+
+  <h3>Sucursales</h3>
+  <ul>
+    <li>Flores Costa Cuca</li>
+    <li>Coatepeque</li>
+    <li>Ciudad capital</li>
+    <li>Génova Costa Cuca</li>
+    <li>Antigua Guatemala</li>
+  </ul>
+
+  <a href="catalogo.html">Catálogo</a>
+  <a href="formulario.html">Formulario</a>
+
+</body>
+</html>

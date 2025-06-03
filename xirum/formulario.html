@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Compra</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Animación del logo */
+    @keyframes moverArribaAbajo {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(15px); }
+    }
+
+    img {
+      width: 300px;
+      animation: moverArribaAbajo 2.5s ease-in-out infinite;
+    }
+
+    h1 {
+      color: #00796b;
+      text-shadow: 1px 1px 2px #ccc;
+      margin-top: 20px;
+    }
+
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #00796b;
+      box-shadow: 0 0 10px rgba(0, 121, 107, 0.3);
+      outline: none;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #004d40;
+      transform: scale(1.05);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo">
+  <h1>COMPRA EN LÍNEA</h1>
+
+  <form>
+    <input type="text" placeholder="Nombre">
+    <input type="text" placeholder="Dirección">
+    <input type="number" placeholder="Teléfono">
+    <input type="text" placeholder="Producto">
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>

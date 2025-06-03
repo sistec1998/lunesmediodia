@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Productos</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #f0f8ff, #e6f2ff);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Animación del logo */
+    @keyframes moverArribaAbajo {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+    }
+
+    img.logo {
+      width: 300px;
+      animation: moverArribaAbajo 2s ease-in-out infinite;
+    }
+
+    h1 {
+      color: #003366;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px #aaa;
+    }
+
+    details {
+      margin: 20px auto;
+      width: 80%;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    summary {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      color: #003366;
+    }
+
+    details[open] {
+      background-color: #f0f8ff;
+      transform: scale(1.02);
+    }
+
+    details img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    details img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" class="logo" alt="Logo Nike">
+  <h1>CATÁLOGOS DE PRODUCTOS</h1>
+
+  <details>
+    <summary>Zapatos</summary>
+    <img src="TANJUN.png" alt="Zapato 1">
+    <img src="ke.jpg" alt="Zapato 2">
+  </details>
+
+  <details>
+    <summary>Playeras</summary>
+    <img src="ye.png" alt="Playera 1">
+    <img src="pla.webp" alt="Playera 2">
+  </details>
+
+  <details>
+    <summary>Shorts</summary>
+    <img src="ort.png" alt="Short 1" width="200">
+    <img src="sho.webp" alt="Short 2" width="200">
+  </details>
+
+</body>
+</html>
