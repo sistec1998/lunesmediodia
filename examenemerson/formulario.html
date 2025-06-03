@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🛒 Formulario de Compra</title>
+  <link rel="icon" href="images.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e0f7fa; /* Celeste suave */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 350px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .form-container img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    .form-container h1 {
+      color: #00796b;
+      margin-bottom: 30px;
+      font-size: 1.8em;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #006064;
+      font-size: 0.95em;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #b2ebf2;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-size: 1em;
+    }
+
+    input:focus {
+      border-color: #00acc1;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+    }
+
+    button {
+      padding: 12px 25px;
+      background-color: #00bcd4;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <img src="images.png" alt="Logo">
+    <h1>🛍️ Comprar en Línea</h1>
+    <form action="">
+      <label>🙋 Nombre completo</label>
+      <input type="text" placeholder="Ej: Juan Pérez" required>
+
+      <label>📍 Dirección</label>
+      <input type="text" placeholder="Ej: Calle Falsa 123" required>
+
+      <label>📞 Teléfono</label>
+      <input type="number" placeholder="Ej: 5551234567" required>
+
+      <label>📦 Producto que desea comprar</label>
+      <input type="text" placeholder="Ej: Tenis Nike" required>
+
+      <button type="submit">🚀 Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>

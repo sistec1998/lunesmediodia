@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo </title>
+  <link rel="icon" href="images.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa; /* celeste suave */
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    marquee img {
+      animation: dropIn 1.5s ease-out;
+    }
+
+    @keyframes dropIn {
+      from {
+        transform: translateY(-200px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    details {
+      margin: 20px auto;
+      width: 80%;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+    }
+
+    summary {
+      font-size: 1.5em;
+      cursor: pointer;
+      outline: none;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+
+  <marquee behavior="slide" direction="down">
+    <img src="images.png" width="250" height="150" alt="Logo">
+  </marquee>
+
+  <h1>catalogo de productos</h1>
+  <details>
+    <summary>👟 Tenis</summary>
+    <img src="teni1.png" alt="Tenis 1">
+    <img src="teni2.png" alt="Tenis 2">
+  </details>
+
+  <details>
+    <summary>🥿 Zapatos de Vestir</summary>
+    <img src="zapato1.webp" alt="Zapato 1">
+    <img src="zapato2.jpg" alt="Zapato 2">
+  </details>
+
+  <details>
+    <summary>👶 Tenis de Niño</summary>
+    <img src="niño1.png" alt="Tenis Niño 1">
+    <img src="niño2.png" alt="Tenis Niño 2">
+  </details>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🏠 Página Principal</title>
+  <link rel="icon" href="images.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e0f7fa; /* Celeste suave */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    p {
+      font-size: 1rem;
+      color: #004d40;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      background-color: #b2ebf2;
+      margin: 5px auto;
+      padding: 10px;
+      border-radius: 8px;
+      width: 70%;
+      color: #006064;
+      transition: background-color 0.3s ease;
+    }
+
+    ul li:hover {
+      background-color: #4dd0e1;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background-color: #00acc1;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background-color: #007c91;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="images.png" alt="Logo Nike" />
+    <h1>👟 Bienvenido a Nike Shop</h1>
+
+    <p>Renueva tu estilo con la comodidad y el diseño que solo <strong>Nike</strong> puede ofrecer.  
+      Aprovecha nuestra <strong>venta especial</strong> y consigue tus zapatos favoritos con hasta un  
+      <strong>40% de descuento</strong>. Disponibles en varios modelos, colores y tallas.
+    </p>
+
+    <p>
+      ✔️ Tecnología de amortiguación Nike Air<br>
+      ✔️ Materiales transpirables y resistentes<br>
+      ✔️ Diseño moderno y ergonómico<br>
+      ✔️ Envíos a todo el país<br>
+      ✔️ Stock limitado
+    </p>
+
+    <h3>📍 Tiendas disponibles en:</h3>
+    <ul>
+      <li>Xela</li>
+      <li>Coatepeque</li>
+      <li>Mazatenango</li>
+    </ul>
+
+    <a href="catalogo.html">📦 Ver Catálogo</a>
+    <a href="formulario.html">📝 Hacer Pedido</a>
+  </div>
+
+</body>
+</html>
