@@ -1,120 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lays</title>
-    <link rel="icon" href="lays.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo</title>
+  <link rel="icon" href="logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
 
-        /* Fondo de la página */
-        h1 {
-            color: #ff6600;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            font-size: 3em;
-            margin-top: 50px;
-        }
+    header {
+      padding: 20px;
+      background-color: #00bcd4;
+      color: white;
+      animation: fadeInDown 1s ease-out;
+    }
 
-        /* Estilo de las imágenes */
-        img {
-            border-radius: 15px;
-            margin: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-        img:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
+    h1 {
+      margin-top: 10px;
+      font-size: 2.5em;
+    }
 
-        /* Detalles con transiciones */
-        details {
-            background-color: #fff;
-            border: 2px solid #ff6600;
-            border-radius: 10px;
-            margin: 20px 0;
-            padding: 10px;
-            transition: all 0.3s ease;
-        }
+    .logo {
+      width: 200px;
+      animation: floatLogo 3s ease-in-out infinite;
+    }
 
-        details:hover {
-            background-color: #ffe6cc;
-            transform: scale(1.05);
-        }
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
 
-        summary {
-            font-size: 1.5em;
-            color: #ff6600;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
+    details {
+      background: #ffffffc7;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
 
-        summary i {
-            margin-right: 10px;
-            font-size: 1.8em;
-        }
+    details:hover {
+      background-color: #e1f5fe;
+    }
 
-        summary:hover {
-            color: #e55b00;
-        }
+    summary {
+      font-size: 1.4em;
+      cursor: pointer;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-        hr {
-            width: 50%;
-            border: 1px solid #ff6600;
-        }
+    summary:hover {
+      color: #00796b;
+    }
 
-        /* Animación de entrada de contenido */
-        .content {
-            animation: fadeIn 1s ease-in-out;
-        }
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
 
-    </style>
+    .category-icon {
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="content">
-        <img src="lays.png" width="400">
-        <h1>Productos</h1> 
-        <hr>
 
-        <details>
-            <summary><i class="fas fa-corn"></i>Cheetos</summary>
-            <img src="cheetos1.jpg" width="200">
-            <img src="cheetos2.jpg" width="200">
-            <img src="cheetos3.webp" width="200">
-        </details>
+  <header>
+    <img src="logo.jpg" alt="Logo" class="logo">
+    <h1><i class="fas fa-store"></i> Catálogo de Productos</h1>
+  </header>
 
-        <details>
-            <summary><i class="fas fa-drumstick-bite"></i>Doritos</summary>
-            <img src="dorito1.png" width="200" height="200">
-            <img src="dorito2.jpg" width="200">
-            <img src="dorito3.jpg" width="200">
-        </details>
+  <section>
+    <details>
+      <summary><i class="fas fa-glass-martini-alt category-icon"></i>Bebidas</summary>
+      <img src="bebida1.png" width="200" alt="Bebida 1">
+      <img src="bebida2.png" width="200" alt="Bebida 2">
+      <img src="bebida3.png" width="200" alt="Bebida 3">
+    </details>
 
-        <details>
-            <summary><i class="fas fa-cookie-bite"></i>Papas Lays</summary>
-            <img src="lays1.jpg" width="200">
-            <img src="lays2.jpg" width="200">
-            <img src="lays3.webp" width="200">
-        </details>
-    </div>
+    <details>
+      <summary><i class="fas fa-hamburger category-icon"></i>Comida</summary>
+      <img src="comida1.webp" width="200" alt="Comida 1">
+      <img src="comida4.jpg" width="200" alt="Comida 2">
+      <img src="comida3.avif" width="200" alt="Comida 3">
+    </details>
+
+    <details>
+      <summary><i class="fas fa-ice-cream category-icon"></i>Postres</summary>
+      <img src="postre1.webp" width="200" alt="Postre 1">
+      <img src="postre2.jpg" width="200" alt="Postre 2">
+      <img src="postre3.png" width="200" alt="Postre 3">
+    </details>
+  </section>
+
 </body>
 </html>

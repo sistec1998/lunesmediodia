@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Principal</title>
+  <link rel="icon" href="logo.jpg" />
+  <!-- Fuente e iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #ffcc00, #ff9900);
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      font-size: 1.1em;
+      transition: transform 0.3s;
+    }
+
+    li:hover {
+      transform: scale(1.1);
+      color: #d10000;
+    }
+
+    a {
+      display: inline-block;
+      margin: 15px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #d10000;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      background-color: #a30000;
+      transform: scale(1.05);
+    }
+
+    .icon {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.jpg" alt="Logo de McDonald's" />
+
+  <p>
+    <i class="fas fa-hamburger icon"></i>
+    McDonald's se especializa en hamburguesas, papas fritas, nuggets de pollo, refrescos y desayunos rápidos.
+    También ofrece productos regionales adaptados a los gustos locales en distintos países. Su logotipo icónico, los 
+    "arcos dorados" en forma de "M", es uno de los símbolos comerciales más reconocidos a nivel global.
+  </p>
+
+  <ul>
+    <li><i class="fas fa-map-marker-alt icon"></i>Coatepeque</li>
+    <li><i class="fas fa-map-marker-alt icon"></i>Xela</li>
+    <li><i class="fas fa-map-marker-alt icon"></i>Ciudad de Guatemala</li>
+    <li><i class="fas fa-map-marker-alt icon"></i>Escuintla</li>
+  </ul>
+
+  <a href="pagina1.html"><i class="fas fa-list icon"></i>Categorías</a>
+  <a href="formulario.html"><i class="fas fa-edit icon"></i>Formulario</a>
+</body>
+</html>
