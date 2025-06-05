@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TOYOTA - Comprar en línea</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #ffffff, #f2f2f2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            width: 200px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            color: #d00000;
+            font-size: 2.5em;
+            margin-top: 10px;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="nombre completo"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #d00000;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #b00000;
+        }
+
+        button:last-of-type {
+            background-color: #999;
+        }
+
+        button:last-of-type:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.png" alt="Logo Toyota">
+
+    <h1>Comprar en Línea</h1>
+    <hr>
+
+    <form>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono" required>
+
+        <label for="producto">¿Qué producto desea?</label>
+        <input type="text" id="producto" name="producto" required>
+
+        <button type="submit">Enviar pedido</button>
+        <button type="reset">Cancelar</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TOYOTA</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f2f2f2, #e6e6e6);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d80000;
+            margin-top: 20px;
+        }
+
+        hr {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+
+        details {
+            margin: 20px auto;
+            width: 80%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        summary {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        details img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        details img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Animación tipo marquee solo una vez */
+        #logo-animado {
+            position: relative;
+            overflow: hidden;
+            height: 150px;
+        }
+
+        #logo-animado img {
+            animation: deslizar 1s forwards;
+        }
+
+        @keyframes deslizar {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO ANIMADO -->
+    <div id="logo-animado">
+        <img src="logo.png" alt="Logo Toyota" width="120">
+    </div>
+
+    <h1>CATÁLOGO DE PRODUCTOS</h1>
+    <hr>
+
+    <!-- CATEGORÍAS EN DETALLES -->
+    <details>
+        <summary>Sedanes</summary>
+        <img src="sedan1.png" alt="Sedan 1">
+        <img src="sedan 2.png" alt="Sedan 2">
+        <img src="sedan 3.png" alt="Sedan 3">
+    </details>
+
+    <details>
+        <summary>Pick Up</summary>
+        <img src="p1.png" alt="Pickup 1">
+        <img src="p2.png" alt="Pickup 2">
+        <img src="p3.png" alt="Pickup 3">
+    </details>
+
+    <details>
+        <summary>Camionetas</summary>
+        <img src="c1.avif" alt="Camioneta 1">
+        <img src="c2.png" alt="Camioneta 2">
+        <img src="c3.png" alt="Camioneta 3">
+    </details>
+
+</body>
+</html>
