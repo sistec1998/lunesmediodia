@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Catálogo</title>
+<link rel="icon" href="logo-de-kerns.webp" />
+<!-- Iconos desde FontAwesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<style>
+  /* Color morado pastel y tipografía */
+  body {
+    background-color: #e6d7f3; /* morado pastel */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4b2c6f;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.6s ease;
+  }
+
+  center {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f5fc;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(75,44,111,0.2);
+  }
+
+  img {
+    width: 200px;
+    border-radius: 12px;
+    animation: fadeInDown 1s ease forwards;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    animation: fadeIn 2s ease forwards;
+    margin-top: 15px;
+  }
+
+  /* Lista con iconos y animación */
+  ol {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 25px;
+    animation: slideInLeft 1s ease forwards;
+  }
+
+  ol li {
+    background: #d8c7f8;
+    margin-bottom: 12px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #3a1e63;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 6px rgba(75,44,111,0.15);
+    transition: background-color 0.3s ease;
+  }
+
+  ol li:hover {
+    background-color: #c4aff3;
+    cursor: pointer;
+  }
+
+  /* Icono de hoja para cada item */
+  ol li::before {
+    content: "\f06c"; /* fa-leaf */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #6e52a8;
+  }
+
+  /* Enlaces estilo botón con transición y sombra */
+  a {
+    display: inline-block;
+    margin: 15px 10px 0 10px;
+    padding: 10px 25px;
+    background-color: #a183e0;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(161,131,224,0.5);
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  a:hover {
+    background-color: #8469d4;
+    box-shadow: 0 6px 15px rgba(132,105,212,0.7);
+  }
+
+  /* Animaciones clave */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>
+</head>
+<body>
+  <center>
+    <img src="logo-de-kerns.webp" alt="Logo Kern’s" />
+
+    <p>
+      Industrias Alimenticias Kern’s y Cía. S.C.A. (IAK) es una empresa
+      guatemalteca con más de 60 años de trayectoria, especializada en la
+      producción de alimentos procesados y bebidas no carbonatadas. Su
+      portafolio incluye marcas reconocidas como Kern’s, Ducal, Sun Tea y Fun
+      C, que abarcan categorías como jugos, néctares, salsas de tomate, frijoles
+      y té frío.
+    </p>
+
+    <ol>
+      <li>Flores c.c</li>
+      <li>Sequivilla</li>
+      <li>Aldea Granados</li>
+      <li>Guatemala</li>
+      <li>El quetzal</li>
+    </ol>
+
+    <a href="#">Categoría</a>
+    <a href="#">Formulario</a>
+  </center>
+</body>
+</html>

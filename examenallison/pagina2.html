@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo</title>
+    <link rel="icon" href="logo-de-kerns.webp">
+    
+    <!-- Fuente e iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #e6ccff; /* morado pastel */
+            font-family: 'Roboto', sans-serif;
+            color: #4b0082;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        img {
+            width: 150px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            margin-top: 10px;
+            font-weight: 500;
+            animation: slideDown 1s ease;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+
+        input {
+            width: 80%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #a366ff;
+            box-shadow: 0 0 5px #a366ff;
+        }
+
+        button {
+            margin: 20px 10px 0 10px;
+            padding: 10px 20px;
+            background-color: #d1b3ff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #b380ff;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo-de-kerns.webp" alt="Logo de Kerns">
+        <h1>Compra en línea</h1>
+        <form>
+            <label>Nombre completo</label>
+            <input type="text" name="nombre">
+
+            <label>Dirección</label>
+            <input type="text" name="direccion">
+
+            <label>Teléfono</label>
+            <input type="text" name="telefono">
+
+            <label>Producto que desea comprar</label>
+            <input type="text" name="producto">
+
+            <br>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+            <button type="reset"><i class="fas fa-times-circle"></i> Cancelar</button>
+        </form>
+    </div>
+</body>
+</html>
