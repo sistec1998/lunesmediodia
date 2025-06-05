@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herrería</title>
+  <link rel="icon" href="logotipo.png">
+
+  <!-- Fuente e íconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      padding: 30px 40px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      animation: slideIn 1s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container img {
+      width: 120px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .container img:hover {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #444;
+      text-align: left;
+    }
+
+    input {
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #3f51b5;
+    }
+
+    button {
+      background-color: #3f51b5;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #303f9f;
+      transform: scale(1.05);
+    }
+
+    i {
+      color: #3f51b5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logotipo.png" alt="Logotipo">
+    <h1><i class="fas fa-shopping-cart"></i> Compra en Línea</h1>
+    <form>
+      <label><i class="fas fa-user"></i> Nombre completo</label>
+      <input type="text" placeholder="Escribe tu nombre">
+      
+      <label><i class="fas fa-map-marker-alt"></i> Dirección</label>
+      <input type="text" placeholder="Tu dirección">
+      
+      <label><i class="fas fa-phone-alt"></i> Teléfono</label>
+      <input type="text" placeholder="Tu número">
+      
+      <label><i class="fas fa-tools"></i> ¿Qué desea comprar?</label>
+      <input type="text" placeholder="Ej: portón, reja, etc.">
+      
+      <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
