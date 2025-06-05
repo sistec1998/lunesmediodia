@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallo - Cervecería Centro Americana</title>
+    <!-- Link de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Colores de fondo y texto en menta */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Color menta suave */
+            color: #00796b; /* Verde más oscuro */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo general para el contenido */
+        center {
+            margin-top: 50px;
+        }
+
+        p {
+            max-width: 600px;
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 18px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #004d40; /* Verde oscuro */
+            padding: 10px;
+            margin-top: 20px;
+            display: inline-block;
+            border: 2px solid #004d40;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out; /* Transición suave */
+        }
+
+        /* Efecto cuando el cursor pasa sobre los enlaces */
+        a:hover {
+            background-color: #004d40; /* Fondo verde oscuro */
+            color: white;
+            transform: scale(1.1); /* Animación de escala */
+        }
+
+        /* Efectos de iconos */
+        .icono {
+            margin-right: 8px;
+        }
+
+        /* Animación para el texto de bienvenida */
+        p {
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <p>La empresa de Gallo, Cervecería Centro Americana,
+        S.A., es una compañía guatemalteca que produce y 
+        comercializa la cerveza Gallo, una de las marcas más
+        reconocidas y populares en Centroamérica. Es conocida 
+        por su tradición, calidad y compromiso con el país.</p>
+
+        <!-- Agregar iconos a los enlaces -->
+        <a href="pagina1.html">
+            <i class="fas fa-home icono"></i> Página Principal
+        </a>
+        <br>
+        <a href="formulario.html">
+            <i class="fas fa-file-alt icono"></i> Formulario
+        </a>
+    </center>
+</body>
+</html>

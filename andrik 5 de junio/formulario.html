@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallo</title>
+  <link rel="icon" href="logo.avif" type="image/avif">
+  <style>
+    body {
+      background-color: #e0f7fa; /* celeste */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: fadeIn 1.5s ease;
+    }
+
+    form {
+      background-color: #ffffffcc;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      transition: all 0.5s ease;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #0277bd;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #b3e5fc;
+      border-radius: 5px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #0288d1;
+      box-shadow: 0 0 8px rgba(2, 136, 209, 0.4);
+      outline: none;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0288d1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #0277bd;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <label>Nombre completo</label>
+    <input type="text" placeholder="Ingresa tu nombre">
+
+    <label>Cliente</label>
+    <input type="text" placeholder="Tipo de cliente">
+
+    <label>Dirección</label>
+    <input type="text" placeholder="Dirección completa">
+
+    <label>Teléfono</label>
+    <input type="text" placeholder="Número de contacto">
+
+    <label>Producto</label>
+    <input type="text" placeholder="Nombre del producto">
+
+    <button type="submit">Buscar</button>
+  </form>
+
+</body>
+</html>

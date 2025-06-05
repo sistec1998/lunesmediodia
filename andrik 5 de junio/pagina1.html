@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa de Gallo</title>
+  <link rel="icon" href="logo.avif" type="image/avif">
+  <style>
+    body {
+      background-color: #e0f7fa; /* celeste claro */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #0277bd;
+      margin-top: 20px;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    details {
+      margin: 20px auto;
+      width: 80%;
+      background-color: #ffffffcc;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s ease;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #01579b;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    marquee {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <marquee behavior="slide" direction="down">
+    <img src="logo.avif" width="300" alt="Logo de la empresa">
+  </marquee>
+
+  <h1>Catálogo de Productos</h1>
+
+  <details>
+    <summary>Gallos</summary>
+    <img src="gollo1.png" width="300" alt="Gallo 1">
+    <img src="tecate.png" width="300" alt="Gallo 2">
+  </details>
+
+  <details>
+    <summary>Playera</summary>
+    <img src="gallo1.png" width="300" alt="Playera 1">
+    <img src="gallo2.png" width="300" alt="Playera 2">
+  </details>
+
+  <details>
+    <summary>Gorra</summary>
+    <img src="gorra1.jpg" width="300" alt="Gorra 1">
+    <img src="gorra2.png" width="300" alt="Gorra 2">
+  </details>
+
+</body>
+</html>
