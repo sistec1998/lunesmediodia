@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarita - Compras en Línea</title>
+    <link rel="icon" href="sarita logo.png">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #FAD0C1; /* Rosa pastel */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #FF6F91;
+            margin-top: 20px;
+            animation: bounce 1s ease infinite;
+        }
+
+        hr {
+            width: 80%;
+            border: 2px solid #FF6F91;
+            margin: 20px auto;
+            opacity: 0.5;
+        }
+
+        form {
+            background-color: #FFF0F5;
+            border-radius: 15px;
+            padding: 20px;
+            width: 60%;
+            margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-top: 15px;
+            color: #FF6F91;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-top: 8px;
+            border-radius: 10px;
+            border: 2px solid #FF6F91;
+            font-size: 1em;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            transform: scale(1.02);
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+        }
+
+        button {
+            background-color: #FF6F91;
+            color: #fff;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #FF4B6A;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        .icono {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(-20px); opacity: 0; }
+            50% { transform: translateY(10px); opacity: 0.7; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="sarita logo.png" width="200" alt="Logo de Sarita">
+    <h1><i class="fa-solid fa-ice-cream icono"></i> Compras en Línea</h1>
+    <hr>
+
+    <form>
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" placeholder="Tu nombre"><br>
+
+        <label for="direccion">Dirección</label><br>
+        <input type="text" id="direccion" placeholder="Tu dirección"><br>
+
+        <label for="telefono">Teléfono</label><br>
+        <input type="text" id="telefono" placeholder="Tu teléfono"><br>
+
+        <label for="producto">¿Qué deseas comprar?</label><br>
+        <input type="text" id="producto" placeholder="Ej. Cono de helado, bebida..."><br>
+
+        <button type="submit"><i class="fa-solid fa-paper-plane icono"></i>Enviar</button>
+        <button type="reset"><i class="fa-solid fa-ban icono"></i>Cancelar</button>
+    </form>
+
+</body>
+</html>

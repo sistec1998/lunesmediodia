@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarita Heladería</title>
+    <link rel="icon" href="sarita logo.png">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(to bottom right, #ffe6f0, #ccf2ff);
+            color: #333;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ff66b2;
+            margin-top: 10px;
+            animation: bounce 1.5s ease;
+        }
+
+        h2 {
+            color: #66ccff;
+            margin-top: 30px;
+        }
+
+        details {
+            margin: 10px auto;
+            width: 80%;
+            background: #fff0f5;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(255, 153, 204, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        details:hover {
+            transform: scale(1.02);
+        }
+
+        summary {
+            font-size: 1.2em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        marquee img {
+            margin-top: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(-20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .icono {
+            font-size: 1.2em;
+            color: #ff66b2;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<marquee><img src="sarita logo.png" width="200" alt="Logo de Sarita"></marquee>
+
+<h1><i class="fa-solid fa-ice-cream icono"></i>Catálogo de Productos</h1>
+
+<h2><i class="fa-solid fa-cone icono"></i>Conos de Helado</h2>
+<details>
+    <summary><i class="fa-solid fa-circle-info icono"></i>Detalles</summary>
+    <img src="imagen1.png" width="200" alt="Helado 1">
+    <img src="imagen2.png" width="200" alt="Helado 2">
+</details>
+
+<h2><i class="fa-solid fa-mug-saucer icono"></i>Bebidas</h2>
+<details>
+    <summary><i class="fa-solid fa-circle-info icono"></i>Detalles</summary>
+    <img src="bebida1.png" width="200" alt="Bebida 1">
+    <img src="bebida2.png" width="200" alt="Bebida 2">
+</details>
+
+<h2><i class="fa-solid fa-popsicle icono"></i>Paletas</h2>
+<details>
+    <summary><i class="fa-solid fa-circle-info icono"></i>Detalles</summary>
+    <img src="paleta1.png" width="200" alt="Paleta 1">
+    <img src="pateta2.png" width="200" alt="Paleta 2">
+</details>
+
+</body>
+</html>

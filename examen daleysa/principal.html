@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarita</title>
+    <link rel="icon" href="sarita logo.png">
+    
+    <!-- Font Awesome para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #f7f7f7;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Centro de contenido */
+        center {
+            display: block;
+            margin-top: 30px;
+        }
+
+        /* Título y párrafo */
+        h1 {
+            color: #ff6b81; /* Rosa pastel */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Estilos para las imágenes */
+        img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Detalles */
+        details {
+            margin-top: 20px;
+            background-color: #fffbf0;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        details:hover {
+            background-color: #ffebf5;
+        }
+
+        summary {
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            text-decoration: none;
+            color: #ff6b81;
+            margin: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff4d6a;
+            transform: scale(1.1);
+        }
+
+        /* Estilo para los iconos */
+        .icon {
+            margin-right: 8px;
+        }
+
+        /* Animación de carga */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1 class="fade-in">Sarita</h1>
+        <img class="fade-in" src="sarita logo.png" width="200" alt="Logo Sarita">
+        <p class="fade-in">Sarita S.A. es una empresa mexicana con más de 20 años de experiencia en la fabricación de alimentos tradicionales de alta calidad.
+            Nos especializamos en ofrecer productos como galletas, papas fritas y dulces típicos de la región, utilizando ingredientes frescos y naturales. Nuestro compromiso con la calidad,
+            la innovación y el respeto por las tradiciones locales nos ha permitido ganarnos la confianza de miles de consumidores en todo el país.</p>
+        
+        <details class="fade-in">
+            <summary><i class="fas fa-map-marker-alt icon"></i> Sucursales</summary>
+            <img src="sucursal1.png" width="200" alt="Sucursal 1">
+            <img src="sucursal2.webp" width="200" alt="Sucursal 2">
+            <img src="sucursal3.jpg" width="200" alt="Sucursal 3">
+        </details>
+        
+        <div>
+            <a href="catalogo.html"><i class="fas fa-list icon"></i> Categorías</a>
+            <a href="formulario.html"><i class="fas fa-envelope icon"></i> Formulario</a>
+        </div>
+    </center>
+</body>
+</html>
