@@ -1,184 +1,146 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Electrónica Panamericana</title>
-  <link rel="icon" href="pana.png">
+  <title>La Gallo</title>
+  <link rel="icon" href="gallo.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
       color: #333;
       text-align: center;
-    }
-
-    header img {
-      width: 300px;
-      margin-top: 20px;
-      transition: transform 0.3s;
-    }
-
-    header img:hover {
-      transform: scale(1.05);
-    }
-
-    nav {
-      margin: 20px 0;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #00796b;
-      font-weight: bold;
-      font-size: 18px;
-      transition: color 0.3s, transform 0.3s;
-    }
-
-    nav a:hover {
-      color: #004d40;
-      transform: scale(1.1);
-    }
-
-    form {
-      margin: 30px auto;
-      padding: 10px;
-    }
-
-    input[type="text"] {
-      padding: 10px;
-      width: 250px;
-      border: 2px solid #009688;
-      border-radius: 5px;
-    }
-
-    button {
-      padding: 10px 15px;
-      background-color: #009688;
-      border: none;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    button:hover {
-      background-color: #00796b;
+      animation: fadeIn 2s ease-in;
     }
 
     h1 {
-      color: #004d40;
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: #00695c;
-      margin-top: 40px;
-    }
-
-    img {
-      width: 300px;
-      margin: 10px;
-      border-radius: 10px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      color: #d91e18;
+      text-shadow: 2px 2px #fff;
+      margin-top: 20px;
+      font-size: 3em;
+      animation: slideDown 1s ease-out;
     }
 
     details {
       margin: 20px auto;
       width: 80%;
-      text-align: left;
-      padding: 10px;
-      background-color: #f1f1f1;
+      background-color: #ffffffd9;
       border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    details:hover {
+      transform: scale(1.02);
     }
 
     summary {
+      font-size: 1.5em;
       cursor: pointer;
-      font-size: 20px;
-      font-weight: bold;
-      color: #00796b;
+      color: #2c3e50;
+      transition: color 0.3s ease;
+    }
+
+    summary:hover {
+      color: #d91e18;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .top-animation img {
+      animation: dropIn 1s ease-out forwards;
     }
 
     hr {
       border: none;
-      border-top: 2px solid #009688;
-      margin: 20px auto;
+      height: 3px;
+      background: linear-gradient(to right, #d91e18, #c0392b);
+      margin: 30px auto;
       width: 80%;
+    }
+
+    @keyframes dropIn {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    footer {
+      margin-top: 50px;
+      color: #555;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
+  <div class="top-animation">
+    <img src="gallo.jpg" width="200" alt="Logo Gallo">
+  </div>
 
-  <header>
-    <img src="logo.png" alt="Logo">
-  </header>
-
-  <nav>
-    <a href="pagina2.html"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
-    <a href="pagina3.html"><i class="fa-solid fa-store"></i> Tienda</a>
-    <a href="pagina4.html"><i class="fa-solid fa-bars"></i> Menú</a>
-  </nav>
-
-  <h1>Un mundo para elegir</h1>
   <hr>
+  <h1><i class="fas fa-store"></i> Catálogo de Productos</h1>
 
-  <form>
-    <label for="buscar"><i class="fa-solid fa-magnifying-glass"></i> ¿Qué buscas?</label><br><br>
-    <input type="text" id="buscar">
-    <button type="submit"><i class="fa-solid fa-search"></i> Buscar</button>
-  </form>
-
-  <h2>Computadoras</h2>
-  <img src="compu1.jpg" alt="Computadora 1">
-  <img src="compu2.avif" alt="Computadora 2">
-  <img src="compu3.webp" alt="Computadora 3">
-
-  <h2>Bocinas</h2>
-  <img src="bosina1.png" alt="Bocina 1">
-  <img src="bosina2.webp" alt="Bocina 2">
-  <img src="bosina3.webp" alt="Bocina 3">
-
-  <h2>Instrumentos Musicales</h2>
-  <img src="tropeta3.jpg" alt="Trompeta">
-  <img src="bateria2.webp" alt="Batería">
-  <img src="gitarar1.png" alt="Guitarra">
-
-  <h2>Drones</h2>
-  <img src="dron.png" alt="Dron 1">
-  <img src="dron 2.png" alt="Dron 2">
-  <img src="dron3.png" alt="Dron 3">
-
-  <h2>Para el Hogar</h2>
   <details>
-    <summary><i class="fa-solid fa-snowflake"></i> Refrigeradores</summary>
-    <img src="refrigerador1.webp" alt="Refrigerador 1">
-    <img src="refrigerador2.png" alt="Refrigerador 2">
-    <img src="refrigersdor3.avif" alt="Refrigerador 3">
+    <summary><i class="fas fa-drumstick-bite"></i> Gallo</summary>
+    <img src="gallo.png" width="300" alt="Producto Gallo 1">
+    <img src="gallo 24.png" width="300" alt="Producto Gallo 2">
+    <img src="gallo 502.png" width="300" alt="Producto Gallo 3">
   </details>
 
   <details>
-    <summary><i class="fa-solid fa-tv"></i> Televisores</summary>
-    <img src="tv1.jpg" alt="TV 1">
-    <img src="tv2.png" alt="TV 2">
-    <img src="tv3.png" alt="TV 3">
+    <summary><i class="fas fa-tshirt"></i> Modelo</summary>
+    <img src="camisa gallo.webp" width="300" alt="Camisa 1">
+    <img src="camisa2.webp" width="300" alt="Camisa 2">
+    <img src="camisa3.webp" width="300" alt="Camisa 3">
   </details>
 
   <details>
-    <summary><i class="fa-solid fa-soap"></i> Lavadoras</summary>
-    <img src="laba1.webp" alt="Lavadora 1">
-    <img src="lava12.webp" alt="Lavadora 2">
-    <img src="lava3.jpg" alt="Lavadora 3">
+    <summary><i class="fas fa-hat-cowboy"></i> Gorra</summary>
+    <img src="gorra.jpg" width="300" alt="Gorra 1">
+    <img src="gorra2.jpg" width="200" alt="Gorra 2">
+    <img src="gorra3.jpg" width="300" alt="Gorra 3">
   </details>
 
+  <footer>
+    <p>&copy; 2025 La Gallo - Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>

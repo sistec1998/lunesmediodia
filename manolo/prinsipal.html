@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallo</title>
+    <link rel="icon" href="gallo.jpg">
+
+    <!-- Íconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #f7f1e3, #e4dcdc);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .container {
+            background-color: #ffffffcc;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.03);
+        }
+
+        h1 {
+            color: #c62828;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            margin: 15px;
+            padding: 12px 20px;
+            background-color: #c62828;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #b71c1c;
+            transform: translateY(-3px);
+        }
+
+        i {
+            margin-right: 8px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-beer"></i> Cerveza Gallo</h1>
+        <p>
+            Para orgullo de los guatemaltecos, cerveza Gallo ha obtenido hasta el momento más de 30 medallas 
+            de calidad, 1 gran medalla de oro, 6 trofeos a la Alta Calidad y 1 Prestige Award, este último por
+            haber obtenido la Medalla de Oro de Monde Selection por 10 años consecutivos, lo que convierte
+            a Cerveza Gallo en la única...
+        </p>
+        <a href="pagina1.html"><i class="fas fa-info-circle"></i> Más información</a>
+        <a href="formulario.html"><i class="fas fa-pen"></i> Formulario</a>
+    </div>
+</body>
+</html>
+
