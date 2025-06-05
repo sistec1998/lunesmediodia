@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="icon" href="yamaha logo.png">
+
+    <!-- Google Fonts + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        img {
+            width: 300px;
+            margin-top: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 20px;
+            line-height: 1.8;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        p strong {
+            color: #ffc107;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        ul li::before {
+            content: "\f3c5";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 10px;
+            color: #00d4ff;
+        }
+
+        a {
+            display: inline-block;
+            margin: 20px 15px;
+            padding: 12px 25px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #ff4081;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        a:hover {
+            background-color: #ff005c;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="yamaha logo.png" alt="Logo Yamaha">
+
+    <p>
+        <strong>[Yamaha]</strong> es una compañía apasionada por la libertad, la innovación y la potencia sobre dos ruedas. Nos especializamos en la 
+        <strong>comercialización, personalización y mantenimiento de motocicletas</strong> de alto rendimiento, combinando tecnología de vanguardia 
+        con un servicio al cliente excepcional.
+        <br><br>
+        Desde nuestros inicios, nos hemos comprometido a ofrecer una experiencia única para los amantes del motociclismo. Ya sea 
+        que busques una moto deportiva, una cruiser de estilo clásico, una naked urbana o una touring para largas rutas, en 
+        <strong>[Nombre de la Empresa]</strong> encontrarás calidad, asesoría experta y las mejores marcas del mercado.
+        <br><br>
+        Además, contamos con un equipo de mecánicos certificados y un taller equipado con tecnología de última generación, 
+        garantizando un servicio confiable y eficiente para cada motocicleta.
+        <br><br>
+        <strong>Nuestra misión</strong> es impulsar la pasión por las motos y brindar a cada cliente una experiencia personalizada, 
+        segura y emocionante.
+        <br><br>
+        <strong>Nuestra visión</strong> es ser líderes en el sector de motocicletas, destacándonos por la calidad, el compromiso y la 
+        innovación constante.
+    </p>
+
+    <ul>
+        <li>Villa Nueva</li>
+        <li>Ciudad de Guatemala</li>
+        <li>Escuintla</li>
+    </ul>
+
+    <a href="catalogo.html"><i class="fas fa-motorcycle"></i> Ver Catálogo</a>
+    <a href="formulario.html"><i class="fas fa-envelope"></i> Contáctanos</a>
+
+</body>
+</html>

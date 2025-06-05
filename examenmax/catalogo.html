@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="icon" href="yamaha logo.png">
+
+    <!-- Fuente e íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1e1e2f, #3a3a5f);
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        marquee img {
+            animation: pulse 2s infinite;
+            margin: 20px 0;
+        }
+
+        details {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        details:hover {
+            transform: scale(1.02);
+        }
+
+        summary {
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #ffc107;
+            transition: color 0.3s ease;
+        }
+
+        summary:hover {
+            color: #fff;
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Icon style */
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <marquee>
+        <img src="yamaha logo.png" width="300" alt="Yamaha Logo">
+    </marquee>
+
+    <h1><i class="fas fa-motorcycle icon"></i>Catálogo de Productos</h1>
+
+    <details>
+        <summary><i class="fas fa-bolt icon"></i>Estilo Naked</summary>
+        <img src="YAMAHA MT-09.webp" width="300" alt="MT-09">
+        <img src="fz25.png" width="300" alt="FZ">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-road icon"></i>Estilo Chopper</summary>
+        <img src="choper1.png" width="300" alt="Stryker">
+        <img src="chopper2.png" width="400" alt="Chopper">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-flag-checkered icon"></i>Estilo Deportivo</summary>
+        <img src="r1.png" width="300" alt="R1M">
+        <img src="Yamaha r6.png" width="400" alt="R6">
+    </details>
+
+</body>
+</html>
