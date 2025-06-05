@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="icon" href="el gran gallo.jpg">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #f0f8ff, #d1e7dd);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-top: 20px;
+            animation: bounce 2s infinite alternate;
+        }
+
+        summary {
+            font-size: 20px;
+            font-weight: bold;
+            color: #14532d;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+
+        details {
+            margin-bottom: 20px;
+            background-color: #e0f7fa;
+            border-radius: 10px;
+            padding: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1) rotate(2deg);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        /* Animación para imagen de encabezado */
+        .logo {
+            width: 150px;
+            animation: slideIn 10s linear infinite;
+        }
+
+        /* Keyframes */
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="el gran gallo.jpg" alt="Logo" class="logo">
+
+    <h1>Catálogo de Productos</h1>
+
+    <details>
+        <summary>🛒 Categoría 1</summary>
+        <img src="frijol.jpg" width="200">
+        <img src="salsa.jpg" width="200">
+        <img src="cerbeza.jpg" width="200">
+    </details>
+
+    <details>
+        <summary>☕ Categoría 2</summary>
+        <img src="cafe.jpg" width="200">
+        <img src="consome.jpg" width="200">
+        <img src="dulce.jpg" width="200">
+    </details>
+
+    <details>
+        <summary>🥤 Categoría 3</summary>
+        <img src="aguas 1.png" width="200">
+        <img src="aguas 2.jpg" width="200">
+        <img src="agus 3.png" width="200">
+    </details>
+
+</body>
+</html>

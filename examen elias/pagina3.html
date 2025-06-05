@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal - El Gran Gallo</title>
+    <link rel="icon" href="el gran gallo.jpg">
+    <style>
+        body {
+            background: linear-gradient(to right, #ffe0b2, #ffcc80);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #4e4e4e;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #d32f2f;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            animation: fadeIn 3s ease-in-out;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            width: 80%;
+            margin: 20px auto;
+            text-align: justify;
+            animation: fadeInUp 2s ease-in-out;
+            color: #616161;
+        }
+
+        img {
+            width: 200px;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1) rotate(3deg);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 30px;
+            animation: slideInUp 2s ease-in-out;
+        }
+
+        ul li {
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #ffab91;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        ul li:hover {
+            background-color: #ff7043;
+            transform: translateY(-5px);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenidos a El Gran Gallo</h1>
+
+    <img src="el gran gallo.jpg" alt="El Gran Gallo">
+    
+    <p>El Gran Gallo es una empresa dedicada a ofrecer productos alimenticios de alta calidad, con un enfoque en la tradición y la frescura. Fundada con el objetivo de llevar a los hogares y negocios los mejores ingredientes, nuestra compañía se especializa en la venta de productos frescos, como frijoles, salsa, café, consomé, aguas naturales y productos gourmet.</p>
+
+    <ul>
+        <li>Coatepeque</li>
+        <li>La Esperanza</li>
+        <li>Reu</li>
+    </ul>
+
+    <div>
+        <a href="Untitled-1.html">Pagina 1</a> |
+        <a href="pagina2.html">Pagina 2</a> |
+        <a href="pagina3.html">Pagina 3</a>
+    </div>
+</body>
+</html>
