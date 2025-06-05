@@ -2,141 +2,133 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Formulario</title>
-  <link rel="icon" href="logotipo.avif">
+  <title>CATÁLOGO</title>
+  <link rel="icon" href="logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #f0f8ff;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(to right, #bdf5df, #ffffff);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
-    img {
-      width: 150px;
-      animation: slideDown 2s ease-out;
+    .form-box {
+      background: #ffffffcc;
+      border-radius: 15px;
+      padding: 40px;
+      width: 350px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8px);
+      text-align: center;
+      animation: slideUp 1s ease;
+    }
+
+    .form-box img {
+      width: 100px;
       margin-bottom: 10px;
     }
 
-    @keyframes slideDown {
-      from {
-        transform: translateY(-100px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+    .form-box h1 {
+      font-size: 26px;
+      color: #008c7a;
+      margin-bottom: 20px;
+      animation: typing 3s steps(20, end), blink 0.75s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #008c7a;
+      width: 0;
     }
 
-    h1 {
-      color: #003366;
-      text-transform: uppercase;
-      margin-bottom: 30px;
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
     }
 
-    form {
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      width: 90%;
-      max-width: 400px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      animation: fadeIn 1.5s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
+    @keyframes blink {
+      50% { border-color: transparent }
     }
 
     label {
       font-weight: bold;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      display: block;
+      margin: 15px 0 5px;
       color: #333;
     }
 
     input {
+      width: 90%;
       padding: 10px;
-      border: 2px solid #ccc;
+      margin-bottom: 10px;
       border-radius: 8px;
-      transition: border-color 0.3s;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: all 0.3s;
     }
 
     input:focus {
-      border-color: #0077cc;
-      outline: none;
+      border-color: #00c2a8;
+      box-shadow: 0 0 8px #00c2a8aa;
     }
 
     button {
-      background-color: #0077cc;
-      color: white;
-      padding: 12px;
+      padding: 10px 20px;
+      margin: 10px 5px;
       border: none;
       border-radius: 8px;
+      background-color: #00bfa5;
+      color: white;
+      font-weight: bold;
       cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s, transform 0.3s;
+      transition: background 0.3s, transform 0.2s;
     }
 
     button:hover {
-      background-color: #005fa3;
+      background-color: #007e6e;
       transform: scale(1.05);
     }
 
-    #mensaje {
-      margin-top: 20px;
-      color: green;
-      font-weight: bold;
-      display: none;
+    .icon {
+      margin-right: 8px;
+      color: #00bfa5;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
+  <div class="form-box">
+    <img src="logo de sheinn.png" alt="Logo">
+    <summary>COMPRA EN LINEA</summary>
 
-  <img src="logotipo.avif" alt="Logotipo">
+    <label><i class="fas fa-user icon"></i>Nombre completo</label>
+    <input type="text" placeholder="Ingresa tu nombre">
 
-  <h1>🛒 Comprar en línea</h1>
+    <label><i class="fas fa-map-marker-alt icon"></i>Dirección</label>
+    <input type="text" placeholder="Dirección de envío">
 
-  <form id="formulario">
-    <label>👤 Nombre completo</label>
-    <input type="text" required>
+    <label><i class="fas fa-phone icon"></i>Teléfono</label>
+    <input type="text" placeholder="Número de contacto">
 
-    <label>🏠 Dirección</label>
-    <input type="text" required>
+    <label><i class="fas fa-box icon"></i>Producto que deseas</label>
+    <input type="text" placeholder="Ej. Blusa, pantalón...">
 
-    <label>📞 Número de teléfono</label>
-    <input type="number" required>
-
-    <label>📦 Producto</label>
-    <input type="text" required>
-
-    <button type="submit">Enviar</button>
-  </form>
-
-  <div id="mensaje">✅ Enviado exitosamente</div>
-
-  <script>
-    // Mostrar mensaje al enviar
-    document.getElementById('formulario').addEventListener('submit', function(e) {
-      e.preventDefault(); // Previene recargar la página
-      document.getElementById('mensaje').style.display = 'block';
-    });
-  </script>
-
+    <button><i class="fas fa-paper-plane"></i> Enviar</button>
+    <button><i class="fas fa-times"></i> Cancelar</button>
+  </div>
 </body>
 </html>

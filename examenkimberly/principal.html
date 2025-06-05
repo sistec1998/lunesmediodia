@@ -1,112 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Principal | DormiFácil</title>
-    <link rel="icon" href="logotipo.avif">
-    
-    <!-- Fuente e íconos -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>CATÁLOGO</title>
+  <link rel="icon" href="logo.jpg">
+  <!-- Íconos e ilustraciones (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #d0f0f8; /* celeste pastel */
+      overflow-x: hidden;
+      animation: fadeIn 2s ease-in;
+    }
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #dbe6f6, #c5796d);
-            color: #333;
-            text-align: center;
-            animation: fadeIn 1.5s ease-in-out;
-        }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    center {
+      padding: 40px;
+    }
 
-        img {
-            margin-top: 30px;
-            width: 250px;
-            transition: transform 0.3s ease;
-        }
+    img {
+      transition: transform 0.5s ease;
+    }
 
-        img:hover {
-            transform: scale(1.1);
-        }
+    img:hover {
+      transform: scale(1.05);
+    }
 
-        p {
-            max-width: 700px;
-            margin: 20px auto;
-            font-size: 1.1em;
-            line-height: 1.6;
-            background: rgba(255,255,255,0.8);
-            padding: 20px;
-            border-radius: 10px;
-        }
+    p {
+      max-width: 600px;
+      font-size: 18px;
+      line-height: 1.5;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #fff6f8;
+    }
 
-        h2 {
-            color: #4b2c20;
-            margin-top: 40px;
-            font-size: 1.8em;
-            text-transform: uppercase;
-        }
+    ol {
+      list-style-type: none;
+      padding: 0;
+    }
 
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 20px auto;
-        }
+    ol ul {
+      font-weight: bold;
+      margin: 8px 0;
+      font-size: 18px;
+      color: #333;
+      transition: color 0.3s;
+    }
 
-        ul li {
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
+    ol ul:hover {
+      color: #f06292;
+    }
 
-        a {
-            display: inline-block;
-            margin: 20px 10px;
-            padding: 12px 24px;
-            background-color: #4b2c20;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
+    a {
+      display: inline-block;
+      margin: 15px;
+      padding: 10px 20px;
+      background: #f06292;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background 0.3s, transform 0.3s;
+    }
 
-        a:hover {
-            background-color: #633d2e;
-            transform: scale(1.05);
-        }
+    a:hover {
+      background: #ec407a;
+      transform: scale(1.1);
+    }
 
-        a i {
-            margin-right: 8px;
-        }
-    </style>
+    /* Lluvia de rositas */
+    .rositas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .rosita {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-image: url('rosita.png'); /* Usa una imagen PNG pequeña de una rosa */
+      background-size: cover;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <img src="logotipo.avif" alt="Logotipo DormiFácil">
+  <!-- Lluvia de rositas -->
+  <div class="rositas" id="rositas"></div>
 
+  <center>
+    <img src="logo de sheinn.png" width="300" alt="Logo Shein">
     <p>
-        DormiFácil es una empresa especializada en la venta de 
-        camas y soluciones para el descanso, comprometida con mejorar 
-        la calidad de vida de sus clientes a través de productos cómodos, 
-        duraderos y adaptados a cada necesidad. Con más de 10 años en el
-        mercado, ofrecemos una amplia gama de camas individuales, matrimoniales, 
-        queen y king size, así como bases, colchones ortopédicos,
-        camas ajustables y accesorios para el dormitorio.
+      <i class="fas fa-store"></i> Shein es un minorista global en línea de moda y estilo de vida,
+      con un modelo de negocio que se basa en la respuesta a la demanda del consumidor y la innovación tecnológica.
+      Se ha convertido en una marca popular por sus precios asequibles y su amplia gama de productos,
+      que van desde ropa hasta artículos para el hogar y productos de belleza. La empresa también se destaca
+      por su eficiente cadena de suministro y su enfoque en el marketing digital.
     </p>
+    
+    <ol>
+      <ul><i class="fas fa-map-marker-alt"></i> COATEPEQUE</ul>
+      <ul><i class="fas fa-map-marker-alt"></i> FLORES C.C</ul>
+      <ul><i class="fas fa-map-marker-alt"></i> XELA</ul>
+      <ul><i class="fas fa-map-marker-alt"></i> REHU</ul>
+      <ul><i class="fas fa-map-marker-alt"></i> ESTADOS UNIDOS</ul>
+    </ol>
+    
+    <a href="catalogo.html"><i class="fas fa-tags"></i> CATEGORÍAS</a>
+    <a href="formulario.html"><i class="fas fa-file-alt"></i> FORMULARIO</a>
+  </center>
 
-    <h2><i class="fas fa-map-marker-alt"></i> Sucursales</h2>
-    <ul>
-        <li><i class="fas fa-store"></i> Coatepeque</li>
-        <li><i class="fas fa-store"></i> Xela</li>
-        <li><i class="fas fa-store"></i> Izabal</li>
-    </ul>
-
-    <a href="catalogo.html"><i class="fas fa-book-open"></i> Catálogo</a>
-    <a href="formulario.html"><i class="fas fa-pen-to-square"></i> Formulario</a>
+  <!-- Script para generar lluvia de rositas -->
+  <script>
+    const container = document.getElementById('rositas');
+    for (let i = 0; i < 30; i++) {
+      const rosita = document.createElement('div');
+      rosita.className = 'rosita';
+      rosita.style.left = Math.random() * 100 + 'vw';
+      rosita.style.animationDuration = (3 + Math.random() * 5) + 's';
+      container.appendChild(rosita);
+    }
+  </script>
 
 </body>
 </html>

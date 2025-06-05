@@ -2,90 +2,112 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Catálogo</title>
-  <link rel="icon" href="logotipo.avif">
+  <title>CATÁLOGO</title>
+  <link rel="icon" href="logo.jpg">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      background-color: #fddde6;
+      font-family: 'Poppins', sans-serif;
       text-align: center;
+      transition: background-color 1s ease;
       margin: 0;
-      padding: 0;
+      padding: 20px;
     }
 
     h1 {
-      margin-top: 20px;
-      color: #333;
-      text-transform: uppercase;
+      font-size: 3em;
+      color: #c2185b;
+      animation: moverTitulo 2s infinite alternate;
+      text-shadow: 2px 2px 8px white;
     }
 
-    details {
-      margin: 20px auto;
-      width: 80%;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 10px;
-      transition: transform 0.3s;
-    }
-
-    details:hover {
-      transform: scale(1.02);
-    }
-
-    img.producto {
-      width: 200px;
-      margin: 10px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      border-radius: 8px;
-    }
-
-    img.producto:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    @keyframes moverTitulo {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.05); }
     }
 
     summary {
-      font-size: 1.2em;
-      cursor: pointer;
-      margin-bottom: 10px;
-    }
-
-    .icon {
-      margin-right: 8px;
-    }
-
-    marquee {
-      height: 180px;
+      font-size: 1.5em;
       margin-top: 20px;
+      cursor: pointer;
+      color: #880e4f;
+      transition: color 0.3s;
+    }
+
+    summary:hover {
+      color: #ad1457;
+    }
+
+    details {
+      margin-bottom: 30px;
+      transition: all 0.5s ease;
+    }
+
+    img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.8);
+    }
+
+    .logo-container {
+      animation: slideDown 2s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .icono {
+      font-size: 2em;
+      color: #d81b60;
+      margin: 5px;
+      animation: brillar 2s infinite alternate;
+    }
+
+    @keyframes brillar {
+      0% { opacity: 0.7; }
+      100% { opacity: 1; transform: scale(1.1); }
     }
   </style>
 </head>
 <body>
 
-  <!-- LOGOTIPO CON MOVIMIENTO HACIA ABAJO -->
-  <marquee behavior="scroll" direction="down" scrollamount="5">
-    <img src="logotipo.avif" width="150" alt="Logotipo">
-  </marquee>
+  <div class="logo-container">
+    <img src="logo de sheinn.png" alt="Logo Shein" width="300">
+  </div>
 
-  <h1>Catálogo de Productos</h1>
+  <h1>CATÁLOGO DE PRODUCTOS</h1>
 
+  <p><i class="fas fa-tshirt icono"></i> <i class="fas fa-shoe-prints icono"></i> <i class="fas fa-female icono"></i></p>
+
+  <summary>ROPA DE SHEIN</summary>
   <details>
-    <summary><span class="icon">🏠</span> Casas Modernas 1</summary>
-    <img class="producto" src="casa1.jpg" alt="Casa 1">
-    <img class="producto" src="casa2.jpg" alt="Casa 2">
+    <img src="imagen 1.jpg" alt="Ropa 1">
+    <img src="imagen 2.jpg" alt="Ropa 2">
   </details>
 
+  <summary>ZAPATOS DE SHEIN</summary>
   <details>
-    <summary><span class="icon">🏡</span> Casas Modernas 2</summary>
-    <img class="producto" src="casa3.jpg" alt="Casa 3">
-    <img class="producto" src="casa4.jpg" alt="Casa 4">
+    <img src="1.jpg" alt="Zapato 1">
+    <img src="2.jpg" alt="Zapato 2">
   </details>
 
+  <summary>VESTIDOS DE SHEIN</summary>
   <details>
-    <summary><span class="icon">🏘️</span> Casas Modernas 3</summary>
-    <img class="producto" src="casa5.jpg" alt="Casa 5">
-    <img class="producto" src="casa6.webp" alt="Casa 6">
+    <img src="3.jpg" alt="Vestido 1">
+    <img src="4.jpg" alt="Vestido 2">
   </details>
 
 </body>
