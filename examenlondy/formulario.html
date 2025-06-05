@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUCTOS</title>
+  <link rel="icon" href="cocacola-logo-cocacola-icon-free-free-vector.jpg">
+
+  <!-- Fuente personalizada -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fdecea; /* Rojo pálido */
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    img {
+      width: 400px;
+      margin-top: 20px;
+      animation: floatLogo 3s ease-in-out infinite;
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      color: #b30000;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    form {
+      background-color: #fff0f0;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #660000;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      border: 2px solid #ffcccc;
+      border-radius: 8px;
+      margin-top: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    input[type="text"]:focus {
+      border-color: #b30000;
+      box-shadow: 0 0 10px #ff9999;
+      outline: none;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      font-size: 1em;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e60000;
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <center>
+    <img src="Coca-Cola_logo.svg.png" alt="Logo Coca-Cola">
+    <h1>COMPRAR EN LÍNEA</h1>   
+
+    <form>
+      <label>NOMBRE COMPLETO</label>
+      <input type="text">
+
+      <label>DIRECCIÓN</label>
+      <input type="text">
+
+      <label>TELÉFONO</label>
+      <input type="text">
+
+      <label>¿QUÉ PRODUCTOS DESEAS COMPRAR?</label>
+      <input type="text">
+
+      <br>
+      <button type="submit">ENVIAR</button>
+    </form>
+  </center>   
+
+</body>
+</html>

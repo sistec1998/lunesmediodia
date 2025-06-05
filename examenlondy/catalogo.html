@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CATÁLOGO</title>
+  <link rel="icon" href="cocacola-logo-cocacola-icon-free-free-vector.jpg">
+
+  <!-- Fuente desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdecea; /* Rojo pálido */
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      color: #b30000;
+      font-size: 3em;
+      margin: 20px 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    details {
+      margin: 20px auto;
+      width: 80%;
+      transition: transform 0.3s;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+    }
+
+    summary {
+      font-size: 1.5em;
+      cursor: pointer;
+      padding: 10px;
+      background-color: #fff0f0;
+      border: 2px solid #ffcccc;
+      border-radius: 5px;
+      font-family: 'Oswald', sans-serif;
+      transition: background-color 0.3s;
+    }
+
+    summary:hover {
+      background-color: #ffe6e6;
+    }
+
+    img.producto {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    img.producto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    /* Animación de entrada */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo MÁS GRANDE con movimiento -->
+  <marquee behavior="scroll" direction="down" scrollamount="3" loop="infinite">
+    <img src="Coca-Cola_logo.svg.png" width="400" alt="Coca-Cola Logo">
+  </marquee>
+
+  <h1>CATÁLOGO DE PRODUCTOS</h1>
+
+  <details>
+    <summary>BOTELLAS</summary>
+    <img src="1.webp" alt="Botella 1" class="producto">
+    <img src="combo 2.jpg" alt="Botella combo" class="producto">
+  </details>
+
+  <details>
+    <summary>LATAS</summary>
+    <img src="3.png" alt="Lata 1" class="producto">
+    <img src="combo1.webp" alt="Lata combo" class="producto">
+  </details>
+
+  <details>
+    <summary>VIDRIO</summary>
+    <img src="2.jpg" alt="Vidrio 1" class="producto">
+    <img src="combo3.jpg" alt="Vidrio combo" class="producto">
+  </details>
+
+</body>
+</html>
