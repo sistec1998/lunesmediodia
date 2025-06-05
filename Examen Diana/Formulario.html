@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix</title>
+    <link rel="icon" href="logo de net.png">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #6fbf73; /* Verde medio */
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            text-shadow: 2px 2px #444;
+        }
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 5px;
+            transition: box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus {
+            box-shadow: 0 0 8px #ffffff;
+            outline: none;
+        }
+
+        button {
+            margin: 20px 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #ddd;
+            transform: scale(1.05);
+        }
+
+        .icono {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo de net.png" width="100" alt="Logo de Netflix">
+    <h1><i class="fas fa-cart-shopping icono"></i>COMPRAS EN LÍNEA</h1>
+    <hr>
+
+    <form>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion">
+
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono">
+
+        <label for="producto">Producto que desea comprar</label>
+        <input type="text" id="producto" name="producto">
+
+        <div>
+            <button type="reset"><i class="fas fa-times icono"></i>Cancelar</button>
+            <button type="submit"><i class="fas fa-check icono"></i>Aceptar</button>
+        </div>
+    </form>
+
+</body>
+</html>

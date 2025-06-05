@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix</title>
+    <link rel="icon" href="logo de net.png">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #6fbf73; /* Verde medio */
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-shadow: 2px 2px #444;
+            margin-top: 20px;
+        }
+
+        hr {
+            border: 1px solid #fff;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        details {
+            margin: 20px auto;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        summary {
+            font-size: 1.2em;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        .icono {
+            margin-right: 10px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="logo de net.png" width="100" alt="Logo de Netflix">
+    </div>
+
+    <h1><i class="fas fa-film icono"></i>CATÁLOGO DE PELÍCULAS</h1>
+    <hr>
+
+    <details>
+        <summary><i class="fas fa-ghost icono"></i>Películas de terror</summary>
+        <img src="el hijo del demonio.jpg" width="100">
+        <img src="en la hierba alta.png" width="100">
+        <img src="winne poo.jpg" width="100">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-dragon icono"></i>Animes</summary>
+        <img src="anime.avif" width="100">
+        <img src="komi san no puede comunicarse.webp" width="100">
+        <img src="pochita.jpg" width="100">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-heart icono"></i>K-doramas</summary>
+        <img src="k-1.jpg" width="100">
+        <img src="k-2.jpg" width="100">
+        <img src="k-3.jpg" width="100">
+    </details>
+
+</body>
+</html>
