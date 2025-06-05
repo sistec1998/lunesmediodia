@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 - Catálogo</title>
+  <link rel="icon" href="logo.jpg" />
+  <style>
+    /* Fondo animado con degradado */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #1e3c72, #2a5298);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+      text-align: center;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 20px;
+      animation: fadeInDown 2s ease-out;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+    }
+
+    details {
+      margin: 20px auto;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(5px);
+      transition: all 0.4s ease;
+    }
+
+    summary {
+      font-size: 1.5em;
+      cursor: pointer;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    summary:hover {
+      color: #ffdd57;
+    }
+
+    /* Logo con animación desde arriba */
+    .logo {
+      width: 300px;
+      animation: slideInDown 2s ease;
+    }
+
+    @keyframes slideInDown {
+      0% {transform: translateY(-100px); opacity: 0;}
+      100% {transform: translateY(0); opacity: 1;}
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      img {
+        width: 90% !important;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      details {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.jpg" alt="Logo" class="logo" />
+  <h1>Catálogo de Productos</h1>
+
+  <details>
+    <summary>🧢 Gorras</summary>
+    <img src="gorra 1.jpg" width="300" alt="Gorra 1" />
+    <img src="gorra 2.jpg" width="200" alt="Gorra 2" />
+  </details>
+
+  <details>
+    <summary>👕 Camisas</summary>
+    <img src="camisa 1.jpg" width="300" alt="Camisa 1" />
+    <img src="camisa.jpg" width="300" alt="Camisa 2" />
+  </details>
+
+  <details>
+    <summary>🧥 Chaquetas</summary>
+    <img src="chaketa 2.jpg" width="300" alt="Chaqueta 1" />
+    <img src="ck¿haketas 1.jpg" width="300" alt="Chaqueta 2" />
+  </details>
+</body>
+</html>

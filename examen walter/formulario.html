@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 - Comprar</title>
+  <link rel="icon" href="logo.jpg" />
+  <style>
+    /* Fondo animado con degradado */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #141e30, #243b55, #141e30, #243b55);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    img {
+      width: 300px;
+      margin-top: 20px;
+      animation: floatLogo 3s ease-in-out infinite;
+    }
+
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 30px;
+      animation: fadeInDown 2s ease;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    label {
+      font-size: 1.2em;
+      margin-top: 10px;
+      display: block;
+      transition: color 0.3s;
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 250px;
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+      font-size: 1em;
+    }
+
+    input:focus {
+      outline: none;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    button {
+      padding: 12px 25px;
+      background-color: #00bcd4;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 1.2em;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.4s, transform 0.3s;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+      transform: scale(1.1);
+      box-shadow: 0 8px 15px rgba(0, 188, 212, 0.3);
+    }
+
+    /* Contenedor centrado con estilo */
+    .form-container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 1.5s ease;
+      text-align: center;
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 600px) {
+      input, button {
+        width: 90%;
+      }
+
+      .form-container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.jpg" alt="Logo" />
+
+  <div class="form-container">
+    <h1>🛒 Comprar en linea</h1>
+
+    <label>Nombre completo</label>
+    <input type="text" placeholder="Escribe tu nombre" />
+
+    <label>Dirección</label>
+    <input type="text" placeholder="Dirección de entrega" />
+
+    <label>Teléfono</label>
+    <input type="text" placeholder="Número de contacto" />
+
+    <label>Producto que desea comprar</label>
+    <input type="text" placeholder="Nombre del producto" />
+
+    <button>Enviar pedido</button>
+  </div>
+
+</body>
+</html>
