@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shein</title>
+
+    <!-- FontAwesome para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<a href="formulario.html"></a>
+    <style>
+        /* Estilo general */
+        body {
+            background-color: #f7f7f7; /* Fondo claro */
+            font-family: 'Arial', sans-serif;
+            color: #4caf50; /* Verde */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Logo centrado y con animación */
+        img {
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1); /* Efecto de hover en el logo */
+        }
+
+        /* Estilo del texto */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ff66b2; /* Rosa */
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        p:hover {
+            color: #ff3385; /* Cambio de color al pasar el mouse */
+            transform: scale(1.05);
+        }
+
+        /* Enlaces */
+        a {
+            text-decoration: none;
+            color: #4caf50;
+            font-size: 18px;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid #4caf50;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: white;
+            background-color: #4caf50;
+            border-color: #ff66b2; /* Cambio de color al pasar el mouse */
+        }
+
+        a:active {
+            background-color: #ff66b2;
+            color: white;
+        }
+
+        /* Animación para la descripción */
+        p {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animación de desvanecimiento */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animación de caída para las zanhorias */
+        .carrot {
+            position: absolute;
+            top: -50px;
+            animation: fall 5s infinite;
+            opacity: 0;
+        }
+
+        @keyframes fall {
+            0% {
+                top: -50px;
+                opacity: 1;
+                transform: rotate(0deg);
+            }
+            100% {
+                top: 100vh;
+                opacity: 0;
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Lluvia de zanhorias con diferentes velocidades */
+        .carrot:nth-child(odd) {
+            animation-duration: 4s;
+        }
+
+        .carrot:nth-child(even) {
+            animation-duration: 6s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Lluvia de zanhorias -->
+    <div class="carrot" style="left: 10%; animation-delay: 0s;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Carrot_Icon.png/400px-Carrot_Icon.png" width="30" alt="zanahoria">
+    </div>
+    <div class="carrot" style="left: 30%; animation-delay: 1s;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Carrot_Icon.png/400px-Carrot_Icon.png" width="30" alt="zanahoria">
+    </div>
+    <div class="carrot" style="left: 50%; animation-delay: 2s;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Carrot_Icon.png/400px-Carrot_Icon.png" width="30" alt="zanahoria">
+    </div>
+    <div class="carrot" style="left: 70%; animation-delay: 3s;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Carrot_Icon.png/400px-Carrot_Icon.png" width="30" alt="zanahoria">
+    </div>
+
+    <!-- Contenido principal -->
+    <center>
+        <img src="logo de shein.jpg" alt="Logo de Shein">
+        <p>Descripción: Viste a la moda. Nuestros diseños te encantarán con un 50% de descuento. Ven y prueba los estilos, buena calidad, buena tela, y diferentes tallas para ti. ¡Compra aquí y te esperamos con mucho amor!</p>
+
+        <!-- Enlaces con iconos -->
+        <div>
+            <a href="principal.html"><i class="fas fa-home"></i> Ir a Principal</a>
+            <a href="catalogo.html"><i class="fas fa-th-large"></i> Ver Catálogo</a>
+        </div>
+    </center>
+
+</body>
+</html>
