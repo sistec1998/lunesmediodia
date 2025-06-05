@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🛒 COMPRAS EN LÍNEA</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #e0f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #00796b;
+      margin-top: 20px;
+      font-size: 2.5rem;
+    }
+
+    hr {
+      width: 60%;
+      border: 1px solid #4dd0e1;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-top: 20px;
+      width: 90%;
+      max-width: 600px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label, button {
+      font-weight: bold;
+      color: #004d40;
+    }
+
+    input, button {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #b2ebf2;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #00acc1;
+      outline: none;
+      box-shadow: 0 0 6px #4dd0e1;
+    }
+
+    button {
+      background-color: #4dd0e1;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00bcd4;
+      transform: scale(1.03);
+    }
+
+    img {
+      width: 200px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: rotate(2deg) scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo">
+  <h1>🛍️ Compras en Línea</h1>
+  <hr>
+
+  <div class="card">
+    <form>
+      <label>🧑 Nombre:</label>
+      <input type="text" placeholder="Ingresa tu nombre">
+      
+      <label>🏠 Dirección:</label>
+      <input type="text" placeholder="Ingresa tu dirección">
+      
+      <label>📞 Teléfono:</label>
+      <input type="text" placeholder="Ingresa tu teléfono">
+      
+      <label>📦 Nombre del producto:</label>
+      <input type="text" placeholder="¿Qué deseas comprar?">
+      
+      <label>✅ Confirmar:</label>
+      <input type="text" placeholder="Escribe 'sí' para confirmar">
+      
+      <button type="submit">🚀 Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>

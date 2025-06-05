@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🍨 CATALOGO | Sarita</title>
+  <link rel="icon" href="logo.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e0f7fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00796b;
+      margin-top: 10px;
+    }
+
+    hr {
+      width: 60%;
+      border: 1px solid #4dd0e1;
+      margin: 20px 0;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      max-width: 700px;
+      text-align: justify;
+      color: #004d40;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+    }
+
+    a {
+      margin: 15px;
+      padding: 12px 20px;
+      background-color: #4dd0e1;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+      background-color: #00bcd4;
+      transform: scale(1.05);
+    }
+
+    .links {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo Sarita" />
+
+  <h1>🏗️ ESTRUCTURA</h1>
+  <hr />
+
+  <div class="card">
+    <p>🍦 <strong>Sarita</strong> es una empresa guatemalteca con más de 80 años de tradición, reconocida 
+    por brindar momentos de felicidad a través de sus deliciosos helados, 
+    postres y productos lácteos. Con una amplia variedad de sabores y presentaciones, 
+    Sarita se ha ganado un lugar especial en el corazón de las familias, ofreciendo calidad, 
+    frescura y ese toque dulce que transforma cualquier día en una celebración. Nuestra pasión por 
+    la excelencia y el compromiso con nuestros clientes hacen de Sarita una marca querida, confiable y orgullosamente local.</p>
+  </div>
+
+  <div class="links">
+    <a href="pagina1.html">📘 Catálogo</a>
+    <a href="pagina2.html">📝 Formulario</a>
+  </div>
+
+</body>
+</html>
