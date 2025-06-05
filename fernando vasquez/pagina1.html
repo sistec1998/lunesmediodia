@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="icon" href="logo1.jpg">
+
+    <!-- Fuente y Estilos de Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            margin: 10px;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #4a148c;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        summary {
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin: 15px 0;
+            padding: 10px;
+            background: #6a1b9a;
+            color: white;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        summary:hover {
+            background: #8e24aa;
+        }
+
+        details {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            background: #ffffffdd;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+        }
+
+        details[open] {
+            animation: expand 0.5s ease-in-out;
+        }
+
+        hr {
+            border: 1px solid #8e24aa;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        @keyframes fadeInDown {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes expand {
+            from {opacity: 0; transform: scaleY(0.9);}
+            to {opacity: 1; transform: scaleY(1);}
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo1.jpg" alt="Logo" width="150">
+    <h1><i class="fas fa-boxes-stacked"></i> Catálogo de Productos</h1>
+    <hr>
+
+    <details>
+        <summary><i class="fas fa-laptop"></i> Categoría 1</summary>
+        <img src="ft1.jpg" width="300" alt="Producto 1">
+        <img src="ft2.jpg" width="300" alt="Producto 2">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-mobile-alt"></i> Categoría 2</summary>
+        <img src="ft3.jpg" width="300" alt="Producto 3">
+        <img src="ft4.webp" width="300" alt="Producto 4">
+    </details>
+
+    <details>
+        <summary><i class="fas fa-headphones"></i> Categoría 3</summary>
+        <img src="ft5.jpg" width="300" alt="Producto 5">
+        <img src="ft6.jpg" width="300" alt="Producto 6">
+    </details>
+
+</body>
+</html>
