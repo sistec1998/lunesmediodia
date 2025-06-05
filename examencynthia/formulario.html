@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PRETTY STORE</title>
+  <link rel="icon" href="ICON.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #ff99cc;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    h1 {
+      margin: 10px 0 0 0;
+      color: white;
+      font-size: 2em;
+    }
+
+    form {
+      background: #fff0f5;
+      margin-top: 30px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 153, 204, 0.5);
+      width: 300px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    label {
+      font-weight: bold;
+      color: #cc0066;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 20px;
+      border: 1px solid #ff99cc;
+      border-radius: 8px;
+      transition: border 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #cc0066;
+      outline: none;
+    }
+
+    button {
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #cc0066;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="ICON.jpg" alt="Logo Pretty Store">
+  <h1><i class="fa-solid fa-cart-shopping"></i> Comprar en Línea</h1>
+</header>
+
+<form>
+  <label><i class="fa-solid fa-user"></i> Nombre completo</label><br>
+  <input type="text" placeholder="Ej. Ana Martínez" required><br>
+
+  <label><i class="fa-solid fa-location-dot"></i> Dirección</label><br>
+  <input type="text" placeholder="Calle, número, ciudad" required><br>
+
+  <label><i class="fa-solid fa-phone"></i> Teléfono</label><br>
+  <input type="tel" placeholder="Ej. 5551234567" required><br>
+
+  <label><i class="fa-solid fa-box"></i> Producto que desea comprar</label><br>
+  <input type="text" placeholder="Ej. Labial Rosa" required><br>
+
+  <button type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+</form>
+
+</body>
+</html>
