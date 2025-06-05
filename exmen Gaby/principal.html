@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL GRAN GALLO</title>
+    <link rel="icon" href="logo.jpg">
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* Fondo animado */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            animation: fondoAnimado 10s ease infinite alternate;
+            background: linear-gradient(-45deg, #6a0dad, #1e90ff, #6a0dad);
+            background-size: 600% 600%;
+        }
+
+        @keyframes fondoAnimado {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        ol {
+            text-align: left;
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        ol li {
+            padding: 5px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: white;
+            color: #6a0dad;
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        center {
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <img src="logo.jpg" width="200" alt="Logo El Gran Gallo">
+
+        <p>
+            <i class="fas fa-drumstick-bite icon"></i>
+            <strong>Descripción:</strong><br><br>
+            El Gran Gallo es una empresa dedicada a la producción, distribución y comercialización
+            de productos alimenticios tradicionales, especializada en carnes frescas, preparados avícolas
+            y platillos listos para consumir. Con un fuerte compromiso con la calidad, la sostenibilidad 
+            y el sabor auténtico, El Gran Gallo ha logrado posicionarse como un referente en el mercado 
+            local por su atención al detalle, su enfoque artesanal y su cercanía con los consumidores.
+        </p>
+
+        <ol>
+            <li><i class="fas fa-store icon"></i> FLORES C.C</li>
+            <li><i class="fas fa-map-marker-alt icon"></i> GENOVA</li>
+            <li><i class="fas fa-map-marker-alt icon"></i> COATEPEQUE</li>
+        </ol>
+
+        <a href="catalogo.html"><i class="fas fa-th-large icon"></i> CATEGORIAS</a>
+        <a href="formulario.html"><i class="fas fa-pen icon"></i> FORMULARIO</a>
+    </center>
+
+</body>
+</html>
