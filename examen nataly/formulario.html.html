@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Coca Cola</title>
+    <link rel="icon" href="logo coca.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #ff0000, #990000);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            margin-top: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        hr {
+            width: 50%;
+            border: 1px solid #fff;
+            margin: 20px auto;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            display: inline-block;
+            animation: slideUp 1s ease-out;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 10px #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        button:first-of-type {
+            background-color: #00cc00;
+            color: white;
+        }
+
+        button:last-of-type {
+            background-color: #cc0000;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo coca.png" alt="Logo Coca Cola">
+    <h1><i class="fas fa-shopping-cart"></i> COMPRAR EN LÍNEA</h1>
+    <hr>
+    <form>
+        <label><i class="fas fa-user"></i> Nombre Completo</label>
+        <input type="text" placeholder="Ej. Juan Pérez"><br>
+
+        <label><i class="fas fa-map-marker-alt"></i> Dirección</label>
+        <input type="text" placeholder="Calle, número, ciudad"><br>
+
+        <label><i class="fas fa-phone"></i> Teléfono</label>
+        <input type="number" placeholder="5551234567"><br>
+
+        <label><i class="fas fa-box"></i> Producto que desea comprar</label>
+        <input type="text" placeholder="Ej. Coca-Cola 2L"><br>
+
+        <button type="submit"><i class="fas fa-check"></i> Comprar</button>
+        <button type="reset"><i class="fas fa-times"></i> Cancelar</button>
+    </form>
+</body>
+</html>

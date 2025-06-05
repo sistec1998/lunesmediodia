@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Coca Cola</title>
+    <link rel="icon" href="logo coca.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ff0000, #b30000);
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 36px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        hr {
+            width: 60%;
+            border: 1px solid white;
+            margin-bottom: 30px;
+        }
+
+        details {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            padding: 15px;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+        }
+
+        details:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        summary {
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            color: #fff;
+        }
+
+        summary::before {
+            font-family: "Font Awesome 6 Free";
+            content: "\f07a"; /* icono de caja */
+            font-weight: 900;
+            margin-right: 10px;
+        }
+
+        marquee img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <marquee behavior="slide" direction="down">
+            <img src="logo coca.png" alt="Logo Coca-Cola">
+        </marquee>
+
+        <h1><i class="fas fa-list"></i> Catálogo de Productos</h1>
+        <hr>
+
+        <details>
+            <summary> BEBIDAS CARBONATADAS</summary>
+            <img src="deportivo1.webp" alt="Producto carbonatado 1">
+            <img src="deportivo2.webp" alt="Producto carbonatado 2">
+        </details>
+
+        <details>
+            <summary>TÉ</summary>
+            <img src="te1.webp" alt="Té 1">
+            <img src="te2.webp" alt="Té 2">
+        </details>
+
+        <details>
+            <summary> BEBIDAS DEPORTIVAS</summary>
+            <img src="deportivo1.webp" alt="Bebida deportiva 1">
+            <img src="deportivo2.webp" alt="Bebida deportiva 2">
+        </details>
+    </center>
+</body>
+</html>
