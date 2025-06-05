@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo</title>
+  <link rel="icon" href="logo de gran gallo.jpg" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f8ff, #e0ffff);
+      color: #333;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      color: #00695c;
+      font-size: 2.5em;
+      margin-top: 10px;
+      text-shadow: 2px 2px #ccc;
+      transition: color 0.3s ease;
+    }
+
+    h1:hover {
+      color: #004d40;
+    }
+
+    marquee img {
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      animation: bounce 2s infinite;
+    }
+
+    details {
+      background: #ffffffcc;
+      margin: 20px auto;
+      padding: 15px;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    details:hover {
+      background-color: #e0f7fa;
+      transform: scale(1.01);
+    }
+
+    summary {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #00796b;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    summary:hover {
+      color: #004d40;
+    }
+
+    img {
+      margin: 10px;
+      width: 200px;
+      border-radius: 8px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <marquee behavior="slide" direction="down">
+      <img src="logo de gran gallo.jpg" width="200" alt="Logo">
+    </marquee>
+
+    <h1>Catálogo de Productos</h1>
+
+    <details>
+      <summary>Categoría 1</summary>
+      <img src="pro1.jpg" alt="Producto 1">
+      <img src="pro2.jpg" alt="Producto 2">
+    </details>
+
+    <details>
+      <summary>Categoría 2</summary>
+      <img src="pro4.jpg" alt="Producto 4">
+      <img src="pro3.jpg" alt="Producto 3">
+    </details>
+
+    <details>
+      <summary>Categoría 3</summary>
+      <img src="pro5.jpg" alt="Producto 5">
+      <img src="pro6.jpg" alt="Producto 6">
+    </details>
+  </center>
+</body>
+</html>

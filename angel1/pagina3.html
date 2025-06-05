@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura</title>
+    <link rel="icon" href="logo de gran gallo.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            animation: fadeIn 2s ease;
+        }
+
+        img {
+            width: 200px;
+            margin-top: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            color: #d62828;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            max-width: 600px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #003049;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        a:hover {
+            background-color: #d62828;
+            transform: translateY(-3px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo de gran gallo.jpg" alt="Logo de Gran Gallo">
+    <h1>Estructura</h1>
+    <p>
+        La empresa forma parte del <strong>Grupo Monge</strong>, un conglomerado regional con presencia en Centroamérica y Perú. 
+        Su misión es brindar acceso a productos duraderos y servicios financieros.
+    </p>
+    <a href="pagina1.html">Catálogo</a>
+    <a href="pagina2.html">Formulario</a>
+</body>
+</html>

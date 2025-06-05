@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras en Línea</title>
+    <link rel="icon" href="logo de gran gallo.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #f2f2f2, #d4f0fc);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #0077b6;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label, button {
+            font-weight: bold;
+            color: #023e8a;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #0077b6;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+        }
+
+        button {
+            background-color: #0096c7;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #00b4d8;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo de gran gallo.jpg" alt="Logo de Gran Gallo">
+        <h1>Compras en Línea</h1>
+        <hr>
+        <form>
+            <button type="button">Nombre</button>
+            <input type="text" placeholder="Escribe tu nombre">
+
+            <button type="button">Dirección</button>
+            <input type="text" placeholder="Escribe tu dirección">
+
+            <button type="button">Teléfono</button>
+            <input type="text" placeholder="Escribe tu teléfono">
+
+            <button type="button">Nombre del producto</button>
+            <input type="text" placeholder="Producto que deseas comprar">
+
+            <label>Confirmar</label>
+            <input type="text" placeholder="Sí o No">
+        </form>
+    </div>
+</body>
+</html>
