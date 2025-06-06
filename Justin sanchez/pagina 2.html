@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SHEIN - Compra en Línea</title>
+  <link rel="icon" href="logo.jpg" />
+
+  <!-- Íconos de redes -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Estilos -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      background: radial-gradient(circle at center, #001f3f, #000);
+      background-size: 200% 200%;
+      animation: glowingBackground 15s ease infinite;
+      padding: 30px;
+    }
+
+    @keyframes glowingBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .logo {
+      width: 250px;
+      margin-bottom: 20px;
+      animation: dropIn 1.5s ease-out;
+    }
+
+    @keyframes dropIn {
+      0% { transform: translateY(-100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+      transition: transform 0.3s;
+    }
+
+    input[type="text"] {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      transition: background 0.3s;
+    }
+
+    input[type="text"]:focus {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      background: #00ffe0;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #00ffe0;
+    }
+
+    button:hover {
+      background: #00ccaa;
+      box-shadow: 0 0 20px #00ffee;
+      transform: scale(1.05);
+    }
+
+    .social-icons {
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      margin: 0 12px;
+      font-size: 30px;
+      color: #00ffee;
+      text-decoration: none;
+      transition: transform 0.2s, color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #fff;
+      transform: scale(1.2);
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.jpg" alt="Logo SHEIN" class="logo">
+  <h1>COMPRA EN LÍNEA</h1>
+
+  <!-- Formulario -->
+  <form onsubmit="mostrarMensaje(event)">
+    <label>Nombre completo</label><br>
+    <input type="text" required><br>
+
+    <label>Dirección</label><br>
+    <input type="text" required><br>
+
+    <label>Número de teléfono</label><br>
+    <input type="text" required><br>
+
+    <label>¿Qué producto deseas comprar?</label><br>
+    <input type="text" required><br>
+
+    <button type="submit">ENVIAR</button>
+  </form>
+
+  <!-- Redes Sociales -->
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+  </div>
+
+  <footer>
+    © 2025 SHEIN. Todos los derechos reservados.
+  </footer>
+
+  <!-- Script para mostrar mensaje -->
+  <script>
+    function mostrarMensaje(e) {
+      e.preventDefault();
+      alert("¡Gracias por su compra!");
+    }
+  </script>
+
+</body>
+</html>
