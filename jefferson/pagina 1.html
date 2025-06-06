@@ -2,165 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Electrónica Panamerica</title>
-  <link rel="icon" href="logo.png"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Gallo Más Gallo</title>
+  <link rel="icon" href="logo.webp" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(120deg, #001f3f, #0074D9, #7FDBFF);
-      background-size: 600% 600%;
-      animation: gradientBG 15s ease infinite;
-      color: white;
+      background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+      color: #333;
       text-align: center;
     }
 
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-
-    header img {
-      width: 200px;
-      margin-top: 20px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #FFDC00;
-    }
-
     h1 {
-      margin-top: 40px;
-      text-shadow: 2px 2px 5px black;
+      font-size: 2.5em;
+      margin-top: 10px;
     }
 
-    input[type="text"] {
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 10px;
-      width: 200px;
+    details {
+      margin-bottom: 30px;
     }
 
-    .card-container {
+    summary {
+      font-size: 1.4em;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    .icon-title {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-bottom: 40px;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
     }
 
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      width: 280px;
+    .icon-title i {
+      color: #c0392b;
     }
 
-    .card img {
-      width: 100%;
-      display: block;
-      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-    }
-
-    details summary {
-      cursor: pointer;
-      font-size: 20px;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-
-    details .card-container {
-      margin-top: 10px;
+    hr {
+      width: 70%;
+      border: 1px solid #bbb;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo"/>
-    <nav>
-      <a href="pagina 2.html"><i class="fas fa-shopping-cart"></i> Compras</a>
-      <a href="pagina3.html"><i class="fas fa-store"></i> Tienda</a>
-      <a href="pagina 4.html"><i class="fas fa-bars"></i> Menú</a>
-    </nav>
-  </header>
 
-  <h1>🌎 UN MUNDO PARA ELEGIR</h1>
+  <marquee behavior="slide" direction="down">
+    <img src="logo.webp" width="300" alt="Logo">
+  </marquee>
+
+  <h1>📦 Catálogo de Productos</h1>
   <hr>
-  <label>🔍 ¿Qué buscas?</label><br>
-  <input type="text" placeholder="Buscar...">
-
-  <h1>💻 Computadoras</h1>
-  <div class="card-container">
-    <div class="card"><img src="ce.jpg" alt="ce"></div>
-    <div class="card"><img src="ci.gif" alt="ci"></div>
-    <div class="card"><img src="co.webp" alt="co"></div>
-  </div>
-
-  <h1>🔊 Bocinas</h1>
-  <div class="card-container">
-    <div class="card"><img src="ve.png" alt="ve"></div>
-    <div class="card"><img src="vi.webp" alt="vi"></div>
-    <div class="card"><img src="vo.png" alt="vo"></div>
-  </div>
-
-  <h1>🎸 Instrumentos Musicales</h1>
-  <div class="card-container">
-    <div class="card"><img src="be.avif" alt="be"></div>
-    <div class="card"><img src="bi.webp" alt="bi"></div>
-    <div class="card"><img src="bo.webp" alt="bo"></div>
-  </div>
-
-  <h1>🚁 Drones</h1>
-  <div class="card-container">
-    <div class="card"><img src="dre.png" alt="dre"></div>
-    <div class="card"><img src="dri.png" alt="dri"></div>
-    <div class="card"><img src="dro.png" alt="dro"></div>
-  </div>
 
   <details>
-    <summary>🧊 Refrigeradoras</summary>
-    <div class="card-container">
-      <div class="card"><img src="re.webp" alt="re"></div>
-      <div class="card"><img src="ri.png" alt="ri"></div>
-      <div class="card"><img src="ro.jpg" alt="ro"></div>
-    </div>
+    <summary class="icon-title"><i class="fas fa-motorcycle"></i> MOTOS 🏍️</summary>
+    <h2>MOTOS</h2>
+    <img src="navi.png" alt="Navi">
+    <img src="boxer.png" alt="Boxer">
+    <img src="gn.png" alt="GN">
   </details>
 
-  <details>
-    <summary>📺 TVs</summary>
-    <div class="card-container">
-      <div class="card"><img src="TE.png" alt="TE"></div>
-      <div class="card"><img src="TI.webp" alt="TI"></div>
-      <div class="card"><img src="TO.png" alt="TO"></div>
-    </div>
-  </details>
+  <hr>
 
   <details>
-    <summary>🧼 Lavadoras</summary>
-    <div class="card-container">
-      <div class="card"><img src="le.png" alt="le"></div>
-      <div class="card"><img src="lo.jpg" alt="lo"></div>
-      <div class="card"><img src="li.png" alt="li"></div>
-    </div>
+    <summary class="icon-title"><i class="fas fa-snowflake"></i> REFRIGERADORAS ❄️</summary>
+    <h2>REFRIGERADORAS</h2>
+    <img src="RI.webp" alt="Refrigeradora 1">
+    <img src="RO.webp" alt="Refrigeradora 2">
+    <img src="RU.webp" alt="Refrigeradora 3">
   </details>
+
+  <hr>
+
+  <details>
+    <summary class="icon-title"><i class="fas fa-fire-burner"></i> ESTUFAS 🍳</summary>
+    <h2>ESTUFAS</h2>
+    <img src="is.webp" alt="Estufa 1">
+    <img src="es.webp" alt="Estufa 2">
+    <img src="os.webp" alt="Estufa 3">
+  </details>
+
 </body>
 </html>

@@ -3,94 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LAYS</title>
-  <link rel="icon" href="logo.svg">
+  <title>GALLO MÁS GALLO</title>
+  <link rel="icon" href="logo.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffe259, #ffa751);
+      background: linear-gradient(to right, #fceabb, #f8b500);
       color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
       text-align: center;
     }
 
-    .card {
-      background-color: #fffef2;
-      padding: 30px;
-      margin: 30px auto;
-      border-radius: 20px;
-      width: 80%;
-      max-width: 600px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.02);
-    }
-
     img {
-      width: 300px;
+      width: 250px;
       border-radius: 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
     }
 
-    h2 {
-      font-size: 2em;
-      color: #d62828;
-      margin: 20px 0 10px;
+    h1 {
+      font-size: 2.2em;
+      color: #d35400;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    ul li::before {
+      content: "📍 ";
+    }
+
+    li {
+      font-size: 1.1em;
+      margin: 5px 0;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background-color: #e67e22;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    a:hover {
+      background-color: #d35400;
     }
 
     hr {
       width: 70%;
-      border: 1px solid #ff8c00;
-    }
-
-    ol, ul {
-      text-align: left;
-      display: inline-block;
-      padding-left: 20px;
-      font-size: 1.2em;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    ul li::before {
-      content: "🍬 ";
-    }
-
-    ol li::before {
-      content: "🍪 ";
+      border: 1px solid #bbb;
+      margin: 20px auto;
     }
   </style>
 </head>
 <body>
 
-  <div class="card">
-    <img src="logo.svg" alt="Logo de Lays">
-    <h2>🎉 MÁS SABOR, MÁS FELICIDAD 🧂</h2>
+  <div class="container">
+    <img src="logo.webp" alt="Logo Gallo Más Gallo">
+    <h1><i class="fas fa-store"></i> GALLO MÁS GALLO 🐓</h1>
     <hr>
-  </div>
 
-  <div class="card">
-    <h2>🍪 GALLETAS</h2>
-    <ol>
-      <li>Chokis</li>
-      <li>Arcoiris</li>
-      <li>Emperador</li>
-      <li>Chikis</li>
-    </ol>
-  </div>
+    <p>
+      El Gallo Más Gallo Honduras es hoy la empresa de mayor cobertura en 17 de los 18
+      departamentos del país, comprometida en mejorar la calidad de vida de los hondureños, 
+      ofreciendo productos de las categorías de: <strong>línea blanca</strong>, 
+      <strong>electrónica y tecnología</strong>,
+      <strong>muebles</strong> y <strong>motocicletas</strong> de las mejores marcas.
+    </p>
 
-  <div class="card">
-    <h2>🍭 GOLOSINAS</h2>
+    <h3><i class="fas fa-map-marked-alt"></i> Sucursales 🗺️</h3>
     <ul>
-      <li>Fiesta</li>
-      <li>Detodito</li>
-      <li>Crujitos</li>
+      <li>Coatepeque</li>
+      <li>Xela</li>
+      <li>Tecpán</li>
     </ul>
+
+    <a href="pagina 1.html"><i class="fas fa-list"></i> Ver Categorías</a>
+    <a href="pagina 2.html"><i class="fas fa-pen-to-square"></i> Ir al Formulario</a>
   </div>
 
 </body>
