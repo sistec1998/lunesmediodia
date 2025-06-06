@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GALLO MÁS GALLO</title>
+  <link rel="icon" href="logo.webp" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #c0392b;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1em;
+      background: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #c0392b;
+    }
+
+    .icon-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    .icon-title i {
+      color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="logo.webp" alt="Logo de la tienda">
+    <h1 class="icon-title"><i class="fas fa-shopping-cart"></i> COMPRAR EN LÍNEA 🛍️</h1>
+    <hr>
+
+    <label><i class="fas fa-user"></i> Nombre completo del cliente</label>
+    <input type="text" placeholder="Ej. Juan Pérez">
+
+    <label><i class="fas fa-map-marker-alt"></i> Dirección</label>
+    <input type="text" placeholder="Ej. Calle 123, Zona 1">
+
+    <label><i class="fas fa-phone"></i> Teléfono</label>
+    <input type="text" placeholder="Ej. 5555-5555">
+
+    <label><i class="fas fa-box"></i> Producto que desea comprar</label>
+    <input type="text" placeholder="Ej. Estufa de 4 quemadores">
+
+    <button><i class="fas fa-paper-plane"></i> Enviar pedido</button>
+  </div>
+
+</body>
+</html>

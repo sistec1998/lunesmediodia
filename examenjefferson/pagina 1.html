@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Gallo Más Gallo</title>
+  <link rel="icon" href="logo.webp" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 10px;
+    }
+
+    details {
+      margin-bottom: 30px;
+    }
+
+    summary {
+      font-size: 1.4em;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    .icon-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .icon-title i {
+      color: #c0392b;
+    }
+
+    hr {
+      width: 70%;
+      border: 1px solid #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <marquee behavior="slide" direction="down">
+    <img src="logo.webp" width="300" alt="Logo">
+  </marquee>
+
+  <h1>📦 Catálogo de Productos</h1>
+  <hr>
+
+  <details>
+    <summary class="icon-title"><i class="fas fa-motorcycle"></i> MOTOS 🏍️</summary>
+    <h2>MOTOS</h2>
+    <img src="navi.png" alt="Navi">
+    <img src="boxer.png" alt="Boxer">
+    <img src="gn.png" alt="GN">
+  </details>
+
+  <hr>
+
+  <details>
+    <summary class="icon-title"><i class="fas fa-snowflake"></i> REFRIGERADORAS ❄️</summary>
+    <h2>REFRIGERADORAS</h2>
+    <img src="RI.webp" alt="Refrigeradora 1">
+    <img src="RO.webp" alt="Refrigeradora 2">
+    <img src="RU.webp" alt="Refrigeradora 3">
+  </details>
+
+  <hr>
+
+  <details>
+    <summary class="icon-title"><i class="fas fa-fire-burner"></i> ESTUFAS 🍳</summary>
+    <h2>ESTUFAS</h2>
+    <img src="is.webp" alt="Estufa 1">
+    <img src="es.webp" alt="Estufa 2">
+    <img src="os.webp" alt="Estufa 3">
+  </details>
+
+</body>
+</html>
