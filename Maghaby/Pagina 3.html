@@ -1,166 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>ELECTRONICA PANAMERICANA</title>
-    <link rel="icon" href="Logo de panamerica.webp">
+  <meta charset="UTF-8">
+  <link rel="icon" href="Logo de temu.png">
+  <title>TEMU</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, black, #00cfff); /* Negro a celeste */
+      color: white;
+      text-align: center;
+    }
 
-    <!-- Íconos Font Awesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    img {
+      width: 300px;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #000000, #00cfff); /* Degradado negro a celeste */
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
+    img:hover {
+      transform: scale(1.05);
+    }
 
-        a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            font-size: 1.1em;
-            transition: color 0.3s ease;
-        }
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #00cfff;
+      margin: 20px auto;
+    }
 
-        a:hover {
-            color: #a0f0ff;
-        }
+    p {
+      max-width: 800px;
+      margin: auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
 
-        img {
-            width: 300px;
-            height: auto;
-            border-radius: 10px;
-            margin: 10px;
-            transition: transform 0.3s ease;
-        }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-        img:hover {
-            transform: scale(1.05);
-        }
+    li {
+      margin: 10px 0;
+      font-weight: bold;
+    }
 
-        hr {
-            border: 1px solid #00cfff;
-            margin: 30px auto;
-        }
+    a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 10px 20px;
+      background-color: #00bfff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
 
-        form {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 15px;
-            width: 80%;
-            max-width: 400px;
-            margin: 20px auto;
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-        }
+    a:hover {
+      background-color: #40e0d0;
+      transform: scale(1.05);
+    }
 
-        label {
-            display: block;
-            margin-top: 10px;
-            font-weight: bold;
-        }
+    .social-icons {
+      margin: 30px 0;
+    }
 
-        input[type="text"] {
-            width: 80%;
-            padding: 8px;
-            margin-top: 5px;
-            border: none;
-            border-radius: 5px;
-            background-color: #f0f8ff;
-            color: #000;
-        }
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
 
-        button {
-            background-color: #00cfff;
-            border: none;
-            color: #000000;
-            padding: 10px 20px;
-            margin: 10px 5px;
-            font-weight: bold;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
 
-        button:hover {
-            background-color: #40e0ff;
-            color: #ffffff;
-        }
-
-        h1, h2 {
-            margin-top: 25px;
-        }
-
-        ol {
-            margin: 20px auto;
-            display: inline-block;
-            text-align: left;
-        }
-
-        .social-icons {
-            margin-top: 30px;
-        }
-
-        .social-icons a {
-            color: #ffffff;
-            margin: 0 10px;
-            font-size: 2em;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #a0f0ff;
-        }
-    </style>
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      filter: invert(100%);
+    }
+  </style>
 </head>
 <body>
-    <center>
-        <img src="Logo de panamerica.webp" alt="Logo Panamericana">
-        <br>
-        <a href="Pagina 1.html">PRODUCTOS</a>
-        <a href="Pagina 2.html">COMPRAR</a>
-        <a href="Pagina 4.html">MENÚ</a>
+  <center>
+    <img src="Logo de temu.png" alt="Logo TEMU">
+    <hr width="700">
 
-        <h1>ESTADOS DE GUATEMALA</h1>
-        <hr width="700">
+    <p>
+      Temu es una plataforma de comercio electrónico internacional fundada en septiembre de 2022.
+      Es propiedad de PDD Holdings Inc., un conglomerado tecnológico con raíces en China, también
+      conocido por operar Pinduoduo, una de las plataformas de compras más grandes y exitosas del país asiático.
+      Aunque Temu tiene su sede legal en Boston, Estados Unidos, su infraestructura operativa 
+      y de logística está estrechamente ligada a China, desde donde proviene la mayoría de
+      sus productos y fabricantes. La empresa fue lanzada con la visión de conectar a consumidores globales 
+      con fabricantes asiáticos a precios muy accesibles, 
+      utilizando un modelo de negocio llamado “Factory to Consumer” 
+      (F2C), es decir, “de la fábrica al consumidor”.
+    </p>
 
-        <h1>BUSCA TU TIENDA MÁS CERCANA</h1>
+    <ul>
+      <li>Ropa y moda</li>
+      <li>Electrónica</li>
+      <li>Hogar y cocina</li>
+      <li>Juguetes</li>
+      <li>Accesorios</li>
+    </ul>
 
-        <form>
-            <label for="busqueda">BUSCAR TIENDA</label>
-            <input type="text" id="busqueda">
-            <br>
-            <button type="submit">BUSCAR</button>
-        </form>
+    <a href="Pagina 1.html">CATÁLOGO</a>
+    <a href="Pagina 2.html">FORMULARIO</a>
 
-        <h2>SUCURSALES</h2>
-        <img src="Electronica 1.png" alt="Sucursal 1">
-        
-        <h2>MAZATE</h2>
-        <img src="Electronica 2.jpg" alt="Sucursal Mazate">
-        
-        <h2>GUATEMALA</h2>
-        <img src="Electronica 3.jpg" alt="Sucursal Guatemala">
-
-        <hr width="700">
-
-        <ol>
-            <li>PETÉN</li>
-            <li>JUTIAPA</li>
-            <li>ANTIGUA</li>
-            <li>RETAHULEU</li>
-        </ol>
-
-        <!-- Iconos de redes sociales -->
-        <div class="social-icons">
-            <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-    </center>
+    <div class="social-icons">
+      <a href="https://wa.me/" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+      </a>
+      <a href="https://facebook.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook">
+      </a>
+    </div>
+  </center>
 </body>
 </html>
