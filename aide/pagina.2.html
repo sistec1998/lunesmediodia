@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="LOGO.png">
+    <title>CARRION</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #ff0000, #ffffff); /* Rojo a blanco */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            width: 250px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.1em;
+            color: #222;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            margin: 20px 10px 0 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: #c0392b;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e74c3c;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="LOGO.png" alt="Logo">
+
+    <div class="form-container">
+        <h1>COMPRAR EN LÍNEA</h1>
+
+        <label for="nombre">Nombre completo del cliente</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion">
+
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono">
+
+        <label for="producto">El producto que desea comprar</label>
+        <input type="text" id="producto" name="producto">
+
+        <div>
+            <button>ENVIAR PEDIDO</button>
+            <button style="background-color: #7f8c8d;">CANCELAR</button>
+        </div>
+    </div>
+
+</body>
+</html>

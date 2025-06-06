@@ -1,167 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Inicio - Agencia de Viajes</title>
-  <link rel="icon" href="logo.avif">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #74ebd5, #ACB6E5);
-      color: #333;
-      animation: fadeIn 1.5s ease-in-out;
-    }
+    <meta charset="UTF-8">
+    <link rel="icon" href="LOGO.png">
+    <title>CARRION</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #ff0000, #ffffff); /* rojo a blanco */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-      padding: 30px;
-    }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
 
-    img.logo {
-      width: 200px;
-      border-radius: 15px;
-      animation: zoomIn 1.2s ease-in;
-    }
+        p {
+            max-width: 700px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #222;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-align: justify;
+        }
 
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      background-color: #4CAF50;
-      padding: 10px 20px;
-      border-radius: 8px;
-      transition: background-color 0.3s, transform 0.2s;
-    }
+        h2 {
+            color: #b22222; /* rojo oscuro */
+            margin-top: 40px;
+            font-size: 2em;
+        }
 
-    nav a:hover {
-      background-color: #45a049;
-      transform: scale(1.05);
-    }
+        ul {
+            list-style-type: square;
+            max-width: 400px;
+            padding-left: 20px;
+            color: #444;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            padding: 15px 30px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
 
-    h1 {
-      margin-top: 30px;
-      color: #2c3e50;
-      animation: slideIn 1s ease-out;
-    }
+        ul li {
+            margin: 10px 0;
+            font-weight: 600;
+        }
 
-    p {
-      font-size: 1.1em;
-      margin: 20px auto;
-      max-width: 700px;
-      animation: fadeIn 2s ease-in;
-    }
+        a {
+            display: inline-block;
+            margin: 20px 15px;
+            padding: 12px 25px;
+            background-color: #b22222;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+            transition: background-color 0.3s ease;
+        }
 
-    input[type="text"] {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      width: 60%;
-      margin-top: 10px;
-    }
-
-    button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      border: none;
-      background-color: #3498db;
-      color: white;
-      border-radius: 10px;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-
-    button:hover {
-      background-color: #2980b9;
-      transform: scale(1.05);
-    }
-
-    hr {
-      border: none;
-      height: 3px;
-      background: #fff;
-      width: 70%;
-      margin: 40px auto;
-      border-radius: 10px;
-    }
-
-    marquee img {
-      width: 300px;
-      height: 200px;
-      margin: 10px;
-      border-radius: 10px;
-      transition: transform 0.3s;
-    }
-
-    marquee img:hover {
-      transform: scale(1.05);
-    }
-
-    ol {
-      text-align: left;
-      display: inline-block;
-      margin-top: 20px;
-      font-size: 1.1em;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes slideIn {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes zoomIn {
-      from { transform: scale(0.8); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-  </style>
+        a:hover {
+            background-color: #ff3b3b;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.avif" alt="Logo" class="logo">
-    
+
+    <img src="LOGO.png" alt="Logo Carrion">
+
+    <p>
+        Carrion es una empresa dedicada a la comercialización de ropa de alta
+        calidad para hombres y mujeres, ofreciendo diseños modernos, cómodos y
+        accesibles para todos los gustos. Nos especializamos en prendas 
+        casuales, formales y de temporada, adaptándonos a las últimas 
+        tendencias del mercado.
+        Desde nuestros inicios, en Carrion nos hemos enfocado en brindar a 
+        nuestros clientes una experiencia de compra confiable, rápida y segura, 
+        tanto en tiendas físicas como en línea. Nuestro compromiso con la 
+        excelencia y la atención personalizada nos distingue en el sector.
+        
+        Ofrecemos un catálogo variado que incluye:
+        
+        Ropa para dama y caballero,
+        
+        Suéteres y conjuntos de temporada,
+        
+        Accesorios seleccionados,
+        
+        Productos exclusivos en línea.
+    </p>
+
+    <h2>SUCURSALES</h2>
+    <ul>
+        <li>COATEPEQUE</li>
+        <li>REU</li>
+        <li>CIUDAD CAPITAL</li>
+        <li>MÉXICO</li>
+    </ul>
+
     <nav>
-      <a href="pagina.1.html">LUGARES</a>
-      <a href="pagina2.html">RESERVAR</a>
+        <a href="pagina1.html">CATEGORÍAS</a>
+        <a href="pagina.2.html">FORMULARIO</a>
     </nav>
 
-    <hr>
-
-    <h1>NUESTRA MISIÓN</h1>
-    <p>"Nuestra misión es ofrecer experiencias de viaje memorables, accesibles y personalizadas, conectando a nuestros clientes con destinos únicos alrededor del mundo mediante un servicio confiable, innovador y centrado en sus necesidades."</p>
-
-    <h1>VISIÓN</h1>
-    <p>"Ser la agencia de viajes líder en la creación de experiencias únicas e inolvidables, reconocida por su innovación, compromiso con la sostenibilidad y excelencia en el servicio al cliente a nivel nacional e internacional."</p>
-
-    <label for="destino">¿A DÓNDE TE GUSTARÍA IR?</label><br>
-    <input type="text" id="destino" placeholder="Ej. Antigua Guatemala, Tikal..."><br>
-    <button>BUSCAR</button>
-
-    <hr>
-
-    <h1>POR SI TE INTERESA</h1>
-    <marquee behavior="scroll" direction="left" scrollamount="5">
-      <img src="champey.jpg" alt="Semuc Champey">
-      <img src="antigua.webp" alt="Antigua Guatemala">
-      <img src="ti.jpg" alt="Tikal">
-    </marquee>
-
-    <h1>LO MÁS VISITADO</h1>
-    <ol>
-      <li>ANTIGUA GUATEMALA</li>
-      <li>IRTRA PETAPA</li>
-      <li>SEMUC CHAMPEY</li>
-      <li>TIKAL</li>
-    </ol>
-  </div>
 </body>
 </html>

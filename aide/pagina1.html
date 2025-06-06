@@ -2,111 +2,91 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>ELECTRONICA PANAMERICANA</title>
-    <link rel="icon" href="logo de electronica.png">
+    <title>CARRION</title>
+    <link rel="icon" href="LOGO.png">
     <style>
         body {
+            background: linear-gradient(to bottom, #007BFF, #ffffff); /* Azul a blanco */
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #e0f7fa, #ffffff);
-            margin: 0;
-            padding: 20px;
+            color: #333;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        summary {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+            cursor: pointer;
+            color: #154360;
+        }
+
         img {
-            width: 300px;
+            width: 250px;
             height: auto;
             margin: 10px;
             border-radius: 8px;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #00796b;
-        }
-        h2 {
-            color: #004d40;
-            margin-top: 40px;
-        }
-        form {
+
+        details {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
             margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
-        input, button {
-            padding: 10px;
-            margin: 5px;
-            border: 1px solid #aaa;
-            border-radius: 5px;
+
+        hr {
+            border: 0;
+            height: 2px;
+            background: #ffffff;
+            margin: 20px 0;
         }
-        details summary {
-            cursor: pointer;
-            font-size: 18px;
-            color: #00695c;
-            font-weight: bold;
+
+        marquee img {
             margin-top: 20px;
-        }
-        details img {
-            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-    <img src="logo de electronica.png" alt="Logo Electrónica Panamericana">
+    <marquee behavior="slide" direction="down">
+        <img src="LOGO.png" width="300">
+    </marquee>
 
-    <nav>
-        <a href="pagina2.html">COMPRAR</a>
-        <a href="pagian.3.html">TIENDA</a>
-        <a href="pagian.4.html">MENU</a>
-    </nav>
-
-    <h2>UN MUNDO PARA ELEGIR</h2>
-
-    <form>
-        <label for="busqueda">¿QUÉ BUSCAS?</label>
-        <input type="text" id="busqueda" name="busqueda" placeholder="Buscar producto...">
-        <button type="submit">BUSCAR</button>
-    </form>
-
-    <h2>COMPUTADORAS</h2>
-    <img src="compu1.jpg" alt="Computadora 1">
-    <img src="compu2.jpg" alt="Computadora 2">
-    <img src="compu3.webp" alt="Computadora 3">
-
-    <h2>BOCINAS</h2>
-    <img src="BOICNA1.jpg" alt="Bocina 1">
-    <img src="BOCINA2.png" alt="Bocina 2">
-    <img src="BOCINA3.webp" alt="Bocina 3">
-
-    <h2>INSTRUMENTOS MUSICALES</h2>
-    <img src="INS1.png" alt="Instrumento 1">
-    <img src="MARIMBA.webp" alt="Marimba">
-    <img src="LIRA.jpg" alt="Lira">
-
-    <h2>DRONES</h2>
-    <img src="DRON1.jpg" alt="Dron 1" style="height: 200px;">
-    <img src="DRON2.jpg" alt="Dron 2">
-    <img src="DRON3.jpg" alt="Dron 3">
+    <h1>CATÁLOGO DE PRODUCTOS</h1>
+    <hr>
 
     <details>
-        <summary>REFRIGERADORAS</summary>
-        <img src="refri1.jpg" alt="Refrigeradora 1" style="height: 250px;">
-        <img src="refri2.webp" alt="Refrigeradora 2">
-        <img src="refri3.webp" alt="Refrigeradora 3">
+        <summary>CATEGORÍA DE HOMBRES</summary>
+        <img src="IMG1.jpg" alt="Hombre 1">
+        <img src="IMG2.jpg" alt="Hombre 2">
+        <img src="IMG3.jpg" alt="Hombre 3">
     </details>
 
     <details>
-        <summary>TVS</summary>
-        <img src="Televisor.webp" alt="Televisor 1">
-        <img src="televisor2.webp" alt="Televisor 2">
-        <img src="tlevisor3.webp" alt="Televisor 3">
+        <summary>CATEGORÍA DE DAMA</summary>
+        <img src="BLUSA.jpg" alt="Blusa">
+        <img src="VESTIDO.jpg" alt="Vestido">
+        <img src="CONJUNTO.jpg" alt="Conjunto">
     </details>
 
     <details>
-        <summary>LAVADORAS</summary>
-        <img src="lava.webp" alt="Lavadora 1">
-        <img src="lava3.webp" alt="Lavadora 2">
-        <img src="lava2.webp" alt="Lavadora 3">
+        <summary>CATEGORÍA DE SUÉTERES</summary>
+        <img src="SUETER2.jpg" alt="Suéter 1">
+        <img src="SUTER.jpg" alt="Suéter 2">
+        <img src="SUTER3.jpg" alt="Suéter 3">
     </details>
 
 </body>
