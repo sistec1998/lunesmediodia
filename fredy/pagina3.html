@@ -3,75 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electrónica Panamericana</title>
-    <link rel="icon" href="logo de electronica.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Shein</title>
     <style>
         body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #fce4ec, #f8bbd0);
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: white;
+            padding: 0;
             text-align: center;
+            color: #333;
         }
 
         header img {
-            width: 150px;
             margin-top: 20px;
-            animation: pulse 2s infinite;
+            width: 200px;
+            transition: transform 0.5s;
         }
 
-        nav a {
-            margin: 15px;
-            color: #00ffe5;
-            text-decoration: none;
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        p {
             font-size: 1.2em;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #ff00cc;
-        }
-
-        h1, h2 {
-            text-shadow: 0 0 10px #00ffe5;
-        }
-
-        input[type="text"] {
-            padding: 10px;
-            width: 250px;
-            border-radius: 10px;
-            border: none;
-            margin-top: 10px;
-        }
-
-        button {
             padding: 10px 20px;
-            border: none;
-            background-color: #00ffe5;
-            color: black;
-            border-radius: 10px;
-            margin-left: 10px;
-            transition: background 0.3s ease;
+            color: #444;
         }
 
-        button:hover {
-            background-color: #ff00cc;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 5px;
+            font-weight: bold;
+            color: #880e4f;
+            transition: color 0.3s;
+        }
+
+        ul:hover {
+            color: #ad1457;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 15px;
+            padding: 10px 20px;
+            background-color: #ec407a;
             color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.4s, transform 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #d81b60;
+            transform: scale(1.05);
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px auto;
+            max-width: 1000px;
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.1);
-            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
             padding: 15px;
-            border-radius: 15px;
-            width: 320px;
-            box-shadow: 0 0 20px #00ffe5;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .card:hover {
-            transform: scale(1.05);
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         .card img {
@@ -79,81 +87,44 @@
             border-radius: 10px;
         }
 
-        .social-icons {
-            margin-top: 30px;
-        }
-
-        .social-icons a {
-            color: white;
-            font-size: 2em;
-            margin: 0 10px;
-            transition: transform 0.3s ease, color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.2);
-            color: #00ffe5;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+        .card-title {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #880e4f;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo de electronica.png" alt="Logo Electrónica">
+        <img src="logo1.webp" alt="Logo de Shein">
+        <p>Shein les ofrece muchas cosas que desean comprar: gorras, blusas, zapatos ¡y muchas cosas más! Los esperamos.</p>
     </header>
 
-    <nav>
-        <a href="pagina2.html">Comprar</a>
-        <a href="pagina1.html">Tienda</a>
-        <a href="pagina4.html">Productos</a>
-    </nav>
-
-    <h1>Estamos en toda Guatemala</h1>
-    <hr>
-    <h2>Busca tu tienda más cercana</h2>
-    <input type="text" placeholder="Ej. Zona 1, Mixco...">
-    <button>Buscar</button>
-    <hr>
-
-    <h2>Sucursales</h2>
-
-    <div class="card">
-        <img src="electronica1.png" alt="Mazate">
-        <p>Mazate</p>
+    <div>
+        <ul>Flores</ul>
+        <ul>Génova</ul>
+        <ul>Coatepeque</ul>
     </div>
 
-    <div class="card">
-        <img src="electronica2.jpg" alt="Rehu">
-        <p>Rehu</p>
+    <div class="links">
+        <a href="pagina1.html">Catálogo de Productos</a>
+        <a href="pagina2.html">Comprar en Línea</a>
     </div>
 
-    <div class="card">
-        <img src="electronica3.jpg" alt="Otra sucursal">
-        <p>Otra sucursal</p>
+    <div class="card-container">
+        <div class="card">
+            <img src="producto1.webp" alt="Producto 1">
+            <div class="card-title">Blusa elegante</div>
+        </div>
+        <div class="card">
+            <img src="producto2.webp" alt="Producto 2">
+            <div class="card-title">Zapatos modernos</div>
+        </div>
+        <div class="card">
+            <img src="producto3.webp" alt="Producto 3">
+            <div class="card-title">Gorra deportiva</div>
+        </div>
+        <!-- Puedes seguir agregando más tarjetas -->
     </div>
-
-    <hr width="700">
-
-    <h2>Otras Tiendas</h2>
-    <ol>
-        <li>Peten</li>
-        <li>Jutiapa</li>
-        <li>Antigua</li>
-        <li>Zacapa</li>
-    </ol>
-
-    <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-    </div>
-
-    <br><br>
 </body>
 </html>
