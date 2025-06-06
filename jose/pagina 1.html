@@ -3,161 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electrónica Panamericana</title>
-    <!-- Fuente e Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Shein</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background-color: #e6f0ff;
             color: #003366;
             text-align: center;
             margin: 0;
-            padding: 0;
-        }
-
-        header img {
-            width: 350px;
-            margin-top: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        header img:hover {
-            transform: scale(1.05);
-        }
-
-        nav a {
-            margin: 10px;
-            text-decoration: none;
-            color: #0056b3;
-            font-weight: bold;
-            padding: 8px 16px;
-            border: 2px solid #0056b3;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #0056b3;
-            color: white;
-        }
-
-        input[type="text"], button {
-            padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-            border: 1px solid #0073e6;
-        }
-
-        button {
-            background-color: #0073e6;
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #005bb5;
+            padding: 20px;
         }
 
         h1, h2 {
-            color: #00264d;
-            margin-top: 30px;
+            color: #0059b3;
+            text-shadow: 1px 1px 2px #ccc;
         }
 
-        .productos img {
+        hr {
+            border: 2px solid #0059b3;
+            width: 80%;
+            margin: auto;
+        }
+
+        img {
             width: 250px;
+            height: 250px;
+            object-fit: cover;
             margin: 10px;
             border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .productos img:hover {
+        img:hover {
             transform: scale(1.05);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         details {
             margin: 20px auto;
-            width: 90%;
-            background: #e6f0ff;
-            border: 1px solid #b3d1ff;
+            width: 80%;
+            background-color: #cce0ff;
             border-radius: 10px;
             padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        details:hover {
+            background-color: #b3d1ff;
         }
 
         summary {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
 
-        hr {
-            border: 1px solid #0073e6;
+        summary::before {
+            content: "🛍️";
+        }
+
+        .logo {
+            animation: slideDown 2s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <img src="logo de electronica.png" alt="Logo Electrónica Panamericana">
-    </header>
-
-    <nav>
-        <a href="pagina 2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
-        <a href="pagina 3.html"><i class="fas fa-store"></i> Tienda</a>
-        <a href="pagina 4.html"><i class="fas fa-bars"></i> Menú</a>
-    </nav>
-
-    <hr>
-
-    <h1>Un mundo para elegir</h1>
-    <label>¿Qué buscas?</label>
-    <input type="text" placeholder="Buscar productos...">
-    <button><i class="fas fa-search"></i> Buscar</button>
-
-    <div class="productos">
-        <h2>Computadoras</h2>
-        <img src="compu1.avif" alt="Computadora 1">
-        <img src="compu2.png" alt="Computadora 2">
-        <img src="compu3.jpg" alt="Computadora 3">
-
-        <h2>Bocinas</h2>
-        <img src="bocina 1.jpg" alt="Bocina 1">
-        <img src="bocina 2.webp" alt="Bocina 2">
-        <img src="bocina 3.jpg" alt="Bocina 3">
-
-        <h2>Instrumentos Musicales</h2>
-        <img src="instrumento 1.png" alt="Instrumento 1">
-        <img src="intrumentos 2.jpg" alt="Instrumento 2">
-        <img src="instrumento 3.jpg" alt="Instrumento 3">
-
-        <h2>Drones</h2>
-        <img src="dron 1.jpg" alt="Dron 1">
-        <img src="dron 2.jpg" alt="Dron 2">
-        <img src="dron 3.jpg" alt="Dron 3">
-
-        <details>
-            <summary><i class="fas fa-snowflake"></i> Refrigeradores</summary>
-            <img src="refri 1.jpg" alt="Refrigerador 1">
-            <img src="refri 2.png" alt="Refrigerador 2">
-            <img src="refri 3.jpg" alt="Refrigerador 3">
-        </details>
-
-        <details>
-            <summary><i class="fas fa-tv"></i> TVs</summary>
-            <img src="tele 1.webp" alt="TV 1">
-            <img src="tele 2.webp" alt="TV 2">
-            <img src="tele 3.webp" alt="TV 3">
-        </details>
-
-        <details>
-            <summary><i class="fas fa-soap"></i> Lavadoras</summary>
-            <img src="laba 1.jpg" alt="Lavadora 1">
-            <img src="laba 2.jpg" alt="Lavadora 2">
-            <img src="laba 3.webp" alt="Lavadora 3">
-        </details>
+    <div class="logo">
+        <img src="logo.png" width="400" alt="Logo Shein">
     </div>
 
+    <h1>Catálogo de productos</h1>
+    <hr>
+    <h2>Shein ofrece</h2>
+
+    <details>
+        <summary>🧢 Gorras</summary>
+        <img src="imagen 1.jpg" alt="Gorra 1">
+        <img src="imagen 2.jpg" alt="Gorra 2">
+        <img src="imagen 3.jpg" alt="Gorra 3">
+    </details>
+
+    <details>
+        <summary>👟 Zapatos</summary>
+        <img src="zapato 1.jpg" alt="Zapato 1">
+        <img src="zapato 2.jpg" alt="Zapato 2">
+        <img src="zapato 3.webp" alt="Zapato 3">
+    </details>
+
+    <details>
+        <summary>👗 Ropa</summary>
+        <img src="ropa 1.avif" alt="Ropa 1">
+        <img src="ropa 2.jpg" alt="Ropa 2">
+    </details>
 </body>
 </html>
