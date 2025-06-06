@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECKTRA</title>
+    <link rel="icon" href="logotipo.png">
+
+    <style>
+        body {
+            background-color: yellow;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        center {
+            display: block;
+            text-align: center;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        details {
+            margin-bottom: 20px;
+            transition: all 0.5s ease;
+        }
+
+        summary {
+            font-size: 1.5em;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        marquee {
+            font-size: 2em;
+            color: red;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <marquee behavior="slide" direction="down">Bienvenido a ELEKTRA</marquee>
+        <img src="logotipo.png" alt="Logotipo">
+
+        <details>
+            <summary>Camas</summary>
+            <img src="imagen1.jpg" alt="Cama 1">
+            <img src="IMAGEN5.jpeg" alt="Cama 2">
+        </details>
+
+        <details>
+            <summary>Motos</summary>
+            <img src="imagen2.jpg" alt="Moto 1">
+            <img src="imagen3.webp" alt="Moto 2">
+        </details>
+
+        <details>
+            <summary>Refrigeradores</summary>
+            <img src="imagen4.jpg" alt="Refrigerador 1">
+            <img src="IMAGEN6.jpg" alt="Refrigerador 2">
+        </details>
+    </center>
+</body>
+</html>
