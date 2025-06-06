@@ -1,132 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Magitour</title>
-  <link rel="icon" href="logo.png"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #ffe259, #50c9c3);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      animation: fadeIn 1s ease-in;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's 🍔</title>
+    <link rel="icon" href="logo2.png">
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
+    <!-- Fuente divertida de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 
-    .container {
-      background-color: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      width: 400px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
+    <!-- Iconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    .container:hover {
-      transform: translateY(-5px);
-    }
+    <style>
+        body {
+            font-family: 'Chewy', cursive;
+            background-image: url('https://1000marcas.net/wp-content/uploads/2020/01/McDonalds-Logo-2018.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            backdrop-filter: blur(3px);
+        }
 
-    img {
-      width: 250px;
-      margin-bottom: 10px;
-    }
+        h1 {
+            font-size: 3em;
+            color: #FFD700;
+            text-shadow: 2px 2px #FF0000;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-    h1 {
-      color: #333;
-      margin-bottom: 10px;
-    }
+        form {
+            background: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+            animation: slideUp 1.5s ease-in-out;
+        }
 
-    hr {
-      border: none;
-      height: 2px;
-      background: #50c9c3;
-      width: 100%;
-      margin-bottom: 20px;
-    }
+        label {
+            font-size: 1.2em;
+            display: block;
+            margin-top: 15px;
+        }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            width: 250px;
+            margin-top: 5px;
+            font-size: 1em;
+        }
 
-    label {
-      font-weight: bold;
-      text-align: left;
-    }
+        button {
+            margin: 15px 10px 0;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: #FFD700;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-    input {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      transition: border 0.3s;
-    }
+        button:hover {
+            background-color: #FF0000;
+            color: #fff;
+        }
 
-    input:focus {
-      border-color: #50c9c3;
-      outline: none;
-    }
+        img {
+            width: 200px;
+            margin-top: 30px;
+            animation: rotateIn 2s;
+        }
 
-    button {
-      margin-top: 15px;
-      padding: 10px;
-      border: none;
-      border-radius: 8px;
-      background-color: #50c9c3;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.2s;
-    }
+        hr {
+            width: 70%;
+            border: 2px solid #FFD700;
+            margin-bottom: 20px;
+        }
 
-    button:hover {
-      background-color: #3fb0a8;
-      transform: scale(1.05);
-    }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-    .icon {
-      margin-right: 5px;
-    }
-  </style>
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes rotateIn {
+            from { transform: rotate(-360deg); opacity: 0; }
+            to { transform: rotate(0); opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="Logo de Magitour"/>
-    <h1><i class="fas fa-suitcase-rolling icon"></i>Reserva tu viaje</h1>
-    <hr/>
+
+    <img src="logo.webp" alt="McDonald's Logo">
+    <h1>🍟 Compras en Línea 🥤</h1>
+    <hr>
+
     <form>
-      <label for="nombre"><i class="fas fa-user icon"></i>¿Cómo te llamas?</label>
-      <input type="text" id="nombre" name="nombre"/>
+        <label><i class="fas fa-user"></i> Nombre completo</label>
+        <input type="text" placeholder="Tu nombre completo">
 
-      <label for="telefono"><i class="fas fa-phone icon"></i>Teléfono</label>
-      <input type="text" id="telefono" name="telefono"/>
+        <label><i class="fas fa-map-marker-alt"></i> Dirección</label>
+        <input type="text" placeholder="Tu dirección">
 
-      <label for="correo"><i class="fas fa-envelope icon"></i>Correo electrónico</label>
-      <input type="email" id="correo" name="correo"/>
+        <label><i class="fas fa-phone"></i> Teléfono</label>
+        <input type="text" placeholder="Tu número de teléfono">
 
-      <label for="lugar"><i class="fas fa-map-marker-alt icon"></i>Lugar turístico</label>
-      <input type="text" id="lugar" name="lugar"/>
+        <label><i class="fas fa-hamburger"></i> Producto</label>
+        <input type="text" placeholder="Ej. Big Mac, Papas, Refresco">
 
-      <label for="fecha"><i class="fas fa-calendar-alt icon"></i>Fecha para viajar</label>
-      <input type="date" id="fecha" name="fecha"/>
-
-      <label for="tarjeta"><i class="fas fa-credit-card icon"></i>N° de tarjeta (crédito/débito)</label>
-      <input type="text" id="tarjeta" name="tarjeta"/>
-
-      <button type="submit"><i class="fas fa-paper-plane icon"></i>Reservar</button>
-      <button type="reset"><i class="fas fa-times icon"></i>Cancelar</button>
+        <div>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+            <button type="reset"><i class="fas fa-times"></i> Cancelar</button>
+        </div>
     </form>
-  </div>
+
 </body>
 </html>

@@ -1,131 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magitour</title>
-  <link rel="icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's</title>
+    <link rel="icon" href="logo2.png">
 
-  <!-- Fuente e íconos de Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fuente moderna de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
 
-  <!-- Estilos CSS -->
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #fff176, #b3e5fc); /* amarillo y celeste */
-      text-align: center;
-      color: #333;
-    }
+    <!-- Iconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    a {
-      margin: 10px;
-      text-decoration: none;
-      color: #00796b;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Fredoka', sans-serif;
+            background-image: url('https://i.imgur.com/EQJ1T0Y.jpg'); /* Fondo de McDonald's */
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            transition: background-color 1s ease-in-out;
+        }
 
-    a:hover {
-      color: #004d40;
-    }
+        h1 {
+            font-size: 4em;
+            color: #FFD700;
+            animation: bounce 2s infinite;
+        }
 
-    img {
-      width: 300px;
-      height: auto;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-    }
+        h2 {
+            color: #FFDD57;
+        }
 
-    img:hover {
-      transform: scale(1.05);
-    }
+        p, li, a {
+            font-size: 1.2em;
+        }
 
-    hr {
-      border: 2px solid #00796b;
-      width: 700px;
-      margin: 20px auto;
-    }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
 
-    button {
-      padding: 10px 20px;
-      margin-top: 10px;
-      background-color: #00796b;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+        li::before {
+            content: "🍟 ";
+        }
 
-    button:hover {
-      background-color: #004d40;
-    }
+        a {
+            color: #fff;
+            background-color: #FF0000;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin: 10px;
+        }
 
-    marquee img {
-      margin: 0 15px;
-    }
+        a:hover {
+            background-color: #cc0000;
+        }
 
-    h2 {
-      color: #004d40;
-    }
+        img {
+            transition: transform 0.3s ease;
+        }
 
-    input[type="text"] {
-      padding: 8px;
-      border-radius: 5px;
-      border: 1px solid #aaa;
-      width: 200px;
-    }
+        img:hover {
+            transform: scale(1.1);
+        }
 
-    ol {
-      text-align: left;
-      display: inline-block;
-      margin-top: 0;
-    }
-  </style>
+        hr {
+            border: 2px solid #FFD700;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
 </head>
 <body>
+    <img src="logo.webp" width="300" alt="McDonald's Logo">
+    <h1>🍔 MCDONALD'S 🍔</h1>
+    <hr>
 
-  <img src="logo.png" alt="Logo Magitour"><br><br>
+    <h2><i class="fas fa-info-circle"></i> Descripción</h2>
+    <p>
+        McDonald's es una cadena multinacional de restaurantes de comida rápida que opera en más de 100 países y territorios. 
+        Fundada en 1954, se ha convertido en una de las cadenas más grandes y reconocidas a nivel mundial, conocida por su 
+        menú de hamburguesas, papas fritas y otros productos. 🍟🍔
+    </p>
+    <hr>
 
-  <!-- Navegación -->
-  <a href="pagina1.html"><i class="fas fa-map-marked-alt"></i> Lugares</a>
-  <a href="pagina2.html"><i class="fas fa-calendar-check"></i> Reservaciones</a>
+    <h2><i class="fas fa-store"></i> Sucursales</h2>
+    <ul>
+        <li>Coatepeque</li>
+        <li>Rehu</li>
+        <li>Xela</li>
+        <li>Bolívar</li>
+    </ul>
 
-  <hr>
-
-  <!-- Misión -->
-  <h2><i class="fas fa-bullseye"></i> Nuestra Misión</h2>
-  <p>"Nuestra misión es ofrecer experiencias de viaje memorables, accesibles y personalizadas, conectando a nuestros clientes con destinos únicos alrededor del mundo mediante un servicio confiable, innovador y centrado en sus necesidades."</p>
-
-  <!-- Visión -->
-  <h2><i class="fas fa-eye"></i> Visión</h2>
-  <p>"Ser la agencia de viajes líder en la creación de experiencias únicas e inolvidables, reconocida por su innovación, compromiso con la sostenibilidad y excelencia en el servicio al cliente a nivel nacional e internacional."</p>
-
-  <!-- Búsqueda -->
-  <label for="destino"><i class="fas fa-search-location"></i> ¿A dónde te gustaría ir?</label><br>
-  <input type="text" id="destino"><br>
-  <button><i class="fas fa-search"></i> Buscar</button>
-
-  <hr>
-
-  <!-- Carrusel de imágenes -->
-  <h2><i class="fas fa-lightbulb"></i> Por si te interesa</h2>
-  <marquee behavior="scroll" direction="left" scrollamount="5">
-    <img src="img1.webp" alt="Destino 1">
-    <img src="img2.jpg" alt="Destino 2">
-    <img src="img3.jpg" alt="Destino 3">
-  </marquee>
-
-  <!-- Sitios más visitados -->
-  <h2><i class="fas fa-star"></i> Lo más visitado</h2>
-  <ol>
-    <li>Panajachel</li>
-    <li>Champerico</li>
-    <li>Lago de Atitlán</li>
-    <li>Antigua Guatemala</li>
-  </ol>
-
+    <a href="pagina 1.html"><i class="fas fa-hamburger"></i> Catálogo de Productos</a>
+    <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Formulario de Compras</a>
 </body>
 </html>

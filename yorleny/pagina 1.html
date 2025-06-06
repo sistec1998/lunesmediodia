@@ -1,89 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yamaha</title>
-  <link rel="icon" href="logo.png">
-  <!-- Iconos desde Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      background-color: #fce4ec; /* rosa pastel */
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="icon" href="logo2.png">
+    <style>
+        body {
+            background-image: url('https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/1PUB_Home_HeroBanner_Desktop_Deals.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-    h2 {
-      color: #7e57c2; /* lila pastel */
-      font-size: 2rem;
-      margin-top: 20px;
-      transition: transform 0.3s ease;
-    }
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            animation: fadeInDown 1.5s;
+        }
 
-    h2:hover {
-      transform: scale(1.05);
-    }
+        details {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            transition: 0.3s ease-in-out;
+        }
 
-    hr {
-      border: none;
-      height: 2px;
-      background-color: #ce93d8; /* lila claro */
-      width: 700px;
-      margin: 20px auto;
-    }
+        summary {
+            font-size: 1.5em;
+            cursor: pointer;
+            padding: 10px;
+        }
 
-    .logo {
-      width: 150px;
-      margin-top: 20px;
-      animation: fadeIn 2s ease-in-out;
-    }
+        summary::before {
+            content: "🍔 ";
+        }
 
-    .moto-img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
+        details:nth-of-type(2) summary::before {
+            content: "🥤 ";
+        }
 
-    .moto-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    }
+        details:nth-of-type(3) summary::before {
+            content: "🍦 ";
+        }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+        img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
 
-    .icon-title {
-      margin-top: 20px;
-      font-size: 2.2rem;
-      color: #ab47bc;
-    }
-  </style>
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        hr {
+            border: 2px solid yellow;
+            width: 60%;
+            animation: expand 2s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes expand {
+            from { width: 0; }
+            to { width: 60%; }
+        }
+
+        marquee img {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
 </head>
 <body>
-  <img src="logo2.png" alt="Logo Yamaha" class="logo">
-  <hr>
-  <div class="icon-title">
-    <i class="fas fa-motorcycle"></i> Modelos de Motos
-  </div>
 
-  <!-- Galería de imágenes -->
-  <div>
-    <img src="moto1.jpg" alt="Moto 1" class="moto-img">
-    <img src="moto2.jpg" alt="Moto 2" class="moto-img">
-    <img src="moto3.jpg" alt="Moto 3" class="moto-img">
-    <br>
-    <img src="moto4.png" alt="Moto 4" class="moto-img">
-    <img src="moto5.jpg" alt="Moto 5" class="moto-img">
-    <img src="moto6.jpg" alt="Moto 6" class="moto-img">
-  </div>
+    <marquee behavior="slide" direction="down"><img src="logo.webp" width="300"></marquee>
+    <h2>Catálogo de Productos</h2>
+    <hr>
+
+    <details>
+        <summary>Hamburguesas</summary>
+        <img src="hambur1.jpg" alt="Hamburguesa 1">
+        <img src="hambur2.avif" alt="Hamburguesa 2">
+        <img src="hambur3.avif" alt="Hamburguesa 3">
+    </details>
+
+    <details>
+        <summary>Bebidas</summary>
+        <img src="bebida1.png" alt="Bebida 1">
+        <img src="bebida2.png" alt="Bebida 2">
+        <img src="bebida3.png" alt="Bebida 3">
+    </details>
+
+    <details>
+        <summary>Postres</summary>
+        <img src="postre1.webp" alt="Postre 1">
+        <img src="postre2.png" alt="Postre 2">
+        <img src="postre3.png" alt="Postre 3">
+    </details>
+
 </body>
 </html>
