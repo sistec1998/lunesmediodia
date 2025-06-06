@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>McMacdonalds</title>
+    <link rel="icon" href="McDonalds-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease-in;
+        }
+
+        img {
+            width: 300px;
+            margin-top: 20px;
+            transition: transform 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #FFD700;
+        }
+
+        p {
+            width: 60%;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #FFD700;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        li:hover {
+            color: #FFD700;
+        }
+
+        a {
+            display: inline-block;
+            margin: 15px;
+            padding: 10px 20px;
+            background-color: #FFD700;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #ffc107;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            color: #aaa;
+        }
+
+        .social-icons a {
+            color: #FFD700;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <img src="McDonalds-logo.png" alt="McDonald's Logo">
+    <h2>Descripción</h2>
+    <p>McDonald's es una cadena global de comida rápida estadounidense
+       conocida por sus hamburguesas y otros productos de comida rápida,
+       lleva desde el año 1937 dando servicio con alegría a todos sus 
+       clientes.
+    </p>
+    <hr>
+    <h2>Sucursales</h2>
+    <ul>
+        <li>Coatepeque</li>
+        <li>Retalhuleu</li>
+        <li>Xela</li>
+    </ul>
+    <a href="catalogohtml.html">Categorías</a>
+    <a href="formulariohtml.html">Ordena Aquí</a>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <p>&copy; 2025 McMacdonalds. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

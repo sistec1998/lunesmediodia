@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>McDonald's</title>
+  <link rel="icon" href="McDonalds-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    marquee {
+      display: block;
+      margin: 40px auto;
+      width: 420px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ffd700;
+      margin-top: 0;
+    }
+
+    hr {
+      border: 1px solid #ffd700;
+    }
+
+    details {
+      margin: 30px auto;
+      width: 80%;
+      background-color: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    summary {
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #ffcc00;
+    }
+
+    img {
+      margin: 15px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ffcc00;
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <marquee behavior="slide" direction="down">
+    <img src="McDonalds-logo.png" width="400" alt="Logo McDonald's">
+  </marquee>
+
+  <h1>CATÁLOGO DE PRODUCTOS</h1>
+  <hr width="600">
+
+  <details>
+    <summary><i class="fas fa-hamburger icon"></i>Hamburguesas</summary>
+    <img src="hamburguesa111.webp" width="240" alt="Hamburguesa 1">
+    <img src="hamburguesa2.png" width="220" alt="Hamburguesa 2">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-mug-hot icon"></i>McCafé</summary>
+    <img src="McCafe1.png" width="230" alt="McCafé 1">
+    <img src="McCafe2.png" width="230" alt="McCafé 2">
+  </details>
+
+  <details>
+    <summary><i class="fas fa-ice-cream icon"></i>Postres</summary>
+    <img src="postre1.png" width="230" alt="Postre 1">
+    <img src="postre2.png" width="230" alt="Postre 2">
+  </details>
+
+</body>
+</html>
