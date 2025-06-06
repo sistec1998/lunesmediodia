@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lay's - Quiénes Somos</title>
+  <link rel="icon" href="Logo lays.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    img {
+      width: 200px;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 80%;
+      border: 1px solid white;
+      margin: 20px auto;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      line-height: 1.6;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #ffd700;
+      font-size: 28px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    li {
+      font-size: 20px;
+      margin: 5px 0;
+      position: relative;
+    }
+
+    li::before {
+      content: "\f3c5";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: #ffcc00;
+      margin-right: 10px;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #ffd700;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #ff9900;
+      transform: scale(1.05);
+    }
+
+    .social-icons {
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      margin: 0 15px;
+      color: white;
+      font-size: 30px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #00ffcc;
+      transform: scale(1.2);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="Logo lays.png" alt="Logo Lay's">
+  
+  <hr>
+
+  <p>
+    <strong>Lay's</strong> es una reconocida marca internacional de papas fritas y snacks, perteneciente a la empresa PepsiCo. Fundada en Estados Unidos en 1932, 
+    Lay's se ha convertido en una de las marcas más populares en el mercado de botanas, destacándose por su amplia variedad de sabores
+    y su presencia en numerosos países. Su éxito radica en la combinación de ingredientes simples, calidad en el proceso de producción y estrategias de marketing efectivas. 
+    A lo largo del tiempo, Lay's ha sabido adaptarse a las preferencias de los consumidores, ofreciendo opciones innovadoras como papas horneadas, sin sal o con sabores regionales.
+  </p>
+
+  <hr>
+
+  <h2><i class="fas fa-store"></i> Sucursales</h2>
+  <ul>
+    <li>Coatepeque</li>
+    <li>Peten</li>
+    <li>Mazate</li>
+    <li>Solola</li>
+  </ul>
+
+  <a href="Pagina  1.html"><i class="fas fa-tags"></i> Categorías</a>
+  <a href="Pagina 2.html"><i class="fas fa-clipboard-list"></i> Formulario</a>
+
+  <!-- Redes Sociales -->
+  <div class="social-icons">
+    <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+
+</body>
+</html>

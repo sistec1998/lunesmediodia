@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lays</title>
+  <link rel="icon" href="Logo lays.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      color: white;
+      text-align: center;
+    }
+
+    img {
+      width: 250px;
+      height: 180px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      margin-top: 10px;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #ffffff;
+      width: 80%;
+    }
+
+    details {
+      background-color: rgba(255, 255, 255, 0.05);
+      margin: 20px auto;
+      padding: 15px;
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    summary {
+      font-size: 20px;
+      font-weight: bold;
+      list-style: none;
+      text-align: left;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    summary::before {
+      content: "\f0da"; /* icono angle-right */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: transform 0.3s ease;
+    }
+
+    details[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    marquee img {
+      margin-top: 20px;
+    }
+
+    /* Iconos sociales */
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 28px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #00ffcc;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <marquee behavior="slide" direction="down">
+    <img src="Logo lays.png" width="200" alt="Logo Lays">
+  </marquee>
+
+  <h1>Lays</h1>
+  <hr>
+  <h1>Catálogo de Productos</h1>
+
+  <!-- Golosinas -->
+  <details>
+    <summary><i class="fas fa-candy-cane"></i> Golosinas</summary>
+    <img src="golosina1.webp" alt="Golosina 1">
+    <img src="lays3.jpg" alt="Lays 3">
+  </details>
+
+  <!-- Galletas -->
+  <details>
+    <summary><i class="fas fa-cookie"></i> Galletas</summary>
+    <img src="mamut.jpg" alt="Mamut">
+    <img src="galletas2.jpg" alt="Galletas 2">
+  </details>
+
+  <!-- Cheetos -->
+  <details>
+    <summary><i class="fas fa-fire-flame-curved"></i> Cheetos</summary>
+    <img src="cheeto1.webp" alt="Cheeto 1">
+    <img src="Cheeto2.webp" alt="Cheeto 2">
+  </details>
+
+  <!-- Iconos de redes sociales -->
+  <div class="social-icons">
+    <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+
+</body>
+</html>
