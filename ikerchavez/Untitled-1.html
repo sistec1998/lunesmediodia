@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Claro.svg.png">
+    <title>CLARO</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #51534E; /* Gris Militar */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: #FFFFFF;
+        }
+
+        h1 {
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        /* Logo Claro */
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos de las Tarjetas */
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            background-color: #3C331F; /* Verde Oliva Oscuro */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transform-style: preserve-3d;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: rotateY(10deg) rotateX(10deg);
+        }
+
+        .card img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover img {
+            opacity: 0.8;
+        }
+
+        .card-details {
+            padding: 10px;
+            text-align: center;
+            background-color: #69432D; /* Café Militar */
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .card:hover .card-details {
+            background-color: #000000; /* Negro */
+        }
+
+        /* Detalles de los Productos */
+        details {
+            margin-bottom: 20px;
+            background-color: #000000; /* Negro */
+            border-radius: 10px;
+            padding: 10px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        summary {
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        details[open] summary {
+            color: #69432D; /* Café Militar */
+        }
+    </style>
+</head>
+<body>
+
+    <img src="Claro.svg.png" width="200">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Claro.svg" alt="Logo Claro">
+
+    <h1>CATÁLOGO DE PRODUCTOS</h1>
+
+    <details>
+        <summary>Teléfonos</summary>
+        <div class="card-container">
+            <div class="card">
+                <img src="CLAROS24ULTRAG_1.webp" alt="Claro S24 Ultra G">
+                <div class="card-details">Claro S24 Ultra G</div>
+            </div>
+            <div class="card">
+                <img src="samsung.png" alt="Samsung Galaxy">
+                <div class="card-details">Samsung Galaxy</div>
+            </div>
+        </div>
+    </details>
+
+    <details>
+        <summary>Claro Hogar</summary>
+        <div class="card-container">
+            <div class="card">
+                <img src="casa.jpg" alt="Claro Hogar">
+                <div class="card-details">Claro Hogar</div>
+            </div>
+            <div class="card">
+                <img src="descarga.png" alt="Claro Hogar">
+                <div class="card-details">Claro Hogar</div>
+            </div>
+        </div>
+    </details>
+
+    <details>
+        <summary>Internet</summary>
+        <div class="card-container">
+            <div class="card">
+                <img src="inernet.png" alt="Internet Claro">
+                <div class="card-details">Internet Claro</div>
+            </div>
+            <div class="card">
+                <img src="internet 2.jpg" alt="Internet Claro">
+                <div class="card-details">Internet Claro</div>
+            </div>
+        </div>
+    </details>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido</title>
+    <link rel="icon" href="Claro.svg.png">
+    <style>
+        /* Reset de márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Contenedor principal */
+        .container {
+            background-color: #39533C; /* Verde militar */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilo del logo */
+        img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo del título */
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Estilos del formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            color: #fff;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        input[type="text"], input[type="nombre completo"] {
+            padding: 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #fff;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="nombre completo"]:focus {
+            border-color: #d4af7a; /* Color dorado */
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #d4af7a; /* Color dorado */
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #b38b5e; /* Color dorado oscuro */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Claro.svg.png" alt="Logo">
+        <h1>COMPRAR EN LÍNEA</h1>
+        <form>
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="producto">Producto que desea comprar</label>
+            <input type="text" id="producto" name="producto" required>
+
+            <button type="submit">ENVIAR PEDIDO</button>
+        </form>
+    </div>
+</body>
+</html>
