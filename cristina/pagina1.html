@@ -1,118 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viajes</title>
-  <link rel="icon" href="logo.webp">
-  <!-- Font Awesome para iconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ff4ec6, #4e00c2); /* fondo estilo bichota */
-      color: #fff;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATÁLOGO DE PRODUCTOS</title>
+    <link rel="icon" href="logoavon.png">
+    <style>
+        body {
+            background-color: #ffe4e1; /* Rosado claro */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-    img {
-      width: 350px;
-      height: 230px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin: 10px;
-      transition: transform 0.3s;
-    }
+        h1 {
+            color: #d6336c;
+            margin-top: 20px;
+        }
 
-    img:hover {
-      transform: scale(1.05);
-    }
+        hr {
+            border: 1px solid #d6336c;
+        }
 
-    details {
-      margin: 20px auto;
-      width: 80%;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      padding: 15px;
-      transition: all 0.4s ease;
-      cursor: pointer;
-    }
+        details {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            background: #fff0f5;
+            border-radius: 10px;
+            padding: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-    details:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: scale(1.02);
-    }
+        summary {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            color: #b03060;
+        }
 
-    summary {
-      font-size: 1.5em;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      cursor: pointer;
-    }
+        .card {
+            display: inline-block;
+            background: white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
 
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
 
-    h2 {
-      margin: 5px 0;
-    }
+        .card img {
+            border-radius: 10px;
+            width: 200px;
+            height: auto;
+        }
 
-    hr {
-      border: 1px solid white;
-    }
-  </style>
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
 </head>
 <body>
+    <marquee behavior="slide" direction="down">
+        <img src="logoavon.png" width="300">
+    </marquee>
 
-  <img src="logo.webp" width="300">
-  <hr width="700">
-  <h1><i class="fas fa-map-marked-alt"></i> LUGARES TURÍSTICOS</h1>
+    <h1>LOS MEJORES CATÁLOGOS DE LOCIONES</h1>
+    <hr width="700">
 
-  <details>
-    <summary><i class="fas fa-city"></i> ANTIGUA GUATEMALA</summary>
-    <h2><i class="fas fa-money-bill-wave"></i> Precio: Q4,000</h2>
-    <h2><i class="fas fa-clock"></i> Duración: 4 Días</h2>
-    <h2><i class="fas fa-users"></i> Personas: 4 personas</h2>
-    <h2><i class="fas fa-image"></i> Galería</h2>
-    <img src="guatemala.webp">
-    <img src="guate.jpg">
-  </details>
+    <details>
+        <summary>LOCIONES DE MUJERES</summary>
+        <div class="card"><img src="locio1.jpg" alt="Loción 1 Mujeres"></div>
+        <div class="card"><img src="locion2.jpg" alt="Loción 2 Mujeres"></div>
+    </details>
 
-  <details>
-    <summary><i class="fas fa-landmark"></i> CASTILLO DE SAN FELIPE, IZABAL</summary>
-    <h2><i class="fas fa-money-bill-wave"></i> Precio: Q2,000</h2>
-    <h2><i class="fas fa-clock"></i> Duración: 3 Días</h2>
-    <h2><i class="fas fa-users"></i> Personas: 2 personas</h2>
-    <h2><i class="fas fa-image"></i> Galería</h2>
-    <img src="casti.jpg">
-    <img src="castillo.jpg">
-  </details>
+    <details>
+        <summary>LOCIONES DE HOMBRES</summary>
+        <div class="card"><img src="locionhombre.jpg" alt="Loción 1 Hombres"></div>
+        <div class="card"><img src="locionhombre2.jpg" alt="Loción 2 Hombres"></div>
+    </details>
 
-  <details>
-    <summary><i class="fas fa-umbrella-beach"></i> MONTERRICO, SANTA ROSA</summary>
-    <h2><i class="fas fa-money-bill-wave"></i> Precio: Q4,000</h2>
-    <h2><i class="fas fa-clock"></i> Duración: 4 Días</h2>
-    <h2><i class="fas fa-users"></i> Personas: 4 personas</h2>
-    <h2><i class="fas fa-image"></i> Galería</h2>
-    <img src="mon.jpg">
-    <img src="monte.jpg">
-  </details>
-
-  <details>
-    <summary><i class="fas fa-tree"></i> TIKAL, PETÉN</summary>
-    <h2><i class="fas fa-money-bill-wave"></i> Precio: Q6,000</h2>
-    <h2><i class="fas fa-clock"></i> Duración: 6 Días</h2>
-    <h2><i class="fas fa-users"></i> Personas: 5 personas</h2>
-    <h2><i class="fas fa-image"></i> Galería</h2>
-    <img src="tika.jpg">
-    <img src="tikal.jpg">
-  </details>
-
+    <details>
+        <summary>LOCIONES DE SEÑORITAS</summary>
+        <div class="card"><img src="locionseño.jpg" alt="Loción 1 Señoritas"></div>
+        <div class="card"><img src="locionseño2.jpg" alt="Loción 2 Señoritas"></div>
+    </details>
 </body>
 </html>

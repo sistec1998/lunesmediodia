@@ -3,132 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes</title>
-    <link rel="icon" href="logo.webp">
+    <title>Avon</title>
+    <link rel="icon" href="logoavon.png">
     <style>
-        /* Fondo de pantalla con imagen de la canción */
         body {
-            background: url('https://www.example.com/fondo-karol-g.jpg') no-repeat center center fixed; /* Cambia esta URL por la imagen que elijas */
-            background-size: cover;
+            background-color: black;
+            color: white;
             font-family: Arial, sans-serif;
-            color: #fff;
             text-align: center;
-            padding: 0;
-            margin: 0;
+            padding: 30px;
+            transition: background-color 1s ease;
         }
 
-        /* Estilo para el contenedor principal */
-        .container {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-            border-radius: 10px;
-        }
-
-        /* Animación de fade-in */
-        h2, p {
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        /* Estilo para las imágenes tipo tarjeta */
-        .image-card {
-            display: inline-block;
+        img {
             width: 300px;
-            margin: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.5s ease-in-out;
         }
 
-        .image-card:hover {
+        img:hover {
             transform: scale(1.05);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .image-card img {
-            width: 100%;
-            border-radius: 10px;
-            border: 2px solid #fff;
+        hr {
+            width: 700px;
+            border: 1px solid #fff;
+            margin: 20px auto;
         }
 
-        /* Estilo para los enlaces */
-        a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 20px;
-            margin: 0 15px;
+        p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
             transition: color 0.3s;
         }
 
+        li:hover {
+            color: #ff69b4;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            color: #ff69b4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
         a:hover {
-            color: #ff7f00; /* Color de hover */
-        }
-
-        /* Estilo para el botón */
-        button {
-            background-color: #ff7f00;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #ff5722;
-        }
-
-        /* Estilo para las listas ordenadas */
-        ol {
-            text-align: left;
-            margin-left: 50px;
+            color: #ffffff;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
+    <img src="logoavon.png" alt="Logo Avon">
+    <hr>
+    <p>Avon es una empresa líder mundial en la venta directa de productos de belleza,
+       con más de 130 años de historia y presencia en más de 100 países. 
+       Se enfoca en empoderar a la mujer a través de la venta directa y ofrece una amplia gama 
+       de productos de maquillaje, cuidado de la piel, 
+       fragancias, cuidado personal y accesorios.
+    </p>
     
-    <div class="container">
-        <img src="logo.webp" width="300">
-        <div>
-            <a href="pagina1.html">LUGARES</a>
-            <a href="pagina2.html">RESERVAR</a>
-        </div>
-        <hr width="700">
-        <h2>NUESTRA MISION</h2>
-        <p>"Nuestra misión es ofrecer experiencias de viaje memorables, accesibles y personalizadas, conectando a nuestros clientes con destinos únicos alrededor del mundo mediante un servicio confiable, innovador y centrado en sus necesidades."</p>
-        
-        <h2>VISION</h2>
-        <p>"Ser la agencia de viajes líder en la creación de experiencias únicas e inolvidables, reconocida por su innovación, compromiso con la sostenibilidad y excelencia en el servicio al cliente a nivel nacional e internacional."</p>
-
-        <h2>¿A DONDE TE GUSTARIA IR?</h2>
-        <input type="text"> 
-        <br><br>
-        <button>Buscar</button>
-        <hr width="700">
-
-        <h2>Por si te interesa</h2>
-        <div class="image-card">
-            <img src="lagos.jpg" alt="Lagos">
-        </div>
-        <div class="image-card">
-            <img src="dulce.jpg" alt="Dulce">
-        </div>
-        <div class="image-card">
-            <img src="lagos2.jpg" alt="Lagos 2">
-        </div>
-
-        <h2>LO MÁS VISITADO</h2>
-        <ol>
-            <li>Panajachel</li>
-            <li>Río Dulce</li>
-            <li>Champey</li>
-            <li>Lago Itza-Flores</li>
-        </ol>
-    </div>
-
+    <ul>
+        <li>Avon Guatemala</li>
+        <li>Avon Belleza</li>
+        <li>Avon Calzada</li>
+    </ul>
+    
+    <a href="pagina1.html">Categoría</a>
+    <a href="pagina2.html">Formulario</a>
 </body>
 </html>
